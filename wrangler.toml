@@ -1,15 +1,5 @@
 name = "petra-pavaje"
 compatibility_date = "2024-01-01"
-pages_build_output_dir = "dist"
-
-[build]
-command = "npm run build"
-publish = "dist"
-
-[[r2_buckets]]
-binding = "PETRA_IMAGES"
-bucket_name = "petra-pavaje-images"
-preview_bucket_name = "petra-pavaje-images-dev"
 
 [vars]
 SITE_URL = "https://petrapavaje.ro"
