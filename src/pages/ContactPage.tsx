@@ -27,12 +27,12 @@ export function ContactPage() {
   return (
     <div className="pt-20 md:pt-24">
       {/* Breadcrumbs */}
-      <div className="bg-anthracite-50 border-b border-anthracite-100">
+      <div className="bg-charcoal-50 border-b border-charcoal-100">
         <div className="container-premium py-4">
           <nav className="flex items-center gap-2 text-sm">
-            <a href="/" className="text-anthracite-500 hover:text-anthracite-700 transition-colors">Acasa</a>
-            <span className="text-anthracite-300">/</span>
-            <span className="text-anthracite-900 font-medium">Contact</span>
+            <a href="/" className="text-charcoal-500 hover:text-charcoal-700 transition-colors">Acasa</a>
+            <span className="text-charcoal-300">/</span>
+            <span className="text-charcoal-900 font-medium">Contact</span>
           </nav>
         </div>
       </div>
@@ -45,8 +45,8 @@ export function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="heading-h1 text-anthracite-900 mb-4">Contacteaza-ne</h1>
-            <p className="text-body-lg text-anthracite-500 max-w-2xl">
+            <h1 className="heading-h1 text-charcoal-900 mb-4">Contacteaza-ne</h1>
+            <p className="text-body-lg text-charcoal-500 max-w-2xl">
               Selectează județul pentru a vedea reprezentantul tău de vânzări sau completează formularul de mai jos.
             </p>
           </motion.div>
@@ -54,17 +54,17 @@ export function ContactPage() {
       </section>
 
       {/* County Selector */}
-      <section className="py-8 bg-anthracite-50">
+      <section className="py-8 bg-charcoal-50">
         <div className="container-premium">
           <div className="max-w-md">
-            <label htmlFor="county" className="block text-sm font-medium text-anthracite-700 mb-2">
+            <label htmlFor="county" className="block text-sm font-medium text-charcoal-700 mb-2">
               Alege județul...
             </label>
             <select
               id="county"
               value={selectedCounty}
               onChange={(e) => setSelectedCounty(e.target.value)}
-              className="w-full px-4 py-3 border border-anthracite-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white"
+              className="w-full px-4 py-3 border border-charcoal-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 bg-white"
             >
               <option value="">Selectează județul</option>
               {counties.map((c) => (
@@ -80,14 +80,14 @@ export function ContactPage() {
               animate={{ opacity: 1, y: 0 }}
               className="mt-6 p-6 bg-white rounded-xl shadow-md max-w-md"
             >
-              <h3 className="text-lg font-semibold text-anthracite-900 mb-3">Reprezentantul tău</h3>
+              <h3 className="text-lg font-semibold text-charcoal-900 mb-3">Reprezentantul tău</h3>
               <div className="space-y-3">
-                <p className="text-anthracite-700 font-medium">{rep.name}</p>
-                <a href={`mailto:${rep.email}`} className="flex items-center gap-2 text-primary-600 hover:text-primary-700">
+                <p className="text-charcoal-700 font-medium">{rep.name}</p>
+                <a href={`mailto:${rep.email}`} className="flex items-center gap-2 text-brand-600 hover:text-primary-700">
                   <Mail className="w-4 h-4" />
                   {rep.email}
                 </a>
-                <a href={`tel:${rep.phone}`} className="flex items-center gap-2 text-primary-600 hover:text-primary-700">
+                <a href={`tel:${rep.phone}`} className="flex items-center gap-2 text-brand-600 hover:text-primary-700">
                   <Phone className="w-4 h-4" />
                   {rep.phone}
                 </a>
@@ -113,12 +113,12 @@ export function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Form */}
             <div>
-              <h2 className="heading-h2 text-anthracite-900 mb-2">Trimite-ne un mesaj</h2>
-              <p className="text-anthracite-500 mb-8">Completează formularul și te vom contacta în cel mai scurt timp</p>
+              <h2 className="heading-h2 text-charcoal-900 mb-2">Trimite-ne un mesaj</h2>
+              <p className="text-charcoal-500 mb-8">Completează formularul și te vom contacta în cel mai scurt timp</p>
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-anthracite-700 mb-1">
+                  <label htmlFor="name" className="block text-sm font-medium text-charcoal-700 mb-1">
                     Numele tău
                   </label>
                   <input
@@ -127,14 +127,14 @@ export function ContactPage() {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3 border border-anthracite-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    className="w-full px-4 py-3 border border-charcoal-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
                     placeholder="Numele complet"
                   />
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-anthracite-700 mb-1">
+                    <label htmlFor="email" className="block text-sm font-medium text-charcoal-700 mb-1">
                       Email
                     </label>
                     <input
@@ -143,12 +143,12 @@ export function ContactPage() {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 border border-anthracite-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      className="w-full px-4 py-3 border border-charcoal-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
                       placeholder="email@exemplu.ro"
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-anthracite-700 mb-1">
+                    <label htmlFor="phone" className="block text-sm font-medium text-charcoal-700 mb-1">
                       Telefon
                     </label>
                     <input
@@ -156,21 +156,21 @@ export function ContactPage() {
                       id="phone"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-4 py-3 border border-anthracite-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      className="w-full px-4 py-3 border border-charcoal-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
                       placeholder="+40 7xx xxx xxx"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="form-county" className="block text-sm font-medium text-anthracite-700 mb-1">
+                  <label htmlFor="form-county" className="block text-sm font-medium text-charcoal-700 mb-1">
                     Județul tău
                   </label>
                   <select
                     id="form-county"
                     value={formData.county}
                     onChange={(e) => setFormData({ ...formData, county: e.target.value })}
-                    className="w-full px-4 py-3 border border-anthracite-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    className="w-full px-4 py-3 border border-charcoal-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
                   >
                     <option value="">--Selectează județul--</option>
                     {counties.map((c) => (
@@ -180,7 +180,7 @@ export function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-anthracite-700 mb-1">
+                  <label htmlFor="message" className="block text-sm font-medium text-charcoal-700 mb-1">
                     Mesaj
                   </label>
                   <textarea
@@ -188,7 +188,7 @@ export function ContactPage() {
                     rows={4}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-3 border border-anthracite-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 resize-none"
+                    className="w-full px-4 py-3 border border-charcoal-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 resize-none"
                     placeholder="Descrie proiectul tău..."
                   />
                 </div>
@@ -200,9 +200,9 @@ export function ContactPage() {
                     required
                     checked={formData.gdpr}
                     onChange={(e) => setFormData({ ...formData, gdpr: e.target.checked })}
-                    className="mt-1 w-4 h-4 text-primary-600 border-anthracite-300 rounded focus:ring-primary-500"
+                    className="mt-1 w-4 h-4 text-brand-600 border-charcoal-300 rounded focus:ring-brand-500"
                   />
-                  <label htmlFor="gdpr" className="text-sm text-anthracite-500">
+                  <label htmlFor="gdpr" className="text-sm text-charcoal-500">
                     Sunt de acord ca datele mele să fie prelucrate conform Regulamentului (UE) 2016/679.
                     Am citit și înțeles Politica de Confidențialitate.
                   </label>
@@ -213,7 +213,7 @@ export function ContactPage() {
                   Trimite mesajul
                 </button>
 
-                <p className="text-xs text-anthracite-400 text-center">
+                <p className="text-xs text-charcoal-400 text-center">
                   Datele tale sunt în siguranță și nu vor fi partajate cu terți.
                 </p>
               </form>
@@ -221,8 +221,8 @@ export function ContactPage() {
 
             {/* Factories */}
             <div>
-              <h2 className="heading-h2 text-anthracite-900 mb-2">Fabricile Noastre</h2>
-              <p className="text-anthracite-500 mb-8">4 centre de producție strategic poziționate</p>
+              <h2 className="heading-h2 text-charcoal-900 mb-2">Fabricile Noastre</h2>
+              <p className="text-charcoal-500 mb-8">4 centre de producție strategic poziționate</p>
 
               <div className="space-y-4">
                 {factories.map((factory, index) => (
@@ -231,23 +231,23 @@ export function ContactPage() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 }}
-                    className="p-5 bg-anthracite-50 rounded-xl"
+                    className="p-5 bg-charcoal-50 rounded-xl"
                   >
                     <div className="flex items-start gap-3 mb-3">
-                      <span className="w-8 h-8 rounded-full bg-primary-600 text-white flex items-center justify-center text-sm font-bold shrink-0">
+                      <span className="w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center text-sm font-bold shrink-0">
                         {index + 1}
                       </span>
                       <div>
-                        <h3 className="font-semibold text-anthracite-900">{factory.name}</h3>
-                        <p className="text-sm text-anthracite-500">{factory.address}</p>
+                        <h3 className="font-semibold text-charcoal-900">{factory.name}</h3>
+                        <p className="text-sm text-charcoal-500">{factory.address}</p>
                       </div>
                     </div>
                     <div className="pl-11 space-y-2">
-                      <a href={`tel:${factory.phone}`} className="flex items-center gap-2 text-sm text-primary-600 hover:text-primary-700">
+                      <a href={`tel:${factory.phone}`} className="flex items-center gap-2 text-sm text-brand-600 hover:text-primary-700">
                         <Phone className="w-4 h-4" />
                         {factory.phone}
                       </a>
-                      <p className="flex items-center gap-2 text-sm text-anthracite-500">
+                      <p className="flex items-center gap-2 text-sm text-charcoal-500">
                         <Clock className="w-4 h-4" />
                         Luni - Vineri: 08:00 - 17:00
                       </p>
@@ -255,7 +255,7 @@ export function ContactPage() {
                         href={`https://www.google.com/maps/dir/?api=1&destination=${factory.lat},${factory.lng}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-sm text-primary-600 hover:text-primary-700 font-medium"
+                        className="inline-flex items-center gap-2 text-sm text-brand-600 hover:text-primary-700 font-medium"
                       >
                         <Navigation className="w-4 h-4" />
                         Navigare GPS

@@ -1,73 +1,88 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand Colors */
-  --color-primary-50: #faf5f5;
-  --color-primary-100: #f2e8e8;
-  --color-primary-200: #e6d0d0;
-  --color-primary-300: #d4a8a8;
-  --color-primary-400: #b77a7a;
-  --color-primary-500: #9c5656;
-  --color-primary-600: #8a4545;
-  --color-primary-700: #733838;
-  --color-primary-800: #613131;
-  --color-primary-900: #532c2c;
-  --color-primary-950: #2e1515;
+  /* ====== BRAND COLORS - Extracted from petrapavaje.ro ====== */
 
-  /* Anthracite Gray Scale */
-  --color-anthracite-50: #f6f6f7;
-  --color-anthracite-100: #e2e2e5;
-  --color-anthracite-200: #c4c4cb;
-  --color-anthracite-300: #9b9ba5;
-  --color-anthracite-400: #737380;
-  --color-anthracite-500: #595966;
-  --color-anthracite-600: #484854;
-  --color-anthracite-700: #3d3d47;
-  --color-anthracite-800: #35353e;
-  --color-anthracite-900: #2f2f37;
-  --color-anthracite-950: #1a1a21;
+  /* Primary Red - Brand accent (#B70000 - most used brand color) */
+  --color-brand-50: #fef2f2;
+  --color-brand-100: #fee2e2;
+  --color-brand-200: #fecaca;
+  --color-brand-300: #fca5a5;
+  --color-brand-400: #f87171;
+  --color-brand-500: #b8191a;
+  --color-brand-600: #b70000;
+  --color-brand-700: #9a0000;
+  --color-brand-800: #7f0000;
+  --color-brand-900: #6b0000;
+  --color-brand-950: #3f0000;
 
-  /* Warm White */
-  --color-warm-50: #fdfcfa;
-  --color-warm-100: #faf8f3;
-  --color-warm-200: #f5f0e6;
-  --color-warm-300: #ede5d4;
-  --color-warm-400: #e0d3bb;
-  --color-warm-500: #d1bfa0;
-  --color-warm-600: #c2a982;
-  --color-warm-700: #b39368;
-  --color-warm-800: #947958;
-  --color-warm-900: #7a644a;
-  --color-warm-950: #423425;
+  /* Navy Blue - Header & dark backgrounds (#003388) */
+  --color-navy-50: #f0f4fa;
+  --color-navy-100: #dce6f2;
+  --color-navy-200: #b0c8e1;
+  --color-navy-300: #7ba3cc;
+  --color-navy-400: #4a7fb5;
+  --color-navy-500: #2a5f9e;
+  --color-navy-600: #1a4a8a;
+  --color-navy-700: #0f3d7a;
+  --color-navy-800: #003388;
+  --color-navy-900: #002a70;
+  --color-navy-950: #001a4a;
 
-  /* Stone Beige */
-  --color-stone-50: #fcfaf8;
-  --color-stone-100: #f7f3ee;
-  --color-stone-200: #efe7dc;
-  --color-stone-300: #e3d4c2;
-  --color-stone-400: #d3bc9f;
-  --color-stone-500: #c7a783;
-  --color-stone-600: #ba916b;
-  --color-stone-700: #9c7758;
-  --color-stone-800: #80624b;
-  --color-stone-900: #6a5140;
-  --color-stone-950: #3a2a20;
+  /* Dark Charcoal - Headings & body text (#1A1A1A) */
+  --color-charcoal-50: #f7f7f7;
+  --color-charcoal-100: #e3e3e3;
+  --color-charcoal-200: #c8c8c8;
+  --color-charcoal-300: #a4a4a4;
+  --color-charcoal-400: #7f7f7f;
+  --color-charcoal-500: #666666;
+  --color-charcoal-600: #555555;
+  --color-charcoal-700: #4d4d4d;
+  --color-charcoal-800: #333333;
+  --color-charcoal-900: #1a1a1a;
+  --color-charcoal-950: #0f0f0f;
 
-  /* Muted Green Accent */
-  --color-accent-50: #f4f7f4;
-  --color-accent-100: #e5ebe5;
-  --color-accent-200: #cdd9cd;
-  --color-accent-300: #a8bda8;
-  --color-accent-400: #7d9a7d;
-  --color-accent-500: #5d7d5d;
-  --color-accent-600: #486348;
-  --color-accent-700: #3b503b;
-  --color-accent-800: #324232;
-  --color-accent-900: #2b372b;
-  --color-accent-950: #141d14;
+  /* Warm Gray - Backgrounds & secondary elements */
+  --color-warm-gray-50: #f9f9fb;
+  --color-warm-gray-100: #f2f3f5;
+  --color-warm-gray-200: #e7e6e6;
+  --color-warm-gray-300: #d2d2d2;
+  --color-warm-gray-400: #aaa9a9;
+  --color-warm-gray-500: #888888;
+  --color-warm-gray-600: #747474;
+  --color-warm-gray-700: #656565;
+  --color-warm-gray-800: #4a4e57;
+  --color-warm-gray-900: #212934;
+  --color-warm-gray-950: #212326;
+
+  /* Green Accent - Sustainability (#65bc7b) */
+  --color-green-accent-50: #f0fdf4;
+  --color-green-accent-100: #dcfce7;
+  --color-green-accent-200: #c8e6c9;
+  --color-green-accent-300: #86efac;
+  --color-green-accent-400: #65bc7b;
+  --color-green-accent-500: #4caf50;
+  --color-green-accent-600: #3d8b40;
+  --color-green-accent-700: #2e7d32;
+  --color-green-accent-800: #1b5e20;
+  --color-green-accent-900: #0d3b0f;
+  --color-green-accent-950: #052008;
+
+  /* Stone/Beige - Natural backgrounds */
+  --color-stone-50: #f5f0e6;
+  --color-stone-100: #ede5d4;
+  --color-stone-200: #e0d3bb;
+  --color-stone-300: #d1bfa0;
+  --color-stone-400: #c2a982;
+  --color-stone-500: #b39368;
+  --color-stone-600: #947958;
+  --color-stone-700: #7a644a;
+  --color-stone-800: #5c4a35;
+  --color-stone-900: #3d3020;
+  --color-stone-950: #2a1f12;
 
   /* Typography */
-  --font-sans: 'Inter', 'Geist', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-display: 'Inter', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
@@ -110,14 +125,14 @@
 
   body {
     font-family: var(--font-sans);
-    background-color: var(--color-warm-50);
-    color: var(--color-anthracite-900);
+    background-color: #ffffff;
+    color: var(--color-charcoal-900);
     line-height: 1.6;
   }
 
   ::selection {
-    background-color: var(--color-primary-200);
-    color: var(--color-anthracite-900);
+    background-color: var(--color-brand-200);
+    color: var(--color-charcoal-900);
   }
 }
 
@@ -159,31 +174,34 @@
     @apply text-sm md:text-base leading-relaxed;
   }
 
+  /* Primary button - Brand red */
   .btn-primary {
     @apply inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4
-           bg-anthracite-900 text-warm-50 font-medium text-sm md:text-base
-           rounded-lg shadow-lg hover:bg-anthracite-800
+           bg-brand-600 text-white font-medium text-sm md:text-base
+           rounded-md shadow-lg hover:bg-brand-700
            transition-all duration-300 ease-out
            hover:shadow-xl hover:-translate-y-0.5
-           focus:outline-none focus:ring-2 focus:ring-anthracite-500 focus:ring-offset-2;
+           focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2;
   }
 
+  /* Secondary button - Navy */
   .btn-secondary {
     @apply inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4
-           border-2 border-anthracite-900 text-anthracite-900 font-medium text-sm md:text-base
-           rounded-lg transition-all duration-300 ease-out
-           hover:bg-anthracite-900 hover:text-warm-50
+           border-2 border-navy-800 text-navy-800 font-medium text-sm md:text-base
+           rounded-md transition-all duration-300 ease-out
+           hover:bg-navy-800 hover:text-white
            hover:shadow-lg hover:-translate-y-0.5
-           focus:outline-none focus:ring-2 focus:ring-anthracite-500 focus:ring-offset-2;
+           focus:outline-none focus:ring-2 focus:ring-navy-500 focus:ring-offset-2;
   }
 
+  /* Accent button - Dark charcoal */
   .btn-accent {
     @apply inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4
-           bg-primary-600 text-white font-medium text-sm md:text-base
-           rounded-lg shadow-lg hover:bg-primary-700
+           bg-charcoal-900 text-white font-medium text-sm md:text-base
+           rounded-md shadow-lg hover:bg-charcoal-800
            transition-all duration-300 ease-out
            hover:shadow-xl hover:-translate-y-0.5
-           focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+           focus:outline-none focus:ring-2 focus:ring-charcoal-500 focus:ring-offset-2;
   }
 
   .card-premium {
@@ -193,11 +211,11 @@
   }
 
   .link-premium {
-    @apply text-anthracite-900 font-medium
-           hover:text-primary-600
+    @apply text-charcoal-900 font-medium
+           hover:text-brand-600
            transition-colors duration-200
            relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5
-           after:bg-primary-600 after:transition-all after:duration-300
+           after:bg-brand-600 after:transition-all after:duration-300
            hover:after:w-full;
   }
 }
@@ -209,7 +227,7 @@
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-anthracite-900 via-anthracite-700 to-anthracite-900 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-charcoal-900 via-charcoal-700 to-charcoal-900 bg-clip-text text-transparent;
   }
 
   .bg-noise {

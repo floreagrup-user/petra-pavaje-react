@@ -26,23 +26,23 @@ const SocialIcon = ({ name, className }: { name: string; className?: string }) =
 
 export function Footer() {
   return (
-    <footer className="bg-anthracite-950 text-warm-200">
-      {/* CTA Section */}
-      <div className="bg-primary-600">
+    <footer className="bg-charcoal-950 text-white">
+      {/* CTA Section - Brand Red */}
+      <div className="bg-brand-600">
         <div className="container-premium py-12 md:py-16">
           <div className="text-center">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">
-              Transformă-ți curtea în spațiul visat
+              Transforma-ti curtea in spatiul visat
             </h2>
             <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-              Contactează reprezentantul din zona ta pentru o ofertă personalizată
+              Contacteaza reprezentantul din zona ta pentru o oferta personalizata
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="btn-primary bg-white text-anthracite-900 hover:bg-warm-50">
-                Solicită Ofertă
+              <Link to="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white text-brand-600 font-semibold rounded-md shadow-lg hover:bg-warm-gray-50 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5">
+                Solicita Oferta
               </Link>
-              <Link to="/catalog" className="btn-secondary border-white text-white hover:bg-white/10">
-                Descarcă Catalog
+              <Link to="/catalog" className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-md hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+                Descarca Catalog
               </Link>
             </div>
           </div>
@@ -58,7 +58,7 @@ export function Footer() {
             <ul className="space-y-2">
               {footerLinks.products.map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href} className="text-sm hover:text-white transition-colors">
+                  <Link to={link.href} className="text-sm text-warm-gray-400 hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -72,7 +72,7 @@ export function Footer() {
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href} className="text-sm hover:text-white transition-colors">
+                  <Link to={link.href} className="text-sm text-warm-gray-400 hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -86,7 +86,7 @@ export function Footer() {
             <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href} className="text-sm hover:text-white transition-colors">
+                  <Link to={link.href} className="text-sm text-warm-gray-400 hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -100,13 +100,13 @@ export function Footer() {
             <div className="space-y-4">
               {factories.map((factory) => (
                 <div key={factory.id} className="flex items-start gap-3">
-                  <MapPin className="w-4 h-4 text-primary-400 mt-1 shrink-0" />
+                  <MapPin className="w-4 h-4 text-brand-400 mt-1 shrink-0" />
                   <div>
                     <p className="text-sm font-medium text-white">{factory.name}</p>
-                    <p className="text-xs text-warm-400">{factory.address}</p>
+                    <p className="text-xs text-warm-gray-400">{factory.address}</p>
                     <a
                       href={`tel:${factory.phone}`}
-                      className="text-xs text-primary-400 hover:text-primary-300 transition-colors"
+                      className="text-xs text-brand-400 hover:text-brand-300 transition-colors"
                     >
                       {factory.phone}
                     </a>
@@ -119,10 +119,10 @@ export function Footer() {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-anthracite-800">
+      <div className="border-t border-charcoal-800">
         <div className="container-premium py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="text-sm text-warm-400">
+            <div className="text-sm text-warm-gray-400">
               © {new Date().getFullYear()} Petra Pavaje | Parte a{' '}
               <a href="https://floreagrup.ro/" className="hover:text-white transition-colors">
                 Florea Grup
@@ -137,7 +137,7 @@ export function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-warm-400 hover:text-white transition-colors"
+                  className="text-warm-gray-400 hover:text-white transition-colors"
                   aria-label={social.name}
                 >
                   <SocialIcon name={social.icon} className="w-5 h-5" />
@@ -145,7 +145,7 @@ export function Footer() {
               ))}
             </div>
 
-            <div className="flex items-center gap-4 text-xs text-warm-400">
+            <div className="flex items-center gap-4 text-xs text-warm-gray-400">
               {footerLinks.legal.map((link) => (
                 <Link key={link.label} to={link.href} className="hover:text-white transition-colors">
                   {link.label}

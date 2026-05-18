@@ -41,13 +41,13 @@ export function TestimonialsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 md:mb-16"
         >
-          <p className="text-primary-600 text-sm font-medium tracking-widest uppercase mb-3">
+          <p className="text-brand-600 text-sm font-medium tracking-widest uppercase mb-3">
             Testimoniale
           </p>
-          <h2 className="heading-h1 text-anthracite-900 mb-4">
-            Ce spun clienții noștri
+          <h2 className="heading-h1 text-charcoal-900 mb-4">
+            Ce spun clientii nostri
           </h2>
-          <p className="text-body-lg text-anthracite-500 max-w-2xl mx-auto">
+          <p className="text-body-lg text-charcoal-500 max-w-2xl mx-auto">
             Proiecte finalizate cu succes în toată România
           </p>
         </motion.div>
@@ -83,14 +83,14 @@ export function TestimonialsSection() {
 
             {/* Quote */}
             <div className="relative">
-              <Quote className="w-12 h-12 text-primary-200 mb-4" />
-              <blockquote className="text-xl md:text-2xl text-anthracite-700 leading-relaxed mb-6 italic">
+              <Quote className="w-12 h-12 text-brand-200 mb-4" />
+              <blockquote className="text-xl md:text-2xl text-charcoal-700 leading-relaxed mb-6 italic">
                 "{testimonial.quote}"
               </blockquote>
               <div>
-                <p className="text-lg font-semibold text-anthracite-900">{testimonial.name}</p>
+                <p className="text-lg font-semibold text-charcoal-900">{testimonial.name}</p>
                 {testimonial.location && (
-                  <p className="text-sm text-anthracite-500">{testimonial.location}</p>
+                  <p className="text-sm text-charcoal-500">{testimonial.location}</p>
                 )}
               </div>
             </div>
@@ -101,10 +101,10 @@ export function TestimonialsSection() {
         <div className="flex items-center justify-center gap-4 mt-8">
           <button
             onClick={prev}
-            className="p-2 rounded-full border border-anthracite-200 hover:border-anthracite-400 hover:bg-anthracite-50 transition-all"
+            className="p-2 rounded-full border border-warm-gray-200 hover:border-warm-gray-400 hover:bg-warm-gray-50 transition-all"
             aria-label="Previous testimonial"
           >
-            <ChevronLeft className="w-5 h-5 text-anthracite-600" />
+            <ChevronLeft className="w-5 h-5 text-charcoal-600" />
           </button>
 
           <div className="flex gap-2">
@@ -113,7 +113,7 @@ export function TestimonialsSection() {
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
                 className={`w-2 h-2 rounded-full transition-all ${
-                  idx === currentIndex ? 'w-8 bg-primary-600' : 'bg-anthracite-300'
+                  idx === currentIndex ? 'w-8 bg-brand-600' : 'bg-warm-gray-300'
                 }`}
                 aria-label={`Go to testimonial ${idx + 1}`}
               />
@@ -122,10 +122,10 @@ export function TestimonialsSection() {
 
           <button
             onClick={next}
-            className="p-2 rounded-full border border-anthracite-200 hover:border-anthracite-400 hover:bg-anthracite-50 transition-all"
+            className="p-2 rounded-full border border-warm-gray-200 hover:border-warm-gray-400 hover:bg-warm-gray-50 transition-all"
             aria-label="Next testimonial"
           >
-            <ChevronRight className="w-5 h-5 text-anthracite-600" />
+            <ChevronRight className="w-5 h-5 text-charcoal-600" />
           </button>
         </div>
       </div>

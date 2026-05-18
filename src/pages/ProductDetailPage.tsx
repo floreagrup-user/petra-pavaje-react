@@ -32,7 +32,7 @@ export function ProductDetailPage() {
   if (!product) {
     return (
       <div className="pt-32 pb-16 text-center">
-        <h1 className="heading-h1 text-anthracite-900 mb-4">Produs negasit</h1>
+        <h1 className="heading-h1 text-charcoal-900 mb-4">Produs negasit</h1>
         <Link to="/produse" className="btn-primary">Inapoi la produse</Link>
       </div>
     )
@@ -41,16 +41,16 @@ export function ProductDetailPage() {
   return (
     <div className="pt-20 md:pt-24">
       {/* Breadcrumbs */}
-      <div className="bg-anthracite-50 border-b border-anthracite-100">
+      <div className="bg-charcoal-50 border-b border-charcoal-100">
         <div className="container-premium py-4">
           <nav className="flex items-center gap-2 text-sm flex-wrap">
-            <Link to="/" className="text-anthracite-500 hover:text-anthracite-700 transition-colors">Acasa</Link>
-            <span className="text-anthracite-300">/</span>
-            <Link to={`/produse/pavaje-${product.category}`} className="text-anthracite-500 hover:text-anthracite-700 transition-colors capitalize">
+            <Link to="/" className="text-charcoal-500 hover:text-charcoal-700 transition-colors">Acasa</Link>
+            <span className="text-charcoal-300">/</span>
+            <Link to={`/produse/pavaje-${product.category}`} className="text-charcoal-500 hover:text-charcoal-700 transition-colors capitalize">
               Pavaje {product.category}
             </Link>
-            <span className="text-anthracite-300">/</span>
-            <span className="text-anthracite-900 font-medium">{product.name}</span>
+            <span className="text-charcoal-300">/</span>
+            <span className="text-charcoal-900 font-medium">{product.name}</span>
           </nav>
         </div>
       </div>
@@ -91,7 +91,7 @@ export function ProductDetailPage() {
                       key={idx}
                       onClick={() => setCurrentImage(idx)}
                       className={`aspect-square rounded-lg overflow-hidden border-2 transition-all ${
-                        idx === currentImage ? 'border-primary-600' : 'border-transparent'
+                        idx === currentImage ? 'border-brand-600' : 'border-transparent'
                       }`}
                     >
                       <img src={img} alt="" className="w-full h-full object-cover" />
@@ -110,22 +110,22 @@ export function ProductDetailPage() {
               <div className="flex items-center gap-2 mb-3">
                 <span className={`px-3 py-1 text-xs font-medium rounded-full ${
                   product.category === 'premium'
-                    ? 'bg-primary-100 text-primary-700'
-                    : 'bg-anthracite-100 text-anthracite-700'
+                    ? 'bg-brand-100 text-primary-700'
+                    : 'bg-charcoal-100 text-charcoal-700'
                 }`}>
                   {product.category === 'premium' ? 'Premium' : 'Standard'}
                 </span>
               </div>
 
-              <h1 className="heading-h1 text-anthracite-900 mb-4">{product.name}</h1>
-              <p className="text-body-lg text-anthracite-600 mb-6">{product.description}</p>
+              <h1 className="heading-h1 text-charcoal-900 mb-4">{product.name}</h1>
+              <p className="text-body-lg text-charcoal-600 mb-6">{product.description}</p>
 
               {/* Colors */}
               <div className="mb-6">
-                <h3 className="text-sm font-semibold text-anthracite-900 mb-2">Culori disponibile</h3>
+                <h3 className="text-sm font-semibold text-charcoal-900 mb-2">Culori disponibile</h3>
                 <div className="flex flex-wrap gap-2">
                   {product.colors.map((color) => (
-                    <span key={color} className="px-3 py-1.5 bg-stone-100 text-anthracite-700 text-sm rounded-lg">
+                    <span key={color} className="px-3 py-1.5 bg-stone-100 text-charcoal-700 text-sm rounded-lg">
                       {color}
                     </span>
                   ))}
@@ -133,13 +133,13 @@ export function ProductDetailPage() {
               </div>
 
               {/* Specs */}
-              <div className="mb-6 p-4 bg-anthracite-50 rounded-xl">
-                <h3 className="text-sm font-semibold text-anthracite-900 mb-3">Specificatii tehnice</h3>
+              <div className="mb-6 p-4 bg-charcoal-50 rounded-xl">
+                <h3 className="text-sm font-semibold text-charcoal-900 mb-3">Specificatii tehnice</h3>
                 <div className="grid grid-cols-2 gap-3">
                   {product.specs.map((spec) => (
                     <div key={spec.label}>
-                      <p className="text-xs text-anthracite-500">{spec.label}</p>
-                      <p className="text-sm font-medium text-anthracite-900">{spec.value}</p>
+                      <p className="text-xs text-charcoal-500">{spec.label}</p>
+                      <p className="text-sm font-medium text-charcoal-900">{spec.value}</p>
                     </div>
                   ))}
                 </div>
@@ -147,10 +147,10 @@ export function ProductDetailPage() {
 
               {/* Usage */}
               <div className="mb-8">
-                <h3 className="text-sm font-semibold text-anthracite-900 mb-2">Utilizare recomandata</h3>
+                <h3 className="text-sm font-semibold text-charcoal-900 mb-2">Utilizare recomandata</h3>
                 <div className="flex flex-wrap gap-2">
                   {product.usage.map((u) => (
-                    <span key={u} className="px-3 py-1.5 bg-accent-50 text-accent-700 text-sm rounded-lg">
+                    <span key={u} className="px-3 py-1.5 bg-green-accent-50 text-green-accent-700 text-sm rounded-lg">
                       {u}
                     </span>
                   ))}
@@ -177,9 +177,9 @@ export function ProductDetailPage() {
 
       {/* Related Products */}
       {relatedProducts.length > 0 && (
-        <section className="py-12 md:py-16 bg-anthracite-50">
+        <section className="py-12 md:py-16 bg-charcoal-50">
           <div className="container-premium">
-            <h2 className="heading-h2 text-anthracite-900 mb-8">Produse similare</h2>
+            <h2 className="heading-h2 text-charcoal-900 mb-8">Produse similare</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {relatedProducts.map((p) => (
                 <Link key={p.id} to={`/produse/pavaje-${p.category}/${p.slug}`} className="group block">
@@ -191,7 +191,7 @@ export function ProductDetailPage() {
                       loading="lazy"
                     />
                   </div>
-                  <h3 className="font-semibold text-anthracite-900 group-hover:text-primary-600 transition-colors">
+                  <h3 className="font-semibold text-charcoal-900 group-hover:text-brand-600 transition-colors">
                     {p.name}
                   </h3>
                 </Link>

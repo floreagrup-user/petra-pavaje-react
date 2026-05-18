@@ -27,16 +27,16 @@ export function FeaturedProductsSection() {
           className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 md:mb-16"
         >
           <div>
-            <p className="text-primary-600 text-sm font-medium tracking-widest uppercase mb-3">
+            <p className="text-brand-600 text-sm font-medium tracking-widest uppercase mb-3">
               Produse Preferate
             </p>
-            <h2 className="heading-h1 text-anthracite-900">
-              Alegerea clienților noștri
+            <h2 className="heading-h1 text-charcoal-900">
+              Alegerea clientilor nostri
             </h2>
           </div>
           <Link
             to="/produse/pavaje-premium"
-            className="mt-4 md:mt-0 inline-flex items-center text-primary-600 font-medium hover:gap-3 gap-2 transition-all"
+            className="mt-4 md:mt-0 inline-flex items-center text-brand-600 font-medium hover:gap-3 gap-2 transition-all"
           >
             Vezi toate produsele
             <ArrowRight className="w-4 h-4" />
@@ -63,19 +63,19 @@ export function FeaturedProductsSection() {
                     loading="lazy"
                   />
                   {product.featured && (
-                    <div className="absolute top-3 left-3 flex items-center gap-1 px-2 py-1 bg-primary-600 text-white text-xs font-medium rounded-md">
+                    <div className="absolute top-3 left-3 flex items-center gap-1 px-2 py-1 bg-brand-600 text-white text-xs font-medium rounded-md">
                       <Star className="w-3 h-3" />
                       Premium
                     </div>
                   )}
                 </div>
-                <h3 className="text-lg font-semibold text-anthracite-900 group-hover:text-primary-600 transition-colors mb-1">
+                <h3 className="text-lg font-semibold text-charcoal-900 group-hover:text-brand-600 transition-colors mb-1">
                   {product.name}
                 </h3>
-                <p className="text-sm text-anthracite-500 mb-2">
+                <p className="text-sm text-charcoal-500 mb-2">
                   {product.category === 'premium' ? 'Pavaj Premium' : 'Pavaj Standard'}
                 </p>
-                <div className="flex items-center text-primary-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="flex items-center text-brand-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
                   Vezi detalii
                   <ArrowRight className="w-4 h-4 ml-1" />
                 </div>

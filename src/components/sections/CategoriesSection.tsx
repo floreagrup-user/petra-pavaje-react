@@ -17,7 +17,7 @@ export function CategoriesSection() {
   const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
 
   return (
-    <section ref={ref} className="section-padding bg-warm-50">
+    <section ref={ref} className="section-padding bg-warm-gray-50">
       <div className="container-premium">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -25,13 +25,13 @@ export function CategoriesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 md:mb-16"
         >
-          <p className="text-primary-600 text-sm font-medium tracking-widest uppercase mb-3">
+          <p className="text-brand-600 text-sm font-medium tracking-widest uppercase mb-3">
             Gama de Produse
           </p>
-          <h2 className="heading-h1 text-anthracite-900 mb-4">
-            Descoperă universul Petra Pavaje
+          <h2 className="heading-h1 text-charcoal-900 mb-4">
+            Descopera universul Petra Pavaje
           </h2>
-          <p className="text-body-lg text-anthracite-500 max-w-2xl mx-auto">
+          <p className="text-body-lg text-charcoal-500 max-w-2xl mx-auto">
             De la pavaje premium la elemente de arhitectura, oferim solutii complete pentru orice proiect de amenajare outdoor.
           </p>
         </motion.div>
@@ -66,10 +66,10 @@ export function CategoriesSection() {
                   </div>
                 </div>
                 <div className="p-4 md:p-6">
-                  <p className="text-sm text-anthracite-500 mb-4 line-clamp-2">
+                  <p className="text-sm text-charcoal-500 mb-4 line-clamp-2">
                     {category.description}
                   </p>
-                  <div className="flex items-center text-primary-600 font-medium text-sm group-hover:gap-3 gap-2 transition-all">
+                  <div className="flex items-center text-brand-600 font-medium text-sm group-hover:gap-3 gap-2 transition-all">
                     Vezi produse
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>

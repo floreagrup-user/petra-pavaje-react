@@ -75,11 +75,11 @@ export function HeroSection() {
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className="max-w-3xl"
           >
-            <motion.p
+              <motion.p
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="text-primary-400 text-sm md:text-base font-medium tracking-widest uppercase mb-4"
+              className="text-brand-400 text-sm md:text-base font-medium tracking-widest uppercase mb-4"
             >
               {slide.subtitle}
             </motion.p>
@@ -131,7 +131,7 @@ export function HeroSection() {
                 onClick={() => setCurrentSlide(index)}
                 className={`h-1 rounded-full transition-all duration-500 ${
                   index === currentSlide
-                    ? 'w-12 bg-primary-500'
+                    ? 'w-12 bg-brand-500'
                     : 'w-6 bg-white/30 hover:bg-white/50'
                 }`}
                 aria-label={`Slide ${index + 1}`}

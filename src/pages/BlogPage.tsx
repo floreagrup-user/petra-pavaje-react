@@ -92,12 +92,12 @@ export function BlogPage() {
   return (
     <div className="pt-20 md:pt-24">
       {/* Breadcrumbs */}
-      <div className="bg-anthracite-50 border-b border-anthracite-100">
+      <div className="bg-charcoal-50 border-b border-charcoal-100">
         <div className="container-premium py-4">
           <nav className="flex items-center gap-2 text-sm">
-            <Link to="/" className="text-anthracite-500 hover:text-anthracite-700 transition-colors">Acasa</Link>
-            <span className="text-anthracite-300">/</span>
-            <span className="text-anthracite-900 font-medium">Blog</span>
+            <Link to="/" className="text-charcoal-500 hover:text-charcoal-700 transition-colors">Acasa</Link>
+            <span className="text-charcoal-300">/</span>
+            <span className="text-charcoal-900 font-medium">Blog</span>
           </nav>
         </div>
       </div>
@@ -110,8 +110,8 @@ export function BlogPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="heading-h1 text-anthracite-900 mb-4">Blog Petra Pavaje</h1>
-            <p className="text-body-lg text-anthracite-500 max-w-2xl">
+            <h1 className="heading-h1 text-charcoal-900 mb-4">Blog Petra Pavaje</h1>
+            <p className="text-body-lg text-charcoal-500 max-w-2xl">
               Articole, ghiduri si inspiratie pentru amenajarile tale exterioare.
             </p>
           </motion.div>
@@ -119,13 +119,13 @@ export function BlogPage() {
       </section>
 
       {/* Categories Filter */}
-      <section className="py-6 bg-anthracite-50 border-b border-anthracite-100">
+      <section className="py-6 bg-charcoal-50 border-b border-charcoal-100">
         <div className="container-premium">
           <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
               <button
                 key={cat}
-                className="px-4 py-2 text-sm rounded-full bg-white text-anthracite-700 hover:bg-primary-600 hover:text-white transition-colors"
+                className="px-4 py-2 text-sm rounded-full bg-white text-charcoal-700 hover:bg-brand-600 hover:text-white transition-colors"
               >
                 {cat}
               </button>
@@ -155,13 +155,13 @@ export function BlogPage() {
                       loading="lazy"
                     />
                     <div className="absolute top-3 left-3">
-                      <span className="px-3 py-1 bg-white/90 text-anthracite-900 text-xs font-medium rounded-full">
+                      <span className="px-3 py-1 bg-white/90 text-charcoal-900 text-xs font-medium rounded-full">
                         {post.category}
                       </span>
                     </div>
                   </div>
                   <div className="p-5">
-                    <div className="flex items-center gap-4 text-xs text-anthracite-400 mb-3">
+                    <div className="flex items-center gap-4 text-xs text-charcoal-400 mb-3">
                       <span className="flex items-center gap-1">
                         <Calendar className="w-3 h-3" />
                         {new Date(post.date).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long', year: 'numeric' })}
@@ -171,13 +171,13 @@ export function BlogPage() {
                         {post.readTime} min
                       </span>
                     </div>
-                    <h2 className="text-lg font-semibold text-anthracite-900 mb-2 group-hover:text-primary-600 transition-colors line-clamp-2">
+                    <h2 className="text-lg font-semibold text-charcoal-900 mb-2 group-hover:text-brand-600 transition-colors line-clamp-2">
                       {post.title}
                     </h2>
-                    <p className="text-sm text-anthracite-500 line-clamp-3 mb-4">
+                    <p className="text-sm text-charcoal-500 line-clamp-3 mb-4">
                       {post.excerpt}
                     </p>
-                    <div className="flex items-center text-primary-600 text-sm font-medium">
+                    <div className="flex items-center text-brand-600 text-sm font-medium">
                       Citeste articolul
                       <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                     </div>

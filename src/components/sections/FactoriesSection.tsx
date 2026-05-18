@@ -24,13 +24,13 @@ export function FactoriesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 md:mb-16"
         >
-          <p className="text-primary-400 text-sm font-medium tracking-widest uppercase mb-3">
-            Rețea Națională
+          <p className="text-brand-400 text-sm font-medium tracking-widest uppercase mb-3">
+            Retea Nationala
           </p>
           <h2 className="heading-h1 mb-4">
             Fabricile Noastre
           </h2>
-          <p className="text-body-lg text-warm-300 max-w-2xl mx-auto">
+          <p className="text-body-lg text-warm-gray-300 max-w-2xl mx-auto">
             4 centre de producție strategic poziționate pentru a fi mereu aproape de tine
           </p>
         </motion.div>
@@ -44,8 +44,8 @@ export function FactoriesSection() {
                 onClick={() => setActiveFactory(index)}
                 className={`w-full text-left p-6 rounded-xl transition-all duration-300 ${
                   activeFactory === index
-                    ? 'bg-anthracite-800 shadow-lg'
-                    : 'bg-anthracite-900 hover:bg-anthracite-800/50'
+                    ? 'bg-charcoal-800 shadow-lg'
+                    : 'bg-charcoal-900 hover:bg-charcoal-800/50'
                 }`}
                 initial={{ opacity: 0, x: -20 }}
                 animate={isIntersecting ? { opacity: 1, x: 0 } : {}}
@@ -56,8 +56,8 @@ export function FactoriesSection() {
                     <span
                       className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
                         activeFactory === index
-                          ? 'bg-primary-600 text-white'
-                          : 'bg-anthracite-700 text-warm-300'
+                          ? 'bg-brand-600 text-white'
+                          : 'bg-charcoal-700 text-warm-gray-300'
                       }`}
                     >
                       {index + 1}
@@ -66,19 +66,19 @@ export function FactoriesSection() {
                   </div>
                 </div>
                 <div className="space-y-2 pl-11">
-                  <div className="flex items-start gap-2 text-sm text-warm-300">
-                    <MapPin className="w-4 h-4 text-primary-400 mt-0.5 shrink-0" />
+                  <div className="flex items-start gap-2 text-sm text-warm-gray-300">
+                    <MapPin className="w-4 h-4 text-brand-400 mt-0.5 shrink-0" />
                     <span>{factory.address}</span>
                   </div>
                   <div className="flex items-center gap-4">
                     <a
                       href={`tel:${factory.phone}`}
-                      className="flex items-center gap-2 text-sm text-primary-400 hover:text-primary-300 transition-colors"
+                      className="flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 transition-colors"
                     >
                       <Phone className="w-4 h-4" />
                       {factory.phone}
                     </a>
-                    <span className="flex items-center gap-2 text-sm text-warm-400">
+                    <span className="flex items-center gap-2 text-sm text-warm-gray-400">
                       <Clock className="w-4 h-4" />
                       L-V: 08:00-17:00
                     </span>
@@ -119,7 +119,7 @@ export function FactoriesSection() {
                 href={`https://www.google.com/maps/dir/?api=1&destination=${factories[activeFactory].lat},${factories[activeFactory].lng}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-brand-600 text-white rounded-md hover:bg-brand-700 transition-colors"
               >
                 <Navigation className="w-4 h-4" />
                 Navigare GPS

@@ -41,12 +41,12 @@ export function CalculatorPage() {
   return (
     <div className="pt-20 md:pt-24">
       {/* Breadcrumbs */}
-      <div className="bg-anthracite-50 border-b border-anthracite-100">
+      <div className="bg-charcoal-50 border-b border-charcoal-100">
         <div className="container-premium py-4">
           <nav className="flex items-center gap-2 text-sm">
-            <a href="/" className="text-anthracite-500 hover:text-anthracite-700 transition-colors">Acasa</a>
-            <span className="text-anthracite-300">/</span>
-            <span className="text-anthracite-900 font-medium">Calculator Pavaj</span>
+            <a href="/" className="text-charcoal-500 hover:text-charcoal-700 transition-colors">Acasa</a>
+            <span className="text-charcoal-300">/</span>
+            <span className="text-charcoal-900 font-medium">Calculator Pavaj</span>
           </nav>
         </div>
       </div>
@@ -59,8 +59,8 @@ export function CalculatorPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="heading-h1 text-anthracite-900 mb-4">Calculator Pavaj</h1>
-            <p className="text-body-lg text-anthracite-500 max-w-2xl">
+            <h1 className="heading-h1 text-charcoal-900 mb-4">Calculator Pavaj</h1>
+            <p className="text-body-lg text-charcoal-500 max-w-2xl">
               Calculeaza rapid cantitatea si costul estimat pentru proiectul tau.
             </p>
           </motion.div>
@@ -68,7 +68,7 @@ export function CalculatorPage() {
       </section>
 
       {/* Calculator */}
-      <section ref={ref} className="py-12 md:py-16 bg-anthracite-50">
+      <section ref={ref} className="py-12 md:py-16 bg-charcoal-50">
         <div className="container-premium">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Form */}
@@ -78,12 +78,12 @@ export function CalculatorPage() {
               transition={{ duration: 0.5 }}
               className="bg-white rounded-xl shadow-md p-6 md:p-8"
             >
-              <h2 className="heading-h2 text-anthracite-900 mb-6">Dimensiuni suprafata</h2>
+              <h2 className="heading-h2 text-charcoal-900 mb-6">Dimensiuni suprafata</h2>
 
               <div className="space-y-6">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="length" className="block text-sm font-medium text-anthracite-700 mb-1">
+                    <label htmlFor="length" className="block text-sm font-medium text-charcoal-700 mb-1">
                       Lungime (m)
                     </label>
                     <input
@@ -91,14 +91,14 @@ export function CalculatorPage() {
                       id="length"
                       value={length}
                       onChange={(e) => setLength(e.target.value)}
-                      className="w-full px-4 py-3 border border-anthracite-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      className="w-full px-4 py-3 border border-charcoal-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
                       placeholder="10"
                       min="0"
                       step="0.1"
                     />
                   </div>
                   <div>
-                    <label htmlFor="width" className="block text-sm font-medium text-anthracite-700 mb-1">
+                    <label htmlFor="width" className="block text-sm font-medium text-charcoal-700 mb-1">
                       Latime (m)
                     </label>
                     <input
@@ -106,7 +106,7 @@ export function CalculatorPage() {
                       id="width"
                       value={width}
                       onChange={(e) => setWidth(e.target.value)}
-                      className="w-full px-4 py-3 border border-anthracite-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      className="w-full px-4 py-3 border border-charcoal-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
                       placeholder="5"
                       min="0"
                       step="0.1"
@@ -115,14 +115,14 @@ export function CalculatorPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="pavaj" className="block text-sm font-medium text-anthracite-700 mb-1">
+                  <label htmlFor="pavaj" className="block text-sm font-medium text-charcoal-700 mb-1">
                     Tip pavaj
                   </label>
                   <select
                     id="pavaj"
                     value={selectedPavaj}
                     onChange={(e) => setSelectedPavaj(e.target.value)}
-                    className="w-full px-4 py-3 border border-anthracite-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    className="w-full px-4 py-3 border border-charcoal-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
                   >
                     {pavajTypes.map(p => (
                       <option key={p.id} value={p.id}>{p.name} - {p.pricePerSqm} RON/mp</option>
@@ -130,22 +130,22 @@ export function CalculatorPage() {
                   </select>
                 </div>
 
-                <div className="flex items-center gap-3 p-4 bg-anthracite-50 rounded-lg">
+                <div className="flex items-center gap-3 p-4 bg-charcoal-50 rounded-lg">
                   <input
                     type="checkbox"
                     id="border"
                     checked={includeBorder}
                     onChange={(e) => setIncludeBorder(e.target.checked)}
-                    className="w-4 h-4 text-primary-600 border-anthracite-300 rounded focus:ring-primary-500"
+                    className="w-4 h-4 text-brand-600 border-charcoal-300 rounded focus:ring-brand-500"
                   />
-                  <label htmlFor="border" className="text-sm text-anthracite-700">
+                  <label htmlFor="border" className="text-sm text-charcoal-700">
                     Adauga bordura
                   </label>
                 </div>
 
                 {includeBorder && (
                   <div>
-                    <label htmlFor="borderLength" className="block text-sm font-medium text-anthracite-700 mb-1">
+                    <label htmlFor="borderLength" className="block text-sm font-medium text-charcoal-700 mb-1">
                       Lungime bordura (ml)
                     </label>
                     <input
@@ -153,7 +153,7 @@ export function CalculatorPage() {
                       id="borderLength"
                       value={borderLength}
                       onChange={(e) => setBorderLength(e.target.value)}
-                      className="w-full px-4 py-3 border border-anthracite-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      className="w-full px-4 py-3 border border-charcoal-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
                       placeholder="30"
                       min="0"
                       step="0.1"
@@ -168,45 +168,45 @@ export function CalculatorPage() {
               initial={{ opacity: 0, x: 20 }}
               animate={isIntersecting ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-anthracite-900 text-white rounded-xl shadow-md p-6 md:p-8"
+              className="bg-charcoal-900 text-white rounded-xl shadow-md p-6 md:p-8"
             >
               <div className="flex items-center gap-3 mb-6">
-                <Calculator className="w-6 h-6 text-primary-400" />
+                <Calculator className="w-6 h-6 text-brand-400" />
                 <h2 className="heading-h2">Rezultat estimativ</h2>
               </div>
 
               <div className="space-y-6">
                 <div className="grid grid-cols-2 gap-6">
                   <div>
-                    <p className="text-warm-300 text-sm mb-1">Suprafata</p>
+                    <p className="text-warm-gray-300 text-sm mb-1">Suprafata</p>
                     <p className="text-3xl font-bold">{area.toFixed(2)} mp</p>
                   </div>
                   <div>
-                    <p className="text-warm-300 text-sm mb-1">Bucati necesare</p>
+                    <p className="text-warm-gray-300 text-sm mb-1">Bucati necesare</p>
                     <p className="text-3xl font-bold">{totalPieces.toLocaleString('ro-RO')}</p>
                   </div>
                 </div>
 
-                <div className="border-t border-anthracite-700 pt-6 space-y-4">
+                <div className="border-t border-charcoal-700 pt-6 space-y-4">
                   <div className="flex justify-between">
-                    <span className="text-warm-300">Pavaj ({pavaj?.name})</span>
+                    <span className="text-warm-gray-300">Pavaj ({pavaj?.name})</span>
                     <span className="font-semibold">{totalPrice.toFixed(2)} RON</span>
                   </div>
                   {includeBorder && (
                     <div className="flex justify-between">
-                      <span className="text-warm-300">Bordura ({borderLength} ml)</span>
+                      <span className="text-warm-gray-300">Bordura ({borderLength} ml)</span>
                       <span className="font-semibold">{borderPrice.toFixed(2)} RON</span>
                     </div>
                   )}
-                  <div className="flex justify-between text-lg font-bold border-t border-anthracite-700 pt-4">
+                  <div className="flex justify-between text-lg font-bold border-t border-charcoal-700 pt-4">
                     <span>Total estimativ</span>
-                    <span className="text-primary-400">{grandTotal.toFixed(2)} RON</span>
+                    <span className="text-brand-400">{grandTotal.toFixed(2)} RON</span>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-2 p-4 bg-anthracite-800 rounded-lg">
-                  <Info className="w-5 h-5 text-primary-400 shrink-0 mt-0.5" />
-                  <p className="text-sm text-warm-300">
+                <div className="flex items-start gap-2 p-4 bg-charcoal-800 rounded-lg">
+                  <Info className="w-5 h-5 text-brand-400 shrink-0 mt-0.5" />
+                  <p className="text-sm text-warm-gray-300">
                     Preturile sunt estimative si nu includ TVA, transport sau manopera.
                     Pentru o oferta personalizata, contacteaza reprezentantul din zona ta.
                   </p>
@@ -214,7 +214,7 @@ export function CalculatorPage() {
 
                 <a
                   href="/contact"
-                  className="btn-primary w-full justify-center bg-primary-600 hover:bg-primary-700 text-white"
+                  className="btn-primary w-full justify-center bg-brand-600 hover:bg-primary-700 text-white"
                 >
                   Solicita oferta personalizata
                   <ArrowRight className="w-4 h-4 ml-2" />
