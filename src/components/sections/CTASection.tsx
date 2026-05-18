@@ -10,7 +10,7 @@ export function CTASection() {
     <section ref={ref} className="section-padding bg-brand-600 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-700 via-brand-600 to-brand-800" />
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-800 via-brand-600 to-brand-900" />
         <div className="absolute inset-0 opacity-10 bg-noise" />
       </div>
 

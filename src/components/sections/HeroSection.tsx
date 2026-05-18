@@ -79,7 +79,7 @@ export function HeroSection() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="text-brand-400 text-sm md:text-base font-medium tracking-widest uppercase mb-4"
+              className="text-brand-300 text-sm md:text-base font-medium tracking-widest uppercase mb-4"
             >
               {slide.subtitle}
             </motion.p>

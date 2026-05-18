@@ -67,13 +67,13 @@ export function FactoriesSection() {
                 </div>
                 <div className="space-y-2 pl-11">
                   <div className="flex items-start gap-2 text-sm text-warm-gray-300">
-                    <MapPin className="w-4 h-4 text-brand-400 mt-0.5 shrink-0" />
+                    <MapPin className="w-4 h-4 text-brand-500 mt-0.5 shrink-0" />
                     <span>{factory.address}</span>
                   </div>
                   <div className="flex items-center gap-4">
                     <a
                       href={`tel:${factory.phone}`}
-                      className="flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 transition-colors"
+                      className="flex items-center gap-2 text-sm text-brand-500 hover:text-brand-600 transition-colors"
                     >
                       <Phone className="w-4 h-4" />
                       {factory.phone}
