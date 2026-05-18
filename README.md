@@ -67,7 +67,7 @@ petra-pavaje-react/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/petra-pavaje-react.git
+git clone https://github.com/floreagrup-user/petra-pavaje-react.git
 cd petra-pavaje-react
 
 # Install dependencies
