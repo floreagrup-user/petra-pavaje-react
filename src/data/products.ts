@@ -413,9 +413,24 @@ export const products: Product[] = [
     shortDescription: 'Eleganță Clasică și Durabilitate',
     description: 'Cu un aspect clasic și rafinat, pavajul Cubic evocă farmecul pietrei cubice folosite de romani pentru pavarea drumurilor. Perfect pentru amenajări rustice, acesta adaugă un plus de eleganță și durabilitate, fiind potrivit atât pentru proiecte rezidențiale, cât și pentru amenajarea spațiilor publice.',
     image: 'https://petrapavaje.ro/wp-content/uploads/Cubic-MIX-7.25-gri-antic-web.avif',
-    gallery: [],
-    heroImages: [
+    gallery: [
+      'https://petrapavaje.ro/wp-content/uploads/1.-Cubic-MIX-7.25-gri-antic.avif',
+      'https://petrapavaje.ro/wp-content/uploads/2.-Cubic-MIX-7.25-gri-antic.avif',
+      'https://petrapavaje.ro/wp-content/uploads/3.-Cubic-MIX-7.25-gri-antic.avif',
+      'https://petrapavaje.ro/wp-content/uploads/8.-Cubic-MIX-7.25-gri-antic.avif',
+      'https://petrapavaje.ro/wp-content/uploads/9.-Cubic-MIX-7.25-gri-antic.avif',
+      'https://petrapavaje.ro/wp-content/uploads/13.-Cubic-MIX-7.25-gri-antic.avif',
+      'https://petrapavaje.ro/wp-content/uploads/16.-Cubic-MIX-7.25-gri-antic.avif',
+      'https://petrapavaje.ro/wp-content/uploads/19.-Cubic-MIX-7.25-gri-antic.avif',
+      'https://petrapavaje.ro/wp-content/uploads/20.-Cubic-MIX-7.25-gri-bazaltic-si-gri-antic.avif',
+      'https://petrapavaje.ro/wp-content/uploads/21.-Cubic-MIX-7.25-gri-bazaltic-si-gri-antic.avif',
       'https://petrapavaje.ro/wp-content/uploads/Cubic-MIX-7.25-gri-antic-web.avif',
+      'https://petrapavaje.ro/wp-content/uploads/Antic-MIX-6.72-gri-antic-1-Medium.avif',
+    ],
+    heroImages: [
+      'https://petrapavaje.ro/wp-content/uploads/1.-Cubic-MIX-7.25-gri-antic.avif',
+      'https://petrapavaje.ro/wp-content/uploads/Cubic-MIX-7.25-gri-antic-web.avif',
+      'https://petrapavaje.ro/wp-content/uploads/13.-Cubic-MIX-7.25-gri-antic.avif',
     ],
     heroFeatures: ['Model MIX 7.25', 'Multiple Culori', 'Garanție 5 ani'],
     specs: [
@@ -426,13 +441,20 @@ export const products: Product[] = [
     ],
     mixModes: ['MIX 7.25'],
     colors: [
-      { name: 'Gri Antic', hex: '#9e9e9e' },
-      { name: 'Gri Bazaltic', hex: '#525252' },
-      { name: 'Gri Grafit', hex: '#363636' },
+      { name: 'Gri Antic', hex: '#9e9e9e', image: 'https://petrapavaje.ro/wp-content/uploads/culoare-gri-antic-web-3.jpg' },
+      { name: 'Gri Bazaltic', hex: '#525252', image: 'https://petrapavaje.ro/wp-content/uploads/culoare-gri-bazaltic-web-1.avif' },
+      { name: 'Gri Grafit', hex: '#363636', image: 'https://petrapavaje.ro/wp-content/uploads/culoare-gri-grafit-1.avif' },
     ],
     dimensions: 'MIX 7.25',
     dimensionsList: [
-      { label: 'MIX 7.25', size: '26/22×16, 20/16×16', thickness: '7 cm', piecesPerMp: 0.83, piecesPerPallet: 250, kgPerPallet: 1305, mpPerPallet: 8.32 },
+      { label: 'MIX 7.25 (26/22×16 - 20buc, 20/16×16 - 5buc)', size: '26/22×16, 20/16×16', thickness: '7 cm', piecesPerMp: 0.83, piecesPerPallet: 250, kgPerPallet: 1305, mpPerPallet: 8.32, mixComposition: [
+        { dimensions: '26/22×16 cm', pieces: 20 },
+        { dimensions: '20/16×16 cm', pieces: 5 },
+      ] },
+    ],
+    dimensionImages: [
+      'https://petrapavaje.ro/wp-content/uploads/Cubic-MIX-4-cuburi.avif',
+      'https://petrapavaje.ro/wp-content/uploads/Cubic-MIX-6-cuburi.avif',
     ],
     weight: '1.305 Kg/palet',
     usage: ['Curți', 'Piețe', 'Zone decorative', 'Spații publice'],

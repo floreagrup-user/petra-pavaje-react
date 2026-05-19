@@ -29,6 +29,20 @@ const productImageMap: Record<string, string> = {
 }
 
 const productGalleryMap: Record<string, string[]> = {
+  cubic: [
+    'https://petrapavaje.ro/wp-content/uploads/1.-Cubic-MIX-7.25-gri-antic.avif',
+    'https://petrapavaje.ro/wp-content/uploads/2.-Cubic-MIX-7.25-gri-antic.avif',
+    'https://petrapavaje.ro/wp-content/uploads/3.-Cubic-MIX-7.25-gri-antic.avif',
+    'https://petrapavaje.ro/wp-content/uploads/8.-Cubic-MIX-7.25-gri-antic.avif',
+    'https://petrapavaje.ro/wp-content/uploads/9.-Cubic-MIX-7.25-gri-antic.avif',
+    'https://petrapavaje.ro/wp-content/uploads/13.-Cubic-MIX-7.25-gri-antic.avif',
+    'https://petrapavaje.ro/wp-content/uploads/16.-Cubic-MIX-7.25-gri-antic.avif',
+    'https://petrapavaje.ro/wp-content/uploads/19.-Cubic-MIX-7.25-gri-antic.avif',
+    'https://petrapavaje.ro/wp-content/uploads/20.-Cubic-MIX-7.25-gri-bazaltic-si-gri-antic.avif',
+    'https://petrapavaje.ro/wp-content/uploads/21.-Cubic-MIX-7.25-gri-bazaltic-si-gri-antic.avif',
+    'https://petrapavaje.ro/wp-content/uploads/Cubic-MIX-7.25-gri-antic-web.avif',
+    'https://petrapavaje.ro/wp-content/uploads/Antic-MIX-6.72-gri-antic-1-Medium.avif',
+  ],
   gemina: [
     'https://petrapavaje.ro/wp-content/uploads/12.-Gemina-MIX-6.72-alb-brun-Large.avif',
     'https://petrapavaje.ro/wp-content/uploads/11.-Gemina-MIX-6.72-caramel-brun-Large.avif',
