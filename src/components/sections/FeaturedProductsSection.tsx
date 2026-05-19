@@ -5,14 +5,24 @@ import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { getFeaturedProducts } from '@/data/products'
 
 const productImages: Record<string, string> = {
-  gemina: 'https://petrapavaje.ro/wp-content/uploads/web-Gemina-maro-si-galben-Medium.avif',
-  antic: 'https://petrapavaje.ro/wp-content/uploads/Antic-MIX-6.72-gri-antic-1-Medium.avif',
-  'grand-urban': 'https://petrapavaje.ro/wp-content/uploads/Grand-urban-100-x-50-cm-gri-bazaltic-1-Medium.avif',
-  mistic: 'https://petrapavaje.ro/wp-content/uploads/Mistic-MIX-6.30-gri-bazaltic-Medium.avif',
-  primo: 'https://petrapavaje.ro/wp-content/uploads/Primo-20x10x6-rosu-Medium.avif',
-  relief: 'https://petrapavaje.ro/wp-content/uploads/web-prima-pagina-Medium.avif',
-  roca: 'https://petrapavaje.ro/wp-content/uploads/web-prima-pagina-1-Medium.avif',
-  mediterana: 'https://petrapavaje.ro/wp-content/uploads/mediterana-homepage.avif',
+  roca: 'https://petrapavaje.ro/wp-content/uploads/Roca.avif',
+  antic: 'https://petrapavaje.ro/wp-content/uploads/Antic.avif',
+  primo: 'https://petrapavaje.ro/wp-content/uploads/primo-rosu-2-web.avif',
+  'grand-urban': 'https://petrapavaje.ro/wp-content/uploads/Grand-Urban.avif',
+  gemina: 'https://petrapavaje.ro/wp-content/uploads/Gemina.avif',
+  cubic: 'https://petrapavaje.ro/wp-content/uploads/Cubic-MIX-7.25-gri-antic-web.avif',
+  mistic: 'https://petrapavaje.ro/wp-content/uploads/Mistic-1.avif',
+  mediterana: 'https://petrapavaje.ro/wp-content/uploads/Mediterana.avif',
+  viena: 'https://petrapavaje.ro/wp-content/uploads/Viena.avif',
+  maya: 'https://petrapavaje.ro/wp-content/uploads/Maya.avif',
+  roman: 'https://petrapavaje.ro/wp-content/uploads/Roman-1.avif',
+  sahara: 'https://petrapavaje.ro/wp-content/uploads/Sahara.avif',
+  alpin: 'https://petrapavaje.ro/wp-content/uploads/Alpin.avif',
+  pastel: 'https://petrapavaje.ro/wp-content/uploads/Pastel.avif',
+  timber: 'https://petrapavaje.ro/wp-content/uploads/Timber.avif',
+  terranova: 'https://petrapavaje.ro/wp-content/uploads/Terranova.avif',
+  dacic: 'https://petrapavaje.ro/wp-content/uploads/Dacic.avif',
+  relief: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
 }
 
 export function FeaturedProductsSection() {
