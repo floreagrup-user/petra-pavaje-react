@@ -24,6 +24,8 @@ const productImageMap: Record<string, string> = {
   dacic: 'https://petrapavaje.ro/wp-content/uploads/Dacic.avif',
   relief: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
   holland: 'https://petrapavaje.ro/wp-content/uploads/holland-Medium.avif',
+  stretto: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
+  urbis: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
 }
 
 const productGalleryMap: Record<string, string[]> = {

@@ -24,6 +24,7 @@ const productImages: Record<string, string> = {
   terranova: 'https://petrapavaje.ro/wp-content/uploads/Terranova.avif',
   dacic: 'https://petrapavaje.ro/wp-content/uploads/Dacic.avif',
   relief: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
+  urbis: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
   stretto: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
   holland: 'https://petrapavaje.ro/wp-content/uploads/holland-Medium.avif',
   autobloc: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
