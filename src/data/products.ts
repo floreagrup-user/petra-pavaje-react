@@ -766,9 +766,16 @@ export const products: Product[] = [
     shortDescription: 'Calitate și Versatilitate pentru Exterior',
     description: 'Cu toții căutăm acel pavaj care să îndeplinească următoarele condiții: raport bun calitate/preț, forma și culoarea potrivită! Petra Pavaje răspunde acestor nevoi și vă pune la dispoziție pavajul Maya – o soluție rezistentă și versatilă. Există o varietate de dimensiuni pentru acest model, astfel încât putem găsi cea mai bună soluție pentru spații de dimensiuni diverse. Putem amenaja curți, terase, grădini, dar și alei.',
     image: 'https://petrapavaje.ro/wp-content/uploads/Maya.avif',
-    gallery: [],
+    gallery: [
+      'https://petrapavaje.ro/wp-content/uploads/1.-Maya-MIX-6.30-brun-antic-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/2.-Maya-MIX-6.30-brun-antic-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/3.-Maya-MIX-6.30-brun-antic-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/Maya-MIX-6.30-brun-antic.avif',
+    ],
     heroImages: [
-      'https://petrapavaje.ro/wp-content/uploads/Maya.avif',
+      'https://petrapavaje.ro/wp-content/uploads/1.-Maya-MIX-6.30-brun-antic-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/2.-Maya-MIX-6.30-brun-antic-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/3.-Maya-MIX-6.30-brun-antic-Large.avif',
     ],
     heroFeatures: ['4 Variante Mix', '1 Culoare', 'Garanție 5 ani'],
     specs: [
@@ -779,7 +786,7 @@ export const products: Product[] = [
     ],
     mixModes: ['MIX 4.30', 'MIX 6.30', 'MIX 7.9', 'MIX 8.30'],
     colors: [
-      { name: 'Brun Antic', hex: '#5c3a21' },
+      { name: 'Brun Antic', hex: '#5c3a21', image: 'https://petrapavaje.ro/wp-content/uploads/culoare-brun-antic-1.webp' },
     ],
     dimensions: '60×30 cm + 4 Mix',
     dimensionsList: [
@@ -788,6 +795,9 @@ export const products: Product[] = [
       { label: 'MIX 6.30', size: 'Mix', thickness: '6 cm', piecesPerMp: 1.08, piecesPerPallet: 300, kgPerPallet: 1519, mpPerPallet: 10.8 },
       { label: 'MIX 7.9', size: 'Mix', thickness: '7 cm', piecesPerMp: 0.96, piecesPerPallet: 90, kgPerPallet: 1610, mpPerPallet: 9.6 },
       { label: 'MIX 8.30', size: 'Mix', thickness: '8 cm', piecesPerMp: 1.08, piecesPerPallet: 240, kgPerPallet: 1700, mpPerPallet: 8.64 },
+    ],
+    dimensionImages: [
+      'https://petrapavaje.ro/wp-content/uploads/2020/06/Maya-60x30x6.png',
     ],
     weight: '1.443 - 1.700 Kg/palet',
     usage: ['Curți', 'Terase', 'Grădini', 'Alei'],
