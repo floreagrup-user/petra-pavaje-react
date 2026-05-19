@@ -811,9 +811,16 @@ export const products: Product[] = [
     shortDescription: 'Inspirat din România',
     description: 'Pavajul Roman combină eleganța și robustețea pentru a crea amenajări exterioare deosebite. Cu nuanțe calde de galben cărămiziu, roșu canion și cupru antic, acest pavaj aduce un plus de caracter și stil oricărui spațiu exterior. Ideal pentru terase, alei și grădini.',
     image: 'https://petrapavaje.ro/wp-content/uploads/Roman-1.avif',
-    gallery: [],
+    gallery: [
+      'https://petrapavaje.ro/wp-content/uploads/10.-Roman-60-x-30-cm-rosu-canion-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/9.-Roman-60-x-30-cm-rosu-canion-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/1.-Roman-60-x-30-cm-rosu-canion-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/4.-Roman-60-x-30-cm-rosu-canion-Large.avif',
+    ],
     heroImages: [
-      'https://petrapavaje.ro/wp-content/uploads/Roman-1.avif',
+      'https://petrapavaje.ro/wp-content/uploads/10.-Roman-60-x-30-cm-rosu-canion-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/9.-Roman-60-x-30-cm-rosu-canion-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/1.-Roman-60-x-30-cm-rosu-canion-Large.avif',
     ],
     heroFeatures: ['1 Variantă Mix', '3 Culori', 'Garanție 5 ani'],
     specs: [
@@ -824,14 +831,17 @@ export const products: Product[] = [
     ],
     mixModes: ['MIX 7.9'],
     colors: [
-      { name: 'Galben Cărămiziu', hex: '#c4a34a' },
-      { name: 'Roșu Canion', hex: '#8b3a2a' },
-      { name: 'Cupru Antic', hex: '#7a5c3a' },
+      { name: 'Galben Cărămiziu', hex: '#c4a34a', image: 'https://petrapavaje.ro/wp-content/uploads/culoare-galben-caramiziu-2.webp' },
+      { name: 'Roșu Canion', hex: '#8b3a2a', image: 'https://petrapavaje.ro/wp-content/uploads/culoare-rosu-canion-1.webp' },
+      { name: 'Cupru Antic', hex: '#7a5c3a', image: 'https://petrapavaje.ro/wp-content/uploads/culoare-cupru-antic-web-1.webp' },
     ],
     dimensions: '60×30 cm + 1 Mix',
     dimensionsList: [
       { label: '60×30×6 cm', size: '60×30', thickness: '6 cm', piecesPerMp: 5.5, piecesPerPallet: 60, kgPerPallet: 1480, mpPerPallet: 10.8 },
       { label: 'MIX 7.9', size: 'Mix', thickness: '7 cm', piecesPerMp: 0.96, piecesPerPallet: 90, kgPerPallet: 1610, mpPerPallet: 9.6 },
+    ],
+    dimensionImages: [
+      'https://petrapavaje.ro/wp-content/uploads/60x30x6-galben-caramiziu-web.png',
     ],
     weight: '1.480 - 1.610 Kg/palet',
     usage: ['Curți', 'Aleie', 'Terase', 'Grădini'],
