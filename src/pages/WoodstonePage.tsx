@@ -170,8 +170,10 @@ export function WoodstonePage() {
                   alt="Woodstone Lemn Pietrificat - Amenajare Exterioară"
                   className="w-full h-full object-cover"
                   fetchPriority="high"
+                  decoding="async"
                   width="800"
                   height="600"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent" />
               </div>
@@ -181,6 +183,8 @@ export function WoodstonePage() {
                   alt="Detaliu Textură Woodstone"
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"
                   width="144"
                   height="144"
                 />
@@ -229,8 +233,11 @@ export function WoodstonePage() {
                     alt={cat.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"
+                    decoding="async"
+                    fetchPriority="low"
                     width="400"
                     height="500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/90 via-charcoal-950/30 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -264,8 +271,11 @@ export function WoodstonePage() {
                     alt={cat.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"
+                    decoding="async"
+                    fetchPriority="low"
                     width="400"
                     height="500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/90 via-charcoal-950/30 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -345,11 +355,11 @@ export function WoodstonePage() {
           </motion.div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
-            {galleryImages.map((img, i) => (
+            {(galleryVisible ? galleryImages : []).map((img, i) => (
               <motion.button
                 key={i}
                 initial={{ opacity: 0, scale: 0.9 }}
-                animate={galleryVisible ? { opacity: 1, scale: 1 } : {}}
+                animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, delay: i * 0.03 }}
                 onClick={() => setLightboxIndex(i)}
                 className="group relative rounded-xl overflow-hidden bg-charcoal-100 cursor-pointer"
@@ -360,8 +370,11 @@ export function WoodstonePage() {
                   alt={`Amenajare Woodstone ${i + 1}`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"
                   width="200"
                   height="200"
+                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 20vw"
                 />
                 <div className="absolute inset-0 bg-charcoal-950/0 group-hover:bg-charcoal-950/30 transition-colors duration-300" />
               </motion.button>
