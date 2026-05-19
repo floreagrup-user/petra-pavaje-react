@@ -421,23 +421,6 @@ export function ProductDetailPage() {
         </section>
       )}
 
-      <section className="py-16 md:py-20 bg-charcoal-950 text-white">
-        <div className="container-premium text-center">
-          <h2 className="heading-h2 text-white mb-4">Transformă-ți curtea în spațiul visat</h2>
-          <p className="text-charcoal-300 mb-8 max-w-2xl mx-auto">
-            Contactează reprezentantul din zona ta pentru o ofertă personalizată
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="btn-white">
-              Solicită ofertă
-            </Link>
-            <a href="https://petrapavaje.ro/catalog-petra-pavaje/" target="_blank" rel="noopener noreferrer" className="btn-outline-white">
-              Vezi catalogul
-            </a>
-          </div>
-        </div>
-      </section>
-
       {relatedProducts.length > 0 && (
         <section className="py-12 md:py-16 bg-white">
           <div className="container-premium">
