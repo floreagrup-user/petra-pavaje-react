@@ -4,6 +4,28 @@ import { motion } from 'framer-motion'
 import { Download, Phone, ChevronLeft, ChevronRight, Ruler, Weight, BadgeCheck, X, Check } from 'lucide-react'
 import { getProductBySlug, getProductsByCategory } from '@/data/products'
 
+const productImageMap: Record<string, string> = {
+  roca: 'https://petrapavaje.ro/wp-content/uploads/Roca.avif',
+  antic: 'https://petrapavaje.ro/wp-content/uploads/Antic.avif',
+  primo: 'https://petrapavaje.ro/wp-content/uploads/primo-rosu-2-web.avif',
+  'grand-urban': 'https://petrapavaje.ro/wp-content/uploads/Grand-Urban.avif',
+  gemina: 'https://petrapavaje.ro/wp-content/uploads/Gemina.avif',
+  cubic: 'https://petrapavaje.ro/wp-content/uploads/Cubic-MIX-7.25-gri-antic-web.avif',
+  mistic: 'https://petrapavaje.ro/wp-content/uploads/Mistic-1.avif',
+  mediterana: 'https://petrapavaje.ro/wp-content/uploads/Mediterana.avif',
+  viena: 'https://petrapavaje.ro/wp-content/uploads/Viena.avif',
+  maya: 'https://petrapavaje.ro/wp-content/uploads/Maya.avif',
+  roman: 'https://petrapavaje.ro/wp-content/uploads/Roman-1.avif',
+  sahara: 'https://petrapavaje.ro/wp-content/uploads/Sahara.avif',
+  alpin: 'https://petrapavaje.ro/wp-content/uploads/Alpin.avif',
+  pastel: 'https://petrapavaje.ro/wp-content/uploads/Pastel.avif',
+  timber: 'https://petrapavaje.ro/wp-content/uploads/Timber.avif',
+  terranova: 'https://petrapavaje.ro/wp-content/uploads/Terranova.avif',
+  dacic: 'https://petrapavaje.ro/wp-content/uploads/Dacic.avif',
+  relief: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
+  holland: 'https://petrapavaje.ro/wp-content/uploads/holland-Medium.avif',
+}
+
 const productGalleryMap: Record<string, string[]> = {
   gemina: [
     'https://petrapavaje.ro/wp-content/uploads/web-Gemina-maro-si-galben-Medium.avif',
@@ -90,7 +112,7 @@ export function ProductDetailPage() {
             <div>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-stone-100 mb-4 group">
                 <img
-                  src={heroImages[currentImage] || product.image}
+                  src={heroImages[currentImage] || productImageMap[product.slug] || product.image}
                   alt={product.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -427,7 +449,7 @@ export function ProductDetailPage() {
                 >
                   <div className="aspect-[4/3] rounded-xl overflow-hidden bg-stone-100 mb-3">
                     <img
-                      src={p.gallery?.[0] || p.image}
+                      src={p.gallery?.[0] || productImageMap[p.slug] || p.image}
                       alt={p.name}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
