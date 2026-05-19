@@ -17,6 +17,7 @@ export const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { index: true, element: <HomePage /> },
+      { path: 'produse/woodstone', element: <WoodstonePage /> },
       { path: 'produse/:category', element: <ProductCategoryPage /> },
       { path: 'produse/:category/:product', element: <ProductDetailPage /> },
       { path: 'woodstone-lemn-pietrificat', element: <WoodstonePage /> },
