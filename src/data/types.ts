@@ -16,6 +16,10 @@ export interface Product {
   usage: string[]
   pdfUrl?: string
   featured?: boolean
+  heroImages?: string[]
+  heroFeatures?: string[]
+  patternImages?: string[]
+  dimensionImages?: string[]
 }
 
 export interface ProductSpec {
@@ -29,6 +33,11 @@ export interface ProductColor {
   image?: string
 }
 
+export interface MixComposition {
+  dimensions: string
+  pieces: number
+}
+
 export interface ProductDimension {
   label: string
   size: string
@@ -38,6 +47,7 @@ export interface ProductDimension {
   kgPerPallet: number
   mpPerPallet: number
   image?: string
+  mixComposition?: MixComposition[]
 }
 
 export interface Category {
