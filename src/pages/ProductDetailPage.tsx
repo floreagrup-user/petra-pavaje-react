@@ -34,10 +34,7 @@ const productGalleryMap: Record<string, string[]> = {
     'https://petrapavaje.ro/wp-content/uploads/gemina-homepage.avif',
     'https://petrapavaje.ro/wp-content/uploads/web-prima-pagina-1-Medium.avif',
   ],
-  'grand-urban': [
-    'https://petrapavaje.ro/wp-content/uploads/Grand-urban-100-x-50-cm-gri-bazaltic-1-Medium.avif',
-    'https://petrapavaje.ro/wp-content/uploads/web-prima-pagina-1-Medium.avif',
-  ],
+
   mistic: [
     'https://petrapavaje.ro/wp-content/uploads/Mistic-MIX-6.30-gri-bazaltic-Medium.avif',
     'https://petrapavaje.ro/wp-content/uploads/relief-homepage.avif',
