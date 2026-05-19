@@ -74,8 +74,19 @@
     }
     </script>
   </head>
-  <body>
-    <div id="root"></div>
+  <body style="background:#fff;margin:0">
+    <div id="root">
+      <style>
+        .app-splash{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;background:#fff;font-family:system-ui,-apple-system,sans-serif;color:#171717}
+        .app-splash-bar{width:40px;height:3px;background:#e5e5e5;border-radius:2px;overflow:hidden;position:relative}
+        .app-splash-bar::after{content:'';position:absolute;inset:0;width:40%;background:#b70000;border-radius:2px;animation:splash-load 1.2s ease-in-out infinite}
+        @keyframes splash-load{0%{transform:translateX(-100%)}100%{transform:translateX(250%)}}
+      </style>
+      <div class="app-splash">
+        <div style="font-size:1.25rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:1.5rem">PETRA<span style="color:#b70000">PAVAJE</span></div>
+        <div class="app-splash-bar"></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
