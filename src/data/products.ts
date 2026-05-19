@@ -561,9 +561,9 @@ export const products: Product[] = [
       { label: 'MIX 8.30', size: 'Mix', thickness: '8 cm', piecesPerMp: 1.08, piecesPerPallet: 240, kgPerPallet: 1700, mpPerPallet: 8.64 },
     ],
     dimensionImages: [
-      'https://petrapavaje.ro/wp-content/uploads/mistic-30x20x6-web.png',
-      'https://petrapavaje.ro/wp-content/uploads/mistic-40x40x6-web.png',
-      'https://petrapavaje.ro/wp-content/uploads/mistic-60x30x6-web.png',
+      'https://petrapavaje.ro/wp-content/uploads/2020/06/Mistic-gri-bazaltic-30x20x6.png',
+      'https://petrapavaje.ro/wp-content/uploads/2020/06/Mistic-gri-bazaltic-40x40x6.png',
+      'https://petrapavaje.ro/wp-content/uploads/2020/06/Mistic-gri-bazaltic-60x30x6.png',
     ],
     patternImages: [
       'https://petrapavaje.ro/wp-content/uploads/Modele-de-montaj_20x10-01.avif',
