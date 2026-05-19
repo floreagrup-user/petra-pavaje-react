@@ -16,7 +16,7 @@ export function FactoriesSection() {
   }
 
   return (
-    <section ref={ref} className="section-padding bg-charcoal-950 text-white">
+    <section ref={ref} className="section-padding bg-white">
       <div className="container-premium">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -24,13 +24,13 @@ export function FactoriesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 md:mb-16"
         >
-          <p className="text-brand-400 text-sm font-medium tracking-[0.2em] uppercase mb-3">
+          <p className="text-brand-600 text-sm font-medium tracking-[0.2em] uppercase mb-3">
             Rețea Națională
           </p>
-          <h2 className="heading-h1 mb-4">
+          <h2 className="heading-h1 text-charcoal-900 mb-4">
             Fabricile Noastre
           </h2>
-          <p className="text-body-lg text-charcoal-400 max-w-2xl mx-auto">
+          <p className="text-body-lg text-charcoal-600 max-w-2xl mx-auto">
             4 centre de producție strategic poziționate pentru a fi mereu aproape de tine
           </p>
         </motion.div>
@@ -43,8 +43,8 @@ export function FactoriesSection() {
                 onClick={() => setActiveFactory(index)}
                 className={`w-full text-left p-6 rounded-xl transition-all duration-300 ${
                   activeFactory === index
-                    ? 'bg-charcoal-800 shadow-lg ring-1 ring-brand-600/30'
-                    : 'bg-charcoal-900 hover:bg-charcoal-800/50'
+                    ? 'bg-charcoal-100 shadow-lg ring-1 ring-brand-600/30'
+                    : 'bg-charcoal-50 hover:bg-charcoal-100/80'
                 }`}
                 initial={{ opacity: 0, x: -20 }}
                 animate={isIntersecting ? { opacity: 1, x: 0 } : {}}
@@ -56,33 +56,33 @@ export function FactoriesSection() {
                       className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
                         activeFactory === index
                           ? 'bg-brand-600 text-white'
-                          : 'bg-charcoal-700 text-charcoal-400'
+                          : 'bg-charcoal-200 text-charcoal-600'
                       }`}
                     >
                       {index + 1}
                     </span>
-                    <h3 className="text-lg font-semibold">{factory.name}</h3>
+                    <h3 className="text-lg font-semibold text-charcoal-900">{factory.name}</h3>
                   </div>
                 </div>
-                <div className="space-y-2 pl-11">
-                  <div className="flex items-start gap-2 text-sm text-charcoal-400">
-                    <MapPin className="w-4 h-4 text-brand-500 mt-0.5 shrink-0" />
-                    <span>{factory.address}</span>
+                  <div className="space-y-2 pl-11">
+                    <div className="flex items-start gap-2 text-sm text-charcoal-600">
+                      <MapPin className="w-4 h-4 text-brand-500 mt-0.5 shrink-0" />
+                      <span>{factory.address}</span>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <a
+                        href={`tel:${factory.phone}`}
+                        className="flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 transition-colors"
+                      >
+                        <Phone className="w-4 h-4" />
+                        {factory.phone}
+                      </a>
+                      <span className="flex items-center gap-2 text-sm text-charcoal-400">
+                        <Clock className="w-4 h-4" />
+                        L-V: 08:00-17:00
+                      </span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <a
-                      href={`tel:${factory.phone}`}
-                      className="flex items-center gap-2 text-sm text-brand-500 hover:text-brand-400 transition-colors"
-                    >
-                      <Phone className="w-4 h-4" />
-                      {factory.phone}
-                    </a>
-                    <span className="flex items-center gap-2 text-sm text-charcoal-500">
-                      <Clock className="w-4 h-4" />
-                      L-V: 08:00-17:00
-                    </span>
-                  </div>
-                </div>
               </motion.button>
             ))}
           </div>
@@ -107,7 +107,7 @@ export function FactoriesSection() {
                   alt={factories[activeFactory].name}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/80 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
               </motion.div>
             </AnimatePresence>
 
