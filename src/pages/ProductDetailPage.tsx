@@ -5,13 +5,6 @@ import { Download, Phone, ChevronLeft, ChevronRight, Ruler, Weight, BadgeCheck, 
 import { getProductBySlug, getProductsByCategory } from '@/data/products'
 
 const productGalleryMap: Record<string, string[]> = {
-  roca: [
-    'https://petrapavaje.ro/wp-content/uploads/web-prima-pagina-1-Medium.avif',
-    'https://petrapavaje.ro/wp-content/uploads/mediterana-homepage.avif',
-    'https://petrapavaje.ro/wp-content/uploads/relief-homepage.avif',
-    'https://petrapavaje.ro/wp-content/uploads/gemina-homepage.avif',
-    'https://petrapavaje.ro/wp-content/uploads/holland-Medium.avif',
-  ],
   gemina: [
     'https://petrapavaje.ro/wp-content/uploads/web-Gemina-maro-si-galben-Medium.avif',
     'https://petrapavaje.ro/wp-content/uploads/gemina-homepage.avif',

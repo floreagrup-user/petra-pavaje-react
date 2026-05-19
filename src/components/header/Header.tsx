@@ -58,13 +58,12 @@ export function Header() {
       >
         <div className="container-premium">
           <div className="flex items-center justify-between h-16 md:h-20">
-            <Link to="/" className="flex items-center gap-2 group">
-              <div className={cn(
-                'text-xl md:text-2xl font-bold tracking-tight transition-colors',
-                isScrolled || !isHome ? 'text-charcoal-900' : 'text-white'
-              )}>
-                PETRA<span className="text-brand-600">PAVAJE</span>
-              </div>
+            <Link to="/" className="flex items-center gap-2 group shrink-0">
+              <img
+                src={isScrolled || !isHome ? '/images/petra-pavaje-logo-sticky.png' : '/images/petra-pavaje-logo.png'}
+                alt="Petra Pavaje"
+                className="h-8 md:h-10 w-auto transition-all duration-300"
+              />
             </Link>
 
             <nav className="hidden lg:flex items-center gap-1">
