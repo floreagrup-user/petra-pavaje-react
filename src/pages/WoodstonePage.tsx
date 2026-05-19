@@ -164,11 +164,14 @@ export function WoodstonePage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ aspectRatio: '800/600' }}>
                 <img
                   src={heroImage}
                   alt="Woodstone Lemn Pietrificat - Amenajare Exterioară"
-                  className="w-full h-auto"
+                  className="w-full h-full object-cover"
+                  fetchPriority="high"
+                  width="800"
+                  height="600"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent" />
               </div>
@@ -177,6 +180,9 @@ export function WoodstonePage() {
                   src={heroImage2}
                   alt="Detaliu Textură Woodstone"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  width="144"
+                  height="144"
                 />
               </div>
               <div className="absolute top-4 right-4 bg-brand-600 text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">
@@ -215,13 +221,16 @@ export function WoodstonePage() {
               >
                 <Link
                   to={`/woodstone-lemn-pietrificat/${cat.slug}`}
-                  className="group block relative rounded-2xl overflow-hidden aspect-[4/5] bg-charcoal-100"
+                  className="group block relative rounded-2xl overflow-hidden bg-charcoal-100"
+                  style={{ aspectRatio: '4/5' }}
                 >
                   <img
                     src={cat.image}
                     alt={cat.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"
+                    width="400"
+                    height="500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/90 via-charcoal-950/30 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -247,13 +256,16 @@ export function WoodstonePage() {
               >
                 <Link
                   to={`/woodstone-lemn-pietrificat/${cat.slug}`}
-                  className="group block relative rounded-2xl overflow-hidden aspect-[4/5] bg-charcoal-100"
+                  className="group block relative rounded-2xl overflow-hidden bg-charcoal-100"
+                  style={{ aspectRatio: '4/5' }}
                 >
                   <img
                     src={cat.image}
                     alt={cat.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"
+                    width="400"
+                    height="500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/90 via-charcoal-950/30 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -340,13 +352,16 @@ export function WoodstonePage() {
                 animate={galleryVisible ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.3, delay: i * 0.03 }}
                 onClick={() => setLightboxIndex(i)}
-                className="group relative aspect-square rounded-xl overflow-hidden bg-charcoal-100 cursor-pointer"
+                className="group relative rounded-xl overflow-hidden bg-charcoal-100 cursor-pointer"
+                style={{ aspectRatio: '1/1' }}
               >
                 <img
                   src={img}
                   alt={`Amenajare Woodstone ${i + 1}`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
+                  width="200"
+                  height="200"
                 />
                 <div className="absolute inset-0 bg-charcoal-950/0 group-hover:bg-charcoal-950/30 transition-colors duration-300" />
               </motion.button>
