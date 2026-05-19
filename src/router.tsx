@@ -9,6 +9,7 @@ import { BlogDetailPage } from '@/pages/BlogDetailPage'
 import { VirtualTourPage } from '@/pages/VirtualTourPage'
 import { CalculatorPage } from '@/pages/CalculatorPage'
 import { GenericPage } from '@/pages/GenericPage'
+import { WoodstonePage } from '@/pages/WoodstonePage'
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ export const router = createBrowserRouter([
       { index: true, element: <HomePage /> },
       { path: 'produse/:category', element: <ProductCategoryPage /> },
       { path: 'produse/:category/:product', element: <ProductDetailPage /> },
+      { path: 'woodstone-lemn-pietrificat', element: <WoodstonePage /> },
       { path: 'contact', element: <ContactPage /> },
       { path: 'blog', element: <BlogPage /> },
       { path: 'blog/:slug', element: <BlogDetailPage /> },
