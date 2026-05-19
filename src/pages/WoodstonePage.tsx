@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Download, X, ChevronLeft, ChevronRight, MapPin, Phone, Star, Image as ImageIcon, Sparkles } from 'lucide-react'
-import { factories } from '@/data/site'
+import { ArrowRight, Download, X, ChevronLeft, ChevronRight, Star, Image as ImageIcon, Sparkles } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 
 const CDN = 'https://petrapavaje.ro/wp-content/uploads'
@@ -394,67 +393,7 @@ export function WoodstonePage() {
         )}
       </AnimatePresence>
 
-      {/* Section 5: CTA */}
-      <section className="py-16 md:py-24 bg-charcoal-950 text-white">
-        <div className="container-premium">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-12"
-          >
-            <span className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wider uppercase text-brand-400 bg-brand-950/50 border border-brand-900/50 rounded-full mb-4">
-              <Phone className="w-3 h-3" />
-              Contactează-ne
-            </span>
-            <h2 className="heading-h2 text-white mb-4">Transformă-ți Curtea în Spațiul Visat</h2>
-            <p className="text-body-lg text-charcoal-400 max-w-2xl mx-auto mb-8">
-              Contactează reprezentantul din zona ta pentru o ofertă personalizată și consultanță gratuită pentru proiectul tău.
-            </p>
-          </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="max-w-4xl mx-auto"
-          >
-            <h3 className="text-lg font-semibold text-charcoal-300 mb-6 text-center">Fabricile Noastre</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-              {factories.map((factory) => (
-                <a
-                  key={factory.id}
-                  href={`tel:${factory.phone}`}
-                  className="bg-charcoal-900/50 backdrop-blur-sm rounded-xl p-5 hover:bg-charcoal-900 transition-colors group"
-                >
-                  <h4 className="font-semibold text-white mb-2">{factory.name}</h4>
-                  <div className="flex items-start gap-2 text-sm text-charcoal-400 mb-2">
-                    <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-brand-500" />
-                    <span>{factory.address}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-brand-400 group-hover:text-brand-300 transition-colors">
-                    <Phone className="w-4 h-4 shrink-0" />
-                    <span>{factory.phone}</span>
-                  </div>
-                </a>
-              ))}
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="btn-primary group text-base">
-                Solicită Ofertă
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <Link to="/catalog" className="btn-outline-light group text-base">
-                <Download className="w-4 h-4 mr-2" />
-                Vezi Catalogul
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
     </div>
   )
 }
