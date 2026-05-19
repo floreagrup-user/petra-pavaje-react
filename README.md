@@ -209,7 +209,7 @@ All old WordPress URLs are redirected via `public/_redirects` to preserve SEO eq
 | `anthracite-950` | `#1a1a21` | Footer, headers |
 | `warm-50` | `#fdfcfa` | Page background |
 | `stone-100` | `#f7f3ee` | Section backgrounds |
-| `primary-600` | `#8a4545` | CTAs, accents |
+| `brand-600` | `#b70000` | CTAs, accents |
 | `accent-600` | `#486348` | Sustainability, eco |
 
 ### Typography
