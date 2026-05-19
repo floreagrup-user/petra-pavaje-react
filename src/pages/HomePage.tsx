@@ -4,7 +4,6 @@ import { FeaturedProductsSection } from '@/components/sections/FeaturedProductsS
 import { SustainabilitySection } from '@/components/sections/SustainabilitySection'
 import { FactoriesSection } from '@/components/sections/FactoriesSection'
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
-import { CTASection } from '@/components/sections/CTASection'
 
 export function HomePage() {
   return (
@@ -15,7 +14,6 @@ export function HomePage() {
       <SustainabilitySection />
       <FactoriesSection />
       <TestimonialsSection />
-      <CTASection />
     </>
   )
 }
