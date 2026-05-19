@@ -30,9 +30,19 @@ const productImageMap: Record<string, string> = {
 
 const productGalleryMap: Record<string, string[]> = {
   gemina: [
-    'https://petrapavaje.ro/wp-content/uploads/web-Gemina-maro-si-galben-Medium.avif',
-    'https://petrapavaje.ro/wp-content/uploads/gemina-homepage.avif',
-    'https://petrapavaje.ro/wp-content/uploads/web-prima-pagina-1-Medium.avif',
+    'https://petrapavaje.ro/wp-content/uploads/12.-Gemina-MIX-6.72-alb-brun-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/11.-Gemina-MIX-6.72-caramel-brun-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/11.-Gemina-MIX-6.72-alb-negru-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/10.-Gemina-MIX-6.72-alb-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/8.-Gemina-MIX-6.72-negru-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/9.-Gemina-MIX-6.72-alb-negru-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/6.-Gemina-MIX-6.72-negru-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/7.-Gemina-MIX-6.72-negru-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/5.-Gemina-MIX-6.72-negru-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/4.-Gemina-MIX-6.72-alb-negru-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/3.-Gemina-MIX-6.72-alb-negru-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/1.-Gemina-MIX-6.72-alb-negru-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/2.-Gemina-MIX-6.72-alb-negru-Large.avif',
   ],
 
   mistic: [
