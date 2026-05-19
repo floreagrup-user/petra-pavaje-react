@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Download, X, ChevronLeft, ChevronRight, Star, Image as ImageIcon, Sparkles } from 'lucide-react'
@@ -98,21 +98,32 @@ export function WoodstonePage() {
     setLightboxIndex(prev => prev !== null ? (prev + 1) % galleryImages.length : null)
   }
 
+  useEffect(() => {
+    if (lightboxIndex === null) return
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); prevImage() }
+      if (e.key === 'ArrowRight') { e.preventDefault(); nextImage() }
+      if (e.key === 'Escape') { setLightboxIndex(null) }
+    }
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [lightboxIndex])
+
   return (
     <div className="pt-20 md:pt-24">
       {/* Breadcrumb */}
-      <section className="bg-charcoal-950 text-white py-4">
+      <section className="bg-white border-b border-charcoal-100 py-4">
         <div className="container-premium">
-          <nav className="flex items-center gap-2 text-sm text-charcoal-400">
-            <Link to="/" className="hover:text-white transition-colors">PetraPavaje</Link>
+          <nav className="flex items-center gap-2 text-sm text-charcoal-500">
+            <Link to="/" className="hover:text-charcoal-900 transition-colors">PetraPavaje</Link>
             <span>/</span>
-            <span className="text-white">WOODSTONE lemn pietrificat</span>
+            <span className="text-charcoal-900 font-medium">WOODSTONE lemn pietrificat</span>
           </nav>
         </div>
       </section>
 
       {/* Section 1: Hero */}
-      <section className="relative overflow-hidden bg-charcoal-950">
+      <section className="relative overflow-hidden bg-white">
         <div className="container-premium py-12 md:py-20">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <motion.div
@@ -120,19 +131,19 @@ export function WoodstonePage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase text-brand-500 bg-brand-950/50 border border-brand-900/50 rounded-full mb-4">
+              <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase text-brand-700 bg-brand-50 border border-brand-200 rounded-full mb-4">
                 Colecție Exclusivă
               </span>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[0.95] mb-4">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-charcoal-900 leading-[0.95] mb-4">
                 WOODSTONE{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-500">
                   Lemn Pietrificat
                 </span>
               </h1>
-              <p className="text-brand-400 text-sm md:text-base font-medium tracking-[0.15em] uppercase mb-4">
+              <p className="text-brand-600 text-sm md:text-base font-medium tracking-[0.15em] uppercase mb-4">
                 FRUMUSEȚEA LEMNULUI, DURABILITATEA PIETREI
               </p>
-              <p className="text-lg md:text-xl text-charcoal-300 leading-relaxed mb-8">
+              <p className="text-lg md:text-xl text-charcoal-600 leading-relaxed mb-8">
                 Noua gamă de produse din beton, creată special pentru a aduce căldura și eleganța lemnului în amenajările exterioare. Produsele inovatoare combină durabilitatea betonului cu aspectul autentic al lemnului, oferind texturi care imită perfect fibra și nuanțele naturale.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -140,7 +151,7 @@ export function WoodstonePage() {
                   Vezi Produsele
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </a>
-                <button className="btn-outline-light group text-base">
+                <button className="btn-secondary group text-base">
                   <Download className="w-4 h-4 mr-2" />
                   Descarcă Broșura
                 </button>
@@ -159,16 +170,16 @@ export function WoodstonePage() {
                   alt="Woodstone Lemn Pietrificat - Amenajare Exterioară"
                   className="w-full h-auto"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/40 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent" />
               </div>
-              <div className="absolute -bottom-4 -left-4 w-28 h-28 md:w-36 md:h-36 rounded-xl overflow-hidden shadow-lg border-2 border-charcoal-800">
+              <div className="absolute -bottom-4 -left-4 w-28 h-28 md:w-36 md:h-36 rounded-xl overflow-hidden shadow-lg border-2 border-white">
                 <img
                   src={heroImage2}
                   alt="Detaliu Textură Woodstone"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute top-4 right-4 bg-brand-600/90 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">
+              <div className="absolute top-4 right-4 bg-brand-600 text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">
                 100+ Combinații posibile
               </div>
             </motion.div>

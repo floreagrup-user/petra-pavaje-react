@@ -26,7 +26,7 @@ const SocialIcon = ({ name, className }: { name: string; className?: string }) =
 
 export function Footer() {
   return (
-    <footer className="bg-charcoal-950 text-white">
+    <footer className="bg-charcoal-500 text-white">
       <div className="bg-brand-600 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 bg-noise" />
         <div className="container-premium py-12 md:py-16 relative">
@@ -54,16 +54,16 @@ export function Footer() {
       <div className="container-premium py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div>
-            <div className="text-xl font-bold tracking-tight mb-6">
-              PETRA<span className="text-brand-500">PAVAJE</span>
+            <div className="text-xl font-bold tracking-tight mb-6 text-white">
+              PETRA<span className="text-brand-300">PAVAJE</span>
             </div>
-            <p className="text-sm text-charcoal-400 mb-6 leading-relaxed">
+            <p className="text-sm text-white/70 mb-6 leading-relaxed">
               Producător premium de pavaje, borduri, garduri și elemente de beton. 4 fabrici naționale, peste 800 de produse.
             </p>
             <ul className="space-y-2">
               {footerLinks.products.map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href} className="text-sm text-charcoal-400 hover:text-white transition-colors">
+                  <Link to={link.href} className="text-sm text-white/70 hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -76,7 +76,7 @@ export function Footer() {
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href} className="text-sm text-charcoal-400 hover:text-white transition-colors">
+                  <Link to={link.href} className="text-sm text-white/70 hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -86,7 +86,7 @@ export function Footer() {
             <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href} className="text-sm text-charcoal-400 hover:text-white transition-colors">
+                  <Link to={link.href} className="text-sm text-white/70 hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -99,11 +99,11 @@ export function Footer() {
             <div className="space-y-4">
               {factories.map((factory) => (
                 <div key={factory.id} className="flex items-start gap-3">
-                  <MapPin className="w-4 h-4 text-brand-400 mt-0.5 shrink-0" />
+                  <MapPin className="w-4 h-4 text-brand-300 mt-0.5 shrink-0" />
                   <div>
                     <p className="text-sm font-medium text-white">{factory.name}</p>
-                    <p className="text-xs text-charcoal-400">{factory.address}</p>
-                    <a href={`tel:${factory.phone}`} className="text-xs text-brand-400 hover:text-brand-300 transition-colors">
+                    <p className="text-xs text-white/60">{factory.address}</p>
+                    <a href={`tel:${factory.phone}`} className="text-xs text-brand-200 hover:text-white transition-colors">
                       {factory.phone}
                     </a>
                   </div>
@@ -111,8 +111,8 @@ export function Footer() {
               ))}
             </div>
             <div className="mt-6 space-y-2">
-              <a href="tel:+40358732246" className="flex items-center gap-2 text-sm text-charcoal-400 hover:text-white transition-colors">
-                <Phone className="w-4 h-4 text-brand-400" />
+              <a href="tel:+40358732246" className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors">
+                <Phone className="w-4 h-4 text-brand-300" />
                 +40 358 732 246
               </a>
             </div>
@@ -120,14 +120,14 @@ export function Footer() {
 
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">Noutăți Petra Pavaje</h3>
-            <p className="text-sm text-charcoal-400 mb-4">
+            <p className="text-sm text-white/70 mb-4">
               Abonează-te la newsletter pentru noutăți despre produse și oferte speciale.
             </p>
             <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
               <input
                 type="email"
                 placeholder="Email"
-                className="flex-1 px-3 py-2 bg-charcoal-800 border border-charcoal-700 rounded-md text-sm text-white placeholder-charcoal-500 focus:outline-none focus:border-brand-600 transition-colors"
+                className="flex-1 px-3 py-2 bg-white/10 border border-white/20 rounded-md text-sm text-white placeholder-white/50 focus:outline-none focus:border-white/50 transition-colors"
               />
               <button type="submit" className="px-4 py-2 bg-brand-600 text-white text-sm rounded-md hover:bg-brand-700 transition-colors">
                 Abonare
@@ -137,12 +137,12 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-charcoal-800">
+      <div className="border-t border-white/20">
         <div className="container-premium py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="text-sm text-charcoal-500">
+            <div className="text-sm text-white/60">
               © {new Date().getFullYear()} Petra Pavaje | Parte a{' '}
-              <a href="https://floreagrup.ro/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              <a href="https://floreagrup.ro/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors">
                 Florea Grup
               </a>
             </div>
@@ -154,7 +154,7 @@ export function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-charcoal-500 hover:text-white transition-colors"
+                  className="text-white/60 hover:text-white transition-colors"
                   aria-label={social.name}
                 >
                   <SocialIcon name={social.icon} className="w-5 h-5" />
@@ -162,7 +162,7 @@ export function Footer() {
               ))}
             </div>
 
-            <div className="flex items-center gap-4 text-xs text-charcoal-500">
+            <div className="flex items-center gap-4 text-xs text-white/60">
               {footerLinks.legal.map((link) => (
                 <Link key={link.label} to={link.href} className="hover:text-white transition-colors">
                   {link.label}
