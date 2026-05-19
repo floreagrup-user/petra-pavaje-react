@@ -1,153 +1,140 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Calendar, Clock, ArrowRight, Tag } from 'lucide-react'
+import { Calendar, Clock, ArrowRight } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
-
-interface BlogPost {
-  id: string
-  title: string
-  slug: string
-  excerpt: string
-  date: string
-  author: string
-  category: string
-  image: string
-  readTime: number
-}
+import type { BlogPost } from '@/data/types'
 
 const blogPosts: BlogPost[] = [
   {
     id: '1',
-    title: 'Ghid complet: Cum sa alegi pavajul perfect pentru curtea ta',
-    slug: 'ghid-alegere-pavaj-curte',
-    excerpt: 'Descopera factorii esentiali de care trebuie sa tii cont atunci cand alegi pavajul pentru curtea ta: de la tipul de trafic la estetica generala a spatiului.',
-    date: '2025-05-10',
-    author: 'Echipa Petra Pavaje',
+    title: 'Cum să alegi pavajul perfect pentru curtea ta',
+    slug: 'cum-sa-alegi-pavajul-perfect',
+    excerpt: 'Ghid complet pentru alegerea pavajului potrivit în funcție de tipul de trafic, designul dorit și bugetul disponibil.',
+    content: 'Alegerea pavajului perfect pentru curtea ta poate părea o sarcină dificilă, dar cu informațiile potrivite, poți lua cea mai bună decizie...',
+    date: '2025-03-15',
+    author: 'Petra Pavaje',
     category: 'Ghiduri',
     image: 'https://petrapavaje.ro/wp-content/uploads/web-prima-pagina-1-Medium.avif',
-    readTime: 8,
-  },
-  {
-    id: '2',
-    title: 'Trenduri 2025 in amenajarile exterioare',
-    slug: 'trenduri-2025-amenajari-exterioare',
-    excerpt: 'De la pavajele de mari dimensiuni la combinatiile de texturi, descopera cele mai noi trenduri in designul exterior pentru anul 2025.',
-    date: '2025-04-22',
-    author: 'Echipa Petra Pavaje',
-    category: 'Trenduri',
-    image: 'https://petrapavaje.ro/wp-content/uploads/mediterana-homepage.avif',
-    readTime: 6,
-  },
-  {
-    id: '3',
-    title: 'Cum se monteaza corect pavajul - Pas cu pas',
-    slug: 'montaj-pavaj-pas-cu-pas',
-    excerpt: 'Un ghid detaliat despre procesul de montaj al pavajului, de la pregatirea terenului pana la finisare si intretinere.',
-    date: '2025-04-05',
-    author: 'Echipa Tehnica',
-    category: 'Montaj',
-    image: 'https://petrapavaje.ro/wp-content/uploads/relief-homepage.avif',
-    readTime: 12,
-  },
-  {
-    id: '4',
-    title: 'Woodstone - Lemnul pietrificat care transforma orice spatiu',
-    slug: 'woodstone-lemn-pietrificat',
-    excerpt: 'Descopera gama Woodstone de la Petra Pavaje: frumusetea lemnului combinata cu durabilitatea betonului premium.',
-    date: '2025-03-18',
-    author: 'Echipa Petra Pavaje',
-    category: 'Produse',
-    image: 'https://petrapavaje.ro/wp-content/uploads/woodstoone-Medium.avif',
     readTime: 5,
   },
   {
-    id: '5',
-    title: 'Intretinerea pavajului: Sfaturi pentru fiecare anotimp',
-    slug: 'intretinere-pavaj-anotimpuri',
-    excerpt: 'Cum sa iti mentii pavajul in conditii optime pe tot parcursul anului. Sfaturi practice pentru primavara, vara, toamna si iarna.',
-    date: '2025-03-01',
-    author: 'Echipa Tehnica',
-    category: 'Intretinere',
-    image: 'https://petrapavaje.ro/wp-content/uploads/gemina-homepage.avif',
+    id: '2',
+    title: 'Tendințe în amenajările exterioare pentru 2025',
+    slug: 'tendinte-amenajari-exterioare-2025',
+    excerpt: 'Descoperă cele mai noi tendințe în designul peisagistic și amenajările exterioare pentru acest an.',
+    content: 'Amenajările exterioare au evoluat semnificativ în ultimii ani, iar 2025 aduce o serie de tendințe inovatoare...',
+    date: '2025-02-28',
+    author: 'Petra Pavaje',
+    category: 'Trenduri',
+    image: 'https://petrapavaje.ro/wp-content/uploads/mediterana-homepage.avif',
+    readTime: 4,
+  },
+  {
+    id: '3',
+    title: 'Ghid de montaj pentru pavaje premium',
+    slug: 'ghid-montaj-pavaje-premium',
+    excerpt: 'Află pașii esențiali pentru montarea corectă a pavajelor premium și asigură-te că rezultatul final este perfect.',
+    content: 'Montarea corectă a pavajelor premium este esențială pentru a te bucura de durabilitate și aspect estetic...',
+    date: '2025-02-10',
+    author: 'Petra Pavaje',
+    category: 'Montaj',
+    image: 'https://petrapavaje.ro/wp-content/uploads/relief-homepage.avif',
     readTime: 7,
   },
   {
+    id: '4',
+    title: 'Woodstone – Frumusețea lemnului în beton premium',
+    slug: 'woodstone-lemn-pietrificat-beneficii',
+    excerpt: 'Descoperă gama Woodstone de la Petra Pavaje, care îmbină estetica lemnului natural cu durabilitatea betonului.',
+    content: 'Woodstone reprezintă inovația în domeniul prefabricatelor din beton, oferind aspectul cald al lemnului...',
+    date: '2025-01-20',
+    author: 'Petra Pavaje',
+    category: 'Produse',
+    image: 'https://petrapavaje.ro/wp-content/uploads/woodstoone-Medium.avif',
+    readTime: 6,
+  },
+  {
+    id: '5',
+    title: 'Cum să întreții pavajele pe timp de iarnă',
+    slug: 'intretinere-pavaje-iarna',
+    excerpt: 'Sfaturi utile pentru protejarea și întreținerea pavajelor în sezonul rece, împotriva înghețului și a sării.',
+    content: 'Iarna poate fi o provocare pentru pavaje, dar cu îngrijirea potrivită, le poți menține aspectul impecabil...',
+    date: '2025-01-05',
+    author: 'Petra Pavaje',
+    category: 'Întreținere',
+    image: 'https://petrapavaje.ro/wp-content/uploads/holland-Medium.avif',
+    readTime: 4,
+  },
+  {
     id: '6',
-    title: 'De ce sa alegi pavajul permeabil pentru gradina ta',
-    slug: 'pavaj-permeabil-gradina',
-    excerpt: 'Pavajul permeabil este solutia ideala pentru gestionarea durabila a apelor pluviale. Afla beneficiile si optiunile disponibile.',
-    date: '2025-02-15',
-    author: 'Echipa Petra Pavaje',
+    title: 'Sustenabilitatea în producția de pavaje',
+    slug: 'sustenabilitate-productie-pavaje',
+    excerpt: 'Află cum producem pavaje premium cu un impact redus asupra mediului, folosind energie solară și tehnologii verzi.',
+    content: 'La Petra Pavaje, sustenabilitatea este o prioritate. Am implementat tehnologii moderne pentru a reduce amprenta de carbon...',
+    date: '2024-12-15',
+    author: 'Petra Pavaje',
     category: 'Sustenabilitate',
     image: 'https://petrapavaje.ro/wp-content/uploads/energie-verde-si-emsii-0-web1-1.avif',
-    readTime: 6,
+    readTime: 5,
   },
 ]
 
-const categories = ['Toate', 'Ghiduri', 'Trenduri', 'Montaj', 'Produse', 'Intretinere', 'Sustenabilitate']
+const categories = ['Toate', 'Ghiduri', 'Trenduri', 'Montaj', 'Produse', 'Întreținere', 'Sustenabilitate']
 
 export function BlogPage() {
+  const [activeCategory, setActiveCategory] = useState('Toate')
   const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
+
+  const filtered = activeCategory === 'Toate'
+    ? blogPosts
+    : blogPosts.filter(p => p.category === activeCategory)
 
   return (
     <div className="pt-20 md:pt-24">
-      {/* Breadcrumbs */}
-      <div className="bg-charcoal-50 border-b border-charcoal-100">
-        <div className="container-premium py-4">
-          <nav className="flex items-center gap-2 text-sm">
-            <Link to="/" className="text-charcoal-500 hover:text-charcoal-700 transition-colors">Acasa</Link>
-            <span className="text-charcoal-300">/</span>
-            <span className="text-charcoal-900 font-medium">Blog</span>
-          </nav>
-        </div>
-      </div>
-
-      {/* Header */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="bg-charcoal-950 text-white py-16 md:py-20">
         <div className="container-premium">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="heading-h1 text-charcoal-900 mb-4">Blog Petra Pavaje</h1>
-            <p className="text-body-lg text-charcoal-500 max-w-2xl">
-              Articole, ghiduri si inspiratie pentru amenajarile tale exterioare.
+            <h1 className="heading-h1 mb-4">Blog</h1>
+            <p className="text-body-lg text-charcoal-400 max-w-2xl">
+              Inspirație, ghiduri și noutăți despre amenajări exterioare, pavaje și design peisagistic.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Categories Filter */}
-      <section className="py-6 bg-charcoal-50 border-b border-charcoal-100">
+      <section ref={ref} className="py-16 md:py-24">
         <div className="container-premium">
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mb-10">
             {categories.map((cat) => (
               <button
                 key={cat}
-                className="px-4 py-2 text-sm rounded-full bg-white text-charcoal-700 hover:bg-brand-600 hover:text-white transition-colors"
+                onClick={() => setActiveCategory(cat)}
+                className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${
+                  activeCategory === cat
+                    ? 'bg-brand-600 text-white'
+                    : 'bg-charcoal-100 text-charcoal-600 hover:bg-charcoal-200'
+                }`}
               >
                 {cat}
               </button>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* Blog Grid */}
-      <section ref={ref} className="py-12 md:py-16 bg-white">
-        <div className="container-premium">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post, index) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filtered.map((post, index) => (
               <motion.article
                 key={post.id}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="card-premium group"
+                transition={{ duration: 0.4, delay: index * 0.08 }}
               >
-                <Link to={`/blog/${post.slug}`} className="block">
-                  <div className="relative aspect-[16/10] overflow-hidden">
+                <Link to={`/blog/${post.slug}`} className="group block">
+                  <div className="relative aspect-[16/10] rounded-xl overflow-hidden bg-stone-100 mb-4">
                     <img
                       src={post.image}
                       alt={post.title}
@@ -155,32 +142,28 @@ export function BlogPage() {
                       loading="lazy"
                     />
                     <div className="absolute top-3 left-3">
-                      <span className="px-3 py-1 bg-white/90 text-charcoal-900 text-xs font-medium rounded-full">
+                      <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-charcoal-900 text-xs font-medium rounded-full">
                         {post.category}
                       </span>
                     </div>
                   </div>
-                  <div className="p-5">
-                    <div className="flex items-center gap-4 text-xs text-charcoal-400 mb-3">
-                      <span className="flex items-center gap-1">
-                        <Calendar className="w-3 h-3" />
-                        {new Date(post.date).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long', year: 'numeric' })}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <Clock className="w-3 h-3" />
-                        {post.readTime} min
-                      </span>
-                    </div>
-                    <h2 className="text-lg font-semibold text-charcoal-900 mb-2 group-hover:text-brand-600 transition-colors line-clamp-2">
-                      {post.title}
-                    </h2>
-                    <p className="text-sm text-charcoal-500 line-clamp-3 mb-4">
-                      {post.excerpt}
-                    </p>
-                    <div className="flex items-center text-brand-600 text-sm font-medium">
-                      Citeste articolul
-                      <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                    </div>
+                  <div className="flex items-center gap-3 text-xs text-charcoal-500 mb-2">
+                    <span className="flex items-center gap-1">
+                      <Calendar className="w-3 h-3" />
+                      {post.date}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <Clock className="w-3 h-3" />
+                      {post.readTime} min
+                    </span>
+                  </div>
+                  <h2 className="text-lg font-semibold text-charcoal-900 group-hover:text-brand-600 transition-colors mb-2">
+                    {post.title}
+                  </h2>
+                  <p className="text-sm text-charcoal-500 line-clamp-2">{post.excerpt}</p>
+                  <div className="flex items-center text-brand-600 text-sm font-medium mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Citește mai mult
+                    <ArrowRight className="w-4 h-4 ml-1" />
                   </div>
                 </Link>
               </motion.article>

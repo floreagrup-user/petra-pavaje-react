@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Phone, Mail, Clock } from 'lucide-react'
+import { MapPin, Phone, ArrowRight, Download } from 'lucide-react'
 import { footerLinks, socialLinks } from '@/data/menu'
 import { factories } from '@/data/site'
 
@@ -27,38 +27,43 @@ const SocialIcon = ({ name, className }: { name: string; className?: string }) =
 export function Footer() {
   return (
     <footer className="bg-charcoal-950 text-white">
-      {/* CTA Section - Brand Red */}
-      <div className="bg-brand-600">
-        <div className="container-premium py-12 md:py-16">
+      <div className="bg-brand-600 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5 bg-noise" />
+        <div className="container-premium py-12 md:py-16 relative">
           <div className="text-center">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">
-              Transforma-ti curtea in spatiul visat
+              Transformă-ți curtea în spațiul visat
             </h2>
             <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-              Contacteaza reprezentantul din zona ta pentru o oferta personalizata
+              Contactează reprezentantul din zona ta pentru o ofertă personalizată
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white text-brand-600 font-semibold rounded-md shadow-lg hover:bg-warm-gray-50 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5">
-                Solicita Oferta
+              <Link to="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white text-brand-600 font-semibold rounded-md shadow-lg hover:bg-charcoal-50 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5">
+                Solicita Ofertă
+                <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
-              <Link to="/catalog" className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-md hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
-                Descarca Catalog
+              <Link to="/catalog" className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-md hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+                <Download className="w-4 h-4 mr-2" />
+                Descarcă Catalog
               </Link>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Main Footer */}
       <div className="container-premium py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          {/* Products */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Produse Petra Pavaje</h3>
+            <div className="text-xl font-bold tracking-tight mb-6">
+              PETRA<span className="text-brand-500">PAVAJE</span>
+            </div>
+            <p className="text-sm text-charcoal-400 mb-6 leading-relaxed">
+              Producător premium de pavaje, borduri, garduri și elemente de beton. 4 fabrici naționale, peste 800 de produse.
+            </p>
             <ul className="space-y-2">
               {footerLinks.products.map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href} className="text-sm text-warm-gray-400 hover:text-white transition-colors">
+                  <Link to={link.href} className="text-sm text-charcoal-400 hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -66,27 +71,22 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">Compania</h3>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href} className="text-sm text-warm-gray-400 hover:text-white transition-colors">
+                  <Link to={link.href} className="text-sm text-charcoal-400 hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/* Resources */}
-          <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Resurse</h3>
+            <h3 className="text-white font-semibold text-lg mb-4 mt-8">Resurse</h3>
             <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href} className="text-sm text-warm-gray-400 hover:text-white transition-colors">
+                  <Link to={link.href} className="text-sm text-charcoal-400 hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -94,50 +94,67 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Factories */}
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">Fabricile Noastre</h3>
             <div className="space-y-4">
               {factories.map((factory) => (
                 <div key={factory.id} className="flex items-start gap-3">
-                  <MapPin className="w-4 h-4 text-brand-400 mt-1 shrink-0" />
+                  <MapPin className="w-4 h-4 text-brand-400 mt-0.5 shrink-0" />
                   <div>
                     <p className="text-sm font-medium text-white">{factory.name}</p>
-                    <p className="text-xs text-warm-gray-400">{factory.address}</p>
-                    <a
-                      href={`tel:${factory.phone}`}
-                      className="text-xs text-brand-400 hover:text-brand-300 transition-colors"
-                    >
+                    <p className="text-xs text-charcoal-400">{factory.address}</p>
+                    <a href={`tel:${factory.phone}`} className="text-xs text-brand-400 hover:text-brand-300 transition-colors">
                       {factory.phone}
                     </a>
                   </div>
                 </div>
               ))}
             </div>
+            <div className="mt-6 space-y-2">
+              <a href="tel:+40358732246" className="flex items-center gap-2 text-sm text-charcoal-400 hover:text-white transition-colors">
+                <Phone className="w-4 h-4 text-brand-400" />
+                +40 358 732 246
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-white font-semibold text-lg mb-4">Noutăți Petra Pavaje</h3>
+            <p className="text-sm text-charcoal-400 mb-4">
+              Abonează-te la newsletter pentru noutăți despre produse și oferte speciale.
+            </p>
+            <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
+              <input
+                type="email"
+                placeholder="Email"
+                className="flex-1 px-3 py-2 bg-charcoal-800 border border-charcoal-700 rounded-md text-sm text-white placeholder-charcoal-500 focus:outline-none focus:border-brand-600 transition-colors"
+              />
+              <button type="submit" className="px-4 py-2 bg-brand-600 text-white text-sm rounded-md hover:bg-brand-700 transition-colors">
+                Abonare
+              </button>
+            </form>
           </div>
         </div>
       </div>
 
-      {/* Bottom Footer */}
       <div className="border-t border-charcoal-800">
         <div className="container-premium py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="text-sm text-warm-gray-400">
+            <div className="text-sm text-charcoal-500">
               © {new Date().getFullYear()} Petra Pavaje | Parte a{' '}
-              <a href="https://floreagrup.ro/" className="hover:text-white transition-colors">
+              <a href="https://floreagrup.ro/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 Florea Grup
               </a>
             </div>
 
-            {/* Social Links */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-warm-gray-400 hover:text-white transition-colors"
+                  className="text-charcoal-500 hover:text-white transition-colors"
                   aria-label={social.name}
                 >
                   <SocialIcon name={social.icon} className="w-5 h-5" />
@@ -145,7 +162,7 @@ export function Footer() {
               ))}
             </div>
 
-            <div className="flex items-center gap-4 text-xs text-warm-gray-400">
+            <div className="flex items-center gap-4 text-xs text-charcoal-500">
               {footerLinks.legal.map((link) => (
                 <Link key={link.label} to={link.href} className="hover:text-white transition-colors">
                   {link.label}

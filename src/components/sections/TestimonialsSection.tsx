@@ -41,11 +41,11 @@ export function TestimonialsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 md:mb-16"
         >
-          <p className="text-brand-600 text-sm font-medium tracking-widest uppercase mb-3">
+          <p className="text-brand-600 text-sm font-medium tracking-[0.2em] uppercase mb-3">
             Testimoniale
           </p>
           <h2 className="heading-h1 text-charcoal-900 mb-4">
-            Ce spun clientii nostri
+            Ce spun clienții noștri
           </h2>
           <p className="text-body-lg text-charcoal-500 max-w-2xl mx-auto">
             Proiecte finalizate cu succes în toată România
@@ -61,7 +61,6 @@ export function TestimonialsSection() {
             transition={{ duration: 0.5 }}
             className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center"
           >
-            {/* Images */}
             <div className="grid grid-cols-3 gap-3">
               {images.map((img, idx) => (
                 <motion.div
@@ -81,11 +80,10 @@ export function TestimonialsSection() {
               ))}
             </div>
 
-            {/* Quote */}
             <div className="relative">
               <Quote className="w-12 h-12 text-brand-200 mb-4" />
               <blockquote className="text-xl md:text-2xl text-charcoal-700 leading-relaxed mb-6 italic">
-                "{testimonial.quote}"
+                &ldquo;{testimonial.quote}&rdquo;
               </blockquote>
               <div>
                 <p className="text-lg font-semibold text-charcoal-900">{testimonial.name}</p>
@@ -97,11 +95,10 @@ export function TestimonialsSection() {
           </motion.div>
         </AnimatePresence>
 
-        {/* Navigation */}
         <div className="flex items-center justify-center gap-4 mt-8">
           <button
             onClick={prev}
-            className="p-2 rounded-full border border-warm-gray-200 hover:border-warm-gray-400 hover:bg-warm-gray-50 transition-all"
+            className="p-2 rounded-full border border-charcoal-200 hover:border-charcoal-400 hover:bg-charcoal-50 transition-all"
             aria-label="Previous testimonial"
           >
             <ChevronLeft className="w-5 h-5 text-charcoal-600" />
@@ -112,8 +109,8 @@ export function TestimonialsSection() {
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
-                className={`w-2 h-2 rounded-full transition-all ${
-                  idx === currentIndex ? 'w-8 bg-brand-600' : 'bg-warm-gray-300'
+                className={`h-2 rounded-full transition-all ${
+                  idx === currentIndex ? 'w-8 bg-brand-600' : 'w-2 bg-charcoal-300'
                 }`}
                 aria-label={`Go to testimonial ${idx + 1}`}
               />
@@ -122,7 +119,7 @@ export function TestimonialsSection() {
 
           <button
             onClick={next}
-            className="p-2 rounded-full border border-warm-gray-200 hover:border-warm-gray-400 hover:bg-warm-gray-50 transition-all"
+            className="p-2 rounded-full border border-charcoal-200 hover:border-charcoal-400 hover:bg-charcoal-50 transition-all"
             aria-label="Next testimonial"
           >
             <ChevronRight className="w-5 h-5 text-charcoal-600" />

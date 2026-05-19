@@ -8,8 +8,10 @@ export interface Product {
   image: string
   gallery: string[]
   specs: ProductSpec[]
-  colors: string[]
+  mixModes?: string[]
+  colors: ProductColor[]
   dimensions: string
+  dimensionsList?: ProductDimension[]
   weight: string
   usage: string[]
   pdfUrl?: string
@@ -19,6 +21,23 @@ export interface Product {
 export interface ProductSpec {
   label: string
   value: string
+}
+
+export interface ProductColor {
+  name: string
+  hex: string
+  image?: string
+}
+
+export interface ProductDimension {
+  label: string
+  size: string
+  thickness: string
+  piecesPerMp: number
+  piecesPerPallet: number
+  kgPerPallet: number
+  mpPerPallet: number
+  image?: string
 }
 
 export interface Category {
@@ -70,4 +89,11 @@ export interface CountyRep {
   name: string
   email: string
   phone: string
+}
+
+export interface InstallationPattern {
+  id: string
+  name: string
+  image: string
+  products: string[]
 }

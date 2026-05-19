@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ArrowRight, Filter, Grid, List } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { products, getProductsByCategory } from '@/data/products'
+import { categories } from '@/data/site'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 
 const productImages: Record<string, string> = {
@@ -33,83 +33,46 @@ const productImages: Record<string, string> = {
   'pavaje-eco': 'https://petrapavaje.ro/wp-content/uploads/web-prima-pagina-1-Medium.avif',
 }
 
-const categoryInfo: Record<string, { title: string; description: string }> = {
-  'pavaje-premium': {
-    title: 'Pavaje Premium',
-    description: 'Pavaje de cea mai inalta calitate, inspirate din natura. Varietatea nuantelor si texturilor creeaza spatii outdoor de exceptie.',
-  },
-  'pavaje-standard': {
-    title: 'Pavaje Standard',
-    description: 'Solutii eficiente si durabile pentru orice proiect. Raport optim calitate-pret pentru amenajari functionale.',
-  },
-}
-
 export function ProductCategoryPage() {
   const { category } = useParams<{ category: string }>()
-  const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid')
   const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
 
-  const categoryProducts = category ? getProductsByCategory(category.replace('pavaje-', '')) : products
-  const info = category ? categoryInfo[category] : { title: 'Toate Produsele', description: '' }
+  const categoryData = categories.find(c => c.slug === category)
+  const categoryProducts = category
+    ? getProductsByCategory(category.replace('pavaje-', ''))
+    : products
 
   return (
     <div className="pt-20 md:pt-24">
-      {/* Breadcrumbs */}
-      <div className="bg-charcoal-50 border-b border-charcoal-100">
-        <div className="container-premium py-4">
-          <nav className="flex items-center gap-2 text-sm">
-            <Link to="/" className="text-charcoal-500 hover:text-charcoal-700 transition-colors">Acasa</Link>
-            <span className="text-charcoal-300">/</span>
-            <span className="text-charcoal-900 font-medium">{info?.title}</span>
-          </nav>
-        </div>
-      </div>
-
-      {/* Header */}
-      <section className="section-padding bg-white pb-12">
+      <section className="bg-charcoal-950 text-white py-16 md:py-20">
         <div className="container-premium">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="heading-h1 text-charcoal-900 mb-4">{info?.title}</h1>
-            <p className="text-body-lg text-charcoal-500 max-w-3xl">{info?.description}</p>
+            <nav className="flex items-center gap-2 text-sm text-charcoal-400 mb-6">
+              <Link to="/" className="hover:text-white transition-colors">Acasă</Link>
+              <span>/</span>
+              <span className="text-white">{categoryData?.name || 'Produse'}</span>
+            </nav>
+            <h1 className="heading-h1 mb-4">{categoryData?.name || 'Toate Produsele'}</h1>
+            <p className="text-body-lg text-charcoal-400 max-w-3xl">
+              {categoryData?.description || 'Explorează întreaga gamă de produse Petra Pavaje.'}
+            </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Products */}
-      <section ref={ref} className="pb-16 md:pb-24">
+      <section ref={ref} className="py-16 md:py-24">
         <div className="container-premium">
-          {/* Toolbar */}
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-charcoal-100">
             <p className="text-sm text-charcoal-500">
-              {categoryProducts.length} produse
+              <span className="font-semibold text-charcoal-900">{categoryProducts.length}</span> produse
             </p>
-            <div className="flex items-center gap-2">
-              <button className="p-2 rounded-lg hover:bg-charcoal-50 transition-colors">
-                <Filter className="w-5 h-5 text-charcoal-600" />
-              </button>
-              <div className="flex items-center gap-1 bg-charcoal-50 rounded-lg p-1">
-                <button
-                  onClick={() => setViewMode('grid')}
-                  className={`p-1.5 rounded ${viewMode === 'grid' ? 'bg-white shadow-sm' : ''}`}
-                >
-                  <Grid className="w-4 h-4 text-charcoal-600" />
-                </button>
-                <button
-                  onClick={() => setViewMode('list')}
-                  className={`p-1.5 rounded ${viewMode === 'list' ? 'bg-white shadow-sm' : ''}`}
-                >
-                  <List className="w-4 h-4 text-charcoal-600" />
-                </button>
-              </div>
-            </div>
           </div>
 
-          {/* Product Grid */}
-          <div className={`grid gap-6 ${viewMode === 'grid' ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4' : 'grid-cols-1'}`}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {categoryProducts.map((product, index) => (
               <motion.div
                 key={product.id}
@@ -133,14 +96,15 @@ export function ProductCategoryPage() {
                         Premium
                       </div>
                     )}
+                    <div className="absolute inset-0 bg-charcoal-950/0 group-hover:bg-charcoal-950/10 transition-colors duration-500" />
                   </div>
                   <h3 className="text-lg font-semibold text-charcoal-900 group-hover:text-brand-600 transition-colors mb-1">
                     {product.name}
                   </h3>
-                  <p className="text-sm text-charcoal-500 mb-2">{product.shortDescription}</p>
-                  <div className="flex items-center text-brand-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                  <p className="text-sm text-charcoal-500 mb-2 line-clamp-2">{product.shortDescription}</p>
+                  <div className="flex items-center text-brand-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-all translate-y-1 group-hover:translate-y-0">
                     Vezi detalii
-                    <ArrowRight className="w-4 h-4 ml-1" />
+                    <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </Link>
               </motion.div>

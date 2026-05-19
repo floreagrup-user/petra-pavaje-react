@@ -11,6 +11,8 @@ const productImages: Record<string, string> = {
   mistic: 'https://petrapavaje.ro/wp-content/uploads/Mistic-MIX-6.30-gri-bazaltic-Medium.avif',
   primo: 'https://petrapavaje.ro/wp-content/uploads/Primo-20x10x6-rosu-Medium.avif',
   relief: 'https://petrapavaje.ro/wp-content/uploads/web-prima-pagina-Medium.avif',
+  roca: 'https://petrapavaje.ro/wp-content/uploads/web-prima-pagina-1-Medium.avif',
+  mediterana: 'https://petrapavaje.ro/wp-content/uploads/mediterana-homepage.avif',
 }
 
 export function FeaturedProductsSection() {
@@ -27,19 +29,19 @@ export function FeaturedProductsSection() {
           className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 md:mb-16"
         >
           <div>
-            <p className="text-brand-600 text-sm font-medium tracking-widest uppercase mb-3">
+            <p className="text-brand-600 text-sm font-medium tracking-[0.2em] uppercase mb-3">
               Produse Preferate
             </p>
             <h2 className="heading-h1 text-charcoal-900">
-              Alegerea clientilor nostri
+              Alegerea clienților noștri
             </h2>
           </div>
           <Link
             to="/produse/pavaje-premium"
-            className="mt-4 md:mt-0 inline-flex items-center text-brand-600 font-medium hover:gap-3 gap-2 transition-all"
+            className="mt-4 md:mt-0 inline-flex items-center text-brand-600 font-medium hover:gap-3 gap-2 transition-all group"
           >
             Vezi toate produsele
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </motion.div>
 
@@ -68,6 +70,7 @@ export function FeaturedProductsSection() {
                       Premium
                     </div>
                   )}
+                  <div className="absolute inset-0 bg-charcoal-950/0 group-hover:bg-charcoal-950/10 transition-colors duration-500" />
                 </div>
                 <h3 className="text-lg font-semibold text-charcoal-900 group-hover:text-brand-600 transition-colors mb-1">
                   {product.name}
@@ -75,7 +78,7 @@ export function FeaturedProductsSection() {
                 <p className="text-sm text-charcoal-500 mb-2">
                   {product.category === 'premium' ? 'Pavaj Premium' : 'Pavaj Standard'}
                 </p>
-                <div className="flex items-center text-brand-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="flex items-center text-brand-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-all translate-y-1 group-hover:translate-y-0">
                   Vezi detalii
                   <ArrowRight className="w-4 h-4 ml-1" />
                 </div>
