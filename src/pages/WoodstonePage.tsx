@@ -164,12 +164,17 @@ export function WoodstonePage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative"
             >
-              <div
-                className="relative rounded-2xl overflow-hidden shadow-2xl bg-charcoal-100 bg-cover bg-center"
-                style={{ aspectRatio: '800/600', backgroundImage: `url(${heroImage})` }}
-                role="img"
-                aria-label="Woodstone Lemn Pietrificat - Amenajare Exterioară"
-              >
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ aspectRatio: '800/600' }}>
+                <img
+                  src={heroImage}
+                  alt="Woodstone Lemn Pietrificat - Amenajare Exterioară"
+                  className="w-full h-full object-cover"
+                  fetchPriority="high"
+                  decoding="async"
+                  width="800"
+                  height="600"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent" />
               </div>
               <div className="absolute -bottom-4 -left-4 w-28 h-28 md:w-36 md:h-36 rounded-xl overflow-hidden shadow-lg border-2 border-white">
