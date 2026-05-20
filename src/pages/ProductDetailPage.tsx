@@ -392,11 +392,11 @@ export function ProductDetailPage() {
               <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">Dimensiuni Disponibile</p>
               <h2 className="heading-h2 text-charcoal-900">Alege Dimensiunea Potrivită</h2>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="flex flex-wrap justify-center gap-6">
               {product.dimensionImages.map((dimImg, idx) => {
                 const dim = product.dimensionsList?.[idx]
                 return (
-                  <div key={idx} className="group text-center">
+                  <div key={idx} className="group text-center w-[calc(50%-0.75rem)] sm:w-[calc(33%-1rem)] md:w-[calc(25%-1.125rem)] max-w-[200px]">
                     <div className="aspect-square rounded-xl overflow-hidden bg-stone-50 border border-charcoal-100 mb-4 p-4 flex items-center justify-center">
                       <img
                         src={dimImg}
@@ -413,7 +413,7 @@ export function ProductDetailPage() {
                 )
               })}
               {product.mixModes && product.mixModes.length > 0 && (
-                <div className="group text-center">
+                <div className="group text-center w-[calc(50%-0.75rem)] sm:w-[calc(33%-1rem)] md:w-[calc(25%-1.125rem)] max-w-[200px]">
                   <div className="aspect-square rounded-xl overflow-hidden bg-brand-50 border border-brand-200 mb-4 flex items-center justify-center">
                     <div className="text-center p-4">
                       <Ruler className="w-10 h-10 text-brand-600 mx-auto mb-2" />

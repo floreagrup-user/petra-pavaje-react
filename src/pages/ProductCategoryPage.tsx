@@ -18,7 +18,7 @@ const productImages: Record<string, string> = {
   maya: 'https://petrapavaje.ro/wp-content/uploads/Maya.avif',
   roman: 'https://petrapavaje.ro/wp-content/uploads/Roman-1.avif',
   sahara: 'https://petrapavaje.ro/wp-content/uploads/Sahara.avif',
-  alpin: 'https://petrapavaje.ro/wp-content/uploads/Alpin.avif',
+  alpin: 'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-web.avif',
   pastel: 'https://petrapavaje.ro/wp-content/uploads/Pastel.avif',
   timber: 'https://petrapavaje.ro/wp-content/uploads/Timber.avif',
   terranova: 'https://petrapavaje.ro/wp-content/uploads/Terranova.avif',
