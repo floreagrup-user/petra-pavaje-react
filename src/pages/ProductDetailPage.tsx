@@ -24,8 +24,8 @@ const productImageMap: Record<string, string> = {
   dacic: 'https://petrapavaje.ro/wp-content/uploads/pavaj-Dacic.avif',
   relief: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
   holland: 'https://petrapavaje.ro/wp-content/uploads/holland-Medium.avif',
-  stretto: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
-  urbis: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
+  stretto: 'https://petrapavaje.ro/wp-content/uploads/urbis-2.webp',
+  urbis: 'https://petrapavaje.ro/wp-content/uploads/urbis-2.webp',
 }
 
 const productGalleryMap: Record<string, string[]> = {
@@ -137,6 +137,14 @@ const productGalleryMap: Record<string, string[]> = {
     'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-web1.avif',
     'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-30-x-20-cm-alb-si-moka-produs-de-Petra-Pavaje-web2.avif',
     'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-scaled.avif',
+  ],
+  stretto: [
+    'https://petrapavaje.ro/wp-content/uploads/urbis-4.webp',
+    'https://petrapavaje.ro/wp-content/uploads/urbis-5.webp',
+    'https://petrapavaje.ro/wp-content/uploads/urbis-6.webp',
+    'https://petrapavaje.ro/wp-content/uploads/urbis-7.webp',
+    'https://petrapavaje.ro/wp-content/uploads/urbis-9.webp',
+    'https://petrapavaje.ro/wp-content/uploads/urbis-8.webp',
   ],
 }
 
