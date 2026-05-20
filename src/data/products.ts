@@ -959,8 +959,8 @@ export const products: Product[] = [
       { label: '60×30×6 cm', size: '60×30', thickness: '6 cm', piecesPerMp: 5.5, piecesPerPallet: 60, kgPerPallet: 1480, mpPerPallet: 10.8 },
     ],
     dimensionImages: [
-      'https://petrapavaje.ro/wp-content/uploads/alpin-30x20x6-alb.png',
-      'https://petrapavaje.ro/wp-content/uploads/alpin-60x30x6-alb.png',
+      'https://petrapavaje.ro/wp-content/uploads/Alpin-30x20x6-alb.avif',
+      'https://petrapavaje.ro/wp-content/uploads/alpin-60x30x6-alb.avif',
     ],
     patternImages: [
       'https://petrapavaje.ro/wp-content/uploads/2020/06/model-3.png',
