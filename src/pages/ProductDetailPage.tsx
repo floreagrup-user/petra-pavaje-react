@@ -122,6 +122,16 @@ const productGalleryMap: Record<string, string[]> = {
     'https://petrapavaje.ro/wp-content/uploads/holland-Medium.avif',
     'https://petrapavaje.ro/wp-content/uploads/web-prima-pagina-1-Medium.avif',
   ],
+  pastel: [
+    'https://petrapavaje.ro/wp-content/uploads/10.-Pastel-MIX-6.30-Winter-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/9.-Pastel-MIX-6.30-Winter-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/8.-Pastel-MIX-6.30-Winter-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/7.-Pastel-MIX-6.30-Winter-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/6.-Pastel-MIX-6.30-Winter-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/1.-Pastel-20-x-10-cm-Autumn-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/2.-Pastel-20-x-10-cm-Autumn-Large.avif',
+    'https://petrapavaje.ro/wp-content/uploads/3.-Pastel-20-x-10-cm-Autumn-Large.avif',
+  ],
   alpin: [
     'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-web.avif',
     'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-web1.avif',
