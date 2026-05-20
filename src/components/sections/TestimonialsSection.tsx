@@ -73,6 +73,8 @@ export function TestimonialsSection() {
                   <img
                     src={img}
                     alt={`Proiect ${testimonial.name} - imagine ${idx + 1}`}
+                    width="900"
+                    height="1200"
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />

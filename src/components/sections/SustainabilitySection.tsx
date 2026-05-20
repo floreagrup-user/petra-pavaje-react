@@ -81,6 +81,8 @@ export function SustainabilitySection() {
               <img
                 src="https://petrapavaje.ro/wp-content/uploads/energie-verde-si-emsii-0-web1-1.avif"
                 alt="Sustenabilitate Petra Pavaje"
+                width="800"
+                height="600"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />

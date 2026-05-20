@@ -62,6 +62,8 @@ export function Header() {
               <img
                 src={isScrolled || !isHome ? '/images/petra-pavaje-logo-sticky.png' : '/images/petra-pavaje-logo.png'}
                 alt="Petra Pavaje"
+                width="160"
+                height="40"
                 className="h-8 md:h-10 w-auto transition-all duration-300"
               />
             </Link>

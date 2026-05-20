@@ -52,6 +52,8 @@ export function CategoriesSection() {
                   <img
                     src={categoryImages[category.id] || category.image}
                     alt={category.name}
+                    width="1600"
+                    height="1000"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"
                   />

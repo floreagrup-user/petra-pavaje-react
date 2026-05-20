@@ -51,6 +51,8 @@ export function FeaturedProductsSection() {
                   <img
                     src={productImages[product.slug] || product.image}
                     alt={product.name}
+                    width="800"
+                    height="600"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                   />
