@@ -485,9 +485,9 @@ export function ProductDetailPage() {
                 Alege modelul de montaj potrivit pentru proiectul tău. Fiecare model creează un efect vizual unic.
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="flex flex-wrap justify-center gap-4">
               {displayedPatterns.map((img, idx) => (
-                <div key={idx} className="group aspect-square rounded-lg overflow-hidden bg-stone-50 border border-charcoal-100">
+                <div key={idx} className="group aspect-square w-[calc(50%-0.5rem)] sm:w-[calc(33.33%-1rem)] lg:w-[calc(25%-1rem)] max-w-[260px] rounded-lg overflow-hidden bg-stone-50 border border-charcoal-100">
                   <img
                     src={img}
                     alt={`Model montaj ${idx + 1}`}
