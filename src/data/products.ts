@@ -1442,7 +1442,7 @@ export const products: Product[] = [
     category: 'standard',
     shortDescription: 'Design vălurit și montaj ușor',
     description: 'Unda reprezintă combinaţia încântătoare dintre rezistenţă şi un design plăcut, oferit de forma vălurită. Acest lucru, împreună cu ușurința montajului, îl face potrivit atât în amenajarea proiectelor rezidențiale, cât și a celor de utilitate publică. Numele acestui pavaj a fost inspirat de râul Mureș pe malul căruia este construită fabrica Petra Pavaje.',
-    image: 'https://petrapavaje.ro/wp-content/uploads/maris-1200x800-1.jpg',
+    image: 'https://petrapavaje.ro/wp-content/uploads/1.-Unda-225-x-112-cm-rosu-si-gri.avif',
     gallery: [
       'https://petrapavaje.ro/wp-content/uploads/1.-Unda-225-x-112-cm-rosu-si-gri.avif',
     ],
@@ -1540,7 +1540,7 @@ export const products: Product[] = [
     category: 'standard',
     shortDescription: 'Pavaj conic pentru modele unice',
     description: 'Pavajul Con este realizat din materiale rezistente și durabile, oferind o suprafață stabilă și sigură, potrivită atât pentru traficul pietonal, cât și pentru vehicule ușoare. Datorită formei sale distinctive, permite multiple opțiuni de aranjare și combinare, fiind ideal pentru crearea unor modele și designuri unice.',
-    image: 'https://petrapavaje.ro/wp-content/uploads/con-gri.avif',
+    image: 'https://petrapavaje.ro/wp-content/uploads/1.-Con-10-x-97-cm-alb-si-gri-Large-1.avif',
     gallery: [
       'https://petrapavaje.ro/wp-content/uploads/1.-Con-10-x-97-cm-alb-si-gri-Large-1.avif',
       'https://petrapavaje.ro/wp-content/uploads/con-gri.avif',
