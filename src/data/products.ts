@@ -1056,9 +1056,16 @@ export const products: Product[] = [
     shortDescription: 'Iluzia Lemnului, Rezistența Betonului',
     description: 'Timber este o alegere perfectă pentru cei care iubesc aspectul lemnului, dar doresc rezistența și durabilitatea betonului. Cu detaliile fine ale texturii de lemn, pavajul creează iluzia unei podele naturale, din scoarță de copac, cu nuanțe și modele autentice. Datorită texturii sale 3D, pavajul este potrivit și pentru zonele din jurul piscinelor, evitându-se alunecarea.',
     image: 'https://petrapavaje.ro/wp-content/uploads/Timber.avif',
-    gallery: [],
+    gallery: [
+      'https://petrapavaje.ro/wp-content/uploads/Timber-60-x-30-galben-savana-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/Timber-60-x-30-maro-acaju-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/Timber-60-x-30-negru-abanos-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/Timber-60-x-30-cm-brun-montan-Large.avif',
+    ],
     heroImages: [
-      'https://petrapavaje.ro/wp-content/uploads/Timber.avif',
+      'https://petrapavaje.ro/wp-content/uploads/Timber-60-x-30-galben-savana-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/Timber-60-x-30-maro-acaju-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/Timber-60-x-30-negru-abanos-Large.avif',
     ],
     heroFeatures: ['1 Dimensiune', '4 Culori', 'Garanție 5 ani'],
     specs: [
@@ -1068,14 +1075,17 @@ export const products: Product[] = [
       { label: 'Garanție', value: '5 ani' },
     ],
     colors: [
-      { name: 'Galben Savana', hex: '#c4a34a' },
-      { name: 'Brun Montan', hex: '#6b4423' },
-      { name: 'Maro Acaju', hex: '#4a2c17' },
-      { name: 'Negru Abanos', hex: '#1a1a1a' },
+      { name: 'Galben Savana', hex: '#d4a837', image: 'https://petrapavaje.ro/wp-content/uploads/culoare-galben-savana-web-1.webp' },
+      { name: 'Brun Montan', hex: '#6b4423', image: 'https://petrapavaje.ro/wp-content/uploads/culoare-brun-montan-web-1.webp' },
+      { name: 'Maro Acaju', hex: '#4a2c17', image: 'https://petrapavaje.ro/wp-content/uploads/culoare-maro-acaju-web-1.webp' },
+      { name: 'Negru Abanos', hex: '#1a1a1a', image: 'https://petrapavaje.ro/wp-content/uploads/culoare-negru-abanos-web-1.webp' },
     ],
     dimensions: '60×30×6 cm',
     dimensionsList: [
       { label: '60×30×6 cm', size: '60×30', thickness: '6 cm', piecesPerMp: 5.5, piecesPerPallet: 48, kgPerPallet: 1249, mpPerPallet: 8.64 },
+    ],
+    dimensionImages: [
+      'https://petrapavaje.ro/wp-content/uploads/Timber-60-x-30-galben-savana-Large.avif',
     ],
     weight: '1.249 Kg/palet',
     usage: ['Terase', 'Curți', 'Zone naturale', 'Zone piscină'],
