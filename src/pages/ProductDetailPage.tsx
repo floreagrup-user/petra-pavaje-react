@@ -23,7 +23,7 @@ const productImageMap: Record<string, string> = {
   terranova: 'https://petrapavaje.ro/wp-content/uploads/Terranova.avif',
   dacic: 'https://petrapavaje.ro/wp-content/uploads/pavaj-Dacic.avif',
   relief: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
-  holland: 'https://petrapavaje.ro/wp-content/uploads/holland-Medium.avif',
+  holland: 'https://petrapavaje.ro/wp-content/uploads/2.-Holland-20-x-10-cm-galben-si-maro.avif',
   autobloc: 'https://petrapavaje.ro/wp-content/uploads/1.-Autobloc-20-x-165-cm-rosu-si-gri.avif',
   unda: 'https://petrapavaje.ro/wp-content/uploads/maris-1200x800-1.jpg',
   quatro: 'https://petrapavaje.ro/wp-content/uploads/1.-Quatro-20-x-20-cm-gri.avif',

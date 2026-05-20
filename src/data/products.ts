@@ -1311,7 +1311,7 @@ export const products: Product[] = [
     category: 'standard',
     shortDescription: 'Model clasic, diverse montări',
     description: 'Holland reprezintă un model clasic, folosit în întreaga lume. Poate fi aranjat în diverse stiluri de montare. Datorită aplicabilității sale universale, se folosește atât pentru suprafețe pietonale cât și pentru cele destinate traficului auto, inclusiv de tonaj mare. Poate fi pus în operă într-o multitudine de modele.',
-    image: 'https://petrapavaje.ro/wp-content/uploads/holland-Medium.avif',
+    image: 'https://petrapavaje.ro/wp-content/uploads/2.-Holland-20-x-10-cm-galben-si-maro.avif',
     gallery: [
       'https://petrapavaje.ro/wp-content/uploads/1.-Holland-20-x-10-cm-galben-si-maro.avif',
       'https://petrapavaje.ro/wp-content/uploads/2.-Holland-20-x-10-cm-galben-si-maro.avif',
@@ -1325,9 +1325,9 @@ export const products: Product[] = [
       'https://petrapavaje.ro/wp-content/uploads/10.-Holland-20-x-10-cm-gri-si-rosu.avif',
     ],
     heroImages: [
-      'https://petrapavaje.ro/wp-content/uploads/1.-Holland-20-x-10-cm-galben-si-maro.avif',
-      'https://petrapavaje.ro/wp-content/uploads/8.-Holland-20-x-10-cm-gri.avif',
-      'https://petrapavaje.ro/wp-content/uploads/3.-Holland-20-x-10-cm-negru-si-alb.avif',
+      'https://petrapavaje.ro/wp-content/uploads/2.-Holland-20-x-10-cm-galben-si-maro.avif',
+      'https://petrapavaje.ro/wp-content/uploads/4.-Holland-20-x-10-cm-negru-si-alb.avif',
+      'https://petrapavaje.ro/wp-content/uploads/7.-Holland-20-x-10-cm-negru-si-alb.avif',
     ],
     heroFeatures: ['9 Dimensiuni', '7 Culori', 'Garanție 5 ani'],
     specs: [
