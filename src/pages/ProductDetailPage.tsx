@@ -17,7 +17,7 @@ const productImageMap: Record<string, string> = {
   maya: 'https://petrapavaje.ro/wp-content/uploads/Maya.avif',
   roman: 'https://petrapavaje.ro/wp-content/uploads/Roman-1.avif',
   sahara: 'https://petrapavaje.ro/wp-content/uploads/Sahara.avif',
-  alpin: 'https://petrapavaje.ro/wp-content/uploads/Alpin.avif',
+  alpin: 'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-scaled.avif',
   pastel: 'https://petrapavaje.ro/wp-content/uploads/Pastel.avif',
   timber: 'https://petrapavaje.ro/wp-content/uploads/Timber.avif',
   terranova: 'https://petrapavaje.ro/wp-content/uploads/Terranova.avif',
@@ -121,6 +121,12 @@ const productGalleryMap: Record<string, string[]> = {
   holland: [
     'https://petrapavaje.ro/wp-content/uploads/holland-Medium.avif',
     'https://petrapavaje.ro/wp-content/uploads/web-prima-pagina-1-Medium.avif',
+  ],
+  alpin: [
+    'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-web.avif',
+    'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-web1.avif',
+    'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-30-x-20-cm-alb-si-moka-produs-de-Petra-Pavaje-web2.avif',
+    'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-scaled.avif',
   ],
 }
 
