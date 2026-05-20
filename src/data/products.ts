@@ -1259,6 +1259,7 @@ export const products: Product[] = [
     name: 'Stretto',
     slug: 'stretto',
     category: 'premium',
+    featured: true,
     shortDescription: 'Modern și Versatil',
     description: 'Pavajul Stretto de la Petra Pavaje este un produs modern și versatil, conceput ca răspuns la cererea tot mai mare pentru un pavaj care să imite estetica parchetului. Plăcile înguste de 40×10 cm se potrivesc amenajărilor moderne, minimaliste, fiind tot mai solicitate de arhitecți și peisagiști. Forma dreptunghiulară permite soluții de amenajare inedite, grație liniilor lungi și direcțiilor de montaj variate.',
     image: 'https://petrapavaje.ro/wp-content/uploads/urbis-2.webp',
