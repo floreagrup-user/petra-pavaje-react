@@ -1099,9 +1099,16 @@ export const products: Product[] = [
     shortDescription: 'Renașterea, Forța și Metamorfoza Naturii',
     description: 'Terranova – pavajul care transmite renașterea, forța și metamorfoza naturii. În urma erupțiilor vulcanice, lava transformă zonele din proximitate în soluri fertile. Pavajul se distinge prin design inspirat de forța și frumusețea transfiguratoare a naturii, cu o paletă de culori intense și vibrante.',
     image: 'https://petrapavaje.ro/wp-content/uploads/Terranova.avif',
-    gallery: [],
+    gallery: [
+      'https://petrapavaje.ro/wp-content/uploads/3.-Terranova-MIX-8.20-gri-vulcanic-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/6.-Terranova-MIX-6.14-brun-castaniu-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/4.-Terranova-MIX-8.20-gri-vulcanic-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/5.-Terranova-MIX-8.20-gri-vulcanic-Large.avif',
+    ],
     heroImages: [
-      'https://petrapavaje.ro/wp-content/uploads/Terranova.avif',
+      'https://petrapavaje.ro/wp-content/uploads/3.-Terranova-MIX-8.20-gri-vulcanic-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/6.-Terranova-MIX-6.14-brun-castaniu-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/4.-Terranova-MIX-8.20-gri-vulcanic-Large.avif',
     ],
     heroFeatures: ['2 Variante MIX', '2 Culori', 'Garanție 5 ani'],
     specs: [
@@ -1112,13 +1119,17 @@ export const products: Product[] = [
     ],
     mixModes: ['MIX 6.14', 'MIX 8.20'],
     colors: [
-      { name: 'Gri Vulcanic', hex: '#4a4a4a' },
-      { name: 'Brun Castaniu', hex: '#5c3a21' },
+      { name: 'Gri Vulcanic', hex: '#4a4a4a', image: 'https://petrapavaje.ro/wp-content/uploads/culoare-gri-vulcanic.png' },
+      { name: 'Brun Castaniu', hex: '#5c3a21', image: 'https://petrapavaje.ro/wp-content/uploads/culoare-brun-castaniu.png' },
     ],
     dimensions: '2 variante Mix',
     dimensionsList: [
       { label: 'MIX 6.14', size: 'Mix', thickness: '6 cm', piecesPerMp: 0.96, piecesPerPallet: 140, kgPerPallet: 1459, mpPerPallet: 9.6 },
       { label: 'MIX 8.20', size: 'Mix', thickness: '8 cm', piecesPerMp: 0.96, piecesPerPallet: 160, kgPerPallet: 1435, mpPerPallet: 7.68 },
+    ],
+    dimensionImages: [
+      'https://petrapavaje.ro/wp-content/uploads/6.-Terranova-MIX-6.14-brun-castaniu-Large.avif',
+      'https://petrapavaje.ro/wp-content/uploads/3.-Terranova-MIX-8.20-gri-vulcanic-Large.avif',
     ],
     weight: '1.435 - 1.459 Kg/palet',
     usage: ['Curți', 'Terase', 'Spații moderne'],
