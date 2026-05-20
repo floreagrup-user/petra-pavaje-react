@@ -27,11 +27,11 @@ const productImages: Record<string, string> = {
   urbis: 'https://petrapavaje.ro/wp-content/uploads/urbis-2.webp',
   stretto: 'https://petrapavaje.ro/wp-content/uploads/urbis-2.webp',
   holland: 'https://petrapavaje.ro/wp-content/uploads/holland-Medium.avif',
-  autobloc: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
-  unda: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
-  quatro: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
-  con: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
-  'pavaje-eco': 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
+  autobloc: 'https://petrapavaje.ro/wp-content/uploads/1.-Autobloc-20-x-165-cm-rosu-si-gri.avif',
+  unda: 'https://petrapavaje.ro/wp-content/uploads/maris-1200x800-1.jpg',
+  quatro: 'https://petrapavaje.ro/wp-content/uploads/1.-Quatro-20-x-20-cm-gri.avif',
+  con: 'https://petrapavaje.ro/wp-content/uploads/con-gri.avif',
+  'pavaje-eco': 'https://petrapavaje.ro/wp-content/uploads/1.-Grila-60-x-40-x-10-cm-gri.avif',
 }
 
 export function ProductCategoryPage() {
