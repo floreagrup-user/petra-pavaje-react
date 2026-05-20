@@ -422,33 +422,30 @@ export function ProductDetailPage() {
                   </div>
                 )
               })}
-              {product.mixModes && product.mixModes.length > 0 && (
-                <div className="group text-center w-[calc(50%-0.75rem)] sm:w-[calc(33%-1rem)] md:w-[calc(25%-1.125rem)] max-w-[200px]">
-                  <div className="aspect-square rounded-xl overflow-hidden bg-brand-50 border border-brand-200 mb-4 flex items-center justify-center">
-                    <div className="text-center p-4">
-                      <Ruler className="w-10 h-10 text-brand-600 mx-auto mb-2" />
-                      <p className="font-semibold text-brand-700">{product.mixModes[0]}</p>
+              {product.mixModes && product.mixModes.map((mode, mixIdx) => {
+                const mixDim = product.dimensionsList?.find(d => d.label === mode)
+                return (
+                  <div key={mixIdx} className="group text-center w-[calc(50%-0.75rem)] sm:w-[calc(33%-1rem)] md:w-[calc(25%-1.125rem)] max-w-[200px]">
+                    <div className="aspect-square rounded-xl overflow-hidden bg-brand-50 border border-brand-200 mb-4 flex items-center justify-center">
+                      <div className="text-center p-4">
+                        <Ruler className="w-10 h-10 text-brand-600 mx-auto mb-2" />
+                        <p className="font-semibold text-brand-700">{mode}</p>
+                      </div>
                     </div>
+                    <h4 className="font-semibold text-charcoal-900">Mix de dimensiuni</h4>
+                    <p className="text-sm text-charcoal-500 mb-2">Ideal pentru spații generoase</p>
+                    {mixDim?.mixComposition && (
+                      <div className="space-y-1">
+                        {mixDim.mixComposition.map((mc, i) => (
+                          <p key={i} className="text-xs text-charcoal-600">
+                            {mc.dimensions} — {mc.pieces} buc
+                          </p>
+                        ))}
+                      </div>
+                    )}
                   </div>
-                  <h4 className="font-semibold text-charcoal-900">Mix de dimensiuni</h4>
-                  <p className="text-sm text-charcoal-500 mb-2">Ideal pentru spații generoase</p>
-                  {(() => {
-                    const mixDim = product.dimensionsList?.find(d => d.label.includes('MIX'))
-                    if (mixDim?.mixComposition) {
-                      return (
-                        <div className="space-y-1">
-                          {mixDim.mixComposition.map((mc, i) => (
-                            <p key={i} className="text-xs text-charcoal-600">
-                              {mc.dimensions} — {mc.pieces} buc
-                            </p>
-                          ))}
-                        </div>
-                      )
-                    }
-                    return null
-                  })()}
-                </div>
-              )}
+                )
+              })}
             </div>
           </div>
         </section>
