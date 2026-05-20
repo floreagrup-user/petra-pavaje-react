@@ -61,7 +61,7 @@ export function Header() {
             <Link to="/" className="flex items-center gap-2 group shrink-0">
               <span className={cn(
                 'inline-flex items-center justify-center px-3 py-1.5 rounded-xl transition-all duration-500',
-                isHome && !isScrolled ? 'bg-white/15 backdrop-blur-sm' : ''
+                isHome && !isScrolled ? 'bg-white/35 backdrop-blur-sm' : ''
               )}>
                 <img
                   src={isScrolled || !isHome ? '/images/petra-pavaje-logo-sticky.png' : '/images/petra-pavaje-logo.png'}
