@@ -77,7 +77,7 @@ export function SustainabilitySection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-premium">
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-premium" style={{ aspectRatio: '4/3' }}>
               <img
                 src="https://petrapavaje.ro/wp-content/uploads/energie-verde-si-emsii-0-web1-1.avif"
                 alt="Sustenabilitate Petra Pavaje"

@@ -48,7 +48,7 @@ export function CategoriesSection() {
                 to={`/produse/${category.slug}`}
                 className="group block card-premium"
               >
-                <div className="relative aspect-[16/10] overflow-hidden">
+                <div className="relative aspect-[16/10] overflow-hidden" style={{ aspectRatio: '16/10' }}>
                   <img
                     src={categoryImages[category.id] || category.image}
                     alt={category.name}

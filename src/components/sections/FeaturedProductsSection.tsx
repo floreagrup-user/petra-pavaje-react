@@ -47,7 +47,7 @@ export function FeaturedProductsSection() {
                 to={`/produse/pavaje-${product.category}/${product.slug}`}
                 className="group block"
               >
-                <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-stone-100 mb-4">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-stone-100 mb-4" style={{ aspectRatio: '4/3' }}>
                   <img
                     src={productImages[product.slug] || product.image}
                     alt={product.name}

@@ -68,7 +68,7 @@ export function TestimonialsSection() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: idx * 0.1 }}
-                  className="aspect-[3/4] rounded-xl overflow-hidden"
+                  className="aspect-[3/4] rounded-xl overflow-hidden" style={{ aspectRatio: '3/4' }}
                 >
                   <img
                     src={img}
