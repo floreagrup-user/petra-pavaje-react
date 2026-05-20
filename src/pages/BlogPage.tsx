@@ -78,9 +78,21 @@ const blogPosts: BlogPost[] = [
     image: 'https://petrapavaje.ro/wp-content/uploads/energie-verde-si-emsii-0-web1-1.avif',
     readTime: 5,
   },
+  {
+    id: '7',
+    title: 'Soluții delimitare cu pavaj: Cum alegi soluția perfectă pentru o grădină cu design impecabil',
+    slug: 'solutii-delimitare-pavaj-gradina-design-impecabil',
+    excerpt: 'De la borduri clasice la delimitări creative cu pavaj — ghid complet pentru o amenajare coerentă și durabilă.',
+    content: 'Când vine vorba de amenajări exterioare, diferența dintre un proiect reușit și unul excepțional stă, aproape întotdeauna, în detalii.',
+    date: '2026-05-07',
+    author: 'Petra Pavaje',
+    category: 'Ghiduri Tehnice',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Relief-delimitare-20x10x6.avif',
+    readTime: 9,
+  },
 ]
 
-const categories = ['Toate', 'Ghiduri', 'Trenduri', 'Montaj', 'Produse', 'Întreținere', 'Sustenabilitate']
+const categories = ['Toate', 'Ghiduri', 'Ghiduri Tehnice', 'Trenduri', 'Montaj', 'Produse', 'Întreținere', 'Sustenabilitate']
 
 export function BlogPage() {
   const [activeCategory, setActiveCategory] = useState('Toate')

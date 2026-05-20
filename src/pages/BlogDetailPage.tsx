@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ArrowLeft, Calendar, Clock, User } from 'lucide-react'
+import { Calendar, Clock, User } from 'lucide-react'
 import type { BlogPost } from '@/data/types'
 
 const blogPosts: BlogPost[] = [
@@ -93,6 +93,114 @@ Integrarea iluminatului în amenajările cu pavaje creează atmosfere spectaculo
     image: 'https://petrapavaje.ro/wp-content/uploads/relief-homepage.avif',
     readTime: 7,
   },
+  {
+    id: '7',
+    title: 'Soluții delimitare cu pavaj: Cum alegi soluția perfectă pentru o grădină cu design impecabil',
+    slug: 'solutii-delimitare-pavaj-gradina-design-impecabil',
+    excerpt: 'De la borduri clasice la delimitări creative cu pavaj — ghid complet pentru o amenajare coerentă și durabilă.',
+    content: `Când vine vorba de amenajări exterioare, diferența dintre un proiect reușit și unul excepțional stă, aproape întotdeauna, în detalii.
+
+Ca specialiști cu mulți ani de experiență în industria prefabricatelor din beton, am observat o tendință clară: proprietarii de case nu mai caută doar un simplu pavaj, ci soluții complete pentru un aspect final coerent. Delimitarea nu este doar o necesitate tehnică pentru stabilizarea montajului, ci un instrument de design care definește zonele de interes, separă gazonul de spațiile de circulație și adaugă personalitate curții.
+
+În acest articol, prezentăm cele mai frecvente soluții pentru delimitare, de la borduri clasice la utilizări creative ale pavajului, pentru a răspunde celor mai frecvente întrebări: Cum separăm elegant terasa de grădină? Ce alegem pentru a proteja rădăcinile arborilor?
+
+## Soluții clasice: Bordurile – piesele de legătură ale oricărei amenajări
+
+Cu un portofoliu ce depășește 70 de modele, bordurile Petra Pavaje sunt concepute să deservească atât proiectele rezidențiale, cât și cele civile. Iată care sunt cele mai solicitate modele și situațiile în care acestea excelează:
+
+![Gama de borduri Petra Pavaje](https://petrapavaje.ro/wp-content/uploads/Bordura-50x5x20-negru.avif)
+
+### 1. Bordura dreaptă 50×5×20 cm
+
+Etalon pentru o finalitate estetică discretă. Disponibilă în nuanțele gamei Premium, reușește să întregească vizual suprafața pavată fără a atrage atenția strident. Alegerea ideală când vrei ca delimitarea să fie aproape invizibilă.
+
+![Bordura dreaptă 40x15x20 cm](https://petrapavaje.ro/wp-content/uploads/Bordura-40x15x20.avif)
+
+### 2. Bordura dreaptă 40×15×20 cm
+
+Pentru proiecte ce necesită o structură robustă. Mai lată, oferă un plus de stabilitate ansamblului. Avantaj major: lățimea apropiată de a pavajului face tranziția spre marginea amenajării mai lină și mai plăcută ochiului.
+
+![Bordura arcade 100x5x25 cm](https://petrapavaje.ro/wp-content/uploads/Bordura-Arcada.avif)
+
+### 3. Bordura arcade 100×5×25 cm
+
+Utilizată cu precădere pentru delimitarea spațiilor verzi, este un veritabil punct de atracție. Designul curbat sparge liniile rigide, aducând un aer ușor boem. Răspunsul perfect la: „Cum scot în evidență rondourile de flori?"
+
+![Bordura cilindrică 106x9x25 cm](https://petrapavaje.ro/wp-content/uploads/Bordura-cilindrica.avif)
+
+### 4. Bordura cilindrică 106×9×25 cm
+
+O alegere îndrăzneață pentru cei care vor să iasă din tipare. Aspectul masiv fură privirea și garantează stabilitate. Formată din două elemente de 50 cm și un pilon de 6 cm, permite pivotarea și crearea de arce cu diametru mare sau forme hexagonale.
+
+## Abordare creativă: Delimitări creative – când pavajul preia rolul de contur
+
+Uneori, cea mai bună delimitare nu este o bordură, ci un alt tip de pavaj. Folosirea culorilor contrastante sau a texturilor diferite poate oferi acel ceva care transformă o curte obișnuită într-una de revistă.
+
+![Pavajul Stretto](https://petrapavaje.ro/wp-content/uploads/Stretto-gri-antic-1.avif)
+
+### Pavajul Stretto
+
+Un produs nou, de dimensiuni reduse, extrem de versatil. Poate fi montat atât pe orizontală, cât și pe verticală, fiind ideal pentru a crea margini cu modele inedite.
+
+### Pavajul 40×10 cm
+
+Recomandat pentru spațiile ample. Multitudinea de nuanțe permite crearea de jocuri cromatice care ghidează privirea și delimitează zonele de relaxare de cele pietonale.
+
+![Pavajul CON](https://petrapavaje.ro/wp-content/uploads/1.-Con-10-x-97-cm-alb-si-gri-Large-1.avif)
+
+### Pavajul CON
+
+Versatilitatea este caracteristica principală. Prin alternarea culorilor și a modelului de dispunere, se obțin delimitări dinamice pentru curți moderne.
+
+![Pavajul Gemina](https://petrapavaje.ro/wp-content/uploads/web-Gemina-maro-si-galben-Medium.avif)
+
+### Pavajul Gemina
+
+Datorită volumetriei și formei sale bombate, Gemina creează o delimitare elegantă, tridimensională. Un produs care invită la creativitate în modalitățile de montaj.
+
+### Pavajul Quatro
+
+Poate fi alternat cu spoturi luminoase, astfel că la lăsarea serii curtea va arăta spectaculos, iar pe timpul zilei poziția spoturilor nu va fi evidentă.
+
+## Texturi și stiluri: contrastul care definește spațiul
+
+Pentru un impact vizual puternic, recomandăm utilizarea texturilor contrastante. Alăturarea unui pavaj neted lângă unul rugos, sau a unuia geometric lângă unul cu aspect natural, creează delimitări care nu necesită alte elemente suplimentare.
+
+![Pavajul Relief](https://petrapavaje.ro/wp-content/uploads/Relief-20x10x6.avif)
+
+### Pavajul Relief
+
+Cu o textură grunjuroasă, luxuriantă, este ideal pentru delimitări geometrice complexe sau modele care emană eleganță.
+
+![Pavajul Primo antichizat](https://petrapavaje.ro/wp-content/uploads/primo-negru.avif)
+
+### Pavajul Primo antichizat
+
+Un contrast fascinant se obține prin alăturarea acestuia cu un pavaj cu suprafață fină. Avantaj major: poate fi așezat în cant sau pe muchie, toate fețele fiind finisate în aceeași culoare și textură.
+
+![Pavajul Antic](https://petrapavaje.ro/wp-content/uploads/Roman_Mures-Antic.avif)
+
+### Pavajul Antic
+
+Dacă vrei aspectul de piatră învechită, acesta este pavajul potrivit. Folosește culoarea neagră lângă un pavaj deschis pentru un contrast cromatic puternic. Pentru design minimalist, alege Antic gri antic lângă un pavaj Roca MIX – delimitarea se va face prin textură și dimensiune, nu prin culoare.
+
+![Pavajul Cubic](https://petrapavaje.ro/wp-content/uploads/Cubic-gri-bazaltic-1.avif)
+
+### Pavajul Cubic
+
+Redă fidel aspectul pietrei cubice de altădată. Perfect pentru borduri de modă veche într-un context modern, mai ales combinat cu pavaje cu textură fină.
+
+## Concluzie
+
+Indiferent dacă ești la începutul proiectului de amenajare sau cauți soluții de finisare pentru grădina ta, alegerea elementelor de delimitare este crucială. Portofoliul Petra Pavaje oferă soluții complete care răspund celor mai riguroase cerințe de durabilitate și design.
+
+O delimitare corect realizată nu doar că protejează investiția în pavaj pe termen lung, dar transformă curtea într-un spațiu organizat, armonios, cu bun gust. Alege bordurile și pavajele care rezonează cu viziunea ta.`,
+    date: '2026-05-07',
+    author: 'Petra Pavaje',
+    category: 'Ghiduri Tehnice',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Relief-delimitare-20x10x6.avif',
+    readTime: 9,
+  },
 ]
 
 export function BlogDetailPage() {
@@ -161,6 +269,19 @@ export function BlogDetailPage() {
 
             <div className="prose prose-lg max-w-none">
               {post.content.split('\n').map((paragraph, i) => {
+                const imgMatch = paragraph.match(/^!\[(.*?)\]\((.*?)\)$/)
+                if (imgMatch) {
+                  return (
+                    <figure key={i} className="my-6">
+                      <img
+                        src={imgMatch[2]}
+                        alt={imgMatch[1]}
+                        className="w-full rounded-xl"
+                        loading="lazy"
+                      />
+                    </figure>
+                  )
+                }
                 if (paragraph.startsWith('## ')) {
                   return <h2 key={i} className="text-2xl font-bold text-charcoal-900 mt-8 mb-4">{paragraph.replace('## ', '')}</h2>
                 }
