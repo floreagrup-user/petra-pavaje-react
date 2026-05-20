@@ -21,7 +21,7 @@ const productImageMap: Record<string, string> = {
   pastel: 'https://petrapavaje.ro/wp-content/uploads/Pastel.avif',
   timber: 'https://petrapavaje.ro/wp-content/uploads/Timber.avif',
   terranova: 'https://petrapavaje.ro/wp-content/uploads/Terranova.avif',
-  dacic: 'https://petrapavaje.ro/wp-content/uploads/Dacic.avif',
+  dacic: 'https://petrapavaje.ro/wp-content/uploads/pavaj-Dacic.avif',
   relief: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
   holland: 'https://petrapavaje.ro/wp-content/uploads/holland-Medium.avif',
   stretto: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',

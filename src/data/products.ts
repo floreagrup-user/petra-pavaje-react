@@ -1142,10 +1142,17 @@ export const products: Product[] = [
     category: 'premium',
     shortDescription: 'Spirit Dac și Natură Vibrantă',
     description: 'Pavajul Dacic, prin culorile vibrante ce redau imaginea lanurilor înverzite, evocă măreția și bogăția câmpurilor dacice. Îmbinând trecutul cu prezentul, fiecare piatră poartă o încărcătură istorică și transmite povestea unui popor curajos ce trăia în armonie cu natura. Culoarea galben-verzui aduce o notă de naturalețe în peisajul urban.',
-    image: 'https://petrapavaje.ro/wp-content/uploads/Dacic.avif',
-    gallery: [],
+    image: 'https://petrapavaje.ro/wp-content/uploads/pavaj-Dacic.avif',
+    gallery: [
+      'https://petrapavaje.ro/wp-content/uploads/pavaj-Dacic.avif',
+      'https://petrapavaje.ro/wp-content/uploads/pavaj-Dacic-1.avif',
+      'https://petrapavaje.ro/wp-content/uploads/pavaj-Dacic-2.avif',
+      'https://petrapavaje.ro/wp-content/uploads/pavaj-Dacic-3.avif',
+    ],
     heroImages: [
-      'https://petrapavaje.ro/wp-content/uploads/Dacic.avif',
+      'https://petrapavaje.ro/wp-content/uploads/pavaj-Dacic.avif',
+      'https://petrapavaje.ro/wp-content/uploads/pavaj-Dacic-1.avif',
+      'https://petrapavaje.ro/wp-content/uploads/pavaj-Dacic-2.avif',
     ],
     heroFeatures: ['2 Variante MIX', '1 Culoare', 'Garanție 5 ani'],
     specs: [
@@ -1156,12 +1163,16 @@ export const products: Product[] = [
     ],
     mixModes: ['MIX 6.14', 'MIX 8.20'],
     colors: [
-      { name: 'Galben Verzui', hex: '#b8b84a' },
+      { name: 'Galben Verzui', hex: '#b8b84a', image: 'https://petrapavaje.ro/wp-content/uploads/culoare-galben-verzui-1.avif' },
     ],
     dimensions: '2 variante Mix',
     dimensionsList: [
       { label: 'MIX 6.14', size: 'Mix', thickness: '6 cm', piecesPerMp: 0.96, piecesPerPallet: 140, kgPerPallet: 1459, mpPerPallet: 9.6 },
       { label: 'MIX 8.20', size: 'Mix', thickness: '8 cm', piecesPerMp: 0.96, piecesPerPallet: 160, kgPerPallet: 1435, mpPerPallet: 7.68 },
+    ],
+    dimensionImages: [
+      'https://petrapavaje.ro/wp-content/uploads/pavaj-Dacic.avif',
+      'https://petrapavaje.ro/wp-content/uploads/pavaj-Dacic-1.avif',
     ],
     weight: '1.435 - 1.459 Kg/palet',
     usage: ['Curți', 'Monumente', 'Zone istorice'],
