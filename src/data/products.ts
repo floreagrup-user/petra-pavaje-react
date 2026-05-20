@@ -1029,8 +1029,16 @@ export const products: Product[] = [
     dimensionsList: [
       { label: '20×10×4 cm', size: '20×10', thickness: '4 cm', piecesPerMp: 0, piecesPerPallet: 0, kgPerPallet: 0, mpPerPallet: 0 },
       { label: '20×10×6 cm', size: '20×10', thickness: '6 cm', piecesPerMp: 0, piecesPerPallet: 0, kgPerPallet: 0, mpPerPallet: 0 },
-      { label: 'MIX 4.30', size: 'Mix', thickness: '4 cm', piecesPerMp: 1.08, piecesPerPallet: 450, kgPerPallet: 1433, mpPerPallet: 16.2 },
-      { label: 'MIX 6.30', size: 'Mix', thickness: '6 cm', piecesPerMp: 1.08, piecesPerPallet: 300, kgPerPallet: 1519, mpPerPallet: 10.8 },
+      { label: 'MIX 4.30', size: 'Mix', thickness: '4 cm', piecesPerMp: 1.08, piecesPerPallet: 450, kgPerPallet: 1433, mpPerPallet: 16.2, mixComposition: [
+        { dimensions: '20×10×4 cm', pieces: 0 },
+        { dimensions: '20×20×4 cm', pieces: 0 },
+        { dimensions: '30×20×4 cm', pieces: 0 },
+      ] },
+      { label: 'MIX 6.30', size: 'Mix', thickness: '6 cm', piecesPerMp: 1.08, piecesPerPallet: 300, kgPerPallet: 1519, mpPerPallet: 10.8, mixComposition: [
+        { dimensions: '20×10×6 cm', pieces: 0 },
+        { dimensions: '20×20×6 cm', pieces: 0 },
+        { dimensions: '30×20×6 cm', pieces: 0 },
+      ] },
     ],
     dimensionImages: [
       'https://petrapavaje.ro/wp-content/uploads/pastel-20x10x6.png',

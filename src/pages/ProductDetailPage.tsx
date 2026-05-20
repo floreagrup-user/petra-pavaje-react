@@ -422,7 +422,23 @@ export function ProductDetailPage() {
                   </div>
                 )
               })}
-              {product.mixModes && product.mixModes.map((mode, mixIdx) => {
+            </div>
+          </div>
+        </section>
+      )}
+
+      {product.mixModes && product.mixModes.length > 0 && (
+        <section className="py-12 md:py-16 bg-white border-t border-charcoal-100">
+          <div className="container-premium">
+            <div className="text-center mb-10">
+              <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">Modele Mix</p>
+              <h2 className="heading-h2 text-charcoal-900">MODELE MIX</h2>
+              <p className="text-charcoal-500 mt-3 max-w-2xl mx-auto">
+                Modelul MIX reprezintă un format dintr-un mix de dimensiuni, ideal pentru spații generoase.
+              </p>
+            </div>
+            <div className="flex flex-wrap justify-center gap-6">
+              {product.mixModes.map((mode, mixIdx) => {
                 const mixDim = product.dimensionsList?.find(d => d.label === mode)
                 return (
                   <div key={mixIdx} className="group text-center w-[calc(50%-0.75rem)] sm:w-[calc(33%-1rem)] md:w-[calc(25%-1.125rem)] max-w-[200px]">
@@ -432,13 +448,12 @@ export function ProductDetailPage() {
                         <p className="font-semibold text-brand-700">{mode}</p>
                       </div>
                     </div>
-                    <h4 className="font-semibold text-charcoal-900">Mix de dimensiuni</h4>
-                    <p className="text-sm text-charcoal-500 mb-2">Ideal pentru spații generoase</p>
+                    <h4 className="font-semibold text-charcoal-900">{mode}</h4>
                     {mixDim?.mixComposition && (
-                      <div className="space-y-1">
+                      <div className="space-y-1 mt-2">
                         {mixDim.mixComposition.map((mc, i) => (
                           <p key={i} className="text-xs text-charcoal-600">
-                            {mc.dimensions} — {mc.pieces} buc
+                            {mc.dimensions}
                           </p>
                         ))}
                       </div>
