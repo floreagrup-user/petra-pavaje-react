@@ -59,13 +59,18 @@ export function Header() {
         <div className="container-premium">
           <div className="flex items-center justify-between h-16 md:h-20">
             <Link to="/" className="flex items-center gap-2 group shrink-0">
-              <img
-                src={isScrolled || !isHome ? '/images/petra-pavaje-logo-sticky.png' : '/images/petra-pavaje-logo.png'}
-                alt="Petra Pavaje"
-                width="160"
-                height="40"
-                className="h-8 md:h-10 w-auto transition-all duration-300"
-              />
+              <span className={cn(
+                'inline-flex items-center justify-center px-3 py-1.5 rounded-xl transition-all duration-500',
+                isHome && !isScrolled ? 'bg-white/15 backdrop-blur-sm' : ''
+              )}>
+                <img
+                  src={isScrolled || !isHome ? '/images/petra-pavaje-logo-sticky.png' : '/images/petra-pavaje-logo.png'}
+                  alt="Petra Pavaje"
+                  width="160"
+                  height="40"
+                  className="h-8 md:h-10 w-auto transition-all duration-300"
+                />
+              </span>
             </Link>
 
             <nav className="hidden lg:flex items-center gap-1">
