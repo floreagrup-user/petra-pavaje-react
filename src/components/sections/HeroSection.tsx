@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Play } from 'lucide-react'
 
@@ -36,13 +36,6 @@ const heroSlides = [
 export function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const containerRef = useRef<HTMLDivElement>(null)
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ['start start', 'end start'],
-  })
-
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '40%'])
-  const opacity = useTransform(scrollYProgress, [0, 0.6], [1, 0])
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -55,11 +48,11 @@ export function HeroSection() {
 
   return (
     <section ref={containerRef} className="relative h-screen min-h-[650px] overflow-hidden">
-      <motion.div style={{ y, opacity }} className="absolute inset-0">
+      <div className="absolute inset-0 will-change-transform" style={{ transform: 'translateZ(0)' }}>
         {heroSlides.map((s, i) => (
           <div
             key={s.id}
-            className="absolute inset-0 bg-cover bg-center transition-all duration-1000"
+            className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
             style={{
               backgroundImage: `url(${s.image})`,
               opacity: i === currentSlide ? 1 : 0,
@@ -68,7 +61,7 @@ export function HeroSection() {
         ))}
         <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-black/5 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
-      </motion.div>
+      </div>
 
       <div className="relative h-full flex items-center">
         <div className="container-premium w-full">

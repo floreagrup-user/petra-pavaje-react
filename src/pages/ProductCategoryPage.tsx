@@ -4,35 +4,7 @@ import { ArrowRight } from 'lucide-react'
 import { products, getProductsByCategory } from '@/data/products'
 import { categories } from '@/data/site'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
-
-const productImages: Record<string, string> = {
-  roca: 'https://petrapavaje.ro/wp-content/uploads/Roca.avif',
-  antic: 'https://petrapavaje.ro/wp-content/uploads/Antic.avif',
-  primo: 'https://petrapavaje.ro/wp-content/uploads/primo-rosu-2-web.avif',
-  'grand-urban': 'https://petrapavaje.ro/wp-content/uploads/Grand-Urban.avif',
-  gemina: 'https://petrapavaje.ro/wp-content/uploads/Gemina.avif',
-  cubic: 'https://petrapavaje.ro/wp-content/uploads/Cubic-MIX-7.25-gri-antic-web.avif',
-  mistic: 'https://petrapavaje.ro/wp-content/uploads/Mistic-1.avif',
-  mediterana: 'https://petrapavaje.ro/wp-content/uploads/Mediterana.avif',
-  viena: 'https://petrapavaje.ro/wp-content/uploads/Viena.avif',
-  maya: 'https://petrapavaje.ro/wp-content/uploads/Maya.avif',
-  roman: 'https://petrapavaje.ro/wp-content/uploads/Roman-1.avif',
-  sahara: 'https://petrapavaje.ro/wp-content/uploads/Sahara.avif',
-  alpin: 'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-web.avif',
-  pastel: 'https://petrapavaje.ro/wp-content/uploads/Pastel.avif',
-  timber: 'https://petrapavaje.ro/wp-content/uploads/Timber.avif',
-  terranova: 'https://petrapavaje.ro/wp-content/uploads/Terranova.avif',
-  dacic: 'https://petrapavaje.ro/wp-content/uploads/Dacic.avif',
-  relief: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
-  urbis: 'https://petrapavaje.ro/wp-content/uploads/urbis-2.webp',
-  stretto: 'https://petrapavaje.ro/wp-content/uploads/urbis-2.webp',
-  holland: 'https://petrapavaje.ro/wp-content/uploads/2.-Holland-20-x-10-cm-galben-si-maro.avif',
-  autobloc: 'https://petrapavaje.ro/wp-content/uploads/1.-Autobloc-20-x-165-cm-rosu-si-gri.avif',
-  unda: 'https://petrapavaje.ro/wp-content/uploads/maris-1200x800-1.jpg',
-  quatro: 'https://petrapavaje.ro/wp-content/uploads/1.-Quatro-20-x-20-cm-gri.avif',
-  con: 'https://petrapavaje.ro/wp-content/uploads/con-gri.avif',
-  'pavaje-eco': 'https://petrapavaje.ro/wp-content/uploads/1.-Grila-60-x-40-x-10-cm-gri.avif',
-}
+import { productImages } from '@/data/images'
 
 export function ProductCategoryPage() {
   const { category } = useParams<{ category: string }>()
