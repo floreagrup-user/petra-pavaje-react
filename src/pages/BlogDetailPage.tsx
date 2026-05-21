@@ -535,6 +535,339 @@ La Petra Pavaje, credem că produsele noastre sunt mai mult decât simple pavaje
     image: 'https://petrapavaje.ro/wp-content/uploads/Petra-Pavaje-scaled.avif',
     readTime: 5,
   },
+  {
+    id: '13',
+    title: 'La mulți ani, România! La mulți ani tuturor românilor!',
+    slug: 'la-multi-ani-romania',
+    excerpt: 'De Ziua Națională a României, sărbătorim nu doar istoria și valorile care ne definesc, ci și ceea ce construim împreună zi de zi.',
+    content: `De Ziua Națională a României, sărbătorim nu doar istoria și valorile care ne definesc, ci și ceea ce construim împreună, zi de zi, cu pasiune și dedicare.
+
+## Contribuim la dezvoltarea României
+
+Prin investiții, crearea de locuri de muncă și derularea unor proiecte de anvergură, contribuim la dezvoltarea regiunilor în care activăm. Ne implicăm activ în proiecte educaționale, sportive și de mediu.
+
+**600+** Locuri de muncă la nivel național
+
+**90%** Furnizori români
+
+**400+** Vehicule în flotă, din care 60 electrice
+
+## Grija față de oameni și mediu
+
+Florea Grup oferă peste 600 de locuri de muncă la nivel național. Cele patru fabrici Petra Pavaje sunt echipate cu **panouri fotovoltaice** și tehnologii de ultimă generație. Prin colaborarea cu furnizori români în proporție de **peste 90%**, contribuim la protejarea mediului și la dezvoltarea economiei locale.
+
+## Susținerea comunității locale
+
+Ne implicăm activ în formarea tinerilor prin programe de practică, susținem sportul prin sponsorizarea competițiilor și încurajăm performanța prin sprijinirea sportivilor de elită. Contribuim la îmbunătățirea infrastructurii educaționale prin renovarea școlilor și construirea de spații de joacă.
+
+## Transport sustenabil
+
+Deținem o flotă de **peste 400 de vehicule**, dintre care **60 electrice**, contribuind activ la reducerea emisiilor de carbon. Fiecare punct de lucru este dotat cu stații de încărcare pentru vehicule electrice.
+
+Sub motto-ul **„În armonie cu natură"**, aniversarea Petra Pavaje este celebrată anual pe 5 iunie, chiar de Ziua Mediului.
+
+## Mesajul nostru de Ziua Națională
+
+Suntem recunoscători pentru rădăcinile noastre și pentru oamenii care, prin muncă, dedicare și spirit de inițiativă, contribuie la o **Românie modernă, puternică și prosperă**.
+
+**La mulți ani, România! La mulți ani tuturor românilor!**`,
+    date: '2025-11-27',
+    author: 'Petra Pavaje',
+    category: 'Noutăți',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Cover-scaled.jpg',
+    readTime: 3,
+  },
+  {
+    id: '14',
+    title: 'Curte amenajată cu pavajul Sahara travertin — studiu de caz',
+    slug: 'curte-amenajata-sahara-travertin',
+    excerpt: 'Într-un cartier rezidențial din Sibiu, familia T. și-a dorit o curte care să fie o extensie a locuinței și a sentimentului de acasă.',
+    content: `Într-un cartier rezidențial din Sibiu, familia T. și-a dorit o curte care să fie mai mult decât un spațiu exterior — o extensie a locuinței și a sentimentului de acasă. Rezultatul: o amenajare caldă, luminoasă, cu pavajul Sahara travertin MIX 6.30.
+
+## Obiectivele proiectului
+
+Proprietarul și-a dorit o amenajare cu suflet, un loc de relaxare unde să savureze cafeaua dimineața și să se bucure de liniștea serilor de vară.
+
+Printre cerințele principale: continuarea stilului adoptat la interior, căldură și relaxare pentru întreaga familie, durabilitate cromatică fără decolorare în timp.
+
+## Alegerea pavajului — tonuri galbene și texturi fine
+
+Pentru a păstra unitatea dintre interior și exterior, familia a ales pavajul **Sahara MIX 6.30 — travertin** de la Petra Pavaje, completat de bordura galbenă 50×5×20 cm.
+
+**Produse utilizate:** Pavaj Sahara MIX 6.30 — travertin (3 dimensiuni: 20×10×6 cm, 20×20×6 cm, 30×20 cm) și Bordură galbenă 50×5×20 cm.
+
+Nuanțele calde, apropiate de tonurile de nisip, completează perfect fațada albă a caseii, amintind de simplitatea și frumusețea arhitecturii mediteraneene.
+
+## Design-ul spațiului — între funcțional și estetic
+
+Curtea dispune de o alee în jurul casei, o zonă de relaxare cu masă pentru familie și prieteni, precum și o zonă verde cu plante decorative atent selecționate.
+
+**Important:** Sistemul de irigare a plantelor trebuie realizat **înainte de montajul pavajelor** pentru a evita ulterioare săpături și denivelări.
+
+## Rezultatul — o curte care inspiră calm și echilibru
+
+> "La fel cum este interiorul casei, am gândit și curtea să fie caldă, primitoare, în nuanțe de bej, crem și maro." — S. T., proprietar, Sibiu
+
+Amenajarea demonstrează că simplitatea și coerența cromatică sunt cele mai puternice instrumente de design.
+
+## Întreținere pavaj
+
+Pentru a menține aspectul plăcut al pavajului: îndepărtați frunzele și buruienile periodic, curățați cu un aparat de spălare cu presiune, evitați contactul prelungit cu obiecte metalice. Verificați anual rosturile și completați cu nisip acolo unde este necesar.`,
+    date: '2025-11-10',
+    author: 'Petra Pavaje',
+    category: 'Inspirație',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Sahara-MIX-6.30-Petra-Pavaje_1-scaled.avif',
+    readTime: 6,
+  },
+  {
+    id: '15',
+    title: 'Planul pentru o curte de vis cu Petra Pavaje',
+    slug: 'planul-pentru-o-curte-de-vis',
+    excerpt: 'Amenajarea curții cu pavaje și elemente decorative este o investiție pe termen lung, iar detaliile fac diferența.',
+    content: `Amenajarea curții cu pavaje și elemente decorative este o investiție pe termen lung, iar detaliile fac diferența. De la alegerea modelelor de pavaj până la integrarea armonioasă a vegetației, fiecare etapă contează.
+
+## Tendințele în designul peisagistic
+
+Tendințele actuale pun accent pe **linii simple, drepte, culori neutre** și un aspect general minimalist. Totuși, pentru ca o curte să nu devină prea monotonă, este important să aducem echilibru prin vegetație.
+
+**Regula de aur:** Pavajul oferă structură și funcționalitate, iar vegetația aduce viață și culoare.
+
+## De ce este importantă vegetația într-o curte amenajată cu pavaje
+
+Confortul termic este principalul avantaj. Diferența dintre o curte complet expusă și una completată cu vegetație poate fi de **2–3°C**. Alegerea culorilor deschise pentru pavaj, combinată cu vegetație strategic plasată, face spațiul răcoros și prietenos.
+
+Vegetația aduce și viață: jardinierele pline de flori atrag polenizatori. O tufă de buxus scoate în evidență aleile, un brad argintiu devine punct central, iar trandafirii albi contrastează spectaculos cu pavajul Viena negru violet.
+
+## Integrarea armonioasă a pavajelor și vegetației
+
+**Foișorul** — centrul curții, locul ideal pentru relaxare. Poate fi amenajat cu pavajul CON, perfect pentru zone circulare. Vegetația cățărătoare completează spectaculos amenajarea.
+
+**Aleile** — pot fi transformate în punct de atracție. Modelele șerpuite, delimitate de borduri, se împletesc armonios cu spațiile verzi.
+
+**Focarul de grădină** — serile de vară devin memorabile în jurul unui focar realizat din palisade sau elemente Primo.
+
+## Cum alegem vegetația potrivită pentru curte
+
+Plantele adaptate climatului local sunt mai rezistente și cer mai puțină apă. În locul gazonului clasic, poți opta pentru trifoiul pitic. Ține cont de tipul rădăcinilor: arborii cu rădăcini pivotante pot fi plantați mai aproape de pavaj, cei cu rădăcini orizontale trebuie amplasați la distanță.
+
+## Când este cel mai bun moment pentru plantare
+
+Toamna este perioada ideală pentru plantarea pomilor. Odată stabilite zonele de vegetație și traseele pentru alei, poți alege pavajul potrivit.
+
+**Avantajul planificării din timp:** economisirea de resurse, evitarea costurilor neprevăzute și colaborarea eficientă cu specialiștii.`,
+    date: '2025-09-03',
+    author: 'Petra Pavaje',
+    category: 'Inspirație',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Mediterana-terra-scaled.avif',
+    readTime: 7,
+  },
+  {
+    id: '16',
+    title: 'Amenajare rezidențială cu pavajul Mediterana Terra — studiu de caz',
+    slug: 'amenajare-rezidentiala-mediterana-terra',
+    excerpt: 'Un loc în care, doar privindu-l, te simți ca acasă. Iar pavajul este scena pe care se întâmplă momentele simple și autentice.',
+    content: `Un loc în care, doar privindu-l, te simți ca acasă. Jucăriile răsfirate, animalele de companie, pașii uzi de pe iarba înrourată — toate compun atmosfera unui cămin viu. Iar pavajul este scena pe care se întâmplă momentele simple și autentice.
+
+## Cartea de vizită a fiecărei case
+
+Curtea este prima pe care o remarci când mergi în vizită, e locul care te încarcă de energie și locul în care îți încarci bateriile după o zi încărcată.
+
+Pentru noi, sentimentul de „acasă" este cel pe care dorim să îl transmitem prin fiecare produs pus în operă.
+
+## Pavajul Mediterana Terra — inspirație toscană
+
+Inspirația pentru acest pavaj stă în **străduțele toscane**, în paleta de culori pământii, mediteraneene. La conceperea pavajului Mediterana Terra am reușit să combinăm **sentimentul călduros de acasă** și **senzația de a fi mereu în vacanță**.
+
+**Produse utilizate:** Pavaj Mediterana Terra MIX 6.30 — combinație de trei dimensiuni, cu grosimea de 6 cm potrivită pentru trafic auto ușor. Bordură 50×5×20 cm, culoare neagră — un contrast care delimitează clar zona pavată de zona verde.
+
+## De ce să alegi această combinație?
+
+**Aspect vizual călduros** — Culoarea pavajului, în combinație cu bordura neagră, creează un contrast neașteptat, dar plăcut.
+
+**Rezistență și durabilitate** — Materialele sunt potrivite pentru trafic greu, rezistente la ciclurile de îngheț-dezgheț.
+
+**Aspect ordonat** — Coeziunea vizuală dintre pavaj și stilul arhitectural creează un aspect unitar.
+
+## Mediterana Terra sau Rossa?
+
+**Terra** — Nuanțe bogate, brune, pământii. Potrivit pentru design în culori calde. Alege Terra dacă vrei o curte cu un aer relaxant.
+
+**Rossa** — Nuanțe roșiatice și accente galbene. Aspect expresiv, paletă de culori vii. Alege Rossa pentru energie și accente vibrante.
+
+## Portofoliul Petra Pavaje
+
+Peste **800 de produse** care acoperă toate stilurile și dorințele. Investim constant în diversificarea portofoliului și în tehnologie de ultimă generație pentru produse de calitate ridicată.`,
+    date: '2025-07-30',
+    author: 'Petra Pavaje',
+    category: 'Inspirație',
+    image: 'https://petrapavaje.ro/wp-content/uploads/IMG_1347-HDR_c-scaled.avif',
+    readTime: 6,
+  },
+  {
+    id: '17',
+    title: 'Petra Pavaje plantează 42.000 de puieți în județul Alba',
+    slug: 'actiune-de-impadurire-42000-puieti',
+    excerpt: 'Tot ceea ce facem la Petra Pavaje este — și rămâne — în armonie cu natura. Dincolo de produse, această filozofie se reflectă în acțiunile pe care le susținem activ.',
+    content: `Tot ceea ce facem la Petra Pavaje este — și rămâne — în armonie cu natura. Dincolo de produsele noastre, această filozofie se reflectă și în acțiunile pe care le susținem activ în comunitate.
+
+## O acțiune de amploare în inima Apusenilor
+
+În această primăvară, am plantat **42.000 de puieți** pe o suprafață de **9 hectare** în județul Alba, în cadrul unei ample acțiuni de împădurire organizate de Florea Grup.
+
+Activitatea s-a desfășurat în perioada martie–mai, iar pe **9 mai** ne-am adunat în inima Munților Apuseni, alături de colegi și parteneri din întreaga țară.
+
+**42.000** Puieți plantați • **9 ha** Suprafață • **4** Specii de arbori
+
+### Specii plantate
+
+**Fag** — specie dominantă a pădurilor de deal și munte
+**Molid** — esență coniferă pentru zonele montane
+**Frasin** — arbore cu creștere rapidă și rezistență
+**Larice** — singurul conifer care își pierde acele iarna
+
+> "Prin această acțiune, ne dorim să oferim un exemplu concret de responsabilitate față de natură și să contribuim activ la un viitor mai verde." — Marcel Florea, director general Florea Grup
+
+## Sustenabilitatea în fiecare ramură a activității
+
+Toate cele patru fabrici Petra Pavaje sunt dotate cu **panouri fotovoltaice**, care asigură o parte semnificativă din necesarul energetic anual.
+
+**600+** Tone CO₂ reduse anual prin panouri fotovoltaice
+**820** Copaci echivalenți protejați în fiecare an
+**60+** Autoturisme electrice în flota companiei
+
+Pentru noi, sustenabilitatea înseamnă nu doar un cuvânt bine ales, ci o **direcție reală**. Dincolo de pavelele produse sau proiectele finalizate, ceea ce ne motivează zi de zi este să lăsăm în urmă spații mai frumoase, comunități mai solide și un mediu mai curat.`,
+    date: '2025-05-15',
+    author: 'Petra Pavaje',
+    category: 'Sustenabilitate',
+    image: 'https://petrapavaje.ro/wp-content/uploads/img_1-1.avif',
+    readTime: 4,
+  },
+  {
+    id: '18',
+    title: 'Pavajul Mistic gri bazaltic pentru o curte elegantă',
+    slug: 'pavajul-mistic-curte-eleganta',
+    excerpt: 'O curte bine amenajată este cartea de vizită a oricărei locuințe. Un design echilibrat și materiale de calitate transformă spațiul exterior într-o amenajare cu stil.',
+    content: `O curte bine amenajată este cartea de vizită a oricărei locuințe. Un design echilibrat, materiale de calitate și o cromatică bine aleasă transformă spațiul exterior într-o amenajare cu stil, fără a-și pierde funcționalitatea.
+
+## Despre proiect
+
+Vă prezentăm o curte elegantă de **aproximativ 400 mp**, realizată cu pavaj premium Mistic gri bazaltic de la Petra Pavaje. Proiectul, **conceput în totalitate de proprietari**, reflectă un simț estetic desăvârșit și o grijă deosebită pentru armonia vizuală și cromatică.
+
+## Materiale utilizate în proiect
+
+**Pavaj Mistic gri bazaltic, MIX 6.30** — o alegere sofisticată, cu nuanțe moderne de gri, ideal pentru suprafețele principale ale curții.
+
+**Bordură gri bazaltic, 40×15×20 cm** — delimitează spațiul și creează un contrast vizual puternic.
+
+**Pavaj Quatro, alb, 20×20 cm** — un detaliu subtil, dar de impact, care adaugă eleganță și luminează spațiul.
+
+**Pavaj Holland, gri, 20×10 cm** — creează o linie clară între gazon și zona cu piatră decorativă.
+
+## De ce să alegi această combinație?
+
+**Contrast vizual plăcut** — Culoarea pavajului și a bordurii, în combinație cu pavajul alb, creează un echilibru cromatic elegant.
+
+**Rezistență și durabilitate** — Materialele sunt rezistente la ciclurile de îngheț-dezgheț și intemperii.
+
+**Aspect modern și ordonat** — Culorile neutre permit integrarea armonioasă în orice stil arhitectural.
+
+## Mistic gri bazaltic sau Mistic gri grafit?
+
+**Gri Bazaltic** — Nuanțe de negru, contrast puternic, potrivit cu fațade deschise.
+
+**Gri Grafit** — Nuanțe de alb, aspect luminos și aerisit, potrivit cu fațade deschise și închise.
+
+## Mixuri sau plăci mari?
+
+**Mixuri** — Design mai variat și natural, ideale pentru alei și curți cu forme neregulate.
+
+**Plăci mari** — Aspect modern și uniform, mai practice pentru suprafețe mari și drepte.`,
+    date: '2025-02-28',
+    author: 'Petra Pavaje',
+    category: 'Inspirație',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Mistic-gri-bazaltic-6-scaled.avif',
+    readTime: 6,
+  },
+  {
+    id: '19',
+    title: 'Câștigă o bancă Woodstone de Ziua Îndrăgostiților!',
+    slug: 'castiga-banca-woodstone-ziua-indragostitilor',
+    excerpt: 'Ziua Îndrăgostiților este despre momente speciale împărtășite în doi. Anul acesta, Petra Pavaje îți oferă șansa de a câștiga o bancă Woodstone.',
+    content: `Ziua Îndrăgostiților este despre momente speciale împărtășite în doi, despre amintiri care dăinuie. Anul acesta, Petra Pavaje îți oferă șansa de a câștiga o bancă Woodstone — locul perfect pentru poveștile tale de iubire.
+
+## Ce poți câștiga?
+
+O **bancă Woodstone** elegantă și rezistentă, realizată integral din beton, ideală pentru grădina sau curtea ta.
+
+**Detalii:** Dimensiuni 100 × 40 × 43 cm, greutate 160 kg, material beton — rezistență la intemperii și durabilitate maximă. Produs din gama Woodstone — Lemn Pietrificat.
+
+O bancă pe care o poți lăsa afară tot anul, fără grija deteriorării — un loc care va deveni colțul tău preferat de poveste.
+
+## Cum poți participa?
+
+1. **Tag persoanei iubite** într-un comentariu la postarea de concurs
+2. **Dă Like & Follow** paginii de Facebook / Instagram / TikTok Petra Pavaje
+3. **Distribuie public** postarea concursului
+
+Extragerea norocosului câștigător va avea loc pe **14 februarie, la ora 16:00**, prin tragere la sorți.
+
+## De ce să alegi Woodstone?
+
+**Aspect de lemn natural** — Textura și nuanțele redau fidel aspectul lemnului.
+
+**Rezistență maximă** — Realizat integral din beton, rezistă la intemperii, îngheț și raze UV.
+
+**Întreținere zero** — Nu necesită vopsire, lăcuire sau tratare.
+
+Participă acum și transformă un loc obișnuit într-un colț de poveste!`,
+    date: '2025-02-07',
+    author: 'Petra Pavaje',
+    category: 'Noutăți',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Grafica-giveaway.avif',
+    readTime: 2,
+  },
+  {
+    id: '20',
+    title: 'Amenajarea completă cu pavajul Antic antichizat — studiu de caz',
+    slug: 'amenajare-completa-antic-antichizat',
+    excerpt: 'Pavajul Antic antichizat este alegerea ideală pentru cei care doresc să adopte stilul rustic, dar să nu facă rabat de la funcționalitate.',
+    content: `Pavajul Antic antichizat este alegerea ideală pentru cei care doresc să adopte stilul rustic, dar să nu facă rabat de la funcționalitatea amenajării. Vom analiza o amenajare completă realizată pe o proprietate privată, unde proprietarul a utilizat acest tip de pavaj pentru alei pietonale, parcare și spațiul din jurul piscinei.
+
+**Obiectivele proiectului:** Un design unitar și armonios care să conecteze aleile, parcarea și zona piscinei; durabilitate și rezistență la uzură și intemperii; siguranță pentru utilizare, inclusiv pe timp umed; un aspect rustic, atemporal.
+
+## Alei pietonale
+
+Aleile au fost proiectate pentru a conecta diferite zone ale proprietății.
+
+**Materiale:** Pavaj Antic antichizat, culoarea gri antic, dimensiuni: 10×10×6 cm, 20×10×6 cm, 20×20×6 cm.
+
+**Beneficii:** Textura antiderapantă oferă siguranță în orice condiții; dimensiunile diferite permit moduri variate de aranjare; culoarea completează armonios arhitectura casei.
+
+## Parcarea auto
+
+Parcarea pentru vehicule mici a fost amenajată în proximitatea casei. Pavajul cu grosimea de 6 cm susține greutatea autovehiculelor. Suprafața antiderapantă este ideală inclusiv pentru pante ușoare.
+
+## Spațiul din jurul piscinei
+
+Prioritatea a fost asigurarea unei zone sigure și estetice pentru a preveni alunecările. Suprafața poroasă a pavajului oferă aderență excelentă, iar aspectul antichizat contribuie la crearea unui stil rustic, dar modern.
+
+## Rezultate finale
+
+**Durabilitate excelentă** — Pavajul a rezistat cu succes traficului intens și condițiilor meteo variate.
+
+**Aspect unitar** — Toate zonele sunt perfect integrate datorită combinațiilor de dimensiuni și texturii naturale.
+
+**Siguranță** — Suprafața antiderapantă reduce riscul accidentărilor, inclusiv în zona piscinei.
+
+## Recomandări pentru întreținere
+
+Curățați periodic cu jeturi de apă cu moderație. Iarna, folosiți mături cu peri asprii pentru zăpadă. Vara, pentru buruienile dintre rosturi, utilizați pesticide fără săruri sau uleiuri.`,
+    date: '2025-01-20',
+    author: 'Petra Pavaje',
+    category: 'Inspirație',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Antic-antichizat-Petra-Pavaje-Alei-scaled.avif',
+    readTime: 6,
+  },
 ]
 
 export function BlogDetailPage() {
