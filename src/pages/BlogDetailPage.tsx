@@ -98,15 +98,15 @@ Integrarea iluminatului în amenajările cu pavaje creează atmosfere spectaculo
     title: 'Soluții delimitare cu pavaj: Cum alegi soluția perfectă pentru o grădină cu design impecabil',
     slug: 'solutii-delimitare-pavaj-gradina-design-impecabil',
     excerpt: 'De la borduri clasice la delimitări creative cu pavaj — ghid complet pentru o amenajare coerentă și durabilă.',
-    content: `Când vine vorba de amenajări exterioare, diferența dintre un proiect reușit și unul excepțional stă, aproape întotdeauna, în detalii.
+        content: `Când vine vorba de amenajări exterioare, diferența dintre un proiect reușit și unul excepțional stă, aproape întotdeauna, în detalii.
 
 Ca specialiști cu mulți ani de experiență în industria prefabricatelor din beton, am observat o tendință clară: proprietarii de case nu mai caută doar un simplu pavaj, ci soluții complete pentru un aspect final coerent. Delimitarea nu este doar o necesitate tehnică pentru stabilizarea montajului, ci un instrument de design care definește zonele de interes, separă gazonul de spațiile de circulație și adaugă personalitate curții.
 
-În acest articol, prezentăm cele mai frecvente soluții pentru delimitare, de la borduri clasice la utilizări creative ale pavajului, pentru a răspunde celor mai frecvente întrebări: Cum separăm elegant terasa de grădină? Ce alegem pentru a proteja rădăcinile arborilor?
+În acest articol, ne propunem să prezentăm cele mai frecvente soluții pentru delimitare, de la borduri clasice la utilizări creative ale pavajului, pentru a răspunde celor mai frecvente întrebări: *Cum separăm elegant terasa de grădină?* sau *Ce alegem pentru a proteja rădăcinile arborilor?*
 
-## Soluții clasice: Bordurile – piesele de legătură ale oricărei amenajări
+## Bordurile: piesele de legătură ale oricărei amenajări
 
-Cu un portofoliu ce depășește 70 de modele, bordurile Petra Pavaje sunt concepute să deservească atât proiectele rezidențiale, cât și cele civile. Iată care sunt cele mai solicitate modele și situațiile în care acestea excelează:
+Cu un portofoliu ce depășește 70 de modele, bordurile Petra Pavaje sunt concepute să deservească atât proiectele rezidențiale, cât și cele civile. Iată care sunt cele mai solicitate 5 modele și situațiile în care acestea excelează:
 
 ![Gama de borduri Petra Pavaje](https://petrapavaje.ro/wp-content/uploads/Bordura-50x5x20-negru.avif)
 
@@ -126,41 +126,31 @@ Pentru proiecte ce necesită o structură robustă. Mai lată, oferă un plus de
 
 Utilizată cu precădere pentru delimitarea spațiilor verzi, este un veritabil punct de atracție. Designul curbat sparge liniile rigide, aducând un aer ușor boem. Răspunsul perfect la: „Cum scot în evidență rondourile de flori?"
 
-![Bordura cilindrică 106x9x25 cm](https://petrapavaje.ro/wp-content/uploads/Bordura-cilindrica.avif)
+![Bordura cilindrică 106x9x25 cm](https://petrapavaje.ro/wp-content/uploads/Bordura_Cilindrica.avif)
 
 ### 4. Bordura cilindrică 106×9×25 cm
 
 O alegere îndrăzneață pentru cei care vor să iasă din tipare. Aspectul masiv fură privirea și garantează stabilitate. Formată din două elemente de 50 cm și un pilon de 6 cm, permite pivotarea și crearea de arce cu diametru mare sau forme hexagonale.
 
-## Abordare creativă: Delimitări creative – când pavajul preia rolul de contur
+## Delimitări creative – când pavajul preia rolul de contur
 
-Uneori, cea mai bună delimitare nu este o bordură, ci un alt tip de pavaj. Folosirea culorilor contrastante sau a texturilor diferite poate oferi acel ceva care transformă o curte obișnuită într-una de revistă.
+Uneori, cea mai bună delimitare nu este o bordură, ci un alt tip de pavaj. Folosirea culorilor contrastante sau a texturilor diferite poate oferi acel *quel-que-chose* care transformă o curte obișnuită într-una de revistă. Bordura separatoare sau bordura ascunsă este cea care menține pavajul fără să se deplaseze la margine și este necesară dacă alegi această metodă.
 
 ![Pavajul Stretto](https://petrapavaje.ro/wp-content/uploads/Stretto-gri-antic-1.avif)
 
-### Pavajul Stretto
+[Pavajul Stretto](https://petrapavaje.ro/pavaje-premium/urbis/) — Un produs nou, de dimensiuni reduse, extrem de versatil. Poate fi montat atât pe orizontală, cât și pe verticală, fiind ideal pentru a crea margini cu modele inedite.
 
-Un produs nou, de dimensiuni reduse, extrem de versatil. Poate fi montat atât pe orizontală, cât și pe verticală, fiind ideal pentru a crea margini cu modele inedite.
-
-### Pavajul 40×10 cm
-
-Recomandat pentru spațiile ample. Multitudinea de nuanțe permite crearea de jocuri cromatice care ghidează privirea și delimitează zonele de relaxare de cele pietonale.
+**Pavajul 40×10 cm** — Recomandat pentru spațiile ample. Multitudinea de nuanțe permite crearea de jocuri cromatice care ghidează privirea și delimitează zonele de relaxare de cele pietonale.
 
 ![Pavajul CON](https://petrapavaje.ro/wp-content/uploads/1.-Con-10-x-97-cm-alb-si-gri-Large-1.avif)
 
-### Pavajul CON
-
-Versatilitatea este caracteristica principală. Prin alternarea culorilor și a modelului de dispunere, se obțin delimitări dinamice pentru curți moderne.
+[Pavajul CON](https://petrapavaje.ro/pavaje-standard/con/) — Versatilitatea este caracteristica principală. Prin alternarea culorilor și a modelului de dispunere, se obțin delimitări dinamice pentru curți moderne. Spre exemplu, în jurul unei guri de canal, pavajul CON arată atenție la detaliile care schimbă aspectul amenajării.
 
 ![Pavajul Gemina](https://petrapavaje.ro/wp-content/uploads/web-Gemina-maro-si-galben-Medium.avif)
 
-### Pavajul Gemina
+[Pavajul Gemina](https://petrapavaje.ro/pavaje-premium/gemina/) — Datorită volumetriei și formei sale bombate, Gemina creează o delimitare elegantă, tridimensională. Un produs care invită la creativitate în modalitățile de montaj.
 
-Datorită volumetriei și formei sale bombate, Gemina creează o delimitare elegantă, tridimensională. Un produs care invită la creativitate în modalitățile de montaj.
-
-### Pavajul Quatro
-
-Poate fi alternat cu spoturi luminoase, astfel că la lăsarea serii curtea va arăta spectaculos, iar pe timpul zilei poziția spoturilor nu va fi evidentă.
+[Pavajul Quatro](https://petrapavaje.ro/pavaje-premium/quatro/quatro-10x10x6/) — Poate fi alternat cu spoturi luminoase, astfel că la lăsarea serii curtea va arăta spectaculos, iar pe timpul zilei poziția spoturilor nu va fi evidentă.
 
 ## Texturi și stiluri: contrastul care definește spațiul
 
@@ -168,33 +158,29 @@ Pentru un impact vizual puternic, recomandăm utilizarea texturilor contrastante
 
 ![Pavajul Relief](https://petrapavaje.ro/wp-content/uploads/Relief-20x10x6.avif)
 
-### Pavajul Relief
-
-Cu o textură grunjuroasă, luxuriantă, este ideal pentru delimitări geometrice complexe sau modele care emană eleganță.
+[Pavajul Relief](https://petrapavaje.ro/pavaje-premium/relief/) — Cu o textură grunjuroasă, luxuriantă, este ideal pentru delimitări geometrice complexe sau modele care emană eleganță.
 
 ![Pavajul Primo antichizat](https://petrapavaje.ro/wp-content/uploads/primo-negru.avif)
 
-### Pavajul Primo antichizat
-
-Un contrast fascinant se obține prin alăturarea acestuia cu un pavaj cu suprafață fină. Avantaj major: poate fi așezat în cant sau pe muchie, toate fețele fiind finisate în aceeași culoare și textură.
+[Pavajul Primo antichizat](https://petrapavaje.ro/pavaje-premium/primo/) — Un contrast fascinant se obține prin alăturarea acestuia cu un pavaj cu suprafață fină. Avantaj major: poate fi așezat în cant sau pe muchie, toate fețele fiind finisate în aceeași culoare și textură.
 
 ![Pavajul Antic](https://petrapavaje.ro/wp-content/uploads/Roman_Mures-Antic.avif)
 
-### Pavajul Antic
-
-Dacă vrei aspectul de piatră învechită, acesta este pavajul potrivit. Folosește culoarea neagră lângă un pavaj deschis pentru un contrast cromatic puternic. Pentru design minimalist, alege Antic gri antic lângă un pavaj Roca MIX – delimitarea se va face prin textură și dimensiune, nu prin culoare.
+[Pavajul Antic](https://petrapavaje.ro/pavaje-premium/antic/) — Dacă vrei aspectul de piatră învechită, acesta este pavajul potrivit. Sfat: folosește culoarea **neagră** lângă un pavaj deschis pentru un contrast cromatic puternic. Pentru design minimalist, alege **Antic gri antic 10×10 cm sau 20×20 cm** lângă un pavaj Roca MIX gri antic — delimitarea se va face prin textură și dimensiune, nu prin culoare: *ordonat vs. aleatoriu*.
 
 ![Pavajul Cubic](https://petrapavaje.ro/wp-content/uploads/Cubic-gri-bazaltic-1.avif)
 
-### Pavajul Cubic
+[Pavajul Cubic](https://petrapavaje.ro/pavaje-premium/cubic/) — Redă fidel aspectul pietrei cubice de altădată. Perfect pentru borduri de modă veche într-un context modern, mai ales combinat cu pavaje cu textură fină.
 
-Redă fidel aspectul pietrei cubice de altădată. Perfect pentru borduri de modă veche într-un context modern, mai ales combinat cu pavaje cu textură fină.
+**Sfat de designer:** Dacă preferi un design minimalist, alege Antic gri antic (10×10 cm sau 20×20 cm) alăturat unui pavaj [Roca MIX gri antic](https://petrapavaje.ro/pavaje-premium/roca/). Delimitarea nu se va face prin culoare, ci prin textură și dimensiunea pieselor — ordonat vs. aleatoriu. Un contrast subtil, cu efect vizual remarcabil.
 
-## Concluzie
+## Explorează portofoliul complet Petra Pavaje
 
 Indiferent dacă ești la începutul proiectului de amenajare sau cauți soluții de finisare pentru grădina ta, alegerea elementelor de delimitare este crucială. Portofoliul Petra Pavaje oferă soluții complete care răspund celor mai riguroase cerințe de durabilitate și design.
 
-O delimitare corect realizată nu doar că protejează investiția în pavaj pe termen lung, dar transformă curtea într-un spațiu organizat, armonios, cu bun gust. Alege bordurile și pavajele care rezonează cu viziunea ta.`,
+O delimitare corect realizată nu doar că protejează investiția în pavaj pe termen lung, dar transformă curtea într-un spațiu organizat, armonios, cu bun gust. Alege bordurile și pavajele care rezonează cu viziunea ta.
+
+Borduri, pavaje Premium și Standard — toate disponibile în numeroase culori și texturi, pentru orice stil de amenajare. [Vezi toate bordurile →](https://petrapavaje.ro/borduri-2/)`,
     date: '2026-05-07',
     author: 'Petra Pavaje',
     category: 'Ghiduri Tehnice',
