@@ -187,6 +187,112 @@ Borduri, pavaje Premium și Standard — toate disponibile în numeroase culori 
     image: 'https://petrapavaje.ro/wp-content/uploads/Relief-delimitare-20x10x6.avif',
     readTime: 9,
   },
+  {
+    id: '8',
+    title: 'Petra Pavaje lansează Evo Green',
+    slug: 'petra-pavaje-lanseaza-evo-green',
+    excerpt: 'Prima gamă de pavaje din România fabricată din ciment cu emisii aproape zero — certificat digital, cu trasabilitate completă a reducerilor de carbon.',
+    content: `Florea Grup anunță o inovație absolută în domeniul materialelor de construcții. Petra Pavaje lansează **Evo Green**, un produs dezvoltat de hubul de inovare al companiei ca răspuns direct la nevoia tot mai mare de soluții de construcții sustenabile, cu impact minim asupra mediului.
+
+## Ce este Evo Green?
+
+Evo Green este o gamă de pavaje care folosește ca materie primă cimentul **evoZero® Carbon Captured**, primul ciment din lume cu emisii minime, aproape zero, obținut prin captarea carbonului, de la compania **Heidelberg Materials**. Pe lângă caracteristicile fizice care îi asigură durabilitatea indiferent de condițiile meteo, acest ciment are amprenta de carbon *"near-zero"*, conform standardelor europene EN 15804. Conformitatea este autentificată de un organism independent — **DNV Business Assurance Germany GmbH**.
+
+Prin utilizarea acestui material, Florea Grup reușește să ofere în premieră pe piața din România pavajul cu cea mai redusă amprentă de carbon dintre toate materialele de construcții care conțin beton.
+
+![Evo Green – pavaj cu impact climatic minim](https://petrapavaje.ro/wp-content/uploads/Untitled-2-scaled.avif)
+
+![Evo Green – banner produs](https://petrapavaje.ro/wp-content/uploads/Untitled-3.avif)
+
+**≈ 0 GWP (Global Warming Potential) al produsului final**
+
+**77.973 kg CO₂e** reduse doar în luna ianuarie 2026
+
+**2,6 km** adâncime de stocare permanentă sub Marea Nordului
+
+## Reducere aproape de zero a emisiilor cu tehnologia CCS
+
+Cimentul **evoZero® Carbon Captured** folosit în producția Evo Green integrează beneficii reale de mediu obținute prin tehnologia **Carbon Capture & Storage (CCS)**, implementată de Heidelberg Materials la fabrica sa din Norvegia. CO₂ rezultat în procesul de producție este captat, lichefiat, transportat și stocat permanent la 2,6 km sub Marea Nordului.
+
+Această tehnologie permite o reducere aproape de zero a emisiilor directe de CO₂ aferente produselor, prin utilizarea echilibrului de masă ca model al lanțului de custodie pentru a atribui reducerile amprentei de carbon rezultate din CCS la volume dedicate de produse livrate clienților din Europa.
+
+> "evoZero face acum posibilă inovația în construcții cu o amprentă de carbon semnificativ redusă, near zero. Avem toată deschiderea față de partenerii noștri pentru a integra evoZero în proiecte-pilot și dezvoltări de referință, accelerând astfel adoptarea soluțiilor cu emisii reduse. Pavajele Evo Green, cu impact climatic minim, sunt un prim exemplu și setează un nou standard pentru ceea ce ne propunem să facem în viitor."
+
+**Florian Aldea** — Director General Heidelberg Materials România
+
+> "Prin evoZero, aducem pe piață o soluție care combină materialul și dovada digitală a impactului. O soluție blockchain asigură trasabilitatea declarației evoZero până la fabrica din Brevik. Iată că, prin parteneriatele potrivite, rezultatele nu întârzie să apară."
+
+**Adrian Greavu** — Director de vânzări ciment Heidelberg Materials România
+
+## Cum ajunge CO₂ sub Marea Nordului — cei 9 pași
+
+Trasabilitatea completă a reducerilor de carbon este garantată printr-un sistem de Monitorizare, Raportare și Verificare (MRV) — denumit **Banca de Carbon** — implementat de Heidelberg Materials AG.
+
+**Pasul 1** — Producția cimentului și captarea carbonului. CO₂ este captat în timpul producției de clincher prin tehnologie bazată pe amine.
+
+![Pasul 2](https://petrapavaje.ro/wp-content/uploads/2.avif)
+
+**Pasul 2** — Stocare temporară în fabrica de ciment. CO₂ captat este lichefiat și stocat temporar la fața locului.
+
+![Pasul 3](https://petrapavaje.ro/wp-content/uploads/3.avif)
+
+**Pasul 3** — Pregătirea pentru transport. CO₂ lichid este pompat din silozurile fabricii către navă, operată de Northern Lights.
+
+![Pasul 4](https://petrapavaje.ro/wp-content/uploads/4.avif)
+
+**Pasul 4** — Transportul CO₂ pe mare. Nave special construite transportă CO₂ lichid către Øygården pentru stocare permanentă.
+
+![Pasul 5](https://petrapavaje.ro/wp-content/uploads/5.avif)
+
+**Pasul 5** — Terminalul de recepție. La sosirea în Øygården, CO₂ lichid este pompat în conductă.
+
+![Pasul 6](https://petrapavaje.ro/wp-content/uploads/6.avif)
+
+**Pasul 6** — Stocarea permanentă a CO₂. CO₂ captat ajunge la locația sa finală de stocare permanentă, la **2,6 km sub Marea Nordului**.
+
+![Pasul 7](https://petrapavaje.ro/wp-content/uploads/7.avif)
+
+**Pasul 7** — Certificare DNV și depunere în Carbon Bank. Organismul independent DNV confirmă volumul de CO₂ stocat printr-un sistem digital MRV, după care se realizează o nouă depunere în Carbon Bank.
+
+![Pasul 8](https://petrapavaje.ro/wp-content/uploads/8.avif)
+
+**Pasul 8** — Livrarea către Florea Grup și retragerea din Carbon Bank. Odată cu livrarea și facturarea materialului evoZero, se efectuează o retragere corespunzătoare din Carbon Bank.
+
+![Pasul 9](https://petrapavaje.ro/wp-content/uploads/9.avif)
+
+**Pasul 9** — Transferul reducerilor de carbon către Florea Grup SRL. Furnizorul inițiază transferul reducerilor echivalente de emisii, în funcție de cantitatea de evoZero utilizată în produsul livrat. **Data transferului: 19 ianuarie 2026.**
+
+![Flux integrat de producție Evo Green – de la captarea CO₂ la livrarea produsului final cu amprentă de carbon near-zero](https://petrapavaje.ro/wp-content/uploads/flux-integrat-productie-Evo-Green.avif)
+
+## Trasabilitate și transparență
+
+Certificatele care atestă reducerea emisiilor de carbon sunt stocate pe tehnologia registrelor distribuite, care permite urmărirea lor prin blockchain. Acest proces garantează titularilor, auditorilor și publicului că fiecare reducere emisă o singură dată va fi utilizată o singură dată pentru vânzare.
+
+## Un pas strategic pentru construcții sustenabile în România
+
+Prin lansarea Evo Green sub brandul Petra Pavaje, Florea Grup își consolidează poziția de pionier în adoptarea soluțiilor cu impact redus asupra mediului în industria materialelor de construcții din România. Evo Green este destinat proiectelor rezidențiale, comerciale și de infrastructură care urmăresc reducerea amprentei de carbon și alinierea la cerințele actuale de sustenabilitate și raportare ESG.
+
+Produsul vine în întâmpinarea dezvoltatorilor imobiliari care urmăresc respectarea **Legii nr. 372/2005** privind performanța energetică a clădirilor (modificată 2024), dar și a companiilor obligate să asigure transparența politicilor ESG (Environment – Social – Government).
+
+> "Evo Green nu este doar un produs inovator, ci o dovadă clară a angajamentului nostru pentru un model de business responsabil față de mediu. În cei 30 de ani de la fondarea companiei, am reușit să devenim un etalon al practicilor sustenabile, atât prin investiții majore, cât și prin activitatea operațională de zi cu zi. Motto-ul «În armonie cu natura» sub care operăm este într-adevăr direcția pe care o urmăm în toate etapele producției."
+
+**Marcel Florea** — CEO Florea Grup
+
+> "Este o direcție în comunicarea acțiunilor verzi, pe care specialiștii o numesc «green washing». Proiectul Evo Green însă e diferit. Vorbim despre o reducere a emisiilor de dioxid de carbon certificată de 77.973 kg CO₂e — adică un beneficiu real adus planetei."
+
+**Iulia Hladiuc** — Director de Marketing Florea Grup
+
+### Un angajament real, nu green washing
+
+Florea Grup deține atât o **carieră de piatră proprie**, cât și o flotă de autocamioane pentru livrare — reducând emisiile pe întreg lanțul de aprovizionare. Compania operează **8 parcuri fotovoltaice** care asigură până la 40% din autonomia energetică a fabricilor, una dintre cele mai mari flote de **autoturisme electrice** din România, și stații de încărcare la toate fabricile și depozitele Petra Pavaje. În 2025, a plantat **42.000 de puieți** pe 9 hectare în județul Alba.
+
+Gama Evo Green este un produs de nișă și nu este listată în catalogul public. Contactați reprezentanții regionali de vânzări pentru informații suplimentare.`,
+    date: '2026-04-22',
+    author: 'Petra Pavaje',
+    category: 'Inovație & Sustenabilitate',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Untitled-scaled.avif',
+    readTime: 8,
+  },
 ]
 
 export function BlogDetailPage() {
@@ -279,6 +385,9 @@ export function BlogDetailPage() {
                 }
                 if (paragraph.startsWith('1. ')) {
                   return <li key={i} className="text-charcoal-700 ml-4 mb-1">{paragraph}</li>
+                }
+                if (paragraph.startsWith('> ')) {
+                  return <blockquote key={i} className="border-l-4 border-brand-600 pl-4 my-6 italic text-charcoal-700">{paragraph.replace('> ', '')}</blockquote>
                 }
                 if (paragraph.trim()) {
                   return <p key={i} className="text-charcoal-700 mb-4 leading-relaxed">{paragraph}</p>

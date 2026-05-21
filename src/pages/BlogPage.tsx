@@ -90,9 +90,21 @@ const blogPosts: BlogPost[] = [
     image: 'https://petrapavaje.ro/wp-content/uploads/Relief-delimitare-20x10x6.avif',
     readTime: 9,
   },
+  {
+    id: '8',
+    title: 'Petra Pavaje lansează Evo Green',
+    slug: 'petra-pavaje-lanseaza-evo-green',
+    excerpt: 'Prima gamă de pavaje din România fabricată din ciment cu emisii aproape zero — certificat digital, cu trasabilitate completă a reducerilor de carbon.',
+    content: 'Florea Grup anunță o inovație absolută în domeniul materialelor de construcții. Petra Pavaje lansează Evo Green, un produs dezvoltat de hubul de inovare al companiei ca răspuns direct la nevoia tot mai mare de soluții de construcții sustenabile.',
+    date: '2026-04-22',
+    author: 'Petra Pavaje',
+    category: 'Inovație & Sustenabilitate',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Untitled-scaled.avif',
+    readTime: 8,
+  },
 ]
 
-const categories = ['Toate', 'Ghiduri', 'Ghiduri Tehnice', 'Trenduri', 'Montaj', 'Produse', 'Întreținere', 'Sustenabilitate']
+const categories = ['Toate', 'Ghiduri', 'Ghiduri Tehnice', 'Inovație & Sustenabilitate', 'Trenduri', 'Montaj', 'Produse', 'Întreținere', 'Sustenabilitate']
 
 export function BlogPage() {
   const [activeCategory, setActiveCategory] = useState('Toate')
