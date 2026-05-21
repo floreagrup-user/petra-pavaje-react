@@ -293,6 +293,248 @@ Gama Evo Green este un produs de nișă și nu este listată în catalogul publi
     image: 'https://petrapavaje.ro/wp-content/uploads/Untitled-scaled.avif',
     readTime: 8,
   },
+  {
+    id: '9',
+    title: 'Pavaje premium și starea de bine',
+    slug: 'pavaje-premium-si-starea-de-bine',
+    excerpt: 'Cele mai noi cercetări demonstrează că vegetația bogată și amenajările de calitate influențează direct sănătatea, nivelul de stres și calitatea vieții.',
+    content: `Cele mai noi cercetări demonstrează că vegetația bogată și amenajările stradale de calitate nu sunt simple detalii estetice — ele influențează direct sănătatea, nivelul de stres și calitatea vieții comunităților urbane.
+
+## Studiul care leagă pavajul de sănătatea emoțională
+
+Un studiu recent realizat de **Maria Christofi și echipa sa**, publicat prin *Horticultural Research Institute*, analizează modul în care prezența vegetației în peisajul stradal influențează reacțiile noastre emoționale și fiziologice. Cercetătorii au utilizat echipamente de neurologie aplicată — *eye tracking* și *galvanic skin response* — pentru a capta reacțiile subconștiente ale participanților la stimuli vizuali urbani.
+
+Concluzia cercetătorilor este clară: **nu doar plantele contează, ci relația dintre suprafețele dure (pavaj, borduri) și elementele verzi**.
+
+## Ce este un peisaj „lush" și de ce contează?
+
+Termenul **„lush"** descrie un spațiu bogat în vegetație, în care elementele naturale sunt prezente în mod armonios și abundent. Opusul este peisajul **„barren"** (arid, gri), în care predomină betonul și asfaltul compact.
+
+Rezultatele studiului au arătat un tipar consecvent: la expunerea imaginilor cu vegetație bogată, participanții au manifestat **mai puțin stres, expresii faciale de interes și bucurie**, și o explorare vizuală mai relaxată.
+
+![Alee pietonală cu pavaje premium integrate cu vegetație](https://petrapavaje.ro/wp-content/uploads/curte_petra_pavaje.avif)
+
+## Pavajele premium — mai mult decât o alegere estetică
+
+Cercetarea relevă că **modul în care pavajul și bordurile sunt integrate cu vegetația schimbă radical percepția spațiului** și, implicit, starea de bine a celor care îl traversează. Un pavaj premium bine ales nu funcționează izolat — el devine parte dintr-un sistem vizual și emoțional.
+
+În peisajele „barren", suprafețele dure fără elemente naturale sunt procesate de creier ca spații **potențial riscante**: privirea participanților s-a fixat mai tensionat pe carosabil, au apărut expresii faciale de furie sau confuzie, iar reacțiile fiziologice de stres au fost semnificativ mai intense.
+
+## Ce ne arată hărțile de căldură?
+
+Echipamentele de *eye tracking* au generat **hărți de căldură** — zonele roșii indică unde privirea s-a concentrat tensionat, iar zonele verzi marchează o privire relaxată. În imaginile cu peisaje bogate în vegetație, pavajele au fost observate rapid, dar cu zone de căldură mult mai reduse.
+
+## Pavajul premium și dorința de a merge pe jos
+
+La **patru săptămâni** după expunerea la imaginile cu peisaje bogate în vegetație, participanții au raportat o creștere a activității fizice moderate — în special a mersului pe jos. Oamenii merg mai mult acolo unde le place să fie.
+
+> "Relația dintre trotuar, bordură și spațiul verde poate influența dorința oamenilor de a alege mersul pe jos în detrimentul mașinii."
+
+## Beneficiile concrete ale unui pavaj premium integrat cu vegetație
+
+**Reducerea stresului** — Spațiile cu pavaj calitativ și vegetație scad reacțiile fiziologice de stres.
+
+**Mai multă mișcare** — Peisajele plăcute vizual cresc dorința de a merge pe jos.
+
+**Stare emoțională pozitivă** — Expresiile faciale de bucurie și curiozitate sunt mai frecvente în spații cu pavaj integrat armonios.
+
+**Coeziune comunitară** — Spațiile primitoare invită la socializare și întâlniri.
+
+**Percepție de siguranță** — Pavajul bine ales și îngrijit transmite ordine și grijă.
+
+## De la estetic la sănătate publică
+
+Designul urban contemporan, influențat de lucrările urbanistului **Jan Gehl**, susține că orașele trebuie construite pentru oameni. Astăzi, această idee este susținută de date neurobiologice concrete. Pavajul nu mai este simplă infrastructură — este **fundalul vieții cotidiene**.
+
+## Concluzie
+
+Pentru **Petra Pavaje**, această cercetare confirmă o convingere care stă la baza activității noastre de peste 30 de ani: calitatea materialelor are un impact care depășește durabilitatea mecanică sau aspectul vizual. Fiecare pavaj premium, fiecare bordură decorativă devine parte dintr-un spațiu în care oamenii trăiesc, se odihnesc și socializează.
+
+**Un pavaj premium nu susține doar pașii. El susține experiențe, comunități și sănătate.**`,
+    date: '2026-03-24',
+    author: 'Petra Pavaje',
+    category: 'Inspirație',
+    image: 'https://petrapavaje.ro/wp-content/uploads/curte_petra_pavaje.avif',
+    readTime: 8,
+  },
+  {
+    id: '10',
+    title: 'Casa 154 – pavajul Grand Urban, punte între tradiție și modernitate',
+    slug: 'casa-154-grand-urban-traditie-modernitate',
+    excerpt: 'Cum o curte cu amintiri de peste un secol a prins viață nouă prin liniile curate ale dalelor de mari dimensiuni Grand Urban.',
+    content: `Într-o lume care ne cere să alergăm neîncetat, satul a redevenit un refugiu pentru cei care caută să schimbe zgomotul pe liniște și ecranele pe texturi vii. Conceptul de „downsizing" este tot mai popular, atât pentru tineri, cât și pentru cei trecuți prin viață.
+
+## Povestea casei
+
+Cristian Prack, prin intermediul Casei 154, o casă cu peste o sută de ani de istorie, reușește să redea exact acea experiență a redescoperirii. El se întoarce în satul copilăriei pentru a da viață unei case care pentru mulți părea o ruină. Provocarea acestui proiect a fost transformarea unei curți încărcate de amintiri într-un spațiu util, fără a-i altera magia.
+
+Amenajarea cu pavajul **Grand Urban** de la Petra Pavaje devine astfel o punte între generații: o soluție modernă care nu înlocuiește tradiția, ci o îmbrățișează.
+
+![Casa 154 — curtea renovată cu pavaj Grand Urban](https://petrapavaje.ro/wp-content/uploads/2_Dale-Grand-Urban-80x40_Petra-Pavaje.jpg)
+
+## Proiectul și viziunea
+
+Cristian a ales să refacă, să recondiționeze în loc să dărâme și să construiască ceva nou. A ales să fie în armonie cu natură prin modul în care a reconstruit atât la interior, dar mai ales la exterior. A optat de la bun început pentru plăci de dimensiuni mari pentru pași înierbați.
+
+Pentru Cristian, renovarea este *„terapie"*, iar fiecare alegere reflectă dorința lui de a arăta că se poate construi cu responsabilitate, îmbinând respectul pentru trecut cu estetica modernă a prezentului.
+
+## Provocarea de a îmbina modernul cu tradiționalul
+
+A ales plăci de mari dimensiuni, 80×40×6 cm, pentru că pun în valoare arhitectura spațiului într-un mod discret, fără să epateze. Într-o curte cu multă verdeață, **Grand Urban** este scena potrivită pentru tălpile ude pe timp de vară sau pentru urmele în zăpadă iarna.
+
+> "Am ales dalele Grand Urban pentru că îmbină perfect estetica cu funcționalitatea. Montajul a fost simplu, iar rezultatul final arată excelent și se încadrează perfect în conceptul curții."
+>
+> **Cristian Prack** — proprietar Casa 154
+
+## Sfaturi pentru alegerea pavajului potrivit pentru pașii înierbați
+
+Plăcile de mari dimensiuni sunt cele mai potrivite pentru realizarea pașilor înierbați, deoarece oferă stabilitate și structură stabilă, fără să apară denivelări.
+
+- **Stabilitate maximă** — Suprafața generoasă distribuie uniform greutatea
+- **Estetică discretă** — Liniile curate lasă verdeața în prim-plan
+- **Montaj simplu** — Dimensiunile mari înseamnă mai puține piese de manipulat
+- **Durabilitate ridicată** — Betonul vibro-presat rezistă la îngheț și trafic intens
+- **Întreținere redusă** — Suprafața plată este ușor de curățat
+
+## Variante de pavaje pentru pași înierbați
+
+**60×30×6 cm** — Disponibil la Mistic, Roca, Mediterana, Alpin, Timber, Roman, Viena, Sahara și Holland. Formatul mediu este soluția versatilă.
+
+**80×40×6 cm — Grand Urban** — Exact dimensiunea aleasă de Cristian. Liniile curate și suprafața generoasă lasă natura în prim-plan.
+
+**100×50×8 cm — Grand Urban XXL** — Petra Pavaje este singurul producător din România care poate fabrica plăci de această dimensiune.
+
+## Concluzie
+
+Casa 154 este dovada vie că respectul pentru rădăcini și designul modern pot coexista într-un echilibru perfect. Alege pavajul care onorează spiritul locului și reflectă stilul tău de viață.`,
+    date: '2026-03-05',
+    author: 'Petra Pavaje',
+    category: 'Proiecte',
+    image: 'https://petrapavaje.ro/wp-content/uploads/2_Dale-Grand-Urban-80x40_Petra-Pavaje.jpg',
+    readTime: 7,
+  },
+  {
+    id: '11',
+    title: 'Amenajează-ți curtea în culoarea anului 2026 cu Petra Pavaje',
+    slug: 'amenajeaza-curtea-culoarea-anului-2026',
+    excerpt: 'Cloud Dancer este culoarea anului 2026 — un alb rafinat care inspiră liniște și echilibru. Descoperă pavajele Petra Pavaje în această nuanță.',
+    content: `Un nou an înseamnă, de cele mai multe ori, un nou început. Planuri puse pe hârtie, idei care așteaptă momentul potrivit și proiecte amânate care cer, în sfârșit, atenție, mai ales că s-a desemnat culoarea anului 2026 — **Cloud Dancer**.
+
+Astăzi vorbim despre culoarea anului și despre modul în care aceasta poate fi integrată nu doar în interiorul casei, ci mai ales la exterior. Alegerea corectă a nuanțelor de pavaj poate transforma un spațiu banal într-unul primitor, elegant și perfect adaptat stilului tău.
+
+![Amenajare curte cu pavaj în culoarea anului](https://petrapavaje.ro/wp-content/uploads/cloud-dancer-idei-de-amenajare-cu-pavaje-in-culoarea-alb-de-la-Petra-Pavaje-web.avif)
+
+## Care sunt pavajele în culoarea anului din portofoliul Petra Pavaje?
+
+Anul acesta, Institutul Pantone a desemnat **Cloud Dancer** drept culoarea anului 2026 — un alb rafinat, luminos, descris ca „un alb înălțător, a cărui prezență este ca o șoaptă calmă într-o lume zgomotoasă".
+
+Albul și nuanțele deschise alb-bej sunt extrem de versatile în amenajările exterioare. Ele pot fi utilizate ca element central sau ca accent care lasă loc imaginației.
+
+### Pavajul Alpin — minimalism și rafinament
+
+Pavajul Alpin alb se remarcă prin suprafața structurată, antiderapantă, ce adaugă eleganță curților amenajate. Culoarea deschisă conferă luminozitate spațiului și conturează ideea de liniște și relaxare. Se integrează cu ușurință în arhitectura minimalistă și completează armonios proiectele cu influențe nordice.
+
+### Pavajul Gemina — dinamism vizual
+
+Prin suprafața bombată și mixul de dimensiuni, Gemina alb reușește să redea un aspect aparte. Poate fi utilizat pentru întregul spațiu amenajat sau alături de culorile negru sau brun. O alegere pentru cei îndrăzneți care știu că a fi diferit nu e o formă de rebeliune, ci un mod de exprimare a propriului stil.
+
+### Pavajul Relief — texturat și sofisticat
+
+Pavajul Relief, cu textura rafinată, grunjoasă, oferă un plus de siguranță prin suprafața spălată care scoate în evidență micile pietricele. Combinația marmorat – gri calcar conferă un joc vizual discret între cele două nuanțe.
+
+### Pavajul Con — diferit și creativ
+
+Pavajul Con se remarcă prin posibilitatea montajului de tip brad. În culoarea albă poate fi integrat ca o notă contrastantă în amenajările cu pavaj închis la culoare.
+
+### Pavajul Primo — practic și expresiv
+
+Pavajul Primo este integral colorat, ceea ce îl face potrivit pentru multe proiecte. Având aceeași culoare pe toate fețele, montajul este posibil chiar și în cant. Structura antichizată îi oferă un aspect rustic și o suprafață antiaderentă.
+
+### Pavajul Pastel — vesel, armonios
+
+Pavajul Pastel Winter se remarcă prin degradeurile subtile de culori, de la gri închis spre alb, și oferă senzația de profunzime și mișcare. Mixul de trei dimensiuni contribuie la un rezultat modern și echilibrat.
+
+### Pavajul Quatro — simetric și versatil
+
+Pavajele Quatro alb, cu dimensiunile 10×10 cm până la 50×50 cm, sunt o alegere versatilă. Având grosimi de 4-8 cm, sunt potrivite atât pentru zone pietonale, cât și pentru trafic auto ușor.
+
+### Pavajul Holland — liniar și ordonat
+
+Pavajul Holland alb, o alegere clasică, grație diversității de dimensiuni, de la 20×10 cm până la 60×30 cm. În combinații de culori și dimensiuni, se pot realiza modele inedite.
+
+## Cum combini pavajele pentru un efect deosebit?
+
+Secretul unei amenajări reușite stă în echilibru. Poți crea un efect spectaculos folosind o bază neutră (alb, bej, gri deschis) cu accente mai închise, texturi diferite în aceeași paletă cromatică, sau combinații de dimensiuni care adaugă dinamism.
+
+Un pavaj deschis la culoare reflectă lumina și face curtea să pară mai mare, mai aerisită și mai primitoare.
+
+## Sunt pavajele în nuanțe deschise mai greu de întreținut?
+
+Calitatea pavajelor noastre este atent testată în laboratorul propriu, astfel că performanța și rezistența rămân aceleași indiferent de culoare. Cu câteva măsuri simple, întreținerea devine ușoară: șterge rapid petele, curăță frunzele periodic și evită contactul prelungit cu elemente metalice.
+
+## Consultanță direct de la producător
+
+Echipa noastră te poate ajuta în procesul de amenajare prin consultanță personalizată. Te invităm să vizitezi grădinile expoziționale de la fabricile Petra Pavaje din Alba, Prahova, Arad și Neamț.`,
+    date: '2026-01-22',
+    author: 'Petra Pavaje',
+    category: 'Trenduri',
+    image: 'https://petrapavaje.ro/wp-content/uploads/cloud-dancer-idei-de-amenajare-cu-pavaje-in-culoarea-alb-de-la-Petra-Pavaje-web.avif',
+    readTime: 8,
+  },
+  {
+    id: '12',
+    title: '3 idei creative pentru utilizarea pavajului ca decor de sărbători',
+    slug: '3-idei-creative-pavaj-decor-sarbatori',
+    excerpt: 'Transformă bucățile rămase de pavaj în decorațiuni ingenioase care aduc spiritul sărbătorilor în curtea și în casa ta.',
+    content: `Cine spune că elementele de construcții nu pot deveni piese de artă? La Petra Pavaje, transformăm bucățile rămase de pavaj în decorațiuni ingenioase care aduc spiritul sărbătorilor în curtea și în casa ta.
+
+## Pavajul — mai mult decât funcționalitate
+
+În echipa Petra Pavaje, știm că lumea construcțiilor este percepută adesea ca fiind una tehnică. Dar cine spune că nu putem vedea elementele de construcții ca pe niște piese de Lego, gata să prindă viață într-o manieră creativă?
+
+Iată 3 idei pentru decor de sărbători realizat cu pavaje.
+
+## 1. Sanie decorativă cu cadouri
+
+Am creat o **sanie decorativă la scală reală**, perfectă pentru perioada sărbătorilor de iarnă.
+
+**Materiale utilizate:** Baza saniei — pavaj Antic 10×10×6 cm și pavaje din MIX-ul 6.72. Structura — Grand Urban 100×50×10 cm și pavaj Con pentru talpa întoarsă. Cadourile — elemente de gard Robusto 20×20×16 și pavaje Gemina 20×10 cm, ambalate vizual ca pachete cu funde din chingile paleților. Zăpada — piatră Thasos.
+
+Textura rustică a pavajului Antic și greutatea dalelor conferă saniei o stabilitate reală, iar nuanțele calde ale pietrei Thasos imită perfect zăpada proaspătă.
+
+## 2. Brad creativ — simbol al tradiției
+
+Am realizat un **brad decorativ** utilizând pavajul Primo antichizat, în culorile roșu și bej. Pentru a adăuga o notă de originalitate, am inclus și o nuanță de albastru, marcând astfel cele trei culori ale drapelului național — un omagiu discret adus tradiției și identității românești.
+
+**Materiale utilizate:** Pavaj Primo antichizat — culoare roșu, bej și nuanță specială albastru.
+
+## 3. Suport pentru brad
+
+Pavajele pot fi utilizate cu succes nu doar la exterior, ci și la interior. Utilizând câteva dale de pavaj de dimensiuni și greutăți potrivite, poți construi un **suport stabil, masiv și cu un design neconvențional**.
+
+**Materiale utilizate:** Pavaj Primo 20×10×4 cm, culoare negru.
+
+**Sfat practic:** Greutatea dalelor de pavaj oferă o stabilitate superioară oricărui suport convențional din plastic sau metal. Bradul rămâne ferm fixat, fără riscul de răsturnare — esențial într-o casă cu copii sau animale.
+
+## De ce să folosești pavajul ca material decorativ?
+
+**Reciclare creativă** — Bucățile rămase de pavaj nu mai sunt deșeuri, ci materie primă pentru proiecte originale.
+
+**Durabilitate maximă** — Spre deosebire de decorațiunile din plastic, pavajul rezistă ani întregi la intemperii.
+
+**Unicitate garantată** — Fiecare creație este unică, texturile și culorile oferind infinite posibilități.
+
+**Interior și exterior** — Pavajul funcționează perfect atât în curte, cât și în casă.
+
+## Concluzie
+
+La Petra Pavaje, credem că produsele noastre sunt mai mult decât simple pavaje — sunt instrumente de creativitate. Fie că este vorba de o sanie în curte, un brad din pavaj sau un suport neconvențional pentru brad, **limita este doar imaginația**.`,
+    date: '2025-12-15',
+    author: 'Petra Pavaje',
+    category: 'Inspirație',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Petra-Pavaje-scaled.avif',
+    readTime: 5,
+  },
 ]
 
 export function BlogDetailPage() {

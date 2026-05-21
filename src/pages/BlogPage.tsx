@@ -102,9 +102,57 @@ const blogPosts: BlogPost[] = [
     image: 'https://petrapavaje.ro/wp-content/uploads/Untitled-scaled.avif',
     readTime: 8,
   },
+  {
+    id: '9',
+    title: 'Pavaje premium și starea de bine',
+    slug: 'pavaje-premium-si-starea-de-bine',
+    excerpt: 'Cele mai noi cercetări demonstrează că vegetația bogată și amenajările de calitate influențează direct sănătatea, nivelul de stres și calitatea vieții.',
+    content: 'Cele mai noi cercetări demonstrează că vegetația bogată și amenajările stradale de calitate nu sunt simple detalii estetice — ele influențează direct sănătatea, nivelul de stres și calitatea vieții comunităților urbane.',
+    date: '2026-03-24',
+    author: 'Petra Pavaje',
+    category: 'Inspirație',
+    image: 'https://petrapavaje.ro/wp-content/uploads/curte_petra_pavaje.avif',
+    readTime: 8,
+  },
+  {
+    id: '10',
+    title: 'Casa 154 – pavajul Grand Urban, punte între tradiție și modernitate',
+    slug: 'casa-154-grand-urban-traditie-modernitate',
+    excerpt: 'Cum o curte cu amintiri de peste un secol a prins viață nouă prin liniile curate ale dalelor de mari dimensiuni Grand Urban.',
+    content: 'Cristian Prack, prin intermediul Casei 154, reușește să redea experiența redescoperirii satului copilăriei, transformând o ruină într-un spațiu util cu pavaj Grand Urban.',
+    date: '2026-03-05',
+    author: 'Petra Pavaje',
+    category: 'Proiecte',
+    image: 'https://petrapavaje.ro/wp-content/uploads/2_Dale-Grand-Urban-80x40_Petra-Pavaje.jpg',
+    readTime: 7,
+  },
+  {
+    id: '11',
+    title: 'Amenajează-ți curtea în culoarea anului 2026 cu Petra Pavaje',
+    slug: 'amenajeaza-curtea-culoarea-anului-2026',
+    excerpt: 'Cloud Dancer este culoarea anului 2026 — un alb rafinat care inspiră liniște și echilibru. Descoperă pavajele Petra Pavaje în această nuanță.',
+    content: 'Institutul Pantone a desemnat Cloud Dancer drept culoarea anului 2026. Descoperă pavajele Petra Pavaje disponibile în această nuanță pentru o amenajare luminoasă și elegantă.',
+    date: '2026-01-22',
+    author: 'Petra Pavaje',
+    category: 'Trenduri',
+    image: 'https://petrapavaje.ro/wp-content/uploads/cloud-dancer-idei-de-amenajare-cu-pavaje-in-culoarea-alb-de-la-Petra-Pavaje-web.avif',
+    readTime: 8,
+  },
+  {
+    id: '12',
+    title: '3 idei creative pentru utilizarea pavajului ca decor de sărbători',
+    slug: '3-idei-creative-pavaj-decor-sarbatori',
+    excerpt: 'Transformă bucățile rămase de pavaj în decorațiuni ingenioase care aduc spiritul sărbătorilor în curtea și în casa ta.',
+    content: 'Cine spune că elementele de construcții nu pot deveni piese de artă? La Petra Pavaje, transformăm bucățile rămase de pavaj în decorațiuni de sărbători.',
+    date: '2025-12-15',
+    author: 'Petra Pavaje',
+    category: 'Inspirație',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Petra-Pavaje-scaled.avif',
+    readTime: 5,
+  },
 ]
 
-const categories = ['Toate', 'Ghiduri', 'Ghiduri Tehnice', 'Inovație & Sustenabilitate', 'Trenduri', 'Montaj', 'Produse', 'Întreținere', 'Sustenabilitate']
+const categories = ['Toate', 'Ghiduri', 'Ghiduri Tehnice', 'Inovație & Sustenabilitate', 'Inspirație', 'Proiecte', 'Trenduri', 'Montaj', 'Produse', 'Întreținere', 'Sustenabilitate']
 
 export function BlogPage() {
   const [activeCategory, setActiveCategory] = useState('Toate')
