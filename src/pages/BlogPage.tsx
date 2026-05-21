@@ -158,9 +158,10 @@ export function BlogPage() {
   const [activeCategory, setActiveCategory] = useState('Toate')
   const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
 
+  const sorted = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
   const filtered = activeCategory === 'Toate'
-    ? blogPosts
-    : blogPosts.filter(p => p.category === activeCategory)
+    ? sorted
+    : sorted.filter(p => p.category === activeCategory)
 
   return (
     <div className="pt-20 md:pt-24">

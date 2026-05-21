@@ -550,7 +550,7 @@ export function BlogDetailPage() {
     )
   }
 
-  const relatedPosts = blogPosts.filter(p => p.slug !== slug).slice(0, 3)
+  const relatedPosts = [...blogPosts].filter(p => p.slug !== slug).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 3)
 
   return (
     <div className="pt-20 md:pt-24">
