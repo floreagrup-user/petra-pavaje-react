@@ -627,35 +627,123 @@ Pentru a menține aspectul plăcut al pavajului: îndepărtați frunzele și bur
     excerpt: 'Amenajarea curții cu pavaje și elemente decorative este o investiție pe termen lung, iar detaliile fac diferența.',
     content: `Amenajarea curții cu pavaje și elemente decorative este o investiție pe termen lung, iar detaliile fac diferența. De la alegerea modelelor de pavaj până la integrarea armonioasă a vegetației, fiecare etapă contează.
 
+![Pavaj Mediterana Terra MIX 6.30 — curte de vis amenajată cu Petra Pavaje](https://petrapavaje.ro/wp-content/uploads/Mediterana-terra-scaled.avif)
+
 ## Tendințele în designul peisagistic
 
-Tendințele actuale pun accent pe **linii simple, drepte, culori neutre** și un aspect general minimalist. Totuși, pentru ca o curte să nu devină prea monotonă, este important să aducem echilibru prin vegetație.
+Tendințele actuale în designul peisagistic pun accent pe **linii simple, drepte, culori neutre** și un aspect general minimalist. Același lucru îl observăm și în alegerea pavajelor, unde predomină texturile uniforme și paletele discrete.
 
-**Regula de aur:** Pavajul oferă structură și funcționalitate, iar vegetația aduce viață și culoare.
+Totuși, pentru ca o curte să nu devină prea monotonă, este important să aducem echilibru prin vegetație. **Integrarea plantelor alături de pavaj** creează armonie, oferă beneficii pentru mediu și, mai ales, transformă spațiul într-un loc primitor și plin de viață.
+
+**Regula de aur:** Pavajul oferă structură și funcționalitate, iar vegetația aduce viață și culoare. Împreună, creează spații unice.
+
+---
 
 ## De ce este importantă vegetația într-o curte amenajată cu pavaje
 
-Confortul termic este principalul avantaj. Diferența dintre o curte complet expusă și una completată cu vegetație poate fi de **2–3°C**. Alegerea culorilor deschise pentru pavaj, combinată cu vegetație strategic plasată, face spațiul răcoros și prietenos.
+### Confortul termic și rolul umbrelor
 
-Vegetația aduce și viață: jardinierele pline de flori atrag polenizatori. O tufă de buxus scoate în evidență aleile, un brad argintiu devine punct central, iar trandafirii albi contrastează spectaculos cu pavajul Viena negru violet.
+Confortul termic este principalul avantaj. Verile devin tot mai fierbinți, iar diferența dintre o curte complet expusă și una completată cu vegetație poate fi de **2–3°C**. Iarba, arbuștii și copacii creează zone de umbră care fac pavajul mai plăcut de parcurs chiar și în zilele toride.
 
-## Integrarea armonioasă a pavajelor și vegetației
+Alegerea culorilor deschise pentru pavaj, combinată cu vegetație strategic plasată, face ca spațiul să fie răcoros și prietenos.
 
-**Foișorul** — centrul curții, locul ideal pentru relaxare. Poate fi amenajat cu pavajul CON, perfect pentru zone circulare. Vegetația cățărătoare completează spectaculos amenajarea.
+![Pavaj Sahara Moka MIX 6.30 — nuanțe calde cu vegetație integrată](https://petrapavaje.ro/wp-content/uploads/Sahara-Moka_MIX-6.30.avif)
 
-**Aleile** — pot fi transformate în punct de atracție. Modelele șerpuite, delimitate de borduri, se împletesc armonios cu spațiile verzi.
+![Amenajare rezidențială cu pavajul Mediterana Terra MIX 6.30](https://petrapavaje.ro/wp-content/uploads/IMG_1347-HDR_c-scaled.avif)
 
-**Focarul de grădină** — serile de vară devin memorabile în jurul unui focar realizat din palisade sau elemente Primo.
+### Beneficiile pentru ecosistem și polenizatori
+
+Vegetația aduce și viață: [jardinierele](https://petrapavaje.ro/jardiniere-2/) pline de flori atrag polenizatori, iar un mic iaz, amenajat cu produsele din gama Woodstone, poate deveni locul preferat al libelulelor.
+
+### Cum vegetația pune în valoare pavajele
+
+Estetica joacă un rol esențial. O tufă de buxus scoate în evidență aleile realizate cu [**Mediterana Terra**](https://petrapavaje.ro/pavaje-premium/mediterana/), un brad argintiu devine punct central într-o insulă cu pavaj gri bazaltic, iar trandafirii albi contrastează spectaculos cu [**pavajul Viena negru violet**](https://petrapavaje.ro/pavaje-premium/viena/).
+
+![Pavaj Mistic gri bazaltic MIX 6.30 — vegetație care pune în valoare pavajul](https://petrapavaje.ro/wp-content/uploads/Mistic-gri-bazaltic-MIX-6.30-scaled.avif)
+
+---
+
+## Integrarea armonioasă a pavajelor și a vegetației
+
+Amenajările reușite se bazează pe echilibru: pavajul oferă structură și funcționalitate, iar vegetația aduce viață și culoare. Împreună, creează spații unice.
+
+### Foișorul — centrul curții
+
+Foișorul devine locul ideal pentru dimineți cu cafea sau seri relaxante în aer liber. Poate fi amenajat cu [**pavajul CON**](https://petrapavaje.ro/pavaje-standard/con/), perfect pentru zone circulare sau forme șerpuitoare. Pentru un aspect modern, se pot folosi plăci mari, combinate cu rosturi verzi sau umplute cu piatră Thasos, care asigură și drenajul eficient al apei.
+
+Vegetația cățărătoare — trandafiri, glicină sau iederă — completează spectaculos amenajarea.
+
+![Pavaj Relief marmorat negru onix — amenajare curte elegantă](https://petrapavaje.ro/wp-content/uploads/Relief-marmorat-negru-onix-scaled.avif)
+
+![Pavaj Quatro negru 40x40x6 cm — design modern minimalist](https://petrapavaje.ro/wp-content/uploads/Quatro-40x40-negru.avif)
+
+![Zonă amenajată cu pavaj CON — forme circulare și șerpuitoare](https://petrapavaje.ro/wp-content/uploads/Zona-amenajata-cu-pavaj-CON.avif)
+
+### Aleile — punct de atracție
+
+Aleile pot fi transformate într-un punct de atracție. Modelele șerpuite, delimitate de borduri, se împletesc armonios cu spațiile verzi și sunt ușor de întreținut, facilitând curățarea frunzelor.
+
+### Focarul de grădină
+
+Serile de vară devin memorabile în jurul unui focar realizat din [palisade](https://petrapavaje.ro/palisada/) sau din [elementele Primo](https://petrapavaje.ro/pavaje-premium/primo/), completat de băncuțe din același material. Un astfel de spațiu aduce familia și prietenii împreună și oferă cadrul perfect pentru momente speciale.
 
 ## Cum alegem vegetația potrivită pentru curte
 
-Plantele adaptate climatului local sunt mai rezistente și cer mai puțină apă. În locul gazonului clasic, poți opta pentru trifoiul pitic. Ține cont de tipul rădăcinilor: arborii cu rădăcini pivotante pot fi plantați mai aproape de pavaj, cei cu rădăcini orizontale trebuie amplasați la distanță.
+Planul pentru o curte de vis implică alegerea vegetației **în paralel cu alegerea pavajului**. Plantele adaptate climatului local sunt mai rezistente, cer mai puțină apă și se integrează natural în spațiul amenajat.
+
+În locul gazonului clasic, consumator de resurse, poți opta pentru covoare verzi sustenabile, precum trifoiul pitic, care îmbină estetica cu beneficiile pentru polenizatori.
+
+### Beneficiile arbuștilor și plantelor diverse
+
+- Atrag polenizatorii
+- Dau un aspect unic curții
+- Necesită mai puțină întreținere
+- Sunt mai prietenoase cu mediul
+
+### Arbori și rădăcini — cum eviți problemele
+
+La fel de important este să ții cont de tipul rădăcinilor: arborii cu **rădăcini pivotante** pot fi plantați mai aproape de pavaj, pe când cei cu **rădăcini orizontale** trebuie amplasați la distanță, pentru a evita denivelările.
+
+### Stiluri de amenajare: pavaj + vegetație
+
+- **Stil scandinav / minimalist** — pavaje în nuanțe reci, grădini cu linii simple, vegetație restrânsă
+- **Stil mediteranean** — pavaje în tonuri calde, vegetație bogată și relaxată
+
+![Pavaj Mistic gri bazaltic — stil scandinav minimalist](https://petrapavaje.ro/wp-content/uploads/Mistic-gri-bazaltic-6-scaled.avif)
+
+![Pavaj Viena 60x30 cm negru violet — contrast spectaculos cu vegetație](https://petrapavaje.ro/wp-content/uploads/Viena-60-x-30-cm-negru-violet-1-scaled.avif)
+
+---
 
 ## Când este cel mai bun moment pentru plantare
 
-Toamna este perioada ideală pentru plantarea pomilor. Odată stabilite zonele de vegetație și traseele pentru alei, poți alege pavajul potrivit.
+Toamna este perioada ideală pentru plantarea pomilor, dar și pentru o mulțime de plante, așa că sfârșitul verii devine momentul perfect să-ți faci planul de amenajare. Odată stabilite zonele de vegetație și traseele pentru alei, poți alege pavajul potrivit pentru ca spațiul să prindă forma dorită.
 
-**Avantajul planificării din timp:** economisirea de resurse, evitarea costurilor neprevăzute și colaborarea eficientă cu specialiștii.`,
+### Recomandări de pomi fructiferi și decorativi
+
+- **Primăvara** — încântă prin flori delicate: cireșii, piersicii sau speciile decorative
+- **Vara** — arțarul, gutuiul sau mesteacănul creează cadrul perfect cu coroane bogate
+- **Toamna** — frunzele capătă nuanțe ruginii, iar curtea arată ca desprinsă dintr-o poveste
+
+![Pavaj Cubic gri bazaltic — curte cu arbori decorativi](https://petrapavaje.ro/wp-content/uploads/Cubic-gri-bazaltic-scaled.avif)
+
+![Pavaj Mistic gri bazaltic MIX 6.30 — amenajare cu pomi fructiferi](https://petrapavaje.ro/wp-content/uploads/MISTIC-gri-bazaltic-MIX-6.30-2-scaled.avif)
+
+## Avantajul de a începe planul din timp
+
+Unul dintre cele mai mari avantaje ale planificării din timp este **economisirea de resurse**. Cu un plan bine stabilit, vei evita costurile neprevăzute și vei putea colabora eficient cu specialiștii — atât cu montatorii, cât și cu peisagiștii.
+
+O curte perfectă nu se realizează peste noapte, ci este rezultatul unor alegeri atente și calculate.
+
+### Cum să alegi pavajul Petra potrivit
+
+Fiecare detaliu contează, iar alegerea pavajului este esențială pentru a reprezenta stilul tău de viață. Indiferent dacă preferi un design minimalist sau unul îndrăzneț și creativ, la Petra Pavaje vei găsi o gamă largă de **peste 800 de modele**.
+
+Echipa noastră de specialiști este gata să te ajute să alegi pavajul ideal, pentru o curte care să atragă privirile trecătorilor și să primească aprecierile apropiaților.
+
+De la [**Mediterana**](https://petrapavaje.ro/pavaje-premium/mediterana/) la [**Sahara**](https://petrapavaje.ro/pavaje-premium/sahara/), de la [**Mistic**](https://petrapavaje.ro/pavaje-premium/mistic/) la [**Viena**](https://petrapavaje.ro/pavaje-premium/viena/) — fiecare gamă oferă experiențe unice de amenajare, adaptate stilului și personalității tale.
+
+Ești gata să-ți transformi curtea în spațiul visat? Contactează reprezentantul Petra Pavaje din zona ta pentru o ofertă personalizată.`,
     date: '2025-09-03',
     author: 'Petra Pavaje',
     category: 'Inspirație',
