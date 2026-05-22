@@ -2184,6 +2184,14 @@ export function BlogDetailPage() {
 
             <h1 className="heading-h1 text-charcoal-900 mb-6">{post.title}</h1>
 
+            <div className="aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100 mb-8">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+
             <div className="prose prose-lg max-w-none">
               {post.toc && post.toc.length > 0 && (
                 <TableOfContents entries={post.toc} />
