@@ -489,8 +489,6 @@ Echipa noastră te poate ajuta în procesul de amenajare prin consultanță pers
     excerpt: 'Transformă bucățile rămase de pavaj în decorațiuni ingenioase care aduc spiritul sărbătorilor în curtea și în casa ta.',
     content: `Cine spune că elementele de construcții nu pot deveni piese de artă? La Petra Pavaje, transformăm bucățile rămase de pavaj în decorațiuni ingenioase care aduc spiritul sărbătorilor în curtea și în casa ta.
 
-![Idei creative pentru utilizarea pavajului ca decor de sărbători — Petra Pavaje](https://petrapavaje.ro/wp-content/uploads/Petra-Pavaje-scaled.avif)
-
 ## Pavajul — mai mult decât funcționalitate
 
 În echipa **Petra Pavaje**, știm că lumea construcțiilor este percepută adesea ca fiind una tehnică, bazată strict pe funcționalitate. Desigur, precizia și durabilitatea sunt esențiale — sunt ADN-ul oricărui [**pavaj**](https://petrapavaje.ro/pavaje-premium/) de calitate.
