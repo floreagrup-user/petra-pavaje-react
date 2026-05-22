@@ -693,6 +693,14 @@ Descoperă gama completă de [**pavaje premium**](https://petrapavaje.ro/pavaje-
     category: 'Inspirație',
     image: 'https://petrapavaje.ro/wp-content/uploads/Petra-Pavaje-scaled.avif',
     readTime: 5,
+    toc: [
+      { id: 'pavajul-mai-mult-decât-funcționalitate', heading: 'Pavajul — mai mult decât funcționalitate', summary: 'Cum elementele de construcții devin piese de artă și inspirație creativă' },
+      { id: '1-sanie-decorativă-cu-cadouri', heading: '1. Sanie decorativă cu cadouri', summary: 'O sanie la scară reală din pavaje Antic, Grand Urban și elemente Robusto' },
+      { id: '2-brad-creativ-simbol-al-tradiției', heading: '2. Brad creativ — simbol al tradiției', summary: 'Brad decorativ din pavaj Primo antichizat în culorile roșu, bej și albastru' },
+      { id: '3-suport-pentru-brad', heading: '3. Suport pentru brad', summary: 'Suport industrial stabil pentru bradul de Crăciun din pavaj Primo' },
+      { id: 'de-ce-să-folosești-pavajul-ca-material-decorativ', heading: 'De ce să folosești pavajul ca material decorativ?', summary: 'Reciclare creativă, durabilitate maximă și unicitate garantată' },
+      { id: 'inspirație-și-durabilitate-cu-petra-pavaje', heading: 'Inspirație și durabilitate cu Petra Pavaje', summary: 'Transformă bucățile rămase de pavaj în proiecte originale' },
+    ],
   },
   {
     id: '13',
