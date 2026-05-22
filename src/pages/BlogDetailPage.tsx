@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Calendar, Clock, User, X } from 'lucide-react'
+import { Calendar, Clock, User, X, ChevronLeft, ChevronRight } from 'lucide-react'
 import type { BlogPost } from '@/data/types'
 
 const blogPosts: BlogPost[] = [
@@ -1822,10 +1822,22 @@ Pentru detalii complete, consultați regulamentul oficial disponibil pe site.`,
   },
 ]
 
-function BlogLightbox({ src, alt, onClose }: { src: string; alt: string; onClose: () => void }) {
+function BlogLightbox({
+  images,
+  currentIndex,
+  onClose,
+  onNavigate,
+}: {
+  images: { src: string; alt: string }[]
+  currentIndex: number
+  onClose: () => void
+  onNavigate: (direction: number) => void
+}) {
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose()
+      if (e.key === 'ArrowLeft' && currentIndex > 0) onNavigate(-1)
+      if (e.key === 'ArrowRight' && currentIndex < images.length - 1) onNavigate(1)
     }
     document.addEventListener('keydown', handleKey)
     document.body.style.overflow = 'hidden'
@@ -1833,25 +1845,49 @@ function BlogLightbox({ src, alt, onClose }: { src: string; alt: string; onClose
       document.removeEventListener('keydown', handleKey)
       document.body.style.overflow = ''
     }
-  }, [onClose])
+  }, [onClose, onNavigate, currentIndex, images.length])
+
+  const img = images[currentIndex]
 
   return (
     <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 cursor-zoom-out" onClick={onClose}>
       <button onClick={onClose} className="absolute top-4 right-4 z-10 text-white/80 hover:text-white transition-colors" aria-label="Close">
         <X className="w-8 h-8" />
       </button>
+
+      {currentIndex > 0 && (
+        <button onClick={(e) => { e.stopPropagation(); onNavigate(-1) }}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white/60 hover:text-white transition-colors p-2"
+          aria-label="Previous image">
+          <ChevronLeft className="w-10 h-10" />
+        </button>
+      )}
+
       <img
-        src={src}
-        alt={alt}
+        src={img.src}
+        alt={img.alt}
         className="max-w-full max-h-[90vh] object-contain rounded-lg"
         onClick={(e) => e.stopPropagation()}
       />
+
+      {currentIndex < images.length - 1 && (
+        <button onClick={(e) => { e.stopPropagation(); onNavigate(1) }}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white/60 hover:text-white transition-colors p-2"
+          aria-label="Next image">
+          <ChevronRight className="w-10 h-10" />
+        </button>
+      )}
+
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/50 text-sm font-medium tracking-wide">
+        {currentIndex + 1} / {images.length}
+      </div>
     </div>
   )
 }
 
-function getImageLayout(heading: string): string {
+function getImageLayout(heading: string, imageCount: number = 0): string {
   const h = heading.toLowerCase()
+  if (h.includes('produse utilizate') && imageCount === 3) return 'row-3'
   if (h.includes('alpin')) return 'row-3'
   if (h.includes('gemina')) return 'cols-2'
   if (h.includes('relief')) return 'cols-2-rows-3'
@@ -1946,7 +1982,7 @@ function renderBlogContent(
 
   const flushImages = () => {
     if (imageBuffer.length === 0) return
-    const layout = getImageLayout(currentHeading)
+    const layout = getImageLayout(currentHeading, imageBuffer.length)
     nodes.push(
       <ImageGrid key={getKey()} images={imageBuffer} layout={layout} onImageClick={onImageClick} />
     )
@@ -2039,7 +2075,8 @@ function renderInline(text: string): React.ReactNode {
 export function BlogDetailPage() {
   const { slug } = useParams<{ slug: string }>()
   const post = blogPosts.find(p => p.slug === slug)
-  const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null)
+  const allImages = post ? Array.from(post.content.matchAll(/!\[(.*?)\]\((.*?)\)/g)).map(m => ({ src: m[2], alt: m[1] })) : []
+  const [lightbox, setLightbox] = useState<{ images: { src: string; alt: string }[]; currentIndex: number } | null>(null)
 
   if (!post) {
     return (
@@ -2102,14 +2139,18 @@ export function BlogDetailPage() {
             </div>
 
             <div className="prose prose-lg max-w-none">
-              {renderBlogContent(post.content, (src, alt) => setLightbox({ src, alt }))}
+              {renderBlogContent(post.content, (src, alt) => {
+                const idx = allImages.findIndex(i => i.src === src)
+                setLightbox({ images: allImages, currentIndex: idx >= 0 ? idx : 0 })
+              })}
             </div>
 
             {lightbox && (
               <BlogLightbox
-                src={lightbox.src}
-                alt={lightbox.alt}
+                images={lightbox.images}
+                currentIndex={lightbox.currentIndex}
                 onClose={() => setLightbox(null)}
+                onNavigate={(dir) => setLightbox(prev => prev ? { ...prev, currentIndex: prev.currentIndex + dir } : null)}
               />
             )}
 
