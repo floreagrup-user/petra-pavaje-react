@@ -669,35 +669,92 @@ Toamna este perioada ideală pentru plantarea pomilor. Odată stabilite zonele d
     excerpt: 'Un loc în care, doar privindu-l, te simți ca acasă. Iar pavajul este scena pe care se întâmplă momentele simple și autentice.',
     content: `Un loc în care, doar privindu-l, te simți ca acasă. Jucăriile răsfirate, animalele de companie, pașii uzi de pe iarba înrourată — toate compun atmosfera unui cămin viu. Iar pavajul este scena pe care se întâmplă momentele simple și autentice.
 
+![Amenajare rezidențială cu pavajul Mediterana Terra MIX 6.30 — vedere de ansamblu](https://petrapavaje.ro/wp-content/uploads/IMG_1347-HDR_c-scaled.avif)
+
 ## Cartea de vizită a fiecărei case
 
-Curtea este prima pe care o remarci când mergi în vizită, e locul care te încarcă de energie și locul în care îți încarci bateriile după o zi încărcată.
+Curtea este prima pe care o remarci când mergi în vizită, e locul care te încarcă de energie când pleci spre muncă și locul în care îți încarci bateriile când te reîntorci, după o zi încărcată.
 
-Pentru noi, sentimentul de „acasă" este cel pe care dorim să îl transmitem prin fiecare produs pus în operă.
+Câți dintre voi ați pășit cu apreciere într-o curte frumos amenajată și care v-a rămas mult timp în gând? Ce-ar fi dacă le-ai transmite și altora același sentiment când îți trec pragul?
+
+Pentru noi, sentimentul de „acasă" este cel pe care dorim să îl transmitem prin fiecare produs pus în operă. Ne dorim ca fiecare casă să devină „acasă", locul în care să te întorci mereu cu drag, iar acest sentiment să te întâmpine chiar din momentul în care deschizi poarta.
+
+Acasă e locul în care tu ești artistul, iar noi am creat o gamă variată de pavaje și elemente de grădină tocmai pentru ca tu să-ți pui amprenta personală și să-ți exprimi stilul.
+
+---
 
 ## Pavajul Mediterana Terra — inspirație toscană
 
-Inspirația pentru acest pavaj stă în **străduțele toscane**, în paleta de culori pământii, mediteraneene. La conceperea pavajului Mediterana Terra am reușit să combinăm **sentimentul călduros de acasă** și **senzația de a fi mereu în vacanță**.
+Inspirația pentru acest pavaj stă tocmai în **străduțele toscane**, în paleta de culori pământii, mediteraneene. La conceperea pavajului [**Mediterana Terra**](https://petrapavaje.ro/pavaje-premium/mediterana/) am reușit să combinăm două elemente: **sentimentul călduros de acasă** și **senzația de a fi mereu în vacanță**.
 
-**Produse utilizate:** Pavaj Mediterana Terra MIX 6.30 — combinație de trei dimensiuni, cu grosimea de 6 cm potrivită pentru trafic auto ușor. Bordură 50×5×20 cm, culoare neagră — un contrast care delimitează clar zona pavată de zona verde.
+Fiecare amenajare realizată cu pavajul Mediterana Terra ne întărește convingerea că am reușit să surprindem perfect această combinație.
 
-## De ce să alegi această combinație?
+![Amenajare rezidențială cu pavajul Mediterana Terra — vedere laterală](https://petrapavaje.ro/wp-content/uploads/IMG_1272-HDR_c-scaled.avif)
 
-**Aspect vizual călduros** — Culoarea pavajului, în combinație cu bordura neagră, creează un contrast neașteptat, dar plăcut.
+![Amenajare spațiu rezidențial cu Mediterana Terra MIX 6.30](https://petrapavaje.ro/wp-content/uploads/IMG_1341-HDR_c-scaled.avif)
 
-**Rezistență și durabilitate** — Materialele sunt potrivite pentru trafic greu, rezistente la ciclurile de îngheț-dezgheț.
+![Mediterana Terra MIX 6.30 — detaliu model de montaj](https://petrapavaje.ro/wp-content/uploads/IMG_1308_c-scaled.avif)
 
-**Aspect ordonat** — Coeziunea vizuală dintre pavaj și stilul arhitectural creează un aspect unitar.
+### Produse utilizate în acest proiect
+
+- [**Pavaj Mediterana Terra MIX 6.30**](https://petrapavaje.ro/pavaje-premium/mediterana/) — combinație de trei dimensiuni care conferă amenajărilor un aspect dinamic. Grosimea de 6 cm este potrivită pentru traficul auto ușor, deservind atât zona parcării, cât și aleile din jurul casei
+- [**Bordură 50×5×20 cm**](https://petrapavaje.ro/borduri-2/bordura-50x5x20/), culoare neagră — o culoare contrastantă, care face foarte clară delimitarea zonei pavate de zona verde
+
+![Mediterana Terra MIX 6.30 — vedere generală curte](https://petrapavaje.ro/wp-content/uploads/IMG_1347-HDR_c-scaled.avif)
+
+![Parcare cu pavaj Mediterana Terra — trafic auto ușor](https://petrapavaje.ro/wp-content/uploads/IMG_1233_c-scaled.avif)
+
+---
+
+## De ce să alegi această combinație de pavaj și bordură?
+
+**Aspect vizual călduros** — Culoarea pavajului, în combinație cu bordura neagră, creează un contrast neașteptat, dar plăcut, care delimitează vizual clar spațiul.
+
+**Rezistență și durabilitate** — Materialele utilizate sunt potrivite pentru trafic greu, rezistente la ciclurile de îngheț-dezgheț și intemperii.
+
+**Aspect ordonat** — Coeziunea vizuală dintre pavaj și stilul arhitectural creează un aspect unitar, iar modelul de montaj contribuie la acest efect.
+
+![Mediterana Terra MIX 6.30 — alee în jurul casei](https://petrapavaje.ro/wp-content/uploads/IMG_1419_c-scaled.avif)
+
+![Mediterana Terra MIX 6.30 — detaliu bordură neagră](https://petrapavaje.ro/wp-content/uploads/IMG_1401_c-scaled.avif)
+
+## Cum să integrezi pavajul Mediterana Terra în amenajări
+
+### În stil mediteranean
+
+Pentru amenajarea spațiului rezidențial cu pavajul Mediterana Terra începe prin alegerea unei palete cromatice calde, care permite integrarea armonioasă în orice stil arhitectural. Se recomandă integrarea geamurilor și intrărilor de tip arcadă, iar în ceea ce privește nuanțele, este potrivită o paletă de nuanțe pământii (bej, ocru, crem sau cărămiziu).
+
+Adiacent, se pot integra armonios elementele naturale precum piatra și lemnul sau elemente care redau perfect aspectul lemnului, precum produsele din gama [**Woodstone — Lemn Pietrificat**](https://petrapavaje.ro/woodstone-lemn-pietrificat/).
+
+### În stil modern
+
+Mediterana Terra poate fi integrat și în amenajările minimaliste, cu **fațade albe și vegetație abundentă**, unde pavajul devine un accent de culoare care sparge monotonia cromatică.
+
+Paleta de culori pământii a Mediterana Terra se potrivește atât stilului mediteranean tradițional, cât și arhitecturii moderne contemporane. Este un pavaj versatil, care se adaptează viziunii tale.
+
+---
 
 ## Mediterana Terra sau Rossa?
 
-**Terra** — Nuanțe bogate, brune, pământii. Potrivit pentru design în culori calde. Alege Terra dacă vrei o curte cu un aer relaxant.
+Gama Mediterana oferă două variante cromatice distincte, fiecare cu personalitatea ei. Alegerea depinde de stilul arhitectural și de atmosfera pe care dorești să o creezi.
 
-**Rossa** — Nuanțe roșiatice și accente galbene. Aspect expresiv, paletă de culori vii. Alege Rossa pentru energie și accente vibrante.
+**Mediterana Terra** — Nuanțe bogate, brune, pământii. Potrivit pentru design în culori calde. Se asortează cu fațade deschise. Grădini cu vegetație generoasă.
 
-## Portofoliul Petra Pavaje
+**Mediterana Rossa** — Nuanțe roșiatice și accente galbene. Aspect expresiv, paleta de culori vii. Potrivit cu fațade albe sau deschise. Energie și accente vibrante.
 
-Peste **800 de produse** care acoperă toate stilurile și dorințele. Investim constant în diversificarea portofoliului și în tehnologie de ultimă generație pentru produse de calitate ridicată.`,
+**Alege Terra** dacă vrei o curte cu un aer relaxant, iar **Rossa** pentru energie și accente vibrante.
+
+![Pavaj Mediterana Terra — nuanțe pământii, brune](https://petrapavaje.ro/wp-content/uploads/Mediterana-terra_c-scaled.avif)
+
+![Pavaj Mediterana Rossa — nuanțe roșiatice și accente galbene](https://petrapavaje.ro/wp-content/uploads/Mediterana-rossa_c-scaled.avif)
+
+## Portofoliul Petra Pavaje — diversitate și inovație
+
+Portofoliul Petra Pavaje, din care fac parte **peste 800 de produse**, reușește să acopere toate stilurile și dorințele. Investim constant în diversificarea portofoliului pentru a ține pasul cu tendințele din amenajările exterioare, atât internaționale, cât și locale.
+
+De asemenea, investiția în **tehnologie de ultimă generație** asigură produse de calitate ridicată pentru amenajări care se fac remarcate.
+
+De la [**Mediterana Terra**](https://petrapavaje.ro/pavaje-premium/mediterana/) la [**Roca**](https://petrapavaje.ro/pavaje-premium/roca/), de la [**Sahara**](https://petrapavaje.ro/pavaje-premium/sahara/) la [**Viena**](https://petrapavaje.ro/pavaje-premium/viena/) — fiecare gamă oferă experiențe unice de amenajare, adaptate stilului și personalității tale.`,
     date: '2025-07-30',
     author: 'Petra Pavaje',
     category: 'Inspirație',
