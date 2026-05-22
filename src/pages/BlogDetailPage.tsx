@@ -1,3 +1,4 @@
+import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Calendar, Clock, User } from 'lucide-react'
@@ -1430,6 +1431,46 @@ Pentru detalii complete, consultați regulamentul oficial disponibil pe site.`,
   },
 ]
 
+function renderInline(text: string): React.ReactNode {
+  const regex = /\[\*\*(.+?)\*\*\]\((.+?)\)|\*\*(.+?)\*\*|\[(.+?)\]\((.+?)\)/g
+  const parts: React.ReactNode[] = []
+  let lastIndex = 0
+  let match: RegExpExecArray | null
+
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index))
+    }
+    if (match[1] && match[2]) {
+      // [**bold**](url)
+      parts.push(
+        <a key={match.index} href={match[2]} target="_blank" rel="noopener noreferrer"
+          className="text-brand-600 font-semibold hover:underline transition-colors">
+          {match[1]}
+        </a>
+      )
+    } else if (match[3]) {
+      // **bold**
+      parts.push(<strong key={match.index} className="font-semibold text-charcoal-900">{match[3]}</strong>)
+    } else if (match[4] && match[5]) {
+      // [text](url)
+      parts.push(
+        <a key={match.index} href={match[5]} target="_blank" rel="noopener noreferrer"
+          className="text-brand-600 hover:underline transition-colors">
+          {match[4]}
+        </a>
+      )
+    }
+    lastIndex = match.index + match[0].length
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex))
+  }
+
+  return parts.length > 0 ? <>{parts}</> : text
+}
+
 export function BlogDetailPage() {
   const { slug } = useParams<{ slug: string }>()
   const post = blogPosts.find(p => p.slug === slug)
@@ -1510,22 +1551,25 @@ export function BlogDetailPage() {
                   )
                 }
                 if (paragraph.startsWith('## ')) {
-                  return <h2 key={i} className="text-2xl font-bold text-charcoal-900 mt-8 mb-4">{paragraph.replace('## ', '')}</h2>
+                  return <h2 key={i} className="text-2xl font-bold text-charcoal-900 mt-8 mb-4">{renderInline(paragraph.replace('## ', ''))}</h2>
                 }
                 if (paragraph.startsWith('### ')) {
-                  return <h3 key={i} className="text-xl font-semibold text-charcoal-900 mt-6 mb-3">{paragraph.replace('### ', '')}</h3>
+                  return <h3 key={i} className="text-xl font-semibold text-charcoal-900 mt-6 mb-3">{renderInline(paragraph.replace('### ', ''))}</h3>
                 }
-                if (paragraph.startsWith('- **')) {
-                  return <li key={i} className="text-charcoal-700 ml-4 mb-1">{paragraph.replace('- ', '')}</li>
+                if (paragraph.startsWith('- ')) {
+                  return <li key={i} className="text-charcoal-700 ml-4 mb-2 leading-relaxed">{renderInline(paragraph.replace('- ', ''))}</li>
                 }
-                if (paragraph.startsWith('1. ')) {
-                  return <li key={i} className="text-charcoal-700 ml-4 mb-1">{paragraph}</li>
+                if (paragraph.match(/^\d+\. /)) {
+                  return <li key={i} className="text-charcoal-700 ml-4 mb-2 leading-relaxed">{renderInline(paragraph.replace(/^\d+\. /, ''))}</li>
                 }
                 if (paragraph.startsWith('> ')) {
-                  return <blockquote key={i} className="border-l-4 border-brand-600 pl-4 my-6 italic text-charcoal-700">{paragraph.replace('> ', '')}</blockquote>
+                  return <blockquote key={i} className="border-l-4 border-brand-600 pl-4 my-6 italic text-charcoal-700">{renderInline(paragraph.replace('> ', ''))}</blockquote>
+                }
+                if (paragraph.startsWith('---')) {
+                  return <hr key={i} className="my-8 border-charcoal-200" />
                 }
                 if (paragraph.trim()) {
-                  return <p key={i} className="text-charcoal-700 mb-4 leading-relaxed">{paragraph}</p>
+                  return <p key={i} className="text-charcoal-700 mb-4 leading-relaxed">{renderInline(paragraph)}</p>
                 }
                 return null
               })}
