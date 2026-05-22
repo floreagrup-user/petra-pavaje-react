@@ -419,63 +419,180 @@ Casa 154 este dovada vie că respectul pentru rădăcini și designul modern pot
     title: 'Amenajează-ți curtea în culoarea anului 2026 cu Petra Pavaje',
     slug: 'amenajeaza-curtea-culoarea-anului-2026',
     excerpt: 'Cloud Dancer este culoarea anului 2026 — un alb rafinat care inspiră liniște și echilibru. Descoperă pavajele Petra Pavaje în această nuanță.',
-    content: `Un nou an înseamnă, de cele mai multe ori, un nou început. Planuri puse pe hârtie, idei care așteaptă momentul potrivit și proiecte amânate care cer, în sfârșit, atenție, mai ales că s-a desemnat culoarea anului 2026 — **Cloud Dancer**.
+    content: `Un nou an înseamnă, de cele mai multe ori, un nou început. Planuri puse pe hârtie, idei care așteaptă momentul potrivit și proiecte amânate care cer, în sfârșit, atenție, mai ales că s-a descis culoarea anului 2026 – **Cloud Dancer**. Chiar dacă temperaturile sunt încă scăzute pentru amenajările propriu-zise, specialiștii Petra Pavaje consideră că acesta este momentul ideal pentru planificare.
 
-Astăzi vorbim despre culoarea anului și despre modul în care aceasta poate fi integrată nu doar în interiorul casei, ci mai ales la exterior. Alegerea corectă a nuanțelor de pavaj poate transforma un spațiu banal într-unul primitor, elegant și perfect adaptat stilului tău.
+Astăzi vorbim despre culoarea anului și despre modul în care aceasta poate fi integrată, nu doar în interiorul casei, ci mai ales la exterior. Culorile joacă un rol esențial în orice amenajare. Ele pot evidenția un spațiu, pot crea accente discrete sau pot schimba complet perspectiva asupra unei curți.
 
-![Amenajare curte cu pavaj în culoarea anului](https://petrapavaje.ro/wp-content/uploads/cloud-dancer-idei-de-amenajare-cu-pavaje-in-culoarea-alb-de-la-Petra-Pavaje-web.avif)
+Alegerea corectă a nuanțelor de pavaj poate transforma un spațiu banal într-unul primitor, elegant și perfect adaptat stilului tău.
 
 ## Care sunt pavajele în culoarea anului din portofoliul Petra Pavaje?
 
-Anul acesta, Institutul Pantone a desemnat **Cloud Dancer** drept culoarea anului 2026 — un alb rafinat, luminos, descris ca „un alb înălțător, a cărui prezență este ca o șoaptă calmă într-o lume zgomotoasă".
+Anul acesta, Institutul Pantone a desemnat **Cloud Dancer** drept culoarea anului 2026 – un alb rafinat, luminos, descris ca „un alb înălțător, a cărui prezență este ca o șoaptă calmă într-o lume zgomotoasă". Este o nuanță care inspiră liniște, echilibru și libertate creativă.
 
-Albul și nuanțele deschise alb-bej sunt extrem de versatile în amenajările exterioare. Ele pot fi utilizate ca element central sau ca accent care lasă loc imaginației.
+E adevărat, culorile ne influențează starea de spirit. Unele ne energizează, altele ne liniștesc, unele transmit siguranță, iar altele aduc o notă jucăușă. După ce ai definit stilul interior al casei, este firesc să îți îndrepți atenția către curte, spațiul în care vei petrece timp de calitate alături de familie și prieteni.
+
+Albul și nuanțele deschise alb-bej sunt extrem de versatile în amenajările exterioare. Ele pot fi utilizate ca element central sau ca accent care lasă loc imaginației. Spre exemplu, o curte întreagă cu pavaj alb sau doar câteva inserții, trepte albe sau ziduri de sprijin, dar pot fi și terase cu pavaj alb și coloane realizate din elemente de gard splitate.
+
+## Care sunt opțiunile de pavaje disponibile în culoarea anului 2026 de la Petra Pavaje?
 
 ### Pavajul Alpin — minimalism și rafinament
 
-Pavajul Alpin alb se remarcă prin suprafața structurată, antiderapantă, ce adaugă eleganță curților amenajate. Culoarea deschisă conferă luminozitate spațiului și conturează ideea de liniște și relaxare. Se integrează cu ușurință în arhitectura minimalistă și completează armonios proiectele cu influențe nordice.
+Pavajul [**Alpin**](https://petrapavaje.ro/pavaje-premium/alpin/) alb se remarcă prin suprafața structurată, antiderapantă, ce adaugă eleganță curților amenajate. Culoarea deschisă conferă luminozitate spațiului și conturează ideea de liniște și relaxare.
+
+Culoarea alb are un rol foarte important în arhitectura mondială, fiind un element definitoriu pentru unele dintre cele mai emblematice construcții. De la acoperișurile sculpturale ale Operei din Sydney, până la rafinamentul atemporal al Taj Mahalului sau la faimoasele locuințe din Santorini, unde albul imaculat este completat de accentele albastre ale acoperișurilor.
+
+Pavajul Alpin se integrează cu ușurință în arhitectura minimalistă și completează armonios proiectele cu influențe nordice, oferind un plus de luminozitate și claritate spațiilor exterioare.
+
+![Pavaj Alpin 60x30 cm alb — suprafață structurată, antiderapantă](https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-web.avif)
+
+![Pavaj Alpin 60x30 cm alb — vedere detaliată](https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-web1.avif)
+
+![Pavaj Alpin 30x20 cm alb și moka — combinație de culori](https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-30-x-20-cm-alb-si-moka-produs-de-Petra-Pavaje-web2.avif)
+
+---
 
 ### Pavajul Gemina — dinamism vizual
 
-Prin suprafața bombată și mixul de dimensiuni, Gemina alb reușește să redea un aspect aparte. Poate fi utilizat pentru întregul spațiu amenajat sau alături de culorile negru sau brun. O alegere pentru cei îndrăzneți care știu că a fi diferit nu e o formă de rebeliune, ci un mod de exprimare a propriului stil.
+Pavajul [**Gemina**](https://petrapavaje.ro/pavaje-premium/gemina/) alb, prin suprafața bombată și mixul de dimensiuni, reușește să redea un aspect aparte amenajărilor realizate. Poate fi utilizat pentru întregul spațiu amenajat sau alături de culorile negru sau brun, dar poate fi utilizat și pentru integrarea unor accente în cadrul unor amenajări precum combinația Alpin – Gemina.
+
+Potrivit pentru arhitecturi moderne, care se fac remarcate și ies din tipar, pavajul Gemina este o alegere pentru cei îndrăzneți, curajoși care știu că a fi diferit nu e o formă de rebeliune, ci un mod de exprimare a propriului stil.
+
+![Pavaj Gemina alb MIX 6.72 — suprafață bombată, aspect modern](https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Gemina-alb-MIX-6.72-produs-de-Petra-Pavaje-web.avif)
+
+![Pavaj Gemina MIX 6.30 alb și negru — combinație contrastantă](https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Gemina-MIX-6.30-alb-si-negru-Produs-de-Petra-Pavaje-web.avif)
+
+![Pavaj Gemina MIX 6.72 alb-brun — tonuri calde](https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Gemina-MIX-6.72-alb-brun-produs-de-Petra-Pavaje-web.avif)
+
+![Pavaj Gemina alb MIX 6.72 — vedere de ansamblu](https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Gemina-alb-MIX-6.72-Produs-de-Petra-Pavaje-web1.avif)
+
+---
 
 ### Pavajul Relief — texturat și sofisticat
 
-Pavajul Relief, cu textura rafinată, grunjoasă, oferă un plus de siguranță prin suprafața spălată care scoate în evidență micile pietricele. Combinația marmorat – gri calcar conferă un joc vizual discret între cele două nuanțe.
+Pavajul [**Relief**](https://petrapavaje.ro/pavaje-premium/relief/), cu textura rafinată, grunjoasă și care oferă un plus de siguranță prin suprafața spălată care scoate în evidență micile pietricele. E un pavaj de o eleganță deosebită, care pune în evidență arhitectura casei și a întregii curți.
+
+Pavajul Relief, în culorile deschise, poate fi completat într-o multitudine de moduri fără a-și pierde impactul. Combinația marmorat – gri calcar conferă un joc vizual discret între cele două nuanțe, iar pentru accente mai puternice, negru onix este alegerea care face diferența.
+
+![Pavaj Relief marmorat 20x10 cm — textură spălată rafinată](https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Relief-marmorat-20x10-cm-produs-de-Petra-Pavaje-web.avif)
+
+![Pavaj Relief 20x10 cm marmorat — detaliu suprafață](https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Relief-20x10-cm-marmorat-produs-de-Petra-Pavaje-web1.avif)
+
+![Pavaj Relief — combinație marmorat și gri calcar](https://petrapavaje.ro/wp-content/uploads/relief-3-web-1.avif)
+
+![Pavaj Quatro 20x20 cm negru cu Relief 20x10 alb marmorat — combinație premium](https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Quatro-20-x-20-cm-negru-Relief-20-x-10-alb-marmorat-produs-de-Petra-Pavaje-web.avif)
+
+![Pavaj Relief — amenajare rezidențială](https://petrapavaje.ro/wp-content/uploads/web-202510-3-1.avif)
+
+![Pavaj Relief gri onix 20x20 cm — accent îndrăzneț](https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Relief-gri-onix-20x20-cm-produs-de-Petra-Pavaje-web.avif)
+
+---
 
 ### Pavajul Con — diferit și creativ
 
-Pavajul Con se remarcă prin posibilitatea montajului de tip brad. În culoarea albă poate fi integrat ca o notă contrastantă în amenajările cu pavaj închis la culoare.
+Pavajul [**Con**](https://petrapavaje.ro/pavaje-standard/con/) se remarcă în special prin posibilitatea montajului de tip brad, iar în culoarea albă poate fi integrat cu ușurință ca o notă contrastantă în amenajările cu pavaj închis la culoare precum Mistic gri bazaltic, Viena negru violet sau Roca gri antic.
+
+Se pot alcătui margini din două rânduri dispuse alternativ sau, dacă se dorește o margine mai proeminentă, se pot utiliza chiar trei rânduri de pavaj. De asemenea, se pot realiza ghivece pentru flori, prin dispunere concentrică.
+
+![Pavaj Con alb — montaj tip brad](https://petrapavaje.ro/wp-content/uploads/Pavaj-Con-alb-1.avif)
+
+![Pavaj Con alb — detaliu suprafață conică](https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-CON-alb-produs-de-Petra-Pavaje-1-web.avif)
+
+![Pavaj Con alb și maro — combinație creativă](https://petrapavaje.ro/wp-content/uploads/Pavaj-Con-alb-si-Maro-1.avif)
+
+![Amenajare Petra Pavaje — curtea anului 2026](https://petrapavaje.ro/wp-content/uploads/web-202510-3.avif)
+
+---
 
 ### Pavajul Primo — practic și expresiv
 
-Pavajul Primo este integral colorat, ceea ce îl face potrivit pentru multe proiecte. Având aceeași culoare pe toate fețele, montajul este posibil chiar și în cant. Structura antichizată îi oferă un aspect rustic și o suprafață antiaderentă.
+În aceeași paletă cromatică dată de culoarea anului 2026 se regăsește și pavajul [**Primo**](https://petrapavaje.ro/pavaje-premium/primo/) gri, un produs extrem de versatil. Pe lângă utilizarea clasică pentru alei, din pavajele Primo se pot realiza focare, jardiniere, bănci, stâlpi de susținere pentru terase, dar și ghivece pentru interior.
+
+Pavajul Primo de la Petra Pavaje se deosebește de celelalte pavaje prin faptul că este integral colorat, ceea ce îl face potrivit pentru atât de multe proiecte. Având aceeași culoare pe toate fețele, face ca montajul să fie posibil chiar și în cant. Mai mult, structura antichizată îi oferă un aspect rustic și, totodată, conferă o suprafață antiaderentă.
+
+![Pavaj Primo negru — suprafață antichizată, integral colorat](https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Primo-negru-produs-de-Petra-Pavaje-web.avif)
+
+![Pavaj Primo gri — versatil și expresiv](https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Primo-gri-produs-de-Petra-Pavaje-web.avif)
+
+![Pavaj Primo gri — amenajare alei](https://petrapavaje.ro/wp-content/uploads/primo-gri-1.avif)
+
+![Pavaj Primo gri — detaliu montaj cant](https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Primo-gri-produs-de-Petra-Pavaje-web2.avif)
+
+---
 
 ### Pavajul Pastel — vesel, armonios
 
-Pavajul Pastel Winter se remarcă prin degradeurile subtile de culori, de la gri închis spre alb, și oferă senzația de profunzime și mișcare. Mixul de trei dimensiuni contribuie la un rezultat modern și echilibrat.
+Pavajul [**Pastel**](https://petrapavaje.ro/pavaje-premium/pastel/) Winter se remarcă prin degradeurile subtile de culori, de la gri închis spre alb și oferă senzația de profunzime și mișcare, fără să încarce vizual spațiul.
+
+Mixul de trei dimensiuni contribuie la un rezultat **modern** și **echilibrat**. Exact acel echilibru pe care îl cauți când vrei ceva simplu, dar cu personalitate. În plus, combinația de culori reci este potrivită pentru curțile cu aspect minimalist, discret.
+
+![Pavaj Pastel MIX 6.30 Winter — degradeuri subtile de la gri spre alb](https://petrapavaje.ro/wp-content/uploads/Pastel-MIX-6.30-Winter-web.avif)
+
+![Pavaj Pastel MIX 6.30 Winter — vedere de ansamblu](https://petrapavaje.ro/wp-content/uploads/Pastel-MIX-6.30-Winter-web1.avif)
+
+![Pavaj Pastel MIX 6.30 Winter — detaliu textură](https://petrapavaje.ro/wp-content/uploads/Pastel-MIX-6.30-Winter-web2.avif)
+
+---
 
 ### Pavajul Quatro — simetric și versatil
 
-Pavajele Quatro alb, cu dimensiunile 10×10 cm până la 50×50 cm, sunt o alegere versatilă. Având grosimi de 4-8 cm, sunt potrivite atât pentru zone pietonale, cât și pentru trafic auto ușor.
+Pavajele [**Quatro**](https://petrapavaje.ro/pavaje-standard/quatro/) alb cu dimensiunile 10×10 cm, 20×20 cm, 40×40 cm sau 50×50 cm, sunt o alegere foarte versatilă atunci când vine vorba de amenajarea curții. Având grosimi cuprinse între 4 și 8 cm, le face potrivite atât pentru zone pietonale, cât și pentru trafic auto ușor.
+
+Acestea se integrează foarte bine în amenajările minimaliste, iar prin combinațiile cu pavaje de altă culoare sau chiar altă textură, se pot obține efecte deosebite, precum delimitări care schimbă total aspectul amenajării.
+
+![Pavaj Quatro 20x20 cm gri — amenajare minimalistă](https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Quatro-20-x-20-cm-gri-produs-de-Petra-Pavaje-web.avif)
+
+![Pavaj Quatro 20x20 cm gri — combinație cu borduri](https://petrapavaje.ro/wp-content/uploads/Quatro-20-x-20-cm-gri-web.avif)
+
+---
 
 ### Pavajul Holland — liniar și ordonat
 
-Pavajul Holland alb, o alegere clasică, grație diversității de dimensiuni, de la 20×10 cm până la 60×30 cm. În combinații de culori și dimensiuni, se pot realiza modele inedite.
+Pavajul [**Holland**](https://petrapavaje.ro/pavaje-standard/holland/) alb, o alegere clasică, grație diversității de dimensiuni 20×10 cm, 21×14 cm, 30×20 cm, 60×30 cm precum și MIX 4.30, 6.30 sau chiar 8.30, în funcție de intensitatea traficului.
 
-## Cum combini pavajele pentru un efect deosebit?
+În combinații de culori și dimensiuni, se pot realiza modele inedite pentru amenajarea curții. Acestea se integrează foarte bine în amenajările minimaliste, iar prin combinațiile cu pavaje de altă culoare sau chiar altă textură, se pot obține efecte deosebite.
 
-Secretul unei amenajări reușite stă în echilibru. Poți crea un efect spectaculos folosind o bază neutră (alb, bej, gri deschis) cu accente mai închise, texturi diferite în aceeași paletă cromatică, sau combinații de dimensiuni care adaugă dinamism.
+![Pavaj Holland alb și negru 20x10 cm — contrast elegant](https://petrapavaje.ro/wp-content/uploads/Holland-alb-si-negru-20x10-cm-Produs-de-Petra-Pavaje-web.avif)
 
-Un pavaj deschis la culoare reflectă lumina și face curtea să pară mai mare, mai aerisită și mai primitoare.
+![Pavaj Holland alb — clasic și versatil](https://petrapavaje.ro/wp-content/uploads/Holland-alb-produs-de-Petra-Pavaje-web.avif)
+
+---
+
+## Cum combini pavajele de la Petra Pavaje în culoarea anului 2026 pentru un efect deosebit?
+
+Secretul unei amenajări reușite stă în echilibru. Culorile deschise, precum culoarea anului – Cloud Dancer, pot fi combinate cu accente contrastante pentru a evidenția anumite zone: margini, trepte, delimitări sau spații de relaxare.
+
+Poți crea un efect spectaculos folosind:
+
+- o bază neutră (alb, bej, gri deschis) și accente mai închise
+- texturi diferite, chiar în aceeași paletă cromatică
+- combinații de dimensiuni care adaugă dinamism spațiului precum modelele combi/mixurile de pavaje
+
+Un pavaj deschis la culoare reflectă lumina și face curtea să pară mai mare, mai aerisită și mai primitoare. Profită de tendințele actuale pentru a-ți amenaja curtea în culoarea anului – Cloud Dancer.
+
+![Pavaj Quatro 20x20 cm alb și negru — contrast și eleganță modernă](https://petrapavaje.ro/wp-content/uploads/Quatro-20x20-cm-alb-si-negru-Produs-de-Petra-Pavaje-web1.avif)
+
+---
 
 ## Sunt pavajele în nuanțe deschise mai greu de întreținut?
 
-Calitatea pavajelor noastre este atent testată în laboratorul propriu, astfel că performanța și rezistența rămân aceleași indiferent de culoare. Cu câteva măsuri simple, întreținerea devine ușoară: șterge rapid petele, curăță frunzele periodic și evită contactul prelungit cu elemente metalice.
+Calitatea pavajelor noastre este atent testată în laboratorul propriu, astfel că, indiferent de culoarea aleasă, performanța și rezistența rămân aceleași.
 
-## Consultanță direct de la producător
+Este adevărat că nuanțele închise maschează mai ușor murdăria, în timp ce pavajele deschise necesită puțin mai multă atenție. Cu câteva măsuri simple, întreținerea devine mai ușoară:
 
-Echipa noastră te poate ajuta în procesul de amenajare prin consultanță personalizată. Te invităm să vizitezi grădinile expoziționale de la fabricile Petra Pavaje din Alba, Prahova, Arad și Neamț.`,
+- **Cafea sau băuturi colorate** — Șterge rapid cu o lavetă, apoi folosește apă și o perie moale pentru a curăța în profunzime
+- **Cretă colorată** — Se îndepărtează simplu cu apă și o perie moale
+- **Frunze și vegetație** — Curăță-le periodic pentru a evita petele
+- **Elemente metalice** — Evită contactul prelungit pentru a preveni petele de rugină
+
+Curățarea cu regularitate sau imediat ce apare pata sunt pașii esențiali pentru a te bucura de un pavaj frumos pe termen lung.
+
+## Consultanță direct de la producătorul Petra Pavaje
+
+Ai întrebări sau ai nevoie de ajutor în alegerea pavajului potrivit? Echipa noastră te poate ajuta în procesul de amenajare prin consultanță personalizată.
+
+Te invităm, de asemenea, să vizitezi grădinile noastre expoziționale de la fabricile Petra Pavaje, unde poți vedea produsele montate, te poți inspira și poți primi consultanță gratuită.
+
+Cele 4 fabrici se află în județul [**Alba**](https://petrapavaje.ro/contact/#alba), [**Prahova**](https://petrapavaje.ro/contact/#prahova), [**Arad**](https://petrapavaje.ro/contact/#arad) și [**Neamț**](https://petrapavaje.ro/contact/#neamt).`,
     date: '2026-01-22',
     author: 'Petra Pavaje',
     category: 'Trenduri',
