@@ -777,11 +777,11 @@ Află mai multe despre angajamentul nostru pentru sustenabilitate și despre pro
 
 ## Despre proiect
 
-În acest articol, vă prezentăm o curte elegantă de **aproximativ 400 mp**, realizată cu pavaj premium [Mistic gri bazaltic](https://petrapavaje.ro/pavaje-premium/mistic/) de la Petra Pavaje, unde atenția la detalii și armonia cromatică au jucat un rol esențial.
+În acest articol, vă prezentăm o curte elegantă de **aproximativ 400 mp**, realizată cu pavaj premium **[Mistic gri bazaltic](https://petrapavaje.ro/pavaje-premium/mistic/)** de la Petra Pavaje, unde atenția la detalii și armonia cromatică au jucat un rol esențial.
 
 Proiectul, **conceput în totalitate de proprietari**, a fost realizat cu o atenție meticuloasă pentru detalii și o combinare inspirată a elementelor. Rezultatul final reflectă un simț estetic desăvârșit și o grijă deosebită pentru armonia vizuală și cromatică a spațiului.
 
-Pavajul Mistic gri bazaltic, alături de [celelalte produse din gamă](https://petrapavaje.ro/pavaje-premium/mistic/), se bucură de popularitate în tendințele actuale. Acest proiect este o dovadă clară că implicarea atentă în planificarea amenajărilor exterioare poate aduce un plus de stil și eleganță.
+Pavajul Mistic gri bazaltic, alături de **[celelalte produse din gamă](https://petrapavaje.ro/pavaje-premium/mistic/)**, se bucură de popularitate în tendințele actuale. Acest proiect este o dovadă clară că implicarea atentă în planificarea amenajărilor exterioare poate aduce un plus de stil și eleganță.
 
 **400 mp de eleganță:** Curtea a fost concepută pentru a optimiza spațiul disponibil și a crea un impact vizual estetic deosebit — fără compromisuri funcționale.
 
@@ -818,7 +818,7 @@ Combinația Mistic gri bazaltic + Quatro alb + bordură gri bazaltic — o armon
 
 ## Mistic gri bazaltic sau Mistic gri grafit?
 
-Alegerea culorii depinde de stilul curții și de efectul vizual pe care doriți să-l obțineți. Gama [Mistic](https://petrapavaje.ro/pavaje-premium/mistic/) oferă două variante distincte:
+Alegerea culorii depinde de stilul curții și de efectul vizual pe care doriți să-l obțineți. Gama **[Mistic](https://petrapavaje.ro/pavaje-premium/mistic/)** oferă două variante distincte:
 
 **Mistic Gri Bazaltic** — Mai multe nuanțe de negru, contrast puternic pentru design, se asortează cu fațade deschise, accente metalice și grădini minimaliste, piatră Thasos sau piatră decorativă colorată.
 
@@ -832,7 +832,7 @@ Două abordări diferite, fiecare cu avantajele ei:
 
 **Plăci de mari dimensiuni** — Aspect modern și uniform, mai practice pentru suprafețe mari și drepte, impact vizual minimalist.
 
-Indiferent de preferințele proiectului dumneavoastră, [Petra Pavaje](https://petrapavaje.ro/pavaje-premium/) vă pune la dispoziție o gamă diversificată de modele și dimensiuni, atent selecționate pentru a satisface cele mai exigente gusturi.
+Indiferent de preferințele proiectului dumneavoastră, **[Petra Pavaje](https://petrapavaje.ro/pavaje-premium/)** vă pune la dispoziție o gamă diversificată de modele și dimensiuni, atent selecționate pentru a satisface cele mai exigente gusturi.
 
 ---
 
@@ -854,9 +854,9 @@ Petra Pavaje — stil și calitate pentru fiecare curte
 
 Ne dedicăm constant extinderii portofoliului nostru, urmărind îndeaproape tendințele actuale din designul exterior și ținem pasul cu tehnologiile inovatoare din domeniu. Astfel, ne asigurăm că oferim soluții de pavare care **nu doar îndeplinesc, ci și depășesc așteptările** clienților noștri.
 
-De la [Mistic](https://petrapavaje.ro/pavaje-premium/mistic/) la [Roca](https://petrapavaje.ro/pavaje-premium/roca/), de la [Sahara](https://petrapavaje.ro/pavaje-premium/sahara/) la [Mediterana](https://petrapavaje.ro/pavaje-premium/mediterana/) — fiecare gamă transformă fiecare spațiu exterior într-o mărturie a stilului și calității.
+De la **[Mistic](https://petrapavaje.ro/pavaje-premium/mistic/)** la **[Roca](https://petrapavaje.ro/pavaje-premium/roca/)**, de la **[Sahara](https://petrapavaje.ro/pavaje-premium/sahara/)** la **[Mediterana](https://petrapavaje.ro/pavaje-premium/mediterana/)** — fiecare gamă transformă fiecare spațiu exterior într-o mărturie a stilului și calității.
 
-Descoperă gama completă de pavaje premium Petra Pavaje și inspiră-te pentru propria amenajare. [Vezi pavajele premium →](https://petrapavaje.ro/pavaje-premium/)`,
+Descoperă gama completă de pavaje premium Petra Pavaje și inspiră-te pentru propria amenajare. **[Vezi pavajele premium →](https://petrapavaje.ro/pavaje-premium/)**`,
     date: '2025-02-28',
     author: 'Petra Pavaje',
     category: 'Inspirație',
