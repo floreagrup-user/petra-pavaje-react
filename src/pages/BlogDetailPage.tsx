@@ -840,7 +840,7 @@ Indiferent de preferințele proiectului dumneavoastră, [**Petra Pavaje**](https
 
 Pentru o amenajare exterioară care satisface atât cerințele estetice, cât și cele practice, această combinație de pavaje este soluția ideală. Pavajul Mistic, prin versatilitatea sa, se integrează armonios într-o varietate de stiluri arhitecturale.
 
-![Pavaj Mistic gri bazaltic — curte elegantă cu vegetație](https://petrapavaje.ro/wp-content/uploads/Mistic-gri-bazaltic-4-scaled.avif)
+![Pavaj Mistic gri bazaltic — curte elegantă cu vegetație](https://petrapavaje.ro/wp-content/uploads/Mistic-gri-bazaltic-6-scaled.avif)
 
 ![Pavaj Mistic gri bazaltic — garaj și alee](https://petrapavaje.ro/wp-content/uploads/Mistic-gri-bazaltic-5-scaled.avif)
 
@@ -850,17 +850,13 @@ Mistic gri bazaltic în diverse zone ale curții — de la zona verde până la 
 
 Vedere de ansamblu — o curte de 400 mp unde eleganța și funcționalitatea se completează perfect.
 
-Petra Pavaje — stil și calitate pentru fiecare curte
+Ne dedicăm constant extinderii portofoliului nostru, urmărind îndeaproape tendințele actuale din designul exterior și ținem pasul cu tehnologiile inovatoare din domeniu. Astfel, ne asigurăm că oferim soluții de pavare care nu doar îndeplinesc, ci și depășesc așteptările clienților noștri.
 
-Ne dedicăm constant extinderii portofoliului nostru, urmărind îndeaproape tendințele actuale din designul exterior și ținem pasul cu tehnologiile inovatoare din domeniu. Astfel, ne asigurăm că oferim soluții de pavare care **nu doar îndeplinesc, ci și depășesc așteptările** clienților noștri.
-
-De la [**Mistic**](https://petrapavaje.ro/pavaje-premium/mistic/) la [**Roca**](https://petrapavaje.ro/pavaje-premium/roca/), de la [**Sahara**](https://petrapavaje.ro/pavaje-premium/sahara/) la [**Mediterana**](https://petrapavaje.ro/pavaje-premium/mediterana/) — fiecare gamă transformă fiecare spațiu exterior într-o mărturie a stilului și calității.
-
-Descoperă gama completă de pavaje premium Petra Pavaje și inspiră-te pentru propria amenajare. [**Vezi pavajele premium →**](https://petrapavaje.ro/pavaje-premium/)`,
+De la Mistic la Roca, de la Sahara la Mediterana — fiecare gamă transformă fiecare spațiu exterior într-o mărturie a stilului și calității Petra Pavaje.`,
     date: '2025-02-28',
     author: 'Petra Pavaje',
     category: 'Inspirație',
-    image: 'https://petrapavaje.ro/wp-content/uploads/Mistic-gri-bazaltic-6-scaled.avif',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Mistic-gri-bazaltic-4-scaled.avif',
     readTime: 6,
   },
   {
