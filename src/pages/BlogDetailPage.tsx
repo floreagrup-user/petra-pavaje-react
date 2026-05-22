@@ -1930,6 +1930,10 @@ function renderBlogContent(
       continue
     }
 
+    if (imageBuffer.length > 0 && line.trim() === '') {
+      continue
+    }
+
     flushImages()
 
     if (line.startsWith('## ')) {
