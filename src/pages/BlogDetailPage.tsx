@@ -489,47 +489,90 @@ Echipa noastră te poate ajuta în procesul de amenajare prin consultanță pers
     excerpt: 'Transformă bucățile rămase de pavaj în decorațiuni ingenioase care aduc spiritul sărbătorilor în curtea și în casa ta.',
     content: `Cine spune că elementele de construcții nu pot deveni piese de artă? La Petra Pavaje, transformăm bucățile rămase de pavaj în decorațiuni ingenioase care aduc spiritul sărbătorilor în curtea și în casa ta.
 
+![Idei creative pentru utilizarea pavajului ca decor de sărbători — Petra Pavaje](https://petrapavaje.ro/wp-content/uploads/Petra-Pavaje-scaled.avif)
+
 ## Pavajul — mai mult decât funcționalitate
 
-În echipa Petra Pavaje, știm că lumea construcțiilor este percepută adesea ca fiind una tehnică. Dar cine spune că nu putem vedea elementele de construcții ca pe niște piese de Lego, gata să prindă viață într-o manieră creativă?
+În echipa **Petra Pavaje**, știm că lumea construcțiilor este percepută adesea ca fiind una tehnică, bazată strict pe funcționalitate. Desigur, precizia și durabilitatea sunt esențiale — sunt ADN-ul oricărui [**pavaj**](https://petrapavaje.ro/pavaje-premium/) de calitate.
 
-Iată 3 idei pentru decor de sărbători realizat cu pavaje.
+Dar cine spune că nu putem vedea elementele de construcții ca pe niște piese de Lego, gata să prindă viață într-o manieră creativă? Datoria noastră nu este doar să oferim cele mai durabile și estetice pavaje, ci și să inspirăm clienții să le folosească la potențialul lor maxim.
+
+Iar asta include, uneori, și proiecte ingenioase care transformă bucățile rămase în **piese de artă pentru exterior, dar și pentru interior**. Iată 3 idei pentru decor de sărbători realizat cu pavaje.
+
+**Rețineți:** Toate cele trei proiecte au fost realizate integral cu produsele Petra Pavaje, demonstrând că **nu există limite** când vine vorba de creativitate — nici măcar în curtea dumneavoastră.
+
+---
 
 ## 1. Sanie decorativă cu cadouri
 
-Am creat o **sanie decorativă la scală reală**, perfectă pentru perioada sărbătorilor de iarnă.
+Pentru un decor de sărbători realizat cu pavaje, cu adevărat inedit, am creat o **sanie decorativă la scală reală**, perfectă pentru perioada sărbătorilor de iarnă.
 
-**Materiale utilizate:** Baza saniei — pavaj Antic 10×10×6 cm și pavaje din MIX-ul 6.72. Structura — Grand Urban 100×50×10 cm și pavaj Con pentru talpa întoarsă. Cadourile — elemente de gard Robusto 20×20×16 și pavaje Gemina 20×10 cm, ambalate vizual ca pachete cu funde din chingile paleților. Zăpada — piatră Thasos.
+### Materiale utilizate pentru sanie
 
-Textura rustică a pavajului Antic și greutatea dalelor conferă saniei o stabilitate reală, iar nuanțele calde ale pietrei Thasos imită perfect zăpada proaspătă.
+- **Baza saniei** — [pavaj Antic](https://petrapavaje.ro/pavaje-premium/antic/) 10×10×6 cm și pavaje din MIX-ul 6.72, cu textură rustică ce asigură stabilitate și aspect vizual plăcut
+- **Structura** — [Grand Urban 100×50×10 cm](https://petrapavaje.ro/pavaje-premium/grand-urban/) și [pavaj Con](https://petrapavaje.ro/pavaje-standard/con/) pentru talpa întoarsă a saniei
+- **Cadourile** — [elemente de gard](https://petrapavaje.ro/garduri/) [Robusto 20×20×16](https://petrapavaje.ro/garduri-2/robusto/) și [pavaje Gemina 20×10 cm](https://petrapavaje.ro/pavaje-premium/gemina/), ambalate vizual ca pachete cu funde din chingile paleților
+- **Zăpada** — piatră Thasos, un element des utilizat în amenajările exterioare
+
+![Sanie decorativă realizată din pavaje Petra Pavaje — vedere frontală cu cadouri](https://petrapavaje.ro/wp-content/uploads/Sanie-din-pavaje-Petra-Pavaje.avif)
+
+![Sanie decorativă din pavaje Petra Pavaje — vedere laterală detaliată](https://petrapavaje.ro/wp-content/uploads/Sanie-din-pavaje_Petra-Pavaje.avif)
+
+Textura rustică a pavajului Antic și greutatea dalelor conferă saniei o stabilitate reală, în timp ce nuanțele calde ale pietrei Thasos imită perfect zăpada proaspătă.
+
+---
 
 ## 2. Brad creativ — simbol al tradiției
 
-Am realizat un **brad decorativ** utilizând pavajul Primo antichizat, în culorile roșu și bej. Pentru a adăuga o notă de originalitate, am inclus și o nuanță de albastru, marcând astfel cele trei culori ale drapelului național — un omagiu discret adus tradiției și identității românești.
+Cine spune că un brad trebuie să fie doar verde și din crengi? Am realizat un **brad decorativ** utilizând [**pavajul Primo antichizat**](https://petrapavaje.ro/pavaje-premium/primo/), în culorile roșu și bej.
 
-**Materiale utilizate:** Pavaj Primo antichizat — culoare roșu, bej și nuanță specială albastru.
+Pentru a adăuga o notă de originalitate și simbolism, am inclus și o nuanță de albastru (deși nu face parte din oferta standard), marcând astfel **cele trei culori ale drapelului național** — un omagiu discret adus tradiției și identității românești.
+
+![Brad decorativ realizat din pavaje Primo antichizat Petra Pavaje — culorile roșu, bej și albastru](https://petrapavaje.ro/wp-content/uploads/Brad-realizat-din-pavaje-Petra-Pavaje.avif)
+
+Acest proiect demonstrează cum diverse tipuri de pavaj și nuanțe pot fi combinate pentru a crea forme și concepte complet noi, aducând o pată de culoare și originalitate în amenajarea exterioară.
+
+### Materiale utilizate pentru brad
+
+- [**Pavaj Primo antichizat**](https://petrapavaje.ro/pavaje-premium/primo/) — culoare roșu
+- [**Pavaj Primo antichizat**](https://petrapavaje.ro/pavaje-premium/primo/) — culoare bej
+- Pavaj Primo — nuanță specială albastru (comandă specială)
+
+---
 
 ## 3. Suport pentru brad
 
-Pavajele pot fi utilizate cu succes nu doar la exterior, ci și la interior. Utilizând câteva dale de pavaj de dimensiuni și greutăți potrivite, poți construi un **suport stabil, masiv și cu un design neconvențional**.
+Așa cum spuneam la început, pavajele pot fi utilizate cu succes nu doar la exterior, ci și la **interior** în diferite aranjamente. Unul dintre acestea este suportul ingenios pentru bradul de Crăciun.
 
-**Materiale utilizate:** Pavaj Primo 20×10×4 cm, culoare negru.
+Aspectul brut, industrial, al dalelor de pavaj este extrem de potrivit și chiar *catchy* pentru acest proiect. Utilizând câteva dale de pavaj de dimensiuni și greutăți potrivite, puteți construi un **suport stabil, masiv și cu un design neconvențional**, care adaugă o notă de originalitate decorului interior.
 
-**Sfat practic:** Greutatea dalelor de pavaj oferă o stabilitate superioară oricărui suport convențional din plastic sau metal. Bradul rămâne ferm fixat, fără riscul de răsturnare — esențial într-o casă cu copii sau animale.
+![Suport pentru bradul de Crăciun realizat din pavaje Primo Petra Pavaje — design industrial modern](https://petrapavaje.ro/wp-content/uploads/Suport-brad-Petra-Pavaje-scaled.avif)
+
+### Materiale utilizate pentru suport
+
+- [**Pavaj Primo 20×10×4 cm**](https://petrapavaje.ro/pavaje-premium/primo/) — culoare negru
+
+**Sfat practic:** Greutatea dalelor de pavaj oferă o stabilitate superioară oricărui suport convențional din plastic sau metal. Bradul rămâne ferm fixat, fără riscul de răsturnare — esențial într-o casă cu copii sau animale de companie.
+
+---
 
 ## De ce să folosești pavajul ca material decorativ?
 
-**Reciclare creativă** — Bucățile rămase de pavaj nu mai sunt deșeuri, ci materie primă pentru proiecte originale.
+**Reciclare creativă** — Bucățile rămase de pavaj nu mai sunt deșeuri — devin materie primă pentru proiecte originale.
 
-**Durabilitate maximă** — Spre deosebire de decorațiunile din plastic, pavajul rezistă ani întregi la intemperii.
+**Durabilitate maximă** — Spre deosebire de decorațiunile din plastic, pavajul rezistă ani întregi la intemperii și uzură.
 
-**Unicitate garantată** — Fiecare creație este unică, texturile și culorile oferind infinite posibilități.
+**Unicitate garantată** — Fiecare creație este unică — texturile și culorile pavajelor oferă infinite posibilități combinatorii.
 
-**Interior și exterior** — Pavajul funcționează perfect atât în curte, cât și în casă.
+**Interior și exterior** — Pavajul funcționează perfect atât în curte, cât și în casă — aspectul industrial este în tendințe.
 
-## Concluzie
+## Inspirație și durabilitate cu Petra Pavaje
 
-La Petra Pavaje, credem că produsele noastre sunt mai mult decât simple pavaje — sunt instrumente de creativitate. Fie că este vorba de o sanie în curte, un brad din pavaj sau un suport neconvențional pentru brad, **limita este doar imaginația**.`,
+La **Petra Pavaje**, credem că produsele noastre sunt mai mult decât simple pavaje — sunt și **instrumente de creativitate**. Vă invităm să vedeți bucățile de pavaje care rămân ca pe o oportunitate de a adăuga un element original și personalizat spațiului dumneavoastră.
+
+Fie că este vorba de o sanie în curte, un brad din pavaj sau un suport neconvențional pentru bradul de Crăciun, **limita este doar imaginația**.
+
+Descoperă gama completă de [**pavaje premium**](https://petrapavaje.ro/pavaje-premium/), borduri decorative și garduri Petra Pavaje — materiale care susțin nu doar traficul pietonal, ci și cele mai creative proiecte de amenajare.`,
     date: '2025-12-15',
     author: 'Petra Pavaje',
     category: 'Inspirație',
