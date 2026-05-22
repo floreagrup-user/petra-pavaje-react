@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Calendar, Clock, User } from 'lucide-react'
+import { Calendar, Clock, User, X } from 'lucide-react'
 import type { BlogPost } from '@/data/types'
 
 const blogPosts: BlogPost[] = [
@@ -1806,6 +1806,155 @@ Pentru detalii complete, consultați regulamentul oficial disponibil pe site.`,
   },
 ]
 
+function BlogLightbox({ src, alt, onClose }: { src: string; alt: string; onClose: () => void }) {
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose()
+    }
+    document.addEventListener('keydown', handleKey)
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.removeEventListener('keydown', handleKey)
+      document.body.style.overflow = ''
+    }
+  }, [onClose])
+
+  return (
+    <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 cursor-zoom-out" onClick={onClose}>
+      <button onClick={onClose} className="absolute top-4 right-4 z-10 text-white/80 hover:text-white transition-colors" aria-label="Close">
+        <X className="w-8 h-8" />
+      </button>
+      <img
+        src={src}
+        alt={alt}
+        className="max-w-full max-h-[90vh] object-contain rounded-lg"
+        onClick={(e) => e.stopPropagation()}
+      />
+    </div>
+  )
+}
+
+function getImageLayout(heading: string): string {
+  const h = heading.toLowerCase()
+  if (h.includes('alpin')) return 'row-3'
+  if (h.includes('gemina')) return 'cols-2'
+  if (h.includes('relief')) return 'cols-2-rows-3'
+  if (h.includes('con')) return 'con-layout'
+  if (h.includes('primo')) return 'cols-2'
+  if (h.includes('pastel')) return 'row-3'
+  if (h.includes('quatro')) return 'row'
+  if (h.includes('holland')) return 'row'
+  return 'default'
+}
+
+function ImageGrid({
+  images,
+  layout,
+  onImageClick,
+}: {
+  images: { url: string; alt: string }[]
+  layout: string
+  onImageClick: (src: string, alt: string) => void
+}) {
+  if (layout === 'con-layout' && images.length >= 4) {
+    return (
+      <div className="my-6 space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {images.slice(0, 3).map((img, i) => (
+            <img
+              key={i}
+              src={img.url}
+              alt={img.alt}
+              className="w-full rounded-xl cursor-pointer hover:opacity-90 transition-opacity object-cover aspect-[4/3]"
+              loading="lazy"
+              onClick={() => onImageClick(img.url, img.alt)}
+            />
+          ))}
+        </div>
+        <img
+          src={images[3].url}
+          alt={images[3].alt}
+          className="w-full rounded-xl cursor-pointer hover:opacity-90 transition-opacity"
+          loading="lazy"
+          onClick={() => onImageClick(images[3].url, images[3].alt)}
+        />
+      </div>
+    )
+  }
+
+  const isWide = layout === 'row-3' || (layout === 'row' && images.length >= 3)
+
+  return (
+    <div className="my-6">
+      <div className={`grid grid-cols-1 ${isWide ? 'sm:grid-cols-3' : 'sm:grid-cols-2'} gap-4`}>
+        {images.map((img, i) => (
+          <img
+            key={i}
+            src={img.url}
+            alt={img.alt}
+            className="w-full rounded-xl cursor-pointer hover:opacity-90 transition-opacity object-cover aspect-[4/3]"
+            loading="lazy"
+            onClick={() => onImageClick(img.url, img.alt)}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+function renderBlogContent(
+  content: string,
+  onImageClick: (src: string, alt: string) => void
+): React.ReactNode[] {
+  const lines = content.split('\n')
+  const nodes: React.ReactNode[] = []
+  let imageBuffer: { url: string; alt: string }[] = []
+  let currentHeading = ''
+  let keyCounter = 0
+
+  const getKey = () => `n-${keyCounter++}`
+
+  const flushImages = () => {
+    if (imageBuffer.length === 0) return
+    const layout = getImageLayout(currentHeading)
+    nodes.push(
+      <ImageGrid key={getKey()} images={imageBuffer} layout={layout} onImageClick={onImageClick} />
+    )
+    imageBuffer = []
+  }
+
+  for (const line of lines) {
+    const imgMatch = line.match(/^!\[(.*?)\]\((.*?)\)$/)
+    if (imgMatch) {
+      imageBuffer.push({ url: imgMatch[2], alt: imgMatch[1] })
+      continue
+    }
+
+    flushImages()
+
+    if (line.startsWith('## ')) {
+      currentHeading = line.replace('## ', '')
+      nodes.push(<h2 key={getKey()} className="text-2xl font-bold text-charcoal-900 mt-8 mb-4">{renderInline(currentHeading)}</h2>)
+    } else if (line.startsWith('### ')) {
+      currentHeading = line.replace('### ', '')
+      nodes.push(<h3 key={getKey()} className="text-xl font-semibold text-charcoal-900 mt-6 mb-3">{renderInline(currentHeading)}</h3>)
+    } else if (line.startsWith('- ')) {
+      nodes.push(<li key={getKey()} className="text-charcoal-700 ml-4 mb-2 leading-relaxed">{renderInline(line.replace('- ', ''))}</li>)
+    } else if (line.match(/^\d+\. /)) {
+      nodes.push(<li key={getKey()} className="text-charcoal-700 ml-4 mb-2 leading-relaxed">{renderInline(line.replace(/^\d+\. /, ''))}</li>)
+    } else if (line.startsWith('> ')) {
+      nodes.push(<blockquote key={getKey()} className="border-l-4 border-brand-600 pl-4 my-6 italic text-charcoal-700">{renderInline(line.replace('> ', ''))}</blockquote>)
+    } else if (line.startsWith('---')) {
+      nodes.push(<hr key={getKey()} className="my-8 border-charcoal-200" />)
+    } else if (line.trim()) {
+      nodes.push(<p key={getKey()} className="text-charcoal-700 mb-4 leading-relaxed">{renderInline(line)}</p>)
+    }
+  }
+
+  flushImages()
+  return nodes
+}
+
 function renderInline(text: string): React.ReactNode {
   // Order matters: [**bold**](url) → **bold** → [text](url) → *italic*
   const regex = /\[\*\*(.+?)\*\*\]\((.+?)\)|\*\*(.+?)\*\*|\[(.+?)\]\((.+?)\)|\*([^*\n]+?)\*/g
@@ -1853,6 +2002,7 @@ function renderInline(text: string): React.ReactNode {
 export function BlogDetailPage() {
   const { slug } = useParams<{ slug: string }>()
   const post = blogPosts.find(p => p.slug === slug)
+  const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null)
 
   if (!post) {
     return (
@@ -1915,44 +2065,16 @@ export function BlogDetailPage() {
             </div>
 
             <div className="prose prose-lg max-w-none">
-              {post.content.split('\n').map((paragraph, i) => {
-                const imgMatch = paragraph.match(/^!\[(.*?)\]\((.*?)\)$/)
-                if (imgMatch) {
-                  return (
-                    <figure key={i} className="my-6">
-                      <img
-                        src={imgMatch[2]}
-                        alt={imgMatch[1]}
-                        className="w-full rounded-xl"
-                        loading="lazy"
-                      />
-                    </figure>
-                  )
-                }
-                if (paragraph.startsWith('## ')) {
-                  return <h2 key={i} className="text-2xl font-bold text-charcoal-900 mt-8 mb-4">{renderInline(paragraph.replace('## ', ''))}</h2>
-                }
-                if (paragraph.startsWith('### ')) {
-                  return <h3 key={i} className="text-xl font-semibold text-charcoal-900 mt-6 mb-3">{renderInline(paragraph.replace('### ', ''))}</h3>
-                }
-                if (paragraph.startsWith('- ')) {
-                  return <li key={i} className="text-charcoal-700 ml-4 mb-2 leading-relaxed">{renderInline(paragraph.replace('- ', ''))}</li>
-                }
-                if (paragraph.match(/^\d+\. /)) {
-                  return <li key={i} className="text-charcoal-700 ml-4 mb-2 leading-relaxed">{renderInline(paragraph.replace(/^\d+\. /, ''))}</li>
-                }
-                if (paragraph.startsWith('> ')) {
-                  return <blockquote key={i} className="border-l-4 border-brand-600 pl-4 my-6 italic text-charcoal-700">{renderInline(paragraph.replace('> ', ''))}</blockquote>
-                }
-                if (paragraph.startsWith('---')) {
-                  return <hr key={i} className="my-8 border-charcoal-200" />
-                }
-                if (paragraph.trim()) {
-                  return <p key={i} className="text-charcoal-700 mb-4 leading-relaxed">{renderInline(paragraph)}</p>
-                }
-                return null
-              })}
+              {renderBlogContent(post.content, (src, alt) => setLightbox({ src, alt }))}
             </div>
+
+            {lightbox && (
+              <BlogLightbox
+                src={lightbox.src}
+                alt={lightbox.alt}
+                onClose={() => setLightbox(null)}
+              />
+            )}
 
             <div className="mt-8 pt-8 border-t border-charcoal-200">
               <Link to="/contact" className="btn-primary group">
