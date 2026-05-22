@@ -1432,7 +1432,8 @@ Pentru detalii complete, consultați regulamentul oficial disponibil pe site.`,
 ]
 
 function renderInline(text: string): React.ReactNode {
-  const regex = /\[\*\*(.+?)\*\*\]\((.+?)\)|\*\*(.+?)\*\*|\[(.+?)\]\((.+?)\)/g
+  // Order matters: [**bold**](url) → **bold** → [text](url) → *italic*
+  const regex = /\[\*\*(.+?)\*\*\]\((.+?)\)|\*\*(.+?)\*\*|\[(.+?)\]\((.+?)\)|\*([^*\n]+?)\*/g
   const parts: React.ReactNode[] = []
   let lastIndex = 0
   let match: RegExpExecArray | null
@@ -1460,6 +1461,9 @@ function renderInline(text: string): React.ReactNode {
           {match[4]}
         </a>
       )
+    } else if (match[6]) {
+      // *italic*
+      parts.push(<em key={match.index} className="italic text-charcoal-600">{match[6]}</em>)
     }
     lastIndex = match.index + match[0].length
   }
