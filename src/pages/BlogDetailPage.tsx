@@ -771,43 +771,92 @@ Află mai multe despre angajamentul nostru pentru sustenabilitate și despre pro
   {
     id: '18',
     title: 'Pavajul Mistic gri bazaltic pentru o curte elegantă',
-    slug: 'pavajul-mistic-curte-eleganta',
+    slug: 'pavajul-mistic-pentru-o-curte-elegenata',
     excerpt: 'O curte bine amenajată este cartea de vizită a oricărei locuințe. Un design echilibrat și materiale de calitate transformă spațiul exterior într-o amenajare cu stil.',
     content: `O curte bine amenajată este cartea de vizită a oricărei locuințe. Un design echilibrat, materiale de calitate și o cromatică bine aleasă transformă spațiul exterior într-o amenajare cu stil, fără a-și pierde funcționalitatea.
 
 ## Despre proiect
 
-Vă prezentăm o curte elegantă de **aproximativ 400 mp**, realizată cu pavaj premium Mistic gri bazaltic de la Petra Pavaje. Proiectul, **conceput în totalitate de proprietari**, reflectă un simț estetic desăvârșit și o grijă deosebită pentru armonia vizuală și cromatică.
+În acest articol, vă prezentăm o curte elegantă de **aproximativ 400 mp**, realizată cu pavaj premium [Mistic gri bazaltic](https://petrapavaje.ro/pavaje-premium/mistic/) de la Petra Pavaje, unde atenția la detalii și armonia cromatică au jucat un rol esențial.
+
+Proiectul, **conceput în totalitate de proprietari**, a fost realizat cu o atenție meticuloasă pentru detalii și o combinare inspirată a elementelor. Rezultatul final reflectă un simț estetic desăvârșit și o grijă deosebită pentru armonia vizuală și cromatică a spațiului.
+
+Pavajul Mistic gri bazaltic, alături de [celelalte produse din gamă](https://petrapavaje.ro/pavaje-premium/mistic/), se bucură de popularitate în tendințele actuale. Acest proiect este o dovadă clară că implicarea atentă în planificarea amenajărilor exterioare poate aduce un plus de stil și eleganță.
+
+**400 mp de eleganță:** Curtea a fost concepută pentru a optimiza spațiul disponibil și a crea un impact vizual estetic deosebit — fără compromisuri funcționale.
+
+---
 
 ## Materiale utilizate în proiect
 
-**Pavaj Mistic gri bazaltic, MIX 6.30** — o alegere sofisticată, cu nuanțe moderne de gri, ideal pentru suprafețele principale ale curții.
+Pentru a obține un efect estetic echilibrat și sofisticat, s-au folosit patru tipuri de pavaje și o bordură:
 
-**Bordură gri bazaltic, 40×15×20 cm** — delimitează spațiul și creează un contrast vizual puternic.
+- **[Pavaj Mistic gri bazaltic, MIX 6.30](https://petrapavaje.ro/pavaje-premium/mistic/)** — o alegere sofisticată, cu nuanțe moderne de gri, care oferă un aspect uniform și elegant. Ideal pentru suprafețele principale ale curții.
+- **[Bordură gri bazaltic, 40×15×20 cm](https://petrapavaje.ro/borduri-2/)** — delimitează spațiul și creează un contrast vizual puternic, evidențiind structura curții.
+- **[Pavaj Quatro, alb, 20×20 cm](https://petrapavaje.ro/pavaje-standard/quatro/)** — un detaliu subtil, dar de impact, care adaugă un plus de eleganță și luminează spațiul.
+- **[Pavaj Holland, gri, 20×10 cm](https://petrapavaje.ro/pavaje-standard/holland/)** — creează o linie clară între gazon și zona cu piatră decorativă.
 
-**Pavaj Quatro, alb, 20×20 cm** — un detaliu subtil, dar de impact, care adaugă eleganță și luminează spațiul.
+![Bordură gri bazaltic cu pavaj Quatro alb — detaliu delimitare](https://petrapavaje.ro/wp-content/uploads/Mistic-gri-bazaltic-1-scaled.avif)
 
-**Pavaj Holland, gri, 20×10 cm** — creează o linie clară între gazon și zona cu piatră decorativă.
+![Mistic gri bazaltic cu Quatro alb și bordură — vedere de ansamblu](https://petrapavaje.ro/wp-content/uploads/Mistic-gri-bazaltic-2-scaled.avif)
 
-## De ce să alegi această combinație?
+Bordura gri bazaltic delimitează clar zonele, iar Quatro alb creează tranziții luminoase între suprafețe.
 
-**Contrast vizual plăcut** — Culoarea pavajului și a bordurii, în combinație cu pavajul alb, creează un echilibru cromatic elegant.
+![Bordură gri bazaltic, Mistic gri bazaltic și Quatro alb — vedere panoramică](https://petrapavaje.ro/wp-content/uploads/Mistic-gri-bazaltic-3-scaled.avif)
 
-**Rezistență și durabilitate** — Materialele sunt rezistente la ciclurile de îngheț-dezgheț și intemperii.
+Combinația Mistic gri bazaltic + Quatro alb + bordură gri bazaltic — o armonie cromatică desăvârșită.
 
-**Aspect modern și ordonat** — Culorile neutre permit integrarea armonioasă în orice stil arhitectural.
+## De ce să alegi această combinație de pavaje?
+
+🎨 **Contrast vizual plăcut** — Culoarea pavajului și a bordurii, în combinație cu pavajul alb, creează un echilibru cromatic elegant.
+
+🛡️ **Rezistență și durabilitate** — Materialele utilizate sunt potrivite pentru trafic greu, rezistente la ciclurile de îngheț-dezgheț și intemperii.
+
+📐 **Aspect modern și ordonat** — Culorile neutre permit integrarea armonioasă în orice stil arhitectural — modern sau clasic.
+
+---
 
 ## Mistic gri bazaltic sau Mistic gri grafit?
 
-**Gri Bazaltic** — Nuanțe de negru, contrast puternic, potrivit cu fațade deschise.
+Alegerea culorii depinde de stilul curții și de efectul vizual pe care doriți să-l obțineți. Gama [Mistic](https://petrapavaje.ro/pavaje-premium/mistic/) oferă două variante distincte:
 
-**Gri Grafit** — Nuanțe de alb, aspect luminos și aerisit, potrivit cu fațade deschise și închise.
+**Mistic Gri Bazaltic** — Mai multe nuanțe de negru, contrast puternic pentru design, se asortează cu fațade deschise, accente metalice și grădini minimaliste, piatră Thasos sau piatră decorativă colorată.
+
+**Mistic Gri Grafit** — Mai multe nuanțe de alb, aspect mai luminos și aerisit, potrivit cu fațade deschise și închise, design modern, spații luminoase, lemn sau scoarță decorativă pentru contrast.
 
 ## Mixuri sau plăci mari?
 
-**Mixuri** — Design mai variat și natural, ideale pentru alei și curți cu forme neregulate.
+Două abordări diferite, fiecare cu avantajele ei:
 
-**Plăci mari** — Aspect modern și uniform, mai practice pentru suprafețe mari și drepte.`,
+**Mixuri de pavaje** — Design mai variat și natural, ideale pentru alei, terase mici sau curți cu forme neregulate, versatilitate crescută în montaj.
+
+**Plăci de mari dimensiuni** — Aspect modern și uniform, mai practice pentru suprafețe mari și drepte, impact vizual minimalist.
+
+Indiferent de preferințele proiectului dumneavoastră, [Petra Pavaje](https://petrapavaje.ro/pavaje-premium/) vă pune la dispoziție o gamă diversificată de modele și dimensiuni, atent selecționate pentru a satisface cele mai exigente gusturi.
+
+---
+
+## Inspirație pentru curtea ta
+
+Pentru o amenajare exterioară care satisface atât cerințele estetice, cât și cele practice, această combinație de pavaje este soluția ideală. Pavajul Mistic, prin versatilitatea sa, se integrează armonios într-o varietate de stiluri arhitecturale.
+
+![Pavaj Mistic gri bazaltic — curte elegantă cu vegetație](https://petrapavaje.ro/wp-content/uploads/Mistic-gri-bazaltic-4-scaled.avif)
+
+![Pavaj Mistic gri bazaltic — garaj și alee](https://petrapavaje.ro/wp-content/uploads/Mistic-gri-bazaltic-5-scaled.avif)
+
+Mistic gri bazaltic în diverse zone ale curții — de la zona verde până la garaj.
+
+![Vedere de ansamblu — amenajare curte cu Mistic gri bazaltic](https://petrapavaje.ro/wp-content/uploads/Mistic-gri-bazaltic-10-scaled.avif)
+
+Vedere de ansamblu — o curte de 400 mp unde eleganța și funcționalitatea se completează perfect.
+
+Petra Pavaje — stil și calitate pentru fiecare curte
+
+Ne dedicăm constant extinderii portofoliului nostru, urmărind îndeaproape tendințele actuale din designul exterior și ținem pasul cu tehnologiile inovatoare din domeniu. Astfel, ne asigurăm că oferim soluții de pavare care **nu doar îndeplinesc, ci și depășesc așteptările** clienților noștri.
+
+De la [Mistic](https://petrapavaje.ro/pavaje-premium/mistic/) la [Roca](https://petrapavaje.ro/pavaje-premium/roca/), de la [Sahara](https://petrapavaje.ro/pavaje-premium/sahara/) la [Mediterana](https://petrapavaje.ro/pavaje-premium/mediterana/) — fiecare gamă transformă fiecare spațiu exterior într-o mărturie a stilului și calității.
+
+Descoperă gama completă de pavaje premium Petra Pavaje și inspiră-te pentru propria amenajare. [Vezi pavajele premium →](https://petrapavaje.ro/pavaje-premium/)`,
     date: '2025-02-28',
     author: 'Petra Pavaje',
     category: 'Inspirație',

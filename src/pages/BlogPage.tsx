@@ -213,7 +213,7 @@ const blogPosts: BlogPost[] = [
   {
     id: '18',
     title: 'Pavajul Mistic gri bazaltic pentru o curte elegantă',
-    slug: 'pavajul-mistic-curte-eleganta',
+    slug: 'pavajul-mistic-pentru-o-curte-elegenata',
     excerpt: 'O curte bine amenajată este cartea de vizită a oricărei locuințe. Un design echilibrat și materiale de calitate transformă spațiul exterior într-o amenajare cu stil.',
     content: '',
     date: '2025-02-28',
