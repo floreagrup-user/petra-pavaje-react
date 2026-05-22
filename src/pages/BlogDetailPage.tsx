@@ -738,7 +738,7 @@ Suntem recunoscători pentru rădăcinile noastre și pentru oamenii care, prin 
   },
   {
     id: '14',
-    title: 'Curte amenajată cu pavajul Sahara travertin — studiu de caz',
+    title: 'Curte amenajată cu Sahara travertin — studiu de caz',
     slug: 'curte-amenajata-sahara-travertin',
     excerpt: 'Într-un cartier rezidențial din Sibiu, familia T. și-a dorit o curte care să fie o extensie a locuinței și a sentimentului de acasă.',
     content: `Într-un cartier rezidențial din Sibiu, familia T. și-a dorit o curte care să fie mai mult decât un spațiu exterior — o extensie a locuinței și a sentimentului de acasă. Rezultatul: o amenajare caldă, luminoasă, cu pavajul Sahara travertin MIX 6.30.
@@ -763,11 +763,11 @@ Printre cerințele principale s-au numărat:
 
 Pentru a păstra unitatea dintre interior și exterior, familia a ales pavajul [**Sahara MIX 6.30 — travertin**](https://petrapavaje.ro/pavaje-premium/sahara/) de la Petra Pavaje, completat de bordura galbenă 50×5×20 cm.
 
-### De ce Sahara travertin?
+#### De ce Sahara travertin?
 
 Nuanțele calde, apropiate de tonurile de nisip, completează perfect fațada albă a casei, care amintește de simplitatea și frumusețea [arhitecturii mediteraneene](https://petrapavaje.ro/amenajare-rezidentiala-cu-pavajul-mediterana-terra/). Un studiu realizat de Pantone Color Institute relevă că o culoare poate reprezenta până la **85% din motivul pentru care alegem să cumpărăm un produs** — iar acest proiect confirmă cât de mult poate influența paleta cromatică atmosfera unui spațiu.
 
-### Produse utilizate în acest proiect
+#### Produse utilizate în acest proiect
 
 - [**Pavaj Sahara MIX 6.30 — travertin**](https://petrapavaje.ro/pavaje-premium/sahara/) (3 dimensiuni: 20×10×6 cm, 20×20×6 cm, 30×20 cm)
 - **Bordură galbenă 50×5×20 cm**
@@ -778,6 +778,8 @@ Nuanțele calde, apropiate de tonurile de nisip, completează perfect fațada al
 
 ![Curte cu pavaj Sahara travertin — nuanțe calde de nisip](https://petrapavaje.ro/wp-content/uploads/Sahara_travertin-MIX-6.30-Petra-Pavaje-scaled.avif)
 
+*Galerie: curtea familiei T. din Sibiu — pavajul Sahara travertin MIX 6.30 în diverse unghiuri și momente ale zilei*
+
 Tonurile bej și travertin creează o imagine calmă, luminoasă, care inspiră relaxare și căldură. Pentru un spațiu mic sau umbrit, **culorile deschise sunt ideale**, deoarece amplifică vizual suprafața și aduc o senzație de aerisire și echilibru.
 
 **Sfat de design:** Alegerea unui pavaj cu suprafață fină, ușor de întreținut, pe care poți păși chiar și desculț în perioada călduroasă, este ideală atunci când spațiul amenajat este în proximitatea casei.
@@ -786,7 +788,7 @@ Tonurile bej și travertin creează o imagine calmă, luminoasă, care inspiră 
 
 ![Curte cu pavaj Sahara travertin — vedere de ansamblu](https://petrapavaje.ro/wp-content/uploads/Petra-Pavaje_Sahara-travertin-MIX-6.30-scaled.avif)
 
-### De ce funcționează mixul de dimensiuni?
+#### De ce funcționează mixul de dimensiuni?
 
 Mixul de 3 dimensiuni — 20×10×6 cm, 20×20×6 cm și 30×20 cm — montat într-un model ordonat, conferă un aer clar și structurat, dar totodată oferă **dinamism, fără a crea plictis vizual**. Este o abordare care îmbină simplitatea cu rafinamentul.
 
@@ -796,7 +798,7 @@ Mixul de 3 dimensiuni — 20×10×6 cm, 20×20×6 cm și 30×20 cm — montat î
 
 Curtea amenajată cu Sahara travertin dispune de o **alee în jurul casei**, o **zonă de relaxare** cu masă pentru familie și prieteni, precum și o **zonă verde** cu plante decorative atent selecționate.
 
-### Elemente esențiale de planificare
+#### Elemente esențiale de planificare
 
 **Important:** Sistemul de irigare a plantelor trebuie realizat **înainte de montajul pavajelor** pentru a evita ulterioare săpături și denivelări. Aceasta este o etapă critică pe care mulți proprietari o omit.
 
@@ -811,7 +813,11 @@ Curtea amenajată cu Sahara travertin dispune de o **alee în jurul casei**, o *
 
 ![Pavaj Sahara travertin MIX 6.30 — integrare cu vegetație](https://petrapavaje.ro/wp-content/uploads/Sahara-Travertin-MIX-6.30-Petra-Pavaje-1-scaled.avif)
 
-[**Pavajele din gama Premium**](https://petrapavaje.ro/pavaje-premium/), datorită varietății de culori și dimensiuni, permit crearea unor amenajări deosebite și unice, fiind utilizate cu precădere în proiectele rezidențiale. Spre deosebire de pavajele din gama standard, destinate zonelor industriale cu trafic intens, **pavajul Premium oferă eleganță și personalitate**.
+#### Tips & Tricks — pavajele Premium
+
+[**Pavajele din gama Premium**](https://petrapavaje.ro/pavaje-premium/), datorită varietății de culori și dimensiuni, permit crearea unor amenajări deosebite și unice, fiind utilizate cu precădere în proiectele rezidențiale.
+
+Spre deosebire de pavajele din gama standard, destinate zonelor industriale cu trafic intens, **pavajul Premium oferă eleganță și personalitate**. Paleta cromatică bogată și mixul de dimensiuni permit o diversitate de modele de montaj, făcând ca fiecare spațiu să devină unic.
 
 ## Rezultatul — o curte care inspiră calm și echilibru
 
@@ -833,17 +839,27 @@ Pentru a menține în timp aspectul plăcut al pavajului, sunt necesare câteva 
 - **Curățați cu un aparat de spălare cu presiune**, cu atenție în zona rosturilor, sau cu o perie cu peri moi
 - **Evitați contactul prelungit cu obiecte metalice** care pot rugini (ghivece, scaune, unelte)
 
+
+![Sfaturi de întreținere pavaj — ghid practic Petra Pavaje](https://petrapavaje.ro/wp-content/uploads/Sfaturi-intretinere-pavaj_Petra-Pavaje.avif)
+
 **Pro tip:** Verificați anual rosturile și completați cu nisip acolo unde este necesar. Acest lucru previne deplasarea dalelor și menține stabilitatea întregii suprafețe pavate.
 
 ## Inspirație pentru proiectele viitoare
 
 Frumusețea stă în simplitate — iar proiectul din Sibiu este dovada vie că **pavajul potrivit poate transforma o curte** într-un loc cu personalitate și aspect armonios.
 
-Nuanțele calde ale travertinului completează perfect arhitectura modernă și aduc echilibru întregii amenajări. Descoperă gama completă de produse Petra Pavaje și inspiră-te pentru propria amenajare.
+Nuanțele calde ale travertinului completează perfect arhitectura modernă și aduc echilibru întregii amenajări. Alege pavajul care reflectă stilul tău de viață.
+
+Petra Pavaje — pentru curtea pe care ți-o dorești
+
+Descoperă gama completă de produse **Petra Pavaje** și inspiră-te pentru propria amenajare. Fiecare pavaj premium pe care îl producem este conceput pentru a transforma spațiul exterior într-o **extensie naturală a casei tale**.
 
 De la [**Sahara travertin**](https://petrapavaje.ro/pavaje-premium/sahara/) la [**Grand Urban**](https://petrapavaje.ro/pavaje-premium/grand-urban/), de la [**Roca**](https://petrapavaje.ro/pavaje-premium/roca/) la [**Mediterana**](https://petrapavaje.ro/pavaje-premium/mediterana/) — fiecare gamă oferă o experiență unică de amenajare.
 
-Ești gata să-ți transformi curtea în spațiul visat? Contactează reprezentantul Petra Pavaje din zona ta pentru o ofertă personalizată.`,
+Ești gata să-ți transformi curtea în spațiul visat? Contactează reprezentantul Petra Pavaje din zona ta pentru o ofertă personalizată.
+
+[Solicită ofertă →](https://petrapavaje.ro/contact/)
+`,
     date: '2025-11-10',
     author: 'Petra Pavaje',
     category: 'Inspirație',
@@ -1956,6 +1972,9 @@ function renderBlogContent(
     } else if (line.startsWith('### ')) {
       currentHeading = line.replace('### ', '')
       nodes.push(<h3 key={getKey()} className="text-xl font-semibold text-charcoal-900 mt-6 mb-3">{renderInline(currentHeading)}</h3>)
+    } else if (line.startsWith('#### ')) {
+      currentHeading = line.replace('#### ', '')
+      nodes.push(<h4 key={getKey()} className="text-lg font-semibold text-charcoal-900 mt-4 mb-2">{renderInline(currentHeading)}</h4>)
     } else if (line.startsWith('- ')) {
       nodes.push(<li key={getKey()} className="text-charcoal-700 ml-4 mb-2 leading-relaxed">{renderInline(line.replace('- ', ''))}</li>)
     } else if (line.match(/^\d+\. /)) {
