@@ -1882,6 +1882,20 @@ function ImageGrid({
     )
   }
 
+  if (images.length === 1) {
+    return (
+      <div className="my-6">
+        <img
+          src={images[0].url}
+          alt={images[0].alt}
+          className="w-full rounded-xl cursor-pointer hover:opacity-90 transition-opacity"
+          loading="lazy"
+          onClick={() => onImageClick(images[0].url, images[0].alt)}
+        />
+      </div>
+    )
+  }
+
   const isWide = layout === 'row-3' || (layout === 'row' && images.length >= 3)
 
   return (
