@@ -865,6 +865,14 @@ Ești gata să-ți transformi curtea în spațiul visat? Contactează reprezenta
     category: 'Inspirație',
     image: 'https://petrapavaje.ro/wp-content/uploads/Sahara-MIX-6.30-Petra-Pavaje_1-scaled.avif',
     readTime: 6,
+    toc: [
+      { id: 'obiectivele-proiectului', heading: 'Obiectivele proiectului', summary: 'Cele 3 cerințe principale: continuitate cu interiorul, căldură și relaxare, durabilitate cromatică' },
+      { id: 'alegerea-pavajului-tonuri-galbene-și-texturi-fine', heading: 'Alegerea pavajului — tonuri galbene și texturi fine', summary: 'Sahara travertin MIX 6.30 și bordura galbenă — texturi fine și tonuri calde de nisip' },
+      { id: 'design-ul-spațiului-între-funcțional-și-estetic', heading: 'Design-ul spațiului — între funcțional și estetic', summary: 'Aleea în jurul casei, zona de relaxare și grădina cu plante decorative' },
+      { id: 'rezultatul-o-curte-care-inspiră-calm-și-echilibru', heading: 'Rezultatul — o curte care inspiră calm și echilibru', summary: 'O curte luminoasă și primitoare — impresia proprietarului' },
+      { id: 'întreținere-pavaj', heading: 'Întreținere pavaj', summary: 'Sfaturi practice pentru a păstra aspectul plăcut al pavajului în timp' },
+      { id: 'inspirație-pentru-proiectele-viitoare', heading: 'Inspirație pentru proiectele viitoare', summary: 'Cum poți transforma curtea ta cu pavajul Sahara travertin' },
+    ],
   },
   {
     id: '15',
@@ -1968,6 +1976,51 @@ function ImageGrid({
   )
 }
 
+function slugify(text: string): string {
+  return text.toLowerCase()
+    .replace(/[^a-z0-9ăâîșț\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '')
+}
+
+function TableOfContents({ entries }: { entries: { id: string; heading: string; summary: string }[] }) {
+  return (
+    <div className="not-prose bg-charcoal-50 rounded-2xl p-6 md:p-8 mb-8 border border-charcoal-200/60">
+      <div className="flex items-center gap-2 mb-5">
+        <span className="w-1 h-6 bg-brand-600 rounded-full" />
+        <h3 className="text-base font-bold text-charcoal-900 uppercase tracking-widest">Cuprins</h3>
+      </div>
+      <nav className="space-y-0">
+        {entries.map((entry, i) => (
+          <a
+            key={entry.id}
+            href={`#${entry.id}`}
+            onClick={(e) => {
+              e.preventDefault()
+              document.getElementById(entry.id)?.scrollIntoView({ behavior: 'smooth' })
+            }}
+            className="group flex items-start gap-4 py-3 px-4 -mx-4 rounded-xl transition-all duration-200 hover:bg-white/70 hover:shadow-sm"
+          >
+            <span className="flex-shrink-0 w-7 h-7 rounded-full bg-charcoal-200 text-charcoal-600 text-xs font-bold flex items-center justify-center group-hover:bg-brand-600 group-hover:text-white transition-colors duration-200">
+              {i + 1}
+            </span>
+            <div className="min-w-0">
+              <span className="block text-sm font-semibold text-charcoal-900 group-hover:text-brand-700 transition-colors duration-200">
+                {entry.heading}
+              </span>
+              <span className="block text-xs text-charcoal-500 mt-0.5 leading-relaxed">
+                {entry.summary}
+              </span>
+            </div>
+          </a>
+        ))}
+      </nav>
+    </div>
+  )
+}
+
 function renderBlogContent(
   content: string,
   onImageClick: (src: string, alt: string) => void
@@ -2004,7 +2057,8 @@ function renderBlogContent(
 
     if (line.startsWith('## ')) {
       currentHeading = line.replace('## ', '')
-      nodes.push(<h2 key={getKey()} className="text-2xl font-bold text-charcoal-900 mt-8 mb-4">{renderInline(currentHeading)}</h2>)
+      const id = slugify(currentHeading)
+      nodes.push(<h2 key={getKey()} id={id} className="text-2xl font-bold text-charcoal-900 mt-8 mb-4 scroll-mt-24">{renderInline(currentHeading)}</h2>)
     } else if (line.startsWith('### ')) {
       currentHeading = line.replace('### ', '')
       nodes.push(<h3 key={getKey()} className="text-xl font-semibold text-charcoal-900 mt-6 mb-3">{renderInline(currentHeading)}</h3>)
@@ -2130,15 +2184,10 @@ export function BlogDetailPage() {
 
             <h1 className="heading-h1 text-charcoal-900 mb-6">{post.title}</h1>
 
-            <div className="aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100 mb-8">
-              <img
-                src={post.image}
-                alt={post.title}
-                className="w-full h-full object-cover"
-              />
-            </div>
-
             <div className="prose prose-lg max-w-none">
+              {post.toc && post.toc.length > 0 && (
+                <TableOfContents entries={post.toc} />
+              )}
               {renderBlogContent(post.content, (src, alt) => {
                 const idx = allImages.findIndex(i => i.src === src)
                 setLightbox({ images: allImages, currentIndex: idx >= 0 ? idx : 0 })

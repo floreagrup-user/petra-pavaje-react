@@ -91,6 +91,7 @@ export interface BlogPost {
   category: string
   image: string
   readTime: number
+  toc?: { id: string; heading: string; summary: string }[]
 }
 
 export interface CountyRep {
