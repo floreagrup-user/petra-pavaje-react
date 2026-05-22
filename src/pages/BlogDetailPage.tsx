@@ -706,39 +706,65 @@ Peste **800 de produse** care acoperă toate stilurile și dorințele. Investim 
   {
     id: '17',
     title: 'Petra Pavaje plantează 42.000 de puieți în județul Alba',
-    slug: 'actiune-de-impadurire-42000-puieti',
+    slug: 'actiune-de-impadurire',
     excerpt: 'Tot ceea ce facem la Petra Pavaje este — și rămâne — în armonie cu natura. Dincolo de produse, această filozofie se reflectă în acțiunile pe care le susținem activ.',
     content: `Tot ceea ce facem la Petra Pavaje este — și rămâne — în armonie cu natura. Dincolo de produsele noastre, această filozofie se reflectă și în acțiunile pe care le susținem activ în comunitate.
 
 ## O acțiune de amploare în inima Apusenilor
 
-În această primăvară, am plantat **42.000 de puieți** pe o suprafață de **9 hectare** în județul Alba, în cadrul unei ample acțiuni de împădurire organizate de Florea Grup.
+În această primăvară, am plantat **42.000 de puieți** pe o suprafață de **9 hectare** în județul Alba, în cadrul unei ample acțiuni de [împădurire](https://proalba.ro/florea-grup-planteaza-42-000-de-puieti-pe-o-suprafata-de-9-hectare-in-judetul-alba) organizate de [Florea Grup](https://petrapavaje.ro/despre-noi/), din care facem parte.
 
-Activitatea s-a desfășurat în perioada martie–mai, iar pe **9 mai** ne-am adunat în inima Munților Apuseni, alături de colegi și parteneri din întreaga țară.
+Activitatea s-a desfășurat în perioada martie–mai, iar pe **9 mai** ne-am adunat în inima Munților Apuseni, alături de colegi și parteneri din întreaga țară, pentru a marca finalul simbolic al acestui demers.
 
-**42.000** Puieți plantați • **9 ha** Suprafață • **4** Specii de arbori
+**42.000** Puieți plantați • **9 ha** Suprafață împădurită • **4** Specii de arbori
 
 ### Specii plantate
 
-**Fag** — specie dominantă a pădurilor de deal și munte
-**Molid** — esență coniferă pentru zonele montane
-**Frasin** — arbore cu creștere rapidă și rezistență
-**Larice** — singurul conifer care își pierde acele iarna
+Speciile plantate au fost selectate pentru refacerea fondului forestier local și echilibrul ecosistemelor din zonă:
 
-> "Prin această acțiune, ne dorim să oferim un exemplu concret de responsabilitate față de natură și să contribuim activ la un viitor mai verde." — Marcel Florea, director general Florea Grup
+- **Fag** — specie dominantă a pădurilor de deal și munte
+- **Molid** — esență coniferă pentru zonele montane
+- **Frasin** — arbore cu creștere rapidă și rezistență
+- **Larice** — singurul conifer care își pierde acele iarna
+
+Mai mult decât o acțiune simbolică, a fost o zi de lucru în aer liber, în care s-a simțit puternic **energia unei echipe motivate** să contribuie la un viitor sustenabil, dincolo de produsele sau proiectele de zi cu zi.
+
+![Acțiune de împădurire Petra Pavaje — echipa la plantare în Munții Apuseni](https://petrapavaje.ro/wp-content/uploads/img_2.avif)
+
+## Angajamentul conducerii
+
+> "Prin această acțiune, ne dorim să oferim un exemplu concret de responsabilitate față de natură și să contribuim activ la un viitor mai verde. Este o continuare firească a eforturilor noastre pentru sustenabilitate, pe care le integrăm în fiecare ramură a activității companiei." — Marcel Florea, director general Florea Grup
+
+Această acțiune de [împădurire](https://alba24.ro/comunicat-florea-grup-planteaza-42-000-de-puieti-pe-o-suprafata-de-9-hectare-in-judetul-alba-1081104.html) nu este singulară. Face parte din angajamentul nostru constant pentru protejarea naturii.
 
 ## Sustenabilitatea în fiecare ramură a activității
 
-Toate cele patru fabrici Petra Pavaje sunt dotate cu **panouri fotovoltaice**, care asigură o parte semnificativă din necesarul energetic anual.
+Toate cele patru [fabrici](https://petrapavaje.ro/a-patra-fabrica-petra-pavaje/) Petra Pavaje din țară sunt dotate cu panouri [fotovoltaice](https://petrapavaje.ro/florea-grup-a-inceput-montarea-parcului-fotovoltaic/), care asigură o parte semnificativă din necesarul energetic anual.
 
 **600+** Tone CO₂ reduse anual prin panouri fotovoltaice
 **820** Copaci echivalenți protejați în fiecare an
 **60+** Autoturisme electrice în flota companiei
 
-Pentru noi, sustenabilitatea înseamnă nu doar un cuvânt bine ales, ci o **direcție reală**. Dincolo de pavelele produse sau proiectele finalizate, ceea ce ne motivează zi de zi este să lăsăm în urmă spații mai frumoase, comunități mai solide și un mediu mai curat.`,
+### Inițiativele noastre verzi
+
+☀️ Energie solară — Toate cele 4 fabrici sunt dotate cu panouri fotovoltaice pentru reducerea emisiilor de CO₂.
+
+🚗 Flotă electrică — Peste 60 de autoturisme electrice cu stații de încărcare proprii în locațiile-cheie.
+
+🌲 Împăduriri — 42.000 de puieți plantați pe 9 hectare — o acțiune care va continua și în anii următori.
+
+♻️ Model responsabil — Tranziția spre un model de business orientat către viitor și protejarea mediului.
+
+## Direcția noastră
+
+Petra Pavaje — pentru un viitor mai verde
+
+Pentru noi, sustenabilitatea înseamnă nu doar un cuvânt bine ales, ci o **direcție reală**. Dincolo de pavelele produse sau proiectele finalizate, ceea ce ne motivează zi de zi este să lăsăm în urmă **spații mai frumoase, comunități mai solide și un mediu mai curat**.
+
+Află mai multe despre angajamentul nostru pentru sustenabilitate și despre produsele Petra Pavaje. [Descoperă sustenabilitatea →](https://petrapavaje.ro/sustenabilitate/)`,
     date: '2025-05-15',
     author: 'Petra Pavaje',
-    category: 'Sustenabilitate',
+    category: 'Noutăți',
     image: 'https://petrapavaje.ro/wp-content/uploads/img_1-1.avif',
     readTime: 4,
   },
