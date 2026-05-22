@@ -868,6 +868,495 @@ Curățați periodic cu jeturi de apă cu moderație. Iarna, folosiți mături c
     image: 'https://petrapavaje.ro/wp-content/uploads/Antic-antichizat-Petra-Pavaje-Alei-scaled.avif',
     readTime: 6,
   },
+  {
+    id: '21',
+    title: 'Gama Woodstone — Lemn Pietrificat',
+    slug: 'gama-woodstone-lemn-pietrificat',
+    excerpt: 'Atunci când detaliile fac diferența, gama Woodstone – Lemn Pietrificat redefinește standardele amenajărilor exterioare.',
+    content: `Atunci când detaliile fac diferența, gama Woodstone – Lemn Pietrificat redefinește standardele amenajărilor exterioare. Fiecare element este o bijuterie arhitecturală, grație tehnologiei care reușește să redea perfecțiunea naturii.
+
+## Inspirație din natură
+
+Într-o căutare constantă de a îmbina estetica naturală cu rezistența materialelor moderne, am creat o colecție de elemente din beton vibroturnat, care redau cu fidelitate textura și nuanțele calde ale lemnului. Printr-un proces meticulos, am reușit să capturăm detaliile fine precum carii de lemn, noduri, fibră de lemn, textura neuniformă și crăpăturile, transformând betonul într-un material versatil și plin de expresivitate. Rezultatul este o gamă variată de piese cu peste 100 de combinații.
+
+## Caracteristici unice și beneficii
+
+Materialele tradiționale au fost reimaginate, combinând durabilitatea betonului cu frumusețea atemporală a lemnului învechit.
+
+**Tehnologie avansată** — Produs din beton care redă fidel aspectul autentic al lemnului învechit.
+
+**Finisaje deosebite** — Noduri, muchii tocite, fisuri, crăpături și carii reproduse unic pe fiecare suprafață.
+
+**Durabilitate** — Impregnate din fabrică cu strat protector, rezistență superioară lemnului natural.
+
+**Versatilitate** — Forme și dimensiuni variate, peste 100 de combinații posibile.
+
+**Rezistență la îngheț** — Fisurile deschise spre exterior permit apei să se extindă, protejând produsele iarna.
+
+**Fără întreținere** — Nu necesită vopsire, lăcuire sau tratare.
+
+## Alei și căi de acces
+
+Sistemul de pavaje din portofoliul Lemn Pietrificat include o gamă variată de elemente care reproduc aspectul natural al lemnului. Formele și dimensiunile plăcilor și pavajelor permit numeroase combinații, fiind potrivite pentru amenajarea aleilor, trotuarelor, din jurul caselor și grădinilor, dar și a spațiilor publice.
+
+## Delimitarea zonelor cu vegetație
+
+Soluțiile noastre de delimitare a spațiilor verzi includ borduri regulate pentru aspect uniform, borduri neregulate pentru aer natural, palisade cu înălțimi variate pentru margini de scări sau separarea zonelor deluroase, și separatoare de gazon modulare.
+
+## Terase și zone de relaxare
+
+Indiferent dacă doriți să amenajați terasa unui restaurant, a unei pensiuni sau a locuinței dumneavoastră, gama de produse din beton cu aspect de lemn oferă soluții estetice și durabile. De la pavaje și plăci de exterior, până la mobilier precum mese și bănci și chiar ghivece, fiecare element contribuie la crearea unui spațiu exterior unic.
+
+## Grădini japoneze
+
+Cu alei pe niveluri diferite construite cu produsele care redau textura scândurilor și a grinzilor de lemn, puteți crea o grădină japoneză care vă va încânta timp îndelungat. Pentru o atmosferă autentică, puteți realiza trepte din Palisade scândură, completate cu pietriș pentru drenaj eficient sau cu gazon pentru un aspect natural.
+
+## Jardiniere și ghivece
+
+Jardinierele și ghivecele din beton vibroturnat cu aspect de lemn oferă o soluție estetică și durabilă pentru amenajarea spațiilor exterioare. Datorită greutății și dimensiunilor lor, recomandăm alegerea unor plante perene, adaptate climatului local și rezistente la îngheț.
+
+## Sisteme de garduri
+
+Gardurile din beton vibroturnat, grație finisajului care redă perfect textura și nuanțele lemnului, sunt o soluție estetică și durabilă pentru delimitarea proprietăților. Plăcile individuale de gard sunt disponibile în zece modele diferite, fiecare într-o combinație originală de nuanțe.
+
+## Investiție pe termen lung
+
+Rezistente la intemperii și la ciclurile de îngheț-dezgheț, elementele din beton vibropresat din portofoliul Lemn Pietrificat sunt o investiție pe termen lung. Aspectul lor estetic se menține în timp și nu necesită întreținere în comparație cu materialele din lemn.`,
+    date: '2024-08-22',
+    author: 'Petra Pavaje',
+    category: 'Inspirație',
+    image: 'https://petrapavaje.ro/wp-content/uploads/pavaj-woodstone_web.avif',
+    readTime: 8,
+  },
+  {
+    id: '22',
+    title: 'Sfaturi pentru montarea pavajelor',
+    slug: 'sfaturi-pentru-montarea-pavajelor',
+    excerpt: 'Ghid complet pentru montarea pavajelor — de la pregătirea terenului până la finisajul final.',
+    content: `Ideile pentru amenajarea curții au început să prindă contur atunci când ați făcut alegerea din gama variată de pavaje și le-ați achiziționat. Acum este momentul pentru ultimul pas — montarea pavajului.
+
+## Recomandarea noastră
+
+Deși poate părea ușor de montat, vă recomandăm să luați în calcul colaborarea cu o firmă specializată în montarea pavajelor. Totuși, dacă doriți să faceți dumneavoastră montarea, trebuie să țineți cont de anumite reguli și să evitați câteva greșeli.
+
+**Sfat:** Parcurgeți toți cei 5 pași în ordine. Fiecare etapă depinde de calitatea celei anterioare.
+
+## 1. Pregătirea locului
+
+Este un pas crucial. Odată ce s-au efectuat măsurătorile, delimitați zona cu țăruși și sfoară. Apoi, efectuați o decopertare de cca. 10–35 cm și înlăturați rădăcinile de copaci.
+
+**Panta de drenare:** Pe suprafețele fără înclinare există posibilitatea băltirii apei. 2–2.5% este un minim necesar de înclinare pentru evacuarea apei.
+
+**Sugestie:** Montați instalațiile electrice și sistemele pentru gestionarea apelor pluviale în această etapă.
+
+## 2. Construirea stratului de suport
+
+- Tasare inițială cu placă vibrantă
+- Pietriș/piatră concasată tasată
+- Strat de nisip 4–6 cm nivelat cu îndreptar și țevi profilate paralele
+
+**Atenție:** Nu utilizați balast amestecat cu mâl sau resturi de la alte construcții. Folosiți balast curat și nisip cu granulație de 0–4 mm.
+
+## 3. Montarea bordurilor
+
+Montarea bordurilor se face după compactarea stratului de suport. Este necesară fundație din beton, nivelă pentru cote, teodolit pentru aliniamente și împănare pe minim o treime din înălțimea bordurii.
+
+## 4. Montarea pavelelor
+
+Începeți dintr-un colț drept, de 90°, pentru a evita tăierea cât mai multor bucăți. Așezarea pavelelor se face una lângă alta, urmărind să nu fie înclinate. Pentru tăiere folosiți un flex cu disc diamantat.
+
+## 5. Rostuirea
+
+După montarea pavelelor, aplicați nisip fin, uscat, cu granulație de 0.2 mm, întins uniform cu mătura. Ultima tasare cu placa vibrantă se face atât longitudinal, cât și transversal.
+
+**Toate operațiunile de rostuire se fac numai pe suprafețe uscate.**`,
+    date: '2024-04-08',
+    author: 'Petra Pavaje',
+    category: 'Ghiduri Tehnice',
+    image: 'https://petrapavaje.ro/wp-content/uploads/petra-pavaje-montaj-scaled.webp',
+    readTime: 5,
+  },
+  {
+    id: '23',
+    title: 'Montarea bordurilor — pași de urmat și greșeli de evitat',
+    slug: 'montarea-bordurilor',
+    excerpt: 'Pentru ca rezultatul să corespundă așteptărilor, vă recomandăm o serie de sfaturi ce vă vor fi de folos în obținerea amenajării mult dorite.',
+    content: `Pentru ca rezultatul să corespundă așteptărilor dumneavoastră, vă recomandăm colaborarea cu o firmă specializată. Totodată, venim în ajutor cu o serie de sfaturi ce vă vor fi de folos în obținerea amenajării mult dorite.
+
+## Rolul bordurilor în amenajare
+
+Bordurile nu au doar scop estetic pentru delimitarea vizuală a pavajului, ci au un rol mai important, și anume de susținere. Solul se contractă în perioadele secetoase și se dilată în cele ploioase, iar pentru a limita deplasarea pavelelor este necesară existența unei borduri.
+
+**Regula de aur:** Bordura preia forțele transmise de pavaj. Fără o bordură montată corect, pavelele se vor deplasa în timp.
+
+## Pașii de montaj
+
+### 1. Unelte necesare
+Roabă, mistrie, lopeți, placă vibrantă, țevi profilate, ciocan de cauciuc, flex cu disc diamantat, nivelă și teodolit.
+
+### 2. Trasarea zonei
+Delimitați zona cu țăruși din lemn sau tije de metal și sfoară.
+
+### 3. Decopertarea terenului
+Decopertați la 10–35 cm adâncime. Folosiți o plasă geotextilă între sol și stratul de bază. Creați o pantă de minim 2% pentru evacuarea apei.
+
+### 4. Realizarea fundației
+Așezați stratul de bază din balast sau piatră concasată: 15 cm pentru trafic pietonal, 20 cm pentru trafic auto ușor, 30 cm pentru trafic mediu și intens. Compactați în straturi succesive de 10–20 cm.
+
+### 5. Trasarea fundației bordurilor
+Creați un canal de 10–15 cm adâncime, cu lățimea cu 100 mm mai mare decât lățimea bordurii.
+
+### 6. Montarea bordurilor
+Cotele se transmit cu nivela, aliniamentele cu teodolitul. Turnați beton de încastrare, așezați bordura și aliniați cu ciocan de cauciuc. Încastrarea trebuie să încorporeze jumătate din înălțimea bordurii.
+
+### 7. Rostuirea
+Opțional, recomandat pentru trafic auto. Umpleți cu mortar distanța de 8–10 mm dintre borduri.`,
+    date: '2024-04-08',
+    author: 'Petra Pavaje',
+    category: 'Ghiduri Tehnice',
+    image: 'https://petrapavaje.ro/wp-content/uploads/bordura-h650.webp',
+    readTime: 5,
+  },
+  {
+    id: '24',
+    title: 'Transformă-ți curtea folosind culoarea anului: Fuzz Peach',
+    slug: 'transforma-ti-curtea-folosind-culoarea-anului-fuzz-peach',
+    excerpt: 'Pantone a declarat culoarea anului 2024: Peach Fuzz. Senzația de căldură și rafinament pe care o aduce această nuanță poate completa spațiile exterioare.',
+    content: `Pantone a declarat culoarea anului 2024: Peach Fuzz. Senzația de căldură și rafinament pe care o aduce această nuanță captivantă poate completa spațiile exterioare, transformându-le în adevărate oaze de relaxare.
+
+## Ce este Peach Fuzz?
+
+Peach Fuzz este o nuanță de piersică, o combinație între roz și portocaliu, care aduce un sentiment de bunătate și tandrețe. Această culoare transmite un mesaj despre comunitate, colaborare și despre a fi împreună cu ceilalți.
+
+## 1. Mobilier de exterior și decorațiuni
+
+Timpul petrecut în curte trebuie să vă aducă împlinire. Elementele de mobilier în culoarea Peach Fuzz — scaune, mese sau șezlonguri — se vor face remarcate într-un mod plăcut. Pavajele în nuanțe deschise, albe vor contribui la aerul de relaxare. Dacă deja ați achiziționat mobilierul, adăugați perne, fețe de masă, pături sau covoare Peach Fuzz.
+
+## 2. Pavaje și garduri în nuanțe calde
+
+Integrarea pavajelor în amenajarea curții este facilă, fiind ușor de întreținut.
+
+**Produse recomandate:** Pavaj Mediterana Terra — nuanțe pământii care emană o frumusețe naturală; Gard Baroc, Modern sau Robusto — culoare maro, nuanțe calde care imită rocile.
+
+## 3. Cultivarea florilor în culoarea anului
+
+**Flori de exterior:** trandafiri, lalele, zambile, ranunculus, gladiole, dalii.
+**Plante de ghiveci:** mușcate, begonii, petunii.
+
+Ghivecele în nuanța Peach Fuzz contrastează frumos cu verdele plantelor.
+
+## 4. Pietriș în nuanță Fuzz Peach
+
+Alegeți pietrișul într-o nuanță crem-bej. Alternați amestecuri de pietre pentru designuri asimetrice sau șerpuite, utilizând piatră Thasos și piatră bej.
+
+## 5. Proiecte DIY
+
+Vopsiți mobilierul vechi în nuanța Peach Fuzz, decorați o bicicletă vintage, pictați ghivece manual sau creați accente în culori complementare precum verde, alb sau turquoise.`,
+    date: '2024-02-29',
+    author: 'Petra Pavaje',
+    category: 'Inspirație',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Petra-Pavaje_Nuanta-Fuzz-Peach_mobiler-gradina-scaled.webp',
+    readTime: 5,
+  },
+  {
+    id: '25',
+    title: 'Gardul Modern Petra Pavaje',
+    slug: 'gardul-modern-petra-pavaje',
+    excerpt: 'Gardul Modern de la Petra Pavaje redefinește conceptul de împrejmuire — un sistem 3D modular, portant, cu design minimalist și montare rapidă.',
+    content: `Gardul Modern de la Petra Pavaje redefinește conceptul de împrejmuire — un sistem 3D modular, portant, cu design minimalist și montare rapidă. Descoperă cum poți transforma granița curții tale într-o declarație de stil contemporan.
+
+## Descriere produs
+
+Gardul Modern este un sistem de gard 3D modular și portant, proiectat pentru a oferi o soluție completă de împrejmuire cu aspect contemporan. Fiecare element este prevăzut cu sistem de nut-feeder care asigură o aliniere perfectă și o montare rapidă, fără mortar sau adeziv. Sistemul modular permite construirea gardurilor de orice lungime, cu posibilitatea de a integra stâlpi, panouri de ventilare și porți.
+
+## Montare ușoară și rapidă
+
+Sistemul modular permite o instalare cu 50% mai rapidă comparativ cu metodele tradiționale de zidire. Reduce costurile totale de montaj cu până la 35%. Asamblare uscată — nu necesită mortar, adeziv sau cofrare.
+
+## Design minimalist
+
+Linii curate, suprafețe netede și un aspect unitar. Designul minimalist se potrivește perfect în amenajările contemporane, industriale sau scandinave.
+
+## Materiale durabile
+
+Fabricat din beton vibropresat cu rezistență excepțională la intemperii și îngheț-dezgheț. Peste 200 de cicluri de îngheț-dezgheț, absorbție redusă de apă sub 6%, rezistență la compresiune minim 50 MPa și garanție 5 ani.
+
+## Opțiuni de culori
+
+Gardul Modern este disponibil în trei culori:
+- **Negru** — ideal pentru amenajări industriale și contemporane
+- **Alb** — perfect pentru aspect mediteranean sau scandinav
+- **Maro deschis** — se potrivește armonios cu mediul natural
+
+## Dimensiuni
+
+Element de gard: 60 × 30 × 9 cm. Capac: 60 × 30 × 7,5 cm.
+
+## Instrucțiuni de instalare
+
+1. Trasarea perimetrului cu sfoară și țăruși
+2. Săparea fundației — șanț continuu de 60 cm adâncime, 30 cm lățime
+3. Turnarea betonului C20/25, lăsat la priză minimum 48 ore
+4. Așezarea primului rând de elemente
+5. Montarea cu sistemul nut-feeder
+6. Tăierea la dimensiune cu drujba diamantată
+7. Montarea capacelor pentru finisaj curat
+8. Rostuirea cu nisip fin`,
+    date: '2024-02-27',
+    author: 'Petra Pavaje',
+    category: 'Ghiduri Tehnice',
+    image: 'https://petrapavaje.ro/wp-content/uploads/gard-modern-2-1-jpg.webp',
+    readTime: 8,
+  },
+  {
+    id: '26',
+    title: 'Concurs — Montator cu Petra Pavaje',
+    slug: 'concurs-montator-cu-petra-pavaje',
+    excerpt: 'Ești montator de pavaje? Demonstrează-ți abilitățile și câștigă o trusă completă de montaj, complet echipată!',
+    content: `Ești montator de pavaje? Demonstrează-ți abilitățile și câștigă o trusă completă de montaj, complet echipată! Participă pe Facebook, Instagram sau TikTok în perioada 12-26 februarie 2024.
+
+## Premiul — trusă completă de montaj
+
+Puneți-vă abilitățile la încercare și câștigați o trusă completă de montaj, complet echipată cu toate uneltele necesare pentru montajul profesional de pavaje.
+
+## Cum participi
+
+### Facebook
+1. Accesează pagina oficială Petra Pavaje pe Facebook
+2. Distribuie postarea concursului pe profilul tău
+3. Lasă un comentariu cu o fotografie a unui proiect de montaj
+4. Etichetează un prieten montator
+
+### Instagram
+1. Urmărește contul oficial @petrapavaje pe Instagram
+2. Distribuie postarea în Story-ul tău
+3. Comentează cu o fotografie a unui proiect
+4. Etichetează un prieten montator
+
+### TikTok
+1. Urmărește contul oficial @petrapavaje pe TikTok
+2. Creează un video cu procesul tău de montaj
+3. Publică cu hashtag-ul #MontatorPetraPavaje
+4. Etichetează @petrapavaje în descriere
+
+## Perioada concursului
+
+12 februarie — 26 februarie 2024. Câștigătorul va fi anunțat pe 28 februarie 2024.
+
+## Regulament oficial
+
+Pentru detalii complete despre condițiile de participare, criteriile de jurizare și termenii concursului, consultați regulamentul oficial disponibil pe site.`,
+    date: '2024-02-12',
+    author: 'Petra Pavaje',
+    category: 'Noutăți',
+    image: 'https://petrapavaje.ro/wp-content/uploads/concurs_montatori-scaled.webp',
+    readTime: 3,
+  },
+  {
+    id: '27',
+    title: 'Cum îngrijim pavajul în sezonul rece',
+    slug: 'cum-ingrijim-pavajul-in-sezonul-rece',
+    excerpt: 'Iarna poate fi un test dur pentru orice suprafață pavată. Zăpada, gheața și ciclurile repetate de îngheț-dezgheț pot afecta pavajul. Iată cum poți proteja investiția ta.',
+    content: `Iarna poate fi un test dur pentru orice suprafață pavată. Zăpada, gheața și ciclurile repetate de îngheț-dezgheț pot afecta atât aspectul, cât și structura pavajului. Iată cum poți proteja investiția ta în sezonul rece.
+
+## 1. Curățarea de resturi și vegetație
+
+Înainte de primul îngheț, curățați pavajul de frunze, crengi și resturi organice. Materialele organice rețin umiditatea și accelerează degradarea suprafeței. Măturați săptămânal, înlăturați buruienile dintre rosturi, verificați și reparați rosturile deteriorate.
+
+**Important:** Resturile organice lăsate pe pavaj iarna pot provoca pete permanente și facilitează creșterea mușchilor și algelor.
+
+## 2. Utilizarea corectă a nisipului
+
+Recomandăm nisip cu granulație de 1-4 mm, care oferă aderență fără a deteriora suprafața.
+
+**Atenție la sare!** Sarea convențională poate provoca eflorescență — depuneri albicioase. Evitați utilizarea sării direct pe pavaj. Folosiți nisip de cuarț sau nisip special pentru pavaje.
+
+## 3. Deszăpezirea regulată
+
+**Regula de aur:** Înlăturați zăpada cât mai curând posibil.
+
+**Recomandat:** Lopeți din plastic cu muchii netede, perii cu peri din plastic dur, măturat frecvent, nisip pentru aderență.
+
+**Interzis:** Lopeți sau unelte din metal, chimicale agresive de dezgheț, tasarea gheții cu piciorul, utilizarea sării direct pe pavaj.
+
+## 4. Asigurarea drenării apei
+
+Verificați și curățați rigolele și canalele de scurgere. Asigurați o pantă minimă de 1-2% spre zonele de scurgere. Luați în considerare pavajele permeabile pentru zone cu drenaj deficitar.`,
+    date: '2024-01-29',
+    author: 'Petra Pavaje',
+    category: 'Întreținere',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Inlaturare-zapada_Petra-Pavaje-scaled.webp',
+    readTime: 6,
+  },
+  {
+    id: '28',
+    title: 'De ce apar pete albe pe pavaje și pe garduri — Eflorescența',
+    slug: 'de-ce-apar-pete-albe-pe-pavaje-si-pe-garduri',
+    excerpt: 'Ai observat depuneri albicioase pe suprafața pavajului sau a gardului? Nu te alarma — este vorba despre eflorescență, un fenomen natural și temporar.',
+    content: `Ai observat depuneri albicioase pe suprafața pavajului sau a gardului? Nu te alarma — este vorba despre eflorescență, un fenomen natural și temporar. Iată tot ce trebuie să știi despre cauze, durată și soluții.
+
+## Ce este eflorescența?
+
+Eflorescența este un fenomen natural care apare atunci când sărurile minerale din interiorul betonului migrează către suprafață prin porii materialului, sub acțiunea apei. La contactul cu aerul, apa se evaporă și lasă în urmă depuneri albe, cristaline. Acest proces este complet natural și nu afectează rezistența structurală a materialului.
+
+## Cele 3 condiții necesare
+
+1. **Săruri solubile** — hidroxidul de calciu prezent natural în beton
+2. **Apă / umiditate** — care dizolvă sărurile și le transportă la suprafață
+3. **Cale de migrare** — porii deschiși ai betonului
+
+## Eflorescența primară
+
+Apare în primele 72 de ore până la 2 luni de la fabricare. Este cel mai frecvent tip și se datorează excesului de hidroxid de calciu din betonul proaspăt. Dispare de obicei de la sine în câteva luni.
+
+## Eflorescența secundară
+
+Apare după cel puțin 2 ani de la montare, cauzată de pătrunderea apei din exterior. Frecventă în garaje și spații acoperite unde se utilizează sare de degivrare.
+
+## Când dispare eflorescența?
+
+Eflorescența dispare când sursa de hidroxid de calciu se epuizează. În medie, eflorescența primară dispare complet în 1-3 ani.
+
+## Cum se curăță eflorescența
+
+**Periaj uscat** — pentru depuneri superficiale.
+**Oțet + apă (1:1)** — pentru depuneri moderate.
+**Spălare sub presiune** — doar în vreme caldă și uscată.
+
+## Nu este un defect — garanție 5 ani
+
+Eflorescența nu este un defect de fabricație. Este un fenomen natural, temporar și complet inofensiv pentru rezistența structurală. Toate produsele Petra Pavaje beneficiază de garanție de 5 ani.`,
+    date: '2023-11-07',
+    author: 'Petra Pavaje',
+    category: 'Întreținere',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Anti-eflorescenta.avif',
+    readTime: 7,
+  },
+  {
+    id: '29',
+    title: 'Petra Pavaje ajunge la 800 de produse în portofoliu',
+    slug: 'petra-pavaje-ajunge-la-800-de-produse',
+    excerpt: 'Un nou prag important pentru Petra Pavaje — portofoliul nostru depășește 800 de produse distincte.',
+    content: `Un nou prag important pentru Petra Pavaje — portofoliul nostru depășește 800 de produse distincte. Culori noi, forme inedite, dimensiuni variate și tehnologii premium — toate pentru a oferi cea mai completă gamă de pavaje și accesorii de pe piață.
+
+## Culori noi în portofoliu
+
+- **Gri grafit** — nuanță profundă și sofisticată, ideală pentru amenajări contemporane și industriale
+- **Gri-verzui** — nuanță naturală care se integrează perfect în peisajele verzi
+- **Cupru antichizat** — disponibil exclusiv pentru gama Roman, nuanță caldă cu irizații metalice
+
+## Forme noi — Con, Flora, Stonic
+
+- **Con** — formă geometrică modernă pentru amenajări circulare
+- **Flora** — formă organică inspirată din natură
+- **Stonic** — formă robustă cu aspect de piatră naturală
+
+## Dimensiuni noi
+
+- **4 cm** — pietonal, pentru alei și terase
+- **6 cm** — auto, pentru drumuri de acces și curți
+- **8-10 cm** — greu, pentru zone cu trafic intens
+
+## Tehnologii premium
+
+- **Impregnare Color Lock** — protejează împotriva decolorării UV
+- **Splitare** — aspect natural de piatră brută
+- **Antichizare** — aspect vintage cu patină naturală
+- **Spălare (Relief)** — expune agregatele decorative
+- **Rotunjire colțuri (Gemina)** — aspect elegant și siguranță
+- **Structurare (Alpin)** — textură care imită stânca montană
+
+## Capacitate de producție și sustenabilitate
+
+4 fabrici moderne cu o capacitate de producție de 24.000 mp/zi. Panouri fotovoltaice instalate pe toate fabricile. Garanție 5 ani pentru toate produsele.`,
+    date: '2023-09-29',
+    author: 'Petra Pavaje',
+    category: 'Noutăți',
+    image: 'https://petrapavaje.ro/wp-content/uploads/4.-Grand-Urban-80-x-40-cm-gri-antic.avif',
+    readTime: 6,
+  },
+  {
+    id: '30',
+    title: 'CON — pavajul care inspiră viața curții tale',
+    slug: 'con-pavajul-care-inspira-viata-curtii-tale',
+    excerpt: 'Pavajul CON de la Petra Pavaje nu este doar o dală — este o piesă de design care transformă orice curte într-un spațiu viu, colorat și plin de personalitate.',
+    content: `Pavajul CON de la Petra Pavaje nu este doar o dală — este o piesă de design care transformă orice curte într-un spațiu viu, colorat și plin de personalitate. De la focare la amenajări circulare, CON-ul inspiră creativitate la fiecare pas.
+
+## 1. Focar bază CON — punctul central al curții
+
+Una dintre cele mai spectaculoase utilizări ale pavajului CON este focarul de grădină — un punct de atracție care adună familia și prietenii. Forma geometrică a dalelor CON permite construirea unui focar perfect circular, cu o bază stabilă.
+
+**Idee:** Combinați pavajul CON cu bănci din lemn masiv și lumânări decorative pentru un ambient cald.
+
+## 2. Amenajare concentrică și circulară
+
+Forma hexagonală a pavajului CON permite amenajări circulare și concentrice spectaculoase. Tehnica de montare concentrică presupune pornirea dintr-un punct central și extinderea progresivă. Rezultatul este un efect vizual unic.
+
+- Terasă rotundă — perfectă pentru mese în aer liber
+- Zonă de relaxare — cu fotolii și umbrele
+- Spațiu de joacă — sigur și atractiv
+- Punct focal — cu fântână arteziană sau sculptură
+
+## 3. Delimitări creative cu pavaj CON
+
+- **Mix de culori** — combinați nuanțe pentru delimitări vizuale
+- **Coloana Infinitului** — linie continuă inspirată de Brâncuși
+- **Unidirecțional** — linie simplă pentru delimitări curate
+- **Spic** — model herringbone pentru dinamică și energie
+
+## 4. Buget amenajare curte
+
+**Decopertare:** 15-25 lei/mp
+**Pavaj CON:** cost variabil
+**Materiale montaj:** 20-35 lei/mp
+**Decor, mobilier, plante:** buget flexibil
+
+**Sfat:** Alocați 40-50% din buget pentru pavaj și montaj, 20-25% pentru fundație, iar restul pentru decor.`,
+    date: '2023-09-21',
+    author: 'Petra Pavaje',
+    category: 'Inspirație',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Pavaj-Con-alb-maro-e1695290853132.jpeg',
+    readTime: 7,
+  },
+  {
+    id: '31',
+    title: 'Giveaway — Back to School',
+    slug: 'giveaway-back-to-school',
+    excerpt: 'Școala bate la ușă, iar Petra Pavaje te pregătește! Participă la giveaway-ul nostru Back to School și poți câștiga ghiozdane școlare complet echipate.',
+    content: `Școala bate la ușă, iar Petra Pavaje te pregătește! Participă la giveaway-ul nostru Back to School și poți câștiga ghiozdane școlare complet echipate. 4 premii puse în joc — 2 pe Facebook și 2 pe Instagram!
+
+## Premiile — 4 ghiozdane școlare
+
+Petra Pavaje pune în joc 4 ghiozdane școlare complet echipate, perfecte pentru noul an școlar. Fiecare ghiozdan este umplut cu rechizite și accesorii esențiale pentru elevi.
+
+**2 premii Facebook** — două ghiozdane extrase dintre participanții de pe Facebook.
+**2 premii Instagram** — două ghiozdane extrase dintre participanții de pe Instagram.
+
+## Cum participi pe Facebook
+
+1. Apreciază pagina oficială Petra Pavaje pe Facebook
+2. Apreciază și distribuie postarea concursului
+3. Etichetează un prieten care are copii de școală
+
+## Cum participi pe Instagram
+
+1. Urmărește contul oficial @petrapavaje pe Instagram
+2. Apreciază postarea concursului
+3. Etichetează un prieten care are copii de școală
+
+## Perioada concursului
+
+1 septembrie — 15 septembrie 2023. Câștigătorii vor fi anunțați pe 18 septembrie 2023.
+
+## Regulament oficial
+
+Pentru detalii complete, consultați regulamentul oficial disponibil pe site.`,
+    date: '2023-08-31',
+    author: 'Petra Pavaje',
+    category: 'Noutăți',
+    image: 'https://petrapavaje.ro/wp-content/uploads/Giveaway-Back-to-School-Petra-Pavaje-scaled.webp',
+    readTime: 3,
+  },
 ]
 
 export function BlogDetailPage() {
