@@ -11,7 +11,7 @@ export const productImages: Record<string, string> = {
   maya: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Maya.avif',
   roman: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Roman-1.avif',
   sahara: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Sahara.avif',
-  alpin: 'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-web.avif',
+  alpin: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-web.avif',
   pastel: 'https://petrapavaje.ro/wp-content/uploads/Pastel.avif',
   timber: 'https://petrapavaje.ro/wp-content/uploads/Timber.avif',
   terranova: 'https://petrapavaje.ro/wp-content/uploads/Terranova.avif',
@@ -99,12 +99,6 @@ export const productGalleryMap: Record<string, string[]> = {
     'https://petrapavaje.ro/wp-content/uploads/1.-Pastel-20-x-10-cm-Autumn-Large.avif',
     'https://petrapavaje.ro/wp-content/uploads/2.-Pastel-20-x-10-cm-Autumn-Large.avif',
     'https://petrapavaje.ro/wp-content/uploads/3.-Pastel-20-x-10-cm-Autumn-Large.avif',
-  ],
-  alpin: [
-    'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-web.avif',
-    'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-web1.avif',
-    'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-30-x-20-cm-alb-si-moka-produs-de-Petra-Pavaje-web2.avif',
-    'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-scaled.avif',
   ],
   stretto: [
     'https://petrapavaje.ro/wp-content/uploads/urbis-4.webp',
