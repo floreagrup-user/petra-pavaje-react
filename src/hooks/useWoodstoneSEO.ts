@@ -45,6 +45,21 @@ export function useWoodstoneSEO(category: WoodstoneCategory | undefined) {
       ),
     })
 
+    upsertJsonLd(
+      'faq-schema',
+      category.faq?.length
+        ? {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: category.faq.map((f) => ({
+              '@type': 'Question',
+              name: f.question,
+              acceptedAnswer: { '@type': 'Answer', text: f.answer },
+            })),
+          }
+        : null
+    )
+
     upsertJsonLd('breadcrumb-schema', {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',

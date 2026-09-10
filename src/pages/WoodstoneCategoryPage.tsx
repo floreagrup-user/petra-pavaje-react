@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Phone, ChevronLeft, ChevronRight, Check, ShieldCheck, Award, X } from 'lucide-react'
+import { Phone, ChevronLeft, ChevronRight, Check, ShieldCheck, Award, X, ChevronDown } from 'lucide-react'
 import { getWoodstoneCategoryBySlug } from '@/data/woodstone'
 import { useWoodstoneSEO } from '@/hooks/useWoodstoneSEO'
 
@@ -9,6 +9,7 @@ export function WoodstoneCategoryPage() {
   const { category: categorySlug } = useParams<{ category: string }>()
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [lightboxIndex, setLightboxIndex] = useState(0)
+  const [openFaq, setOpenFaq] = useState<number | null>(null)
 
   const category = getWoodstoneCategoryBySlug(categorySlug || '')
   useWoodstoneSEO(category)
@@ -247,6 +248,33 @@ export function WoodstoneCategoryPage() {
                     loading="lazy"
                   />
                 </button>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {category.faq && category.faq.length > 0 && (
+        <section className="py-12 md:py-16 bg-white">
+          <div className="container-premium">
+            <div className="text-center mb-10">
+              <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">Întrebări Frecvente</p>
+              <h2 className="heading-h2 text-charcoal-900">Tot ce trebuie să știi despre {category.title}</h2>
+            </div>
+            <div className="max-w-3xl mx-auto space-y-3">
+              {category.faq.map((item, idx) => (
+                <div key={item.question} className="bg-charcoal-50 rounded-xl border border-charcoal-100 overflow-hidden">
+                  <button
+                    onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                    className="w-full flex items-center justify-between gap-4 p-4 text-left"
+                  >
+                    <span className="font-medium text-charcoal-900">{item.question}</span>
+                    <ChevronDown className={`w-5 h-5 text-charcoal-400 shrink-0 transition-transform ${openFaq === idx ? 'rotate-180' : ''}`} />
+                  </button>
+                  {openFaq === idx && (
+                    <p className="px-4 pb-4 text-sm text-charcoal-600 leading-relaxed">{item.answer}</p>
+                  )}
+                </div>
               ))}
             </div>
           </div>

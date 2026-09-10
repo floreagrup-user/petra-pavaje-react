@@ -154,4 +154,5 @@ export interface WoodstoneCategory {
   technicalFeatures: string[]
   advantages: string[]
   usage: string[]
+  faq?: ProductFAQ[]
 }

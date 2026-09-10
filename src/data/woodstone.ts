@@ -81,6 +81,13 @@ export const woodstoneCategories: WoodstoneCategory[] = [
       'Ideal pentru terase și zone de relaxare',
     ],
     usage: ['Alei și Trotuare', 'Terase și Zone de Relaxare', 'Grădini Rezidențiale', 'Spații Publice'],
+    faq: [
+      { question: 'Ce este pavajul Woodstone Pavaj și din ce este realizat?', answer: 'Este un sistem de pavaje din beton vibropresat care reproduce aspectul autentic al lemnului — noduri, fibre și muchii tocite — combinând textura naturală a lemnului cu durabilitatea betonului.' },
+      { question: 'Câte variante de format sunt disponibile?', answer: 'Gama include 17 variante, împărțite în 4 grupe: plăci (3 variante), butuci (4 variante), scânduri (4 variante) și scândură maxi (6 variante), permițând peste 100 de combinații de amenajare.' },
+      { question: 'Este rezistent la îngheț?', answer: 'Da. Produsul este impregnat din fabrică cu un strat protector, iar fantele sunt deschise spre exterior pentru a permite expansiunea apei în cicluri de îngheț-dezgheț, fără deteriorarea suprafeței.' },
+      { question: 'Unde poate fi folosit pavajul Woodstone?', answer: 'Este recomandat pentru alei și trotuare, terase și zone de relaxare, grădini rezidențiale și spații publice.' },
+      { question: 'Există fișă tehnică pentru gama Pavaj Woodstone?', answer: 'Documentația tehnică poate fi solicitată direct de la reprezentanții Petra Pavaje pentru fiecare format din gamă.' },
+    ],
   },
   {
     slug: 'palisade-si-borduri',
@@ -159,6 +166,12 @@ export const woodstoneCategories: WoodstoneCategory[] = [
       'Gamă variată de dimensiuni, de la 25 cm la 250 cm',
     ],
     usage: ['Delimitare Alei și Trotuare', 'Ziduri de Sprijin Decorative', 'Marcare Straturi de Flori', 'Delimitare Gazon și Peluze'],
+    faq: [
+      { question: 'Ce diferență este între palisada grindă și palisada placă?', answer: 'Palisada grindă (24×15 cm secțiune) este masivă, gândită pentru garduri joase și ziduri de sprijin, în timp ce palisada placă (25×5 cm) este mai subțire, potrivită pentru delimitări ușoare de alei și straturi de flori.' },
+      { question: 'Câte variante sunt disponibile în gama Palisade și Borduri?', answer: 'Gama include 21 de variante: 18 palisade (grindă, placă și scândură, în lungimi de la 25 la 250 cm), 1 element de delimitare gazon și 2 tipuri de borduri (neregulată și regulată).' },
+      { question: 'Cum se montează palisadele?', answer: 'Palisadele grindă și placă se montează vertical, îngropate parțial în sol, pentru garduri joase sau ziduri de sprijin decorative; bordurile se montează la sol, de-a lungul aleilor sau peluzelor.' },
+      { question: 'Unde se folosesc de obicei palisadele și bordurile Woodstone?', answer: 'Sunt recomandate pentru delimitarea aleilor și trotuarelor, ziduri de sprijin decorative, marcarea straturilor de flori și delimitarea gazonului și a peluzelor.' },
+    ],
   },
   {
     slug: 'scari',
@@ -217,6 +230,12 @@ export const woodstoneCategories: WoodstoneCategory[] = [
       'Se asortează cu palisadele și pavajele Woodstone',
     ],
     usage: ['Intrări Case', 'Terase și Platforme', 'Grădini și Curți', 'Spații Comerciale'],
+    faq: [
+      { question: 'Ce diferență este între trepte și plăci-treaptă?', answer: 'Treptele (250×24×15 cm și mai mici) au o secțiune masivă, dedicată exclusiv treptelor; plăcile-treaptă (grosime 7 sau 8 cm) sunt mai subțiri și pot fi folosite atât ca trepte, cât și ca elemente de pavaj pentru platforme.' },
+      { question: 'Câte variante de scări sunt disponibile?', answer: 'Gama include 12 variante: 6 trepte (de la 50 la 250 cm lungime) și 6 plăci-treaptă (grosimi de 7 și 8 cm).' },
+      { question: 'Este suprafața scărilor antiderapantă?', answer: 'Da. Suprafața are texturi naturale de lemn care oferă aderență sporită, recomandată pentru intrări, terase și platforme unde siguranța la circulație este importantă.' },
+      { question: 'Unde se folosesc scările Woodstone?', answer: 'Sunt potrivite pentru intrări în case, terase și platforme, grădini și curți cu diferențe de nivel, precum și spații comerciale.' },
+    ],
   },
   {
     slug: 'garduri',
@@ -279,6 +298,12 @@ export const woodstoneCategories: WoodstoneCategory[] = [
       'Peste 100 de combinații posibile în gama Lemn Pietrificat',
     ],
     usage: ['Împrejmuire Proprietăți', 'Delimitare Grădini', 'Terenuri Denivelate', 'Zone Rezidențiale'],
+    faq: [
+      { question: 'De ce lungimea fizică a stâlpului este mai mare decât înălțimea gardului?', answer: 'Fiecare stâlp are, pe lângă înălțimea vizibilă (1,6 / 2 / 2,4 m), o porțiune suplimentară de 78 cm destinată îngropării în fundație, pentru stabilitate — de exemplu stâlpul de „2,4 m" are 318 cm lungime fizică totală.' },
+      { question: 'Câte modele de placă de gard sunt disponibile?', answer: 'Plăcile de gard sunt disponibile în 10 modele diferite, fiecare cu o combinație originală de nuanțe și accente negre, făcând fiecare gard inconfundabil.' },
+      { question: 'Ce tipuri de stâlpi există și în ce înălțimi?', answer: 'Sistemul are 3 poziții de stâlp (intermediar, de colț, de capăt) disponibile în 3 înălțimi nominale (1,6 m, 2 m și 2,4 m) — în total 9 variante de stâlpi.' },
+      { question: 'Ce accesorii completează sistemul de garduri?', answer: 'Sistemul se completează cu inserție în stâlp, capac de gard și capac de stâlp, pentru o închidere estetică și protejarea muchiilor superioare.' },
+    ],
   },
   {
     slug: 'banci-si-mese',
@@ -338,6 +363,12 @@ export const woodstoneCategories: WoodstoneCategory[] = [
       'Disponibile în variante de bancă și masă asortate',
     ],
     usage: ['Grădini Private', 'Terase și Curți', 'Parcuri și Spații Verzi', 'Zone de Relaxare'],
+    faq: [
+      { question: 'Ce diferență este între băncile scândură și băncile grindă?', answer: 'Băncile scândură au blatul așezat pe picioare masive separate, în timp ce băncile grindă sunt dintr-o singură piesă compactă, mai robustă și mai grea.' },
+      { question: 'Câte variante de bănci și mese sunt disponibile?', answer: 'Gama include 10 variante: 3 bănci scândură, 4 bănci grindă și 3 mese, în lungimi de la 100 la 250 cm.' },
+      { question: 'Sunt mesele asortate cu băncile?', answer: 'Da. Mesele păstrează aceeași textură naturală de lemn pietrificat și aceleași lungimi (100, 150 și 200/250 cm), pentru un ansamblu vizual unitar.' },
+      { question: 'Necesită întreținere periodică?', answer: 'Nu. Lemnul pietrificat este tratat industrial și impregnat din fabrică cu un strat protector, fără a necesita vopsire sau tratamente ulterioare.' },
+    ],
   },
   {
     slug: 'jardiniere-inaltate',
@@ -395,6 +426,12 @@ export const woodstoneCategories: WoodstoneCategory[] = [
       'Extensibile cu seturile de prelungire',
     ],
     usage: ['Grădini și Curți', 'Terase și Balcoane', 'Zone de Accent', 'Grădini de Legume'],
+    faq: [
+      { question: 'Ce este gama Kompakt și cu ce se diferențiază?', answer: 'Kompakt este o gamă nouă în 2026, cu 4 variante într-un format mai compact (200×100 sau 100×100 cm) față de jardinierele standard, ideală pentru spații mai mici — terase și balcoane.' },
+      { question: 'Se pot extinde jardinierele existente?', answer: 'Da. Seturile de prelungire (40 și 80 cm înălțime) permit mărirea unei jardiniere existente fără a cumpăra o unitate complet nouă.' },
+      { question: 'Câte variante de jardiniere sunt disponibile?', answer: 'Gama include 10 variante: 4 jardiniere înălțate standard, 2 seturi de prelungire și 4 variante Kompakt (noi în 2026).' },
+      { question: 'Este înălțimea potrivită pentru grădinărit fără efort?', answer: 'Da. Înălțimile disponibile (40, 80 și 90 cm) sunt gândite ergonomic, pentru a evita aplecarea la lucrul cu plantele.' },
+    ],
   },
   {
     slug: 'elemente-lemn-pietrificat',
@@ -451,6 +488,12 @@ export const woodstoneCategories: WoodstoneCategory[] = [
       'Rezistente la umiditate constantă (margini de piscină)',
     ],
     usage: ['Grădini și Curți', 'Piscine și Zone de Agrement', 'Spații Publice', 'Amenajări Complete'],
+    faq: [
+      { question: 'Ce produse include gama Alte Elemente?', answer: 'Gama include 9 variante: 3 modele de ghivece, 3 tipuri de margini de piscină (dreaptă, colț interior, colț exterior) și 3 elemente diverse — placă, rigolă și coș de gunoi cu inserție galvanizată.' },
+      { question: 'Rezistă marginile de piscină la umiditate constantă?', answer: 'Da. Sunt fabricate din beton impregnat cu strat protector, rezistent la contactul continuu cu apa și la ciclurile de îngheț-dezgheț specifice zonelor de piscină.' },
+      { question: 'La ce se folosește rigola din gamă?', answer: 'Rigola (80×24×8 cm) este destinată scurgerii apei, completând amenajările de pavaj Woodstone în zonele unde este necesară drenarea suprafeței.' },
+      { question: 'Se asortează aceste elemente cu restul gamei Woodstone?', answer: 'Da. Toate piesele păstrează aceeași textură de lemn pietrificat ca pavajele, palisadele și gardurile Woodstone, pentru un aspect unitar al amenajării.' },
+    ],
   },
 ]
 
