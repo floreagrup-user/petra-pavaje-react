@@ -153,7 +153,7 @@ export function ProductDetailPage() {
                     ? 'bg-brand-100 text-brand-700'
                     : 'bg-charcoal-100 text-charcoal-700'
                 }`}>
-                  PAVAJ PREMIUM
+                  {product.category === 'premium' ? 'PAVAJ PREMIUM' : 'PAVAJ STANDARD'}
                 </span>
                 <span className="flex items-center gap-1 px-3 py-1 text-xs font-medium rounded-full bg-stone-100 text-charcoal-700">
                   <BadgeCheck className="w-3 h-3" />
