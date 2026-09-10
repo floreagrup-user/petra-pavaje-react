@@ -6,6 +6,12 @@
 # the WordPress origin, only reads (curl GET) from it.
 set -euo pipefail
 
+# Credentials for the correct Cloudflare account (Florea Grup, owner of the
+# actual petra-pavaje-react Pages project + this R2 bucket). Token lives
+# outside the repo, never committed.
+export CLOUDFLARE_API_TOKEN="$(cat "$HOME/.cloudflare-floreagrup-token")"
+export CLOUDFLARE_ACCOUNT_ID="8458cbd7f9721a7e58194ef910aaddf2"
+
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 MANIFEST="$REPO_ROOT/scripts/.r2-manifest.txt"
 BUCKET="petra-pavaje-media"

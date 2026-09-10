@@ -82,6 +82,7 @@
 14.-Mistic-MIX-7.9-gri-bazaltic-Large.avif
 14.-Relief-40-x-40-cm-gri-calcar-Large.avif
 14.-Roca-60x30-cm-gri-antic-Large.avif
+1403-Pavele-GEMINA-MIX-6.72-negru-AR-rev0.pdf
 1413-Pavele-ROCA-MIX-6.30-gri-antic-cu-cant-rev0-AB-1.pdf
 1488-dale-GRAND-URBAN-100x50x8-gri-antic-microcant-rev-0-AB.pdf
 1489-dale-GRAND-URBAN-100x50x8-moka-microcant-rev-0-AB.pdf
@@ -431,7 +432,6 @@
 9.avif
 Alpin-30x20x6-alb.avif
 Anti-eflorescenta.avif
-Antic-MIX-6.72-gri-antic-1-Medium.avif
 Antic-antichizat-Petra-Pavaje-Alei-scaled.avif
 Antic.avif
 Bordura-40x15x20.avif
@@ -456,6 +456,9 @@ Declarat%CC%A6ie-de-performant%CC%A6a%CC%86-1315-Pavele-ANTICHIZAT-10x10x6-gri-a
 Declarat%CC%A6ie-de-performant%CC%A6a%CC%86-1316-Pavele-ANTICHIZAT-20x10x6-gri-antic-ANTICHIZAT-rev0-PH-Petra-Pavaje.pdf
 Declarat%CC%A6ie-de-performant%CC%A6a%CC%86-1317-Pavele-ANTICHIZAT-20x20x6-gri-antic-ANTICHIZAT-rev0-PH-Petra-Pavaje.pdf
 Declarat%CC%A6ie-de-performant%CC%A6a%CC%86-1318-Pavele-ANTICHIZAT-MIX-6.72-gri-antic-ANTICHIZAT-rev0-PH-Petra-Pavaje.pdf
+Declarat%CC%A6ie-de-performant%CC%A6a%CC%86-1319-Pavele-GEMINA-MIX-6.72-alb-rev0-AB-Petra-Pavaje.pdf
+Declarat%CC%A6ie-de-performant%CC%A6a%CC%86-1384-Pavele-GEMINA-MIX-6.72-caramel-rev0-AB-Petra-Pavaje.pdf
+Declarat%CC%A6ie-de-performant%CC%A6a%CC%86-1385-Pavele-GEMINA-MIX-6.72-brun-rev0-AB-Petra-Pavaje.pdf
 Fotografie-oficiala-Alpin-30-x-20-cm-alb-si-moka-produs-de-Petra-Pavaje-scaled.avif
 Fotografie-oficiala-Alpin-30-x-20-cm-alb-si-moka-produs-de-Petra-Pavaje-web2.avif
 Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-1-scaled.avif
@@ -535,6 +538,7 @@ Modele-de-montaj_Mix-4.4-02.avif
 Modele-de-montaj_Mix-4.4-03.avif
 Modele-de-montaj_Mix-4.4-04.avif
 Modele-de-montaj_Mix-6.72-01.avif
+Modele-de-montaj_Mix-6.72-02.avif
 Modele-de-montaj_Mix-6.72-03.avif
 Modele-de-montaj_Mix-6.72-04.avif
 Pastel-MIX-6.30-Winter-web.avif
@@ -643,13 +647,12 @@ culoare-verde-smarald-web-2.avif
 culoare-winter-1.webp
 curte_petra_pavaje.avif
 energie-verde-si-emsii-0-web1-1.avif
-errors.log
 fabrica-ploiesti-petra-pavaje.webp
-failed.log
 fisa-tehnica-ANTIC-10X10X6.pdf
 fisa-tehnica-ANTIC-20X10X6.pdf
 fisa-tehnica-ANTIC-20X20X6.pdf
 fisa-tehnica-ANTIC-MIX-6.72.pdf
+fisa-tehnica-GEMINA-MIX-6.72-Petra-Pavaje.pdf
 fisa-tehnica-GRAND-URBAN-100x50x8-microcant.pdf
 fisa-tehnica-GRAND-URBAN-MIX-4.4-fara-cant.pdf
 flux-integrat-productie-Evo-Green.avif
@@ -714,9 +717,3 @@ web-Gemina-maro-si-galben-Medium.avif
 web-prima-pagina-1-Medium.avif
 web-prima-pagina-2-Medium.avif
 woodstoone-Medium.avif
-1403-Pavele-GEMINA-MIX-6.72-negru-AR-rev0.pdf
-Declarat%CC%A6ie-de-performant%CC%A6a%CC%86-1319-Pavele-GEMINA-MIX-6.72-alb-rev0-AB-Petra-Pavaje.pdf
-Declarat%CC%A6ie-de-performant%CC%A6a%CC%86-1384-Pavele-GEMINA-MIX-6.72-caramel-rev0-AB-Petra-Pavaje.pdf
-Declarat%CC%A6ie-de-performant%CC%A6a%CC%86-1385-Pavele-GEMINA-MIX-6.72-brun-rev0-AB-Petra-Pavaje.pdf
-Modele-de-montaj_Mix-6.72-02.avif
-fisa-tehnica-GEMINA-MIX-6.72-Petra-Pavaje.pdf
