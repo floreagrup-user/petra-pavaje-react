@@ -6,7 +6,7 @@ export const productImages: Record<string, string> = {
   gemina: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Gemina.avif',
   cubic: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Cubic-MIX-7.25-gri-antic-web.avif',
   mistic: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Mistic-1.avif',
-  mediterana: 'https://petrapavaje.ro/wp-content/uploads/Mediterana.avif',
+  mediterana: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Mediterana.avif',
   viena: 'https://petrapavaje.ro/wp-content/uploads/Viena.avif',
   maya: 'https://petrapavaje.ro/wp-content/uploads/Maya.avif',
   roman: 'https://petrapavaje.ro/wp-content/uploads/Roman-1.avif',
