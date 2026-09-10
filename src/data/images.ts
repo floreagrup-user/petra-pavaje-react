@@ -1,10 +1,10 @@
 export const productImages: Record<string, string> = {
-  roca: 'https://petrapavaje.ro/wp-content/uploads/Roca.avif',
-  antic: 'https://petrapavaje.ro/wp-content/uploads/Antic.avif',
-  primo: 'https://petrapavaje.ro/wp-content/uploads/primo-rosu-2-web.avif',
-  'grand-urban': 'https://petrapavaje.ro/wp-content/uploads/Grand-Urban.avif',
-  gemina: 'https://petrapavaje.ro/wp-content/uploads/Gemina.avif',
-  cubic: 'https://petrapavaje.ro/wp-content/uploads/Cubic-MIX-7.25-gri-antic-web.avif',
+  roca: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Roca.avif',
+  antic: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Antic.avif',
+  primo: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/primo-rosu-2-web.avif',
+  'grand-urban': 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Grand-Urban.avif',
+  gemina: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Gemina.avif',
+  cubic: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Cubic-MIX-7.25-gri-antic-web.avif',
   mistic: 'https://petrapavaje.ro/wp-content/uploads/Mistic-1.avif',
   mediterana: 'https://petrapavaje.ro/wp-content/uploads/Mediterana.avif',
   viena: 'https://petrapavaje.ro/wp-content/uploads/Viena.avif',
@@ -28,24 +28,6 @@ export const productImages: Record<string, string> = {
 }
 
 export const productGalleryMap: Record<string, string[]> = {
-  gemina: [
-    'https://petrapavaje.ro/wp-content/uploads/1.-Gemina-MIX-6.72-alb-negru-Large.avif',
-    'https://petrapavaje.ro/wp-content/uploads/2.-Gemina-MIX-6.72-alb-negru-Large.avif',
-    'https://petrapavaje.ro/wp-content/uploads/3.-Gemina-MIX-6.72-alb-negru-Large.avif',
-    'https://petrapavaje.ro/wp-content/uploads/4.-Gemina-MIX-6.72-alb-negru-Large.avif',
-    'https://petrapavaje.ro/wp-content/uploads/5.-Gemina-MIX-6.72-negru-Large.avif',
-    'https://petrapavaje.ro/wp-content/uploads/6.-Gemina-MIX-6.72-negru-Large.avif',
-    'https://petrapavaje.ro/wp-content/uploads/7.-Gemina-MIX-6.72-negru-Large.avif',
-    'https://petrapavaje.ro/wp-content/uploads/8.-Gemina-MIX-6.72-negru-Large.avif',
-    'https://petrapavaje.ro/wp-content/uploads/9.-Gemina-MIX-6.72-alb-negru-Large.avif',
-    'https://petrapavaje.ro/wp-content/uploads/10.-Gemina-MIX-6.72-alb-Large.avif',
-    'https://petrapavaje.ro/wp-content/uploads/11.-Gemina-MIX-6.72-alb-negru-Large.avif',
-    'https://petrapavaje.ro/wp-content/uploads/11.-Gemina-MIX-6.72-caramel-brun-Large.avif',
-    'https://petrapavaje.ro/wp-content/uploads/12.-Gemina-MIX-6.72-alb-brun-Large.avif',
-    'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Gemina-MIX-6.72-alb-brun-produs-de-Petra-Pavaje-web.avif',
-    'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Gemina-alb-MIX-6.72-Produs-de-Petra-Pavaje-web1.avif',
-    'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Gemina-alb-MIX-6.72-produs-de-Petra-Pavaje-web.avif',
-  ],
   mistic: [
     'https://petrapavaje.ro/wp-content/uploads/1.-Mistic-MIX-6.30-gri-grafit-Large.avif',
     'https://petrapavaje.ro/wp-content/uploads/1.-Mistic-MIX-6.6-gri-verzui-Large.avif',
