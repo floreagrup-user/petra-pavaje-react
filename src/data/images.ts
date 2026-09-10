@@ -23,8 +23,8 @@ export const productImages: Record<string, string> = {
   quatro: 'https://petrapavaje.ro/wp-content/uploads/1.-Quatro-20-x-20-cm-gri.avif',
   con: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/1.-Con-10-x-97-cm-alb-si-gri-Large-1.avif',
   'pavaje-eco': 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/1.-Grila-60-x-40-x-10-cm-gri.avif',
-  stretto: 'https://petrapavaje.ro/wp-content/uploads/urbis-2.webp',
-  urbis: 'https://petrapavaje.ro/wp-content/uploads/urbis-2.webp',
+  stretto: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/stretto2-scaled.avif',
+  urbis: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/stretto2-scaled.avif',
 }
 
 export const productGalleryMap: Record<string, string[]> = {
@@ -38,13 +38,5 @@ export const productGalleryMap: Record<string, string[]> = {
     'https://petrapavaje.ro/wp-content/uploads/7.-Quatro-20-x-20-cm-negru.avif',
     'https://petrapavaje.ro/wp-content/uploads/8.-Quatro-20-x-20-cm-negru-si-gri.avif',
     'https://petrapavaje.ro/wp-content/uploads/9.-Quatro-20-x-20-cm-gri.avif',
-  ],
-  stretto: [
-    'https://petrapavaje.ro/wp-content/uploads/urbis-4.webp',
-    'https://petrapavaje.ro/wp-content/uploads/urbis-5.webp',
-    'https://petrapavaje.ro/wp-content/uploads/urbis-6.webp',
-    'https://petrapavaje.ro/wp-content/uploads/urbis-7.webp',
-    'https://petrapavaje.ro/wp-content/uploads/urbis-9.webp',
-    'https://petrapavaje.ro/wp-content/uploads/urbis-8.webp',
   ],
 }
