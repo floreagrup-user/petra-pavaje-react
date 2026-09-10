@@ -108,6 +108,36 @@ export function ProductDetailPage() {
                   ))}
                 </div>
               )}
+
+              {product.dimensionsList && product.dimensionsList.length > 0 && (
+                <div className="mt-6">
+                  <h3 className="text-sm font-semibold text-charcoal-900 mb-3">Dimensiuni și Ambalare</h3>
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="border-b border-charcoal-200">
+                          <th className="text-left py-2 pr-4 font-medium text-charcoal-500">Dimensiuni</th>
+                          <th className="text-right py-2 px-2 font-medium text-charcoal-500">Buc/MP</th>
+                          <th className="text-right py-2 px-2 font-medium text-charcoal-500">Buc/Palet</th>
+                          <th className="text-right py-2 px-2 font-medium text-charcoal-500">Kg/Palet</th>
+                          <th className="text-right py-2 pl-2 font-medium text-charcoal-500">MP/Palet</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {product.dimensionsList.map((dim) => (
+                          <tr key={dim.label} className="border-b border-charcoal-100">
+                            <td className="py-2 pr-4 font-medium text-charcoal-900">{dim.label}</td>
+                            <td className="text-right py-2 px-2 text-charcoal-600">{dim.piecesPerMp}</td>
+                            <td className="text-right py-2 px-2 text-charcoal-600">{dim.piecesPerPallet}</td>
+                            <td className="text-right py-2 px-2 text-charcoal-600">{dim.kgPerPallet.toLocaleString()}</td>
+                            <td className="text-right py-2 pl-2 text-charcoal-600">{dim.mpPerPallet}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              )}
             </div>
 
             <motion.div
@@ -234,36 +264,6 @@ export function ProductDetailPage() {
                       </li>
                     ))}
                   </ul>
-                </div>
-              )}
-
-              {product.dimensionsList && product.dimensionsList.length > 0 && (
-                <div className="mb-6">
-                  <h3 className="text-sm font-semibold text-charcoal-900 mb-3">Dimensiuni și Ambalare</h3>
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-sm">
-                      <thead>
-                        <tr className="border-b border-charcoal-200">
-                          <th className="text-left py-2 pr-4 font-medium text-charcoal-500">Dimensiuni</th>
-                          <th className="text-right py-2 px-2 font-medium text-charcoal-500">Buc/MP</th>
-                          <th className="text-right py-2 px-2 font-medium text-charcoal-500">Buc/Palet</th>
-                          <th className="text-right py-2 px-2 font-medium text-charcoal-500">Kg/Palet</th>
-                          <th className="text-right py-2 pl-2 font-medium text-charcoal-500">MP/Palet</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {product.dimensionsList.map((dim) => (
-                          <tr key={dim.label} className="border-b border-charcoal-100">
-                            <td className="py-2 pr-4 font-medium text-charcoal-900">{dim.label}</td>
-                            <td className="text-right py-2 px-2 text-charcoal-600">{dim.piecesPerMp}</td>
-                            <td className="text-right py-2 px-2 text-charcoal-600">{dim.piecesPerPallet}</td>
-                            <td className="text-right py-2 px-2 text-charcoal-600">{dim.kgPerPallet.toLocaleString()}</td>
-                            <td className="text-right py-2 pl-2 text-charcoal-600">{dim.mpPerPallet}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
                 </div>
               )}
 
