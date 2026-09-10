@@ -20,23 +20,10 @@ export const productImages: Record<string, string> = {
   holland: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/2.-Holland-20-x-10-cm-galben-si-maro.avif',
   autobloc: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/1.-Autobloc-20-x-165-cm-rosu-si-gri.avif',
   unda: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/1.-Unda-225-x-112-cm-rosu-si-gri.avif',
-  quatro: 'https://petrapavaje.ro/wp-content/uploads/1.-Quatro-20-x-20-cm-gri.avif',
   con: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/1.-Con-10-x-97-cm-alb-si-gri-Large-1.avif',
   'pavaje-eco': 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/1.-Grila-60-x-40-x-10-cm-gri.avif',
   stretto: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/stretto2-scaled.avif',
   urbis: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/stretto2-scaled.avif',
 }
 
-export const productGalleryMap: Record<string, string[]> = {
-  quatro: [
-    'https://petrapavaje.ro/wp-content/uploads/1.-Quatro-20-x-20-cm-gri.avif',
-    'https://petrapavaje.ro/wp-content/uploads/2.-Quatro-20-x-20-cm-gri-si-negru.avif',
-    'https://petrapavaje.ro/wp-content/uploads/3.-Quatro-20-x-20-cm-gri.avif',
-    'https://petrapavaje.ro/wp-content/uploads/4.-Quatro-20-x-20-cm-negru.avif',
-    'https://petrapavaje.ro/wp-content/uploads/5.-Quatro-20-x-20-cm-negru.avif',
-    'https://petrapavaje.ro/wp-content/uploads/6.-Quatro-20-x-20-cm-negru.avif',
-    'https://petrapavaje.ro/wp-content/uploads/7.-Quatro-20-x-20-cm-negru.avif',
-    'https://petrapavaje.ro/wp-content/uploads/8.-Quatro-20-x-20-cm-negru-si-gri.avif',
-    'https://petrapavaje.ro/wp-content/uploads/9.-Quatro-20-x-20-cm-gri.avif',
-  ],
-}
+export const productGalleryMap: Record<string, string[]> = {}
