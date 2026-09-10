@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Download, Phone, ChevronLeft, ChevronRight, Ruler, Weight, BadgeCheck, X, Check, ShieldCheck, Award, FileText, ChevronDown } from 'lucide-react'
 import { getProductBySlug, getProductsByCategory } from '@/data/products'
 import { productImages, productGalleryMap } from '@/data/images'
+import { useProductSEO } from '@/hooks/useProductSEO'
 
 export function ProductDetailPage() {
   const { product: productSlug } = useParams<{ product: string }>()
@@ -15,6 +16,7 @@ export function ProductDetailPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
   const product = getProductBySlug(productSlug || '')
+  useProductSEO(product)
   const images = product?.gallery?.length ? product.gallery : (productGalleryMap[productSlug || ''] || [])
   const heroImages = product?.heroImages || images.slice(0, 3)
   const relatedProducts = product ? getProductsByCategory(product.category).filter(p => p.id !== product.id).slice(0, 4) : []
