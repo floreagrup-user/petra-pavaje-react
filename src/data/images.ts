@@ -14,7 +14,7 @@ export const productImages: Record<string, string> = {
   alpin: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-web.avif',
   pastel: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Pastel.avif',
   timber: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Timber.avif',
-  terranova: 'https://petrapavaje.ro/wp-content/uploads/Terranova.avif',
+  terranova: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Terranova.avif',
   dacic: 'https://petrapavaje.ro/wp-content/uploads/pavaj-Dacic.avif',
   relief: 'https://petrapavaje.ro/wp-content/uploads/Relief.avif',
   holland: 'https://petrapavaje.ro/wp-content/uploads/2.-Holland-20-x-10-cm-galben-si-maro.avif',
