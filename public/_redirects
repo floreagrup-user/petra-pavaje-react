@@ -4,6 +4,7 @@
 # Product category redirects
 /pavaje-premium/* /produse/pavaje-premium/* 301
 /pavaje-standard/* /produse/pavaje-standard/* 301
+/woodstone-lemn-pietrificat/* /produse/woodstone/* 301
 /borduri-2/* /produse/elemente/borduri/* 301
 /boltari/* /produse/elemente/boltari/* 301
 /garduri-2/* /produse/elemente/garduri/* 301

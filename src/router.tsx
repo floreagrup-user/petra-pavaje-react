@@ -27,6 +27,7 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <Suspense><HomePage /></Suspense> },
       { path: 'produse/woodstone', element: <Suspense><WoodstonePage /></Suspense> },
+      { path: 'produse/woodstone/:category', element: <Suspense><WoodstoneCategoryPage /></Suspense> },
       { path: 'produse/:category', element: <Suspense><ProductCategoryPage /></Suspense> },
       { path: 'produse/:category/:product', element: <Suspense><ProductDetailPage /></Suspense> },
       { path: 'woodstone-lemn-pietrificat', element: <Suspense><WoodstonePage /></Suspense> },

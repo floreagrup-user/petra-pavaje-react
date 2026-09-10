@@ -8,7 +8,7 @@ export function useWoodstoneSEO(category: WoodstoneCategory | undefined) {
 
     const title = `${category.title} - Woodstone Lemn Pietrificat | ${SEO_SITE_NAME}`
     const description = `${category.shortDescription}. ${category.description}`.slice(0, 300)
-    const url = `${window.location.origin}/woodstone-lemn-pietrificat/${category.slug}`
+    const url = `${window.location.origin}/produse/woodstone/${category.slug}`
     const image = category.gallery?.[0] || category.image
 
     document.title = title
@@ -50,7 +50,7 @@ export function useWoodstoneSEO(category: WoodstoneCategory | undefined) {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
-        { '@type': 'ListItem', position: 2, name: 'Woodstone', item: `${window.location.origin}/woodstone-lemn-pietrificat` },
+        { '@type': 'ListItem', position: 2, name: 'Woodstone', item: `${window.location.origin}/produse/woodstone` },
         { '@type': 'ListItem', position: 3, name: category.title, item: url },
       ],
     })

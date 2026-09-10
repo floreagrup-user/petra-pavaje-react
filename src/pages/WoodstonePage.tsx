@@ -223,7 +223,7 @@ export function WoodstonePage() {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
               >
                 <Link
-                  to={`/woodstone-lemn-pietrificat/${cat.slug}`}
+                  to={`/produse/woodstone/${cat.slug}`}
                   className="group block relative rounded-2xl overflow-hidden bg-charcoal-100"
                   style={{ aspectRatio: '4/5' }}
                 >
@@ -261,7 +261,7 @@ export function WoodstonePage() {
                 transition={{ duration: 0.4, delay: (i + 4) * 0.1 }}
               >
                 <Link
-                  to={`/woodstone-lemn-pietrificat/${cat.slug}`}
+                  to={`/produse/woodstone/${cat.slug}`}
                   className="group block relative rounded-2xl overflow-hidden bg-charcoal-100"
                   style={{ aspectRatio: '4/5' }}
                 >

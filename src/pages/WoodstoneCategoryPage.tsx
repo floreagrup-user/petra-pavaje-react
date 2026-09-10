@@ -35,7 +35,7 @@ export function WoodstoneCategoryPage() {
       <div className="pt-32 pb-16 text-center">
         <h1 className="heading-h1 text-charcoal-900 mb-4">Categorie negăsită</h1>
         <p className="text-charcoal-500 mb-8">Categoria Woodstone pe care o cauți nu există.</p>
-        <Link to="/woodstone-lemn-pietrificat" className="btn-primary">Înapoi la Woodstone</Link>
+        <Link to="/produse/woodstone" className="btn-primary">Înapoi la Woodstone</Link>
       </div>
     )
   }
@@ -47,7 +47,7 @@ export function WoodstoneCategoryPage() {
           <nav className="flex items-center gap-2 text-sm text-charcoal-400">
             <Link to="/" className="hover:text-white transition-colors">Acasă</Link>
             <span>/</span>
-            <Link to="/woodstone-lemn-pietrificat" className="hover:text-white transition-colors">Woodstone</Link>
+            <Link to="/produse/woodstone" className="hover:text-white transition-colors">Woodstone</Link>
             <span>/</span>
             <span className="text-white">{category.title}</span>
           </nav>
