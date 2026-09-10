@@ -15,7 +15,7 @@ export function ProductDetailPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
   const product = getProductBySlug(productSlug || '')
-  const images = productGalleryMap[productSlug || ''] || product?.gallery || []
+  const images = product?.gallery?.length ? product.gallery : (productGalleryMap[productSlug || ''] || [])
   const heroImages = product?.heroImages || images.slice(0, 3)
   const relatedProducts = product ? getProductsByCategory(product.category).filter(p => p.id !== product.id).slice(0, 4) : []
 
