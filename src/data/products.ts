@@ -2579,6 +2579,9 @@ export const products: Product[] = [
     usage: ['Ghidare orientare', 'Spații publice', 'Stații edilitare', 'Trecere de pietoni'],
     technicalFeatures: ['Ghidare pentru persoane cu deficiențe de vedere', 'Textură standardizată în relief', 'Trafic pietonal', 'Rezistență la îngheț', 'Color Lock'],
     advantages: ['Textură puncte/linii conform standardelor', 'Montaj integrat în pavajul obișnuit', 'Rezistență și durabilitate din beton vibropresat', 'Garanție 5 ani'],
+    documents: [
+      { label: 'Quatro Tactil cu linii 20×20×6 cm', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-QUATRO-20x20x6-cu-cant-TACTIL-cu-linii-Petra-Pavaje.pdf' },
+    ],
     faq: [
       { question: 'Ce rol au dalele tactile Quatro Tactil?', answer: 'Dalele tactile sunt destinate ghidării și informării persoanelor cu deficiențe de vedere. Textura în relief aplicată pe trotuare, stații și treceri de pietoni semnalează schimbarea direcției sau prezența unor zone de pericol.' },
       { question: 'Care este diferența dintre dala cu puncte și cea cu linii?', answer: 'Dala cu puncte semnalează atenție sau pericol (așezare la treceri, la marginea platformelor), în timp ce dala cu linii indică direcția sigură de deplasare. Ambele se combină pentru trasee de orientare complete.' },
@@ -2971,6 +2974,7 @@ export const products: Product[] = [
     documents: [
       { label: 'Grila 40×40×8 cm (cu cant)', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-GRILA-40x40x8-cu-cant-Petra-Pavaje.pdf' },
       { label: 'Grila 60×40×10 cm (cu cant)', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-GRILA-60x40x10-cu-cant-Petra-Pavaje-1.pdf' },
+      { label: 'Quatro Eco 20×20×8 cm (cu cant)', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-QUATRO-ECO-20x20x8-cu-cant-rev1.pdf' },
     ],
     faq: [
       { question: 'Ce sunt pavajele ECO Petra Pavaje?', answer: 'Sunt soluții permeabile concepute pentru a permite creșterea vegetației (iarbă) prin golurile dalei sau grilajului, contribuind la încetinirea scurgerii apei de ploaie și la un aspect natural al amenajării.' },
