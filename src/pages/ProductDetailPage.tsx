@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Download, Phone, ChevronLeft, ChevronRight, Ruler, Weight, BadgeCheck, X, Check } from 'lucide-react'
+import { Download, Phone, ChevronLeft, ChevronRight, Ruler, Weight, BadgeCheck, X, Check, ShieldCheck, Award, FileText, ChevronDown } from 'lucide-react'
 import { getProductBySlug, getProductsByCategory } from '@/data/products'
 import { productImages, productGalleryMap } from '@/data/images'
 
@@ -12,6 +12,7 @@ export function ProductDetailPage() {
   const [lightboxIndex, setLightboxIndex] = useState(0)
   const [showAllGallery, setShowAllGallery] = useState(false)
   const [showAllPatterns, setShowAllPatterns] = useState(false)
+  const [openFaq, setOpenFaq] = useState<number | null>(null)
 
   const product = getProductBySlug(productSlug || '')
   const images = productGalleryMap[productSlug || ''] || product?.gallery || []
@@ -202,6 +203,40 @@ export function ProductDetailPage() {
                 </div>
               </div>
 
+              {product.technicalFeatures && product.technicalFeatures.length > 0 && (
+                <div className="mb-6">
+                  <h3 className="text-sm font-semibold text-charcoal-900 mb-3 flex items-center gap-2">
+                    <ShieldCheck className="w-4 h-4 text-brand-600" />
+                    Caracteristici tehnice
+                  </h3>
+                  <ul className="grid sm:grid-cols-2 gap-2">
+                    {product.technicalFeatures.map((f) => (
+                      <li key={f} className="flex items-start gap-2 text-sm text-charcoal-600">
+                        <Check className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {product.advantages && product.advantages.length > 0 && (
+                <div className="mb-6">
+                  <h3 className="text-sm font-semibold text-charcoal-900 mb-3 flex items-center gap-2">
+                    <Award className="w-4 h-4 text-brand-600" />
+                    Avantaje
+                  </h3>
+                  <ul className="space-y-2">
+                    {product.advantages.map((a) => (
+                      <li key={a} className="flex items-start gap-2 text-sm text-charcoal-600">
+                        <Check className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
+                        {a}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               {product.dimensionsList && product.dimensionsList.length > 0 && (
                 <div className="mb-6">
                   <h3 className="text-sm font-semibold text-charcoal-900 mb-3">Dimensiuni și Ambalare</h3>
@@ -292,6 +327,43 @@ export function ProductDetailPage() {
         </section>
       )}
 
+      {product.documents && product.documents.length > 0 && (
+        <section className="py-12 md:py-16 bg-white">
+          <div className="container-premium">
+            <div className="text-center mb-10">
+              <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">Documente Produs</p>
+              <h2 className="heading-h2 text-charcoal-900">Fișe Tehnice și Declarații de Performanță</h2>
+            </div>
+            <div className="max-w-3xl mx-auto divide-y divide-charcoal-100 border border-charcoal-100 rounded-xl overflow-hidden">
+              {product.documents.map((doc) => (
+                <div key={doc.label} className="flex flex-wrap items-center justify-between gap-3 p-4 bg-white">
+                  <div>
+                    <p className="font-medium text-charcoal-900">{doc.label}</p>
+                    {doc.productCode && (
+                      <p className="text-xs text-charcoal-500">cod produs {doc.productCode}</p>
+                    )}
+                  </div>
+                  <div className="flex gap-2">
+                    {doc.datasheetUrl && (
+                      <a href={doc.datasheetUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-charcoal-100 text-charcoal-700 text-xs font-medium rounded-lg hover:bg-charcoal-200 transition-colors">
+                        <FileText className="w-3.5 h-3.5" />
+                        Fișă tehnică
+                      </a>
+                    )}
+                    {doc.declarationUrl && (
+                      <a href={doc.declarationUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-charcoal-100 text-charcoal-700 text-xs font-medium rounded-lg hover:bg-charcoal-200 transition-colors">
+                        <FileText className="w-3.5 h-3.5" />
+                        Declarație UE
+                      </a>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {images.length > 3 && (
         <section id="galerie" className="py-12 md:py-16 bg-charcoal-50">
           <div className="container-premium">
@@ -364,6 +436,33 @@ export function ProductDetailPage() {
                 </button>
               </div>
             )}
+          </div>
+        </section>
+      )}
+
+      {product.faq && product.faq.length > 0 && (
+        <section className="py-12 md:py-16 bg-charcoal-50">
+          <div className="container-premium">
+            <div className="text-center mb-10">
+              <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">Întrebări Frecvente</p>
+              <h2 className="heading-h2 text-charcoal-900">Tot ce trebuie să știi despre {product.name}</h2>
+            </div>
+            <div className="max-w-3xl mx-auto space-y-3">
+              {product.faq.map((item, idx) => (
+                <div key={item.question} className="bg-white rounded-xl border border-charcoal-100 overflow-hidden">
+                  <button
+                    onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                    className="w-full flex items-center justify-between gap-4 p-4 text-left"
+                  >
+                    <span className="font-medium text-charcoal-900">{item.question}</span>
+                    <ChevronDown className={`w-5 h-5 text-charcoal-400 shrink-0 transition-transform ${openFaq === idx ? 'rotate-180' : ''}`} />
+                  </button>
+                  {openFaq === idx && (
+                    <p className="px-4 pb-4 text-sm text-charcoal-600 leading-relaxed">{item.answer}</p>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       )}

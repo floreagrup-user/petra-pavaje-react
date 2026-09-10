@@ -20,6 +20,22 @@ export interface Product {
   heroFeatures?: string[]
   patternImages?: string[]
   dimensionImages?: string[]
+  technicalFeatures?: string[]
+  advantages?: string[]
+  faq?: ProductFAQ[]
+  documents?: ProductDocument[]
+}
+
+export interface ProductFAQ {
+  question: string
+  answer: string
+}
+
+export interface ProductDocument {
+  label: string
+  productCode?: string
+  datasheetUrl?: string
+  declarationUrl?: string
 }
 
 export interface ProductSpec {
