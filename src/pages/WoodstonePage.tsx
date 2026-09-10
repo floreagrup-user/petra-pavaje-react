@@ -4,19 +4,18 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Download, X, ChevronLeft, ChevronRight, Star, Image as ImageIcon, Sparkles } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 
-const CDN = 'https://petrapavaje.ro/wp-content/uploads'
 
-const heroImage = `${CDN}/pavaj-woodstone_web.avif`
-const heroImage2 = `${CDN}/Woodstone-bordura-neregulata-si-butuc-rotund-45.avif`
+const heroImage = `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone_web.avif`
+const heroImage2 = `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Woodstone-bordura%CC%86-neregulata%CC%86-s%CC%A6i-butuc-rotund-45.avif`
 
 const categories = [
-  { id: 'pavaj', title: 'Pavaj', description: 'Dale și pavele cu textură autentică de lemn pentru alei și terase.', image: `${CDN}/pavaj-woodstone_web.avif`, slug: 'pavaj' },
-  { id: 'palisade', title: 'Palisade și Borduri', description: 'Elemente de delimitare cu aspect rustic pentru grădini.', image: `${CDN}/palisade-woodstone_web.avif`, slug: 'palisade-si-borduri' },
-  { id: 'scari', title: 'Scări', description: 'Trepte robuste cu finisaj natural pentru accese exterioare.', image: `${CDN}/trepti-woodstone_web.avif`, slug: 'scari' },
-  { id: 'garduri', title: 'Sisteme de Garduri', description: 'Garduri elegante cu aspectul lemnului natural.', image: `${CDN}/gard-woodstone_web.avif`, slug: 'garduri' },
-  { id: 'banci', title: 'Bănci și Mese', description: 'Mobilier de exterior durabil și estetic.', image: `${CDN}/banca-woodstone_web.avif`, slug: 'banci-si-mese' },
-  { id: 'jardiniere', title: 'Jardiniere Înaltate', description: 'Soluții elegante pentru grădinărit.', image: `${CDN}/jardiniere-woodstone_web.avif`, slug: 'jardiniere-inaltate' },
-  { id: 'alte', title: 'Alte Elemente', description: 'Accesorii și elemente decorative complementare.', image: `${CDN}/alte-elemente-woodstone_web.avif`, slug: 'elemente-lemn-pietrificat' },
+  { id: 'pavaj', title: 'Pavaj', description: 'Dale și pavele cu textură autentică de lemn pentru alei și terase.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone_web.avif`, slug: 'pavaj' },
+  { id: 'palisade', title: 'Palisade și Borduri', description: 'Elemente de delimitare cu aspect rustic pentru grădini.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/palisade-woodstone_web.avif`, slug: 'palisade-si-borduri' },
+  { id: 'scari', title: 'Scări', description: 'Trepte robuste cu finisaj natural pentru accese exterioare.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/trepti-woodstone_web.avif`, slug: 'scari' },
+  { id: 'garduri', title: 'Sisteme de Garduri', description: 'Garduri elegante cu aspectul lemnului natural.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/gard-woodstone_web.avif`, slug: 'garduri' },
+  { id: 'banci', title: 'Bănci și Mese', description: 'Mobilier de exterior durabil și estetic.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/banca-woodstone_web.avif`, slug: 'banci-si-mese' },
+  { id: 'jardiniere', title: 'Jardiniere Înaltate', description: 'Soluții elegante pentru grădinărit.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/jardiniere-woodstone_web.avif`, slug: 'jardiniere-inaltate' },
+  { id: 'alte', title: 'Alte Elemente', description: 'Accesorii și elemente decorative complementare.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/alte-elemente-woodstone_web.avif`, slug: 'elemente-lemn-pietrificat' },
 ]
 
 const features = [
@@ -48,40 +47,40 @@ const features = [
 ]
 
 const galleryImages = [
-  `${CDN}/Woodstone-bordura-neregulata-si-butuc-rotund-45.avif`,
-  `${CDN}/scari-woodstone-18_web.avif`,
-  `${CDN}/scari-woodstone-17_web.avif`,
-  `${CDN}/scari-woodstone-16_web.avif`,
-  `${CDN}/scari-woodstone-4_web.avif`,
-  `${CDN}/pavaj-woodstone-41_web.avif`,
-  `${CDN}/pavaj-woodstone-40_web.avif`,
-  `${CDN}/pavaj-woodstone-33_web.avif`,
-  `${CDN}/pavaj-woodstone-25_web.avif`,
-  `${CDN}/pavaj-woodstone-23_web.avif`,
-  `${CDN}/pavaj-woodstone-20_web.avif`,
-  `${CDN}/pavaj-woodstone-19_web.avif`,
-  `${CDN}/pavaj-woodstone-16_web.avif`,
-  `${CDN}/pavaj-woodstone-15_web.avif`,
-  `${CDN}/pavaj-woodstone-14_web.avif`,
-  `${CDN}/pavaj-woodstone-13_web.avif`,
-  `${CDN}/pavaj-woodstone-10_web.avif`,
-  `${CDN}/pavaj-woodstone-9_web.avif`,
-  `${CDN}/pavaj-woodstone-8_web.avif`,
-  `${CDN}/palisada-woodstone-19_web.avif`,
-  `${CDN}/palisada-woodstone-17_web.avif`,
-  `${CDN}/palisada-woodstone-16_web.avif`,
-  `${CDN}/palisada-woodstone-15_web.avif`,
-  `${CDN}/palisada-woodstone-14_web.avif`,
-  `${CDN}/palisada-woodstone-13_web.avif`,
-  `${CDN}/jardiniere-woodstone-4_web.avif`,
-  `${CDN}/jardiniere-woodstone-1_web.avif`,
-  `${CDN}/banci-mese-woodstone-11_web.avif`,
-  `${CDN}/banci-mese-woodstone-9_web.avif`,
-  `${CDN}/banci-mese-woodstone-6_web.avif`,
-  `${CDN}/banci-mese-woodstone-4_web.avif`,
-  `${CDN}/alte-elemente-woodstone-7_web.avif`,
-  `${CDN}/alte-elemente-woodstone-6_web.avif`,
-  `${CDN}/alte-elemente-woodstone-4_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Woodstone-bordura%CC%86-neregulata%CC%86-s%CC%A6i-butuc-rotund-45.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/scari-woodstone-18_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/scari-woodstone-17_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/scari-woodstone-16_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/scari-woodstone-4_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone-41_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone-40_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone-33_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone-25_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone-23_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone-20_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone-19_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone-16_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone-15_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone-14_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone-13_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone-10_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone-9_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone-8_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/palisada-woodstone-19_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/palisada-woodstone-17_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/palisada-woodstone-16_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/palisada-woodstone-15_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/palisada-woodstone-14_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/palisada-woodstone-13_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/jardiniere-woodstone-4_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/jardiniere-woodstone-1_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/banci-mese-woodstone-11_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/banci-mese-woodstone-9_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/banci-mese-woodstone-6_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/banci-mese-woodstone-4_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/alte-elemente-woodstone-7_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/alte-elemente-woodstone-6_web.avif`,
+  `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/alte-elemente-woodstone-4_web.avif`,
 ]
 
 export function WoodstonePage() {

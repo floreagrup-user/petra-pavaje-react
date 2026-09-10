@@ -12,6 +12,7 @@ const VirtualTourPage = lazy(() => import('@/pages/VirtualTourPage').then(m => (
 const CalculatorPage = lazy(() => import('@/pages/CalculatorPage').then(m => ({ default: m.CalculatorPage })))
 const GenericPage = lazy(() => import('@/pages/GenericPage').then(m => ({ default: m.GenericPage })))
 const WoodstonePage = lazy(() => import('@/pages/WoodstonePage').then(m => ({ default: m.WoodstonePage })))
+const WoodstoneCategoryPage = lazy(() => import('@/pages/WoodstoneCategoryPage').then(m => ({ default: m.WoodstoneCategoryPage })))
 
 const LazyGenericPage = ({ title, contentKey }: { title: string; contentKey: string }) => (
   <Suspense fallback={<div className="pt-32 pb-16 text-center text-charcoal-500">Se încarcă...</div>}>
@@ -29,6 +30,7 @@ export const router = createBrowserRouter([
       { path: 'produse/:category', element: <Suspense><ProductCategoryPage /></Suspense> },
       { path: 'produse/:category/:product', element: <Suspense><ProductDetailPage /></Suspense> },
       { path: 'woodstone-lemn-pietrificat', element: <Suspense><WoodstonePage /></Suspense> },
+      { path: 'woodstone-lemn-pietrificat/:category', element: <Suspense><WoodstoneCategoryPage /></Suspense> },
       { path: 'contact', element: <Suspense><ContactPage /></Suspense> },
       { path: 'blog', element: <Suspense><BlogPage /></Suspense> },
       { path: 'blog/:slug', element: <Suspense><BlogDetailPage /></Suspense> },

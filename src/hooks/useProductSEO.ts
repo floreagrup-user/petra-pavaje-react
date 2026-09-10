@@ -1,41 +1,6 @@
 import { useEffect } from 'react'
 import type { Product } from '@/data/types'
-
-const SITE_NAME = 'Petra Pavaje'
-const DEFAULT_TITLE = 'Petra Pavaje - Producător Premium de Pavaje'
-const DEFAULT_DESCRIPTION =
-  'Pavaje Premium si Standard, Dale, Borduri, Boltari, Jardiniere, Garduri, Elemente de canalizare. Producator national cu 4 fabrici in Romania.'
-
-function upsertMeta(attr: 'name' | 'property', key: string, content: string) {
-  let el = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`)
-  if (!el) {
-    el = document.createElement('meta')
-    el.setAttribute(attr, key)
-    document.head.appendChild(el)
-  }
-  el.setAttribute('content', content)
-}
-
-function upsertCanonical(href: string) {
-  let el = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]')
-  if (!el) {
-    el = document.createElement('link')
-    el.setAttribute('rel', 'canonical')
-    document.head.appendChild(el)
-  }
-  el.setAttribute('href', href)
-}
-
-function upsertJsonLd(id: string, data: object | null) {
-  const existing = document.getElementById(id)
-  if (existing) existing.remove()
-  if (!data) return
-  const script = document.createElement('script')
-  script.id = id
-  script.type = 'application/ld+json'
-  script.textContent = JSON.stringify(data)
-  document.head.appendChild(script)
-}
+import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from './seo-utils'
 
 export function useProductSEO(product: Product | undefined) {
   useEffect(() => {
@@ -43,11 +8,11 @@ export function useProductSEO(product: Product | undefined) {
 
     const categoryLabel = product.category === 'premium' ? 'Pavaj Premium' : 'Pavaj Standard'
     const categorySlug = product.category === 'premium' ? 'pavaje-premium' : 'pavaje-standard'
-    const title = `${product.name} - ${categoryLabel} | ${SITE_NAME}`
+    const title = `${product.name} - ${categoryLabel} | ${SEO_SITE_NAME}`
     const description =
       product.shortDescription && product.description
         ? `${product.shortDescription}. ${product.description}`.slice(0, 300)
-        : (product.description || DEFAULT_DESCRIPTION).slice(0, 300)
+        : (product.description || '').slice(0, 300)
     const url = `${window.location.origin}/produse/${categorySlug}/${product.slug}`
     const image = product.heroImages?.[0] || product.image
 
@@ -60,7 +25,7 @@ export function useProductSEO(product: Product | undefined) {
     upsertMeta('property', 'og:description', description)
     upsertMeta('property', 'og:url', url)
     upsertMeta('property', 'og:image', image)
-    upsertMeta('property', 'og:site_name', SITE_NAME)
+    upsertMeta('property', 'og:site_name', SEO_SITE_NAME)
 
     upsertMeta('name', 'twitter:card', 'summary_large_image')
     upsertMeta('name', 'twitter:title', title)
@@ -74,7 +39,7 @@ export function useProductSEO(product: Product | undefined) {
       description: product.description,
       image: [product.image, ...(product.heroImages || []), ...(product.gallery || [])].filter(Boolean).slice(0, 10),
       category: categoryLabel,
-      brand: { '@type': 'Brand', name: SITE_NAME },
+      brand: { '@type': 'Brand', name: SEO_SITE_NAME },
       manufacturer: { '@type': 'Organization', name: 'Florea Grup' },
       ...(product.colors?.length ? { color: product.colors.map((c) => c.name).join(', ') } : {}),
     })
@@ -104,12 +69,6 @@ export function useProductSEO(product: Product | undefined) {
       ],
     })
 
-    return () => {
-      document.title = DEFAULT_TITLE
-      upsertMeta('name', 'description', DEFAULT_DESCRIPTION)
-      upsertJsonLd('product-schema', null)
-      upsertJsonLd('faq-schema', null)
-      upsertJsonLd('breadcrumb-schema', null)
-    }
+    return resetSEO
   }, [product])
 }

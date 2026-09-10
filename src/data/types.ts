@@ -124,3 +124,34 @@ export interface InstallationPattern {
   image: string
   products: string[]
 }
+
+export interface WoodstoneVariant {
+  name: string
+  code: string
+  dimensions: string
+  piecesPerMp?: number | string
+  weightKg: number | string
+  palletizing?: string
+  badge?: string
+}
+
+export interface WoodstoneVariantGroup {
+  name: string
+  note?: string
+  variants: WoodstoneVariant[]
+}
+
+export interface WoodstoneCategory {
+  slug: string
+  name: string
+  title: string
+  shortDescription: string
+  description: string
+  image: string
+  gallery: string[]
+  heroFeatures: string[]
+  variantGroups: WoodstoneVariantGroup[]
+  technicalFeatures: string[]
+  advantages: string[]
+  usage: string[]
+}
