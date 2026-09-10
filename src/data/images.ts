@@ -9,7 +9,7 @@ export const productImages: Record<string, string> = {
   mediterana: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Mediterana.avif',
   viena: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Viena.avif',
   maya: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Maya.avif',
-  roman: 'https://petrapavaje.ro/wp-content/uploads/Roman-1.avif',
+  roman: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Roman-1.avif',
   sahara: 'https://petrapavaje.ro/wp-content/uploads/Sahara.avif',
   alpin: 'https://petrapavaje.ro/wp-content/uploads/Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-web.avif',
   pastel: 'https://petrapavaje.ro/wp-content/uploads/Pastel.avif',
