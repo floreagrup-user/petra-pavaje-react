@@ -27,15 +27,21 @@ export function useIntersectionObserver(options?: IntersectionObserverInit) {
   const [element, setElement] = useState<HTMLElement | null>(null)
 
   useEffect(() => {
-    if (!element) return
+    // Already revealed — no need to keep observing (also avoids re-hiding on scroll-away).
+    if (!element || isIntersecting) return
 
+    // Force threshold to 0: a ratio-based threshold (e.g. 0.1) can never be reached for a
+    // target much taller than the viewport (a long product grid, for instance), since the
+    // visible fraction of its own total height stays under that ratio at every scroll
+    // position — permanently stuck at isIntersecting:false. We only need "has any part of
+    // this element entered the viewport", so ignore a caller-supplied threshold.
     const observer = new IntersectionObserver(([entry]) => {
-      setIsIntersecting(entry.isIntersecting)
-    }, options)
+      if (entry.isIntersecting) setIsIntersecting(true)
+    }, { ...options, threshold: 0 })
 
     observer.observe(element)
     return () => observer.disconnect()
-  }, [element, options])
+  }, [element, isIntersecting, options])
 
   return { ref: setElement, isIntersecting }
 }

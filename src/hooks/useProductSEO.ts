@@ -1,13 +1,15 @@
 import { useEffect } from 'react'
 import type { Product } from '@/data/types'
+import { categories } from '@/data/site'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from './seo-utils'
 
 export function useProductSEO(product: Product | undefined) {
   useEffect(() => {
     if (!product) return
 
-    const categoryLabel = product.category === 'premium' ? 'Pavaj Premium' : 'Pavaj Standard'
-    const categorySlug = product.category === 'premium' ? 'pavaje-premium' : 'pavaje-standard'
+    const categoryMeta = categories.find((c) => c.id === product.category)
+    const categoryLabel = categoryMeta?.name || product.category
+    const categorySlug = categoryMeta?.slug || product.category
     const title = `${product.name} - ${categoryLabel} | ${SEO_SITE_NAME}`
     const description =
       product.shortDescription && product.description

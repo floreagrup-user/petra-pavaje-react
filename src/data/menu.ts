@@ -64,10 +64,10 @@ export const mainMenu: MenuItem[] = [
         label: 'Elemente',
         href: '/produse/elemente',
         children: [
-          { label: 'Borduri', href: '/produse/elemente/borduri' },
+          { label: 'Borduri', href: '/produse/borduri' },
           { label: 'Rigole', href: '/produse/elemente/rigole' },
-          { label: 'Bolțari', href: '/produse/elemente/boltari' },
-          { label: 'Garduri', href: '/produse/elemente/garduri' },
+          { label: 'Bolțari', href: '/produse/boltari' },
+          { label: 'Garduri', href: '/produse/garduri' },
           { label: 'Jardiniere', href: '/produse/elemente/jardiniere' },
           { label: 'Palisadă', href: '/produse/elemente/palisada' },
           { label: 'Bănci', href: '/produse/elemente/banci' },

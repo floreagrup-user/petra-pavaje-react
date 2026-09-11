@@ -5,6 +5,7 @@ import { Download, Phone, ChevronLeft, ChevronRight, Ruler, Weight, BadgeCheck, 
 import { getProductBySlug, getProductsByCategory } from '@/data/products'
 import { productImages, productGalleryMap } from '@/data/images'
 import { useProductSEO } from '@/hooks/useProductSEO'
+import { categories } from '@/data/site'
 
 export function ProductDetailPage() {
   const { product: productSlug } = useParams<{ product: string }>()
@@ -48,7 +49,10 @@ export function ProductDetailPage() {
     )
   }
 
-  const categorySlug = product.category === 'premium' ? 'pavaje-premium' : 'pavaje-standard'
+  const categoryMeta = categories.find((c) => c.id === product.category)
+  const categorySlug = categoryMeta?.slug || product.category
+  const categoryLabel = categoryMeta?.name || product.category
+  const isLinearProduct = product.category === 'borduri'
   const displayedGallery = showAllGallery ? images : images.slice(0, 12)
   const displayedPatterns = showAllPatterns ? product.patternImages || [] : (product.patternImages || []).slice(0, 12)
 
@@ -60,7 +64,7 @@ export function ProductDetailPage() {
             <Link to="/" className="hover:text-white transition-colors">Acasă</Link>
             <span>/</span>
             <Link to={`/produse/${categorySlug}`} className="hover:text-white transition-colors capitalize">
-              {product.category === 'premium' ? 'Pavaje Premium' : 'Pavaje Standard'}
+              {categoryLabel}
             </Link>
             <span>/</span>
             <span className="text-white">{product.name}</span>
@@ -119,10 +123,10 @@ export function ProductDetailPage() {
                       <thead>
                         <tr className="border-b border-charcoal-200">
                           <th className="text-left py-2 pr-4 font-medium text-charcoal-500">Dimensiuni</th>
-                          <th className="text-right py-2 px-2 font-medium text-charcoal-500">Buc/MP</th>
+                          <th className="text-right py-2 px-2 font-medium text-charcoal-500">{isLinearProduct ? 'Buc/ML' : 'Buc/MP'}</th>
                           <th className="text-right py-2 px-2 font-medium text-charcoal-500">Buc/Palet</th>
                           <th className="text-right py-2 px-2 font-medium text-charcoal-500">Kg/Palet</th>
-                          <th className="text-right py-2 pl-2 font-medium text-charcoal-500">MP/Palet</th>
+                          <th className="text-right py-2 pl-2 font-medium text-charcoal-500">{isLinearProduct ? 'ML/Palet' : 'MP/Palet'}</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -153,7 +157,7 @@ export function ProductDetailPage() {
                     ? 'bg-brand-100 text-brand-700'
                     : 'bg-charcoal-100 text-charcoal-700'
                 }`}>
-                  {product.category === 'premium' ? 'PAVAJ PREMIUM' : 'PAVAJ STANDARD'}
+                  {categoryLabel.toUpperCase()}
                 </span>
                 <span className="flex items-center gap-1 px-3 py-1 text-xs font-medium rounded-full bg-stone-100 text-charcoal-700">
                   <BadgeCheck className="w-3 h-3" />
@@ -491,7 +495,7 @@ export function ProductDetailPage() {
                   <h3 className="font-semibold text-charcoal-900 group-hover:text-brand-600 transition-colors">
                     {p.name}
                   </h3>
-                  <p className="text-sm text-charcoal-500">{p.category === 'premium' ? 'Pavaj Premium' : 'Pavaj Standard'}</p>
+                  <p className="text-sm text-charcoal-500">{categoryLabel}</p>
                 </Link>
               ))}
             </div>
