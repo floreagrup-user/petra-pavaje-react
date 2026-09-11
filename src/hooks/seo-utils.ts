@@ -40,4 +40,5 @@ export function resetSEO() {
   upsertJsonLd('product-schema', null)
   upsertJsonLd('faq-schema', null)
   upsertJsonLd('breadcrumb-schema', null)
+  upsertJsonLd('itemlist-schema', null)
 }
