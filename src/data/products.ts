@@ -3037,6 +3037,14 @@ export const products: Product[] = [
       'Se asortează cu majoritatea gamelor de pavaj Petra Pavaje',
       'Raport optim calitate-preț pentru delimitări curente',
     ],
+    documents: [
+      { label: 'Bordură 50×5×20 dreaptă', productCode: '1198', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X5X20-dreapta-Petra-Pavaje.pdf', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1198-BORDURA-50-5-20-gri-dreapta-rev2-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 50×5×20 dreaptă - Roșu', productCode: '1199', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1199-BORDURA-50-5-20-rosu-dreapta-rev2-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 50×5×20 dreaptă - Negru', productCode: '1201', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1201-BORDURA-50-5-20-negru-dreapta-rev2-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 50×5×20 dreaptă - Galben', productCode: '1200', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1200-BORDURA-50-5-20-galben-dreapta-rev2-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 50×5×20 dreaptă - Maro', productCode: '1202', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1202-BORDURA-50-5-20-maro-dreapta-rev2-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 50×5×20 dreaptă - Alb', productCode: '1203', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1203-BORDURA-50-5-20-alb-dreapta-rev2-AB-Petra-Pavaje.pdf' },
+    ],
     faq: [
     { question: 'Câte culori sunt disponibile la bordura 50×5×20?', answer: 'Bordura dreaptă 50×5×20 este disponibilă în 12 culori — cea mai bogată paletă din gama de borduri Petra Pavaje: Gri, Roșu, Negru, Galben, Maro, Alb, Gri Antic, Gri Bazaltic, Terra, Rossa, Negru Violet și Moka.' },
     { question: 'La ce este recomandată bordura 50×5×20?', answer: 'Este bordura standard pentru delimitarea aleilor, trotuarelor și a zonelor verzi din curți și grădini rezidențiale, dar și pentru amenajări urbane curente.' },
@@ -3193,6 +3201,14 @@ export const products: Product[] = [
       'Montaj rapid datorită formatului lung',
       'Potrivită pentru delimitări cu solicitare mai mare',
     ],
+    documents: [
+      { label: 'Bordură 100×8×25 dreaptă', productCode: '1251', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-100X8X25-dreapta-Petra-Pavaje.pdf', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1251-BORDURA-100-8-25-gri-dreapta-rev0-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 100×8×25 dreaptă - Roșu', productCode: '1252', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1252-BORDURA-100-8-25-rosu-dreapta-rev0-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 100×8×25 dreaptă - Negru', productCode: '1254', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1254-BORDURA-100-8-25-negru-dreapta-rev0-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 100×8×25 dreaptă - Galben', productCode: '1253', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1253-BORDURA-100-8-25-galben-dreapta-rev0-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 100×8×25 dreaptă - Maro', productCode: '1255', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1255-BORDURA-100-8-25-maro-dreapta-rev0-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 100×8×25 dreaptă - Alb', productCode: '1256', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1256-BORDURA-100-8-25-alb-dreapta-rev0-AB-Petra-Pavaje.pdf' },
+    ],
     faq: [
     { question: 'Ce diferențiază bordura 100×8×25 de bordura 100×5×20?', answer: 'Bordura 100×8×25 are grosimea de 8 cm (față de 5 cm) și înălțimea de 25 cm (față de 20 cm), fiind formatul cel mai robust dintre bordurile drepte lungi din gamă.' },
     { question: 'Câte culori sunt disponibile?', answer: '12 culori — cea mai bogată paletă din gama de borduri, identică cu cea a bordurii 50×5×20.' },
@@ -3244,6 +3260,14 @@ export const products: Product[] = [
       '6 culori disponibile',
       'Potrivită pentru insule de sens giratoriu și contururi circulare',
     ],
+    documents: [
+      { label: 'Bordură cilindrică 106×9×25 rotunjită', productCode: '1266', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-106X9X25-cilindrica-Petra-Pavaje.pdf', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1266-BORDURA-CILINDRICA-106-9-25-gri-rotunjita-rev0-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură cilindrică 106×9×25 rotunjită - Roșu', productCode: '1267', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1267-BORDURA-CILINDRICA-106-9-25-rosu-rotunjita-rev0-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură cilindrică 106×9×25 rotunjită - Negru', productCode: '1269', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1269-BORDURA-CILINDRICA-106-9-25-negru-rotunjita-rev0-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură cilindrică 106×9×25 rotunjită - Galben', productCode: '1268', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1268-BORDURA-CILINDRICA-106-9-25-galben-rotunjita-rev0-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură cilindrică 106×9×25 rotunjită - Maro', productCode: '1270', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1270-BORDURA-CILINDRICA-106-9-25-maro-rotunjita-rev0-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură cilindrică 106×9×25 rotunjită - Alb', productCode: '1271', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1271-BORDURA-CILINDRICA-106-9-25-alb-rotunjita-rev0-AB-Petra-Pavaje.pdf' },
+    ],
     faq: [
     { question: 'Când se folosește bordura cilindrică față de cea dreaptă?', answer: 'Bordura cilindrică rotunjită se recomandă pentru delimitarea curbelor, a insulelor de sens giratoriu și a oricărei zone cu contur circular, unde bordurile drepte nu se pot alinia natural.' },
     { question: 'Cum se ambalează bordura cilindrică?', answer: 'Se livrează în pachete de 1,06 metri liniari, 27 pachete pe palet.' },
@@ -3291,6 +3315,10 @@ export const products: Product[] = [
       'Potrivită pentru delimitări cu solicitare mai mare',
       'Disponibilă în nuanțe de gri antic și bazaltic, pentru un aspect natural',
       'Rezistență și durabilitate în timp',
+    ],
+    documents: [
+      { label: 'Bordură 40×15×20 dreaptă', productCode: '1412', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-ORNAMENTALA-40X15X20-Petra-Pavaje.pdf' },
+      { label: 'Bordură 40×15×20 dreaptă - Gri Bazaltic', productCode: '1398', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1398-BORDURA-ORNAMENTALA-40-15-20-gri-dreapta-rev0-AB-Petra-Pavaje.pdf' },
     ],
     faq: [
     { question: 'Ce diferențiază bordura 40×15×20 de formatele standard?', answer: 'Are un profil mai lat (15 cm grosime față de 5 cm la bordura standard), oferind o delimitare mai stabilă și mai solidă.' },
@@ -3392,6 +3420,14 @@ export const products: Product[] = [
       'Muchii vii, pentru un aliniament precis',
       'Bun raport calitate-preț',
     ],
+    documents: [
+      { label: 'Bordură 50×10×15 dreaptă', productCode: '1204', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X10X15-dreapta-Petra-Pavaje.pdf', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1204-BORDURA-50-10-15-gri-dreapta-rev2-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 50×10×15 dreaptă - Roșu', productCode: '1205', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1205-BORDURA-50-10-15-rosu-dreapta-rev2-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 50×10×15 dreaptă - Negru', productCode: '1207', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1207-BORDURA-50-10-15-negru-dreapta-rev2-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 50×10×15 dreaptă - Galben', productCode: '1206', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1206-BORDURA-50-10-15-galben-dreapta-rev2-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 50×10×15 dreaptă - Maro', productCode: '1208', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1208-BORDURA-50-10-15-maro-dreapta-rev2-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 50×10×15 dreaptă - Alb', productCode: '1209', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1209-BORDURA-50-10-15-alb-dreapta-rev2-AB-Petra-Pavaje.pdf' },
+    ],
     faq: [
     { question: 'Câte culori are bordura 50×10×15 dreaptă?', answer: '9 culori: Gri, Roșu, Negru, Galben, Maro, Alb, Gri Antic, Gri Bazaltic și Terra.' },
     { question: 'Care este diferența față de varianta teșită?', answer: 'Varianta dreaptă are muchii vii, în timp ce varianta teșită are muchia superioară teșită (rotunjită oblic) pentru un aspect mai fin.' },
@@ -3443,6 +3479,14 @@ export const products: Product[] = [
       '6 culori disponibile',
       'Profil identic ca stabilitate cu varianta dreaptă',
     ],
+    documents: [
+      { label: 'Bordură 50×10×15 teșită', productCode: '1257', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X10X15-tesita-Petra-Pavaje.pdf', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1257-BORDURA-50-10-15-gri-tesita-rev0-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 50×10×15 teșită - Roșu', productCode: '1258', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1258-BORDURA-50-10-15-rosu-tesita-rev0-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 50×10×15 teșită - Negru', productCode: '1260', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1260-BORDURA-50-10-15-negru-tesita-rev0-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 50×10×15 teșită - Galben', productCode: '1259', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1259-BORDURA-50-10-15-galben-tesita-rev0-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 50×10×15 teșită - Maro', productCode: '1261', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1261-BORDURA-50-10-15-maro-tesita-rev0-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 50×10×15 teșită - Alb', productCode: '1262', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1262-BORDURA-50-10-15-alb-tesita-rev0-AB-Petra-Pavaje.pdf' },
+    ],
     faq: [
     { question: 'Ce înseamnă "teșită" la o bordură?', answer: 'Înseamnă că muchia superioară este tăiată oblic (teșită) în loc să fie dreaptă (vie), pentru un aspect mai fin și un contact mai sigur.' },
     { question: 'În ce culori este disponibilă bordura 50×10×15 teșită?', answer: 'În Alb, Galben, Gri, Maro, Negru și Roșu.' },
@@ -3487,6 +3531,9 @@ export const products: Product[] = [
       'Muchie teșită, aspect îngrijit',
       'Rezistență la îngheț-dezgheț',
       'Format testat, cu ambalare eficientă pe palet',
+    ],
+    documents: [
+      { label: 'Bordură 50×12×25 teșită', productCode: '1210', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X12X25-tesita-Petra-Pavaje-1.pdf', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1210-BORDURA-50-12-25-gri-tesita-rev2-AB-Petra-Pavaje.pdf' },
     ],
     faq: [
     { question: 'Ce culoare este disponibilă la bordura 50×12×25 teșită?', answer: 'Este disponibilă în Gri.' },
@@ -3533,6 +3580,9 @@ export const products: Product[] = [
       'Rezistență la îngheț-dezgheț',
       'Potrivită pentru amenajări cu solicitare mare',
     ],
+    documents: [
+      { label: 'Bordură 50×15×25 teșită F10', productCode: '1263', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X15X25-F10-tesita-Petra-Pavaje-1.pdf', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1263-BORDURA-50-15-25-gri-F10-tesita-rev0-AB-Petra-Pavaje.pdf' },
+    ],
     faq: [
     { question: 'Ce reprezintă codul F10 pentru bordura teșită?', answer: 'F10 identifică varianta de teșire a muchiei superioare, cu o rază specifică — diferită de varianta F15 a aceluiași format.' },
     { question: 'În ce culoare este disponibilă?', answer: 'În Gri.' },
@@ -3577,6 +3627,9 @@ export const products: Product[] = [
       'Muchie teșită F15 pentru un aspect controlat',
       'Rezistență la îngheț-dezgheț',
       'Potrivită pentru amenajări cu solicitare mare',
+    ],
+    documents: [
+      { label: 'Bordură 50×15×25 teșită F15', productCode: '1211', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X15X25-F15-tesita-Petra-Pavaje.pdf', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1211-BORDURA-50-15-25-F15-gri-tesita-rev3-AB-Petra-Pavaje.pdf' },
     ],
     faq: [
     { question: 'Ce diferență este între finisajul F10 și F15?', answer: 'Ambele sunt variante de teșire a muchiei superioare, cu raze de teșire diferite — alegerea ține de preferința estetică pentru proiect.' },
@@ -3624,6 +3677,9 @@ export const products: Product[] = [
       'Aspect elegant, finisat',
       'Rezistență la îngheț-dezgheț',
     ],
+    documents: [
+      { label: 'Bordură 50×20×25 rotunjită', productCode: '1212', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X20X25-rotunjita-Petra-Pavaje.pdf', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1212-BORDURA-50-20-25-gri-rotunjita-rev2-AB-Petra-Pavaje.pdf' },
+    ],
     faq: [
     { question: 'Ce înseamnă bordură "rotunjită"?', answer: 'Are muchia superioară rotunjită în loc de teșită sau vie, pentru un aspect mai fin și mai sigur la contact.' },
     { question: 'În ce culoare este disponibilă?', answer: 'În Gri.' },
@@ -3669,6 +3725,9 @@ export const products: Product[] = [
       'Rezistență la îngheț-dezgheț',
       'Garanție 5 ani',
     ],
+    documents: [
+      { label: 'Bordură 50×20×25 teșită F10', productCode: '1213', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X20X25-F-10-tesita-1.pdf' },
+    ],
     faq: [
     { question: 'În ce culoare este disponibilă bordura 50×20×25 teșită F10?', answer: 'În Gri.' },
     { question: 'Care este diferența față de varianta rotunjită?', answer: 'Varianta F10 are muchia teșită (tăiată oblic), în timp ce varianta rotunjită are muchia curbată.' },
@@ -3713,6 +3772,9 @@ export const products: Product[] = [
       'Muchie teșită F15, aspect controlat',
       'Rezistență la îngheț-dezgheț',
       'Garanție 5 ani',
+    ],
+    documents: [
+      { label: 'Bordură 50×20×25 teșită F15', productCode: '1378', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X20X25-F15-tesita-Petra-Pavaje.pdf' },
     ],
     faq: [
     { question: 'În ce culoare este disponibilă bordura 50×20×25 teșită F15?', answer: 'În Gri.' },
@@ -3808,6 +3870,9 @@ export const products: Product[] = [
       'Montaj simplu, ca element punctual în aliniament',
       'Aceeași durabilitate ca restul gamei de borduri',
     ],
+    documents: [
+      { label: 'Bordură rampă 50×25×25', productCode: '1264', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-RAMPA-50X25X25-dreapta-Petra-Pavaje.pdf', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1264-BORDURA-RAMPA-50-25-25-gri-dreapta-rev0-AB-Petra-Pavaje.pdf' },
+    ],
     faq: [
     { question: 'La ce se folosește bordura rampă?', answer: 'Se folosește ca element de tranziție care permite accesul vehiculelor peste linia de bordură — de exemplu la o poartă de garaj sau o intrare auto — fără să întrerupă restul aliniamentului.' },
     { question: 'Se poate combina cu bordura dreaptă 50×25×25?', answer: 'Da, bordura rampă este gândită ca element punctual care se integrează în același aliniament cu bordurile drepte de aceeași înălțime.' },
@@ -3853,6 +3918,9 @@ export const products: Product[] = [
       'Disponibil în variante stânga/dreapta pentru orice configurație',
       'Se asortează cu bordura rampă și cea dreaptă 50×25×25',
       'Finisaj teșit, aspect îngrijit',
+    ],
+    documents: [
+      { label: 'Bordură racord 50×25×25 teșită', productCode: '1265', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/1265-BORDURA-RACORD-50-25-25-gri-tesita-AR-rev0.pdf', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1265-BORDURA-RACORD-50-25-25-gri-tesita-rev0-AB-Petra-Pavaje.pdf' },
     ],
     faq: [
     { question: 'Când este nevoie de o bordură racord?', answer: 'La punctele unde un aliniament de borduri își schimbă direcția sau se racordează cu o bordură rampă, pentru o tranziție curată, fără improvizații pe șantier.' },
