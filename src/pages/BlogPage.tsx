@@ -15,7 +15,7 @@ const blogPosts: BlogPost[] = [
     date: '2025-03-15',
     author: 'Petra Pavaje',
     category: 'Ghiduri',
-    image: 'https://petrapavaje.ro/wp-content/uploads/web-prima-pagina-1-Medium.avif',
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/web-prima-pagina-1-Medium.avif',
     readTime: 5,
   },
   {
@@ -51,7 +51,7 @@ const blogPosts: BlogPost[] = [
     date: '2025-01-20',
     author: 'Petra Pavaje',
     category: 'Produse',
-    image: 'https://petrapavaje.ro/wp-content/uploads/woodstoone-Medium.avif',
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/woodstoone-Medium.avif',
     readTime: 6,
   },
   {
@@ -63,7 +63,7 @@ const blogPosts: BlogPost[] = [
     date: '2025-01-05',
     author: 'Petra Pavaje',
     category: 'Întreținere',
-    image: 'https://petrapavaje.ro/wp-content/uploads/holland-Medium.avif',
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/holland-Medium.avif',
     readTime: 4,
   },
   {

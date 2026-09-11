@@ -26,7 +26,7 @@ const SocialIcon = ({ name, className }: { name: string; className?: string }) =
 
 export function Footer() {
   return (
-    <footer className="bg-charcoal-500 text-white">
+    <footer className="bg-charcoal-900 text-white">
       <div className="bg-brand-600 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 bg-noise" />
         <div className="container-premium py-12 md:py-16 relative">
@@ -102,7 +102,7 @@ export function Footer() {
                   <MapPin className="w-4 h-4 text-brand-300 mt-0.5 shrink-0" />
                   <div>
                     <p className="text-sm font-medium text-white">{factory.name}</p>
-                    <p className="text-xs text-white/60">{factory.address}</p>
+                    <p className="text-xs text-white/70">{factory.address}</p>
                     <a href={`tel:${factory.phone}`} className="text-xs text-brand-200 hover:text-white transition-colors">
                       {factory.phone}
                     </a>
@@ -140,9 +140,9 @@ export function Footer() {
       <div className="border-t border-white/20">
         <div className="container-premium py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="text-sm text-white/60">
+            <div className="text-sm text-white/70">
               © {new Date().getFullYear()} Petra Pavaje | Parte a{' '}
-              <a href="https://floreagrup.ro/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors">
+              <a href="https://floreagrup.ro/" target="_blank" rel="noopener noreferrer" className="text-white/80 underline hover:text-white transition-colors">
                 Florea Grup
               </a>
             </div>
@@ -162,7 +162,7 @@ export function Footer() {
               ))}
             </div>
 
-            <div className="flex items-center gap-4 text-xs text-white/60">
+            <div className="flex items-center gap-4 text-xs text-white/70">
               {footerLinks.legal.map((link) => (
                 <Link key={link.label} to={link.href} className="hover:text-white transition-colors">
                   {link.label}

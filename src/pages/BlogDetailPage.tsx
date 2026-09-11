@@ -41,7 +41,7 @@ Indiferent de alegerea ta, gama variată de produse Petra Pavaje oferă soluția
     date: '2025-03-15',
     author: 'Petra Pavaje',
     category: 'Ghiduri',
-    image: 'https://petrapavaje.ro/wp-content/uploads/web-prima-pagina-1-Medium.avif',
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/web-prima-pagina-1-Medium.avif',
     readTime: 5,
   },
   {

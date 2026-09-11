@@ -9,7 +9,7 @@ const heroSlides = [
     title: 'Producător Premium\nde Pavaje',
     subtitle: 'În armonie cu natura',
     description: '800+ Produse · 4 Fabrici Naționale · 24.000 mp/zi',
-    image: 'https://petrapavaje.ro/wp-content/uploads/mediterana-homepage.avif',
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/mediterana-homepage.avif',
     cta: 'Descoperă Produsele',
     ctaLink: '/produse/pavaje-premium',
   },
@@ -18,7 +18,7 @@ const heroSlides = [
     title: 'PIATRA\nPRINDE\nVIAȚĂ',
     subtitle: 'Pavaje Premium',
     description: 'Gama completă de pavaje premium pentru amenajări outdoor de excepție',
-    image: 'https://petrapavaje.ro/wp-content/uploads/relief-homepage.avif',
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/relief-homepage.avif',
     cta: 'Vezi Catalogul',
     ctaLink: '/catalog',
   },
@@ -27,7 +27,7 @@ const heroSlides = [
     title: 'Woodstone\nLemn Pietrificat',
     subtitle: 'Tehnologie Premium',
     description: 'Frumusețea lemnului combinată cu durabilitatea betonului premium',
-    image: 'https://petrapavaje.ro/wp-content/uploads/gemina-homepage.avif',
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/gemina-homepage.avif',
     cta: 'Explorează Colecția',
     ctaLink: '/produse/woodstone',
   },
@@ -121,16 +121,20 @@ export function HeroSection() {
 
       <div className="absolute bottom-8 left-0 right-0 z-10">
         <div className="container-premium">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center">
             {heroSlides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`h-1 rounded-full transition-all duration-500 ${
-                  index === currentSlide ? 'w-12 bg-brand-500' : 'w-6 bg-white/20 hover:bg-white/40'
-                }`}
+                className="group p-2.5 flex items-center justify-center"
                 aria-label={`Slide ${index + 1}`}
-              />
+              >
+                <span
+                  className={`block h-1 rounded-full transition-all duration-500 ${
+                    index === currentSlide ? 'w-12 bg-brand-500' : 'w-6 bg-white/20 group-hover:bg-white/40'
+                  }`}
+                />
+              </button>
             ))}
           </div>
         </div>

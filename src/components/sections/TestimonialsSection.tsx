@@ -106,16 +106,20 @@ export function TestimonialsSection() {
             <ChevronLeft className="w-5 h-5 text-charcoal-600" />
           </button>
 
-          <div className="flex gap-2">
+          <div className="flex items-center">
             {testimonials.map((_, idx) => (
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
-                className={`h-2 rounded-full transition-all ${
-                  idx === currentIndex ? 'w-8 bg-brand-600' : 'w-2 bg-charcoal-300'
-                }`}
+                className="p-2 flex items-center justify-center"
                 aria-label={`Go to testimonial ${idx + 1}`}
-              />
+              >
+                <span
+                  className={`block h-2 rounded-full transition-all ${
+                    idx === currentIndex ? 'w-8 bg-brand-600' : 'w-2 bg-charcoal-300'
+                  }`}
+                />
+              </button>
             ))}
           </div>
 

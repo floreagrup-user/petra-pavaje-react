@@ -33,7 +33,7 @@ export function Header() {
             <span className="text-white/20">|</span>
             <span>4 Fabrici Naționale</span>
             <span className="text-white/20">|</span>
-            <span className="text-brand-400">24.000 mp/zi</span>
+            <span className="text-brand-300">24.000 mp/zi</span>
           </div>
           <div className="flex items-center gap-3">
             <Link to="/catalog" className="hover:text-white transition-colors flex items-center gap-1">
@@ -175,6 +175,8 @@ export function Header() {
 
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                aria-label={mobileMenuOpen ? 'Închide meniul' : 'Deschide meniul'}
+                aria-expanded={mobileMenuOpen}
                 className={cn(
                   'lg:hidden p-2 rounded-md transition-colors',
                   isScrolled || !isHome
