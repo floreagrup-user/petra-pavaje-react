@@ -880,3 +880,4 @@ quatro-tactil-cu-linii-30x30x6.avif
 quatro-tactil-cu-puncte-30x30x6.avif
 fisa-tehnica-QUATRO-20x20x6-cu-cant-TACTIL-cu-linii-Petra-Pavaje.pdf
 fisa-tehnica-QUATRO-ECO-20x20x8-cu-cant-rev1.pdf
+fabrica-neamt-petra-pavaje.avif

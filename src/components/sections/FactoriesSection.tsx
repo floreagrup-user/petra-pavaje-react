@@ -9,10 +9,10 @@ export function FactoriesSection() {
   const [activeFactory, setActiveFactory] = useState(0)
 
   const factoryImages: Record<string, string> = {
-    alba: 'https://petrapavaje.ro/wp-content/uploads/petra-pavaje-fabrica-alba.webp',
-    prahova: 'https://petrapavaje.ro/wp-content/uploads/fabrica-ploiesti-petra-pavaje.webp',
-    arad: 'https://petrapavaje.ro/wp-content/uploads/petra-pavaje-fabrica-arad.webp',
-    neamt: 'https://petrapavaje.ro/wp-content/uploads/petra-pavaje-fabrica-neamt.webp',
+    alba: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/petra-pavaje-fabrica-alba.webp',
+    prahova: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fabrica-ploiesti-petra-pavaje.webp',
+    arad: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/petra-pavaje-fabrica-arad.webp',
+    neamt: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fabrica-neamt-petra-pavaje.avif',
   }
 
   return (
