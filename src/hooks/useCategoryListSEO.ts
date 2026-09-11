@@ -1,32 +1,43 @@
 import { useEffect } from 'react'
-import type { Product, ProductFAQ } from '@/data/types'
+import type { ProductFAQ } from '@/data/types'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from './seo-utils'
 
-const TITLE = `Pavaje Premium - 19 Modele de Pavaj Beton Premium | ${SEO_SITE_NAME}`
-const DESCRIPTION =
-  'Descoperă gama Pavaje Premium Petra Pavaje: 19 modele, zeci de culori și finisaje, tehnologie Color Lock și rezistență la îngheț. Filtrează după culoare, grosime și utilizare.'
+interface CategoryListSEOConfig {
+  path: string
+  title: string
+  description: string
+  breadcrumbLabel: string
+}
 
-export function usePremiumCategorySEO(products: Product[], faq: ProductFAQ[]) {
+interface CategoryListItem {
+  slug: string
+  name: string
+  image: string
+  heroImages?: string[]
+}
+
+export function useCategoryListSEO(products: CategoryListItem[], faq: ProductFAQ[], config: CategoryListSEOConfig) {
   useEffect(() => {
     if (!products.length) return
 
-    const url = `${window.location.origin}/produse/pavaje-premium`
+    const { path, title, description, breadcrumbLabel } = config
+    const url = `${window.location.origin}${path}`
     const image = products[0]?.heroImages?.[0] || products[0]?.image
 
-    document.title = TITLE
-    upsertMeta('name', 'description', DESCRIPTION)
+    document.title = title
+    upsertMeta('name', 'description', description)
     upsertCanonical(url)
 
     upsertMeta('property', 'og:type', 'website')
-    upsertMeta('property', 'og:title', TITLE)
-    upsertMeta('property', 'og:description', DESCRIPTION)
+    upsertMeta('property', 'og:title', title)
+    upsertMeta('property', 'og:description', description)
     upsertMeta('property', 'og:url', url)
     upsertMeta('property', 'og:image', image)
     upsertMeta('property', 'og:site_name', SEO_SITE_NAME)
 
     upsertMeta('name', 'twitter:card', 'summary_large_image')
-    upsertMeta('name', 'twitter:title', TITLE)
-    upsertMeta('name', 'twitter:description', DESCRIPTION)
+    upsertMeta('name', 'twitter:title', title)
+    upsertMeta('name', 'twitter:description', description)
     upsertMeta('name', 'twitter:image', image)
 
     upsertJsonLd('itemlist-schema', {
@@ -36,7 +47,7 @@ export function usePremiumCategorySEO(products: Product[], faq: ProductFAQ[]) {
         '@type': 'ListItem',
         position: index + 1,
         name: product.name,
-        url: `${window.location.origin}/produse/pavaje-premium/${product.slug}`,
+        url: `${url}/${product.slug}`,
         image: product.image,
       })),
     })
@@ -61,10 +72,10 @@ export function usePremiumCategorySEO(products: Product[], faq: ProductFAQ[]) {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
-        { '@type': 'ListItem', position: 2, name: 'Pavaje Premium', item: url },
+        { '@type': 'ListItem', position: 2, name: breadcrumbLabel, item: url },
       ],
     })
 
     return resetSEO
-  }, [products, faq])
+  }, [products, faq, config])
 }

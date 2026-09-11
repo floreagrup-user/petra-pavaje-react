@@ -10,6 +10,7 @@ import { ProductGridCard } from '@/components/product/ProductGridCard'
 import { CategoryFilterPanel, ActiveFilterChips } from '@/components/product/CategoryFilterPanel'
 import {
   buildProductFacets,
+  buildHubProduct,
   matchesFilters,
   sortProducts,
   parseFiltersFromSearchParams,
@@ -29,35 +30,62 @@ const SORT_LABELS: Record<SortKey, string> = {
   'grosime-desc': 'Grosime descrescător',
 }
 
-const PREMIUM_FAQ: ProductFAQ[] = [
+const STANDARD_FAQ: ProductFAQ[] = [
   {
-    question: 'Ce pavaje Premium oferă Petra Pavaje?',
+    question: 'Ce pavaje Standard oferă Petra Pavaje?',
     answer:
-      'Gama Premium cuprinde 19 modele — printre care Roca, Antic, Mistic, Terranova, Relief sau Stretto — fiecare cu propria paletă de culori, texturi și, pentru multe dintre ele, variante Mix combinate din mai multe dimensiuni.',
+      'Gama Standard cuprinde Holland, Autobloc, Unda, Quatro (în 19 variante, cu pagină dedicată), Con și Pavaje Eco (dale tip grilă permeabile) — soluții robuste, cu un raport optim calitate-preț, pentru orice tip de suprafață.',
   },
   {
-    question: 'Ce dimensiuni, grosimi și culori sunt disponibile în gama Premium?',
+    question: 'Ce grosimi sunt disponibile și pentru ce trafic se recomandă fiecare?',
     answer:
-      'Grosimile variază între 4 și 8 cm în funcție de model și de destinația suprafeței (pietonală, ușoară sau, pentru unele formate, trafic greu). La nivelul întregii game Premium sunt disponibile peste 35 de nuanțe de culoare, de la griuri naturale la tonuri calde de teracotă sau roșu-vulcanic.',
+      'Grosimile variază între 4 și 10 cm. Grosimile de 4-6 cm sunt potrivite pentru trafic pietonal și auto ușor, iar 8-10 cm (disponibile la Autobloc și Holland) sunt recomandate pentru trafic auto intens și tonaj mare — parcări, drumuri de acces, stații de carburanți.',
   },
   {
-    question: 'Ce pavaj Premium este potrivit pentru terasă?',
+    question: 'Ce este Quatro și de ce are 19 variante?',
     answer:
-      'Majoritatea modelelor Premium sunt recomandate pentru terase — poți folosi filtrul „Utilizare: Terase" din stânga pentru a vedea instant toate modelele potrivite, alături de culorile și grosimile disponibile pentru fiecare.',
+      'Quatro este cel mai popular format standard: 9 dimensiuni pătrate clasice, 2 variante SMART întărite pentru trafic auto intens, 4 dale tactile pentru persoane cu deficiențe de vedere și 6 marcaje urbane (parcare, dizabilități, acces biciclete). Toate variantele sunt prezentate pe pagina dedicată Quatro.',
   },
   {
-    question: 'Ce pavaj este potrivit pentru trafic ușor sau pietonal?',
+    question: 'Ce este Pavaje Eco și când se folosește?',
     answer:
-      'Toate modelele Premium acoperă traficul pietonal, iar cele cu grosimea de 6-7 cm sunt potrivite și pentru trafic auto ușor (alei de acces, curți). Pentru trafic auto intens sau tonaj mare recomandăm gama Standard (Autobloc, Holland).',
+      'Pavaje Eco este gama de dale tip grilă, cu goluri pentru înierbare sau pietriș, folosită pentru parcări ecologice și suprafețe cu drenaj natural al apei pluviale.',
   },
   {
-    question: 'Care este diferența dintre pavajele Premium și Standard?',
+    question: 'Care este diferența dintre pavajele Standard și Premium?',
     answer:
-      'Gama Premium oferă o paletă mai largă de culori și finisaje (suprafețe antichizate, structurate sau antiderapante), inspirate din piatră naturală, plus tehnologia Color Lock pentru păstrarea culorii în timp. Gama Standard rămâne soluția cu cel mai bun raport calitate-preț, cu o paletă de culori mai restrânsă, pentru amenajări funcționale.',
+      'Gama Standard mizează pe robustețe, formate potrivite pentru trafic auto greu și un preț competitiv, cu o paletă de culori mai restrânsă. Gama Premium oferă o paletă mult mai largă de culori și finisaje (suprafețe antichizate, structurate), inspirate din piatră naturală, plus tehnologia Color Lock.',
   },
 ]
 
-export function PremiumCategoryPage() {
+function useStandardProducts() {
+  return useMemo(() => {
+    const all = getProductsByCategory('standard')
+    const quatroVariants = all.filter((p) => p.slug.startsWith('quatro-'))
+    const rest = all.filter((p) => !p.slug.startsWith('quatro-'))
+
+    const quatroHub = buildHubProduct(
+      {
+        id: 'quatro',
+        name: 'Quatro',
+        slug: 'quatro',
+        category: 'standard',
+        shortDescription: 'Echilibru, Simetrie, Design Flexibil — 19 variante',
+        description:
+          'Forma pătrată oferă o suprafață echilibrată, simetrică. Quatro este cel mai popular format de pavaj exterior, disponibil într-o gamă completă de 19 variante: pavaj simplu, variante SMART de înaltă rezistență, dale tactile și marcaje speciale.',
+        image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/1.-Quatro-20-x-20-cm-gri.avif',
+        dimensions: '19 variante',
+        weight: 'Vezi pagina dedicată pentru fiecare variantă',
+        featured: true,
+      },
+      quatroVariants
+    )
+
+    return [...rest.slice(0, 3), quatroHub, ...rest.slice(3)]
+  }, [])
+}
+
+export function StandardCategoryPage() {
   const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
   const [searchParams, setSearchParams] = useSearchParams()
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
@@ -65,7 +93,7 @@ export function PremiumCategoryPage() {
   const filterTriggerRef = useRef<HTMLButtonElement>(null)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
 
-  const allProducts = useMemo(() => getProductsByCategory('premium'), [])
+  const allProducts = useStandardProducts()
   const facets = useMemo(() => buildProductFacets(allProducts), [allProducts])
   const filters = useMemo(() => parseFiltersFromSearchParams(searchParams), [searchParams])
   const sortKey = useMemo(() => parseSortFromSearchParams(searchParams), [searchParams])
@@ -75,12 +103,12 @@ export function PremiumCategoryPage() {
     return sortProducts(filtered, sortKey)
   }, [allProducts, filters, sortKey])
 
-  useCategoryListSEO(allProducts, PREMIUM_FAQ, {
-    path: '/produse/pavaje-premium',
-    title: 'Pavaje Premium - 19 Modele de Pavaj Beton Premium | Petra Pavaje',
+  useCategoryListSEO(allProducts, STANDARD_FAQ, {
+    path: '/produse/pavaje-standard',
+    title: 'Pavaje Standard - Holland, Autobloc, Unda, Quatro | Petra Pavaje',
     description:
-      'Descoperă gama Pavaje Premium Petra Pavaje: 19 modele, zeci de culori și finisaje, tehnologie Color Lock și rezistență la îngheț. Filtrează după culoare, grosime și utilizare.',
-    breadcrumbLabel: 'Pavaje Premium',
+      'Gama Pavaje Standard Petra Pavaje: Holland, Autobloc, Unda, Quatro, Con și Pavaje Eco — soluții robuste, cu raport optim calitate-preț, pentru trotuare, alei și trafic auto intens.',
+    breadcrumbLabel: 'Pavaje Standard',
   })
 
   const updateFilters = (next: ProductFilters) => {
@@ -122,12 +150,12 @@ export function PremiumCategoryPage() {
             <nav className="flex items-center gap-2 text-sm text-charcoal-400 mb-6">
               <Link to="/" className="hover:text-white transition-colors">Acasă</Link>
               <span>/</span>
-              <span className="text-white">Pavaje Premium</span>
+              <span className="text-white">Pavaje Standard</span>
             </nav>
-            <h1 className="heading-h1 mb-4">Pavaje Premium</h1>
+            <h1 className="heading-h1 mb-4">Pavaje Standard</h1>
             <p className="text-body-lg text-charcoal-400 max-w-3xl">
-              19 modele de pavaj din beton vibropresat, inspirate din texturile pietrei naturale — pentru terase, alei
-              și spații rezidențiale sau comerciale unde aspectul contează la fel de mult ca durabilitatea.
+              Soluții robuste din beton vibropresat pentru orice tip de proiect — de la trotuare pietonale până la
+              parcări și drumuri de acces cu trafic auto intens, cu cel mai bun raport calitate-preț.
             </p>
           </motion.div>
         </div>
@@ -135,13 +163,12 @@ export function PremiumCategoryPage() {
 
       <section className="py-10 md:py-12 bg-white border-b border-charcoal-100">
         <div className="container-premium">
-          <h2 className="heading-h3 text-charcoal-900 mb-3">Ce sunt pavajele Premium Petra Pavaje?</h2>
+          <h2 className="heading-h3 text-charcoal-900 mb-3">Ce sunt pavajele Standard Petra Pavaje?</h2>
           <p className="text-body text-charcoal-600 max-w-3xl">
-            Pavajele Premium sunt gândite pentru amenajări unde finisajul contează: culori și texturi variate
-            (suprafețe antichizate, structurate sau antiderapante), tehnologie Color Lock pentru păstrarea culorii în
-            timp și rezistență la îngheț. Se potrivesc teraselor, aleilor, grădinilor și spațiilor publice. Față de
-            gama Standard, Premium oferă o paletă mult mai largă de culori și finisaje; Standard rămâne alegerea cu
-            cel mai bun raport calitate-preț pentru amenajări funcționale.
+            Pavajele Standard sunt gândite pentru amenajări funcționale: grosimi de la 4 la 10 cm — inclusiv variante
+            întărite pentru trafic auto greu — culori esențiale și, pentru gama Quatro, un sistem complet de dale
+            simple, întărite (SMART), tactile și de marcaj urban. Față de gama Premium, Standard păstrează o paletă
+            de culori mai restrânsă și mizează pe robustețe și preț.
           </p>
         </div>
       </section>
@@ -211,7 +238,12 @@ export function PremiumCategoryPage() {
                       animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
                       transition={{ duration: 0.4, delay: Math.min(index, 8) * 0.05 }}
                     >
-                      <ProductGridCard product={product} basePath="/produse/pavaje-premium" />
+                      <ProductGridCard
+                        product={product}
+                        basePath="/produse/pavaje-standard"
+                        badgeLabel="Popular"
+                        extraBadge={product.slug === 'quatro' ? '19 Variante' : undefined}
+                      />
                     </motion.div>
                   ))}
                 </div>
@@ -256,8 +288,8 @@ export function PremiumCategoryPage() {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="heading-h3 text-charcoal-900 mb-3">Nu știi ce pavaj să alegi?</h2>
             <p className="text-body text-charcoal-600 mb-6">
-              Echipa noastră te poate ajuta să alegi modelul, culoarea și grosimea potrivite pentru proiectul tău, sau
-              poți estima singur cantitatea necesară cu calculatorul de pavaj.
+              Echipa noastră te poate ajuta să alegi modelul și grosimea potrivite pentru tipul de trafic al
+              proiectului tău, sau poți estima singur cantitatea necesară cu calculatorul de pavaj.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link to="/contact" className="btn-primary">
@@ -270,9 +302,9 @@ export function PremiumCategoryPage() {
               </Link>
             </div>
             <p className="text-sm text-charcoal-500 mt-6">
-              Cauți o soluție mai economică?{' '}
-              <Link to="/produse/pavaje-standard" className="link-premium">
-                Vezi și gama Pavaje Standard
+              Cauți mai multe culori și finisaje?{' '}
+              <Link to="/produse/pavaje-premium" className="link-premium">
+                Vezi și gama Pavaje Premium
                 <ArrowRight className="w-3.5 h-3.5 inline ml-1" />
               </Link>
             </p>
@@ -284,10 +316,10 @@ export function PremiumCategoryPage() {
         <div className="container-premium">
           <div className="text-center mb-10">
             <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">Întrebări Frecvente</p>
-            <h2 className="heading-h2 text-charcoal-900">Tot ce trebuie să știi despre gama Premium</h2>
+            <h2 className="heading-h2 text-charcoal-900">Tot ce trebuie să știi despre gama Standard</h2>
           </div>
           <div className="max-w-3xl mx-auto space-y-3">
-            {PREMIUM_FAQ.map((item, idx) => (
+            {STANDARD_FAQ.map((item, idx) => (
               <div key={item.question} className="bg-white rounded-xl border border-charcoal-100 overflow-hidden">
                 <button
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}

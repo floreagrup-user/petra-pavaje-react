@@ -12,15 +12,23 @@ function thicknessLabel(product: Product): string {
   return values.length === 1 ? `${values[0]} cm` : `${values[0]}-${values[values.length - 1]} cm`
 }
 
-export function PremiumProductCard({ product }: { product: Product }) {
+interface Props {
+  product: Product
+  basePath: string
+  badgeLabel?: string
+  extraBadge?: string
+}
+
+export function ProductGridCard({ product, basePath, badgeLabel = 'Premium', extraBadge }: Props) {
   const hasMix = Boolean(product.mixModes && product.mixModes.length > 0)
+  const topRightBadge = hasMix ? 'Mix' : extraBadge
   const formatCount = product.dimensionsList?.length || 0
   const thickness = thicknessLabel(product)
   const visibleColors = product.colors.slice(0, SWATCH_LIMIT)
   const extraColors = product.colors.length - visibleColors.length
 
   return (
-    <Link to={`/produse/pavaje-premium/${product.slug}`} className="group block">
+    <Link to={`${basePath}/${product.slug}`} className="group block">
       <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-stone-100 mb-4">
         <img
           src={productImages[product.slug] || product.image}
@@ -31,13 +39,13 @@ export function PremiumProductCard({ product }: { product: Product }) {
         {product.featured && (
           <div className="absolute top-3 left-3 flex items-center gap-1 px-2 py-1 bg-brand-600 text-white text-xs font-medium rounded-md">
             <Star className="w-3 h-3" />
-            Premium
+            {badgeLabel}
           </div>
         )}
-        {hasMix && (
+        {topRightBadge && (
           <div className="absolute top-3 right-3 flex items-center gap-1 px-2 py-1 bg-white/90 text-charcoal-900 text-xs font-medium rounded-md">
             <Layers className="w-3 h-3" />
-            Mix
+            {topRightBadge}
           </div>
         )}
         <div className="absolute inset-0 bg-charcoal-950/0 group-hover:bg-charcoal-950/10 transition-colors duration-500" />

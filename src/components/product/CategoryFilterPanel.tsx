@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { X } from 'lucide-react'
-import type { PremiumFacets, PremiumFilters } from '@/lib/product-filters'
+import type { ProductFacets, ProductFilters } from '@/lib/product-filters'
 
 const COLOR_PREVIEW_LIMIT = 12
 
@@ -9,14 +9,14 @@ function toggle(list: string[], value: string): string[] {
 }
 
 interface Props {
-  facets: PremiumFacets
-  filters: PremiumFilters
-  onChange: (next: PremiumFilters) => void
+  facets: ProductFacets
+  filters: ProductFilters
+  onChange: (next: ProductFilters) => void
   onClear: () => void
   hasActiveFilters: boolean
 }
 
-export function PremiumFilterPanel({ facets, filters, onChange, onClear, hasActiveFilters }: Props) {
+export function CategoryFilterPanel({ facets, filters, onChange, onClear, hasActiveFilters }: Props) {
   const [showAllColors, setShowAllColors] = useState(false)
   const visibleColors = showAllColors ? facets.colors : facets.colors.slice(0, COLOR_PREVIEW_LIMIT)
 
@@ -193,9 +193,9 @@ export function ActiveFilterChips({
   onChange,
   onClear,
 }: {
-  facets: PremiumFacets
-  filters: PremiumFilters
-  onChange: (next: PremiumFilters) => void
+  facets: ProductFacets
+  filters: ProductFilters
+  onChange: (next: ProductFilters) => void
   onClear: () => void
 }) {
   const chips: { key: string; label: string; onRemove: () => void }[] = []

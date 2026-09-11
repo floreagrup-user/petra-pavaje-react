@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Download, X, ChevronLeft, ChevronRight, Star, Image as ImageIcon, Sparkles } from 'lucide-react'
+import { ArrowRight, Download, X, ChevronLeft, ChevronRight, Star, Image as ImageIcon, Sparkles, ChevronDown, MessageCircle, Calculator } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
+import { useCategoryListSEO } from '@/hooks/useCategoryListSEO'
+import type { ProductFAQ } from '@/data/types'
 
 
 const heroImage = `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone_web.avif`
@@ -83,11 +85,52 @@ const galleryImages = [
   `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/alte-elemente-woodstone-4_web.avif`,
 ]
 
+const WOODSTONE_FAQ: ProductFAQ[] = [
+  {
+    question: 'Ce este gama Woodstone – Lemn Pietrificat?',
+    answer:
+      'Woodstone este gama de produse din beton create special pentru a reda fidel aspectul autentic al lemnului învechit — noduri, muchii tocite, fisuri și crăpături — combinând căldura vizuală a lemnului cu durabilitatea betonului vibropresat.',
+  },
+  {
+    question: 'Ce categorii de produse Woodstone oferă Petra Pavaje?',
+    answer:
+      'Gama cuprinde 7 categorii: Pavaj, Palisade și Borduri, Scări, Sisteme de Garduri, Bănci și Mese, Jardiniere Înălțate și Alte Elemente — acoperind atât suprafețele de călcat, cât și mobilierul și delimitările de exterior.',
+  },
+  {
+    question: 'Este Woodstone rezistent la îngheț și la trecerea timpului?',
+    answer:
+      'Da. Toate elementele sunt impregnate din fabrică cu un strat protector, iar fisurile texturii sunt deschise spre exterior, permițând apei să se extindă fără a afecta produsul — o rezistență la îngheț-dezgheț superioară lemnului natural.',
+  },
+  {
+    question: 'Câte combinații de amenajare sunt posibile cu Woodstone?',
+    answer:
+      'Formele și dimensiunile variate din cele 7 categorii permit peste 100 de combinații, oferind unicitate fiecărei amenajări exterioare.',
+  },
+  {
+    question: 'Care este diferența dintre Woodstone și pavajele clasice Petra Pavaje?',
+    answer:
+      'Woodstone reproduce vizual textura și nuanțele lemnului în-vechit, fiind gândit pentru amenajări cu aspect natural/rustic, în timp ce gamele Premium și Standard oferă finisaje de piatră sau beton clasic, într-o paletă mai largă de culori.',
+  },
+]
+
 export function WoodstonePage() {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
+  const [openFaq, setOpenFaq] = useState<number | null>(null)
   const { ref: catRef, isIntersecting: catVisible } = useIntersectionObserver({ threshold: 0.1 })
   const { ref: featRef, isIntersecting: featVisible } = useIntersectionObserver({ threshold: 0.1 })
   const { ref: galleryRef, isIntersecting: galleryVisible } = useIntersectionObserver({ threshold: 0.1 })
+
+  useCategoryListSEO(
+    categories.map((c) => ({ slug: c.slug, name: c.title, image: c.image })),
+    WOODSTONE_FAQ,
+    {
+      path: '/produse/woodstone',
+      title: 'Woodstone - Lemn Pietrificat | Petra Pavaje',
+      description:
+        'Gama Woodstone Petra Pavaje: 7 categorii de produse din beton cu aspect autentic de lemn învechit — pavaj, palisade, scări, garduri, bănci, jardiniere — peste 100 de combinații de amenajare.',
+      breadcrumbLabel: 'Woodstone - Lemn Pietrificat',
+    }
+  )
 
   const prevImage = () => {
     setLightboxIndex(prev => prev !== null ? (prev - 1 + galleryImages.length) % galleryImages.length : null)
@@ -210,7 +253,7 @@ export function WoodstonePage() {
             </span>
             <h2 className="heading-h2 text-charcoal-900 mb-4">Categorii de Produse</h2>
             <p className="text-body-lg text-charcoal-500 max-w-2xl mx-auto">
-              Descoperă varietatea de produse Woodstone, create pentru a transforma orice spațiu exterior într-un loc de poveste.
+              {categories.length} categorii de produse Woodstone, create pentru a transforma orice spațiu exterior într-un loc de poveste.
             </p>
           </motion.div>
 
@@ -377,6 +420,62 @@ export function WoodstonePage() {
                 />
                 <div className="absolute inset-0 bg-charcoal-950/0 group-hover:bg-charcoal-950/30 transition-colors duration-300" />
               </motion.button>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5: Conversion */}
+      <section className="py-12 md:py-16 bg-charcoal-50">
+        <div className="container-premium">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="heading-h3 text-charcoal-900 mb-3">Nu știi ce produs Woodstone să alegi?</h2>
+            <p className="text-body text-charcoal-600 mb-6">
+              Echipa noastră te poate ajuta să alegi combinația potrivită de pavaj, palisade, scări sau mobilier
+              pentru amenajarea ta, sau poți estima singur cantitatea necesară cu calculatorul de pavaj.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+              <Link to="/contact" className="btn-primary">
+                <MessageCircle className="w-4 h-4 mr-2" />
+                Cere o ofertă
+              </Link>
+              <Link to="/calculator" className="btn-secondary">
+                <Calculator className="w-4 h-4 mr-2" />
+                Calculator pavaj
+              </Link>
+            </div>
+            <p className="text-sm text-charcoal-500 mt-6">
+              Cauți un aspect clasic de piatră sau beton?{' '}
+              <Link to="/produse/pavaje-premium" className="link-premium">
+                Vezi gama Pavaje Premium
+                <ArrowRight className="w-3.5 h-3.5 inline ml-1" />
+              </Link>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6: FAQ */}
+      <section className="py-12 md:py-16">
+        <div className="container-premium">
+          <div className="text-center mb-10">
+            <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">Întrebări Frecvente</p>
+            <h2 className="heading-h2 text-charcoal-900">Tot ce trebuie să știi despre Woodstone</h2>
+          </div>
+          <div className="max-w-3xl mx-auto space-y-3">
+            {WOODSTONE_FAQ.map((item, idx) => (
+              <div key={item.question} className="bg-white rounded-xl border border-charcoal-100 overflow-hidden">
+                <button
+                  onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                  className="w-full flex items-center justify-between gap-4 p-4 text-left"
+                >
+                  <span className="font-medium text-charcoal-900">{item.question}</span>
+                  <ChevronDown className={`w-5 h-5 text-charcoal-400 shrink-0 transition-transform ${openFaq === idx ? 'rotate-180' : ''}`} />
+                </button>
+                {openFaq === idx && (
+                  <p className="px-4 pb-4 text-sm text-charcoal-600 leading-relaxed">{item.answer}</p>
+                )}
+              </div>
             ))}
           </div>
         </div>

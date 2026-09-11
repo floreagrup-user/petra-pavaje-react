@@ -1,9 +1,9 @@
-import type { Product } from '@/data/types'
+import type { Product, ProductColor, ProductDimension } from '@/data/types'
 import { slugify } from './utils'
 
 export type SortKey = 'recomandate' | 'nume-asc' | 'nume-desc' | 'grosime-asc' | 'grosime-desc'
 
-export interface PremiumFilters {
+export interface ProductFilters {
   culoare: string[]
   grosime: string[]
   utilizare: string[]
@@ -12,7 +12,7 @@ export interface PremiumFilters {
   finisaj: string[]
 }
 
-export const EMPTY_FILTERS: PremiumFilters = {
+export const EMPTY_FILTERS: ProductFilters = {
   culoare: [],
   grosime: [],
   utilizare: [],
@@ -105,7 +105,7 @@ export interface FacetOption {
   count: number
 }
 
-export interface PremiumFacets {
+export interface ProductFacets {
   colors: (FacetOption & { hex: string })[]
   thicknesses: FacetOption[]
   usage: FacetOption[]
@@ -114,7 +114,7 @@ export interface PremiumFacets {
   mixCount: number
 }
 
-export function buildPremiumFacets(products: Product[]): PremiumFacets {
+export function buildProductFacets(products: Product[]): ProductFacets {
   const colorMap = new Map<string, { label: string; hex: string; count: number }>()
   const thicknessMap = new Map<string, number>()
   const usageMap = new Map<string, number>()
@@ -158,7 +158,7 @@ export function buildPremiumFacets(products: Product[]): PremiumFacets {
   }
 }
 
-export function matchesFilters(product: Product, filters: PremiumFilters): boolean {
+export function matchesFilters(product: Product, filters: ProductFilters): boolean {
   if (filters.culoare.length && !getColorSlugs(product).some((s) => filters.culoare.includes(s))) return false
   if (filters.grosime.length && !getThicknessValues(product).some((t) => filters.grosime.includes(t))) return false
   if (filters.utilizare.length && !getUsageBuckets(product).some((u) => filters.utilizare.includes(u))) return false
@@ -181,7 +181,7 @@ function minThickness(product: Product): number {
 
 const VALID_SORT_KEYS: SortKey[] = ['recomandate', 'nume-asc', 'nume-desc', 'grosime-asc', 'grosime-desc']
 
-export function parseFiltersFromSearchParams(params: URLSearchParams): PremiumFilters {
+export function parseFiltersFromSearchParams(params: URLSearchParams): ProductFilters {
   const list = (key: string) => (params.get(key) || '').split(',').filter(Boolean)
   return {
     culoare: list('culoare'),
@@ -198,7 +198,7 @@ export function parseSortFromSearchParams(params: URLSearchParams): SortKey {
   return (VALID_SORT_KEYS as string[]).includes(value || '') ? (value as SortKey) : 'recomandate'
 }
 
-export function filtersToSearchParams(filters: PremiumFilters, sort: SortKey): URLSearchParams {
+export function filtersToSearchParams(filters: ProductFilters, sort: SortKey): URLSearchParams {
   const params = new URLSearchParams()
   if (filters.culoare.length) params.set('culoare', filters.culoare.join(','))
   if (filters.grosime.length) params.set('grosime', filters.grosime.join(','))
@@ -210,7 +210,7 @@ export function filtersToSearchParams(filters: PremiumFilters, sort: SortKey): U
   return params
 }
 
-export function hasAnyFilters(filters: PremiumFilters): boolean {
+export function hasAnyFilters(filters: ProductFilters): boolean {
   return (
     filters.culoare.length > 0 ||
     filters.grosime.length > 0 ||
@@ -219,6 +219,43 @@ export function hasAnyFilters(filters: PremiumFilters): boolean {
     filters.caracteristici.length > 0 ||
     filters.finisaj.length > 0
   )
+}
+
+type HubProductBase = Pick<
+  Product,
+  'id' | 'name' | 'slug' | 'category' | 'shortDescription' | 'description' | 'image' | 'dimensions' | 'weight' | 'featured'
+>
+
+export function buildHubProduct(base: HubProductBase, variants: Product[]): Product {
+  const colorMap = new Map<string, ProductColor>()
+  const usageSet = new Set<string>()
+  const featureSet = new Set<string>()
+  const dimensionsList: ProductDimension[] = []
+  const seenThickness = new Set<string>()
+
+  for (const variant of variants) {
+    for (const color of variant.colors) {
+      if (!colorMap.has(color.name)) colorMap.set(color.name, color)
+    }
+    for (const usage of variant.usage || []) usageSet.add(usage)
+    for (const feature of variant.technicalFeatures || []) featureSet.add(feature)
+    for (const dim of variant.dimensionsList || []) {
+      if (!seenThickness.has(dim.thickness)) {
+        seenThickness.add(dim.thickness)
+        dimensionsList.push(dim)
+      }
+    }
+  }
+
+  return {
+    ...base,
+    gallery: [],
+    specs: [],
+    colors: [...colorMap.values()],
+    dimensionsList,
+    usage: [...usageSet],
+    technicalFeatures: [...featureSet],
+  }
 }
 
 export function sortProducts(products: Product[], sortKey: SortKey): Product[] {
