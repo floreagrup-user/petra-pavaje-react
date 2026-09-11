@@ -122,9 +122,9 @@ export const footerLinks = {
     { label: 'Pavaje Premium', href: '/produse/pavaje-premium' },
     { label: 'Pavaje Standard', href: '/produse/pavaje-standard' },
     { label: 'Woodstone', href: '/produse/woodstone' },
-    { label: 'Garduri', href: '/produse/elemente/garduri' },
-    { label: 'Borduri', href: '/produse/elemente/borduri' },
-    { label: 'Bolțari', href: '/produse/elemente/boltari' },
+    { label: 'Garduri', href: '/produse/garduri' },
+    { label: 'Borduri', href: '/produse/borduri' },
+    { label: 'Bolțari', href: '/produse/boltari' },
   ],
   company: [
     { label: 'Despre Noi', href: '/despre-noi' },

@@ -31,3 +31,7 @@ dist-ssr
 # Build
 .cache
 .turbo
+
+# Python (from ux-ui-agent-skills validation scripts)
+__pycache__/
+*.pyc

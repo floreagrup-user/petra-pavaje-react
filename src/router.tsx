@@ -3,6 +3,7 @@ import { lazy, Suspense } from 'react'
 import { Layout } from '@/layouts/Layout'
 
 const HomePage = lazy(() => import('@/pages/HomePage').then(m => ({ default: m.HomePage })))
+const ProductsHubPage = lazy(() => import('@/pages/ProductsHubPage').then(m => ({ default: m.ProductsHubPage })))
 const ProductCategoryPage = lazy(() => import('@/pages/ProductCategoryPage').then(m => ({ default: m.ProductCategoryPage })))
 const ProductDetailPage = lazy(() => import('@/pages/ProductDetailPage').then(m => ({ default: m.ProductDetailPage })))
 const ContactPage = lazy(() => import('@/pages/ContactPage').then(m => ({ default: m.ContactPage })))
@@ -29,6 +30,7 @@ export const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { index: true, element: <Suspense><HomePage /></Suspense> },
+      { path: 'produse', element: <Suspense><ProductsHubPage /></Suspense> },
       { path: 'produse/woodstone', element: <Suspense><WoodstonePage /></Suspense> },
       { path: 'produse/woodstone/:category', element: <Suspense><WoodstoneCategoryPage /></Suspense> },
       { path: 'produse/pavaje-standard/quatro', element: <Suspense><QuatroPage /></Suspense> },

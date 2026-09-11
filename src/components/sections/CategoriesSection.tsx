@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { categories } from '@/data/site'
 
-const categoryImages: Record<string, string> = {
+export const categoryImages: Record<string, string> = {
   premium: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/web-prima-pagina-1-Medium.avif',
   standard: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/holland-Medium.avif',
   woodstone: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/woodstoone-Medium.avif',
