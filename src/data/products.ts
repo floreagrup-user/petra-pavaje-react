@@ -214,7 +214,7 @@ export const products: Product[] = [
     slug: 'antic',
     category: 'premium',
     shortDescription: 'Eleganță și Rezistență',
-    description: 'Colecția Antic reproduce aspectul natural, patinat, al pietrei vechi de carieră, printr-un finisaj de suprafață antichizat aplicat fiecărei plăci. Disponibil în 4 dimensiuni și 4 culori, sistemul este potrivit pentru trafic pietonal și ușor — alei, terase, parcuri și zone rezidențiale — cu rezistență garantată la îngheț.',
+    description: 'Colecția Antic reproduce aspectul natural, patinat, al pietrei vechi de carieră, printr-un finisaj de suprafață antichizat aplicat fiecărei plăci. Disponibil în 3 dimensiuni individuale plus formatul Mix 6.72, în 4 culori, sistemul este potrivit pentru trafic pietonal și ușor — alei, terase, parcuri și zone rezidențiale — cu rezistență garantată la îngheț.',
     image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/37.-Antic-10-x-10-si-20-x-10-cm-gri-antic-Large.avif',
     gallery: [
       'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/1.-Antic-20-x-20-cm-moka-Large.avif',
@@ -272,9 +272,9 @@ export const products: Product[] = [
       'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/29.-Antic-20-x-10-cm-gri-antic-Large.avif',
       'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/28.-Antic-20-x-10-cm-gri-antic-Large.avif',
     ],
-    heroFeatures: ['4 Dimensiuni + Mix 6.72', '4 Culori', 'Garanție 5 ani', 'Rezistent la Îngheț'],
+    heroFeatures: ['3 Dimensiuni + Mix 6.72', '4 Culori', 'Garanție 5 ani', 'Rezistent la Îngheț'],
     specs: [
-      { label: 'Dimensiuni', value: '4 individuale + Mix 6.72' },
+      { label: 'Dimensiuni', value: '3 individuale + Mix 6.72' },
       { label: 'Culori', value: '4 culori' },
       { label: 'Grosime', value: '6 cm' },
       { label: 'Garanție', value: '5 ani' },
@@ -282,13 +282,13 @@ export const products: Product[] = [
     mixModes: ['MIX 6.72'],
     colors: [
       { name: 'Gri Antic', hex: '#9e9e9e', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-gri-antic-web-3.jpg' },
-      { name: 'Moka', hex: '#6b4423', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-gri-antic-web-3.jpg' },
-      { name: 'Roșu-Vulcanic', hex: '#8B4513', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-Rosu-vulcanic-1.jpg' },
+      { name: 'Moka', hex: '#6b5b4e', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-moka-web-2.webp' },
+      { name: 'Roșu Vulcanic', hex: '#8b3226', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-Rosu-vulcanic-1.jpg' },
       { name: 'Negru', hex: '#1a1a1a', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-negru-web-1.jpg' },
     ],
-    dimensions: '4 dimensiuni',
+    dimensions: '3 dimensiuni + Mix 6.72',
     dimensionsList: [
-      { label: '10×10×6 cm', size: '10×10', thickness: '6 cm', piecesPerMp: 100, piecesPerPallet: 900, kgPerPallet: 1263, mpPerPallet: 9 },
+      { label: '10×10×6 cm', size: '10×10', thickness: '6 cm', piecesPerMp: 100, piecesPerPallet: 990, kgPerPallet: 1263, mpPerPallet: 9.9 },
       { label: '20×10×6 cm', size: '20×10', thickness: '6 cm', piecesPerMp: 50, piecesPerPallet: 540, kgPerPallet: 1483, mpPerPallet: 10.8 },
       { label: '20×20×6 cm', size: '20×20', thickness: '6 cm', piecesPerMp: 25, piecesPerPallet: 300, kgPerPallet: 1600, mpPerPallet: 12 },
       { label: 'MIX 6.72', size: 'Mix', thickness: '6 cm', piecesPerMp: 1.15, piecesPerPallet: 720, kgPerPallet: 1430, mpPerPallet: 11.52, mixComposition: [
@@ -352,7 +352,7 @@ export const products: Product[] = [
     ],
     faq: [
       { question: 'Ce dimensiuni are pavajul Antic?', answer: 'Pavajul Antic este disponibil în 4 formate: 10×10×6 cm, 20×10×6 cm, 20×20×6 cm și formatul combinat Mix 6.72 (18×12×6 cm, 12×12×6 cm și 12×9×6 cm).' },
-      { question: 'În ce culori este disponibil pavajul Antic?', answer: 'Antic se produce în 4 culori: Gri Antic, Moka, Roșu-Vulcanic și Negru, disponibile pe toate cele 4 formate.' },
+      { question: 'În ce culori este disponibil pavajul Antic?', answer: 'Antic se produce în 4 culori: Gri Antic, Moka, Roșu Vulcanic și Negru, disponibile pe toate cele 4 formate.' },
       { question: 'Este pavajul Antic rezistent la îngheț?', answer: 'Da. Pavajul Antic are rezistență garantată la îngheț-dezgheț și beneficiază de o garanție de 5 ani.' },
       { question: 'Ce este finisajul antichizat al pavajului Antic?', answer: 'Este un tratament de suprafață aplicat fiecărei plăci în parte, care reproduce aspectul natural, patinat, al pietrei vechi de carieră.' },
       { question: 'Unde poate fi folosit pavajul Antic?', answer: 'Antic este recomandat pentru trafic pietonal și trafic ușor — alei, terase, parcuri și zone rezidențiale. Nu este recomandat pentru trafic greu (auto intens).' },
@@ -392,7 +392,7 @@ export const products: Product[] = [
     colors: [
       { name: 'Gri', hex: '#808080', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-gri-1.jpg' },
       { name: 'Roșu', hex: '#b22222', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-rosu.jpg' },
-      { name: 'Galben', hex: '#d4a837', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-galben-1.jpg' },
+      { name: 'Bej', hex: '#d4c5a9', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/primo-bej.avif' },
       { name: 'Negru', hex: '#1a1a1a', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-negru-web-1.jpg' },
     ],
     dimensions: '2 dimensiuni',
@@ -430,7 +430,7 @@ export const products: Product[] = [
     ],
     faq: [
       { question: 'Ce dimensiuni are pavajul Primo?', answer: 'Pavajul Primo este disponibil în 2 formate: 20×10×4 cm și 21×14×6 cm.' },
-      { question: 'În ce culori este disponibil pavajul Primo?', answer: 'Primo se produce în 4 culori: Gri, Roșu, Galben și Negru, disponibile pe ambele formate.' },
+      { question: 'În ce culori este disponibil pavajul Primo?', answer: 'Primo se produce în 4 culori: Gri, Roșu, Bej și Negru, disponibile pe ambele formate.' },
       { question: 'Este pavajul Primo rezistent la îngheț?', answer: 'Da. Pavajul Primo are rezistență garantată la îngheț-dezgheț și beneficiază de o garanție de 5 ani.' },
       { question: 'Ce este finisajul antichizat al pavajului Primo?', answer: 'Este un tratament de suprafață aplicat fiecărei plăci în parte, care reproduce aspectul natural, patinat, al pietrei vechi de carieră — o alegere potrivită pentru amenajări cu personalitate.' },
       { question: 'Unde poate fi folosit pavajul Primo?', answer: 'Primo este recomandat pentru trafic pietonal și trafic ușor — alei, terase și zone rezidențiale. Nu este recomandat pentru trafic greu (auto intens).' },
@@ -807,7 +807,7 @@ export const products: Product[] = [
       { name: 'Gri Verzui', hex: '#7a8a7a', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-gri-verzui-web-1.webp' },
       { name: 'Indigo', hex: '#4b0082', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-indigo-web-1.webp' },
       { name: 'Acvatic', hex: '#5f9ea0', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-acvatic-1.webp' },
-      { name: 'Gri Galbui', hex: '#b8a88a', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-gri-galbui-1.webp' },
+      { name: 'Gri Gălbui', hex: '#b8a88a', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-gri-galbui-1.webp' },
     ],
     dimensions: '4 dimensiuni individuale',
     dimensionsList: [
@@ -859,7 +859,7 @@ export const products: Product[] = [
     faq: [
       { question: 'Ce este pavajul Mistic și de ce este popular?', answer: 'Mistic este unul dintre cele mai noi și mai populare produse Petra Pavaje, remarcându-se prin suprafața mare a plăcilor (lungime de 60 cm), care creează o amenajare modernă cu puține rosturi. Varietatea de nuanțe reci, griuri și note albăstrui permite folosirea atât pentru case, cât și pentru spații publice.' },
       { question: 'În ce dimensiuni este disponibil pavajul Mistic?', answer: 'Mistic este disponibil în 4 dimensiuni individuale (40×10×6, 30×20×6, 40×40×6, 60×30×6) și 9 modele Mix (4.30, 5.28, 6.14, 6.30, 6.30 Ondulat, 6.6, 7.9, 8.20, 8.30).' },
-      { question: 'În ce culori este disponibil pavajul Mistic?', answer: 'Mistic este disponibil în 6 culori: Gri Bazaltic, Gri Grafit, Gri Verzui, Indigo, Acvatic și Gri Galbui.' },
+      { question: 'În ce culori este disponibil pavajul Mistic?', answer: 'Mistic este disponibil în 6 culori: Gri Bazaltic, Gri Grafit, Gri Verzui, Indigo, Acvatic și Gri Gălbui.' },
       { question: 'Pentru ce tip de trafic este recomandat pavajul Mistic?', answer: 'Pavajul Mistic este recomandat pentru trafic pietonal și trafic ușor, fiind potrivit pentru parcuri, terase și zone rezidențiale. Nu este recomandat pentru trafic greu (auto intens).' },
       { question: 'Are pavajul Mistic tehnologie Color Lock și rezistență la îngheț?', answer: 'Da. Pavajul Mistic beneficiază de tehnologie Color Lock, care menține culoarea uniformă în timp, și de rezistență garantată la îngheț.' },
       { question: 'Ce garanție oferă Petra Pavaje pentru pavajul Mistic?', answer: 'Petra Pavaje oferă o garanție de 5 ani pentru pavajul Mistic.' },
@@ -1337,8 +1337,8 @@ export const products: Product[] = [
     name: 'Pastel',
     slug: 'pastel',
     category: 'premium',
-    shortDescription: 'Cromatică deosebită în trei registre',
-    description: 'Produsul "Pastel" de la Petra Pavaje încântă printr-o cromatică deosebită, cu tonuri în trei registre: Spring, Autumn și Winter. Numele pavajului provine din arta plastică, "pastel" desemnând un creion moale pentru desen. Amenajarea obținută este întocmai unei opere de artă, pentru că nuanțele care se succed în degradeuri calde sau reci surprind privirea oricărui privitor.',
+    shortDescription: 'Cromatică deosebită în două registre',
+    description: 'Produsul "Pastel" de la Petra Pavaje încântă printr-o cromatică deosebită, cu tonuri în două registre: Autumn și Winter. Numele pavajului provine din arta plastică, "pastel" desemnând un creion moale pentru desen. Amenajarea obținută este întocmai unei opere de artă, pentru că nuanțele care se succed în degradeuri calde sau reci surprind privirea oricărui privitor.',
     image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Pastel.avif',
     gallery: [
       'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/10.-Pastel-MIX-6.30-Winter-Large.avif',
@@ -1355,16 +1355,15 @@ export const products: Product[] = [
       'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/8.-Pastel-MIX-6.30-Winter-Large.avif',
       'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/2.-Pastel-20-x-10-cm-Autumn-Large.avif',
     ],
-    heroFeatures: ['2 Dimensiuni + 2 Mix', '3 Culori', 'Garanție 5 ani'],
+    heroFeatures: ['2 Dimensiuni + 2 Mix', '2 Culori', 'Garanție 5 ani'],
     specs: [
       { label: 'Dimensiuni', value: 'Doar Mix 4.30 și Mix 6.30' },
-      { label: 'Culori', value: '3 culori' },
+      { label: 'Culori', value: '2 culori' },
       { label: 'Grosime', value: '4-6 cm' },
       { label: 'Garanție', value: '5 ani' },
     ],
     mixModes: ['MIX 4.30', 'MIX 6.30'],
     colors: [
-      { name: 'Spring', hex: '#e8d5b7', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-spring-web-1-1.webp' },
       { name: 'Autumn', hex: '#c4956a', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-autumn-1.webp' },
       { name: 'Winter', hex: '#b0b8b8', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-winter-1.webp' },
     ],
@@ -1403,7 +1402,7 @@ export const products: Product[] = [
     ],
     advantages: [
       'Cromatică degradee, unică în gama Petra Pavaje',
-      '3 culori inspirate din anotimpuri',
+      '2 culori inspirate din anotimpuri',
       'Disponibil în două grosimi (Mix 4.30 și Mix 6.30)',
       'Garanție 5 ani',
     ],
@@ -1415,7 +1414,7 @@ export const products: Product[] = [
     ],
     faq: [
       { question: 'Ce este pavajul Pastel și cum se vinde?', answer: 'Pastel este un pavaj premium vândut ca model Mix 4.30 (grosime 4 cm) sau Mix 6.30 (grosime 6 cm) — fiecare fiind o combinație a 3 dimensiuni de piese (20×10, 20×20 și 30×20 cm) în același ambalaj. Piesele de 20×10 cm afișate ca „dimensiune" pe pagină sunt componente ale acestor Mix-uri, nu produse comercializate separat.' },
-      { question: 'În ce culori este disponibil pavajul Pastel?', answer: 'Pastel este disponibil în 3 nuanțe: Spring, Autumn și Winter, inspirate din anotimpuri, cu degradeuri calde sau reci specifice fiecărui registru cromatic.' },
+      { question: 'În ce culori este disponibil pavajul Pastel?', answer: 'Pastel este disponibil în 2 nuanțe: Autumn și Winter, inspirate din anotimpuri, cu degradeuri calde sau reci specifice fiecărui registru cromatic.' },
       { question: 'Ce dimensiuni are pavajul Pastel Mix?', answer: 'Mix 4.30 combină piese de 20×10×4, 20×20×4 și 30×20×4 cm. Mix 6.30 combină piese de 20×10×6, 20×20×6 și 30×20×6 cm.' },
       { question: 'Unde poate fi folosit pavajul Pastel?', answer: 'Pastel este recomandat pentru trafic pietonal și trafic ușor — grădini, alei, terase și spații publice de tip parc, unde cromatica sa degradee poate crea un efect vizual de tip operă de artă.' },
       { question: 'Există fișă tehnică și Declarație de performanță pentru Pastel?', answer: 'Da — o fișă tehnică pentru Mix 6.30 și Declarații de performanță (UE) pentru culorile Autumn și Winter, toate disponibile în secțiunea Documente Produs de mai jos.' },
@@ -1591,14 +1590,14 @@ export const products: Product[] = [
     ],
     dimensions: '2 variante Mix',
     dimensionsList: [
-      { label: 'MIX 6.14', size: 'Mix', thickness: '6 cm', piecesPerMp: 0.96, piecesPerPallet: 140, kgPerPallet: 1459, mpPerPallet: 9.6 },
+      { label: 'MIX 6.14', size: 'Mix', thickness: '6 cm', piecesPerMp: 0.96, piecesPerPallet: 140, kgPerPallet: 1369, mpPerPallet: 9.6 },
       { label: 'MIX 8.20', size: 'Mix', thickness: '8 cm', piecesPerMp: 0.96, piecesPerPallet: 160, kgPerPallet: 1435, mpPerPallet: 7.68 },
     ],
     dimensionImages: [
       'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-Dacic.avif',
       'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-Dacic-1.avif',
     ],
-    weight: '1.435 - 1.459 Kg/palet',
+    weight: '1.369 - 1.435 Kg/palet',
     usage: ['Grădini', 'Alei', 'Terase', 'Parcuri'],
     technicalFeatures: [
       'Trafic pietonal',
@@ -1666,9 +1665,9 @@ export const products: Product[] = [
       'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/19.-Relief-MIX-6.30-negru-onix-Large.avif',
       'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/17.-Relief-40-x-40-cm-gri-calcar-si-negru-onix-Large.avif',
     ],
-    heroFeatures: ['4 Dimensiuni + 1 Mix', '7 Culori', 'Garanție 5 ani'],
+    heroFeatures: ['5 Dimensiuni + 1 Mix', '7 Culori', 'Garanție 5 ani'],
     specs: [
-      { label: 'Dimensiuni', value: '4 dimensiuni + 1 Mix' },
+      { label: 'Dimensiuni', value: '5 dimensiuni + 1 Mix' },
       { label: 'Culori', value: '7 culori' },
       { label: 'Grosime', value: '5-6 cm' },
       { label: 'Garanție', value: '5 ani' },
@@ -1683,9 +1682,10 @@ export const products: Product[] = [
       { name: 'Rubin', hex: '#8b1a1a', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-rubin-1.avif' },
       { name: 'Verde Smarald', hex: '#2e6b4f', image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/culoare-verde-smarald-web-2.avif' },
     ],
-    dimensions: '4 dimensiuni + 1 Mix',
+    dimensions: '5 dimensiuni + 1 Mix',
     dimensionsList: [
       { label: '20×10×6 cm', size: '20×10', thickness: '6 cm', piecesPerMp: 50, piecesPerPallet: 540, kgPerPallet: 1483, mpPerPallet: 10.8 },
+      { label: '40×10×6 cm', size: '40×10', thickness: '6 cm', piecesPerMp: 25, piecesPerPallet: 220, kgPerPallet: 1235, mpPerPallet: 8.8 },
       { label: '20×20×6 cm', size: '20×20', thickness: '6 cm', piecesPerMp: 25, piecesPerPallet: 300, kgPerPallet: 1675, mpPerPallet: 12 },
       { label: '30×20×6 cm', size: '30×20', thickness: '6 cm', piecesPerMp: 16.6, piecesPerPallet: 200, kgPerPallet: 1655, mpPerPallet: 12 },
       { label: '40×40×5 cm', size: '40×40', thickness: '5 cm', piecesPerMp: 6.25, piecesPerPallet: 60, kgPerPallet: 1132, mpPerPallet: 9.6 },
@@ -1712,14 +1712,14 @@ export const products: Product[] = [
     advantages: [
       'Design spectaculos cu aspect de gruș și mix de nuanțe',
       'Suprafață antiderapantă — siguranță și utilitate',
-      '4 dimensiuni + format Mix 6.30 pentru compoziții variate',
+      '5 dimensiuni + format Mix 6.30 pentru compoziții variate',
       '7 culori vibrante, de la tonuri neutre la nuanțe intense',
       'Rezistența și durabilitatea betonului vibropresat',
       'Garanție 5 ani',
     ],
     faq: [
       { question: 'Ce este pavajul Relief și ce îl diferențiază?', answer: 'Datorită aspectului de gruș și a mixului de nuanțe, Relief oferă un design spectaculos și rafinat spațiului amenajat. Suprafața care împiedică alunecarea îl face combinația perfectă dintre calitatea ornamentală și utilitate.' },
-      { question: 'În ce dimensiuni este disponibil pavajul Relief?', answer: 'Relief este disponibil în 4 dimensiuni individuale — 20×10×6 cm, 20×20×6 cm, 30×20×6 cm, 40×40×5 cm — și în formatul Mix 6.30, un mix de 20×10, 20×20 și 30×20 cm.' },
+      { question: 'În ce dimensiuni este disponibil pavajul Relief?', answer: 'Relief este disponibil în 5 dimensiuni individuale — 20×10×6 cm, 40×10×6 cm, 20×20×6 cm, 30×20×6 cm, 40×40×5 cm — și în formatul Mix 6.30, un mix de 20×10, 20×20 și 30×20 cm.' },
       { question: 'În ce culori este disponibil pavajul Relief?', answer: 'Relief este disponibil în 7 nuanțe: Marmorat, Gri Onix, Negru Onix, Gri Calcar, Bej Limonită, Rubin și Verde Smarald.' },
       { question: 'Ce este formatul Mix 6.30 la Relief?', answer: 'Mix 6.30 este un format special care combină trei dimensiuni — 20×10×6 cm (12 buc), 20×20×6 cm (12 buc) și 30×20×6 cm (6 buc) — într-un pachet de 1,08 mp, ideal pentru spații generoase.' },
       { question: 'Care sunt utilizațiile recomandate pentru pavajul Relief?', answer: 'Relief este recomandat pentru trafic pietonal, trafic ușor, terase, parcuri și alei. Suprafața antiderapantă îl face ideal pentru zonele umede sau cu risc de alunecare.' },
@@ -1765,7 +1765,7 @@ export const products: Product[] = [
     ],
     dimensions: '24×6×7 cm',
     dimensionsList: [
-      { label: '24×6×7 cm', size: '24×6', thickness: '7 cm', piecesPerMp: 69.44, piecesPerPallet: 450, kgPerPallet: 970, mpPerPallet: 6.48 },
+      { label: '24×6×7 cm', size: '24×6', thickness: '7 cm', piecesPerMp: 50, piecesPerPallet: 450, kgPerPallet: 970, mpPerPallet: 9 },
     ],
     dimensionImages: [
       'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/stretto2-scaled.avif',
