@@ -18,6 +18,8 @@ const QuatroPage = lazy(() => import('@/pages/QuatroPage').then(m => ({ default:
 const PremiumCategoryPage = lazy(() => import('@/pages/PremiumCategoryPage').then(m => ({ default: m.PremiumCategoryPage })))
 const StandardCategoryPage = lazy(() => import('@/pages/StandardCategoryPage').then(m => ({ default: m.StandardCategoryPage })))
 const BorduriCategoryPage = lazy(() => import('@/pages/BorduriCategoryPage').then(m => ({ default: m.BorduriCategoryPage })))
+const ElementCategoryPage = lazy(() => import('@/pages/ElementCategoryPage').then(m => ({ default: m.ElementCategoryPage })))
+const ElementHubPage = lazy(() => import('@/pages/ElementHubPage').then(m => ({ default: m.ElementHubPage })))
 
 const LazyGenericPage = ({ title, contentKey }: { title: string; contentKey: string }) => (
   <Suspense fallback={<div className="pt-32 pb-16 text-center text-charcoal-500">Se încarcă...</div>}>
@@ -39,6 +41,17 @@ export const router = createBrowserRouter([
       { path: 'produse/pavaje-premium', element: <Suspense><PremiumCategoryPage /></Suspense> },
       { path: 'produse/pavaje-standard', element: <Suspense><StandardCategoryPage /></Suspense> },
       { path: 'produse/borduri', element: <Suspense><BorduriCategoryPage /></Suspense> },
+      { path: 'produse/rigole', element: <Suspense><ElementCategoryPage slug="rigole" /></Suspense> },
+      { path: 'produse/boltari', element: <Suspense><ElementCategoryPage slug="boltari" /></Suspense> },
+      { path: 'produse/jardiniere', element: <Suspense><ElementCategoryPage slug="jardiniere" /></Suspense> },
+      { path: 'produse/palisada', element: <Suspense><ElementCategoryPage slug="palisada" /></Suspense> },
+      { path: 'produse/banci', element: <Suspense><ElementCategoryPage slug="banci" /></Suspense> },
+      { path: 'produse/treapta', element: <Suspense><ElementCategoryPage slug="treapta" /></Suspense> },
+      { path: 'produse/bloc-de-zid', element: <Suspense><ElementCategoryPage slug="bloc-de-zid" /></Suspense> },
+      { path: 'produse/garduri', element: <Suspense><ElementHubPage slug="garduri" /></Suspense> },
+      { path: 'produse/garduri/:element', element: <Suspense><ElementCategoryPage /></Suspense> },
+      { path: 'produse/elemente-de-canalizare', element: <Suspense><ElementHubPage slug="elemente-de-canalizare" /></Suspense> },
+      { path: 'produse/elemente-de-canalizare/:element', element: <Suspense><ElementCategoryPage /></Suspense> },
       { path: 'produse/:category', element: <Suspense><ProductCategoryPage /></Suspense> },
       { path: 'produse/:category/:product', element: <Suspense><ProductDetailPage /></Suspense> },
       { path: 'woodstone-lemn-pietrificat', element: <Suspense><WoodstonePage /></Suspense> },

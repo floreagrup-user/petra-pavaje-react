@@ -156,3 +156,39 @@ export interface WoodstoneCategory {
   usage: string[]
   faq?: ProductFAQ[]
 }
+
+export interface ElementVariant {
+  name: string
+  code: string
+  dimensions: string
+  piecesPerMl?: number | string
+  piecesPerPallet?: number | string
+  weightKg: number | string
+  mlPerPallet?: number | string
+  badge?: string
+}
+
+export interface ElementVariantGroup {
+  name: string
+  note?: string
+  variants: ElementVariant[]
+}
+
+export interface ElementCategoryData {
+  slug: string
+  name: string
+  title: string
+  shortDescription: string
+  description: string
+  image: string
+  gallery: string[]
+  heroFeatures: string[]
+  variantGroups: ElementVariantGroup[]
+  colors: ProductColor[]
+  technicalFeatures: string[]
+  advantages: string[]
+  usage: string[]
+  documents?: ProductDocument[]
+  faq?: ProductFAQ[]
+  parent?: { slug: string; name: string }
+}
