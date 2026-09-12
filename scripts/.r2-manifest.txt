@@ -559,6 +559,8 @@
 9.avif
 Alpin-30x20x6-alb.avif
 Anti-eflorescenta.avif
+Anti-mucegai.avif
+Anti-rugina.avif
 Antic-antichizat-Petra-Pavaje-Alei-scaled.avif
 Antic.avif
 Bordura-40x15x20.avif
@@ -646,6 +648,7 @@ Declarație-de-performanță-1269-BORDURA-CILINDRICA-106-9-25-negru-rotunjita
 Declarație-de-performanță-1270-BORDURA-CILINDRICA-106-9-25-maro-rotunjita-rev0-AB-Petra-Pavaje.pdf
 Declarație-de-performanță-1271-BORDURA-CILINDRICA-106-9-25-alb-rotunjita-rev0-AB-Petra-Pavaje.pdf
 Declarație-de-performanță-1398-BORDURA-ORNAMENTALA-40-15-20-gri-dreapta-rev0-AB-Petra-Pavaje.pdf
+Detergent-alcalin.avif
 Fotografie-oficiala-Alpin-30-x-20-cm-alb-si-moka-produs-de-Petra-Pavaje-scaled.avif
 Fotografie-oficiala-Alpin-30-x-20-cm-alb-si-moka-produs-de-Petra-Pavaje-web2.avif
 Fotografie-oficiala-Alpin-60x30-cm-alb-produs-de-Petra-Pavaje-1-scaled.avif
@@ -989,6 +992,8 @@ grila-60x40x10-gri.png
 holland-Medium.avif
 img_1-1.avif
 img_2.avif
+impregnant-efect-natural.avif
+impregnant-efect-umded.avif
 inovatie-tehnologica-web1-1.avif
 jardiniere-woodstone-1_web.avif
 jardiniere-woodstone-4_web.avif
