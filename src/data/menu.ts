@@ -115,6 +115,7 @@ export const mainMenu: MenuItem[] = [
     children: [
       { label: 'Catalog', href: '/catalog' },
       { label: 'Montaj', href: '/montaj' },
+      { label: 'Modele de Montaj', href: '/modele-de-montaj' },
       { label: 'Ghid întreținere', href: '/intretinere' },
       { label: 'Întrebări frecvente', href: '/faq' },
       { label: 'Documente tehnice', href: '/documente' },
@@ -155,6 +156,7 @@ export const footerLinks = {
   resources: [
     { label: 'Catalog', href: '/catalog' },
     { label: 'Montaj', href: '/montaj' },
+    { label: 'Modele de Montaj', href: '/modele-de-montaj' },
     { label: 'Ghid întreținere', href: '/intretinere' },
     { label: 'Tur Virtual', href: '/tur-virtual' },
     { label: 'FAQ', href: '/faq' },
