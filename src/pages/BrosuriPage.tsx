@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { BookOpen, ExternalLink, MessageCircle } from 'lucide-react'
+import { BookOpen, ExternalLink } from 'lucide-react'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
 
 interface Brochure {
@@ -195,19 +195,6 @@ export function BrosuriPage() {
               </AnimatePresence>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="py-12 md:py-16 bg-charcoal-950 text-white">
-        <div className="container-premium flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-2">Transformă-ți spațiul exterior</h2>
-            <p className="text-charcoal-400">Solicită o ofertă personalizată de la reprezentantul din zona ta.</p>
-          </div>
-          <Link to="/contact" className="btn-primary inline-flex shrink-0">
-            <MessageCircle className="w-4 h-4 mr-2" />
-            Solicită Ofertă
-          </Link>
         </div>
       </section>
     </div>
