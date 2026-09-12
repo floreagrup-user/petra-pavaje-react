@@ -31,20 +31,6 @@ const contentMap: Record<string, { title: string; sections: { heading: string; b
     ],
     cta: true,
   },
-  'laborator': {
-    title: 'Laborator',
-    sections: [
-      {
-        heading: 'Laborator Propriu de Cercetare',
-        body: 'Deținem la fiecare unitate de producție laboratoare proprii unde testăm constant materiile prime și produsele finite, pentru a asigura o calitate superioară constantă.',
-      },
-      {
-        heading: 'Control al Calității',
-        body: 'Fiecare lot de producție este testat riguros în laboratoarele noastre, de la rezistența la compresiune până la absorbtia de apă și rezistența la îngheț-dezgheț.',
-      },
-    ],
-    cta: false,
-  },
   'cariera': {
     title: 'Carieră',
     sections: [

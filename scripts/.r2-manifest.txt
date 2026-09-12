@@ -1084,3 +1084,5 @@ respectul-fata-de-oameni-web2.avif
 sprijin-pt-educatie-web2.avif
 sustinerea-sportului-de-performanta-web2.avif
 organizarea-evenimentelor-sportive-web2.avif
+Picture-1.png
+laborator-echipament-1.png
