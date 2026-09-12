@@ -11,6 +11,13 @@ export const categoryImages: Record<string, string> = {
   borduri: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/borduri-Medium.avif',
   boltari: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/boltari-home-page-1-Medium.avif',
   garduri: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/web-prima-pagina-2-Medium.avif',
+  rigole: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/2020/06/rigola-1200x800-1.jpg',
+  jardiniere: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/1.-Jardiniera-40-x-30-x-25cm-rosu-Large.avif',
+  palisada: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/palisada.avif',
+  banci: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/2020/06/banci-1200x800-1.jpg',
+  treapta: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/treapta.avif',
+  'bloc-de-zid': 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/1.-Bloc-de-zid-alb-Large.avif',
+  'elemente-de-canalizare': 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/slider-infrastructura-rutiera-petra-pavaje.webp',
 }
 
 export function CategoriesSection() {
