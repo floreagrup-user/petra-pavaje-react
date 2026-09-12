@@ -23,6 +23,7 @@ const ElementHubPage = lazy(() => import('@/pages/ElementHubPage').then(m => ({ 
 const ElementeOverviewPage = lazy(() => import('@/pages/ElementeOverviewPage').then(m => ({ default: m.ElementeOverviewPage })))
 const BrosuriPage = lazy(() => import('@/pages/BrosuriPage').then(m => ({ default: m.BrosuriPage })))
 const AboutPage = lazy(() => import('@/pages/AboutPage').then(m => ({ default: m.AboutPage })))
+const FloreaGrupPage = lazy(() => import('@/pages/FloreaGrupPage').then(m => ({ default: m.FloreaGrupPage })))
 const CatalogPage = lazy(() => import('@/pages/CatalogPage').then(m => ({ default: m.CatalogPage })))
 
 const LazyGenericPage = ({ title, contentKey }: { title: string; contentKey: string }) => (
@@ -69,7 +70,7 @@ export const router = createBrowserRouter([
       { path: 'despre-noi', element: <Suspense><AboutPage /></Suspense> },
       { path: 'sustenabilitate', element: <LazyGenericPage title="Sustenabilitate" contentKey="sustainability" /> },
       { path: 'compania', element: <LazyGenericPage title="Compania" contentKey="company" /> },
-      { path: 'florea-grup', element: <LazyGenericPage title="Florea Grup – 30 de ani" contentKey="florea-grup" /> },
+      { path: 'florea-grup', element: <Suspense><FloreaGrupPage /></Suspense> },
       { path: 'garantie', element: <LazyGenericPage title="Garanție" contentKey="garantie" /> },
       { path: 'laborator', element: <LazyGenericPage title="Laborator" contentKey="laborator" /> },
       { path: 'cariera', element: <LazyGenericPage title="Carieră" contentKey="cariera" /> },
