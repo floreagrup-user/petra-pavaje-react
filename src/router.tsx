@@ -30,6 +30,8 @@ const LaboratorPage = lazy(() => import('@/pages/LaboratorPage').then(m => ({ de
 const MontajPage = lazy(() => import('@/pages/MontajPage').then(m => ({ default: m.MontajPage })))
 const ModeleMontajPage = lazy(() => import('@/pages/ModeleMontajPage').then(m => ({ default: m.ModeleMontajPage })))
 const IntretinerePage = lazy(() => import('@/pages/IntretinerePage').then(m => ({ default: m.IntretinerePage })))
+const DegivrarePage = lazy(() => import('@/pages/DegivrarePage').then(m => ({ default: m.DegivrarePage })))
+const FaqPage = lazy(() => import('@/pages/FaqPage').then(m => ({ default: m.FaqPage })))
 
 const LazyGenericPage = ({ title, contentKey }: { title: string; contentKey: string }) => (
   <Suspense fallback={<div className="pt-32 pb-16 text-center text-charcoal-500">Se încarcă...</div>}>
@@ -83,7 +85,8 @@ export const router = createBrowserRouter([
       { path: 'montaj', element: <Suspense><MontajPage /></Suspense> },
       { path: 'modele-de-montaj', element: <Suspense><ModeleMontajPage /></Suspense> },
       { path: 'intretinere', element: <Suspense><IntretinerePage /></Suspense> },
-      { path: 'faq', element: <LazyGenericPage title="Întrebări Frecvente" contentKey="faq" /> },
+      { path: 'degivrare', element: <Suspense><DegivrarePage /></Suspense> },
+      { path: 'faq', element: <Suspense><FaqPage /></Suspense> },
       { path: 'documente', element: <LazyGenericPage title="Documente Tehnice" contentKey="documente" /> },
       { path: 'brosuri', element: <Suspense><BrosuriPage /></Suspense> },
       { path: 'confidentialitate', element: <LazyGenericPage title="Politica de Confidențialitate" contentKey="confidentialitate" /> },

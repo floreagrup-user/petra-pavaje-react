@@ -897,6 +897,8 @@ culoare-verde-smarald-web-2.avif
 culoare-verde-smarald-web.png
 culoare-winter-1.webp
 curte_petra_pavaje.avif
+degivrare-10.jpg
+degivrare.jpg
 economia-locala-web2.avif
 element-de-baza-pentru-camine-800-mm-petra-pavaje.webp
 energie-verde-si-emsii-0-web1-1.avif
