@@ -111,7 +111,7 @@ export const mainMenu: MenuItem[] = [
   },
   {
     label: 'Resurse',
-    href: '/resurse',
+    href: '/catalog',
     children: [
       { label: 'Catalog', href: '/catalog' },
       { label: 'Montaj', href: '/montaj' },
