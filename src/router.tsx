@@ -32,6 +32,8 @@ const ModeleMontajPage = lazy(() => import('@/pages/ModeleMontajPage').then(m =>
 const IntretinerePage = lazy(() => import('@/pages/IntretinerePage').then(m => ({ default: m.IntretinerePage })))
 const DegivrarePage = lazy(() => import('@/pages/DegivrarePage').then(m => ({ default: m.DegivrarePage })))
 const FaqPage = lazy(() => import('@/pages/FaqPage').then(m => ({ default: m.FaqPage })))
+const CarieraPage = lazy(() => import('@/pages/CarieraPage').then(m => ({ default: m.CarieraPage })))
+const GarantiePage = lazy(() => import('@/pages/GarantiePage').then(m => ({ default: m.GarantiePage })))
 
 const LazyGenericPage = ({ title, contentKey }: { title: string; contentKey: string }) => (
   <Suspense fallback={<div className="pt-32 pb-16 text-center text-charcoal-500">Se încarcă...</div>}>
@@ -78,9 +80,9 @@ export const router = createBrowserRouter([
       { path: 'sustenabilitate', element: <Suspense><SustainabilityPage /></Suspense> },
       { path: 'compania', element: <LazyGenericPage title="Compania" contentKey="company" /> },
       { path: 'florea-grup', element: <Suspense><FloreaGrupPage /></Suspense> },
-      { path: 'garantie', element: <LazyGenericPage title="Garanție" contentKey="garantie" /> },
+      { path: 'garantie', element: <Suspense><GarantiePage /></Suspense> },
       { path: 'laborator', element: <Suspense><LaboratorPage /></Suspense> },
-      { path: 'cariera', element: <LazyGenericPage title="Carieră" contentKey="cariera" /> },
+      { path: 'cariera', element: <Suspense><CarieraPage /></Suspense> },
       { path: 'catalog', element: <Suspense><CatalogPage /></Suspense> },
       { path: 'montaj', element: <Suspense><MontajPage /></Suspense> },
       { path: 'modele-de-montaj', element: <Suspense><ModeleMontajPage /></Suspense> },

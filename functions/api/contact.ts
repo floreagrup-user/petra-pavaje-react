@@ -29,6 +29,8 @@ export async function onRequestPost(context: any) {
           reply_to: email,
           subject: type === 'quote'
             ? `Cerere Oferta - ${name}`
+            : type === 'career'
+            ? `Aplicație Carieră - ${name}`
             : `Mesaj de pe site - ${name}`,
           html: `
             <h2>Mesaj nou de pe PetraPavaje.ro</h2>
