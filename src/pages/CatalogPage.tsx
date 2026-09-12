@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ArrowRight, Download, ExternalLink, MessageCircle } from 'lucide-react'
+import { Download, ExternalLink } from 'lucide-react'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
 
 const CATALOG_PDF_URL = 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Catalog-2025-Petra-Pavaje.pdf'
@@ -192,28 +192,6 @@ export function CatalogPage() {
                 allowFullScreen
                 className="absolute inset-0 w-full h-full border-0"
               />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 md:py-16 bg-charcoal-50">
-        <div className="container-premium">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="heading-h3 text-charcoal-900 mb-3">Vrei o ofertă personalizată?</h2>
-            <p className="text-body text-charcoal-600 mb-6">
-              Un reprezentant din zona ta te ajută cu dimensionarea și prețul final.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="btn-primary inline-flex">
-                <MessageCircle className="w-4 h-4 mr-2" />
-                Solicită Ofertă
-              </Link>
-              <a href={CATALOG_PDF_URL} target="_blank" rel="noopener noreferrer" className="btn-secondary inline-flex">
-                <Download className="w-4 h-4 mr-2" />
-                Descarcă Catalog
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </a>
             </div>
           </div>
         </div>
