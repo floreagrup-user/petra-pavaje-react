@@ -20,6 +20,7 @@ const StandardCategoryPage = lazy(() => import('@/pages/StandardCategoryPage').t
 const BorduriCategoryPage = lazy(() => import('@/pages/BorduriCategoryPage').then(m => ({ default: m.BorduriCategoryPage })))
 const ElementCategoryPage = lazy(() => import('@/pages/ElementCategoryPage').then(m => ({ default: m.ElementCategoryPage })))
 const ElementHubPage = lazy(() => import('@/pages/ElementHubPage').then(m => ({ default: m.ElementHubPage })))
+const ElementeOverviewPage = lazy(() => import('@/pages/ElementeOverviewPage').then(m => ({ default: m.ElementeOverviewPage })))
 
 const LazyGenericPage = ({ title, contentKey }: { title: string; contentKey: string }) => (
   <Suspense fallback={<div className="pt-32 pb-16 text-center text-charcoal-500">Se încarcă...</div>}>
@@ -34,6 +35,7 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <Suspense><HomePage /></Suspense> },
       { path: 'produse', element: <Suspense><ProductsHubPage /></Suspense> },
+      { path: 'produse/elemente', element: <Suspense><ElementeOverviewPage /></Suspense> },
       { path: 'produse/woodstone', element: <Suspense><WoodstonePage /></Suspense> },
       { path: 'produse/woodstone/:category', element: <Suspense><WoodstoneCategoryPage /></Suspense> },
       { path: 'produse/pavaje-standard/quatro', element: <Suspense><QuatroPage /></Suspense> },
