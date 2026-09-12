@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import type { Product } from '@/data/types'
 import { categories } from '@/data/site'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from './seo-utils'
+import { categoryUrl, productUrl } from '@/lib/product-urls'
 
 export function useProductSEO(product: Product | undefined) {
   useEffect(() => {
@@ -15,7 +16,7 @@ export function useProductSEO(product: Product | undefined) {
       product.shortDescription && product.description
         ? `${product.shortDescription}. ${product.description}`.slice(0, 300)
         : (product.description || '').slice(0, 300)
-    const url = `${window.location.origin}/produse/${categorySlug}/${product.slug}`
+    const url = `${window.location.origin}${productUrl(categorySlug, product.slug)}`
     const image = product.heroImages?.[0] || product.image
 
     document.title = title
@@ -66,7 +67,7 @@ export function useProductSEO(product: Product | undefined) {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
-        { '@type': 'ListItem', position: 2, name: categoryLabel, item: `${window.location.origin}/produse/${categorySlug}` },
+        { '@type': 'ListItem', position: 2, name: categoryLabel, item: `${window.location.origin}${categoryUrl(categorySlug)}` },
         { '@type': 'ListItem', position: 3, name: product.name, item: url },
       ],
     })

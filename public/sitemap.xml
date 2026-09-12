@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://petrapavaje.ro/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://petrapavaje.ro/banci</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/bloc-de-zid</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/blog/3-idei-creative-pavaj-decor-sarbatori</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://petrapavaje.ro/blog/a-patra-fabrica-petra-pavaje</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
@@ -67,6 +69,27 @@
   <url><loc>https://petrapavaje.ro/blog/tendintele-sezonului-in-amenajarea-aleilor</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://petrapavaje.ro/blog/transforma-ti-curtea-folosind-culoarea-anului-fuzz-peach</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://petrapavaje.ro/blog/verde-la-scoala-mea-proiect-sustinut-de-petra-pavaje</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://petrapavaje.ro/boltari</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-100x5x20</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-100x5x25-arcade</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-100x8x25-dreapta</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-40x15x20-dreapta-2</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-50x10x15-dreapta-2</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-50x10x15-tesita-2</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-50x12x25-tesita-3</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-50x15x25-tesita-f10-2</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-50x15x25-tesita-f15-2</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-50x20x25-rotunjita-3</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-50x20x25-tesita-f10-3</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-50x20x25-tesita-f15-3</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-50x20x30</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-50x5x20-dreapta</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-cilindrica-106x9x25-rotunjita</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-delimitare-gazon-20x12x4</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-racord-50x25x25-tesita</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-rampa-50x25x25-3</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/borduri-2/bordura-trecere-25x25x15-12</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/brosuri</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/calculator</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/cariera</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -77,89 +100,85 @@
   <url><loc>https://petrapavaje.ro/degivrare</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/despre-noi</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/documente</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/elemente</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/elemente-de-canalizare</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/elemente-de-canalizare/bloc-de-beton</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/elemente-de-canalizare/elemente-pentru-camine-1000-mm</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/elemente-de-canalizare/elemente-pentru-camine-800-mm</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/elemente-de-canalizare/infrastructura-rutiera</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/elemente-de-canalizare/tub-fantana</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/elemente-de-canalizare/tuburi-si-timpane</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/faq</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/florea-grup</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/garantie</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/garduri-2</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/garduri-2/baroc</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/garduri-2/modern</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/garduri-2/robusto</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/intretinere</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/jardiniere-2</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/laborator</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/modele-de-montaj</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/montaj</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/palisada</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/alpin</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/antic</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/cubic</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/dacic</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/gemina</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/grand-urban</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/maya</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/mediterana</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/mistic</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/pastel</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/primo</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/relief</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/roca</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/roman</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/sahara</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/stretto</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/terranova</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/timber</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-premium/viena</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/autobloc</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/con</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/holland</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/pavaje-eco</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-10x10x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-20x20x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-20x20x8</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-30x30x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-40x40x5</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-40x40x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-50x50x8</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-acces-biciclete-20x20x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-acces-biciclete-20x20x8</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-parcare-20x20x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-parcare-20x20x8</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-parcare-dizabilitati-20x20x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-parcare-dizabilitati-20x20x8</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-smart-20x20x10</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-smart-20x20x8</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-tactil-linii-20x20x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-tactil-linii-30x30x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-tactil-puncte-20x20x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/quatro/quatro-tactil-puncte-30x30x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/pavaje-standard/unda</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/produse</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/banci</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/bloc-de-zid</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/boltari</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/borduri</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/elemente</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/elemente-de-canalizare</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/elemente-de-canalizare/bloc-de-beton</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/elemente-de-canalizare/elemente-pentru-camine-1000-mm</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/elemente-de-canalizare/elemente-pentru-camine-800-mm</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/elemente-de-canalizare/infrastructura-rutiera</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/elemente-de-canalizare/tub-fantana</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/elemente-de-canalizare/tuburi-si-timpane</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/garduri</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/garduri/baroc</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/garduri/modern</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/garduri/robusto</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/jardiniere</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/palisada</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/alpin</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/antic</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/cubic</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/dacic</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/gemina</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/grand-urban</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/maya</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/mediterana</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/mistic</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/pastel</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/primo</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/relief</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/roca</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/roman</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/sahara</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/stretto</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/terranova</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/timber</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-premium/viena</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/autobloc</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/con</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/holland</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/pavaje-eco</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-10x10x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-20x20x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-20x20x8</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-30x30x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-40x40x5</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-40x40x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-50x50x8</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-acces-biciclete-20x20x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-acces-biciclete-20x20x8</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-parcare-20x20x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-parcare-20x20x8</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-parcare-dizabilitati-20x20x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-parcare-dizabilitati-20x20x8</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-smart-20x20x10</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-smart-20x20x8</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-tactil-linii-20x20x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-tactil-linii-30x30x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-tactil-puncte-20x20x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/quatro/quatro-tactil-puncte-30x30x6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/pavaje-standard/unda</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/rigole</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/treapta</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/woodstone</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/woodstone/banci-si-mese</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/woodstone/elemente-lemn-pietrificat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/woodstone/garduri</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/woodstone/jardiniere-inaltate</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/woodstone/palisade-si-borduri</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/woodstone/pavaj</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://petrapavaje.ro/produse/woodstone/scari</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/rigole</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/sustenabilitate</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/termeni</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/treapta</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://petrapavaje.ro/tur-virtual</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/woodstone-lemn-pietrificat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/woodstone-lemn-pietrificat/banci-si-mese</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/woodstone-lemn-pietrificat/elemente-lemn-pietrificat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/woodstone-lemn-pietrificat/garduri</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/woodstone-lemn-pietrificat/jardiniere-inaltate</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/woodstone-lemn-pietrificat/palisade-si-borduri</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/woodstone-lemn-pietrificat/pavaj</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://petrapavaje.ro/woodstone-lemn-pietrificat/scari</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

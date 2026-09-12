@@ -7,38 +7,30 @@
 
 # ---------------------------------------------------------------------------
 # Product categories & individual products
+#
+# These routes now live at the SAME path as the old WordPress site (e.g.
+# /pavaje-premium/roca/ resolves directly, no redirect, no /produse/ prefix)
+# -- see src/router.tsx and src/lib/product-urls.ts. Nothing to redirect
+# there. The rules below are only a safety net for the brief window this
+# session used a /produse/<category>/... structure, in case any of those
+# interim links got bookmarked or shared.
 # ---------------------------------------------------------------------------
 
-# Pavaje Premium (category + 18 individual products, same slugs on both sites)
-/pavaje-premium/* /produse/pavaje-premium/:splat 301
-
-# Pavaje Standard (category + autobloc/con/holland/pavaje-eco/unda, same slugs)
-/pavaje-standard/quatro/* /produse/pavaje-standard/quatro/:splat 301
-/pavaje-standard/* /produse/pavaje-standard/:splat 301
-
-# Woodstone (category + 7 sub-categories, same slugs)
-/woodstone-lemn-pietrificat/* /produse/woodstone/:splat 301
-
-# Garduri (category + baroc/modern/robusto, same slugs)
-/garduri-2/* /produse/garduri/:splat 301
-
-# Elemente de canalizare (category + 6 sub-elements, same slugs)
-/elemente-de-canalizare/* /produse/elemente-de-canalizare/:splat 301
-
-# Borduri: 24 individual SKU pages on WP consolidated into one variant table
-# on the new site (no per-product route), so every SKU URL funnels to it.
-/borduri-2/* /produse/borduri 301
-
-# Simple single-page element categories (no sub-pages on either site)
-/boltari/* /produse/boltari 301
-/jardiniere-2/* /produse/jardiniere 301
-/palisada/* /produse/palisada 301
-/banci/* /produse/banci 301
-/treapta/* /produse/treapta 301
-/bloc-de-zid/* /produse/bloc-de-zid 301
-/rigole/* /produse/rigole 301
-
-/elemente/* /produse/elemente 301
+/produse/pavaje-premium/* /pavaje-premium/:splat 301
+/produse/pavaje-standard/quatro/* /pavaje-standard/quatro/:splat 301
+/produse/pavaje-standard/* /pavaje-standard/:splat 301
+/produse/woodstone/* /woodstone-lemn-pietrificat/:splat 301
+/produse/borduri/* /borduri-2/:splat 301
+/produse/boltari/* /boltari 301
+/produse/rigole/* /rigole 301
+/produse/jardiniere/* /jardiniere-2 301
+/produse/palisada/* /palisada 301
+/produse/banci/* /banci 301
+/produse/treapta/* /treapta 301
+/produse/bloc-de-zid/* /bloc-de-zid 301
+/produse/garduri/* /garduri-2/:splat 301
+/produse/elemente-de-canalizare/* /elemente-de-canalizare/:splat 301
+/produse/elemente/* /elemente 301
 
 # ---------------------------------------------------------------------------
 # Company / resource pages that now have their own dedicated route

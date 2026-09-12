@@ -4,6 +4,8 @@ import { ArrowRight, Star } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { getFeaturedProducts } from '@/data/products'
 import { productImages } from '@/data/images'
+import { categories } from '@/data/site'
+import { categoryUrl, productUrl } from '@/lib/product-urls'
 
 export function FeaturedProductsSection() {
   const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
@@ -27,7 +29,7 @@ export function FeaturedProductsSection() {
             </h2>
           </div>
           <Link
-            to="/produse/pavaje-premium"
+            to={categoryUrl("pavaje-premium")}
             className="mt-4 md:mt-0 inline-flex items-center text-brand-600 font-medium hover:gap-3 gap-2 transition-all group"
           >
             Vezi toate produsele
@@ -44,7 +46,7 @@ export function FeaturedProductsSection() {
               transition={{ duration: 0.5, delay: index * 0.08 }}
             >
               <Link
-                to={`/produse/pavaje-${product.category}/${product.slug}`}
+                to={productUrl(categories.find((c) => c.id === product.category)?.slug || product.category, product.slug)}
                 className="group block"
               >
                 <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-stone-100 mb-4" style={{ aspectRatio: '4/3' }}>

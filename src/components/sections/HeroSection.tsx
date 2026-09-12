@@ -11,7 +11,7 @@ const heroSlides = [
     description: '800+ Produse · 4 Fabrici Naționale · 24.000 mp/zi',
     image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/mediterana-homepage.avif',
     cta: 'Descoperă Produsele',
-    ctaLink: '/produse/pavaje-premium',
+    ctaLink: '/pavaje-premium',
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const heroSlides = [
     description: 'Frumusețea lemnului combinată cu durabilitatea betonului premium',
     image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/gemina-homepage.avif',
     cta: 'Explorează Colecția',
-    ctaLink: '/produse/woodstone',
+    ctaLink: '/woodstone-lemn-pietrificat',
   },
 ]
 

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Phone, Check, ShieldCheck, Award, ChevronDown, FileText } from 'lucide-react'
 import { getElementBySlug } from '@/data/elements'
 import { useElementSEO } from '@/hooks/useElementSEO'
+import { categoryUrl } from '@/lib/product-urls'
 
 export function ElementCategoryPage({ slug: slugProp }: { slug?: string } = {}) {
   const { category: parentSlug, element: elementSlug } = useParams<{ category?: string; element?: string }>()
@@ -23,7 +24,7 @@ export function ElementCategoryPage({ slug: slugProp }: { slug?: string } = {}) 
     )
   }
 
-  const parentHref = category.parent ? `/produse/${category.parent.slug}` : '/produse'
+  const parentHref = category.parent ? categoryUrl(category.parent.slug) : '/produse'
   const parentLabel = category.parent ? category.parent.name : 'Produse'
 
   return (

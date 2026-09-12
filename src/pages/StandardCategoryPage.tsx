@@ -104,7 +104,7 @@ export function StandardCategoryPage() {
   }, [allProducts, filters, sortKey])
 
   useCategoryListSEO(allProducts, STANDARD_FAQ, {
-    path: '/produse/pavaje-standard',
+    path: '/pavaje-standard',
     title: 'Pavaje Standard - Holland, Autobloc, Unda, Quatro | Petra Pavaje',
     description:
       'Gama Pavaje Standard Petra Pavaje: Holland, Autobloc, Unda, Quatro, Con și Pavaje Eco — soluții robuste, cu raport optim calitate-preț, pentru trotuare, alei și trafic auto intens.',
@@ -240,7 +240,7 @@ export function StandardCategoryPage() {
                     >
                       <ProductGridCard
                         product={product}
-                        basePath="/produse/pavaje-standard"
+                        basePath="/pavaje-standard"
                         badgeLabel="Popular"
                         extraBadge={product.slug === 'quatro' ? '19 Variante' : undefined}
                       />
@@ -303,7 +303,7 @@ export function StandardCategoryPage() {
             </div>
             <p className="text-sm text-charcoal-500 mt-6">
               Cauți mai multe culori și finisaje?{' '}
-              <Link to="/produse/pavaje-premium" className="link-premium">
+              <Link to="/pavaje-premium" className="link-premium">
                 Vezi și gama Pavaje Premium
                 <ArrowRight className="w-3.5 h-3.5 inline ml-1" />
               </Link>

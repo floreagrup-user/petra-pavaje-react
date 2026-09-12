@@ -76,7 +76,7 @@ export function PremiumCategoryPage() {
   }, [allProducts, filters, sortKey])
 
   useCategoryListSEO(allProducts, PREMIUM_FAQ, {
-    path: '/produse/pavaje-premium',
+    path: '/pavaje-premium',
     title: 'Pavaje Premium - 19 Modele de Pavaj Beton Premium | Petra Pavaje',
     description:
       'Descoperă gama Pavaje Premium Petra Pavaje: 19 modele, zeci de culori și finisaje, tehnologie Color Lock și rezistență la îngheț. Filtrează după culoare, grosime și utilizare.',
@@ -211,7 +211,7 @@ export function PremiumCategoryPage() {
                       animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
                       transition={{ duration: 0.4, delay: Math.min(index, 8) * 0.05 }}
                     >
-                      <ProductGridCard product={product} basePath="/produse/pavaje-premium" />
+                      <ProductGridCard product={product} basePath="/pavaje-premium" />
                     </motion.div>
                   ))}
                 </div>
@@ -271,7 +271,7 @@ export function PremiumCategoryPage() {
             </div>
             <p className="text-sm text-charcoal-500 mt-6">
               Cauți o soluție mai economică?{' '}
-              <Link to="/produse/pavaje-standard" className="link-premium">
+              <Link to="/pavaje-standard" className="link-premium">
                 Vezi și gama Pavaje Standard
                 <ArrowRight className="w-3.5 h-3.5 inline ml-1" />
               </Link>

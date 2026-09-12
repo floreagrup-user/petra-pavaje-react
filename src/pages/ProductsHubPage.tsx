@@ -18,19 +18,16 @@ import { useCategoryListSEO } from '@/hooks/useCategoryListSEO'
 import { categories } from '@/data/site'
 import { categoryImages } from '@/components/sections/CategoriesSection'
 import { FeaturedProductsSection } from '@/components/sections/FeaturedProductsSection'
+import { categoryUrl } from '@/lib/product-urls'
 import type { ProductFAQ } from '@/data/types'
 
 const PRIMARY_CATEGORY_IDS = ['premium', 'standard', 'woodstone'] as const
-
-const categoryHrefOverrides: Record<string, string> = {
-  woodstone: '/produse/woodstone',
-}
 
 const primaryCategories = PRIMARY_CATEGORY_IDS.map((id) => {
   const category = categories.find((c) => c.id === id)!
   return {
     ...category,
-    href: categoryHrefOverrides[category.id] || `/produse/${category.slug}`,
+    href: categoryUrl(category.slug),
     seoSlug: category.id === 'woodstone' ? 'woodstone' : category.slug,
   }
 })
@@ -192,7 +189,7 @@ export function ProductsHubPage() {
               {elementCategories.map((category) => (
                 <Link
                   key={category.id}
-                  to={`/produse/${category.slug}`}
+                  to={categoryUrl(category.slug)}
                   className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-charcoal-200 text-sm font-medium text-charcoal-700 hover:border-brand-400 hover:text-brand-600 transition-colors"
                 >
                   {category.name}

@@ -6,6 +6,7 @@ import { getProductBySlug, getProductsByCategory } from '@/data/products'
 import { productImages, productGalleryMap } from '@/data/images'
 import { useProductSEO } from '@/hooks/useProductSEO'
 import { categories } from '@/data/site'
+import { categoryUrl, productUrl } from '@/lib/product-urls'
 
 export function ProductDetailPage() {
   const { product: productSlug } = useParams<{ product: string }>()
@@ -63,7 +64,7 @@ export function ProductDetailPage() {
           <nav className="flex items-center gap-2 text-sm text-charcoal-400">
             <Link to="/" className="hover:text-white transition-colors">Acasă</Link>
             <span>/</span>
-            <Link to={`/produse/${categorySlug}`} className="hover:text-white transition-colors capitalize">
+            <Link to={categoryUrl(categorySlug)} className="hover:text-white transition-colors capitalize">
               {categoryLabel}
             </Link>
             <span>/</span>
@@ -481,7 +482,7 @@ export function ProductDetailPage() {
               {relatedProducts.map((p) => (
                 <Link
                   key={p.id}
-                  to={`/produse/${categorySlug}/${p.slug}`}
+                  to={productUrl(categorySlug, p.slug)}
                   className="group block"
                 >
                   <div className="aspect-[4/3] rounded-xl overflow-hidden bg-stone-100 mb-3">

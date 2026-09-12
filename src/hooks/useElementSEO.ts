@@ -1,12 +1,13 @@
 import { useEffect } from 'react'
 import type { ElementCategoryData } from '@/data/types'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from './seo-utils'
+import { categoryUrl, productUrl } from '@/lib/product-urls'
 
 export function useElementSEO(category: ElementCategoryData | undefined) {
   useEffect(() => {
     if (!category) return
 
-    const parentPath = category.parent ? `/produse/${category.parent.slug}/${category.slug}` : `/produse/${category.slug}`
+    const parentPath = category.parent ? productUrl(category.parent.slug, category.slug) : categoryUrl(category.slug)
     const title = `${category.title} - ${category.parent ? category.parent.name : 'Elemente'} | ${SEO_SITE_NAME}`
     const description = `${category.shortDescription}. ${category.description}`.slice(0, 300)
     const url = `${window.location.origin}${parentPath}`
@@ -65,7 +66,7 @@ export function useElementSEO(category: ElementCategoryData | undefined) {
     const breadcrumbItems = category.parent
       ? [
           { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
-          { '@type': 'ListItem', position: 2, name: category.parent.name, item: `${window.location.origin}/produse/${category.parent.slug}` },
+          { '@type': 'ListItem', position: 2, name: category.parent.name, item: `${window.location.origin}${categoryUrl(category.parent.slug)}` },
           { '@type': 'ListItem', position: 3, name: category.title, item: url },
         ]
       : [

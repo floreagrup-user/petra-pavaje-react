@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { categories } from '@/data/site'
+import { categoryUrl } from '@/lib/product-urls'
 
 export const categoryImages: Record<string, string> = {
   premium: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/web-prima-pagina-1-Medium.avif',
@@ -52,7 +53,7 @@ export function CategoriesSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Link
-                to={`/produse/${category.slug}`}
+                to={categoryUrl(category.slug)}
                 className="group block card-premium"
               >
                 <div className="relative aspect-[16/10] overflow-hidden" style={{ aspectRatio: '16/10' }}>

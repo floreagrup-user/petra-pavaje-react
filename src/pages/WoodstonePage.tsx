@@ -124,7 +124,7 @@ export function WoodstonePage() {
     categories.map((c) => ({ slug: c.slug, name: c.title, image: c.image })),
     WOODSTONE_FAQ,
     {
-      path: '/produse/woodstone',
+      path: '/woodstone-lemn-pietrificat',
       title: 'Woodstone - Lemn Pietrificat | Petra Pavaje',
       description:
         'Gama Woodstone Petra Pavaje: 7 categorii de produse din beton cu aspect autentic de lemn învechit — pavaj, palisade, scări, garduri, bănci, jardiniere — peste 100 de combinații de amenajare.',
@@ -266,7 +266,7 @@ export function WoodstonePage() {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
               >
                 <Link
-                  to={`/produse/woodstone/${cat.slug}`}
+                  to={`/woodstone-lemn-pietrificat/${cat.slug}`}
                   className="group block relative rounded-2xl overflow-hidden bg-charcoal-100"
                   style={{ aspectRatio: '4/5' }}
                 >
@@ -304,7 +304,7 @@ export function WoodstonePage() {
                 transition={{ duration: 0.4, delay: (i + 4) * 0.1 }}
               >
                 <Link
-                  to={`/produse/woodstone/${cat.slug}`}
+                  to={`/woodstone-lemn-pietrificat/${cat.slug}`}
                   className="group block relative rounded-2xl overflow-hidden bg-charcoal-100"
                   style={{ aspectRatio: '4/5' }}
                 >
@@ -446,7 +446,7 @@ export function WoodstonePage() {
             </div>
             <p className="text-sm text-charcoal-500 mt-6">
               Cauți un aspect clasic de piatră sau beton?{' '}
-              <Link to="/produse/pavaje-premium" className="link-premium">
+              <Link to="/pavaje-premium" className="link-premium">
                 Vezi gama Pavaje Premium
                 <ArrowRight className="w-3.5 h-3.5 inline ml-1" />
               </Link>

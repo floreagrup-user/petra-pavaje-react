@@ -5,6 +5,7 @@ import { ArrowRight, Phone } from 'lucide-react'
 import { getElementsByParent } from '@/data/elements'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
+import { categoryUrl, productUrl } from '@/lib/product-urls'
 
 interface HubConfig {
   title: string
@@ -36,7 +37,7 @@ export function ElementHubPage({ slug: slugProp }: { slug?: string } = {}) {
 
   useEffect(() => {
     if (!hub || !children.length) return
-    const url = `${window.location.origin}/produse/${parentSlug}`
+    const url = `${window.location.origin}${categoryUrl(parentSlug || '')}`
     const title = `${hub.title} - ${hub.shortDescription} | ${SEO_SITE_NAME}`
     const description = `${hub.shortDescription}. ${hub.description}`.slice(0, 300)
     const image = children[0]?.image
@@ -114,7 +115,7 @@ export function ElementHubPage({ slug: slugProp }: { slug?: string } = {}) {
                 animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Link to={`/produse/${parentSlug}/${child.slug}`} className="group block card-premium">
+                <Link to={productUrl(parentSlug || "", child.slug)} className="group block card-premium">
                   <div className="relative aspect-[16/10] overflow-hidden" style={{ aspectRatio: '16/10' }}>
                     <img
                       src={child.image}

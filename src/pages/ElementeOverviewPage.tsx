@@ -7,6 +7,7 @@ import { categories } from '@/data/site'
 import { categoryImages } from '@/components/sections/CategoriesSection'
 import { getElementBySlug, getElementsByParent } from '@/data/elements'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
+import { categoryUrl } from '@/lib/product-urls'
 import type { ProductFAQ } from '@/data/types'
 
 const ELEMENT_IDS = ['borduri', 'rigole', 'boltari', 'garduri', 'jardiniere', 'palisada', 'banci', 'treapta', 'bloc-de-zid', 'elemente-de-canalizare']
@@ -45,7 +46,7 @@ export function ElementeOverviewPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
   useEffect(() => {
-    const url = `${window.location.origin}/produse/elemente`
+    const url = `${window.location.origin}/elemente`
     const title = `Elemente - Borduri, Rigole, Bolțari, Garduri și Canalizare | ${SEO_SITE_NAME}`
     const description =
       'Elemente Petra Pavaje: borduri, rigole, bolțari, garduri, jardiniere, palisadă, bănci, trepte, bloc de zid și elemente de canalizare — pentru amenajări complete, din beton certificat.'
@@ -71,7 +72,7 @@ export function ElementeOverviewPage() {
         '@type': 'ListItem',
         position: index + 1,
         name: c.name,
-        url: `${window.location.origin}/produse/${c.slug}`,
+        url: `${window.location.origin}${categoryUrl(c.slug)}`,
         image: c.image,
       })),
     })
@@ -143,7 +144,7 @@ export function ElementeOverviewPage() {
                 animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: Math.min(index, 8) * 0.06 }}
               >
-                <Link to={`/produse/${category.slug}`} className="group block card-premium">
+                <Link to={categoryUrl(category.slug)} className="group block card-premium">
                   <div className="relative aspect-[16/10] overflow-hidden" style={{ aspectRatio: '16/10' }}>
                     <img
                       src={category.image}

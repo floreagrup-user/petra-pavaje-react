@@ -98,7 +98,7 @@ export function QuatroPage() {
           <nav className="flex items-center gap-2 text-sm text-charcoal-400">
             <Link to="/" className="hover:text-white transition-colors">Acasă</Link>
             <span>/</span>
-            <Link to="/produse/pavaje-standard" className="hover:text-white transition-colors">Pavaje Standard</Link>
+            <Link to="/pavaje-standard" className="hover:text-white transition-colors">Pavaje Standard</Link>
             <span>/</span>
             <span className="text-white">Quatro</span>
           </nav>
@@ -228,7 +228,7 @@ export function QuatroPage() {
                       transition={{ duration: 0.35, delay: i * 0.04 }}
                     >
                       <Link
-                        to={`/produse/pavaje-standard/quatro/${p.slug}`}
+                        to={`/pavaje-standard/quatro/${p.slug}`}
                         className="group block bg-white rounded-xl overflow-hidden border border-charcoal-100 hover:shadow-md transition-shadow"
                       >
                         <div className="aspect-square bg-stone-50 p-4 flex items-center justify-center overflow-hidden">
