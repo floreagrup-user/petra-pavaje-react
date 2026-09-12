@@ -38,6 +38,17 @@ export interface ProductDocument {
   declarationUrl?: string
 }
 
+export type DocumentCategory = 'pavaje' | 'borduri' | 'garduri' | 'boltari' | 'rigole' | 'canalizare' | 'alte-elemente'
+
+export interface TechnicalDocument {
+  code: string
+  name: string
+  category: DocumentCategory
+  declaratieAlba?: string
+  declaratiePrahova?: string
+  fisaTehnica?: string
+}
+
 export interface ProductSpec {
   label: string
   value: string

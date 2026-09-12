@@ -34,6 +34,7 @@ const DegivrarePage = lazy(() => import('@/pages/DegivrarePage').then(m => ({ de
 const FaqPage = lazy(() => import('@/pages/FaqPage').then(m => ({ default: m.FaqPage })))
 const CarieraPage = lazy(() => import('@/pages/CarieraPage').then(m => ({ default: m.CarieraPage })))
 const GarantiePage = lazy(() => import('@/pages/GarantiePage').then(m => ({ default: m.GarantiePage })))
+const DocumenteTehnicePage = lazy(() => import('@/pages/DocumenteTehnicePage').then(m => ({ default: m.DocumenteTehnicePage })))
 
 const LazyGenericPage = ({ title, contentKey }: { title: string; contentKey: string }) => (
   <Suspense fallback={<div className="pt-32 pb-16 text-center text-charcoal-500">Se încarcă...</div>}>
@@ -89,7 +90,7 @@ export const router = createBrowserRouter([
       { path: 'intretinere', element: <Suspense><IntretinerePage /></Suspense> },
       { path: 'degivrare', element: <Suspense><DegivrarePage /></Suspense> },
       { path: 'faq', element: <Suspense><FaqPage /></Suspense> },
-      { path: 'documente', element: <LazyGenericPage title="Documente Tehnice" contentKey="documente" /> },
+      { path: 'documente', element: <Suspense><DocumenteTehnicePage /></Suspense> },
       { path: 'brosuri', element: <Suspense><BrosuriPage /></Suspense> },
       { path: 'confidentialitate', element: <LazyGenericPage title="Politica de Confidențialitate" contentKey="confidentialitate" /> },
       { path: 'cookie-uri', element: <LazyGenericPage title="Politica Cookie-uri" contentKey="cookie-uri" /> },
