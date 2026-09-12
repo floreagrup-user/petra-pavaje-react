@@ -54,8 +54,15 @@ export function Footer() {
       <div className="container-premium py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div>
-            <div className="text-xl font-bold tracking-tight mb-6 text-white">
-              PETRA<span className="text-brand-300">PAVAJE</span>
+            <div className="inline-flex items-center bg-white rounded-lg px-3 py-2 mb-6">
+              <img
+                src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/sigla-parte-a-florea-grup.png"
+                alt="Petra Pavaje"
+                className="h-10 w-auto"
+                width="969"
+                height="500"
+                loading="lazy"
+              />
             </div>
             <p className="text-sm text-white/70 mb-6 leading-relaxed">
               Producător premium de pavaje, borduri, garduri și elemente de beton. 4 fabrici naționale, peste 800 de produse.
