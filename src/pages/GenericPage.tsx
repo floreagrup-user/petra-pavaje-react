@@ -3,28 +3,6 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Download } from 'lucide-react'
 
 const contentMap: Record<string, { title: string; sections: { heading: string; body: string }[]; cta?: boolean }> = {
-  'about': {
-    title: 'Despre Noi',
-    sections: [
-      {
-        heading: 'Petra Pavaje – Partea a Florea Grup',
-        body: 'Petra Pavaje este parte a companiei Florea Grup, fondată de Marcel și David Florea în anul 1996. Cu o experiență de peste 25 de ani în construcții, Florea Grup a lansat brandul Petra Pavaje în iunie 2017, dedicat producției de prefabricate din beton de cea mai înaltă calitate.',
-      },
-      {
-        heading: 'Misiunea Noastră',
-        body: 'Prin Petra, produsul prinde viață. Pavajele, bolțarii și bordurile ne sunt alături mai mult decât prin prezența fizică. Ele ne ajută să amenajăm spațiul așa cum am visat. Este piatra transformată în ceva viu. Ne dorim ca oricine face cunoștință cu Petra Pavaje să fie inspirat să creeze grădini sau alei unice, care transformă o casă în ACASĂ.',
-      },
-      {
-        heading: 'Tehnologie Modernă',
-        body: 'Tehnologia modernă ne ajută să oferim produse deosebite: splitarea controlată a betonului pentru texturi unice, antichizarea pentru aspectul pietrei naturale și impregnarea suprafețelor pentru culori vii și rezistență în timp.',
-      },
-      {
-        heading: 'Prezență Națională',
-        body: 'Cu 4 fabrici în România (Alba, Prahova, Arad, Neamț) și o capacitate de producție de 24.000 mp/zi, Petra Pavaje este unul dintre cei mai importanți producători de prefabricate din beton din țară. Peste 800 de produse și 600 de angajați.',
-      },
-    ],
-    cta: true,
-  },
   'company': {
     title: 'Compania',
     sections: [

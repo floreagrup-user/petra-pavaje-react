@@ -22,6 +22,7 @@ const ElementCategoryPage = lazy(() => import('@/pages/ElementCategoryPage').the
 const ElementHubPage = lazy(() => import('@/pages/ElementHubPage').then(m => ({ default: m.ElementHubPage })))
 const ElementeOverviewPage = lazy(() => import('@/pages/ElementeOverviewPage').then(m => ({ default: m.ElementeOverviewPage })))
 const BrosuriPage = lazy(() => import('@/pages/BrosuriPage').then(m => ({ default: m.BrosuriPage })))
+const AboutPage = lazy(() => import('@/pages/AboutPage').then(m => ({ default: m.AboutPage })))
 const CatalogPage = lazy(() => import('@/pages/CatalogPage').then(m => ({ default: m.CatalogPage })))
 
 const LazyGenericPage = ({ title, contentKey }: { title: string; contentKey: string }) => (
@@ -65,7 +66,7 @@ export const router = createBrowserRouter([
       { path: 'blog/:slug', element: <Suspense><BlogDetailPage /></Suspense> },
       { path: 'tur-virtual', element: <Suspense><VirtualTourPage /></Suspense> },
       { path: 'calculator', element: <Suspense><CalculatorPage /></Suspense> },
-      { path: 'despre-noi', element: <LazyGenericPage title="Despre Noi" contentKey="about" /> },
+      { path: 'despre-noi', element: <Suspense><AboutPage /></Suspense> },
       { path: 'sustenabilitate', element: <LazyGenericPage title="Sustenabilitate" contentKey="sustainability" /> },
       { path: 'compania', element: <LazyGenericPage title="Compania" contentKey="company" /> },
       { path: 'florea-grup', element: <LazyGenericPage title="Florea Grup – 30 de ani" contentKey="florea-grup" /> },
