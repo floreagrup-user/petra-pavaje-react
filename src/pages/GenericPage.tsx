@@ -17,28 +17,6 @@ const contentMap: Record<string, { title: string; sections: { heading: string; b
     ],
     cta: true,
   },
-  'sustainability': {
-    title: 'Sustenabilitate',
-    sections: [
-      {
-        heading: 'În Armonie cu Natura',
-        body: 'La fabricile Petra Pavaje, fiecare produs este creat cu responsabilitate față de mediu. Am implementat practici concrete care reduc semnificativ amprenta de carbon.',
-      },
-      {
-        heading: 'Parc Fotovoltaic Propriu',
-        body: 'Cu o capacitate de 469 MW/h pe an, parcul fotovoltaic de la fabrica Roman alimentează o parte semnificativă din necesarul energetic al producției.',
-      },
-      {
-        heading: 'Reducerea Emisiilor',
-        body: 'Economisim 148 de tone de emisii de CO₂ certificate anual prin utilizarea energiei solare și a tehnologiilor eficiente.',
-      },
-      {
-        heading: 'Flotă Electrică',
-        body: 'Toate fabricile noastre beneficiază de stații de încărcare gratuite pentru vehicule electrice, încurajând mobilitatea verde.',
-      },
-    ],
-    cta: false,
-  },
   'garantie': {
     title: 'Garanție',
     sections: [
