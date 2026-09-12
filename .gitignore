@@ -35,3 +35,4 @@ dist-ssr
 # Python (from ux-ui-agent-skills validation scripts)
 __pycache__/
 *.pyc
+.claude/settings.local.json
