@@ -20,17 +20,46 @@
 /produse/pavaje-standard/quatro/* /pavaje-standard/quatro/:splat 301
 /produse/pavaje-standard/* /pavaje-standard/:splat 301
 /produse/woodstone/* /woodstone-lemn-pietrificat/:splat 301
-/produse/borduri/* /borduri-2/:splat 301
+/produse/borduri/* /borduri/:splat 301
 /produse/boltari/* /boltari 301
 /produse/rigole/* /rigole 301
-/produse/jardiniere/* /jardiniere-2 301
+/produse/jardiniere/* /jardiniere 301
 /produse/palisada/* /palisada 301
 /produse/banci/* /banci 301
 /produse/treapta/* /treapta 301
 /produse/bloc-de-zid/* /bloc-de-zid 301
-/produse/garduri/* /garduri-2/:splat 301
+/produse/garduri/* /garduri/:splat 301
 /produse/elemente-de-canalizare/* /elemente-de-canalizare/:splat 301
 /produse/elemente/* /elemente 301
+
+# ---------------------------------------------------------------------------
+# WordPress duplicate-slug artifacts: WP appended a "-2"/"-3" suffix to
+# these category and product slugs from a page-recreation history (the
+# page TITLE never included the number -- verified against the live WP
+# titles). Not real content, so the new site uses the clean slug and
+# these old numbered URLs redirect to it. This is also the set of URLs
+# being corrected in Google Ads destination URLs, per user request.
+# ---------------------------------------------------------------------------
+
+/borduri-2 /borduri 301
+/borduri-2/bordura-40x15x20-dreapta-2 /borduri/bordura-40x15x20-dreapta 301
+/borduri-2/bordura-50x10x15-dreapta-2 /borduri/bordura-50x10x15-dreapta 301
+/borduri-2/bordura-50x10x15-tesita-2 /borduri/bordura-50x10x15-tesita 301
+/borduri-2/bordura-50x12x25-tesita-3 /borduri/bordura-50x12x25-tesita 301
+/borduri-2/bordura-50x15x25-tesita-f10-2 /borduri/bordura-50x15x25-tesita-f10 301
+/borduri-2/bordura-50x15x25-tesita-f15-2 /borduri/bordura-50x15x25-tesita-f15 301
+/borduri-2/bordura-50x20x25-rotunjita-3 /borduri/bordura-50x20x25-rotunjita 301
+/borduri-2/bordura-50x20x25-tesita-f10-3 /borduri/bordura-50x20x25-tesita-f10 301
+/borduri-2/bordura-50x20x25-tesita-f15-3 /borduri/bordura-50x20x25-tesita-f15 301
+/borduri-2/bordura-rampa-50x25x25-3 /borduri/bordura-rampa-50x25x25 301
+/borduri-2/* /borduri/:splat 301
+/garduri-2 /garduri 301
+/garduri-2/* /garduri/:splat 301
+/jardiniere-2 /jardiniere 301
+/jardiniere-2/* /jardiniere 301
+/pavaje-standard/quatro/quatro-20x20x6-2 /pavaje-standard/quatro/quatro-20x20x6 301
+/pavaje-standard/quatro/quatro-30x30x6-2 /pavaje-standard/quatro/quatro-30x30x6 301
+/pavaje-standard/quatro/quatro-smart-20x20x10-2 /pavaje-standard/quatro/quatro-smart-20x20x10 301
 
 # ---------------------------------------------------------------------------
 # Company / resource pages that now have their own dedicated route

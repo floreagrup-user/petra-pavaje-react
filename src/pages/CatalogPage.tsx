@@ -23,8 +23,8 @@ const CATEGORIES: CatalogCategory[] = [
   { title: 'Pavaje Premium', subtitle: '19 colecții disponibile', href: '/pavaje-premium' },
   { title: 'Pavaje Standard', subtitle: '6 modele disponibile', href: '/pavaje-standard' },
   { title: 'Woodstone', subtitle: 'Lemn pietrificat', href: '/woodstone-lemn-pietrificat' },
-  { title: 'Borduri', subtitle: '19 tipuri disponibile', href: '/borduri-2' },
-  { title: 'Garduri', subtitle: '3 colecții: Baroc, Modern, Robusto', href: '/garduri-2' },
+  { title: 'Borduri', subtitle: '19 tipuri disponibile', href: '/borduri' },
+  { title: 'Garduri', subtitle: '3 colecții: Baroc, Modern, Robusto', href: '/garduri' },
   { title: 'Elemente', subtitle: 'Rigole, bolțari, jardiniere', href: '/elemente' },
 ]
 

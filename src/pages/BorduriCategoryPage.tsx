@@ -76,7 +76,7 @@ export function BorduriCategoryPage() {
   }, [allProducts, filters, sortKey])
 
   useCategoryListSEO(allProducts, BORDURI_FAQ, {
-    path: '/borduri-2',
+    path: '/borduri',
     title: 'Borduri Beton - 19 Formate pentru Delimitare | Petra Pavaje',
     description:
       'Borduri din beton vibropresat Petra Pavaje: 19 formate — drepte, teșite, rotunjite, cilindrice, rampă și racord — în până la 12 culori, cu garanție 5 ani.',
@@ -211,7 +211,7 @@ export function BorduriCategoryPage() {
                       animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
                       transition={{ duration: 0.4, delay: Math.min(index, 8) * 0.05 }}
                     >
-                      <ProductGridCard product={product} basePath="/borduri-2" badgeLabel="Standard" />
+                      <ProductGridCard product={product} basePath="/borduri" badgeLabel="Standard" />
                     </motion.div>
                   ))}
                 </div>

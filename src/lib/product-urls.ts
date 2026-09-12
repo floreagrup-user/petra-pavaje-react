@@ -1,14 +1,15 @@
 // Maps a product/category "slug" (as used throughout the data files and
-// components) to its real URL segment. Most categories use the same
-// string for both; a handful keep the original WordPress slug (with its
-// "-2"/"-3" suffix) at the URL level so the new site's routes match the
-// old WordPress site exactly -- no redirect hop, same link for bookmarks,
-// backlinks and Google Ads destination URLs.
+// components) to its real URL segment. Almost every category uses the
+// same string for both. "woodstone" is the one legitimate exception --
+// its real name is longer than the internal id ("woodstone-lemn-pietrificat").
+//
+// Note: WordPress's own /borduri-2/, /garduri-2/ and /jardiniere-2/ URLs
+// carried a "-2" suffix too, but that was a WordPress duplicate-slug
+// artifact (the page title never included it), not a real distinguishing
+// name -- so the new site (like the corrected Google Ads destination
+// URLs) drops it and uses the clean /borduri/, /garduri/, /jardiniere/.
 const CATEGORY_PATH_OVERRIDES: Record<string, string> = {
   woodstone: 'woodstone-lemn-pietrificat',
-  borduri: 'borduri-2',
-  garduri: 'garduri-2',
-  jardiniere: 'jardiniere-2',
 }
 
 export function categoryPath(slug: string): string {

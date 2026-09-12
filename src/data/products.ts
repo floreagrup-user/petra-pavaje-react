@@ -3276,7 +3276,7 @@ export const products: Product[] = [
   {
     id: 'bordura-40x15x20',
     name: 'Bordură 40×15×20 dreaptă',
-    slug: 'bordura-40x15x20-dreapta-2',
+    slug: 'bordura-40x15x20-dreapta',
     category: 'borduri',
     shortDescription: 'Profil Lat, pentru Delimitări Solide',
     description: 'Bordura dreaptă 40×15×20 cm are un profil mai lat (15 cm grosime) decât bordurile standard, oferind o delimitare mai solidă și mai stabilă pentru alei și zone verzi expuse la solicitări mai mari.',
@@ -3374,7 +3374,7 @@ export const products: Product[] = [
   {
     id: 'bordura-50x10x15-dreapta',
     name: 'Bordură 50×10×15 dreaptă',
-    slug: 'bordura-50x10x15-dreapta-2',
+    slug: 'bordura-50x10x15-dreapta',
     category: 'borduri',
     shortDescription: 'Profil Intermediar, Multiple Culori',
     description: 'Bordura dreaptă 50×10×15 cm are un profil intermediar — 10 cm grosime, 15 cm înălțime — potrivit pentru delimitări solide de alei și spații exterioare, cu o paletă generoasă de 9 culori.',
@@ -3436,7 +3436,7 @@ export const products: Product[] = [
   {
     id: 'bordura-50x10x15-tesita',
     name: 'Bordură 50×10×15 teșită',
-    slug: 'bordura-50x10x15-tesita-2',
+    slug: 'bordura-50x10x15-tesita',
     category: 'borduri',
     shortDescription: 'Muchie Teșită, Aspect Elegant',
     description: 'Bordura teșită 50×10×15 cm are aceleași dimensiuni generale ca varianta dreaptă, dar cu muchia superioară teșită, pentru un aspect mai elegant și mai sigur la trecere.',
@@ -3495,7 +3495,7 @@ export const products: Product[] = [
   {
     id: 'bordura-50x12x25-tesita',
     name: 'Bordură 50×12×25 teșită',
-    slug: 'bordura-50x12x25-tesita-3',
+    slug: 'bordura-50x12x25-tesita',
     category: 'borduri',
     shortDescription: 'Format Mai Înalt, Muchie Teșită',
     description: 'Bordura teșită 50×12×25 cm este un format mai înalt (25 cm), cu muchie teșită, recomandat pentru delimitări cu solicitare mai mare din alei și amenajări exterioare.',
@@ -3543,7 +3543,7 @@ export const products: Product[] = [
   {
     id: 'bordura-50x15x25-tesita-f10',
     name: 'Bordură 50×15×25 teșită F10',
-    slug: 'bordura-50x15x25-tesita-f10-2',
+    slug: 'bordura-50x15x25-tesita-f10',
     category: 'borduri',
     shortDescription: 'Finisaj F10, Profil Lat',
     description: 'Bordura teșită 50×15×25 cm cu finisaj F10 are un profil lat (15 cm) și înalt (25 cm), cu muchie teșită, pentru delimitări solide în amenajări exterioare.',
@@ -3591,7 +3591,7 @@ export const products: Product[] = [
   {
     id: 'bordura-50x15x25-tesita-f15',
     name: 'Bordură 50×15×25 teșită F15',
-    slug: 'bordura-50x15x25-tesita-f15-2',
+    slug: 'bordura-50x15x25-tesita-f15',
     category: 'borduri',
     shortDescription: 'Finisaj F15, Profil Lat',
     description: 'Bordura teșită 50×15×25 cm cu finisaj F15 are aceleași dimensiuni generale ca varianta F10, cu o rază de teșire diferită a muchiei superioare.',
@@ -3639,7 +3639,7 @@ export const products: Product[] = [
   {
     id: 'bordura-50x20x25-rotunjita',
     name: 'Bordură 50×20×25 rotunjită',
-    slug: 'bordura-50x20x25-rotunjita-3',
+    slug: 'bordura-50x20x25-rotunjita',
     category: 'borduri',
     shortDescription: 'Muchie Rotunjită, Aspect Fin',
     description: 'Bordura rotunjită 50×20×25 cm are muchia superioară rotunjită, pentru o delimitare cu profil masiv (20×25 cm) și aspect elegant, fără colțuri ascuțite.',
@@ -3688,7 +3688,7 @@ export const products: Product[] = [
   {
     id: 'bordura-50x20x25-tesita-f10',
     name: 'Bordură 50×20×25 teșită F10',
-    slug: 'bordura-50x20x25-tesita-f10-3',
+    slug: 'bordura-50x20x25-tesita-f10',
     category: 'borduri',
     shortDescription: 'Finisaj F10, Profil Masiv',
     description: 'Bordura teșită 50×20×25 cm cu finisaj F10 are un profil masiv (20×25 cm), cu muchie teșită, pentru delimitări cu solicitare mare.',
@@ -3736,7 +3736,7 @@ export const products: Product[] = [
   {
     id: 'bordura-50x20x25-tesita-f15',
     name: 'Bordură 50×20×25 teșită F15',
-    slug: 'bordura-50x20x25-tesita-f15-3',
+    slug: 'bordura-50x20x25-tesita-f15',
     category: 'borduri',
     shortDescription: 'Finisaj F15, Profil Masiv',
     description: 'Bordura teșită 50×20×25 cm cu finisaj F15 are aceleași dimensiuni generale ca varianta F10, cu o rază de teșire diferită a muchiei superioare.',
@@ -3832,7 +3832,7 @@ export const products: Product[] = [
   {
     id: 'bordura-rampa-50x25x25',
     name: 'Bordură rampă 50×25×25',
-    slug: 'bordura-rampa-50x25x25-3',
+    slug: 'bordura-rampa-50x25x25',
     category: 'borduri',
     shortDescription: 'Acces Auto peste Bordură',
     description: 'Bordura rampă 50×25×25 cm are un profil înclinat pe o parte, gândit special pentru a permite accesul vehiculelor peste bordură — de exemplu la intrări auto sau treceri temporare — fără a necesita întreruperea aliniamentului.',
