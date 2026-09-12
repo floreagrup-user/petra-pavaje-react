@@ -103,16 +103,6 @@ const contentMap: Record<string, { title: string; sections: { heading: string; b
     ],
     cta: true,
   },
-  'catalog': {
-    title: 'Catalog',
-    sections: [
-      {
-        heading: 'Catalogul Petra Pavaje',
-        body: 'Descarcă catalogul nostru complet pentru a descoperi întreaga gamă de produse disponibile. Catalogul include specificații tehnice, dimensiuni, culori și modele de montaj pentru fiecare produs.',
-      },
-    ],
-    cta: false,
-  },
   'faq': {
     title: 'Întrebări Frecvente',
     sections: [

@@ -21,6 +21,8 @@ const BorduriCategoryPage = lazy(() => import('@/pages/BorduriCategoryPage').the
 const ElementCategoryPage = lazy(() => import('@/pages/ElementCategoryPage').then(m => ({ default: m.ElementCategoryPage })))
 const ElementHubPage = lazy(() => import('@/pages/ElementHubPage').then(m => ({ default: m.ElementHubPage })))
 const ElementeOverviewPage = lazy(() => import('@/pages/ElementeOverviewPage').then(m => ({ default: m.ElementeOverviewPage })))
+const BrosuriPage = lazy(() => import('@/pages/BrosuriPage').then(m => ({ default: m.BrosuriPage })))
+const CatalogPage = lazy(() => import('@/pages/CatalogPage').then(m => ({ default: m.CatalogPage })))
 
 const LazyGenericPage = ({ title, contentKey }: { title: string; contentKey: string }) => (
   <Suspense fallback={<div className="pt-32 pb-16 text-center text-charcoal-500">Se încarcă...</div>}>
@@ -70,12 +72,12 @@ export const router = createBrowserRouter([
       { path: 'garantie', element: <LazyGenericPage title="Garanție" contentKey="garantie" /> },
       { path: 'laborator', element: <LazyGenericPage title="Laborator" contentKey="laborator" /> },
       { path: 'cariera', element: <LazyGenericPage title="Carieră" contentKey="cariera" /> },
-      { path: 'catalog', element: <LazyGenericPage title="Catalog" contentKey="catalog" /> },
+      { path: 'catalog', element: <Suspense><CatalogPage /></Suspense> },
       { path: 'modele-montaj', element: <LazyGenericPage title="Modele de Montaj" contentKey="modele-montaj" /> },
       { path: 'intretinere', element: <LazyGenericPage title="Întreținere Pavaje" contentKey="intretinere" /> },
       { path: 'faq', element: <LazyGenericPage title="Întrebări Frecvente" contentKey="faq" /> },
       { path: 'documente', element: <LazyGenericPage title="Documente Tehnice" contentKey="documente" /> },
-      { path: 'brosuri', element: <LazyGenericPage title="Broșuri" contentKey="brosuri" /> },
+      { path: 'brosuri', element: <Suspense><BrosuriPage /></Suspense> },
       { path: 'confidentialitate', element: <LazyGenericPage title="Politica de Confidențialitate" contentKey="confidentialitate" /> },
       { path: 'cookie-uri', element: <LazyGenericPage title="Politica Cookie-uri" contentKey="cookie-uri" /> },
       { path: 'termeni', element: <LazyGenericPage title="Termeni și Condiții" contentKey="termeni" /> },
