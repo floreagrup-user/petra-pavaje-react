@@ -1,408 +1,116 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useEffect, useMemo, useState } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Calendar, Clock, ArrowRight } from 'lucide-react'
+import { Calendar, Clock, ArrowRight, Search, X } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
-import type { BlogPost } from '@/data/types'
+import { blogPosts } from '@/data/blog'
+import type { BlogCategory } from '@/data/types'
+import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
 
-const blogPosts: BlogPost[] = [
-  {
-    id: '1',
-    title: 'Cum să alegi pavajul perfect pentru curtea ta',
-    slug: 'cum-sa-alegi-pavajul-perfect',
-    excerpt: 'Ghid complet pentru alegerea pavajului potrivit în funcție de tipul de trafic, designul dorit și bugetul disponibil.',
-    content: 'Alegerea pavajului perfect pentru curtea ta poate părea o sarcină dificilă, dar cu informațiile potrivite, poți lua cea mai bună decizie...',
-    date: '2025-03-15',
-    author: 'Petra Pavaje',
-    category: 'Ghiduri',
-    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/web-prima-pagina-1-Medium.avif',
-    readTime: 5,
-  },
-  {
-    id: '2',
-    title: 'Tendințe în amenajările exterioare pentru 2025',
-    slug: 'tendinte-amenajari-exterioare-2025',
-    excerpt: 'Descoperă cele mai noi tendințe în designul peisagistic și amenajările exterioare pentru acest an.',
-    content: 'Amenajările exterioare au evoluat semnificativ în ultimii ani, iar 2025 aduce o serie de tendințe inovatoare...',
-    date: '2025-02-28',
-    author: 'Petra Pavaje',
-    category: 'Trenduri',
-    image: 'https://petrapavaje.ro/wp-content/uploads/mediterana-homepage.avif',
-    readTime: 4,
-  },
-  {
-    id: '3',
-    title: 'Ghid de montaj pentru pavaje premium',
-    slug: 'ghid-montaj-pavaje-premium',
-    excerpt: 'Află pașii esențiali pentru montarea corectă a pavajelor premium și asigură-te că rezultatul final este perfect.',
-    content: 'Montarea corectă a pavajelor premium este esențială pentru a te bucura de durabilitate și aspect estetic...',
-    date: '2025-02-10',
-    author: 'Petra Pavaje',
-    category: 'Montaj',
-    image: 'https://petrapavaje.ro/wp-content/uploads/relief-homepage.avif',
-    readTime: 7,
-  },
-  {
-    id: '4',
-    title: 'Woodstone – Frumusețea lemnului în beton premium',
-    slug: 'woodstone-lemn-pietrificat-beneficii',
-    excerpt: 'Descoperă gama Woodstone de la Petra Pavaje, care îmbină estetica lemnului natural cu durabilitatea betonului.',
-    content: 'Woodstone reprezintă inovația în domeniul prefabricatelor din beton, oferind aspectul cald al lemnului...',
-    date: '2025-01-20',
-    author: 'Petra Pavaje',
-    category: 'Produse',
-    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/woodstoone-Medium.avif',
-    readTime: 6,
-  },
-  {
-    id: '5',
-    title: 'Cum să întreții pavajele pe timp de iarnă',
-    slug: 'intretinere-pavaje-iarna',
-    excerpt: 'Sfaturi utile pentru protejarea și întreținerea pavajelor în sezonul rece, împotriva înghețului și a sării.',
-    content: 'Iarna poate fi o provocare pentru pavaje, dar cu îngrijirea potrivită, le poți menține aspectul impecabil...',
-    date: '2025-01-05',
-    author: 'Petra Pavaje',
-    category: 'Întreținere',
-    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/holland-Medium.avif',
-    readTime: 4,
-  },
-  {
-    id: '6',
-    title: 'Sustenabilitatea în producția de pavaje',
-    slug: 'sustenabilitate-productie-pavaje',
-    excerpt: 'Află cum producem pavaje premium cu un impact redus asupra mediului, folosind energie solară și tehnologii verzi.',
-    content: 'La Petra Pavaje, sustenabilitatea este o prioritate. Am implementat tehnologii moderne pentru a reduce amprenta de carbon...',
-    date: '2024-12-15',
-    author: 'Petra Pavaje',
-    category: 'Sustenabilitate',
-    image: 'https://petrapavaje.ro/wp-content/uploads/energie-verde-si-emsii-0-web1-1.avif',
-    readTime: 5,
-  },
-  {
-    id: '7',
-    title: 'Soluții delimitare cu pavaj: Cum alegi soluția perfectă pentru o grădină cu design impecabil',
-    slug: 'solutii-delimitare-pavaj-gradina-design-impecabil',
-    excerpt: 'De la borduri clasice la delimitări creative cu pavaj — ghid complet pentru o amenajare coerentă și durabilă.',
-    content: 'Când vine vorba de amenajări exterioare, diferența dintre un proiect reușit și unul excepțional stă, aproape întotdeauna, în detalii.',
-    date: '2026-05-07',
-    author: 'Petra Pavaje',
-    category: 'Ghiduri Tehnice',
-    image: 'https://petrapavaje.ro/wp-content/uploads/Relief-delimitare-20x10x6.avif',
-    readTime: 9,
-  },
-  {
-    id: '8',
-    title: 'Petra Pavaje lansează Evo Green',
-    slug: 'petra-pavaje-lanseaza-evo-green',
-    excerpt: 'Prima gamă de pavaje din România fabricată din ciment cu emisii aproape zero — certificat digital, cu trasabilitate completă a reducerilor de carbon.',
-    content: 'Florea Grup anunță o inovație absolută în domeniul materialelor de construcții. Petra Pavaje lansează Evo Green, un produs dezvoltat de hubul de inovare al companiei ca răspuns direct la nevoia tot mai mare de soluții de construcții sustenabile.',
-    date: '2026-04-22',
-    author: 'Petra Pavaje',
-    category: 'Inovație & Sustenabilitate',
-    image: 'https://petrapavaje.ro/wp-content/uploads/Untitled-scaled.avif',
-    readTime: 8,
-  },
-  {
-    id: '9',
-    title: 'Pavaje premium și starea de bine',
-    slug: 'pavaje-premium-si-starea-de-bine',
-    excerpt: 'Cele mai noi cercetări demonstrează că vegetația bogată și amenajările de calitate influențează direct sănătatea, nivelul de stres și calitatea vieții.',
-    content: 'Cele mai noi cercetări demonstrează că vegetația bogată și amenajările stradale de calitate nu sunt simple detalii estetice — ele influențează direct sănătatea, nivelul de stres și calitatea vieții comunităților urbane.',
-    date: '2026-03-24',
-    author: 'Petra Pavaje',
-    category: 'Inspirație',
-    image: 'https://petrapavaje.ro/wp-content/uploads/curte_petra_pavaje.avif',
-    readTime: 8,
-  },
-  {
-    id: '10',
-    title: 'Casa 154 – pavajul Grand Urban, punte între tradiție și modernitate',
-    slug: 'casa-154-grand-urban-traditie-modernitate',
-    excerpt: 'Cum o curte cu amintiri de peste un secol a prins viață nouă prin liniile curate ale dalelor de mari dimensiuni Grand Urban.',
-    content: 'Cristian Prack, prin intermediul Casei 154, reușește să redea experiența redescoperirii satului copilăriei, transformând o ruină într-un spațiu util cu pavaj Grand Urban.',
-    date: '2026-03-05',
-    author: 'Petra Pavaje',
-    category: 'Proiecte',
-    image: 'https://petrapavaje.ro/wp-content/uploads/2_Dale-Grand-Urban-80x40_Petra-Pavaje.jpg',
-    readTime: 7,
-  },
-  {
-    id: '11',
-    title: 'Amenajează-ți curtea în culoarea anului 2026 cu Petra Pavaje',
-    slug: 'amenajeaza-curtea-culoarea-anului-2026',
-    excerpt: 'Cloud Dancer este culoarea anului 2026 — un alb rafinat care inspiră liniște și echilibru. Descoperă pavajele Petra Pavaje în această nuanță.',
-    content: 'Institutul Pantone a desemnat Cloud Dancer drept culoarea anului 2026. Descoperă pavajele Petra Pavaje disponibile în această nuanță pentru o amenajare luminoasă și elegantă.',
-    date: '2026-01-22',
-    author: 'Petra Pavaje',
-    category: 'Trenduri',
-    image: 'https://petrapavaje.ro/wp-content/uploads/cloud-dancer-idei-de-amenajare-cu-pavaje-in-culoarea-alb-de-la-Petra-Pavaje-web.avif',
-    readTime: 8,
-  },
-  {
-    id: '12',
-    title: '3 idei creative pentru utilizarea pavajului ca decor de sărbători',
-    slug: '3-idei-creative-pavaj-decor-sarbatori',
-    excerpt: 'Transformă bucățile rămase de pavaj în decorațiuni ingenioase care aduc spiritul sărbătorilor în curtea și în casa ta.',
-    content: 'Cine spune că elementele de construcții nu pot deveni piese de artă? La Petra Pavaje, transformăm bucățile rămase de pavaj în decorațiuni de sărbători.',
-    date: '2025-12-15',
-    author: 'Petra Pavaje',
-    category: 'Inspirație',
-    image: 'https://petrapavaje.ro/wp-content/uploads/Petra-Pavaje-scaled.avif',
-    readTime: 5,
-  },
-  {
-    id: '13',
-    title: 'La mulți ani, România! La mulți ani tuturor românilor!',
-    slug: 'la-multi-ani-romania',
-    excerpt: 'De Ziua Națională a României, sărbătorim nu doar istoria și valorile care ne definesc, ci și ceea ce construim împreună zi de zi.',
-    content: '',
-    date: '2025-11-27',
-    author: 'Petra Pavaje',
-    category: 'Noutăți',
-    image: 'https://petrapavaje.ro/wp-content/uploads/Cover-scaled.jpg',
-    readTime: 3,
-  },
-  {
-    id: '14',
-    title: 'Curte amenajată cu pavajul Sahara travertin — studiu de caz',
-    slug: 'curte-amenajata-sahara-travertin',
-    excerpt: 'Într-un cartier rezidențial din Sibiu, familia T. și-a dorit o curte care să fie o extensie a locuinței și a sentimentului de acasă.',
-    content: '',
-    date: '2025-11-10',
-    author: 'Petra Pavaje',
-    category: 'Inspirație',
-    image: 'https://petrapavaje.ro/wp-content/uploads/Sahara-MIX-6.30-Petra-Pavaje_1-scaled.avif',
-    readTime: 6,
-  },
-  {
-    id: '15',
-    title: 'Planul pentru o curte de vis cu Petra Pavaje',
-    slug: 'planul-pentru-o-curte-de-vis',
-    excerpt: 'Amenajarea curții cu pavaje și elemente decorative este o investiție pe termen lung, iar detaliile fac diferența.',
-    content: '',
-    date: '2025-09-03',
-    author: 'Petra Pavaje',
-    category: 'Inspirație',
-    image: 'https://petrapavaje.ro/wp-content/uploads/Mediterana-terra-scaled.avif',
-    readTime: 7,
-  },
-  {
-    id: '16',
-    title: 'Amenajare rezidențială cu pavajul Mediterana Terra — studiu de caz',
-    slug: 'amenajare-rezidentiala-mediterana-terra',
-    excerpt: 'Un loc în care, doar privindu-l, te simți ca acasă. Iar pavajul este scena pe care se întâmplă momentele simple și autentice.',
-    content: '',
-    date: '2025-07-30',
-    author: 'Petra Pavaje',
-    category: 'Inspirație',
-    image: 'https://petrapavaje.ro/wp-content/uploads/IMG_1347-HDR_c-scaled.avif',
-    readTime: 6,
-  },
-  {
-    id: '17',
-    title: 'Petra Pavaje plantează 42.000 de puieți în județul Alba',
-    slug: 'actiune-de-impadurire',
-    excerpt: 'Tot ceea ce facem la Petra Pavaje este — și rămâne — în armonie cu natura. Dincolo de produse, această filozofie se reflectă în acțiunile pe care le susținem activ.',
-    content: '',
-    date: '2025-05-15',
-    author: 'Petra Pavaje',
-    category: 'Noutăți',
-    image: 'https://petrapavaje.ro/wp-content/uploads/img_1-1.avif',
-    readTime: 4,
-  },
-  {
-    id: '18',
-    title: 'Pavajul Mistic gri bazaltic pentru o curte elegantă',
-    slug: 'pavajul-mistic-pentru-o-curte-elegenata',
-    excerpt: 'O curte bine amenajată este cartea de vizită a oricărei locuințe. Un design echilibrat și materiale de calitate transformă spațiul exterior într-o amenajare cu stil.',
-    content: '',
-    date: '2025-02-28',
-    author: 'Petra Pavaje',
-    category: 'Inspirație',
-    image: 'https://petrapavaje.ro/wp-content/uploads/Mistic-gri-bazaltic-6-scaled.avif',
-    readTime: 6,
-  },
-  {
-    id: '19',
-    title: 'Câștigă o bancă Woodstone de Ziua Îndrăgostiților!',
-    slug: 'castiga-banca-woodstone-ziua-indragostitilor',
-    excerpt: 'Ziua Îndrăgostiților este despre momente speciale împărtășite în doi. Anul acesta, Petra Pavaje îți oferă șansa de a câștiga o bancă Woodstone.',
-    content: '',
-    date: '2025-02-07',
-    author: 'Petra Pavaje',
-    category: 'Noutăți',
-    image: 'https://petrapavaje.ro/wp-content/uploads/Grafica-giveaway.avif',
-    readTime: 2,
-  },
-  {
-    id: '20',
-    title: 'Amenajarea completă cu pavajul Antic antichizat — studiu de caz',
-    slug: 'amenajare-completa-antic-antichizat',
-    excerpt: 'Pavajul Antic antichizat este alegerea ideală pentru cei care doresc să adopte stilul rustic, dar să nu facă rabat de la funcționalitate.',
-    content: '',
-    date: '2025-01-20',
-    author: 'Petra Pavaje',
-    category: 'Inspirație',
-    image: 'https://petrapavaje.ro/wp-content/uploads/Antic-antichizat-Petra-Pavaje-Alei-scaled.avif',
-    readTime: 6,
-  },
-  {
-    id: '21',
-    title: 'Gama Woodstone — Lemn Pietrificat',
-    slug: 'gama-woodstone-lemn-pietrificat',
-    excerpt: 'Atunci când detaliile fac diferența, gama Woodstone – Lemn Pietrificat redefinește standardele amenajărilor exterioare.',
-    content: '',
-    date: '2024-08-22',
-    author: 'Petra Pavaje',
-    category: 'Inspirație',
-    image: 'https://petrapavaje.ro/wp-content/uploads/pavaj-woodstone_web.avif',
-    readTime: 8,
-  },
-  {
-    id: '22',
-    title: 'Sfaturi pentru montarea pavajelor',
-    slug: 'sfaturi-pentru-montarea-pavajelor',
-    excerpt: 'Ghid complet pentru montarea pavajelor — de la pregătirea terenului până la finisajul final.',
-    content: '',
-    date: '2024-04-08',
-    author: 'Petra Pavaje',
-    category: 'Ghiduri Tehnice',
-    image: 'https://petrapavaje.ro/wp-content/uploads/petra-pavaje-montaj-scaled.webp',
-    readTime: 5,
-  },
-  {
-    id: '23',
-    title: 'Montarea bordurilor — pași de urmat și greșeli de evitat',
-    slug: 'montarea-bordurilor',
-    excerpt: 'Pentru ca rezultatul să corespundă așteptărilor, vă recomandăm o serie de sfaturi ce vă vor fi de folos în obținerea amenajării mult dorite.',
-    content: '',
-    date: '2024-04-08',
-    author: 'Petra Pavaje',
-    category: 'Ghiduri Tehnice',
-    image: 'https://petrapavaje.ro/wp-content/uploads/bordura-h650.webp',
-    readTime: 5,
-  },
-  {
-    id: '24',
-    title: 'Transformă-ți curtea folosind culoarea anului: Fuzz Peach',
-    slug: 'transforma-ti-curtea-folosind-culoarea-anului-fuzz-peach',
-    excerpt: 'Pantone a declarat culoarea anului 2024: Peach Fuzz. Senzația de căldură și rafinament pe care o aduce această nuanță poate completa spațiile exterioare.',
-    content: '',
-    date: '2024-02-29',
-    author: 'Petra Pavaje',
-    category: 'Inspirație',
-    image: 'https://petrapavaje.ro/wp-content/uploads/Petra-Pavaje_Nuanta-Fuzz-Peach_mobiler-gradina-scaled.webp',
-    readTime: 5,
-  },
-  {
-    id: '25',
-    title: 'Gardul Modern Petra Pavaje',
-    slug: 'gardul-modern-petra-pavaje',
-    excerpt: 'Gardul Modern de la Petra Pavaje redefinește conceptul de împrejmuire — un sistem 3D modular, portant, cu design minimalist și montare rapidă.',
-    content: '',
-    date: '2024-02-27',
-    author: 'Petra Pavaje',
-    category: 'Ghiduri Tehnice',
-    image: 'https://petrapavaje.ro/wp-content/uploads/gard-modern-2-1-jpg.webp',
-    readTime: 8,
-  },
-  {
-    id: '26',
-    title: 'Concurs — Montator cu Petra Pavaje',
-    slug: 'concurs-montator-cu-petra-pavaje',
-    excerpt: 'Ești montator de pavaje? Demonstrează-ți abilitățile și câștigă o trusă completă de montaj, complet echipată!',
-    content: '',
-    date: '2024-02-12',
-    author: 'Petra Pavaje',
-    category: 'Noutăți',
-    image: 'https://petrapavaje.ro/wp-content/uploads/concurs_montatori-scaled.webp',
-    readTime: 3,
-  },
-  {
-    id: '27',
-    title: 'Cum îngrijim pavajul în sezonul rece',
-    slug: 'cum-ingrijim-pavajul-in-sezonul-rece',
-    excerpt: 'Iarna poate fi un test dur pentru orice suprafață pavată. Zăpada, gheața și ciclurile repetate de îngheț-dezgheț pot afecta pavajul. Iată cum poți proteja investiția ta.',
-    content: '',
-    date: '2024-01-29',
-    author: 'Petra Pavaje',
-    category: 'Întreținere',
-    image: 'https://petrapavaje.ro/wp-content/uploads/Inlaturare-zapada_Petra-Pavaje-scaled.webp',
-    readTime: 6,
-  },
-  {
-    id: '28',
-    title: 'De ce apar pete albe pe pavaje și pe garduri — Eflorescența',
-    slug: 'de-ce-apar-pete-albe-pe-pavaje-si-pe-garduri',
-    excerpt: 'Ai observat depuneri albicioase pe suprafața pavajului sau a gardului? Nu te alarma — este vorba despre eflorescență, un fenomen natural și temporar.',
-    content: '',
-    date: '2023-11-07',
-    author: 'Petra Pavaje',
-    category: 'Întreținere',
-    image: 'https://petrapavaje.ro/wp-content/uploads/Anti-eflorescenta.avif',
-    readTime: 7,
-  },
-  {
-    id: '29',
-    title: 'Petra Pavaje ajunge la 800 de produse în portofoliu',
-    slug: 'petra-pavaje-ajunge-la-800-de-produse',
-    excerpt: 'Un nou prag important pentru Petra Pavaje — portofoliul nostru depășește 800 de produse distincte.',
-    content: '',
-    date: '2023-09-29',
-    author: 'Petra Pavaje',
-    category: 'Noutăți',
-    image: 'https://petrapavaje.ro/wp-content/uploads/4.-Grand-Urban-80-x-40-cm-gri-antic.avif',
-    readTime: 6,
-  },
-  {
-    id: '30',
-    title: 'CON — pavajul care inspiră viața curții tale',
-    slug: 'con-pavajul-care-inspira-viata-curtii-tale',
-    excerpt: 'Pavajul CON de la Petra Pavaje nu este doar o dală — este o piesă de design care transformă orice curte într-un spațiu viu, colorat și plin de personalitate.',
-    content: '',
-    date: '2023-09-21',
-    author: 'Petra Pavaje',
-    category: 'Inspirație',
-    image: 'https://petrapavaje.ro/wp-content/uploads/Pavaj-Con-alb-maro-e1695290853132.jpeg',
-    readTime: 7,
-  },
-  {
-    id: '31',
-    title: 'Giveaway — Back to School',
-    slug: 'giveaway-back-to-school',
-    excerpt: 'Școala bate la ușă, iar Petra Pavaje te pregătește! Participă la giveaway-ul nostru Back to School și poți câștiga ghiozdane școlare complet echipate.',
-    content: '',
-    date: '2023-08-31',
-    author: 'Petra Pavaje',
-    category: 'Noutăți',
-    image: 'https://petrapavaje.ro/wp-content/uploads/Giveaway-Back-to-School-Petra-Pavaje-scaled.webp',
-    readTime: 3,
-  },
-]
+const CATEGORY_LABELS: Record<BlogCategory, string> = {
+  inspiratie: 'Inspirație',
+  'studii-de-caz': 'Studii de caz',
+  ghiduri: 'Ghiduri tehnice',
+  noutati: 'Noutăți',
+}
+const CATEGORY_ORDER: BlogCategory[] = ['inspiratie', 'studii-de-caz', 'ghiduri', 'noutati']
 
-const categories = ['Toate', 'Ghiduri', 'Ghiduri Tehnice', 'Inovație & Sustenabilitate', 'Inspirație', 'Noutăți', 'Proiecte', 'Trenduri', 'Montaj', 'Produse', 'Întreținere', 'Sustenabilitate']
+const PAGE_SIZE = 12
+
+function formatDate(iso: string) {
+  return new Date(iso).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long', year: 'numeric' })
+}
 
 export function BlogPage() {
-  const [activeCategory, setActiveCategory] = useState('Toate')
+  const [searchParams, setSearchParams] = useSearchParams()
+  const activeCategory = (searchParams.get('category') as BlogCategory | null) || null
+  const [searchQuery, setSearchQuery] = useState('')
+  const [sortOrder, setSortOrder] = useState<'recent' | 'oldest'>('recent')
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
   const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
 
-  const sorted = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-  const filtered = activeCategory === 'Toate'
-    ? sorted
-    : sorted.filter(p => p.category === activeCategory)
+  useEffect(() => {
+    const url = `${window.location.origin}/blog`
+    const title = `Blog Petra Pavaje – Inspirație, Ghiduri și Studii de Caz | ${SEO_SITE_NAME}`
+    const description = 'Descoperă idei, sfaturi, proiecte și informații utile pentru amenajarea spațiilor exterioare cu Petra Pavaje.'
+
+    document.title = title
+    upsertMeta('name', 'description', description)
+    upsertCanonical(url)
+    upsertMeta('property', 'og:type', 'website')
+    upsertMeta('property', 'og:title', title)
+    upsertMeta('property', 'og:description', description)
+    upsertMeta('property', 'og:url', url)
+    upsertMeta('property', 'og:site_name', SEO_SITE_NAME)
+    upsertMeta('name', 'twitter:card', 'summary_large_image')
+
+    upsertJsonLd('blog-collection-schema', {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      '@id': `${url}#collection`,
+      name: title,
+      description,
+      url,
+      mainEntity: {
+        '@type': 'Blog',
+        name: `Blog ${SEO_SITE_NAME}`,
+        blogPost: blogPosts.slice(0, 20).map((p) => ({
+          '@type': 'BlogPosting',
+          headline: p.title,
+          url: `${window.location.origin}/blog/${p.slug}`,
+          datePublished: p.date,
+        })),
+      },
+    })
+
+    upsertJsonLd('breadcrumb-schema', {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: url },
+      ],
+    })
+
+    return resetSEO
+  }, [])
+
+  const filtered = useMemo(() => {
+    const query = searchQuery.trim().toLowerCase()
+    let list = blogPosts.filter((post) => {
+      const matchesCategory = !activeCategory || post.categories.includes(activeCategory)
+      const matchesQuery =
+        !query ||
+        post.title.toLowerCase().includes(query) ||
+        post.excerpt.toLowerCase().includes(query) ||
+        post.categories.some((c) => CATEGORY_LABELS[c].toLowerCase().includes(query))
+      return matchesCategory && matchesQuery
+    })
+    list = [...list].sort((a, b) => {
+      const diff = new Date(b.date).getTime() - new Date(a.date).getTime()
+      return sortOrder === 'recent' ? diff : -diff
+    })
+    return list
+  }, [activeCategory, searchQuery, sortOrder])
+
+  const visible = filtered.slice(0, visibleCount)
+  const hasMore = visibleCount < filtered.length
+
+  const setCategory = (cat: BlogCategory | null) => {
+    setVisibleCount(PAGE_SIZE)
+    if (cat) setSearchParams({ category: cat })
+    else setSearchParams({})
+  }
 
   return (
     <div className="pt-20 md:pt-24">
       <section className="bg-charcoal-950 text-white py-16 md:py-20">
         <div className="container-premium">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <h1 className="heading-h1 mb-4">Blog</h1>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+            <h1 className="heading-h1 mb-4">Blog &amp; Inspirație</h1>
             <p className="text-body-lg text-charcoal-400 max-w-2xl">
-              Inspirație, ghiduri și noutăți despre amenajări exterioare, pavaje și design peisagistic.
+              Descoperă idei, sfaturi, proiecte și informații utile pentru amenajarea spațiilor exterioare cu Petra
+              Pavaje.
             </p>
           </motion.div>
         </div>
@@ -410,66 +118,132 @@ export function BlogPage() {
 
       <section ref={ref} className="py-16 md:py-24">
         <div className="container-premium">
-          <div className="flex flex-wrap gap-2 mb-10">
-            {categories.map((cat) => (
+          <div className="relative mb-6 max-w-md">
+            <Search className="w-4 h-4 text-charcoal-400 absolute left-4 top-1/2 -translate-y-1/2" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => { setSearchQuery(e.target.value); setVisibleCount(PAGE_SIZE) }}
+              placeholder="Caută în articole..."
+              className="w-full pl-11 pr-10 py-3 rounded-xl border border-charcoal-200 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-charcoal-900"
+            />
+            {searchQuery && (
               <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${
-                  activeCategory === cat
-                    ? 'bg-brand-600 text-white'
-                    : 'bg-charcoal-100 text-charcoal-600 hover:bg-charcoal-200'
-                }`}
+                onClick={() => setSearchQuery('')}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-charcoal-400 hover:text-charcoal-600"
+                aria-label="Șterge căutarea"
               >
-                {cat}
+                <X className="w-4 h-4" />
               </button>
-            ))}
+            )}
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filtered.map((post, index) => (
-              <motion.article
-                key={post.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.4, delay: index * 0.08 }}
+          <div className="flex flex-wrap items-center justify-between gap-4 mb-10">
+            <div className="flex gap-2 overflow-x-auto pb-1 -mb-1 sm:flex-wrap sm:overflow-visible">
+              <button
+                onClick={() => setCategory(null)}
+                className={`shrink-0 px-4 py-2 text-sm font-medium rounded-full transition-all ${
+                  !activeCategory ? 'bg-brand-600 text-white' : 'bg-charcoal-100 text-charcoal-600 hover:bg-charcoal-200'
+                }`}
               >
-                <Link to={`/blog/${post.slug}`} className="group block">
-                  <div className="relative aspect-[16/10] rounded-xl overflow-hidden bg-stone-100 mb-4">
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      loading="lazy"
-                    />
-                    <div className="absolute top-3 left-3">
-                      <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-charcoal-900 text-xs font-medium rounded-full">
-                        {post.category}
+                Toate
+              </button>
+              {CATEGORY_ORDER.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setCategory(cat)}
+                  className={`shrink-0 px-4 py-2 text-sm font-medium rounded-full transition-all ${
+                    activeCategory === cat ? 'bg-brand-600 text-white' : 'bg-charcoal-100 text-charcoal-600 hover:bg-charcoal-200'
+                  }`}
+                >
+                  {CATEGORY_LABELS[cat]}
+                </button>
+              ))}
+            </div>
+
+            <div className="flex items-center gap-2 text-sm shrink-0">
+              <span className="text-charcoal-400">Sortează:</span>
+              <button
+                onClick={() => setSortOrder('recent')}
+                className={sortOrder === 'recent' ? 'text-brand-600 font-medium' : 'text-charcoal-500 hover:text-charcoal-700'}
+              >
+                Recente
+              </button>
+              <span className="text-charcoal-300">·</span>
+              <button
+                onClick={() => setSortOrder('oldest')}
+                className={sortOrder === 'oldest' ? 'text-brand-600 font-medium' : 'text-charcoal-500 hover:text-charcoal-700'}
+              >
+                Vechi
+              </button>
+            </div>
+          </div>
+
+          {visible.length === 0 ? (
+            <div className="text-center py-20">
+              <p className="text-charcoal-500">Nu am găsit articole pentru această căutare.</p>
+            </div>
+          ) : (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {visible.map((post, index) => (
+                <motion.article
+                  key={post.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.4, delay: (index % PAGE_SIZE) * 0.05 }}
+                >
+                  <Link to={`/blog/${post.slug}`} className="group block">
+                    <div className="relative aspect-[16/10] rounded-xl overflow-hidden bg-stone-100 mb-4">
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                      <div className="absolute top-3 left-3 flex gap-1.5">
+                        {post.categories.slice(0, 2).map((cat) => (
+                          <span key={cat} className="px-3 py-1 bg-white/90 backdrop-blur-sm text-charcoal-900 text-xs font-medium rounded-full">
+                            {CATEGORY_LABELS[cat]}
+                          </span>
+                        ))}
+                        {post.categories.length > 2 && (
+                          <span className="px-2.5 py-1 bg-white/90 backdrop-blur-sm text-charcoal-500 text-xs font-medium rounded-full">
+                            +{post.categories.length - 2}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3 text-xs text-charcoal-500 mb-2">
+                      <span className="flex items-center gap-1">
+                        <Calendar className="w-3 h-3" />
+                        {formatDate(post.date)}
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <Clock className="w-3 h-3" />
+                        {post.readTime} min
                       </span>
                     </div>
-                  </div>
-                  <div className="flex items-center gap-3 text-xs text-charcoal-500 mb-2">
-                    <span className="flex items-center gap-1">
-                      <Calendar className="w-3 h-3" />
-                      {post.date}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <Clock className="w-3 h-3" />
-                      {post.readTime} min
-                    </span>
-                  </div>
-                  <h2 className="text-lg font-semibold text-charcoal-900 group-hover:text-brand-600 transition-colors mb-2">
-                    {post.title}
-                  </h2>
-                  <p className="text-sm text-charcoal-500 line-clamp-2">{post.excerpt}</p>
-                  <div className="flex items-center text-brand-600 text-sm font-medium mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
-                    Citește mai mult
-                    <ArrowRight className="w-4 h-4 ml-1" />
-                  </div>
-                </Link>
-              </motion.article>
-            ))}
-          </div>
+                    <h2 className="text-lg font-semibold text-charcoal-900 group-hover:text-brand-600 transition-colors mb-2">
+                      {post.title}
+                    </h2>
+                    <p className="text-sm text-charcoal-500 line-clamp-2">{post.excerpt}</p>
+                    <div className="flex items-center text-brand-600 text-sm font-medium mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                      Citește articolul
+                      <ArrowRight className="w-4 h-4 ml-1" />
+                    </div>
+                  </Link>
+                </motion.article>
+              ))}
+            </div>
+          )}
+
+          {hasMore && (
+            <div className="text-center mt-12">
+              <button onClick={() => setVisibleCount((c) => c + PAGE_SIZE)} className="btn-secondary">
+                Încarcă mai multe articole
+              </button>
+            </div>
+          )}
         </div>
       </section>
     </div>

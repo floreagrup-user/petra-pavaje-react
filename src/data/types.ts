@@ -96,6 +96,8 @@ export interface Testimonial {
   location?: string
 }
 
+export type BlogCategory = 'inspiratie' | 'studii-de-caz' | 'ghiduri' | 'noutati'
+
 export interface BlogPost {
   id: string
   title: string
@@ -103,10 +105,14 @@ export interface BlogPost {
   excerpt: string
   content: string
   date: string
+  modifiedDate?: string
   author: string
-  category: string
+  categories: BlogCategory[]
   image: string
   readTime: number
+  tags?: string[]
+  seo?: { title?: string; description?: string; canonical?: string }
+  sourceUrl?: string
   toc?: { id: string; heading: string; summary: string }[]
 }
 
