@@ -1,7 +1,7 @@
 export async function onRequestPost(context: any) {
   try {
     const body = await context.request.json()
-    const { name, email, phone, county, message, type } = body
+    const { name, email, phone, county, message, type, repEmail, repName } = body
 
     // Validate required fields
     if (!name || !email) {
@@ -13,9 +13,11 @@ export async function onRequestPost(context: any) {
 
     // Send email via Resend (or your preferred email service)
     const RESEND_API_KEY = context.env.RESEND_API_KEY
+    let emailSent = false
 
     if (RESEND_API_KEY) {
-      await fetch('https://api.resend.com/emails', {
+      const recipient = repEmail || 'contact@petrapavaje.ro'
+      const resendResponse = await fetch('https://api.resend.com/emails', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${RESEND_API_KEY}`,
@@ -23,7 +25,8 @@ export async function onRequestPost(context: any) {
         },
         body: JSON.stringify({
           from: 'Petra Pavaje <contact@petrapavaje.ro>',
-          to: ['contact@petrapavaje.ro'],
+          to: [recipient],
+          reply_to: email,
           subject: type === 'quote'
             ? `Cerere Oferta - ${name}`
             : `Mesaj de pe site - ${name}`,
@@ -33,17 +36,24 @@ export async function onRequestPost(context: any) {
               <tr><td><strong>Nume:</strong></td><td>${name}</td></tr>
               <tr><td><strong>Email:</strong></td><td>${email}</td></tr>
               <tr><td><strong>Telefon:</strong></td><td>${phone || 'Nespecificat'}</td></tr>
-              <tr><td><strong>Judet:</strong></td><td>${county || 'Nespecificat'}</td></tr>
+              <tr><td><strong>Județ:</strong></td><td>${county || 'Nespecificat'}</td></tr>
+              ${repName ? `<tr><td><strong>Reprezentant:</strong></td><td>${repName} (${repEmail})</td></tr>` : ''}
             </table>
             <h3>Mesaj:</h3>
             <p>${message || 'Niciun mesaj'}</p>
           `,
         }),
       })
+      emailSent = resendResponse.ok
+      if (!emailSent) {
+        console.error('Resend API error', resendResponse.status, await resendResponse.text())
+      }
+    } else {
+      console.error('RESEND_API_KEY is not configured - contact form message was not emailed')
     }
 
     return new Response(
-      JSON.stringify({ success: true, message: 'Message sent successfully' }),
+      JSON.stringify({ success: true, emailSent, message: 'Message received' }),
       { status: 200, headers: { 'Content-Type': 'application/json' } }
     )
   } catch (error) {

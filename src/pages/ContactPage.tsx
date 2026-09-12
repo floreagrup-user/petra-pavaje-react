@@ -23,14 +23,43 @@ const counties = [
 export function ContactPage() {
   const [selectedCounty, setSelectedCounty] = useState('')
   const [formSubmitted, setFormSubmitted] = useState(false)
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '', county: '', message: '', gdpr: false })
+  const [submitting, setSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState(false)
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '', gdpr: false })
 
   const rep = selectedCounty ? getRepByCounty(selectedCounty) : null
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setFormSubmitted(true)
-    setTimeout(() => setFormSubmitted(false), 5000)
+    setSubmitting(true)
+    setSubmitError(false)
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          county: rep?.county || '',
+          message: formData.message,
+          type: 'contact',
+          repEmail: rep?.email,
+          repName: rep?.name,
+        }),
+      })
+
+      if (!res.ok) throw new Error('Request failed')
+
+      setFormSubmitted(true)
+      setFormData({ name: '', email: '', phone: '', message: '', gdpr: false })
+      setTimeout(() => setFormSubmitted(false), 5000)
+    } catch {
+      setSubmitError(true)
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
@@ -156,18 +185,6 @@ export function ContactPage() {
                     />
                   </div>
                   <div>
-                    <select
-                      value={formData.county}
-                      onChange={(e) => setFormData({ ...formData, county: e.target.value })}
-                      className="w-full px-4 py-3 bg-white border border-charcoal-200 rounded-xl text-charcoal-900 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-transparent transition-all appearance-none"
-                    >
-                      <option value="">Județul tău</option>
-                      {counties.map((c) => (
-                        <option key={c.code} value={c.code}>{c.label}</option>
-                      ))}
-                    </select>
-                  </div>
-                  <div>
                     <textarea
                       placeholder="Mesaj *"
                       required
@@ -189,9 +206,14 @@ export function ContactPage() {
                       Sunt de acord ca datele mele să fie prelucrate conform Regulamentului (UE) 2016/679.
                     </span>
                   </label>
-                  <button type="submit" className="btn-primary w-full justify-center group">
+                  {submitError && (
+                    <p className="text-sm text-red-600">
+                      A apărut o eroare la trimiterea mesajului. Te rugăm încearcă din nou sau sună-ne direct.
+                    </p>
+                  )}
+                  <button type="submit" disabled={submitting} className="btn-primary w-full justify-center group disabled:opacity-60 disabled:cursor-not-allowed">
                     <Send className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
-                    Trimite mesaj
+                    {submitting ? 'Se trimite...' : 'Trimite mesaj'}
                   </button>
                 </form>
               )}
