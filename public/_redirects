@@ -24,8 +24,9 @@
 /laborator/* /compania 301
 /cariera/* /compania 301
 /documente-3/* /resurse 301
-/montaj-3/* /resurse 301
-/modele-de-montaj/* /resurse 301
+/montaj-3/* /montaj 301
+/modele-de-montaj/* /montaj 301
+/modele-montaj/* /montaj 301
 /intretinere/* /resurse 301
 /degivrare/* /resurse 301
 /brosuri/* /resurse 301

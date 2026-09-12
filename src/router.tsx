@@ -78,7 +78,7 @@ export const router = createBrowserRouter([
       { path: 'laborator', element: <Suspense><LaboratorPage /></Suspense> },
       { path: 'cariera', element: <LazyGenericPage title="Carieră" contentKey="cariera" /> },
       { path: 'catalog', element: <Suspense><CatalogPage /></Suspense> },
-      { path: 'modele-montaj', element: <Suspense><MontajPage /></Suspense> },
+      { path: 'montaj', element: <Suspense><MontajPage /></Suspense> },
       { path: 'intretinere', element: <LazyGenericPage title="Întreținere Pavaje" contentKey="intretinere" /> },
       { path: 'faq', element: <LazyGenericPage title="Întrebări Frecvente" contentKey="faq" /> },
       { path: 'documente', element: <LazyGenericPage title="Documente Tehnice" contentKey="documente" /> },

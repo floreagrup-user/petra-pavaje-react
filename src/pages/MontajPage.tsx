@@ -91,7 +91,7 @@ const STEPS = [
 
 export function MontajPage() {
   useEffect(() => {
-    const url = `${window.location.origin}/modele-montaj`
+    const url = `${window.location.origin}/montaj`
     const title = `Sfaturi și instrucțiuni de montaj - Pavaj, pavele, dale | ${SEO_SITE_NAME}`
     const description =
       'Ghid complet de montaj pentru pavajele Petra Pavaje. Găsiți cele mai bune metode de montaj, inclusiv sfaturi pentru pregătirea suprafeței, aliniament și stratul de bază.'
