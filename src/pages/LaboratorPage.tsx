@@ -276,7 +276,7 @@ export function LaboratorPage() {
               </div>
               <div className="flex items-center gap-3 text-charcoal-600">
                 <Mail className="w-4 h-4 text-brand-600 shrink-0" />
-                <a href="mailto:gabrielamarchis@floreagrup.ro" className="hover:text-brand-600 transition-colors">gabrielamarchis@floreagrup.ro</a>
+                <a href="mailto:laborator@floreagrup.ro" className="hover:text-brand-600 transition-colors">laborator@floreagrup.ro</a>
               </div>
               <div className="flex items-center gap-3 text-charcoal-600">
                 <MapPin className="w-4 h-4 text-brand-600 shrink-0" />
