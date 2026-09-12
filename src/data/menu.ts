@@ -99,7 +99,7 @@ export const mainMenu: MenuItem[] = [
   },
   {
     label: 'Compania',
-    href: '/compania',
+    href: '/despre-noi',
     children: [
       { label: 'Despre Noi', href: '/despre-noi' },
       { label: 'Florea Grup – 30 de ani', href: '/florea-grup' },
