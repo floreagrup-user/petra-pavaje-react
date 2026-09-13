@@ -2,6 +2,21 @@
 <html lang="ro">
   <head>
     <meta charset="UTF-8" />
+    <!-- Google Consent Mode v2 defaults -- denies non-essential storage
+         until the cookie banner records a choice, so any analytics/ads
+         tag added later automatically respects it from first load. -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { window.dataLayer.push(arguments); }
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+        wait_for_update: 500,
+      });
+      window.gtag = gtag;
+    </script>
     <link rel="icon" type="image/png" sizes="192x192" href="https://petrapavaje.ro/wp-content/uploads/2020/05/logo_petra_icon_website.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="https://petrapavaje.ro/wp-content/uploads/2020/05/logo_petra_icon_website-66x66.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

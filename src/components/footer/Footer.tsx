@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { MapPin, Phone, ArrowRight, Download } from 'lucide-react'
 import { footerLinks, socialLinks } from '@/data/menu'
 import { factories } from '@/data/site'
+import { openCookieSettings } from '@/hooks/useCookieConsent'
 
 const SocialIcon = ({ name, className }: { name: string; className?: string }) => {
   const icons: Record<string, React.ReactNode> = {
@@ -175,6 +176,9 @@ export function Footer() {
                   {link.label}
                 </Link>
               ))}
+              <button onClick={openCookieSettings} className="hover:text-white transition-colors">
+                Setări cookie-uri
+              </button>
             </div>
           </div>
         </div>

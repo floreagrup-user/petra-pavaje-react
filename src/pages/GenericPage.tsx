@@ -67,6 +67,32 @@ const contentMap: Record<string, { title: string; sections: { heading: string; b
     ],
     cta: true,
   },
+  'cookie-uri': {
+    title: 'Politica de Cookie-uri',
+    sections: [
+      {
+        heading: 'Ce sunt cookie-urile',
+        body: 'Un cookie este un fișier de mici dimensiuni, trimis împreună cu paginile acestui site și stocat de browserul tău. Informațiile stocate pot fi citite la o vizită ulterioară, de acest site sau de un terț relevant. Site-ul folosește și stocare locală similară (localStorage) pentru a reține alegerea ta privind cookie-urile.',
+      },
+      {
+        heading: 'Cookie-uri necesare',
+        body: 'Aceste cookie-uri asigură funcționarea de bază a site-ului — de exemplu, rețin alegerea ta din bannerul de cookie-uri, astfel încât să nu ți-o cerem la fiecare vizită. Le plasăm fără a-ți cere consimțământul, fiind strict necesare pentru funcționare.',
+      },
+      {
+        heading: 'Cookie-uri de analiză și publicitate',
+        body: 'La data actualizării acestei politici, site-ul nu plasează cookie-uri de analiză (ex. Google Analytics) sau de publicitate (ex. Google Ads) decât dacă alegi explicit să le accepți din bannerul de cookie-uri sau din „Setări cookie-uri" din subsolul paginii. Dacă vom activa astfel de instrumente în viitor, ele vor porni doar după consimțământul tău, conform Regulamentului General privind Protecția Datelor (GDPR).',
+      },
+      {
+        heading: 'Cum îți administrezi alegerea',
+        body: 'Poți accepta, refuza sau ajusta oricând categoriile de cookie-uri din linkul „Setări cookie-uri" aflat în subsolul fiecărei pagini. De asemenea, poți șterge cookie-urile deja stocate din setările browserului tău — la vizita următoare îți vom cere din nou consimțământul.',
+      },
+      {
+        heading: 'Drepturile tale',
+        body: 'Conform GDPR, ai dreptul de acces, rectificare, ștergere și portabilitate a datelor tale personale, precum și dreptul de a te opune prelucrării sau de a-ți retrage oricând consimțământul. Pentru exercitarea acestor drepturi sau nelămuriri legate de această politică, ne poți contacta la contact@petrapavaje.ro sau la adresa Petra Pavaje, Str. Pietrari nr. 20, Alba Iulia, România. Ai și dreptul de a depune o plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP).',
+      },
+    ],
+    cta: false,
+  },
   'intretinere': {
     title: 'Ghid de Întreținere',
     sections: [
