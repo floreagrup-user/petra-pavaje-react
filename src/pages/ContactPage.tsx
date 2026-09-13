@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Phone, Mail, MapPin, Clock, Navigation, Send, CheckCircle } from 'lucide-react'
 import { countyReps, getRepByCounty, factories } from '@/data/site'
+import { trackEvent } from '@/lib/analytics'
 
 const counties = [
   { label: 'Alba', code: 'AB' }, { label: 'Arad', code: 'AR' }, { label: 'Argeș', code: 'AG' },
@@ -52,6 +53,7 @@ export function ContactPage() {
 
       if (!res.ok) throw new Error('Request failed')
 
+      trackEvent('generate_lead', { county: rep?.county || '' })
       setFormSubmitted(true)
       setFormData({ name: '', email: '', phone: '', message: '', gdpr: false })
       setTimeout(() => setFormSubmitted(false), 5000)
