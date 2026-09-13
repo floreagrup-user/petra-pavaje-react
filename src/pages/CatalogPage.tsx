@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Download, ExternalLink } from 'lucide-react'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
+import { trackEvent } from '@/lib/analytics'
 
 const CATALOG_PDF_URL = 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Catalog-2025-Petra-Pavaje.pdf'
 const CATALOG_VIEWER_URL = 'https://online.fliphtml5.com/Petra_Pavaje/Catalog_2025/'
@@ -110,6 +111,7 @@ export function CatalogPage() {
                   href={CATALOG_PDF_URL}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackEvent('catalog_download')}
                   className="btn-primary inline-flex justify-center whitespace-nowrap"
                 >
                   <Download className="w-4 h-4 mr-2" />

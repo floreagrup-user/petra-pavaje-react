@@ -5,6 +5,7 @@ import { Search, X, FileText, Download } from 'lucide-react'
 import { technicalDocuments } from '@/data/documents'
 import type { DocumentCategory } from '@/data/types'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
+import { trackEvent } from '@/lib/analytics'
 import { useEffect } from 'react'
 
 const CATEGORY_LABELS: Record<DocumentCategory, string> = {
@@ -29,6 +30,7 @@ function DocLink({ href, label }: { href?: string; label: string }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackEvent('document_download', { label })}
       className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-charcoal-50 hover:bg-brand-50 text-charcoal-700 hover:text-brand-700 text-xs font-medium transition-colors"
     >
       <Download className="w-3.5 h-3.5 shrink-0" />

@@ -6,6 +6,7 @@ import {
   PartyPopper, Mail, Send, Phone,
 } from 'lucide-react'
 import { factories } from '@/data/site'
+import { trackEvent } from '@/lib/analytics'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
 
 const STATS = [
@@ -217,7 +218,7 @@ export function CarieraPage() {
                 așteptăm să te cunoaștem!
               </p>
               <div className="space-y-3">
-                <a href="mailto:cariera@petrapavaje.ro" className="flex items-center gap-3 text-charcoal-700 hover:text-brand-600 transition-colors">
+                <a href="mailto:cariera@petrapavaje.ro" onClick={() => trackEvent('email_click')} className="flex items-center gap-3 text-charcoal-700 hover:text-brand-600 transition-colors">
                   <Mail className="w-4 h-4 text-brand-600 shrink-0" />
                   cariera@petrapavaje.ro
                 </a>

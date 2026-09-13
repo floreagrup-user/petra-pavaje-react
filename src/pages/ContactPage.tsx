@@ -115,7 +115,7 @@ export function ContactPage() {
                   <h3 className="text-lg font-semibold text-charcoal-900 mb-4">Reprezentantul tău</h3>
                   <div className="space-y-3">
                     <p className="text-charcoal-900 font-medium">{rep.name}</p>
-                    <a href={`mailto:${rep.email}`} className="flex items-center gap-2 text-charcoal-600 hover:text-brand-600 transition-colors">
+                    <a href={`mailto:${rep.email}`} onClick={() => trackEvent('email_click')} className="flex items-center gap-2 text-charcoal-600 hover:text-brand-600 transition-colors">
                       <Mail className="w-4 h-4" />
                       {rep.email}
                     </a>

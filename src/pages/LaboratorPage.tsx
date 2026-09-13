@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { FlaskConical, HelpCircle, BadgeCheck, ClipboardCheck, Wrench, Phone, Mail, MapPin, ExternalLink } from 'lucide-react'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
+import { trackEvent } from '@/lib/analytics'
 
 const R2 = 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev'
 
@@ -276,7 +277,7 @@ export function LaboratorPage() {
               </div>
               <div className="flex items-center gap-3 text-charcoal-600">
                 <Mail className="w-4 h-4 text-brand-600 shrink-0" />
-                <a href="mailto:laborator@floreagrup.ro" className="hover:text-brand-600 transition-colors">laborator@floreagrup.ro</a>
+                <a href="mailto:laborator@floreagrup.ro" onClick={() => trackEvent('email_click')} className="hover:text-brand-600 transition-colors">laborator@floreagrup.ro</a>
               </div>
               <div className="flex items-center gap-3 text-charcoal-600">
                 <MapPin className="w-4 h-4 text-brand-600 shrink-0" />
