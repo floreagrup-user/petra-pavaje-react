@@ -173,58 +173,58 @@
 # every top-level route segment from src/router.tsx; anything NOT under one
 # of these actually 404s now.
 # ---------------------------------------------------------------------------
-/ /index.html 200
+/ /index.html 200!
 
 # Leaf routes (no nested :param children in router.tsx) -- exact match only,
 # no wildcard needed. Kept as plain (non-dynamic) rules to stay well under
 # Cloudflare Pages' ~100 dynamic-redirect budget (already ~80 used above).
-/banci /index.html 200
-/bloc-de-zid /index.html 200
-/boltari /index.html 200
-/brosuri /index.html 200
-/calculator /index.html 200
-/cariera /index.html 200
-/catalog /index.html 200
-/compania /index.html 200
-/confidentialitate /index.html 200
-/contact /index.html 200
-/cookie-uri /index.html 200
-/degivrare /index.html 200
-/despre-noi /index.html 200
-/documente /index.html 200
-/elemente /index.html 200
-/faq /index.html 200
-/florea-grup /index.html 200
-/garantie /index.html 200
-/intretinere /index.html 200
-/jardiniere /index.html 200
-/laborator /index.html 200
-/modele-de-montaj /index.html 200
-/montaj /index.html 200
-/palisada /index.html 200
-/rigole /index.html 200
-/sustenabilitate /index.html 200
-/termeni /index.html 200
-/treapta /index.html 200
-/tur-virtual /index.html 200
+/banci /index.html 200!
+/bloc-de-zid /index.html 200!
+/boltari /index.html 200!
+/brosuri /index.html 200!
+/calculator /index.html 200!
+/cariera /index.html 200!
+/catalog /index.html 200!
+/compania /index.html 200!
+/confidentialitate /index.html 200!
+/contact /index.html 200!
+/cookie-uri /index.html 200!
+/degivrare /index.html 200!
+/despre-noi /index.html 200!
+/documente /index.html 200!
+/elemente /index.html 200!
+/faq /index.html 200!
+/florea-grup /index.html 200!
+/garantie /index.html 200!
+/intretinere /index.html 200!
+/jardiniere /index.html 200!
+/laborator /index.html 200!
+/modele-de-montaj /index.html 200!
+/montaj /index.html 200!
+/palisada /index.html 200!
+/rigole /index.html 200!
+/sustenabilitate /index.html 200!
+/termeni /index.html 200!
+/treapta /index.html 200!
+/tur-virtual /index.html 200!
 
 # Routes with real :param children -- need the wildcard.
-/blog /index.html 200
-/blog/* /index.html 200
-/pavaje-premium /index.html 200
-/pavaje-premium/* /index.html 200
-/pavaje-standard /index.html 200
-/pavaje-standard/* /index.html 200
-/borduri /index.html 200
-/borduri/* /index.html 200
-/garduri /index.html 200
-/garduri/* /index.html 200
-/elemente-de-canalizare /index.html 200
-/elemente-de-canalizare/* /index.html 200
-/woodstone-lemn-pietrificat /index.html 200
-/woodstone-lemn-pietrificat/* /index.html 200
-/produse /index.html 200
-/produse/* /index.html 200
+/blog /index.html 200!
+/blog/* /index.html 200!
+/pavaje-premium /index.html 200!
+/pavaje-premium/* /index.html 200!
+/pavaje-standard /index.html 200!
+/pavaje-standard/* /index.html 200!
+/borduri /index.html 200!
+/borduri/* /index.html 200!
+/garduri /index.html 200!
+/garduri/* /index.html 200!
+/elemente-de-canalizare /index.html 200!
+/elemente-de-canalizare/* /index.html 200!
+/woodstone-lemn-pietrificat /index.html 200!
+/woodstone-lemn-pietrificat/* /index.html 200!
+/produse /index.html 200!
+/produse/* /index.html 200!
 
 # Anything else falls through with no match; Cloudflare Pages then serves
 # dist/404.html (built by `npm run build`) with a real 404 status -- an
