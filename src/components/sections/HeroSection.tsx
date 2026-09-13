@@ -9,7 +9,7 @@ const heroSlides = [
     title: 'Producător Premium\nde Pavaje',
     subtitle: 'În armonie cu natura',
     description: '800+ Produse · 4 Fabrici Naționale · 24.000 mp/zi',
-    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/mediterana-homepage.avif',
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/stretto-homepage.webp',
     cta: 'Descoperă Produsele',
     ctaLink: '/pavaje-premium',
   },
