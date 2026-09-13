@@ -226,5 +226,7 @@
 /produse /index.html 200
 /produse/* /index.html 200
 
-# Anything else: genuinely not a route -> real 404, not a soft one.
-/* /index.html 404
+# Anything else falls through with no match; Cloudflare Pages then serves
+# dist/404.html (built by `npm run build`) with a real 404 status -- an
+# explicit "/* ... 404" rewrite rule here does NOT apply a 404 status on
+# Cloudflare Pages (verified live: still 200), unlike Netlify.
