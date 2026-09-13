@@ -1,28 +1,62 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
-import { Maximize2, Info, ArrowLeft, ArrowRight } from 'lucide-react'
+import { Maximize2, Play, ExternalLink } from 'lucide-react'
+import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
 
-// Virtual Tour placeholder - integrate Marzipano here
-// For production, load Marzipano from CDN and initialize with R2-hosted tiles
+const TOUR_BASE_URL = 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/tur-virtual-3d'
+const TOUR_URL = `${TOUR_BASE_URL}/index.htm`
+const TOUR_PREVIEW_IMAGE = `${TOUR_BASE_URL}/socialThumbnail.jpg`
 
 export function VirtualTourPage() {
   const containerRef = useRef<HTMLDivElement>(null)
   const [isFullscreen, setIsFullscreen] = useState(false)
-  const [isLoading, setIsLoading] = useState(true)
+  const [started, setStarted] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
-    // Simulate loading - replace with actual Marzipano initialization
-    const timer = setTimeout(() => setIsLoading(false), 1500)
-    return () => clearTimeout(timer)
+    const url = `${window.location.origin}/tur-virtual`
+    const title = `Tur Virtual 360° - Grădina Expozițională Petra Pavaje, Ploiești | ${SEO_SITE_NAME}`
+    const description =
+      'Exploreaza gradina expozitionala Petra Pavaje din Ploiesti intr-un tur virtual 360 de grade. Descopera pavajele, bordurile, gardurile si jardinierele in context real.'
+
+    document.title = title
+    upsertMeta('name', 'description', description)
+    upsertCanonical(url)
+    upsertMeta('property', 'og:type', 'website')
+    upsertMeta('property', 'og:title', title)
+    upsertMeta('property', 'og:description', description)
+    upsertMeta('property', 'og:url', url)
+    upsertMeta('property', 'og:image', TOUR_PREVIEW_IMAGE)
+    upsertMeta('property', 'og:site_name', SEO_SITE_NAME)
+
+    upsertJsonLd('breadcrumb-schema', {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
+        { '@type': 'ListItem', position: 2, name: 'Tur Virtual', item: url },
+      ],
+    })
+
+    return resetSEO
   }, [])
+
+  useEffect(() => {
+    const onFullscreenChange = () => setIsFullscreen(Boolean(document.fullscreenElement))
+    document.addEventListener('fullscreenchange', onFullscreenChange)
+    return () => document.removeEventListener('fullscreenchange', onFullscreenChange)
+  }, [])
+
+  const startTour = () => {
+    setIsLoading(true)
+    setStarted(true)
+  }
 
   const toggleFullscreen = () => {
     if (!document.fullscreenElement) {
       containerRef.current?.requestFullscreen()
-      setIsFullscreen(true)
     } else {
       document.exitFullscreen()
-      setIsFullscreen(false)
     }
   }
 
@@ -60,53 +94,69 @@ export function VirtualTourPage() {
         <div className="container-premium">
           <div
             ref={containerRef}
-            className="relative aspect-video bg-charcoal-900 rounded-2xl overflow-hidden"
+            className="relative h-[70vh] min-h-[420px] max-h-[900px] bg-charcoal-900 rounded-2xl overflow-hidden"
           >
-            {isLoading ? (
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-12 h-12 border-4 border-brand-600 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-                  <p className="text-white/70">Se incarca turul virtual...</p>
+            {!started ? (
+              <button
+                type="button"
+                onClick={startTour}
+                className="group absolute inset-0 w-full h-full focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/50"
+                aria-label="Porneste turul virtual 360 de grade"
+              >
+                <img
+                  src={TOUR_PREVIEW_IMAGE}
+                  alt="Previzualizare tur virtual - Gradina Expozitionala Petra Pavaje, Ploiesti"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="flex items-center gap-3 px-6 py-4 rounded-full bg-white/95 text-charcoal-900 font-semibold shadow-lg group-hover:scale-105 transition-transform">
+                    <Play className="w-5 h-5 fill-current" />
+                    Porneste turul virtual
+                  </span>
                 </div>
-              </div>
+              </button>
             ) : (
               <>
-                {/* Marzipano container - replace with actual integration */}
-                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-charcoal-800 to-charcoal-900">
-                  <div className="text-center text-white">
-                    <img
-                      src="https://petrapavaje.ro/wp-content/uploads/petra-pavaje-tur-virtual-expozitie-ploiesti-1200x540-1.webp"
-                      alt="Tur Virtual Preview"
-                      className="max-w-full max-h-full object-contain rounded-lg"
-                    />
-                    <p className="mt-4 text-white/50 text-sm">
-                      Turul virtual va fi disponibil in curand. Integrare Marzipano cu tile-uri R2.
-                    </p>
-                  </div>
-                </div>
+                <iframe
+                  src={TOUR_URL}
+                  title="Tur virtual 360 de grade - Gradina Expozitionala Petra Pavaje, Ploiesti"
+                  className="absolute inset-0 w-full h-full border-0"
+                  allow="accelerometer; gyroscope; magnetometer; fullscreen; xr-spatial-tracking"
+                  allowFullScreen
+                  onLoad={() => setIsLoading(false)}
+                />
 
-                {/* Controls */}
-                <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <button className="p-2 bg-black/50 text-white rounded-lg hover:bg-black/70 transition-colors">
-                      <ArrowLeft className="w-5 h-5" />
-                    </button>
-                    <button className="p-2 bg-black/50 text-white rounded-lg hover:bg-black/70 transition-colors">
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
+                {isLoading && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-charcoal-900 pointer-events-none">
+                    <div className="text-center">
+                      <div className="w-12 h-12 border-4 border-brand-600 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+                      <p className="text-white/70">Se incarca turul virtual...</p>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <button className="p-2 bg-black/50 text-white rounded-lg hover:bg-black/70 transition-colors">
-                      <Info className="w-5 h-5" />
-                    </button>
+                )}
+
+                {!isLoading && (
+                  <div className="absolute bottom-4 right-4 flex items-center gap-2">
+                    <a
+                      href={TOUR_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-3 py-2 bg-black/50 hover:bg-black/70 text-white text-sm rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      Deschide intr-un tab nou
+                    </a>
                     <button
                       onClick={toggleFullscreen}
-                      className="p-2 bg-black/50 text-white rounded-lg hover:bg-black/70 transition-colors"
+                      className="p-2 bg-black/50 hover:bg-black/70 text-white rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                      aria-label={isFullscreen ? 'Iesi din ecran complet' : 'Ecran complet'}
+                      aria-pressed={isFullscreen}
                     >
                       <Maximize2 className="w-5 h-5" />
                     </button>
                   </div>
-                </div>
+                )}
               </>
             )}
           </div>
