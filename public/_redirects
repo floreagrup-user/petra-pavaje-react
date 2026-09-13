@@ -5,6 +5,9 @@
 # destination is treated as a literal character and will not match any
 # route (this previously broke every product/category redirect below).
 
+# www -> apex (both currently serve live 200s -- SEO audit duplicate-content finding)
+https://www.petrapavaje.ro/* https://petrapavaje.ro/:splat 301!
+
 # ---------------------------------------------------------------------------
 # Product categories & individual products
 #
@@ -231,5 +234,88 @@
 /florea-pavaje-devine-petra-pavaje /blog/florea-pavaje-devine-petra-pavaje 301
 /florea-pavaje-devine-petra-pavaje/* /blog/florea-pavaje-devine-petra-pavaje 301
 
-# SPA fallback
-/* /index.html 200
+# ---------------------------------------------------------------------------
+# SPA fallback -- explicit allowlist instead of a blanket catch-all.
+# A bare "/* /index.html 200" made every nonexistent URL a soft 404 (real
+# HTTP 200 serving the app shell), per the SEO audit finding. This list is
+# every top-level route segment from src/router.tsx; anything NOT under one
+# of these actually 404s now.
+# ---------------------------------------------------------------------------
+/ /index.html 200
+/banci /index.html 200
+/banci/* /index.html 200
+/bloc-de-zid /index.html 200
+/bloc-de-zid/* /index.html 200
+/blog /index.html 200
+/blog/* /index.html 200
+/boltari /index.html 200
+/boltari/* /index.html 200
+/borduri /index.html 200
+/borduri/* /index.html 200
+/brosuri /index.html 200
+/brosuri/* /index.html 200
+/calculator /index.html 200
+/calculator/* /index.html 200
+/cariera /index.html 200
+/cariera/* /index.html 200
+/catalog /index.html 200
+/catalog/* /index.html 200
+/compania /index.html 200
+/compania/* /index.html 200
+/confidentialitate /index.html 200
+/confidentialitate/* /index.html 200
+/contact /index.html 200
+/contact/* /index.html 200
+/cookie-uri /index.html 200
+/cookie-uri/* /index.html 200
+/degivrare /index.html 200
+/degivrare/* /index.html 200
+/despre-noi /index.html 200
+/despre-noi/* /index.html 200
+/documente /index.html 200
+/documente/* /index.html 200
+/elemente /index.html 200
+/elemente/* /index.html 200
+/elemente-de-canalizare /index.html 200
+/elemente-de-canalizare/* /index.html 200
+/faq /index.html 200
+/faq/* /index.html 200
+/florea-grup /index.html 200
+/florea-grup/* /index.html 200
+/garantie /index.html 200
+/garantie/* /index.html 200
+/garduri /index.html 200
+/garduri/* /index.html 200
+/intretinere /index.html 200
+/intretinere/* /index.html 200
+/jardiniere /index.html 200
+/jardiniere/* /index.html 200
+/laborator /index.html 200
+/laborator/* /index.html 200
+/modele-de-montaj /index.html 200
+/modele-de-montaj/* /index.html 200
+/montaj /index.html 200
+/montaj/* /index.html 200
+/palisada /index.html 200
+/palisada/* /index.html 200
+/pavaje-premium /index.html 200
+/pavaje-premium/* /index.html 200
+/pavaje-standard /index.html 200
+/pavaje-standard/* /index.html 200
+/produse /index.html 200
+/produse/* /index.html 200
+/rigole /index.html 200
+/rigole/* /index.html 200
+/sustenabilitate /index.html 200
+/sustenabilitate/* /index.html 200
+/termeni /index.html 200
+/termeni/* /index.html 200
+/treapta /index.html 200
+/treapta/* /index.html 200
+/tur-virtual /index.html 200
+/tur-virtual/* /index.html 200
+/woodstone-lemn-pietrificat /index.html 200
+/woodstone-lemn-pietrificat/* /index.html 200
+
+# Anything else: genuinely not a route -> real 404, not a soft one.
+/* /index.html 404
