@@ -6,6 +6,10 @@ import { mainMenu, type MenuItem } from '@/data/menu'
 import { useScrollPosition } from '@/hooks/use-scroll'
 import { cn } from '@/lib/utils'
 
+function hasNestedChildren(item: MenuItem): boolean {
+  return Boolean(item.children?.some((child) => child.children && child.children.length > 0))
+}
+
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
@@ -110,50 +114,70 @@ export function Header() {
 
                   <AnimatePresence>
                     {item.children && activeDropdown === item.label && (
-                      <motion.div
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 10 }}
-                        transition={{ duration: 0.2 }}
-                        className="absolute top-full left-0 w-screen max-w-4xl bg-white rounded-xl shadow-premium border border-charcoal-100 p-6"
-                      >
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                      hasNestedChildren(item) ? (
+                        <motion.div
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: 10 }}
+                          transition={{ duration: 0.2 }}
+                          className="absolute top-full left-0 w-screen max-w-4xl bg-white rounded-xl shadow-premium border border-charcoal-100 p-6"
+                        >
+                          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                            {item.children.map((child) => (
+                              <div key={child.label}>
+                                <Link
+                                  to={child.href}
+                                  className="block text-sm font-semibold text-charcoal-900 hover:text-brand-600 transition-colors mb-2"
+                                >
+                                  {child.label}
+                                </Link>
+                                {child.children && (
+                                  <ul className="space-y-1">
+                                    {child.children.slice(0, 8).map((sub) => (
+                                      <li key={sub.label}>
+                                        <Link
+                                          to={sub.href}
+                                          className="block text-xs text-charcoal-400 hover:text-charcoal-700 transition-colors py-0.5"
+                                        >
+                                          {sub.label}
+                                        </Link>
+                                      </li>
+                                    ))}
+                                    {child.children.length > 8 && (
+                                      <li>
+                                        <Link
+                                          to={child.href}
+                                          className="text-xs text-brand-600 hover:text-brand-700 transition-colors font-medium"
+                                        >
+                                          +{child.children.length - 8} mai multe
+                                        </Link>
+                                      </li>
+                                    )}
+                                  </ul>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        </motion.div>
+                      ) : (
+                        <motion.div
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: 10 }}
+                          transition={{ duration: 0.2 }}
+                          className="absolute top-full left-0 mt-1 w-60 bg-white rounded-xl shadow-premium border border-charcoal-100 py-2"
+                        >
                           {item.children.map((child) => (
-                            <div key={child.label}>
-                              <Link
-                                to={child.href}
-                                className="block text-sm font-semibold text-charcoal-900 hover:text-brand-600 transition-colors mb-2"
-                              >
-                                {child.label}
-                              </Link>
-                              {child.children && (
-                                <ul className="space-y-1">
-                                  {child.children.slice(0, 8).map((sub) => (
-                                    <li key={sub.label}>
-                                      <Link
-                                        to={sub.href}
-                                        className="block text-xs text-charcoal-400 hover:text-charcoal-700 transition-colors py-0.5"
-                                      >
-                                        {sub.label}
-                                      </Link>
-                                    </li>
-                                  ))}
-                                  {child.children.length > 8 && (
-                                    <li>
-                                      <Link
-                                        to={child.href}
-                                        className="text-xs text-brand-600 hover:text-brand-700 transition-colors font-medium"
-                                      >
-                                        +{child.children.length - 8} mai multe
-                                      </Link>
-                                    </li>
-                                  )}
-                                </ul>
-                              )}
-                            </div>
+                            <Link
+                              key={child.label}
+                              to={child.href}
+                              className="block px-4 py-2.5 text-sm text-charcoal-700 hover:bg-[#B51F24]/10 hover:text-[#B51F24] transition-colors"
+                            >
+                              {child.label}
+                            </Link>
                           ))}
-                        </div>
-                      </motion.div>
+                        </motion.div>
+                      )
                     )}
                   </AnimatePresence>
                 </div>
