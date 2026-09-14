@@ -73,9 +73,18 @@ async function main() {
       // origin so non-JS crawlers don't see a localhost canonical.
       const html = rawHtml.split(LOCAL_ORIGIN).join(PROD_ORIGIN)
 
-      const outDir = route === '/' ? DIST : join(DIST, route)
-      mkdirSync(outDir, { recursive: true })
-      writeFileSync(join(outDir, 'index.html'), html)
+      if (route === '/') {
+        writeFileSync(join(DIST, 'index.html'), html)
+      } else {
+        // "<route>.html" (a sibling file), not "<route>/index.html" --
+        // Cloudflare Pages resolves the former directly, but the latter
+        // triggers a 308 redirect from the bare path to the trailing-slash
+        // directory form (verified live), an extra hop on every fresh
+        // load/crawl that the site never had before.
+        const target = join(DIST, `${route}.html`)
+        mkdirSync(join(target, '..'), { recursive: true })
+        writeFileSync(target, html)
+      }
       ok++
     } catch (err) {
       console.error(`FAILED ${route}: ${err.message}`)
