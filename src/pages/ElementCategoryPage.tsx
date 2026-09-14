@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Phone, Check, ShieldCheck, Award, ChevronDown, FileText } from 'lucide-react'
+import { Phone, Check, ShieldCheck, Award, ChevronDown, FileText, Calculator } from 'lucide-react'
 import { getElementBySlug } from '@/data/elements'
 import { useElementSEO } from '@/hooks/useElementSEO'
 import { categoryUrl } from '@/lib/product-urls'
@@ -149,10 +149,18 @@ export function ElementCategoryPage({ slug: slugProp }: { slug?: string } = {}) 
                 </div>
               </div>
 
-              <Link to="/contact" className="btn-primary justify-center group inline-flex">
-                <Phone className="w-4 h-4 mr-2" />
-                Solicită Ofertă
-              </Link>
+              <div className="flex flex-wrap gap-3">
+                <Link to="/contact" className="btn-primary justify-center group inline-flex">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Solicită Ofertă
+                </Link>
+                {category.variantGroups.some((g) => g.variants.some((v) => typeof v.piecesPerMl === 'number')) && (
+                  <Link to={`/calculator-pavaj?linear=${category.slug}`} className="btn-secondary justify-center group inline-flex">
+                    <Calculator className="w-4 h-4 mr-2" />
+                    Calculează necesarul
+                  </Link>
+                )}
+              </div>
             </motion.div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
-import { ArrowRight, MessageCircle, ChevronDown } from 'lucide-react'
+import { ArrowRight, MessageCircle, ChevronDown, Calculator } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { categories } from '@/data/site'
 import { categoryImages } from '@/components/sections/CategoriesSection'
@@ -181,10 +181,16 @@ export function ElementeOverviewPage() {
               Echipa noastră te poate ajuta să alegi elementele potrivite pentru proiectul tău, de la delimitare la
               infrastructură completă.
             </p>
-            <Link to="/contact" className="btn-primary inline-flex">
-              <MessageCircle className="w-4 h-4 mr-2" />
-              Cere o ofertă
-            </Link>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+              <Link to="/contact" className="btn-primary inline-flex">
+                <MessageCircle className="w-4 h-4 mr-2" />
+                Cere o ofertă
+              </Link>
+              <Link to="/calculator-pavaj" className="btn-secondary inline-flex">
+                <Calculator className="w-4 h-4 mr-2" />
+                Calculează necesarul
+              </Link>
+            </div>
           </div>
         </div>
       </section>

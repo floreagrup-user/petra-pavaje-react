@@ -113,6 +113,7 @@ export const mainMenu: MenuItem[] = [
     href: '/catalog',
     children: [
       { label: 'Catalog', href: '/catalog' },
+      { label: 'Calculator pavaj', href: '/calculator-pavaj' },
       { label: 'Montaj', href: '/montaj' },
       { label: 'Modele de Montaj', href: '/modele-de-montaj' },
       { label: 'Ghid întreținere', href: '/intretinere' },
@@ -155,6 +156,7 @@ export const footerLinks = {
   ],
   resources: [
     { label: 'Catalog', href: '/catalog' },
+    { label: 'Calculator pavaj', href: '/calculator-pavaj' },
     { label: 'Montaj', href: '/montaj' },
     { label: 'Modele de Montaj', href: '/modele-de-montaj' },
     { label: 'Ghid întreținere', href: '/intretinere' },

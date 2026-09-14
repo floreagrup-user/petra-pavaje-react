@@ -11,6 +11,7 @@ import {
   Palette,
   ChevronDown,
   MessageCircle,
+  Calculator,
 } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { useCategoryListSEO } from '@/hooks/useCategoryListSEO'
@@ -236,6 +237,10 @@ export function ProductsHubPage() {
               <Link to="/contact" className="btn-primary">
                 <MessageCircle className="w-4 h-4 mr-2" />
                 Cere o ofertă
+              </Link>
+              <Link to="/calculator-pavaj" className="btn-secondary">
+                <Calculator className="w-4 h-4 mr-2" />
+                Calculează necesarul
               </Link>
             </div>
           </div>

@@ -10,7 +10,7 @@ const ContactPage = lazy(() => import('@/pages/ContactPage').then(m => ({ defaul
 const BlogPage = lazy(() => import('@/pages/BlogPage').then(m => ({ default: m.BlogPage })))
 const BlogDetailPage = lazy(() => import('@/pages/BlogDetailPage').then(m => ({ default: m.BlogDetailPage })))
 const VirtualTourPage = lazy(() => import('@/pages/VirtualTourPage').then(m => ({ default: m.VirtualTourPage })))
-const CalculatorPage = lazy(() => import('@/pages/CalculatorPage').then(m => ({ default: m.CalculatorPage })))
+const CalculatorPavajPage = lazy(() => import('@/pages/CalculatorPavajPage').then(m => ({ default: m.CalculatorPavajPage })))
 const GenericPage = lazy(() => import('@/pages/GenericPage').then(m => ({ default: m.GenericPage })))
 const WoodstonePage = lazy(() => import('@/pages/WoodstonePage').then(m => ({ default: m.WoodstonePage })))
 const WoodstoneCategoryPage = lazy(() => import('@/pages/WoodstoneCategoryPage').then(m => ({ default: m.WoodstoneCategoryPage })))
@@ -80,7 +80,7 @@ export const router = createBrowserRouter([
       { path: 'blog', element: <Suspense><BlogPage /></Suspense> },
       { path: 'blog/:slug', element: <Suspense><BlogDetailPage /></Suspense> },
       { path: 'tur-virtual', element: <Suspense><VirtualTourPage /></Suspense> },
-      { path: 'calculator', element: <Suspense><CalculatorPage /></Suspense> },
+      { path: 'calculator-pavaj', element: <Suspense><CalculatorPavajPage /></Suspense> },
       { path: 'despre-noi', element: <Suspense><AboutPage /></Suspense> },
       { path: 'sustenabilitate', element: <Suspense><SustainabilityPage /></Suspense> },
       { path: 'compania', element: <LazyGenericPage title="Compania" contentKey="company" /> },

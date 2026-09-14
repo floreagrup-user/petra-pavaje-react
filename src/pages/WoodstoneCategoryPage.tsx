@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Phone, ChevronLeft, ChevronRight, Check, ShieldCheck, Award, X, ChevronDown } from 'lucide-react'
+import { Phone, ChevronLeft, ChevronRight, Check, ShieldCheck, Award, X, ChevronDown, Calculator } from 'lucide-react'
 import { getWoodstoneCategoryBySlug } from '@/data/woodstone'
 import { useWoodstoneSEO } from '@/hooks/useWoodstoneSEO'
 
@@ -151,10 +151,16 @@ export function WoodstoneCategoryPage() {
                 </div>
               </div>
 
-              <Link to="/contact" className="btn-primary justify-center group inline-flex">
-                <Phone className="w-4 h-4 mr-2" />
-                Solicită Ofertă
-              </Link>
+              <div className="flex flex-wrap gap-3">
+                <Link to="/contact" className="btn-primary justify-center group inline-flex">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Solicită Ofertă
+                </Link>
+                <Link to={`/calculator-pavaj?product=${category.slug}`} className="btn-secondary justify-center group inline-flex">
+                  <Calculator className="w-4 h-4 mr-2" />
+                  Calculează necesarul
+                </Link>
+              </div>
             </motion.div>
           </div>
         </div>

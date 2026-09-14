@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Download, Phone, ChevronLeft, ChevronRight, Ruler, Weight, BadgeCheck, X, Check, ShieldCheck, Award, FileText, ChevronDown } from 'lucide-react'
+import { Download, Phone, ChevronLeft, ChevronRight, Ruler, Weight, BadgeCheck, X, Check, ShieldCheck, Award, FileText, ChevronDown, Calculator } from 'lucide-react'
 import { getProductBySlug, getProductsByCategory } from '@/data/products'
 import { productImages, productGalleryMap } from '@/data/images'
 import { useProductSEO } from '@/hooks/useProductSEO'
@@ -289,6 +289,10 @@ export function ProductDetailPage() {
                 <Link to="/contact" className="btn-primary flex-1 justify-center group">
                   <Phone className="w-4 h-4 mr-2" />
                   Solicită Ofertă
+                </Link>
+                <Link to={`/calculator-pavaj?product=${product.slug}`} className="btn-secondary flex-1 justify-center group">
+                  <Calculator className="w-4 h-4 mr-2" />
+                  Calculează necesarul
                 </Link>
                 {product.pdfUrl && (
                   <a href={product.pdfUrl} className="btn-secondary flex-1 justify-center group">

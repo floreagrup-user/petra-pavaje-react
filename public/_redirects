@@ -71,6 +71,10 @@
 # "Bănci" (concrete benches) was discontinued as a product category.
 /banci /produse 301
 
+# Old placeholder calculator (fake per-m2 prices, no real product data)
+# replaced by the full calculator at /calculator-pavaj.
+/calculator /calculator-pavaj 301
+
 # ---------------------------------------------------------------------------
 # Company / resource pages that now have their own dedicated route
 # (these used to collapse into /compania or /resurse before those pages
@@ -86,7 +90,6 @@
 /intrebari-frecvente-despre-petra-pavaje/* /faq 301
 /tur-virtual-gradina-expozitionala-alba/* /tur-virtual 301
 /turvirtual/* /tur-virtual 301
-/calculator-pavaj/* /calculator 301
 /catalog-petra-pavaje/* /catalog 301
 /documente-3/* /documente 301
 /produse-de-intretinere/* /intretinere 301
@@ -191,7 +194,7 @@
 /bloc-de-zid /index.html 200
 /boltari /index.html 200
 /brosuri /index.html 200
-/calculator /index.html 200
+/calculator-pavaj /index.html 200
 /cariera /index.html 200
 /catalog /index.html 200
 /compania /index.html 200

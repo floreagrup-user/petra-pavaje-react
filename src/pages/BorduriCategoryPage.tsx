@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ChevronDown, SlidersHorizontal, X, ArrowRight, MessageCircle } from 'lucide-react'
+import { ChevronDown, SlidersHorizontal, X, ArrowRight, MessageCircle, Calculator } from 'lucide-react'
 import { getProductsByCategory } from '@/data/products'
 import type { ProductFAQ } from '@/data/types'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
@@ -263,6 +263,10 @@ export function BorduriCategoryPage() {
               <Link to="/contact" className="btn-primary">
                 <MessageCircle className="w-4 h-4 mr-2" />
                 Cere o ofertă
+              </Link>
+              <Link to="/calculator-pavaj" className="btn-secondary">
+                <Calculator className="w-4 h-4 mr-2" />
+                Calculează necesarul
               </Link>
             </div>
             <p className="text-sm text-charcoal-500 mt-6">

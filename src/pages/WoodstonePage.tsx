@@ -439,7 +439,7 @@ export function WoodstonePage() {
                 <MessageCircle className="w-4 h-4 mr-2" />
                 Cere o ofertă
               </Link>
-              <Link to="/calculator" className="btn-secondary">
+              <Link to="/calculator-pavaj" className="btn-secondary">
                 <Calculator className="w-4 h-4 mr-2" />
                 Calculator pavaj
               </Link>
