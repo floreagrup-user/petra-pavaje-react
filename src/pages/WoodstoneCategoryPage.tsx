@@ -243,7 +243,7 @@ export function WoodstoneCategoryPage() {
                 >
                   <img
                     src={img}
-                    alt={`${category.title} ${idx + 1}`}
+                    alt={`${category.title} - ${category.shortDescription} - imagine ${idx + 1}`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
                   />
@@ -309,7 +309,7 @@ export function WoodstoneCategoryPage() {
           </button>
           <img
             src={category.gallery[lightboxIndex]}
-            alt={`${category.title} ${lightboxIndex + 1}`}
+            alt={`${category.title} - ${category.shortDescription} - imagine ${lightboxIndex + 1}`}
             className="max-w-[90vw] max-h-[85vh] object-contain"
             onClick={(e) => e.stopPropagation()}
           />

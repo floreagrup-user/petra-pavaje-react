@@ -295,7 +295,7 @@ export function QuatroPage() {
               >
                 <img
                   src={img}
-                  alt={`Quatro ${idx + 1}`}
+                  alt={`Pavaj Quatro - gama modulară de pavaje standard - imagine ${idx + 1}`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                 />
@@ -352,7 +352,7 @@ export function QuatroPage() {
           </button>
           <img
             src={galleryImages[lightboxIndex]}
-            alt={`Quatro ${lightboxIndex + 1}`}
+            alt={`Pavaj Quatro - gama modulară de pavaje standard - imagine ${lightboxIndex + 1}`}
             className="max-w-[90vw] max-h-[85vh] object-contain"
             onClick={(e) => e.stopPropagation()}
           />

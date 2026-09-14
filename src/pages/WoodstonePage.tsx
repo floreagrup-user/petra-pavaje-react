@@ -409,7 +409,7 @@ export function WoodstonePage() {
               >
                 <img
                   src={img}
-                  alt={`Amenajare Woodstone ${i + 1}`}
+                  alt={`Amenajare exterioară cu Woodstone (lemn pietrificat din beton) - imagine ${i + 1}`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                   decoding="async"
@@ -518,7 +518,7 @@ export function WoodstonePage() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               src={galleryImages[lightboxIndex]}
-              alt={`Amenajare Woodstone ${lightboxIndex + 1}`}
+              alt={`Amenajare exterioară cu Woodstone (lemn pietrificat din beton) - imagine ${lightboxIndex + 1}`}
               className="max-w-[90vw] max-h-[90vh] object-contain rounded-lg"
               onClick={(e) => e.stopPropagation()}
             />

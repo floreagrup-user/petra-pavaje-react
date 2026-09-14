@@ -390,7 +390,7 @@ export function ProductDetailPage() {
                 >
                   <img
                     src={img}
-                    alt={`${product.name} ${idx + 1}`}
+                    alt={`${product.name} - ${product.shortDescription} - imagine ${idx + 1}`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
                   />
@@ -426,7 +426,7 @@ export function ProductDetailPage() {
                 <div key={idx} className="group aspect-square w-[calc(50%-0.5rem)] sm:w-[calc(33.33%-1rem)] lg:w-[calc(25%-1rem)] max-w-[260px] rounded-lg overflow-hidden bg-stone-50 border border-charcoal-100">
                   <img
                     src={img}
-                    alt={`Model montaj ${idx + 1}`}
+                    alt={`Model de montaj ${product.name} - varianta ${idx + 1}`}
                     className="w-full h-full object-contain p-3 transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
                   />
@@ -535,7 +535,7 @@ export function ProductDetailPage() {
           </button>
           <img
             src={images[lightboxIndex]}
-            alt={`${product.name} ${lightboxIndex + 1}`}
+            alt={`${product.name} - ${product.shortDescription} - imagine ${lightboxIndex + 1}`}
             className="max-w-[90vw] max-h-[85vh] object-contain"
             onClick={(e) => e.stopPropagation()}
           />
