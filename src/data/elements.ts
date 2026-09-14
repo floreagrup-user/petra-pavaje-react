@@ -464,8 +464,8 @@ export const elementCategories: ElementCategoryData[] = [
       {
         name: 'Elemente gard Modern',
         variants: [
-          { name: 'Element gard 60×30×9', code: '—', dimensions: '60×30×9 cm', piecesPerMl: 1.67, piecesPerPallet: 32, weightKg: 633, mlPerPallet: 19.2 },
-          { name: 'Element gard 60×30×7,5', code: '—', dimensions: '60×30×7,5 cm', piecesPerMl: 1.67, piecesPerPallet: 48, weightKg: 1427, mlPerPallet: 28.8 },
+          { name: 'Element gard 60×30×9', code: '—', dimensions: '60×30×9 cm', piecesPerMl: 1.67, piecesPerPallet: 32, weightKg: 1427, mlPerPallet: 19.2 },
+          { name: 'Element gard 60×30×7,5', code: '—', dimensions: '60×30×7,5 cm', piecesPerMl: 1.67, piecesPerPallet: 48, weightKg: 633, mlPerPallet: 28.8 },
         ],
       },
     ],

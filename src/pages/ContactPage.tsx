@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Phone, Mail, MapPin, Clock, Navigation, Send, CheckCircle } from 'lucide-react'
 import { countyReps, getRepByCounty, factories } from '@/data/site'
 import { trackEvent } from '@/lib/analytics'
+import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
 
 const counties = [
   { label: 'Alba', code: 'AB' }, { label: 'Arad', code: 'AR' }, { label: 'Argeș', code: 'AG' },
@@ -29,6 +30,36 @@ export function ContactPage() {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '', gdpr: false })
 
   const rep = selectedCounty ? getRepByCounty(selectedCounty) : null
+
+  useEffect(() => {
+    const url = `${window.location.origin}/contact`
+    const title = `Contact - Solicită Ofertă Personalizată | ${SEO_SITE_NAME}`
+    const description =
+      'Contactează Petra Pavaje pentru o ofertă personalizată. Selectează județul pentru reprezentantul tău de vânzări sau trimite-ne un mesaj direct.'
+
+    document.title = title
+    upsertMeta('name', 'description', description)
+    upsertCanonical(url)
+    upsertMeta('property', 'og:type', 'website')
+    upsertMeta('property', 'og:title', title)
+    upsertMeta('property', 'og:description', description)
+    upsertMeta('property', 'og:url', url)
+    upsertMeta('property', 'og:site_name', SEO_SITE_NAME)
+    upsertMeta('name', 'twitter:card', 'summary_large_image')
+    upsertMeta('name', 'twitter:title', title)
+    upsertMeta('name', 'twitter:description', description)
+
+    upsertJsonLd('breadcrumb-schema', {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
+        { '@type': 'ListItem', position: 2, name: 'Contact', item: url },
+      ],
+    })
+
+    return resetSEO
+  }, [])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()

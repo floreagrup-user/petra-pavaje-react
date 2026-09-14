@@ -16,7 +16,7 @@ const categories = [
   { id: 'scari', title: 'Scări', description: 'Trepte robuste cu finisaj natural pentru accese exterioare.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/trepti-woodstone_web.avif`, slug: 'scari' },
   { id: 'garduri', title: 'Sisteme de Garduri', description: 'Garduri elegante cu aspectul lemnului natural.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/gard-woodstone_web.avif`, slug: 'garduri' },
   { id: 'banci', title: 'Bănci și Mese', description: 'Mobilier de exterior durabil și estetic.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/banca-woodstone_web.avif`, slug: 'banci-si-mese' },
-  { id: 'jardiniere', title: 'Jardiniere Înaltate', description: 'Soluții elegante pentru grădinărit.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/jardiniere-woodstone_web.avif`, slug: 'jardiniere-inaltate' },
+  { id: 'jardiniere', title: 'Jardiniere Înălțate', description: 'Soluții elegante pentru grădinărit.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/jardiniere-woodstone_web.avif`, slug: 'jardiniere-inaltate' },
   { id: 'alte', title: 'Alte Elemente', description: 'Accesorii și elemente decorative complementare.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/alte-elemente-woodstone_web.avif`, slug: 'elemente-lemn-pietrificat' },
 ]
 

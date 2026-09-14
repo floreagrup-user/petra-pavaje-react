@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import type { Product } from '@/data/types'
 import { categories } from '@/data/site'
-import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from './seo-utils'
+import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO, truncateDescription } from './seo-utils'
 import { categoryUrl, productUrl } from '@/lib/product-urls'
 
 export function useProductSEO(product: Product | undefined) {
@@ -12,10 +12,11 @@ export function useProductSEO(product: Product | undefined) {
     const categoryLabel = categoryMeta?.name || product.category
     const categorySlug = categoryMeta?.slug || product.category
     const title = `${product.name} - ${categoryLabel} | ${SEO_SITE_NAME}`
-    const description =
+    const description = truncateDescription(
       product.shortDescription && product.description
-        ? `${product.shortDescription}. ${product.description}`.slice(0, 300)
-        : (product.description || '').slice(0, 300)
+        ? `${product.shortDescription}. ${product.description}`
+        : product.description || ''
+    )
     const url = `${window.location.origin}${productUrl(categorySlug, product.slug)}`
     const image = product.heroImages?.[0] || product.image
 
@@ -40,7 +41,7 @@ export function useProductSEO(product: Product | undefined) {
       '@type': 'Product',
       name: product.name,
       description: product.description,
-      image: [product.image, ...(product.heroImages || []), ...(product.gallery || [])].filter(Boolean).slice(0, 10),
+      image: [...new Set([product.image, ...(product.heroImages || []), ...(product.gallery || [])].filter(Boolean))].slice(0, 10),
       category: categoryLabel,
       brand: { '@type': 'Brand', name: SEO_SITE_NAME },
       manufacturer: { '@type': 'Organization', name: 'Florea Grup' },

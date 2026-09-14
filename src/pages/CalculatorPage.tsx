@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Calculator, Info, ArrowRight } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
+import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
 
 interface PavajType {
   id: string
@@ -38,13 +39,43 @@ export function CalculatorPage() {
   const borderPrice = includeBorder ? parseFloat(borderLength) * 25 : 0 // 25 RON/ml bordura
   const grandTotal = totalPrice + borderPrice
 
+  useEffect(() => {
+    const url = `${window.location.origin}/calculator`
+    const title = `Calculator Pavaj - Estimează Cantitatea și Costul | ${SEO_SITE_NAME}`
+    const description =
+      'Calculează rapid cantitatea de pavaj necesară și costul estimat pentru proiectul tău, în funcție de suprafață și tipul de pavaj ales.'
+
+    document.title = title
+    upsertMeta('name', 'description', description)
+    upsertCanonical(url)
+    upsertMeta('property', 'og:type', 'website')
+    upsertMeta('property', 'og:title', title)
+    upsertMeta('property', 'og:description', description)
+    upsertMeta('property', 'og:url', url)
+    upsertMeta('property', 'og:site_name', SEO_SITE_NAME)
+    upsertMeta('name', 'twitter:card', 'summary_large_image')
+    upsertMeta('name', 'twitter:title', title)
+    upsertMeta('name', 'twitter:description', description)
+
+    upsertJsonLd('breadcrumb-schema', {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
+        { '@type': 'ListItem', position: 2, name: 'Calculator Pavaj', item: url },
+      ],
+    })
+
+    return resetSEO
+  }, [])
+
   return (
     <div className="pt-20 md:pt-24">
       {/* Breadcrumbs */}
       <div className="bg-charcoal-50 border-b border-charcoal-100">
         <div className="container-premium py-4">
           <nav className="flex items-center gap-2 text-sm">
-            <a href="/" className="text-charcoal-500 hover:text-charcoal-700 transition-colors">Acasa</a>
+            <a href="/" className="text-charcoal-500 hover:text-charcoal-700 transition-colors">Acasă</a>
             <span className="text-charcoal-300">/</span>
             <span className="text-charcoal-900 font-medium">Calculator Pavaj</span>
           </nav>
@@ -61,7 +92,7 @@ export function CalculatorPage() {
           >
             <h1 className="heading-h1 text-charcoal-900 mb-4">Calculator Pavaj</h1>
             <p className="text-body-lg text-charcoal-500 max-w-2xl">
-              Calculeaza rapid cantitatea si costul estimat pentru proiectul tau.
+              Calculează rapid cantitatea și costul estimat pentru proiectul tău.
             </p>
           </motion.div>
         </div>
@@ -78,7 +109,7 @@ export function CalculatorPage() {
               transition={{ duration: 0.5 }}
               className="bg-white rounded-xl shadow-md p-6 md:p-8"
             >
-              <h2 className="heading-h2 text-charcoal-900 mb-6">Dimensiuni suprafata</h2>
+              <h2 className="heading-h2 text-charcoal-900 mb-6">Dimensiuni suprafață</h2>
 
               <div className="space-y-6">
                 <div className="grid grid-cols-2 gap-4">
@@ -99,7 +130,7 @@ export function CalculatorPage() {
                   </div>
                   <div>
                     <label htmlFor="width" className="block text-sm font-medium text-charcoal-700 mb-1">
-                      Latime (m)
+                      Lățime (m)
                     </label>
                     <input
                       type="number"
@@ -139,14 +170,14 @@ export function CalculatorPage() {
                     className="w-4 h-4 text-brand-600 border-charcoal-300 rounded focus:ring-brand-500"
                   />
                   <label htmlFor="border" className="text-sm text-charcoal-700">
-                    Adauga bordura
+                    Adaugă bordură
                   </label>
                 </div>
 
                 {includeBorder && (
                   <div>
                     <label htmlFor="borderLength" className="block text-sm font-medium text-charcoal-700 mb-1">
-                      Lungime bordura (ml)
+                      Lungime bordură (ml)
                     </label>
                     <input
                       type="number"
@@ -178,11 +209,11 @@ export function CalculatorPage() {
               <div className="space-y-6">
                 <div className="grid grid-cols-2 gap-6">
                   <div>
-                    <p className="text-warm-gray-300 text-sm mb-1">Suprafata</p>
+                    <p className="text-warm-gray-300 text-sm mb-1">Suprafață</p>
                     <p className="text-3xl font-bold">{area.toFixed(2)} mp</p>
                   </div>
                   <div>
-                    <p className="text-warm-gray-300 text-sm mb-1">Bucati necesare</p>
+                    <p className="text-warm-gray-300 text-sm mb-1">Bucăți necesare</p>
                     <p className="text-3xl font-bold">{totalPieces.toLocaleString('ro-RO')}</p>
                   </div>
                 </div>
@@ -194,7 +225,7 @@ export function CalculatorPage() {
                   </div>
                   {includeBorder && (
                     <div className="flex justify-between">
-                      <span className="text-warm-gray-300">Bordura ({borderLength} ml)</span>
+                      <span className="text-warm-gray-300">Bordură ({borderLength} ml)</span>
                       <span className="font-semibold">{borderPrice.toFixed(2)} RON</span>
                     </div>
                   )}
@@ -207,8 +238,8 @@ export function CalculatorPage() {
                 <div className="flex items-start gap-2 p-4 bg-charcoal-800 rounded-lg">
                   <Info className="w-5 h-5 text-brand-400 shrink-0 mt-0.5" />
                   <p className="text-sm text-warm-gray-300">
-                    Preturile sunt estimative si nu includ TVA, transport sau manopera.
-                    Pentru o oferta personalizata, contacteaza reprezentantul din zona ta.
+                    Prețurile sunt estimative și nu includ TVA, transport sau manoperă.
+                    Pentru o ofertă personalizată, contactează reprezentantul din zona ta.
                   </p>
                 </div>
 
@@ -216,7 +247,7 @@ export function CalculatorPage() {
                   href="/contact"
                   className="btn-primary w-full justify-center bg-brand-600 hover:bg-primary-700 text-white"
                 >
-                  Solicita oferta personalizata
+                  Solicită ofertă personalizată
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </a>
               </div>

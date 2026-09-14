@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import type { ElementCategoryData } from '@/data/types'
-import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from './seo-utils'
+import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO, truncateDescription } from './seo-utils'
 import { categoryUrl, productUrl } from '@/lib/product-urls'
 
 export function useElementSEO(category: ElementCategoryData | undefined) {
@@ -9,7 +9,7 @@ export function useElementSEO(category: ElementCategoryData | undefined) {
 
     const parentPath = category.parent ? productUrl(category.parent.slug, category.slug) : categoryUrl(category.slug)
     const title = `${category.title} - ${category.parent ? category.parent.name : 'Elemente'} | ${SEO_SITE_NAME}`
-    const description = `${category.shortDescription}. ${category.description}`.slice(0, 300)
+    const description = truncateDescription(`${category.shortDescription}. ${category.description}`)
     const url = `${window.location.origin}${parentPath}`
     const image = category.gallery?.[0] || category.image
 
@@ -34,7 +34,7 @@ export function useElementSEO(category: ElementCategoryData | undefined) {
       '@type': 'ProductGroup',
       name: category.title,
       description: category.description,
-      image: [category.image, ...(category.gallery || [])].filter(Boolean).slice(0, 10),
+      image: [...new Set([category.image, ...(category.gallery || [])].filter(Boolean))].slice(0, 10),
       category: category.parent ? category.parent.name : category.name,
       brand: { '@type': 'Brand', name: SEO_SITE_NAME },
       manufacturer: { '@type': 'Organization', name: 'Florea Grup' },

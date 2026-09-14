@@ -58,6 +58,9 @@ export function DocumenteTehnicePage() {
     upsertMeta('property', 'og:description', description)
     upsertMeta('property', 'og:url', url)
     upsertMeta('property', 'og:site_name', SEO_SITE_NAME)
+    upsertMeta('name', 'twitter:card', 'summary_large_image')
+    upsertMeta('name', 'twitter:title', title)
+    upsertMeta('name', 'twitter:description', description)
 
     upsertJsonLd('breadcrumb-schema', {
       '@context': 'https://schema.org',

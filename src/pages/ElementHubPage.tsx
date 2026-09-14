@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight, Phone } from 'lucide-react'
 import { getElementsByParent } from '@/data/elements'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
-import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
+import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO, truncateDescription } from '@/hooks/seo-utils'
 import { categoryUrl, productUrl } from '@/lib/product-urls'
 
 interface HubConfig {
@@ -39,7 +39,7 @@ export function ElementHubPage({ slug: slugProp }: { slug?: string } = {}) {
     if (!hub || !children.length) return
     const url = `${window.location.origin}${categoryUrl(parentSlug || '')}`
     const title = `${hub.title} - ${hub.shortDescription} | ${SEO_SITE_NAME}`
-    const description = `${hub.shortDescription}. ${hub.description}`.slice(0, 300)
+    const description = truncateDescription(`${hub.shortDescription}. ${hub.description}`)
     const image = children[0]?.image
 
     document.title = title
@@ -125,7 +125,7 @@ export function ElementHubPage({ slug: slugProp }: { slug?: string } = {}) {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/80 via-charcoal-950/20 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
-                      <h3 className="text-xl md:text-2xl font-bold text-white mb-1">{child.name}</h3>
+                      <h2 className="text-xl md:text-2xl font-bold text-white mb-1">{child.name}</h2>
                     </div>
                   </div>
                   <div className="p-4 md:p-6">

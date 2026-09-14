@@ -28,6 +28,9 @@ export function VirtualTourPage() {
     upsertMeta('property', 'og:url', url)
     upsertMeta('property', 'og:image', TOUR_PREVIEW_IMAGE)
     upsertMeta('property', 'og:site_name', SEO_SITE_NAME)
+    upsertMeta('name', 'twitter:card', 'summary_large_image')
+    upsertMeta('name', 'twitter:title', title)
+    upsertMeta('name', 'twitter:description', description)
 
     upsertJsonLd('breadcrumb-schema', {
       '@context': 'https://schema.org',
@@ -66,7 +69,7 @@ export function VirtualTourPage() {
       <div className="bg-charcoal-50 border-b border-charcoal-100">
         <div className="container-premium py-4">
           <nav className="flex items-center gap-2 text-sm">
-            <a href="/" className="text-charcoal-500 hover:text-charcoal-700 transition-colors">Acasa</a>
+            <a href="/" className="text-charcoal-500 hover:text-charcoal-700 transition-colors">Acasă</a>
             <span className="text-charcoal-300">/</span>
             <span className="text-charcoal-900 font-medium">Tur Virtual</span>
           </nav>
@@ -81,9 +84,9 @@ export function VirtualTourPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="heading-h1 text-charcoal-900 mb-4">Tur Virtual Gradina Expozitionala</h1>
+            <h1 className="heading-h1 text-charcoal-900 mb-4">Tur Virtual Grădina Expozițională</h1>
             <p className="text-body-lg text-charcoal-500 max-w-2xl">
-              Exploreaza produsele Petra Pavaje intr-un experience imersiv. Navigheaza prin gradina noastra expozitionala si descopera cum arata produsele in context real.
+              Explorează produsele Petra Pavaje într-o experiență imersivă. Navighează prin grădina noastră expozițională și descoperă cum arată produsele în context real.
             </p>
           </motion.div>
         </div>

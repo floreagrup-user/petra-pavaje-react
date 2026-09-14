@@ -204,7 +204,7 @@ export function FaqPage() {
 
   useEffect(() => {
     const url = `${window.location.origin}/faq`
-    const title = `Întrebări Frecvente (FAQ) - Petra Pavaje | ${SEO_SITE_NAME}`
+    const title = `Întrebări Frecvente (FAQ) | ${SEO_SITE_NAME}`
     const description =
       'Găsește rapid răspunsuri la cele mai comune întrebări despre produsele, montajul, întreținerea, comenzile și garanția Petra Pavaje.'
 

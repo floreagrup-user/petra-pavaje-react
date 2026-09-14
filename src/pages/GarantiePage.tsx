@@ -20,6 +20,8 @@ export function GarantiePage() {
     upsertMeta('property', 'og:url', url)
     upsertMeta('property', 'og:site_name', SEO_SITE_NAME)
     upsertMeta('name', 'twitter:card', 'summary_large_image')
+    upsertMeta('name', 'twitter:title', title)
+    upsertMeta('name', 'twitter:description', description)
 
     upsertJsonLd('breadcrumb-schema', {
       '@context': 'https://schema.org',
@@ -66,7 +68,7 @@ export function GarantiePage() {
               <div className="w-11 h-11 rounded-full bg-brand-50 flex items-center justify-center mb-4">
                 <Settings2 className="w-5 h-5 text-brand-600" />
               </div>
-              <h3 className="font-semibold text-charcoal-900 mb-1.5">Producție automatizată</h3>
+              <h2 className="font-semibold text-charcoal-900 mb-1.5">Producție automatizată</h2>
               <p className="text-sm text-charcoal-600 leading-relaxed">
                 Linie de producție integral automatizată, cu monitorizare și control permanent al calității.
               </p>
@@ -75,7 +77,7 @@ export function GarantiePage() {
               <div className="w-11 h-11 rounded-full bg-brand-50 flex items-center justify-center mb-4">
                 <Microscope className="w-5 h-5 text-brand-600" />
               </div>
-              <h3 className="font-semibold text-charcoal-900 mb-1.5">Testare în laborator propriu</h3>
+              <h2 className="font-semibold text-charcoal-900 mb-1.5">Testare în laborator propriu</h2>
               <p className="text-sm text-charcoal-600 leading-relaxed">
                 Prefabricatele din beton sunt riguros testate, conform unor grafice personalizate pentru fiecare
                 tip de produs.
@@ -85,7 +87,7 @@ export function GarantiePage() {
               <div className="w-11 h-11 rounded-full bg-brand-50 flex items-center justify-center mb-4">
                 <Award className="w-5 h-5 text-brand-600" />
               </div>
-              <h3 className="font-semibold text-charcoal-900 mb-1.5">5 ani garanție</h3>
+              <h2 className="font-semibold text-charcoal-900 mb-1.5">5 ani garanție</h2>
               <p className="text-sm text-charcoal-600 leading-relaxed">
                 Pentru pavele, dale și borduri — susținută de tehnologii inovatoare pe tot fluxul de producție.
               </p>

@@ -1,13 +1,13 @@
 import { useEffect } from 'react'
 import type { WoodstoneCategory } from '@/data/types'
-import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from './seo-utils'
+import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO, truncateDescription } from './seo-utils'
 
 export function useWoodstoneSEO(category: WoodstoneCategory | undefined) {
   useEffect(() => {
     if (!category) return
 
     const title = `${category.title} - Woodstone Lemn Pietrificat | ${SEO_SITE_NAME}`
-    const description = `${category.shortDescription}. ${category.description}`.slice(0, 300)
+    const description = truncateDescription(`${category.shortDescription}. ${category.description}`)
     const url = `${window.location.origin}/woodstone-lemn-pietrificat/${category.slug}`
     const image = category.gallery?.[0] || category.image
 
@@ -32,7 +32,7 @@ export function useWoodstoneSEO(category: WoodstoneCategory | undefined) {
       '@type': 'ProductGroup',
       name: category.title,
       description: category.description,
-      image: [category.image, ...(category.gallery || [])].filter(Boolean).slice(0, 10),
+      image: [...new Set([category.image, ...(category.gallery || [])].filter(Boolean))].slice(0, 10),
       category: 'Woodstone Lemn Pietrificat',
       brand: { '@type': 'Brand', name: SEO_SITE_NAME },
       manufacturer: { '@type': 'Organization', name: 'Florea Grup' },

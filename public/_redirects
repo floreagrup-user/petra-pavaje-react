@@ -61,6 +61,13 @@
 /pavaje-standard/quatro/quatro-30x30x6-2 /pavaje-standard/quatro/quatro-30x30x6 301
 /pavaje-standard/quatro/quatro-smart-20x20x10-2 /pavaje-standard/quatro/quatro-smart-20x20x10 301
 
+# "Dale" (slabs) was a standalone WP category. It has no dedicated route on
+# the new site -- "dale" is the manufacturer's own term for the large-format
+# Premium products (Roca, Grand Urban, etc., named "dale-ROCA" etc. in their
+# technical declarations), so it redirects to that category rather than
+# soft-404ing.
+/dale /pavaje-premium 301
+
 # ---------------------------------------------------------------------------
 # Company / resource pages that now have their own dedicated route
 # (these used to collapse into /compania or /resurse before those pages

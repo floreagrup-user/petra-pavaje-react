@@ -2775,12 +2775,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/pavaje-premium/">
  Vezi pavajele premium →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2025-12-15T14:27:30',
     modifiedDate: '2026-03-24T20:31:01',
     author: 'Petra Pavaje',
@@ -2788,7 +2783,7 @@ export const blogPosts: BlogPost[] = [
     image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/3-idei-creative-pavaj-decor-sarbatori/Petra-Pavaje-scaled.avif',
     readTime: 4,
     seo: {
-      title: `3 idei pentru decor de sărbători cu pavajePetra Pavaje`,
+      title: `3 idei pentru decor de sărbători cu pavaje - Petra Pavaje`,
       description: `3 idei creative pentru utilizarea pavajului ca decor de sărbători Amenajarea creativă cu produsele Petra Pavaje`,
       canonical: 'https://petrapavaje.ro/3-idei-creative-pentru-utilizarea-pavajului-ca-decor-de-sarbatori/',
     },
@@ -2930,12 +2925,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/despre-noi/">
  Descoperă povestea noastră →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2025-11-27T13:10:32',
     modifiedDate: '2026-03-24T21:01:35',
     author: 'Petra Pavaje',
@@ -3159,12 +3149,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/contact/">
  Solicită ofertă →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2025-11-10T11:19:41',
     modifiedDate: '2026-03-24T20:32:16',
     author: 'Petra Pavaje',
@@ -3412,12 +3397,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/contact/">
  Solicită ofertă →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2025-09-03T16:41:01',
     modifiedDate: '2026-03-24T20:33:20',
     author: 'Petra Pavaje',
@@ -3644,12 +3624,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/contact/">
  Solicită ofertă →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2025-07-30T16:01:24',
     modifiedDate: '2026-03-24T20:34:25',
     author: 'Petra Pavaje',
@@ -3800,12 +3775,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/sustenabilitate/">
  Descoperă sustenabilitatea →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2025-05-15T08:46:35',
     modifiedDate: '2026-03-24T20:35:43',
     author: 'Petra Pavaje',
@@ -4011,12 +3981,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/pavaje-premium/">
  Vezi pavajele premium →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2025-02-28T14:35:28',
     modifiedDate: '2026-03-24T20:36:49',
     author: 'Petra Pavaje',
@@ -4134,12 +4099,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/woodstone-lemn-pietrificat/banci-si-mese/">
  Vezi băncile Woodstone →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2025-02-07T09:37:39',
     modifiedDate: '2026-03-24T21:03:39',
     author: 'Petra Pavaje',
@@ -4467,12 +4427,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/woodstone-lemn-pietrificat/">
  Vezi gama Woodstone →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2024-08-22T16:15:55',
     modifiedDate: '2026-03-24T21:11:48',
     author: 'Petra Pavaje',
@@ -4674,12 +4629,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/contact/">
  Solicită montaj profesionist →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2024-04-08T14:18:30',
     modifiedDate: '2026-03-24T21:13:51',
     author: 'Petra Pavaje',
@@ -4901,12 +4851,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/contact/">
  Contactează un specialist →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2024-04-08T14:07:17',
     modifiedDate: '2026-03-24T21:15:44',
     author: 'Petra Pavaje',
@@ -5103,12 +5048,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/turvirtual/">
  Tur virtual 360° →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2024-02-29T08:06:37',
     modifiedDate: '2026-03-24T21:19:00',
     author: 'Petra Pavaje',
@@ -5332,12 +5272,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/garduri-2/modern/">
  Vezi Gardul Modern →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2024-02-27T13:31:09',
     modifiedDate: '2026-03-24T21:37:42',
     author: 'Petra Pavaje',
@@ -5448,12 +5383,7 @@ export const blogPosts: BlogPost[] = [
  Participă acum pe <strong>Facebook</strong>, <strong>Instagram</strong> sau <strong>TikTok</strong> și poți câștiga o trusă completă de montaj, complet echipată!
  </p>
  
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2024-02-12T16:42:33',
     modifiedDate: '2026-03-24T21:39:55',
     author: 'Petra Pavaje',
@@ -5619,12 +5549,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/pavaje-standard/">
  Vezi pavajele →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2024-01-29T17:01:35',
     modifiedDate: '2026-03-24T21:41:57',
     author: 'Petra Pavaje',
@@ -5827,12 +5752,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/pavaje-standard/">
  Vezi pavajele →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2023-11-07T15:08:57',
     modifiedDate: '2026-03-24T21:43:48',
     author: 'Petra Pavaje',
@@ -6029,12 +5949,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/pavaje-premium/">
  Vezi portofoliul complet →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2023-09-29T15:45:51',
     modifiedDate: '2026-03-24T21:45:00',
     author: 'Petra Pavaje',
@@ -6223,12 +6138,7 @@ export const blogPosts: BlogPost[] = [
  <a href="https://petrapavaje.ro/pavaje-standard/con/">
  Vezi pavajul CON →
  </a>
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2023-09-21T13:00:18',
     modifiedDate: '2026-03-24T21:47:01',
     author: 'Petra Pavaje',
@@ -6367,12 +6277,7 @@ export const blogPosts: BlogPost[] = [
  Cu cât etichetezi mai mulți prieteni, cu atât cresc șansele tale. <strong>Mult succes!</strong>
  </p>
  
- 
- <p>— ■ —
-<a id="lightbox"></a>
- <a id="lightbox-close"></a>×
- 
-</p>`,
+`,
     date: '2023-08-31T20:37:15',
     modifiedDate: '2026-03-24T21:48:24',
     author: 'Petra Pavaje',

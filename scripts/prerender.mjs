@@ -71,7 +71,20 @@ async function main() {
       // hrefs from window.location.origin, which is the local preview
       // server during prerendering -- rewrite to the real production
       // origin so non-JS crawlers don't see a localhost canonical.
-      const html = rawHtml.split(LOCAL_ORIGIN).join(PROD_ORIGIN)
+      let html = rawHtml.split(LOCAL_ORIGIN).join(PROD_ORIGIN)
+
+      // index.html's static LCP preload is only correct for "/" (the
+      // homepage hero). On every other route it preloads the wrong image,
+      // competing with that page's real hero/product image for bandwidth --
+      // per SEO/GEO audit finding D3. Each page's actual hero/gallery image
+      // is now a plain <img> in the prerendered markup, so the browser's
+      // preload scanner still discovers it immediately without this hint.
+      if (route !== '/') {
+        html = html.replace(
+          /<link rel="preload" as="image" href="[^"]*stretto-homepage\.webp"[^>]*>\n?/,
+          ''
+        )
+      }
 
       if (route === '/') {
         writeFileSync(join(DIST, 'index.html'), html)
