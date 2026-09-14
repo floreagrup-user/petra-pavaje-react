@@ -25,7 +25,7 @@
 /produse/rigole/* /rigole 301
 /produse/jardiniere/* /jardiniere 301
 /produse/palisada/* /palisada 301
-/produse/banci/* /banci 301
+/produse/banci/* /produse 301
 /produse/treapta/* /treapta 301
 /produse/bloc-de-zid/* /bloc-de-zid 301
 /produse/garduri/* /garduri/:splat 301
@@ -67,6 +67,9 @@
 # technical declarations), so it redirects to that category rather than
 # soft-404ing.
 /dale /pavaje-premium 301
+
+# "Bănci" (concrete benches) was discontinued as a product category.
+/banci /produse 301
 
 # ---------------------------------------------------------------------------
 # Company / resource pages that now have their own dedicated route
@@ -185,7 +188,6 @@
 # Leaf routes (no nested :param children in router.tsx) -- exact match only,
 # no wildcard needed. Kept as plain (non-dynamic) rules to stay well under
 # Cloudflare Pages' ~100 dynamic-redirect budget (already ~80 used above).
-/banci /index.html 200
 /bloc-de-zid /index.html 200
 /boltari /index.html 200
 /brosuri /index.html 200

@@ -68,7 +68,6 @@ export const router = createBrowserRouter([
       { path: 'boltari', element: <Suspense><ElementCategoryPage slug="boltari" /></Suspense> },
       { path: 'jardiniere', element: <Suspense><ElementCategoryPage slug="jardiniere" /></Suspense> },
       { path: 'palisada', element: <Suspense><ElementCategoryPage slug="palisada" /></Suspense> },
-      { path: 'banci', element: <Suspense><ElementCategoryPage slug="banci" /></Suspense> },
       { path: 'treapta', element: <Suspense><ElementCategoryPage slug="treapta" /></Suspense> },
       { path: 'bloc-de-zid', element: <Suspense><ElementCategoryPage slug="bloc-de-zid" /></Suspense> },
       { path: 'garduri', element: <Suspense><ElementHubPage slug="garduri" /></Suspense> },

@@ -170,6 +170,7 @@ export function ElementCategoryPage({ slug: slugProp }: { slug?: string } = {}) 
               {category.variantGroups.map((group) => {
                 const hasPiecesPerMl = group.variants.some((v) => v.piecesPerMl !== undefined)
                 const hasPalletizing = group.variants.some((v) => v.mlPerPallet !== undefined)
+                const hasPiecesPerTruck = group.variants.some((v) => v.piecesPerTruck !== undefined)
                 const hasCode = group.variants.some((v) => v.code && v.code !== '—')
                 return (
                   <div key={group.name}>
@@ -190,6 +191,7 @@ export function ElementCategoryPage({ slug: slugProp }: { slug?: string } = {}) 
                             {hasPiecesPerMl && <th className="text-right py-2.5 px-3 font-medium text-charcoal-500">Buc/ML</th>}
                             <th className="text-right py-2.5 px-3 font-medium text-charcoal-500">Kg</th>
                             {hasPalletizing && <th className="text-right py-2.5 px-4 font-medium text-charcoal-500">ML/Palet</th>}
+                            {hasPiecesPerTruck && <th className="text-right py-2.5 px-4 font-medium text-charcoal-500">Buc/Camion</th>}
                           </tr>
                         </thead>
                         <tbody>
@@ -211,6 +213,9 @@ export function ElementCategoryPage({ slug: slugProp }: { slug?: string } = {}) 
                               <td className="text-right py-2.5 px-3 text-charcoal-600">{v.weightKg}</td>
                               {hasPalletizing && (
                                 <td className="text-right py-2.5 px-4 text-charcoal-600">{v.mlPerPallet ?? '—'}</td>
+                              )}
+                              {hasPiecesPerTruck && (
+                                <td className="text-right py-2.5 px-4 text-charcoal-600">{v.piecesPerTruck ?? '—'}</td>
                               )}
                             </tr>
                           ))}

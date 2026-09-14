@@ -78,7 +78,6 @@ export const mainMenu: MenuItem[] = [
           },
           { label: 'Jardiniere', href: '/jardiniere' },
           { label: 'Palisadă', href: '/palisada' },
-          { label: 'Bănci', href: '/banci' },
           { label: 'Treaptă', href: '/treapta' },
           { label: 'Bloc de zid', href: '/bloc-de-zid' },
           {

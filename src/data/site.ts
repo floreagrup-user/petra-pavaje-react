@@ -74,14 +74,6 @@ export const categories: Category[] = [
     productCount: 1,
   },
   {
-    id: 'banci',
-    name: 'Bănci',
-    slug: 'banci',
-    description: 'Mobilier urban din beton pentru spatii exterioare.',
-    image: '/images/categories/banci.avif',
-    productCount: 1,
-  },
-  {
     id: 'treapta',
     name: 'Treaptă',
     slug: 'treapta',

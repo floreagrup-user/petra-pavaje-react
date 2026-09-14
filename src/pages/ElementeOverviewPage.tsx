@@ -10,7 +10,7 @@ import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } fr
 import { categoryUrl } from '@/lib/product-urls'
 import type { ProductFAQ } from '@/data/types'
 
-const ELEMENT_IDS = ['borduri', 'rigole', 'boltari', 'garduri', 'jardiniere', 'palisada', 'banci', 'treapta', 'bloc-de-zid', 'elemente-de-canalizare']
+const ELEMENT_IDS = ['borduri', 'rigole', 'boltari', 'garduri', 'jardiniere', 'palisada', 'treapta', 'bloc-de-zid', 'elemente-de-canalizare']
 
 const cards = ELEMENT_IDS.map((id) => {
   const category = categories.find((c) => c.id === id)!

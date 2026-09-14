@@ -180,6 +180,7 @@ export interface ElementVariant {
   dimensions: string
   piecesPerMl?: number | string
   piecesPerPallet?: number | string
+  piecesPerTruck?: number | string
   weightKg: number | string
   mlPerPallet?: number | string
   badge?: string

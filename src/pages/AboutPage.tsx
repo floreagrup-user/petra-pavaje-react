@@ -130,7 +130,7 @@ export function AboutPage() {
                 Aceasta este povestea Petra: drumul de la materie primă, la element de bucurie în viața de zi cu zi.
               </p>
               <p>
-                Petra Pavaje are în portofoliu peste 600 de produse, împărțite în mai multe game: pavaje premium,
+                Petra Pavaje are în portofoliu peste 800 de produse, împărțite în mai multe game: pavaje premium,
                 pavaje standard, borduri, rigole, bolțari și produse pentru grădină. Produsele premium trec printr-o
                 serie de prelucrări care le înnobilează — spălarea, splitarea și antichizarea sunt doar o parte
                 dintre aceste procese. Pentru a răspunde proiectelor de infrastructură, la fabrici există și linii

@@ -269,37 +269,6 @@ export const elementCategories: ElementCategoryData[] = [
     ],
   },
 
-  // ===================== BĂNCI =====================
-  {
-    slug: 'banci',
-    name: 'Bănci',
-    title: 'Bănci',
-    shortDescription: 'Soluții Robuste pentru Spații Exterioare',
-    description:
-      'Băncile din beton reprezintă o soluție robustă și estetică pentru amenajarea spațiilor exterioare, combinând funcționalitatea cu o durabilitate remarcabilă. Sunt ideale pentru o varietate de locații, de la grădini private și curți, la parcuri publice, piețe, centre comerciale și complexe rezidențiale.',
-    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/2020/06/banci-1200x800-1.jpg',
-    gallery: [],
-    heroFeatures: ['Mobilier urban', '4 culori', 'Garanție 5 ani'],
-    colors: [COLOR.rosu, COLOR.maroDeschis, COLOR.negru, COLOR.maro],
-    technicalFeatures: [
-      'Beton vibropresat de înaltă densitate',
-      'Rezistență la intemperii',
-      'Garanție 5 ani',
-    ],
-    advantages: [
-      'Combină funcționalitatea cu o durabilitate remarcabilă',
-      'Potrivite pentru spații private și publice deopotrivă',
-      '4 culori disponibile',
-      'Producție românească certificată',
-    ],
-    usage: ['Grădini private', 'Curți', 'Parcuri publice', 'Piețe', 'Centre comerciale'],
-    variantGroups: [],
-    faq: [
-      { question: 'Unde pot fi folosite băncile din beton Petra Pavaje?', answer: 'În grădini private, curți, parcuri publice, piețe, centre comerciale și complexe rezidențiale.' },
-      { question: 'În ce culori sunt disponibile băncile?', answer: 'În Roșu, Maro Deschis, Negru și Maro.' },
-    ],
-  },
-
   // ===================== TREAPTĂ =====================
   {
     slug: 'treapta',
@@ -543,7 +512,7 @@ export const elementCategories: ElementCategoryData[] = [
       {
         name: 'Bloc de beton',
         variants: [
-          { name: 'Bloc de beton 120×60×60', code: '2097', dimensions: '120×60×60 cm', piecesPerMl: 0.83, piecesPerPallet: 1050, weightKg: '—' },
+          { name: 'Bloc de beton 120×60×60', code: '2097', dimensions: '120×60×60 cm', piecesPerMl: 0.83, piecesPerPallet: 1050, piecesPerTruck: 23, weightKg: 1050 },
           { name: 'Bloc de beton 60×60×60', code: '2098', dimensions: '60×60×60 cm', piecesPerMl: 1.66, piecesPerPallet: 500, weightKg: '—' },
         ],
       },
