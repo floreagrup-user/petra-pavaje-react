@@ -11,7 +11,6 @@ import {
   Palette,
   ChevronDown,
   MessageCircle,
-  Calculator,
 } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { useCategoryListSEO } from '@/hooks/useCategoryListSEO'
@@ -231,16 +230,12 @@ export function ProductsHubPage() {
             <h2 className="heading-h3 text-charcoal-900 mb-3">Nu știi ce pavaj să alegi?</h2>
             <p className="text-body text-charcoal-600 mb-6">
               Echipa noastră te poate ajuta să alegi modelul și grosimea potrivite pentru tipul de trafic al
-              proiectului tău, sau poți estima singur cantitatea necesară cu calculatorul de pavaj.
+              proiectului tău.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link to="/contact" className="btn-primary">
                 <MessageCircle className="w-4 h-4 mr-2" />
                 Cere o ofertă
-              </Link>
-              <Link to="/calculator" className="btn-secondary">
-                <Calculator className="w-4 h-4 mr-2" />
-                Calculator pavaj
               </Link>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ChevronDown, SlidersHorizontal, X, ArrowRight, MessageCircle, Calculator } from 'lucide-react'
+import { ChevronDown, SlidersHorizontal, X, ArrowRight, MessageCircle } from 'lucide-react'
 import { getProductsByCategory } from '@/data/products'
 import type { ProductFAQ } from '@/data/types'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
@@ -256,17 +256,12 @@ export function PremiumCategoryPage() {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="heading-h3 text-charcoal-900 mb-3">Nu știi ce pavaj să alegi?</h2>
             <p className="text-body text-charcoal-600 mb-6">
-              Echipa noastră te poate ajuta să alegi modelul, culoarea și grosimea potrivite pentru proiectul tău, sau
-              poți estima singur cantitatea necesară cu calculatorul de pavaj.
+              Echipa noastră te poate ajuta să alegi modelul, culoarea și grosimea potrivite pentru proiectul tău.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link to="/contact" className="btn-primary">
                 <MessageCircle className="w-4 h-4 mr-2" />
                 Cere o ofertă
-              </Link>
-              <Link to="/calculator" className="btn-secondary">
-                <Calculator className="w-4 h-4 mr-2" />
-                Calculator pavaj
               </Link>
             </div>
             <p className="text-sm text-charcoal-500 mt-6">
