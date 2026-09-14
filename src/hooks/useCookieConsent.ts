@@ -32,9 +32,6 @@ function pushConsentToGtag(consent: CookieConsent) {
     ad_user_data: consent.marketing ? 'granted' : 'denied',
     ad_personalization: consent.marketing ? 'granted' : 'denied',
   })
-
-  const clarity = (window as unknown as { clarity?: (...args: unknown[]) => void }).clarity
-  clarity?.('consent', consent.analytics)
 }
 
 export function useCookieConsent() {
