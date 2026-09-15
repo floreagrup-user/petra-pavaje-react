@@ -232,7 +232,7 @@ export function AboutPage() {
         </div>
       </section>
 
-      {/* LEADERSHIP QUOTE 1 — CEO */}
+      {/* LEADERSHIP QUOTE 1 — DIRECTOR GENERAL */}
       <section className="relative bg-charcoal-950 text-white py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-noise" aria-hidden="true" />
         <div className="container-premium relative max-w-4xl">
@@ -248,7 +248,7 @@ export function AboutPage() {
               <span className="w-12 h-0.5 bg-brand-500 shrink-0" aria-hidden="true" />
               <cite className="not-italic">
                 <span className="block font-semibold text-white text-lg">Marcel Florea</span>
-                <span className="block text-sm text-charcoal-400">Administrator și CEO Florea Grup</span>
+                <span className="block text-sm text-charcoal-400">Director General</span>
               </cite>
             </footer>
           </motion.div>
