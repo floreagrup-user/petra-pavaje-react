@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { Header } from '@/components/header/Header'
 import { Footer } from '@/components/footer/Footer'
 import { CookieConsentBanner } from '@/components/CookieConsentBanner'
+import { WhatsAppButton } from '@/components/WhatsAppButton'
 
 export function Layout() {
   const location = useLocation()
@@ -19,6 +20,7 @@ export function Layout() {
       </main>
       <Footer />
       <CookieConsentBanner />
+      <WhatsAppButton />
     </div>
   )
 }

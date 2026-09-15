@@ -1,9 +1,8 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, ChevronDown, Phone, FileText } from 'lucide-react'
+import { Menu, X, ChevronDown, Calculator, FileText } from 'lucide-react'
 import { mainMenu, type MenuItem } from '@/data/menu'
-import { trackEvent } from '@/lib/analytics'
 import { useScrollPosition } from '@/hooks/use-scroll'
 import { cn } from '@/lib/utils'
 
@@ -31,14 +30,13 @@ export function Header() {
       >
         <div className="container-premium py-1.5 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <a
-              href="tel:+40358732246"
-              onClick={() => trackEvent('phone_click')}
+            <Link
+              to="/calculator-pavaj"
               className="hover:text-white transition-colors flex items-center gap-1"
             >
-              <Phone className="w-3 h-3" />
-              +40 358 732 246
-            </a>
+              <Calculator className="w-3 h-3" />
+              Calculator pavaj
+            </Link>
             <span className="text-white/20">|</span>
             <span>4 Fabrici Naționale</span>
             <span className="text-white/20">|</span>

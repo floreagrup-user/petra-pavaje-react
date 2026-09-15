@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Phone, ArrowRight, Download } from 'lucide-react'
+import { MapPin, ArrowRight, Download } from 'lucide-react'
 import { footerLinks, socialLinks } from '@/data/menu'
 import { factories } from '@/data/site'
 import { openCookieSettings } from '@/hooks/useCookieConsent'
@@ -117,12 +117,6 @@ export function Footer() {
                   </div>
                 </div>
               ))}
-            </div>
-            <div className="mt-6 space-y-2">
-              <a href="tel:+40358732246" className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors">
-                <Phone className="w-4 h-4 text-brand-300" />
-                +40 358 732 246
-              </a>
             </div>
           </div>
 
