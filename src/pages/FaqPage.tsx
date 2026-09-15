@@ -1,10 +1,10 @@
 import { useMemo, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ChevronDown, Search, X, MessageCircleQuestion } from 'lucide-react'
+import { ChevronDown, Search, X, MessageCircleQuestion, TriangleAlert } from 'lucide-react'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
 
-type FaqItem = { question: string; answer: string; category: string }
+type FaqItem = { question: string; answer: string; category: string; warning?: string }
 
 const CATEGORIES = [
   'Toate',
@@ -88,6 +88,13 @@ const FAQ_ITEMS: FaqItem[] = [
     question: 'Livrați produse în toată țara? Care sunt costurile și termenele?',
     answer:
       'Da, livrăm în toată România. Detalii importante:\n• Termene: 3-7 zile lucrătoare în funcție de stoc și locație\n• Costuri: variază în funcție de cantitate, distanță și accesibilitate\n• Transport gratuit: pentru comenzi peste o anumită valoare (solicită detalii)\n• Descărcare: cu macara sau manual, în funcție de locație\nCostul exact al livrării va fi calculat la momentul ofertei, ținând cont de specificul comenzii tale.',
+  },
+  {
+    category: 'Comandă și Livrare',
+    question: 'Pot returna paleții cu produse neutilizate?',
+    answer:
+      'Da. Paleții achiziționați împreună cu produsele și care au rămas complet neutilizați pot fi returnați. Politica se aplică exclusiv paleților originali, cu produsele pe ei, nu paleților goi.',
+    warning: 'Returul unui palet cu produse neutilizate presupune un cost de retur de 75 lei/palet.',
   },
   {
     category: 'Comandă și Livrare',
@@ -226,7 +233,10 @@ export function FaqPage() {
       mainEntity: FAQ_ITEMS.map((f) => ({
         '@type': 'Question',
         name: f.question,
-        acceptedAnswer: { '@type': 'Answer', text: f.answer.replace(/\n/g, ' ') },
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: (f.warning ? `${f.answer} ${f.warning}` : f.answer).replace(/\n/g, ' '),
+        },
       })),
     })
 
@@ -344,9 +354,17 @@ export function FaqPage() {
                       />
                     </button>
                     {isOpen && (
-                      <p className="px-5 pb-5 text-sm text-charcoal-600 leading-relaxed whitespace-pre-line">
-                        {item.answer}
-                      </p>
+                      <div className="px-5 pb-5">
+                        <p className="text-sm text-charcoal-600 leading-relaxed whitespace-pre-line">
+                          {item.answer}
+                        </p>
+                        {item.warning && (
+                          <div className="mt-3 flex items-start gap-2 rounded-lg bg-amber-50 border border-amber-200 p-3 text-sm text-amber-800">
+                            <TriangleAlert className="w-4 h-4 shrink-0 mt-0.5" />
+                            <span>{item.warning}</span>
+                          </div>
+                        )}
+                      </div>
                     )}
                   </div>
                 )
