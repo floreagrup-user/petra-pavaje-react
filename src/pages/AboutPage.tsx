@@ -232,7 +232,7 @@ export function AboutPage() {
         </div>
       </section>
 
-      {/* LEADERSHIP QUOTE 1 — DIRECTOR GENERAL */}
+      {/* LEADERSHIP QUOTE 1 — CEO */}
       <section className="relative bg-charcoal-950 text-white py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-noise" aria-hidden="true" />
         <div className="container-premium relative max-w-4xl">
@@ -248,7 +248,7 @@ export function AboutPage() {
               <span className="w-12 h-0.5 bg-brand-500 shrink-0" aria-hidden="true" />
               <cite className="not-italic">
                 <span className="block font-semibold text-white text-lg">Marcel Florea</span>
-                <span className="block text-sm text-charcoal-400">Director General</span>
+                <span className="block text-sm text-charcoal-400">CEO Florea Grup</span>
               </cite>
             </footer>
           </motion.div>
@@ -347,7 +347,7 @@ export function AboutPage() {
         </div>
       </section>
 
-      {/* LEADERSHIP QUOTE 2 — DIRECTOR GENERAL */}
+      {/* LEADERSHIP QUOTE 2 — CEO */}
       <section className="section-padding bg-brand-50/50 border-y border-brand-100">
         <div className="container-premium max-w-4xl">
           <motion.div
@@ -372,7 +372,7 @@ export function AboutPage() {
               <footer>
                 <cite className="not-italic">
                   <span className="block font-semibold text-charcoal-900">Marcel Florea</span>
-                  <span className="block text-sm text-charcoal-500">Director General</span>
+                  <span className="block text-sm text-charcoal-500">CEO Florea Grup</span>
                 </cite>
               </footer>
             </div>
