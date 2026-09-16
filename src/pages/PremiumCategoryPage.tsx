@@ -129,6 +129,7 @@ export function PremiumCategoryPage() {
     breadcrumbLabel: 'Premium Pavers',
   } : {
     path: '/pavaje-premium',
+    enPath: '/en/pavaje-premium',
     title: 'Pavaje Premium - 19 Modele de Pavaj Beton Premium | Petra Pavaje',
     description:
       'Descoperă gama Pavaje Premium Petra Pavaje: 19 modele, zeci de culori și finisaje, tehnologie Color Lock și rezistență la îngheț. Filtrează după culoare, grosime și utilizare.',
@@ -325,8 +326,8 @@ export function PremiumCategoryPage() {
             </div>
             <p className="text-sm text-charcoal-500 mt-6">
               {isEnglish ? 'Looking for a more economical solution? ' : 'Cauți o soluție mai economică? '}
-              <Link to="/pavaje-standard" className="link-premium">
-                {isEnglish ? 'See the Standard Pavers range (RO)' : 'Vezi și gama Pavaje Standard'}
+              <Link to={isEnglish ? '/en/pavaje-standard' : '/pavaje-standard'} className="link-premium">
+                {isEnglish ? 'See our Standard Pavers range' : 'Vezi și gama Pavaje Standard'}
                 <ArrowRight className="w-3.5 h-3.5 inline ml-1" />
               </Link>
             </p>

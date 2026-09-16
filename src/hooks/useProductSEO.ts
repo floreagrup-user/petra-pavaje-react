@@ -6,6 +6,7 @@ import { categoryUrl, productUrl } from '@/lib/product-urls'
 
 const CATEGORY_LABEL_EN: Record<string, string> = {
   premium: 'Premium Pavers',
+  standard: 'Standard Pavers',
 }
 
 export function useProductSEO(product: Product | undefined, isEnglish = false) {

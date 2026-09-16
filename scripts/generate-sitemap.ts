@@ -93,7 +93,22 @@ for (const product of premiumProducts) {
   add(`/en/pavaje-premium/${product.slug}`, 'monthly', '0.7')
 }
 
-// Cross-link RO/EN Premium pairs with hreflang alternates (+ x-default -> RO)
+// English Standard paver catalog -- also fully translated, including the
+// bespoke Quatro hub page and its 19 dimension/marking variants (nested
+// under pavaje-standard/quatro/, same as the RO routes).
+const standardProducts = products.filter((p) => p.category === 'standard')
+const standardQuatroVariants = standardProducts.filter((p) => p.slug.startsWith('quatro-'))
+const standardNonQuatro = standardProducts.filter((p) => !p.slug.startsWith('quatro-'))
+add('/en/pavaje-standard', 'weekly', '0.8')
+add('/en/pavaje-standard/quatro', 'monthly', '0.7')
+for (const product of standardNonQuatro) {
+  add(`/en/pavaje-standard/${product.slug}`, 'monthly', '0.7')
+}
+for (const product of standardQuatroVariants) {
+  add(`/en/pavaje-standard/quatro/${product.slug}`, 'monthly', '0.6')
+}
+
+// Cross-link RO/EN Premium and Standard pairs with hreflang alternates (+ x-default -> RO)
 function linkAltLangs(roPath: string, enPath: string) {
   const roEntry = entries.find((e) => e.loc === roPath)
   const enEntry = entries.find((e) => e.loc === enPath)
@@ -109,6 +124,14 @@ function linkAltLangs(roPath: string, enPath: string) {
 linkAltLangs('/pavaje-premium', '/en/pavaje-premium')
 for (const product of premiumProducts) {
   linkAltLangs(`/pavaje-premium/${product.slug}`, `/en/pavaje-premium/${product.slug}`)
+}
+linkAltLangs('/pavaje-standard', '/en/pavaje-standard')
+linkAltLangs('/pavaje-standard/quatro', '/en/pavaje-standard/quatro')
+for (const product of standardNonQuatro) {
+  linkAltLangs(`/pavaje-standard/${product.slug}`, `/en/pavaje-standard/${product.slug}`)
+}
+for (const product of standardQuatroVariants) {
+  linkAltLangs(`/pavaje-standard/quatro/${product.slug}`, `/en/pavaje-standard/quatro/${product.slug}`)
 }
 
 // Element categories: top-level (rigole, boltari, jardiniere, palisada, banci, treapta, bloc-de-zid)

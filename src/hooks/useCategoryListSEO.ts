@@ -7,8 +7,10 @@ interface CategoryListSEOConfig {
   title: string
   description: string
   breadcrumbLabel: string
-  /** RO path this page mirrors, when `path` is itself the /en/... page. Set only from the EN side of a pair -- enables reciprocal hreflang without touching the other 4 callers. */
+  /** RO path this page mirrors, when `path` is itself the /en/... page. Set only from the EN side of a pair. */
   roPath?: string
+  /** EN path this page mirrors, when `path` is itself the RO page. Set only from the RO side of a pair -- together with `roPath` above, enables reciprocal hreflang (both sides of a pair call upsertHreflangPair) without touching the other, untranslated callers. */
+  enPath?: string
 }
 
 interface CategoryListItem {
@@ -22,7 +24,7 @@ export function useCategoryListSEO(products: CategoryListItem[], faq: ProductFAQ
   useEffect(() => {
     if (!products.length) return
 
-    const { path, title, description, breadcrumbLabel, roPath } = config
+    const { path, title, description, breadcrumbLabel, roPath, enPath } = config
     const isEnglish = Boolean(roPath)
     const url = `${window.location.origin}${path}`
     const image = products[0]?.heroImages?.[0] || products[0]?.image
@@ -31,6 +33,7 @@ export function useCategoryListSEO(products: CategoryListItem[], faq: ProductFAQ
     upsertMeta('name', 'description', description)
     upsertCanonical(url)
     if (roPath) upsertHreflangPair(roPath, path)
+    if (enPath) upsertHreflangPair(path, enPath)
 
     upsertMeta('property', 'og:type', 'website')
     upsertMeta('property', 'og:title', title)

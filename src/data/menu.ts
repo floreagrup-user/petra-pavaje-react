@@ -189,6 +189,7 @@ export const enMenu: MenuItem[] = [
     href: '/en/pavaje-premium',
     children: [
       { label: 'Premium Pavers', href: '/en/pavaje-premium' },
+      { label: 'Standard Pavers', href: '/en/pavaje-standard' },
       { label: 'Full catalog (RO)', href: '/produse' },
     ],
   },

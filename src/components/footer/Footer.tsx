@@ -88,6 +88,11 @@ export function Footer() {
                   </Link>
                 </li>
                 <li>
+                  <Link to="/en/pavaje-standard" className="text-sm text-white/70 hover:text-white transition-colors">
+                    Standard Pavers
+                  </Link>
+                </li>
+                <li>
                   <Link to="/produse" className="text-sm text-white/70 hover:text-white transition-colors">
                     Browse full catalog (RO) →
                   </Link>

@@ -47,6 +47,9 @@ export const COLOR_NAME_EN: Record<string, string> = {
   'Indigo': 'Indigo',
   'Acvatic': 'Aquatic',
   'Gri Gălbui': 'Yellowish Grey',
+  'Galben': 'Yellow',
+  'Maro': 'Brown',
+  'Verde': 'Green',
 }
 
 export const USAGE_TAG_EN: Record<string, string> = {
@@ -66,9 +69,37 @@ export const USAGE_TAG_EN: Record<string, string> = {
   'Rezidențial': 'Residential',
   'Comercial': 'Commercial',
   'Zone Piscină': 'Pool Areas',
+  'Acces auto': 'Vehicle Access',
+  'Acces auto ușor': 'Light Vehicle Access',
+  'Alei ample': 'Wide Walkways',
+  'Consolidare pantă': 'Slope Reinforcement',
+  'Curți interioare': 'Interior Courtyards',
+  'Drumuri de acces': 'Access Roads',
+  'Drumuri interioare': 'Interior Roads',
+  'Ghidare orientare': 'Wayfinding Guidance',
+  'Incinte clădiri': 'Building Grounds',
+  'Parcări înierbate': 'Grassed Parking',
+  'Parcări': 'Parking Lots',
+  'Platforme industriale': 'Industrial Platforms',
+  'Platforme': 'Platforms',
+  'Rampă acces': 'Access Ramps',
+  'Spații publice': 'Public Spaces',
+  'Stații carburanți': 'Fuel Stations',
+  'Stații edilitare': 'Public Transit Stops',
+  'Trafic greu': 'Heavy Traffic',
+  'Trecere de pietoni': 'Pedestrian Crossings',
+  'Trotuare': 'Sidewalks',
+  'Zone de acces': 'Access Areas',
+  'Zone pietonale': 'Pedestrian Areas',
+  'Zone verzi': 'Green Areas',
 }
 
 export interface ProductTranslationEn {
+  /** Only set when the RO `name` is a literal descriptive phrase rather than a
+   * proper/brand name (e.g. "Pavaje Eco" -> "Eco Pavers"). Names like Holland,
+   * Quatro, Roca or Antic are proper nouns and stay identical in both locales,
+   * so this is omitted for nearly every product. */
+  name?: string
   shortDescription: string
   description: string
   heroFeatures: string[]
@@ -734,7 +765,343 @@ export const productTranslationsEn: Record<string, ProductTranslationEn> = {
       { question: 'Is there a datasheet and Declaration of Performance for Stretto?', answer: 'Official technical documentation (datasheet and EU Declarations of Performance) for the Stretto range is being finalized for publication.' },
     ],
   },
+  holland: {
+    shortDescription: 'Classic Model, Versatile Laying Patterns',
+    description:
+      "Holland is a classic model used worldwide. It can be laid in a variety of patterns. Thanks to its universal applicability, it's used for both pedestrian surfaces and areas subject to vehicle traffic, including heavy loads. It can be installed in a multitude of patterns.",
+    heroFeatures: ['10 Sizes', '7 Colors', '5-Year Warranty'],
+    specs: [
+      { label: 'Dimensions', value: '10 sizes' },
+      { label: 'Colors', value: '7 colors' },
+      { label: 'Thickness', value: '4-8 cm' },
+      { label: 'Warranty', value: '5 years' },
+    ],
+    technicalFeatures: ['Pedestrian traffic', 'Vehicle traffic including heavy loads', 'Sidewalks', 'Yards and terraces', 'Frost resistant', 'Color Lock'],
+    advantages: [
+      '10 sizes for any type of landscaping project',
+      '7 colors, including caramel',
+      'Suitable for vehicle traffic, including heavy loads',
+      'The strength and durability of vibro-pressed concrete',
+      '5-Year Warranty',
+    ],
+    faq: [
+      { question: 'What projects is the Holland paver recommended for?', answer: 'Holland is a classic model used worldwide, suited to both pedestrian surfaces — walkways, terraces, yards, sidewalks — and areas subject to vehicle traffic, including heavy loads.' },
+      { question: 'What sizes is the Holland paver available in?', answer: 'Holland is available in 10 sizes, with thicknesses of 4, 5, 6 and 8 cm: 20×10, 25×20, 40×10, 21×14, 30×20 and 60×30 cm. The 30×20×8 format is also available in a SMART variant.' },
+      { question: 'What colors are available for Holland?', answer: 'The range includes 7 colors: grey, red, black, yellow, brown, white and caramel. The caramel color is available exclusively for the 20×10×6 cm size.' },
+      { question: 'Is Holland suitable for vehicle traffic?', answer: 'Yes. Thanks to its universal applicability, Holland is also used for vehicle traffic, including heavy loads — the 6 and 8 cm thicknesses are preferred, laid appropriately.' },
+      { question: 'What does the SMART variant mean for Holland 30×20×8?', answer: 'The SMART variant is produced with added fiber and a special binder for extra strength under stress, and is recommended for heavy vehicle traffic without changing the look of the format.' },
+      { question: 'Is there a datasheet and Declaration of Performance for Holland?', answer: 'Yes. Official technical documentation (datasheet and EU Declarations of Performance) is available on the product page and on request, including for the 6 and 8 cm thicknesses used in vehicle traffic.' },
+    ],
+  },
+  autobloc: {
+    shortDescription: 'Strength for Heavy Traffic',
+    description:
+      'Autobloc is the ideal solution for paving large, heavily used public surfaces subject to vehicle traffic (including heavy loads). Its strength makes it suitable for parking lots, access roads, fuel stations and more.',
+    heroFeatures: ['7 Sizes', '5 Colors', '5-Year Warranty'],
+    specs: [
+      { label: 'Dimensions', value: '7 sizes' },
+      { label: 'Colors', value: '5 colors' },
+      { label: 'Thickness', value: '6-10 cm' },
+      { label: 'Warranty', value: '5 years' },
+    ],
+    technicalFeatures: ['Heavy vehicle traffic', 'Heavy loads', 'Parking lots', 'Access roads', 'Frost resistant', 'Color Lock', 'Fuel stations', 'Industrial platforms'],
+    advantages: [
+      'Rugged enough for heavily used surfaces',
+      'Available beveled or square-edged',
+      'Half piece for flexible fill-ins',
+      'Green color available exclusively at 10 cm thickness',
+      'Resistant to frost and abrasion',
+      '5-Year Warranty',
+    ],
+    faq: [
+      { question: 'What is the Autobloc paver recommended for?', answer: 'Autobloc is designed for surfaces subject to heavy traffic and heavy loads: parking lots, access roads, fuel stations, industrial platforms, bus stations and walkways with heavy foot traffic.' },
+      { question: 'What thicknesses is Autobloc available in?', answer: 'Autobloc is available in 6 cm, 8 cm, 10 cm thicknesses and a special half piece (10×16.5×8 cm). For heavy vehicle traffic, the 8 and 10 cm thicknesses are recommended.' },
+      { question: 'What does beveled or square-edged Autobloc mean?', answer: 'The beveled variant has slightly rounded edges, giving a softer look and a continuous curb-like laying style; the square-edged variant has straight edges, for more compact installations and a strict geometric look.' },
+      { question: 'What colors are available for Autobloc?', answer: 'Autobloc is available in grey, red, black and white, plus green, available exclusively for the 10 cm thickness.' },
+      { question: 'What is the packaging difference between thicknesses?', answer: 'Although the piece size is the same (20×16.5 cm), the number of pieces per pallet and the pallet weight differ: 330 pcs/1,263 kg for 6 cm, 297 pcs/1,465 kg for 8 cm and 264 pcs/1,635 kg for 10 cm.' },
+      { question: 'Is there a datasheet and Declaration of Performance for Autobloc?', answer: 'Yes. Official technical documentation is available on the product page and on request.' },
+    ],
+  },
+  unda: {
+    shortDescription: 'Wave Design, Easy Installation',
+    description:
+      "Unda offers a delightful combination of strength and appealing design through its wave-like shape. Together with easy installation, this makes it suitable for both residential projects and public spaces. The paver's name was inspired by the Mureș River, on whose bank the Petra Pavaje factory is built.",
+    heroFeatures: ['2 Sizes', '4 Colors', '5-Year Warranty'],
+    specs: [
+      { label: 'Dimensions', value: '2 sizes' },
+      { label: 'Colors', value: '4 colors' },
+      { label: 'Thickness', value: '6-8 cm' },
+      { label: 'Warranty', value: '5 years' },
+    ],
+    technicalFeatures: ['Pedestrian traffic', 'Light vehicle traffic', 'Terraces', 'Walkways and yards', 'Frost resistant', 'Color Lock'],
+    advantages: [
+      'Simple installation with naturally interlocking tiles',
+      'A dynamic, appealing wave-like look',
+      'Available in 6 and 8 cm thicknesses',
+      'Strength and durability of vibro-pressed concrete',
+      '5-Year Warranty',
+    ],
+    faq: [
+      { question: 'What is the Unda paver?', answer: "Unda offers a delightful combination of strength and appealing design, with shapes that interlock naturally and give the surface a dynamic, wave-like look. It's a favorite for walkways and terraces thanks to its easy installation." },
+      { question: 'What sizes is Unda available in?', answer: 'Unda is available in a 22.5×11.2 cm format, in two thicknesses: 6 cm (for light vehicle traffic) and 8 cm (recommended for higher stress). Packaging values differ by thickness.' },
+      { question: 'What colors are available for Unda?', answer: 'Each thickness is available in 4 colors: grey, red, black and white.' },
+      { question: 'How is the Unda paver installed?', answer: "The tiles are laid in parallel rows or a winding pattern, with the natural interlocking of the shapes enabling quick, stable installation on a bed of compacted sand or gravel." },
+      { question: 'Is there a datasheet and Declaration of Performance for Unda?', answer: 'Yes. Official technical documentation is available on the product page and on request.' },
+    ],
+  },
+  con: {
+    shortDescription: 'Cone-Shaped Paver for Unique Patterns',
+    description:
+      'The Con paver is made from strong, durable materials, providing a stable, safe surface suitable for both pedestrian traffic and light vehicles. Thanks to its distinctive shape, it allows for multiple arrangement and combination options, making it ideal for creating unique patterns and designs.',
+    heroFeatures: ['4 Colors', '5-Year Warranty'],
+    specs: [
+      { label: 'Colors', value: '4 colors' },
+      { label: 'Thickness', value: '6 cm' },
+      { label: 'Format', value: 'Cone-shaped 10/5×9.7' },
+      { label: 'Warranty', value: '5 years' },
+    ],
+    technicalFeatures: ['Pedestrian traffic', 'Light vehicles', 'Walkways and pedestrian areas', 'Decorative edging', 'Frost resistant', 'Color Lock'],
+    advantages: [
+      'Cone shape for flexible, curved layouts',
+      'Enables unique patterns and compositions',
+      'Stable, safe surface',
+      'Strength and durability of vibro-pressed concrete',
+      '5-Year Warranty',
+    ],
+    faq: [
+      { question: 'What is the Con paver?', answer: 'Con is a cone-shaped paver (wider at one end, narrower at the other), which allows flexible layouts, curved edging and natural interlocking, successfully used for walkways and pedestrian areas.' },
+      { question: 'What size and thickness does Con have?', answer: 'Con measures 10/5×9.7 cm, with a thickness of 6 cm. It ships on a pallet of 540 pcs, weighing 538 kg, covering 4.45 m² per pallet.' },
+      { question: 'What colors is Con available in?', answer: 'Con is available in 4 colors: grey, red, black and white.' },
+      { question: 'Where is the Con paver typically used?', answer: 'It is suited to walkways, pedestrian areas, yards, building grounds and decorative edging, where the cone shape allows for curved, flexible compositions.' },
+      { question: 'Is there a datasheet and Declaration of Performance for Con?', answer: 'Yes. Official technical documentation is available on the product page and on request.' },
+    ],
+  },
+  'pavaje-eco': {
+    name: 'Eco Pavers',
+    shortDescription: 'Eco-Friendly Landscaping Solution',
+    description:
+      "The grid offers an eco-friendly landscaping solution, often used for reinforcing sloped terrain and paving parking lots or access roads. Its open-space structure allows grass to grow through, giving a more natural, appealing look.",
+    heroFeatures: ['3 Products', '2 Colors', 'Permeable', '5-Year Warranty'],
+    specs: [
+      { label: 'Dimensions', value: '3 variants' },
+      { label: 'Colors', value: '2 colors' },
+      { label: 'Thickness', value: '8-10 cm' },
+      { label: 'Warranty', value: '5 years' },
+    ],
+    technicalFeatures: [
+      'Permeability',
+      'Allows grass to grow through',
+      'Reinforces sloped terrain',
+      'Parking lots and access roads',
+      'Frost resistant',
+      'Color Lock',
+      'Not recommended for heavy vehicle traffic',
+    ],
+    advantages: [
+      'An eco-friendly, nature-inspired solution',
+      'A natural look through grass growth',
+      'Effective slope reinforcement',
+      'Natural rainwater management',
+      '5-Year Warranty',
+    ],
+    faq: [
+      { question: 'What are Petra Pavaje ECO pavers?', answer: 'They are permeable solutions designed to allow vegetation (grass) to grow through the openings in the tile or grid, helping slow rainwater runoff and giving a natural look to the landscaping.' },
+      { question: 'What products does the ECO range include?', answer: 'The ECO range includes the 40×40×8 cm eco-grid, the 60×40×10 cm eco-grid and the Quatro ECO 20×20×8 cm eco-paver.' },
+      { question: 'Where is the eco-paver used?', answer: 'It is recommended for grassed parking, occasional-use access roads, slope reinforcement, green areas and any project where keeping a green surface matters without giving up the ability to drive or walk on it.' },
+      { question: 'What colors are the ECO pavers available in?', answer: 'The grids and Quatro ECO are available in grey and black.' },
+      { question: 'Is there a datasheet for the ECO pavers?', answer: 'Yes. Official technical documentation is available on the product page and on request.' },
+    ],
+  },
 }
+
+// The 19 Quatro variants (src/data/products.ts ids 'quatro-*') are dimensional
+// or color-marking variants of the same square paver, and their RO source
+// copy is itself templated (only the size/color/subtype changes). Generating
+// their translations from small template functions avoids hand-duplicating
+// 19 near-identical blocks and the drift that would invite.
+
+interface QuatroClassicSpec {
+  slug: string
+  dim: string
+  shortDescription: string
+  colorsRo: string[]
+  hasDatasheet: boolean
+}
+
+const QUATRO_CLASSIC_SPECS: QuatroClassicSpec[] = [
+  { slug: 'quatro-10x10x6', dim: '10×10×6', shortDescription: 'Square Shape, Symmetric Compositions', colorsRo: ['Gri', 'Roșu', 'Negru', 'Galben', 'Maro', 'Alb'], hasDatasheet: true },
+  { slug: 'quatro-20x20x6', dim: '20×20×6', shortDescription: 'The Most Popular Format, Versatile', colorsRo: ['Gri', 'Roșu', 'Negru', 'Galben', 'Maro', 'Alb'], hasDatasheet: true },
+  { slug: 'quatro-20x20x8', dim: '20×20×8', shortDescription: 'Extra Thickness, Light Vehicle Traffic', colorsRo: ['Gri', 'Roșu', 'Negru', 'Alb'], hasDatasheet: true },
+  { slug: 'quatro-30x30x6', dim: '30×30×6', shortDescription: 'Generous Format for Large Spaces', colorsRo: ['Gri', 'Roșu', 'Negru', 'Galben', 'Maro', 'Alb'], hasDatasheet: true },
+  { slug: 'quatro-40x40x5', dim: '40×40×5', shortDescription: 'Large Format for Terraces and Walkways', colorsRo: ['Gri', 'Roșu', 'Negru', 'Galben', 'Maro', 'Alb'], hasDatasheet: false },
+  { slug: 'quatro-40x40x6', dim: '40×40×6', shortDescription: 'Large Format, 6 cm Thickness', colorsRo: ['Gri', 'Roșu', 'Negru', 'Galben', 'Maro', 'Alb'], hasDatasheet: true },
+  { slug: 'quatro-50x50x8', dim: '50×50×8', shortDescription: 'XL Format for Visual Impact', colorsRo: ['Gri', 'Negru'], hasDatasheet: true },
+]
+
+function buildQuatroClassicEntry(spec: QuatroClassicSpec): ProductTranslationEn {
+  const colorsEn = spec.colorsRo.map(translateColorName)
+  const colorCount = colorsEn.length
+  const thickness = spec.dim.split('×').pop()
+  return {
+    shortDescription: spec.shortDescription,
+    description: `The Quatro ${spec.dim} paver from the standard Quatro range brings balance and symmetry to any landscaping project. The square shape allows for orderly, checkerboard-style compositions, suited for sidewalks, yards, terraces and pedestrian areas.`,
+    heroFeatures: ['1 Size', `${colorCount} Color${colorCount === 1 ? '' : 's'}`, '5-Year Warranty'],
+    specs: [
+      { label: 'Dimensions', value: '1 size' },
+      { label: 'Colors', value: `${colorCount} color${colorCount === 1 ? '' : 's'}` },
+      { label: 'Thickness', value: `${thickness} cm` },
+      { label: 'Warranty', value: '5 years' },
+    ],
+    technicalFeatures: ['Pedestrian traffic', 'Light vehicle traffic', 'Terraces', 'Walkways and yards', 'Frost resistant', 'Color Lock'],
+    advantages: ['Symmetric checkerboard-style compositions', 'Strength and durability of vibro-pressed concrete', '5-Year Warranty'],
+    faq: [
+      { question: `What colors is the QUATRO ${spec.dim} available in?`, answer: `${colorsEn.join(', ')}, with Color Lock texture to keep the color over time.` },
+      { question: `What type of traffic is the QUATRO ${spec.dim} recommended for?`, answer: 'Recommended for pedestrian traffic and light vehicle traffic: sidewalks, yards, terraces, walkways and residential areas. For heavy vehicle traffic, the SMART variants are recommended.' },
+      { question: 'How is it installed?', answer: 'It is installed on a bed of compacted sand or gravel, in aligned rows (checkerboard style) or offset rows, depending on the desired effect.' },
+      { question: 'Is it frost resistant?', answer: 'Yes, it is made of vibro-pressed concrete with guaranteed frost resistance and comes with a 5-year warranty.' },
+      {
+        question: `Is there a datasheet and Declaration of Performance for QUATRO ${spec.dim}?`,
+        answer: spec.hasDatasheet
+          ? 'Yes, official technical documentation is available on the product page and on request.'
+          : 'Official technical documentation for this format is being finalized for publication; available on request.',
+      },
+    ],
+  }
+}
+
+interface QuatroSmartSpec {
+  slug: string
+  dim: string
+  shortDescription: string
+  colorsRo: string[]
+}
+
+const QUATRO_SMART_SPECS: QuatroSmartSpec[] = [
+  { slug: 'quatro-smart-20x20x8', dim: '20×20×8', shortDescription: 'Extra Strength, Heavy Vehicle Traffic', colorsRo: ['Gri', 'Roșu', 'Negru', 'Alb'] },
+  { slug: 'quatro-smart-20x20x10', dim: '20×20×10', shortDescription: 'The Toughest Quatro Variant', colorsRo: ['Gri', 'Negru'] },
+]
+
+function buildQuatroSmartEntry(spec: QuatroSmartSpec): ProductTranslationEn {
+  const colorsEn = spec.colorsRo.map(translateColorName)
+  const colorCount = colorsEn.length
+  const thickness = spec.dim.split('×').pop()
+  return {
+    shortDescription: spec.shortDescription,
+    description: `Quatro Smart ${spec.dim} is produced with added fiber and a special binder for extra strength under stress. It keeps the same look as the classic version, but its performance allows use in heavy vehicle traffic areas: parking lots, access ramps and interior roads.`,
+    heroFeatures: ['1 Size', `${colorCount} Color${colorCount === 1 ? '' : 's'}`, '5-Year Warranty'],
+    specs: [
+      { label: 'Dimensions', value: '1 size' },
+      { label: 'Colors', value: `${colorCount} color${colorCount === 1 ? '' : 's'}` },
+      { label: 'Thickness', value: `${thickness} cm` },
+      { label: 'Warranty', value: '5 years' },
+    ],
+    technicalFeatures: ['Heavy vehicle traffic', 'Parking lots', 'Extra strength', 'Terraces', 'Walkways and yards', 'Frost resistant', 'Color Lock'],
+    advantages: ['Added fiber and special binder', 'Extra strength under stress', 'Identical look to classic Quatro', '5-Year Warranty'],
+    faq: [
+      { question: `What does the SMART variant mean for QUATRO SMART ${spec.dim}?`, answer: 'The SMART variant is produced with added fiber and a special binder for extra strength under stress. It keeps the same look as the classic version, but its performance allows use in heavy vehicle traffic areas.' },
+      { question: `What colors is the QUATRO SMART ${spec.dim} available in?`, answer: `${colorsEn.join(', ')}, with Color Lock texture to keep the color over time.` },
+      { question: 'What type of traffic is it recommended for?', answer: 'Recommended for heavy vehicle traffic: parking lots, access ramps, circulation areas and interior roads. It has extra resistance to frost and abrasion.' },
+      { question: 'How is it installed?', answer: 'It is installed on a bed of compacted sand or gravel, in aligned rows (checkerboard style) or offset rows, depending on the desired effect.' },
+      { question: `Is there a datasheet and Declaration of Performance for QUATRO SMART ${spec.dim}?`, answer: 'Yes, official technical documentation is available on the product page and on request.' },
+    ],
+  }
+}
+
+const QUATRO_TACTIL_FAQ: ProductFAQ[] = [
+  { question: 'What is the purpose of the Quatro Tactil tiles?', answer: 'The tactile tiles are designed to guide and inform visually impaired pedestrians. The raised texture applied on sidewalks, transit stops and pedestrian crossings signals a change of direction or the presence of hazardous areas.' },
+  { question: 'What is the difference between the dot tile and the line tile?', answer: 'The dot tile signals attention or danger (placed at crossings, platform edges), while the line tile indicates the safe direction of travel. Both combine to form complete wayfinding routes.' },
+  { question: 'What colors is the Tactil tile available in?', answer: 'The Tactil tiles are available in white, in the 20×20×6 cm and 30×30×6 cm sizes.' },
+  { question: 'Where are tactile tiles usually installed?', answer: 'They are installed along pedestrian routes, at crossings, public transit stops, entrances to public buildings and other areas with high foot traffic, both outdoors and indoors.' },
+  { question: 'Is it frost resistant?', answer: 'Yes, the tactile tile is made of vibro-pressed concrete with guaranteed frost resistance and comes with a 5-year warranty.' },
+]
+
+interface QuatroTactilSpec {
+  slug: string
+  dim: string
+  variant: 'Dots' | 'Lines'
+}
+
+const QUATRO_TACTIL_SPECS: QuatroTactilSpec[] = [
+  { slug: 'quatro-tactil-puncte-20x20x6', dim: '20×20×6', variant: 'Dots' },
+  { slug: 'quatro-tactil-puncte-30x30x6', dim: '30×30×6', variant: 'Dots' },
+  { slug: 'quatro-tactil-linii-20x20x6', dim: '20×20×6', variant: 'Lines' },
+  { slug: 'quatro-tactil-linii-30x30x6', dim: '30×30×6', variant: 'Lines' },
+]
+
+function buildQuatroTactilEntry(spec: QuatroTactilSpec): ProductTranslationEn {
+  const description =
+    spec.variant === 'Dots'
+      ? `The Quatro Tactil · Dots ${spec.dim} white tactile paver from the Quatro range is designed to guide and inform visually impaired pedestrians. The raised dot texture signals areas requiring attention or caution, and is used at pedestrian crossings, platform edges and intersections.`
+      : `The Quatro Tactil · Lines ${spec.dim} white tactile paver from the Quatro range is designed to guide and inform visually impaired pedestrians. The raised line texture indicates the safe direction of travel, and is used along pedestrian routes, at public transit stops and in public spaces.`
+  return {
+    shortDescription: 'Tactile Guidance, Accessibility',
+    description,
+    heroFeatures: ['1 Size', 'White Color', 'Tactile Guidance'],
+    specs: [
+      { label: 'Dimensions', value: '1 size' },
+      { label: 'Colors', value: '1 color' },
+      { label: 'Thickness', value: '6 cm' },
+      { label: 'Warranty', value: '5 years' },
+    ],
+    technicalFeatures: ['Guidance for visually impaired pedestrians', 'Standardized raised texture', 'Pedestrian traffic', 'Frost resistant', 'Color Lock'],
+    advantages: ['Dot/line texture per standards', 'Installs flush with regular paving', 'Strength and durability of vibro-pressed concrete', '5-Year Warranty'],
+    faq: QUATRO_TACTIL_FAQ,
+  }
+}
+
+interface QuatroMarkingSpec {
+  slug: string
+  dim: string
+  label: string
+  marks: string
+}
+
+const QUATRO_MARKING_SPECS: QuatroMarkingSpec[] = [
+  { slug: 'quatro-parcare-20x20x6', dim: '20×20×6', label: 'Parking', marks: 'the parking space' },
+  { slug: 'quatro-parcare-20x20x8', dim: '20×20×8', label: 'Parking', marks: 'the parking space' },
+  { slug: 'quatro-parcare-dizabilitati-20x20x6', dim: '20×20×6', label: 'Disability Parking', marks: 'the parking space reserved for people with disabilities' },
+  { slug: 'quatro-parcare-dizabilitati-20x20x8', dim: '20×20×8', label: 'Disability Parking', marks: 'the parking space reserved for people with disabilities' },
+  { slug: 'quatro-acces-biciclete-20x20x6', dim: '20×20×6', label: 'Bike Access', marks: 'the bike access route' },
+  { slug: 'quatro-acces-biciclete-20x20x8', dim: '20×20×8', label: 'Bike Access', marks: 'the bike access route' },
+]
+
+const QUATRO_MARKING_DESCRIPTIONS: Record<string, string> = {
+  Parking:
+    'The Parking marking tile integrates the raised "P" symbol directly into the paved surface, permanently marking parking spaces. It\'s a perfect replacement for paint, keeping the same format and thickness as the Quatro paver.',
+  'Disability Parking':
+    'The Disability Parking marking tile integrates the raised international disability symbol, permanently reserving parking spaces for people with disabilities. It installs directly within the paving, without any extra work.',
+  'Bike Access':
+    'The Bike Access marking tile integrates the raised bicycle symbol, permanently indicating bike access routes. It replaces paint and temporary signage, keeping the paved surface looking neat and orderly.',
+}
+
+function buildQuatroMarkingEntry(spec: QuatroMarkingSpec): ProductTranslationEn {
+  const thickness = spec.dim.split('×').pop()
+  return {
+    shortDescription: 'Durable Marking, Clean Look',
+    description: QUATRO_MARKING_DESCRIPTIONS[spec.label],
+    heroFeatures: ['1 Size', 'Black Color', '5-Year Warranty'],
+    specs: [
+      { label: 'Dimensions', value: '1 size' },
+      { label: 'Colors', value: '1 color' },
+      { label: 'Thickness', value: `${thickness} cm` },
+      { label: 'Warranty', value: '5 years' },
+    ],
+    technicalFeatures: ['Durable marking within the paved surface', 'Raised, easily recognizable symbol', 'Pedestrian traffic', 'Frost resistant', 'Color Lock'],
+    advantages: ['A durable alternative to paint', 'Blends seamlessly into standard paving', 'Requires no special maintenance', '5-Year Warranty'],
+    faq: [
+      { question: `What does the ${spec.label} marking tile represent?`, answer: `It's a 20×20 cm Quatro paver tile with a raised symbol that marks ${spec.marks}. It blends perfectly into the paved surface, keeping the same format and thickness.` },
+      { question: `What colors is the ${spec.label} marking tile available in?`, answer: `The ${spec.label} marking tile is available in black, which provides clear contrast against lighter paving.` },
+      { question: 'Where is it usually installed?', answer: 'It is installed in parks, parking lots, public spaces and building grounds, in place of a regular paving tile, for durable, permanent marking.' },
+      { question: 'How is it installed?', answer: 'It installs exactly like the classic paver, on a bed of compacted sand or gravel, integrated into the row of paving.' },
+      { question: 'Is it frost resistant?', answer: 'Yes, the marking tile is made of vibro-pressed concrete with guaranteed frost resistance and comes with a 5-year warranty.' },
+    ],
+  }
+}
+
+for (const spec of QUATRO_CLASSIC_SPECS) productTranslationsEn[spec.slug] = buildQuatroClassicEntry(spec)
+for (const spec of QUATRO_SMART_SPECS) productTranslationsEn[spec.slug] = buildQuatroSmartEntry(spec)
+for (const spec of QUATRO_TACTIL_SPECS) productTranslationsEn[spec.slug] = buildQuatroTactilEntry(spec)
+for (const spec of QUATRO_MARKING_SPECS) productTranslationsEn[spec.slug] = buildQuatroMarkingEntry(spec)
 
 export function translateColorName(name: string): string {
   return COLOR_NAME_EN[name] || name

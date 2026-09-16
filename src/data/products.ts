@@ -4003,6 +4003,7 @@ export function localizeProduct(product: Product, lang: 'ro' | 'en'): Product {
     ...product,
     ...(t
       ? {
+          name: t.name ?? product.name,
           shortDescription: t.shortDescription,
           description: t.description,
           heroFeatures: t.heroFeatures,

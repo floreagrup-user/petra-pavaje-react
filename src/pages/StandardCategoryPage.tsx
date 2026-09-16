@@ -1,13 +1,14 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { Link, useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ChevronDown, SlidersHorizontal, X, ArrowRight, MessageCircle, Calculator } from 'lucide-react'
-import { getProductsByCategory } from '@/data/products'
+import { getProductsByCategory, localizeProduct } from '@/data/products'
 import type { ProductFAQ } from '@/data/types'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { useCategoryListSEO } from '@/hooks/useCategoryListSEO'
 import { ProductGridCard } from '@/components/product/ProductGridCard'
 import { CategoryFilterPanel, ActiveFilterChips } from '@/components/product/CategoryFilterPanel'
+import { isEnglishPath } from '@/lib/i18n-routes'
 import {
   buildProductFacets,
   buildHubProduct,
@@ -28,6 +29,14 @@ const SORT_LABELS: Record<SortKey, string> = {
   'nume-desc': 'Nume Z-A',
   'grosime-asc': 'Grosime crescător',
   'grosime-desc': 'Grosime descrescător',
+}
+
+const SORT_LABELS_EN: Record<SortKey, string> = {
+  recomandate: 'Recommended',
+  'nume-asc': 'Name A-Z',
+  'nume-desc': 'Name Z-A',
+  'grosime-asc': 'Thickness ascending',
+  'grosime-desc': 'Thickness descending',
 }
 
 const STANDARD_FAQ: ProductFAQ[] = [
@@ -58,9 +67,38 @@ const STANDARD_FAQ: ProductFAQ[] = [
   },
 ]
 
-function useStandardProducts() {
+const STANDARD_FAQ_EN: ProductFAQ[] = [
+  {
+    question: 'What Standard pavers does Petra Pavaje offer?',
+    answer:
+      'The Standard range includes Holland, Autobloc, Unda, Quatro (in 19 variants, with its own dedicated page), Con and Eco Pavers (permeable grid tiles) — robust solutions with the best value for money, for any type of surface.',
+  },
+  {
+    question: 'What thicknesses are available and what traffic is each recommended for?',
+    answer:
+      'Thicknesses range from 4 to 10 cm. 4-6 cm thicknesses suit pedestrian and light vehicle traffic, while 8-10 cm (available for Autobloc and Holland) are recommended for heavy vehicle traffic and heavy loads — parking lots, access roads, fuel stations.',
+  },
+  {
+    question: 'What is Quatro and why does it have 19 variants?',
+    answer:
+      'Quatro is the most popular standard format: 9 classic square sizes, 2 reinforced SMART variants for heavy vehicle traffic, 4 tactile tiles for visually impaired pedestrians, and 6 urban markings (parking, disability, bike access). All variants are featured on the dedicated Quatro page.',
+  },
+  {
+    question: 'What is Eco Pavers and when is it used?',
+    answer:
+      'Eco Pavers is the range of grid tiles with openings for grass or gravel, used for eco-friendly parking lots and surfaces with natural rainwater drainage.',
+  },
+  {
+    question: 'What is the difference between Standard and Premium pavers?',
+    answer:
+      'The Standard range focuses on ruggedness, formats suited to heavy vehicle traffic and a competitive price, with a narrower color palette. The Premium range offers a much wider palette of colors and finishes (antiqued, structured surfaces) inspired by natural stone, plus Color Lock technology.',
+  },
+]
+
+function useStandardProducts(isEnglish: boolean) {
   return useMemo(() => {
-    const all = getProductsByCategory('standard')
+    const lang = isEnglish ? 'en' : 'ro'
+    const all = getProductsByCategory('standard').map((p) => localizeProduct(p, lang))
     const quatroVariants = all.filter((p) => p.slug.startsWith('quatro-'))
     const rest = all.filter((p) => !p.slug.startsWith('quatro-'))
 
@@ -70,22 +108,24 @@ function useStandardProducts() {
         name: 'Quatro',
         slug: 'quatro',
         category: 'standard',
-        shortDescription: 'Echilibru, Simetrie, Design Flexibil — 19 variante',
-        description:
-          'Forma pătrată oferă o suprafață echilibrată, simetrică. Quatro este cel mai popular format de pavaj exterior, disponibil într-o gamă completă de 19 variante: pavaj simplu, variante SMART de înaltă rezistență, dale tactile și marcaje speciale.',
+        shortDescription: isEnglish ? 'Balance, Symmetry, Flexible Design — 19 Variants' : 'Echilibru, Simetrie, Design Flexibil — 19 variante',
+        description: isEnglish
+          ? 'The square shape creates a balanced, symmetric surface. Quatro is the most popular outdoor paver format, available in a complete range of 19 variants: standard pavers, high-strength SMART variants, tactile tiles and special markings.'
+          : 'Forma pătrată oferă o suprafață echilibrată, simetrică. Quatro este cel mai popular format de pavaj exterior, disponibil într-o gamă completă de 19 variante: pavaj simplu, variante SMART de înaltă rezistență, dale tactile și marcaje speciale.',
         image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/1.-Quatro-20-x-20-cm-gri.avif',
-        dimensions: '19 variante',
-        weight: 'Vezi pagina dedicată pentru fiecare variantă',
+        dimensions: isEnglish ? '19 variants' : '19 variante',
+        weight: isEnglish ? 'See the dedicated page for each variant' : 'Vezi pagina dedicată pentru fiecare variantă',
         featured: true,
       },
       quatroVariants
     )
 
     return [...rest.slice(0, 3), quatroHub, ...rest.slice(3)]
-  }, [])
+  }, [isEnglish])
 }
 
 export function StandardCategoryPage() {
+  const isEnglish = isEnglishPath(useLocation().pathname)
   const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
   const [searchParams, setSearchParams] = useSearchParams()
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
@@ -93,7 +133,11 @@ export function StandardCategoryPage() {
   const filterTriggerRef = useRef<HTMLButtonElement>(null)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
 
-  const allProducts = useStandardProducts()
+  const basePath = isEnglish ? '/en/pavaje-standard' : '/pavaje-standard'
+  const sortLabels = isEnglish ? SORT_LABELS_EN : SORT_LABELS
+  const faqItems = isEnglish ? STANDARD_FAQ_EN : STANDARD_FAQ
+
+  const allProducts = useStandardProducts(isEnglish)
   const facets = useMemo(() => buildProductFacets(allProducts), [allProducts])
   const filters = useMemo(() => parseFiltersFromSearchParams(searchParams), [searchParams])
   const sortKey = useMemo(() => parseSortFromSearchParams(searchParams), [searchParams])
@@ -103,8 +147,16 @@ export function StandardCategoryPage() {
     return sortProducts(filtered, sortKey)
   }, [allProducts, filters, sortKey])
 
-  useCategoryListSEO(allProducts, STANDARD_FAQ, {
+  useCategoryListSEO(allProducts, faqItems, isEnglish ? {
+    path: '/en/pavaje-standard',
+    roPath: '/pavaje-standard',
+    title: 'Standard Pavers - Holland, Autobloc, Unda, Quatro | Petra Pavaje',
+    description:
+      'The Petra Pavaje Standard paver range: Holland, Autobloc, Unda, Quatro, Con and Eco Pavers — robust solutions with the best value for money, for sidewalks, walkways and heavy vehicle traffic.',
+    breadcrumbLabel: 'Standard Pavers',
+  } : {
     path: '/pavaje-standard',
+    enPath: '/en/pavaje-standard',
     title: 'Pavaje Standard - Holland, Autobloc, Unda, Quatro | Petra Pavaje',
     description:
       'Gama Pavaje Standard Petra Pavaje: Holland, Autobloc, Unda, Quatro, Con și Pavaje Eco — soluții robuste, cu raport optim calitate-preț, pentru trotuare, alei și trafic auto intens.',
@@ -148,14 +200,15 @@ export function StandardCategoryPage() {
         <div className="container-premium">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <nav className="flex items-center gap-2 text-sm text-charcoal-400 mb-6">
-              <Link to="/" className="hover:text-white transition-colors">Acasă</Link>
+              <Link to={isEnglish ? '/en' : '/'} className="hover:text-white transition-colors">{isEnglish ? 'Home' : 'Acasă'}</Link>
               <span>/</span>
-              <span className="text-white">Pavaje Standard</span>
+              <span className="text-white">{isEnglish ? 'Standard Pavers' : 'Pavaje Standard'}</span>
             </nav>
-            <h1 className="heading-h1 mb-4">Pavaje Standard</h1>
+            <h1 className="heading-h1 mb-4">{isEnglish ? 'Standard Pavers' : 'Pavaje Standard'}</h1>
             <p className="text-body-lg text-charcoal-400 max-w-3xl">
-              Soluții robuste din beton vibropresat pentru orice tip de proiect — de la trotuare pietonale până la
-              parcări și drumuri de acces cu trafic auto intens, cu cel mai bun raport calitate-preț.
+              {isEnglish
+                ? 'Robust vibro-pressed concrete solutions for any type of project — from pedestrian sidewalks to parking lots and access roads with heavy vehicle traffic, with the best value for money.'
+                : 'Soluții robuste din beton vibropresat pentru orice tip de proiect — de la trotuare pietonale până la parcări și drumuri de acces cu trafic auto intens, cu cel mai bun raport calitate-preț.'}
             </p>
           </motion.div>
         </div>
@@ -163,12 +216,11 @@ export function StandardCategoryPage() {
 
       <section className="py-10 md:py-12 bg-white border-b border-charcoal-100">
         <div className="container-premium">
-          <h2 className="heading-h3 text-charcoal-900 mb-3">Ce sunt pavajele Standard Petra Pavaje?</h2>
+          <h2 className="heading-h3 text-charcoal-900 mb-3">{isEnglish ? 'What are Petra Pavaje Standard pavers?' : 'Ce sunt pavajele Standard Petra Pavaje?'}</h2>
           <p className="text-body text-charcoal-600 max-w-3xl">
-            Pavajele Standard sunt gândite pentru amenajări funcționale: grosimi de la 4 la 10 cm — inclusiv variante
-            întărite pentru trafic auto greu — culori esențiale și, pentru gama Quatro, un sistem complet de dale
-            simple, întărite (SMART), tactile și de marcaj urban. Față de gama Premium, Standard păstrează o paletă
-            de culori mai restrânsă și mizează pe robustețe și preț.
+            {isEnglish
+              ? "Standard pavers are designed for functional landscaping: thicknesses from 4 to 10 cm — including reinforced variants for heavy vehicle traffic — essential colors and, for the Quatro range, a complete system of standard, reinforced (SMART), tactile and urban marking tiles. Compared to the Premium range, Standard keeps a narrower color palette and focuses on ruggedness and price."
+              : 'Pavajele Standard sunt gândite pentru amenajări funcționale: grosimi de la 4 la 10 cm — inclusiv variante întărite pentru trafic auto greu — culori esențiale și, pentru gama Quatro, un sistem complet de dale simple, întărite (SMART), tactile și de marcaj urban. Față de gama Premium, Standard păstrează o paletă de culori mai restrânsă și mizează pe robustețe și preț.'}
           </p>
         </div>
       </section>
@@ -178,8 +230,8 @@ export function StandardCategoryPage() {
           <div className="flex flex-wrap items-center justify-between gap-4 mb-6 pb-4 border-b border-charcoal-100">
             <p className="text-sm text-charcoal-500">
               <span className="font-semibold text-charcoal-900">{filteredProducts.length}</span>{' '}
-              {filteredProducts.length === 1 ? 'produs' : 'produse'}
-              {activeFilters && <span> găsite</span>}
+              {isEnglish ? (filteredProducts.length === 1 ? 'product' : 'products') : (filteredProducts.length === 1 ? 'produs' : 'produse')}
+              {activeFilters && <span> {isEnglish ? 'found' : 'găsite'}</span>}
             </p>
             <div className="flex items-center gap-3">
               <button
@@ -189,7 +241,7 @@ export function StandardCategoryPage() {
                 className="lg:hidden inline-flex items-center gap-2 px-4 py-2 border border-charcoal-200 rounded-lg text-sm font-medium text-charcoal-700 hover:border-charcoal-400 transition-colors"
               >
                 <SlidersHorizontal className="w-4 h-4" />
-                Filtre
+                {isEnglish ? 'Filters' : 'Filtre'}
                 {activeFilters && <span className="w-2 h-2 rounded-full bg-brand-600" />}
               </button>
               <div className="relative">
@@ -197,9 +249,9 @@ export function StandardCategoryPage() {
                   value={sortKey}
                   onChange={(e) => updateSort(e.target.value as SortKey)}
                   className="appearance-none pl-4 pr-9 py-2 border border-charcoal-200 rounded-lg text-sm font-medium text-charcoal-700 hover:border-charcoal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500 bg-white"
-                  aria-label="Sortare produse"
+                  aria-label={isEnglish ? 'Sort products' : 'Sortare produse'}
                 >
-                  {Object.entries(SORT_LABELS).map(([key, label]) => (
+                  {Object.entries(sortLabels).map(([key, label]) => (
                     <option key={key} value={key}>{label}</option>
                   ))}
                 </select>
@@ -208,25 +260,26 @@ export function StandardCategoryPage() {
             </div>
           </div>
 
-          <ActiveFilterChips facets={facets} filters={filters} onChange={updateFilters} onClear={clearFilters} />
+          <ActiveFilterChips facets={facets} filters={filters} onChange={updateFilters} onClear={clearFilters} lang={isEnglish ? 'en' : 'ro'} />
 
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-            <aside className="hidden lg:block lg:col-span-1" aria-label="Filtre produse">
+            <aside className="hidden lg:block lg:col-span-1" aria-label={isEnglish ? 'Product filters' : 'Filtre produse'}>
               <CategoryFilterPanel
                 facets={facets}
                 filters={filters}
                 onChange={updateFilters}
                 onClear={clearFilters}
                 hasActiveFilters={activeFilters}
+                lang={isEnglish ? 'en' : 'ro'}
               />
             </aside>
 
             <div className="lg:col-span-3">
               {filteredProducts.length === 0 ? (
                 <div className="text-center py-16 px-4 bg-stone-50 rounded-xl">
-                  <p className="text-charcoal-600 mb-4">Niciun produs nu corespunde filtrelor selectate.</p>
+                  <p className="text-charcoal-600 mb-4">{isEnglish ? 'No products match the selected filters.' : 'Niciun produs nu corespunde filtrelor selectate.'}</p>
                   <button type="button" onClick={clearFilters} className="btn-secondary">
-                    Șterge filtrele
+                    {isEnglish ? 'Clear filters' : 'Șterge filtrele'}
                   </button>
                 </div>
               ) : (
@@ -240,9 +293,10 @@ export function StandardCategoryPage() {
                     >
                       <ProductGridCard
                         product={product}
-                        basePath="/pavaje-standard"
+                        basePath={basePath}
                         badgeLabel="Popular"
-                        extraBadge={product.slug === 'quatro' ? '19 Variante' : undefined}
+                        extraBadge={product.slug === 'quatro' ? (isEnglish ? '19 Variants' : '19 Variante') : undefined}
+                        lang={isEnglish ? 'en' : 'ro'}
                       />
                     </motion.div>
                   ))}
@@ -254,17 +308,17 @@ export function StandardCategoryPage() {
       </section>
 
       {mobileFiltersOpen && (
-        <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-label="Filtre produse">
+        <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-label={isEnglish ? 'Product filters' : 'Filtre produse'}>
           <div className="absolute inset-0 bg-charcoal-950/50" onClick={closeMobileFilters} />
           <div className="absolute inset-x-0 bottom-0 max-h-[85vh] overflow-y-auto bg-white rounded-t-2xl p-6">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="heading-h3 text-charcoal-900">Filtre</h2>
+              <h2 className="heading-h3 text-charcoal-900">{isEnglish ? 'Filters' : 'Filtre'}</h2>
               <button
                 ref={closeButtonRef}
                 type="button"
                 onClick={closeMobileFilters}
                 className="p-2 -mr-2 text-charcoal-500 hover:text-charcoal-900 focus:outline-none focus:ring-2 focus:ring-brand-500 rounded-lg"
-                aria-label="Închide filtrele"
+                aria-label={isEnglish ? 'Close filters' : 'Închide filtrele'}
               >
                 <X className="w-5 h-5" />
               </button>
@@ -275,9 +329,10 @@ export function StandardCategoryPage() {
               onChange={updateFilters}
               onClear={clearFilters}
               hasActiveFilters={activeFilters}
+              lang={isEnglish ? 'en' : 'ro'}
             />
             <button type="button" onClick={closeMobileFilters} className="btn-primary w-full mt-6">
-              Vezi {filteredProducts.length} {filteredProducts.length === 1 ? 'produs' : 'produse'}
+              {isEnglish ? 'View' : 'Vezi'} {filteredProducts.length} {isEnglish ? (filteredProducts.length === 1 ? 'product' : 'products') : (filteredProducts.length === 1 ? 'produs' : 'produse')}
             </button>
           </div>
         </div>
@@ -286,25 +341,26 @@ export function StandardCategoryPage() {
       <section className="py-12 md:py-16 bg-charcoal-50">
         <div className="container-premium">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="heading-h3 text-charcoal-900 mb-3">Nu știi ce pavaj să alegi?</h2>
+            <h2 className="heading-h3 text-charcoal-900 mb-3">{isEnglish ? "Don't know which paver to choose?" : 'Nu știi ce pavaj să alegi?'}</h2>
             <p className="text-body text-charcoal-600 mb-6">
-              Echipa noastră te poate ajuta să alegi modelul și grosimea potrivite pentru tipul de trafic al
-              proiectului tău.
+              {isEnglish
+                ? "Our team can help you choose the right model and thickness for your project's traffic type."
+                : 'Echipa noastră te poate ajuta să alegi modelul și grosimea potrivite pentru tipul de trafic al proiectului tău.'}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-              <Link to="/contact" className="btn-primary">
+              <Link to={isEnglish ? '/en/contact' : '/contact'} className="btn-primary">
                 <MessageCircle className="w-4 h-4 mr-2" />
-                Cere o ofertă
+                {isEnglish ? 'Request a Quote' : 'Cere o ofertă'}
               </Link>
-              <Link to="/calculator-pavaj?category=standard" className="btn-secondary">
+              <Link to={`${isEnglish ? '/en' : ''}/calculator-pavaj?category=standard`} className="btn-secondary">
                 <Calculator className="w-4 h-4 mr-2" />
-                Calculează necesarul
+                {isEnglish ? 'Calculate Requirement' : 'Calculează necesarul'}
               </Link>
             </div>
             <p className="text-sm text-charcoal-500 mt-6">
-              Cauți mai multe culori și finisaje?{' '}
-              <Link to="/pavaje-premium" className="link-premium">
-                Vezi și gama Pavaje Premium
+              {isEnglish ? 'Looking for more colors and finishes? ' : 'Cauți mai multe culori și finisaje? '}
+              <Link to={isEnglish ? '/en/pavaje-premium' : '/pavaje-premium'} className="link-premium">
+                {isEnglish ? 'See our Premium Pavers range' : 'Vezi și gama Pavaje Premium'}
                 <ArrowRight className="w-3.5 h-3.5 inline ml-1" />
               </Link>
             </p>
@@ -315,11 +371,11 @@ export function StandardCategoryPage() {
       <section className="py-12 md:py-16">
         <div className="container-premium">
           <div className="text-center mb-10">
-            <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">Întrebări Frecvente</p>
-            <h2 className="heading-h2 text-charcoal-900">Tot ce trebuie să știi despre gama Standard</h2>
+            <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">{isEnglish ? 'Frequently Asked Questions' : 'Întrebări Frecvente'}</p>
+            <h2 className="heading-h2 text-charcoal-900">{isEnglish ? 'Everything you need to know about the Standard range' : 'Tot ce trebuie să știi despre gama Standard'}</h2>
           </div>
           <div className="max-w-3xl mx-auto space-y-3">
-            {STANDARD_FAQ.map((item, idx) => (
+            {faqItems.map((item, idx) => (
               <div key={item.question} className="bg-white rounded-xl border border-charcoal-100 overflow-hidden">
                 <button
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
