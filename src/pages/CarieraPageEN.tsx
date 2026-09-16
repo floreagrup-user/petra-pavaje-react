@@ -10,37 +10,37 @@ import { trackEvent } from '@/lib/analytics'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, upsertHreflangPair, resetSEO } from '@/hooks/seo-utils'
 
 const STATS = [
-  { value: '700+', label: 'Angajați' },
-  { value: '4', label: 'Fabrici în România' },
-  { value: '25+', label: 'Ani de experiență' },
+  { value: '700+', label: 'Employees' },
+  { value: '4', label: 'Factories in Romania' },
+  { value: '25+', label: 'Years of Experience' },
 ]
 
 const HIGHLIGHTS = [
-  { icon: Factory, title: 'Fabrici Moderne', body: 'Echipamente de ultimă generație și condiții europene de muncă.' },
-  { icon: TrendingUp, title: 'Dezvoltare Continuă', body: 'Programe de training și oportunități de avansare.' },
-  { icon: Handshake, title: 'Echipă Unită', body: 'Mediu de lucru prietenos și colaborativ.' },
+  { icon: Factory, title: 'Modern Factories', body: 'State-of-the-art equipment and European working conditions.' },
+  { icon: TrendingUp, title: 'Continuous Growth', body: 'Training programs and opportunities for advancement.' },
+  { icon: Handshake, title: 'A United Team', body: 'A friendly, collaborative work environment.' },
 ]
 
 const BENEFITS = [
-  { icon: Wallet, title: 'Salariu Competitiv', body: 'Pachet salarial atractiv, cu bonusuri de performanță și prime pentru rezultate excepționale.' },
-  { icon: GraduationCap, title: 'Training & Dezvoltare', body: 'Programe de formare profesională, cursuri de specializare și oportunități de avansare.' },
-  { icon: Car, title: 'Transport Asigurat', body: 'Transport gratuit de la domiciliu pentru angajații din zonele apropiate fabricilor.' },
-  { icon: Clock, title: 'Program Flexibil', body: 'Echilibru între viața profesională și personală, cu program adaptat nevoilor tale.' },
-  { icon: ShieldCheck, title: 'Siguranță la Muncă', body: 'Standarde europene de protecție a muncii, echipament de protecție de calitate.' },
-  { icon: PartyPopper, title: 'Evenimente & Team Building', body: 'Petreceri de companie, excursii și activități de team building pe tot parcursul anului.' },
+  { icon: Wallet, title: 'Competitive Salary', body: 'An attractive pay package, with performance bonuses and rewards for outstanding results.' },
+  { icon: GraduationCap, title: 'Training & Development', body: 'Professional training programs, specialization courses, and opportunities for advancement.' },
+  { icon: Car, title: 'Transport Provided', body: 'Free transport from home for employees living near our factories.' },
+  { icon: Clock, title: 'Flexible Schedule', body: 'A healthy work-life balance, with schedules adapted to your needs.' },
+  { icon: ShieldCheck, title: 'Workplace Safety', body: 'European occupational-safety standards, quality protective equipment.' },
+  { icon: PartyPopper, title: 'Events & Team Building', body: 'Company parties, trips, and team-building activities throughout the year.' },
 ]
 
-export function CarieraPage() {
+export function CarieraPageEN() {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', position: '', message: '' })
   const [submitting, setSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
   const [submitError, setSubmitError] = useState(false)
 
   useEffect(() => {
-    const url = `${window.location.origin}/cariera`
-    const title = `Carieră - Construiește-ți Viitorul Alături de Noi | ${SEO_SITE_NAME}`
+    const url = `${window.location.origin}/en/cariera`
+    const title = `Careers - Build Your Future With Us | ${SEO_SITE_NAME}`
     const description =
-      'Alătură-te unei echipe de peste 700 de profesioniști la Petra Pavaje. Descoperă beneficiile și pozițiile disponibile în cele 4 fabrici din România.'
+      'Join a team of over 700 professionals at Petra Pavaje. Discover the benefits and open positions across our 4 factories in Romania.'
 
     document.title = title
     upsertMeta('name', 'description', description)
@@ -59,8 +59,8 @@ export function CarieraPage() {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
-        { '@type': 'ListItem', position: 2, name: 'Carieră', item: url },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${window.location.origin}/en` },
+        { '@type': 'ListItem', position: 2, name: 'Careers', item: url },
       ],
     })
 
@@ -79,10 +79,10 @@ export function CarieraPage() {
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
-          message: `Poziție dorită: ${formData.position || 'Nespecificat'}\n\n${formData.message}`,
+          message: `Desired position: ${formData.position || 'Not specified'}\n\n${formData.message}`,
           type: 'career',
           repEmail: 'cariera@petrapavaje.ro',
-          repName: 'Departament HR',
+          repName: 'HR Department',
         }),
       })
       if (!res.ok) throw new Error('Request failed')
@@ -102,15 +102,15 @@ export function CarieraPage() {
         <div className="container-premium">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <nav className="flex items-center gap-2 text-sm text-charcoal-400 mb-6">
-              <Link to="/" className="hover:text-white transition-colors">Acasă</Link>
+              <Link to="/en" className="hover:text-white transition-colors">Home</Link>
               <span>/</span>
-              <span className="text-white">Carieră</span>
+              <span className="text-white">Careers</span>
             </nav>
-            <p className="text-brand-500 text-sm font-medium tracking-[0.2em] uppercase mb-3">Angajăm în 4 locații</p>
-            <h1 className="heading-h1 mb-4 max-w-3xl">Construiește-ți Viitorul Alături de Noi</h1>
+            <p className="text-brand-500 text-sm font-medium tracking-[0.2em] uppercase mb-3">Hiring at 4 Locations</p>
+            <h1 className="heading-h1 mb-4 max-w-3xl">Build Your Future With Us</h1>
             <p className="text-body-lg text-charcoal-400 max-w-2xl mb-10">
-              Alătură-te unei echipe de peste 700 de profesioniști pasionați. La Petra Pavaje, fiecare zi înseamnă o
-              nouă oportunitate de a crea ceva durabil.
+              Join a team of over 700 passionate professionals. At Petra Pavaje, every day is a new opportunity to
+              create something that lasts.
             </p>
 
             <div className="flex flex-wrap gap-10">
@@ -160,8 +160,8 @@ export function CarieraPage() {
             transition={{ duration: 0.5 }}
             className="text-center mb-12"
           >
-            <p className="text-brand-600 text-sm font-medium tracking-[0.2em] uppercase mb-2">De ce Petra Pavaje</p>
-            <h2 className="heading-h2 text-charcoal-900">Beneficii pentru Angajații Noștri</h2>
+            <p className="text-brand-600 text-sm font-medium tracking-[0.2em] uppercase mb-2">Why Petra Pavaje</p>
+            <h2 className="heading-h2 text-charcoal-900">Benefits for Our Employees</h2>
           </motion.div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {BENEFITS.map((item) => {
@@ -189,8 +189,8 @@ export function CarieraPage() {
             transition={{ duration: 0.5 }}
             className="text-center mb-12"
           >
-            <p className="text-brand-600 text-sm font-medium tracking-[0.2em] uppercase mb-2">Unde ne găsești</p>
-            <h2 className="heading-h2 text-charcoal-900">Fabricile Noastre</h2>
+            <p className="text-brand-600 text-sm font-medium tracking-[0.2em] uppercase mb-2">Where to Find Us</p>
+            <h2 className="heading-h2 text-charcoal-900">Our Factories</h2>
           </motion.div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {factories.map((factory, index) => (
@@ -214,11 +214,10 @@ export function CarieraPage() {
         <div className="container-premium">
           <div className="grid lg:grid-cols-2 gap-12 items-start max-w-4xl mx-auto">
             <div>
-              <p className="text-brand-600 text-sm font-medium tracking-[0.2em] uppercase mb-2">Aplică acum</p>
-              <h2 className="heading-h2 text-charcoal-900 mb-4">Fă Primul Pas Spre Cariera Ta</h2>
+              <p className="text-brand-600 text-sm font-medium tracking-[0.2em] uppercase mb-2">Apply Now</p>
+              <h2 className="heading-h2 text-charcoal-900 mb-4">Take the First Step Toward Your Career</h2>
               <p className="text-charcoal-600 leading-relaxed mb-6">
-                Completează formularul alăturat și ne vom întoarce cu un răspuns în cel mai scurt timp. Abia
-                așteptăm să te cunoaștem!
+                Fill in the form and we'll get back to you as soon as possible. We can't wait to meet you!
               </p>
               <div className="space-y-3">
                 <a href="mailto:cariera@petrapavaje.ro" onClick={() => trackEvent('email_click')} className="flex items-center gap-3 text-charcoal-700 hover:text-brand-600 transition-colors">
@@ -227,21 +226,21 @@ export function CarieraPage() {
                 </a>
                 <div className="flex items-center gap-3 text-charcoal-500">
                   <Clock className="w-4 h-4 text-brand-600 shrink-0" />
-                  Luni - Vineri, 08:00 - 17:00
+                  Monday - Friday, 08:00 - 17:00
                 </div>
               </div>
             </div>
 
             {submitted ? (
               <div className="p-8 bg-white rounded-xl text-center border border-charcoal-100">
-                <h3 className="text-xl font-semibold text-charcoal-900 mb-2">Aplicație trimisă cu succes!</h3>
-                <p className="text-charcoal-500">Te vom contacta în cel mai scurt timp.</p>
+                <h3 className="text-xl font-semibold text-charcoal-900 mb-2">Application sent successfully!</h3>
+                <p className="text-charcoal-500">We'll get back to you as soon as possible.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4 bg-white p-6 rounded-xl border border-charcoal-100">
                 <input
                   type="text"
-                  placeholder="Numele tău *"
+                  placeholder="Your name *"
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -257,20 +256,20 @@ export function CarieraPage() {
                 />
                 <input
                   type="tel"
-                  placeholder="Telefon"
+                  placeholder="Phone"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full px-4 py-3 bg-white border border-charcoal-200 rounded-xl text-charcoal-900 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-transparent transition-all"
                 />
                 <input
                   type="text"
-                  placeholder="Poziția dorită"
+                  placeholder="Desired position"
                   value={formData.position}
                   onChange={(e) => setFormData({ ...formData, position: e.target.value })}
                   className="w-full px-4 py-3 bg-white border border-charcoal-200 rounded-xl text-charcoal-900 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-transparent transition-all"
                 />
                 <textarea
-                  placeholder="Mesaj *"
+                  placeholder="Message *"
                   required
                   rows={4}
                   value={formData.message}
@@ -278,11 +277,11 @@ export function CarieraPage() {
                   className="w-full px-4 py-3 bg-white border border-charcoal-200 rounded-xl text-charcoal-900 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-transparent transition-all resize-none"
                 />
                 {submitError && (
-                  <p className="text-sm text-red-600">A apărut o eroare. Te rugăm încearcă din nou sau scrie-ne direct pe email.</p>
+                  <p className="text-sm text-red-600">Something went wrong. Please try again or email us directly.</p>
                 )}
                 <button type="submit" disabled={submitting} className="btn-primary w-full justify-center group disabled:opacity-60 disabled:cursor-not-allowed">
                   <Send className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
-                  {submitting ? 'Se trimite...' : 'Trimite aplicația'}
+                  {submitting ? 'Sending…' : 'Send Application'}
                 </button>
               </form>
             )}

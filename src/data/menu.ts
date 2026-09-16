@@ -178,3 +178,58 @@ export const socialLinks = [
   { name: 'LinkedIn', href: 'https://www.linkedin.com/company/florea-grup/', icon: 'linkedin' },
   { name: 'Pinterest', href: 'https://www.pinterest.com/petrapavaje/', icon: 'pinterest' },
 ]
+
+// English navigation — scoped to the pages that actually have an /en
+// translation. The product catalog, blog and technical documents are not
+// translated, so "Products"/"Blog" here intentionally link back to the
+// Romanian catalog rather than to a non-existent /en/produse route.
+export const enMenu: MenuItem[] = [
+  { label: 'Products', href: '/produse' },
+  {
+    label: 'Company',
+    href: '/en/despre-noi',
+    children: [
+      { label: 'About Us', href: '/en/despre-noi' },
+      { label: 'Florea Grup – 30 Years', href: '/en/florea-grup' },
+      { label: 'Sustainability', href: '/en/sustenabilitate' },
+      { label: 'Warranty', href: '/en/garantie' },
+      { label: 'Laboratory', href: '/en/laborator' },
+      { label: 'Careers', href: '/en/cariera' },
+    ],
+  },
+  {
+    label: 'Resources',
+    href: '/en/calculator-pavaj',
+    children: [
+      { label: 'Paving Calculator', href: '/en/calculator-pavaj' },
+      { label: 'Installation Guide', href: '/en/montaj' },
+      { label: 'Installation Patterns', href: '/en/modele-de-montaj' },
+      { label: 'Maintenance Guide', href: '/en/intretinere' },
+      { label: 'De-icing', href: '/en/degivrare' },
+      { label: 'FAQ', href: '/en/faq' },
+    ],
+  },
+  { label: 'Blog (RO)', href: '/blog' },
+  { label: 'Contact', href: '/en/contact', badge: 'Quote' },
+]
+
+export const enFooterLinks = {
+  company: [
+    { label: 'About Us', href: '/en/despre-noi' },
+    { label: 'Florea Grup – 30 Years', href: '/en/florea-grup' },
+    { label: 'Sustainability', href: '/en/sustenabilitate' },
+    { label: 'Careers', href: '/en/cariera' },
+    { label: 'Contact', href: '/en/contact' },
+  ],
+  resources: [
+    { label: 'Paving Calculator', href: '/en/calculator-pavaj' },
+    { label: 'Installation Guide', href: '/en/montaj' },
+    { label: 'Installation Patterns', href: '/en/modele-de-montaj' },
+    { label: 'Maintenance Guide', href: '/en/intretinere' },
+    { label: 'De-icing', href: '/en/degivrare' },
+    { label: 'FAQ', href: '/en/faq' },
+  ],
+  legal: [
+    { label: 'Cookie Policy', href: '/en/cookie-uri' },
+  ],
+}

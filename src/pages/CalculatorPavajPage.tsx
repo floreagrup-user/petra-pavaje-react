@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
-import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
+import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, upsertHreflangPair, resetSEO } from '@/hooks/seo-utils'
 import { PavingCalculator } from '@/components/calculator/PavingCalculator'
 
 const FAQ_ITEMS = [
@@ -60,6 +60,7 @@ export function CalculatorPavajPage() {
     document.title = title
     upsertMeta('name', 'description', description)
     upsertCanonical(url)
+    upsertHreflangPair('/calculator-pavaj', '/en/calculator-pavaj')
     upsertMeta('property', 'og:type', 'website')
     upsertMeta('property', 'og:title', title)
     upsertMeta('property', 'og:description', description)

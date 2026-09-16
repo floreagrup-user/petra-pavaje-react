@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
-import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
+import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, upsertHreflangPair, resetSEO } from '@/hooks/seo-utils'
 
 const R2 = 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev'
 
@@ -134,6 +134,7 @@ export function FloreaGrupPage() {
     document.title = title
     upsertMeta('name', 'description', description)
     upsertCanonical(url)
+    upsertHreflangPair('/florea-grup', '/en/florea-grup')
     upsertMeta('property', 'og:type', 'website')
     upsertMeta('property', 'og:title', title)
     upsertMeta('property', 'og:description', description)

@@ -8,55 +8,55 @@ import { trackEvent } from '@/lib/analytics'
 const R2 = 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev'
 
 const ROLE_ITEMS = [
-  'Asigurarea calității și constanței performanței produselor Petra Pavaje',
-  'Dezvoltarea produselor noi',
-  'Testarea durabilității prefabricatelor din beton',
-  'Implementarea și testarea soluțiilor noi pentru protecția suprafețelor',
-  'Analiza materiilor prime care intră în compoziția prefabricatelor de beton',
-  'Studiul mixurilor și al rețetelor pentru produsele Petra Pavaje',
+  'Ensuring the quality and consistent performance of Petra Pavaje products',
+  'Developing new products',
+  'Testing the durability of concrete precast units',
+  'Implementing and testing new surface-protection solutions',
+  'Analyzing the raw materials used in our concrete precast mixes',
+  'Studying mixes and formulas for Petra Pavaje products',
 ]
 
 const KNOW_THAT_ITEMS = [
-  'Laboratorul Petra Pavaje se adresează și clienților externi, punând la dispoziția acestora experiența, imparțialitatea și calitatea garantată a serviciilor de top pentru verificarea calității materialelor de construcții.',
-  'Laboratorul Petra Pavaje este printre singurele laboratoare de construcții din țară și din străinătate care efectuează încercările de întindere prin despicare/încovoiere ale prefabricatelor din beton în permanență în mediu ud, adică în cea mai defavorabilă condiție — asigurând astfel o rezistență net superioară a elementelor, comparativ cu cele ale altor producători.',
-  'Testele din laboratorul Petra Pavaje se fac în toate etapele de dezvoltare a unui produs: se analizează materia primă, produsul proaspăt scos de pe linia de fabricație și produsul care are o anumită vechime.',
-  'Pentru toate produsele Petra Pavaje se asigură trasabilitatea pe întreg fluxul de producție — pentru fiecare pavaj produs se poate spune cu exactitate lotul materiilor prime care au intrat în compoziția lor.',
+  'The Petra Pavaje laboratory also serves external clients, offering them the experience, impartiality and guaranteed quality of top-tier building-material testing services.',
+  'The Petra Pavaje laboratory is among the only construction labs in the country and abroad that performs tensile-splitting/bending tests on concrete precast units permanently in a wet environment — the most unfavorable condition — ensuring markedly higher strength for our elements compared with other manufacturers.',
+  'Tests at the Petra Pavaje laboratory are carried out at every stage of a product\'s development: the raw material is analyzed, along with the product fresh off the production line and a product that has aged for a period.',
+  'Full traceability is ensured across the entire production flow for every Petra Pavaje product — for any given paver, we can identify exactly which batch of raw materials went into it.',
 ]
 
 const ANALYSIS_ITEMS = [
-  'Determinarea absorbției totale de apă a pavelelor din beton',
-  'Rezistența la întindere prin despicare a pavelelor din beton',
-  'Determinarea absorbției totale de apă a dalelor din beton',
-  'Rezistența la încovoiere dale din beton',
-  'Determinarea absorbției totale de apă a bordurilor din beton',
-  'Rezistența la încovoiere borduri din beton',
-  'Determinarea absorbției totale de apă a canalelor de evacuare',
+  'Determining total water absorption of concrete pavers',
+  'Tensile-splitting strength of concrete pavers',
+  'Determining total water absorption of concrete slabs',
+  'Bending strength of concrete slabs',
+  'Determining total water absorption of concrete curbs',
+  'Bending strength of concrete curbs',
+  'Determining total water absorption of drainage channels',
 ]
 
 const EQUIPMENT_ITEMS = [
-  'Presă de încercare la compresiune de 3000 kN',
-  'Cadru secundar pentru încovoiere elemente prefabricate și BCR-uri',
-  'Presă Marshall',
-  'Compactor Marshall',
-  'Baie de apă Marshall',
-  'Picnometru',
-  'Centrifugă de extracție',
-  'Aparat proctor automat',
-  'Aparat de sitat',
-  'Spectrofotometru',
-  'Vâscozimetru Engler',
+  '3000 kN compression testing press',
+  'Secondary bending frame for precast elements and curbs',
+  'Marshall press',
+  'Marshall compactor',
+  'Marshall water bath',
+  'Pycnometer',
+  'Extraction centrifuge',
+  'Automatic Proctor apparatus',
+  'Sieve shaker',
+  'Spectrophotometer',
+  'Engler viscometer',
   'Extractor',
-  'Etuve, balanțe',
-  'Baie de apă termostată, penetrometru automat, agitator magnetic cu încălzire',
-  'Carotieră, pârghie Benkelman, placă Zorn etc.',
+  'Ovens, scales',
+  'Thermostatic water bath, automatic penetrometer, magnetic stirrer with heating',
+  'Core drill, Benkelman beam, Zorn plate, etc.',
 ]
 
-export function LaboratorPage() {
+export function LaboratorPageEN() {
   useEffect(() => {
-    const url = `${window.location.origin}/laborator`
-    const title = `Laborator - Petra Pavaje, parte a Florea Grup | ${SEO_SITE_NAME}`
+    const url = `${window.location.origin}/en/laborator`
+    const title = `Laboratory - Petra Pavaje, part of Florea Grup | ${SEO_SITE_NAME}`
     const description =
-      'Laboratorul propriu de analize și încercări Petra Pavaje, autorizat de Inspectoratul de Stat în Construcții, testează durabilitatea prefabricatelor din beton la standardul SR EN ISO/IEC 17025:2018.'
+      'The Petra Pavaje in-house testing laboratory, authorized by the State Construction Inspectorate, tests the durability of concrete precast units to the SR EN ISO/IEC 17025:2018 standard.'
 
     document.title = title
     upsertMeta('name', 'description', description)
@@ -76,8 +76,8 @@ export function LaboratorPage() {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
-        { '@type': 'ListItem', position: 2, name: 'Laborator', item: url },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${window.location.origin}/en` },
+        { '@type': 'ListItem', position: 2, name: 'Laboratory', item: url },
       ],
     })
 
@@ -90,17 +90,17 @@ export function LaboratorPage() {
         <div className="container-premium">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <nav className="flex items-center gap-2 text-sm text-charcoal-400 mb-6">
-              <Link to="/" className="hover:text-white transition-colors">Acasă</Link>
+              <Link to="/en" className="hover:text-white transition-colors">Home</Link>
               <span>/</span>
-              <span className="text-white">Laborator</span>
+              <span className="text-white">Laboratory</span>
             </nav>
-            <p className="text-brand-500 text-sm font-medium tracking-[0.2em] uppercase mb-3">Laborator</p>
-            <h1 className="heading-h1 mb-6 max-w-3xl">Laboratorul Petra Pavaje, parte a Florea Grup</h1>
+            <p className="text-brand-500 text-sm font-medium tracking-[0.2em] uppercase mb-3">Laboratory</p>
+            <h1 className="heading-h1 mb-6 max-w-3xl">The Petra Pavaje Laboratory, part of Florea Grup</h1>
             <p className="text-body-lg text-charcoal-400 max-w-2xl">
-              Fabricile Petra Pavaje funcționează ca huburi deschise de cercetare și inovație. În acest proces,
-              fiecare fabrică deține un laborator propriu de analiză și testare. Procesul creativ de dezvoltare a
-              produselor noi este realizat pe baza încercărilor exacte făcute cu aparatură de ultimă generație și
-              aflate sub autorizarea Inspectoratului de Stat în Construcții.
+              The Petra Pavaje factories operate as open research and innovation hubs. As part of this, every
+              factory has its own in-house testing and analysis laboratory. The creative process behind new
+              products is grounded in precise tests performed with state-of-the-art equipment, authorized by the
+              State Construction Inspectorate.
             </p>
           </motion.div>
         </div>
@@ -111,7 +111,7 @@ export function LaboratorPage() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="rounded-xl border border-charcoal-100 p-8 md:p-10 flex justify-center">
             <img
               src={`${R2}/Picture-1.png`}
-              alt="Logo Laborator Florea Grup"
+              alt="Florea Grup Laboratory logo"
               className="w-full max-w-md h-auto"
               width="1430"
               height="754"
@@ -128,7 +128,7 @@ export function LaboratorPage() {
               <div className="w-11 h-11 rounded-full bg-brand-50 flex items-center justify-center shrink-0">
                 <FlaskConical className="w-5 h-5 text-brand-600" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">Rolul laboratorului</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">The Laboratory's Role</h2>
             </div>
             <ul className="space-y-3 mb-6">
               {ROLE_ITEMS.map((item) => (
@@ -139,12 +139,11 @@ export function LaboratorPage() {
               ))}
             </ul>
             <p className="text-body-lg text-charcoal-600 leading-relaxed">
-              Calitatea produselor Petra Pavaje este consolidată grație interesului sporit pentru îmbunătățire
-              continuă. Acest lucru se realizează prin studiul diverselor variabile precum materia primă folosită,
-              optimizarea rețetei fiecărui produs și a parametrilor de procesare, modul de depozitare, volumul de
-              trafic sau vechimea pavajului. Analizând acești factori, se dezvoltă produse care răspund cât mai bine
-              nevoilor, astfel încât clienții se pot bucura pe termen lung de pavaje, iar aspectul lor să rămână cât
-              mai atractiv odată cu trecerea timpului.
+              The quality of Petra Pavaje products is strengthened by our ongoing focus on continuous improvement.
+              This is achieved by studying variables such as the raw materials used, optimizing each product's
+              formula and processing parameters, storage methods, traffic volume, and paver age. By analyzing these
+              factors, we develop products that best meet customer needs, so they can enjoy their pavers for the
+              long term, keeping their appearance attractive as time goes by.
             </p>
           </motion.div>
 
@@ -153,7 +152,7 @@ export function LaboratorPage() {
               <div className="w-11 h-11 rounded-full bg-brand-50 flex items-center justify-center shrink-0">
                 <HelpCircle className="w-5 h-5 text-brand-600" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">Știați că…</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">Did You Know…</h2>
             </div>
             <ul className="space-y-4">
               {KNOW_THAT_ITEMS.map((item) => (
@@ -170,15 +169,15 @@ export function LaboratorPage() {
               <div className="w-11 h-11 rounded-full bg-brand-50 flex items-center justify-center shrink-0">
                 <BadgeCheck className="w-5 h-5 text-brand-600" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">Certificări</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">Certifications</h2>
             </div>
             <div className="space-y-4 text-body-lg text-charcoal-600 leading-relaxed">
               <p>
-                Laboratorul de analize și încercări Florea Grup este <strong className="text-charcoal-900">autorizat de către Inspectoratul de Stat în Construcții</strong> cu autorizația nr. 2128, începând cu anul 2006. Competența laboratorului este dovedită atât clienților laboratorului, cât și autorităților de reglementare, acreditare și control, prin implementarea riguroasă a{' '}
+                The Florea Grup analysis and testing laboratory is <strong className="text-charcoal-900">authorized by the State Construction Inspectorate</strong>, under authorization no. 2128, since 2006. The laboratory's competence is demonstrated to both its clients and to regulatory, accreditation and control authorities through rigorous implementation of{' '}
                 <strong className="text-charcoal-900">SR EN ISO/IEC 17025:2018</strong>.
               </p>
               <p>
-                Laboratorul este parte independentă a organizației și asigură <strong className="text-charcoal-900">imparțialitatea, confidențialitatea și profesionalismul</strong> rezultatelor obținute.
+                The laboratory is an independent part of the organization and ensures the <strong className="text-charcoal-900">impartiality, confidentiality and professionalism</strong> of its results.
               </p>
             </div>
           </motion.div>
@@ -188,17 +187,17 @@ export function LaboratorPage() {
               <div className="w-11 h-11 rounded-full bg-brand-50 flex items-center justify-center shrink-0">
                 <ClipboardCheck className="w-5 h-5 text-brand-600" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">Analize efectuate</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">Tests Performed</h2>
             </div>
             <div className="space-y-4 text-body-lg text-charcoal-600 leading-relaxed mb-6">
               <p>
-                Laboratorul de analize și încercări Florea Grup este autorizat de către Inspectoratul de Stat în
-                Construcții pentru a efectua încercări în următoarele profiluri:{' '}
+                The Florea Grup analysis and testing laboratory is authorized by the State Construction Inspectorate
+                to perform tests in the following profiles:{' '}
                 <strong className="text-charcoal-900">B, BA, BP, MBM, GTF, D, MD, EP</strong>.
               </p>
               <p className="font-semibold text-charcoal-900">
-                Laboratorul realizează o largă serie de testări și analize pentru a studia durabilitatea
-                prefabricatelor din beton.
+                The laboratory carries out a wide range of tests and analyses to study the durability of concrete
+                precast units.
               </p>
             </div>
             <ul className="space-y-3 mb-6">
@@ -210,20 +209,19 @@ export function LaboratorPage() {
               ))}
             </ul>
             <p className="text-body-lg text-charcoal-600 leading-relaxed mb-4">
-              Încercările se efectuează cu aparatură de ultimă generație, calibrată și verificată metrologic, în
-              spații special amenajate și care dispun de condiții de mediu conform exigențelor normativelor și
-              standardelor românești și europene în vigoare.
+              Tests are carried out with state-of-the-art, calibrated and metrologically verified equipment, in
+              dedicated spaces that meet the environmental requirements of current Romanian and European
+              regulations and standards.
             </p>
             <p className="text-body-lg text-charcoal-600 leading-relaxed">
-              Lista completă a analizelor efectuate de Laboratorul de analize și încercări Florea Grup se poate
-              vedea{' '}
+              The full list of tests performed by the Florea Grup analysis and testing laboratory can be viewed{' '}
               <a
                 href="https://floreagrup.ro/projects/laborator-constructii/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-brand-600 font-semibold hover:underline inline-flex items-center gap-1"
               >
-                aici
+                here
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
               .
@@ -235,9 +233,9 @@ export function LaboratorPage() {
               <div className="w-11 h-11 rounded-full bg-brand-50 flex items-center justify-center shrink-0">
                 <Wrench className="w-5 h-5 text-brand-600" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">Dotare laborator</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">Laboratory Equipment</h2>
             </div>
-            <p className="text-body-lg text-charcoal-600 leading-relaxed mb-6">Dotarea laboratorului cuprinde:</p>
+            <p className="text-body-lg text-charcoal-600 leading-relaxed mb-6">Our laboratory equipment includes:</p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 mb-8">
               {EQUIPMENT_ITEMS.map((item) => (
                 <li key={item} className="flex gap-3 text-charcoal-600 leading-relaxed text-sm">
@@ -249,7 +247,7 @@ export function LaboratorPage() {
             <div className="rounded-xl overflow-hidden">
               <img
                 src={`${R2}/laborator-echipament-1.png`}
-                alt="Dotări laborator Petra Pavaje"
+                alt="Petra Pavaje laboratory equipment"
                 className="w-full h-auto"
                 width="2093"
                 height="1803"
@@ -266,12 +264,11 @@ export function LaboratorPage() {
             className="rounded-xl bg-charcoal-50 p-8 md:p-10"
           >
             <p className="text-body-lg text-charcoal-600 leading-relaxed mb-6">
-              Preocuparea pentru dezvoltarea permanentă a personalului și îmbunătățirea calității serviciilor
-              prestate asigură eficiența maximă și profesionalism. Puteți cere o ofertă personalizată pe datele de
-              contact de mai jos.
+              Our commitment to ongoing staff development and improving service quality ensures maximum efficiency
+              and professionalism. You can request a personalized quote using the contact details below.
             </p>
             <div className="space-y-3">
-              <p className="font-semibold text-charcoal-900">Șef Laborator: Ing. Gabriela Marchiș</p>
+              <p className="font-semibold text-charcoal-900">Head of Laboratory: Eng. Gabriela Marchiș</p>
               <div className="flex items-center gap-3 text-charcoal-600">
                 <Phone className="w-4 h-4 text-brand-600 shrink-0" />
                 <a href="tel:0728999941" className="hover:text-brand-600 transition-colors">0728 999 941</a>

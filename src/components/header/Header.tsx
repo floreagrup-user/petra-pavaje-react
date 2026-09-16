@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, ChevronDown, Calculator, FileText } from 'lucide-react'
-import { mainMenu, type MenuItem } from '@/data/menu'
+import { Menu, X, ChevronDown, Calculator, FileText, Globe } from 'lucide-react'
+import { mainMenu, enMenu, type MenuItem } from '@/data/menu'
 import { useScrollPosition } from '@/hooks/use-scroll'
 import { cn } from '@/lib/utils'
+import { isEnglishPath, toEnglishPath, toRomanianPath } from '@/lib/i18n-routes'
 
 function hasNestedChildren(item: MenuItem): boolean {
   return Boolean(item.children?.some((child) => child.children && child.children.length > 0))
@@ -16,7 +17,10 @@ export function Header() {
   const scrollY = useScrollPosition()
   const location = useLocation()
   const isScrolled = scrollY > 50
-  const isHome = location.pathname === '/'
+  const isEnglish = isEnglishPath(location.pathname)
+  const isHome = location.pathname === '/' || location.pathname === '/en'
+  const menu = isEnglish ? enMenu : mainMenu
+  const langSwitchHref = isEnglish ? toRomanianPath(location.pathname) : toEnglishPath(location.pathname)
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
@@ -31,25 +35,33 @@ export function Header() {
         <div className="container-premium py-1.5 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Link
-              to="/calculator-pavaj"
+              to={isEnglish ? '/en/calculator-pavaj' : '/calculator-pavaj'}
               className="hover:text-white transition-colors flex items-center gap-1"
             >
               <Calculator className="w-3 h-3" />
-              Calculator pavaj
+              {isEnglish ? 'Paving Calculator' : 'Calculator pavaj'}
             </Link>
             <span className="text-white/20">|</span>
-            <span>4 Fabrici Naționale</span>
+            <span>{isEnglish ? '4 National Factories' : '4 Fabrici Naționale'}</span>
             <span className="text-white/20">|</span>
-            <span className="text-brand-300">24.000 mp/zi</span>
+            <span className="text-brand-300">{isEnglish ? '24,000 sqm/day' : '24.000 mp/zi'}</span>
           </div>
           <div className="flex items-center gap-3">
+            <Link
+              to={isEnglish ? toRomanianPath(location.pathname) : toEnglishPath(location.pathname)}
+              className="hover:text-white transition-colors flex items-center gap-1"
+            >
+              <Globe className="w-3 h-3" />
+              {isEnglish ? 'RO' : 'EN'}
+            </Link>
+            <span className="text-white/20">|</span>
             <Link to="/catalog" className="hover:text-white transition-colors flex items-center gap-1">
               <FileText className="w-3 h-3" />
               Catalog
             </Link>
             <span className="text-white/20">|</span>
-            <Link to="/contact" className="hover:text-white transition-colors">
-              Solicita Ofertă
+            <Link to={isEnglish ? '/en/contact' : '/contact'} className="hover:text-white transition-colors">
+              {isEnglish ? 'Request a Quote' : 'Solicita Ofertă'}
             </Link>
           </div>
         </div>
@@ -65,7 +77,7 @@ export function Header() {
       >
         <div className="container-premium">
           <div className="flex items-center justify-between h-16 md:h-20">
-            <Link to="/" className="flex items-center gap-2 group shrink-0">
+            <Link to={isEnglish ? '/en' : '/'} className="flex items-center gap-2 group shrink-0">
               <span className={cn(
                 'inline-flex items-center justify-center px-3 py-1.5 rounded-xl transition-all duration-500',
                 isHome && !isScrolled ? 'bg-white/70 backdrop-blur-sm' : ''
@@ -81,7 +93,7 @@ export function Header() {
             </Link>
 
             <nav className="hidden lg:flex items-center gap-1">
-              {mainMenu.map((item) => (
+              {menu.map((item) => (
                 <div
                   key={item.label}
                   className="relative"
@@ -152,7 +164,7 @@ export function Header() {
                                           to={child.href}
                                           className="text-xs text-brand-600 hover:text-brand-700 transition-colors font-medium"
                                         >
-                                          +{child.children.length - 8} mai multe
+                                          +{child.children.length - 8} {isEnglish ? 'more' : 'mai multe'}
                                         </Link>
                                       </li>
                                     )}
@@ -189,7 +201,7 @@ export function Header() {
 
             <div className="flex items-center gap-2">
               <Link
-                to="/contact"
+                to={isEnglish ? '/en/contact' : '/contact'}
                 className={cn(
                   'hidden md:inline-flex items-center px-4 py-2 text-sm font-medium rounded-md transition-all duration-300',
                   isScrolled || !isHome
@@ -197,12 +209,16 @@ export function Header() {
                     : 'bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm'
                 )}
               >
-                Solicita Ofertă
+                {isEnglish ? 'Request a Quote' : 'Solicita Ofertă'}
               </Link>
 
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                aria-label={mobileMenuOpen ? 'Închide meniul' : 'Deschide meniul'}
+                aria-label={
+                  isEnglish
+                    ? mobileMenuOpen ? 'Close menu' : 'Open menu'
+                    : mobileMenuOpen ? 'Închide meniul' : 'Deschide meniul'
+                }
                 aria-expanded={mobileMenuOpen}
                 className={cn(
                   'lg:hidden p-2 rounded-md transition-colors',
@@ -227,15 +243,27 @@ export function Header() {
             className="lg:hidden bg-white border-t border-charcoal-100 overflow-hidden shadow-xl"
           >
             <div className="container-premium py-4 space-y-1 max-h-[80vh] overflow-y-auto">
-              {mainMenu.map((item) => (
+              {menu.map((item) => (
                 <MobileMenuItem key={item.label} item={item} onClick={() => setMobileMenuOpen(false)} />
               ))}
               <div className="pt-4 border-t border-charcoal-100 space-y-2">
-                <Link to="/contact" className="btn-primary w-full justify-center" onClick={() => setMobileMenuOpen(false)}>
-                  Solicita Ofertă
+                <Link
+                  to={langSwitchHref}
+                  className="flex items-center justify-center gap-2 py-2 text-sm font-medium text-charcoal-600"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <Globe className="w-4 h-4" />
+                  {isEnglish ? 'Română' : 'English'}
+                </Link>
+                <Link
+                  to={isEnglish ? '/en/contact' : '/contact'}
+                  className="btn-primary w-full justify-center"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {isEnglish ? 'Request a Quote' : 'Solicita Ofertă'}
                 </Link>
                 <Link to="/catalog" className="btn-secondary w-full justify-center" onClick={() => setMobileMenuOpen(false)}>
-                  Descarcă Catalog
+                  {isEnglish ? 'Download Catalog' : 'Descarcă Catalog'}
                 </Link>
               </div>
             </div>

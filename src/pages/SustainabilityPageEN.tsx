@@ -8,9 +8,9 @@ import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, upsertHreflan
 const R2 = 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev'
 
 const HERO_STATS = [
-  { icon: Sun, value: '10.000 mp', label: 'Panouri fotovoltaice' },
-  { icon: Cloud, value: '600+ tone', label: 'CO₂ evitate anual' },
-  { icon: TreePine, value: '41.000+', label: 'Puieți plantați' },
+  { icon: Sun, value: '10,000 sqm', label: 'Solar Panels' },
+  { icon: Cloud, value: '600+ tons', label: 'CO₂ Avoided Yearly' },
+  { icon: TreePine, value: '41,000+', label: 'Saplings Planted' },
 ]
 
 interface Pillar {
@@ -29,43 +29,43 @@ const PILLARS: Pillar[] = [
   {
     number: '01',
     icon: Sun,
-    title: 'Energia verde și reducerea emisiilor',
-    body: 'Tranziția către o economie cu emisii scăzute de carbon reprezintă pilonul central al investițiilor noastre tehnologice. Am transformat infrastructura celor patru fabrici Petra Pavaje în hub-uri de energie verde prin implementarea unui sistem de panouri fotovoltaice ce acoperă aproximativ 10.000 mp. Cu o capacitate instalată de 1.740 kWp, această infrastructură ne permite să evităm anual eliberarea a peste 600 de tone de CO₂, asigurând independența energetică a proceselor industriale.',
-    highlightValue: '1.740 kWp',
-    highlightLabel: 'Capacitate instalată panouri fotovoltaice',
+    title: 'Green Energy and Emission Reduction',
+    body: 'The transition to a low-carbon economy is the central pillar of our technology investments. We have turned the infrastructure of our four Petra Pavaje factories into green-energy hubs by installing a solar panel system covering roughly 10,000 sqm. With an installed capacity of 1,740 kWp, this infrastructure lets us avoid releasing over 600 tons of CO₂ every year, securing the energy independence of our industrial processes.',
+    highlightValue: '1,740 kWp',
+    highlightLabel: 'Installed solar panel capacity',
     image: `${R2}/energie-verde-si-emsii-0-web1-1.avif`,
-    alt: 'Panouri fotovoltaice Petra Pavaje - Energie verde',
+    alt: 'Petra Pavaje solar panels - green energy',
   },
   {
     number: '02',
     icon: Cpu,
-    title: 'Inovația tehnologică și optimizarea resurselor',
-    body: 'Eficiența industrială este redefinită la Petra Pavaje prin utilizarea unor tehnologii de ultimă generație care prioritizează conservarea resurselor. Procesele noastre de producție sunt complet automatizate, asigurând o precizie care elimină pierderile de materie primă și maximizează durabilitatea produsului finit. Mai mult, viziunea noastră asupra sustenabilității include optimizarea lanțului logistic — prin localizarea strategică a fabricilor, reducem distanțele de transport către beneficiari, minimizând impactul emisiilor de noxe asociate distribuției.',
-    highlightValue: '4 Fabrici',
-    highlightLabel: 'Localizate strategic pentru a reduce transportul',
+    title: 'Technological Innovation and Resource Optimization',
+    body: "Industrial efficiency is redefined at Petra Pavaje through the use of cutting-edge technologies that prioritize resource conservation. Our production processes are fully automated, ensuring a precision that eliminates raw-material waste and maximizes the durability of the finished product. What's more, our approach to sustainability includes optimizing the logistics chain — by strategically locating our factories, we reduce transport distances to customers, minimizing the emissions impact tied to distribution.",
+    highlightValue: '4 Factories',
+    highlightLabel: 'Strategically located to reduce transport',
     image: `${R2}/inovatie-tehnologica-web1-1.avif`,
-    alt: 'Linie de producție automatizată Petra Pavaje',
+    alt: 'Automated production line at Petra Pavaje',
     reversed: true,
   },
   {
     number: '03',
     icon: Zap,
-    title: 'Mobilitatea electrică',
-    body: 'Suntem deplin angajați în adoptarea soluțiilor de mobilitate nepoluantă, integrând în activitatea noastră curentă o flotă de peste 60 de vehicule electrice. Această tranziție este susținută de o rețea proprie de stații de încărcare rapidă, implementată în locațiile noastre strategice.',
-    highlightValue: '60+ vehicule',
-    highlightLabel: 'Electrice în flota operațională',
+    title: 'Electric Mobility',
+    body: "We are fully committed to adopting zero-emission mobility solutions, integrating a fleet of over 60 electric vehicles into our day-to-day operations. This transition is backed by our own network of fast-charging stations, deployed at our strategic locations.",
+    highlightValue: '60+ vehicles',
+    highlightLabel: 'Electric vehicles in our operating fleet',
     image: `${R2}/mobilitate-electrica-web1-1.avif`,
-    alt: 'Flotă vehicule electrice Petra Pavaje',
+    alt: 'Petra Pavaje electric vehicle fleet',
   },
   {
     number: '04',
     icon: TreePine,
-    title: 'Campanii de împădurire',
-    body: 'Conștienți de rolul vital al pădurilor în reglarea climatică, derulăm campanii de împădurire de anvergură. Acțiunea noastră din 2025, concretizată prin plantarea a peste 41.000 de puieți de fag, molid, frasin și larice, reprezintă un efort sistematic de restaurare a peste 8 hectare de fond forestier în județul Alba. Aceste demersuri nu vizează doar compensarea amprentei de carbon, ci și protejarea biodiversității locale.',
-    highlightValue: '41.000+ puieți',
-    highlightLabel: 'Plantați pe 8+ hectare în județul Alba',
+    title: 'Reforestation Campaigns',
+    body: 'Aware of the vital role forests play in regulating the climate, we run large-scale reforestation campaigns. Our 2025 campaign, which planted over 41,000 beech, spruce, ash and larch saplings, represents a systematic effort to restore more than 8 hectares of forest land in Alba county. These efforts aim not only to offset our carbon footprint, but also to protect local biodiversity.',
+    highlightValue: '41,000+ saplings',
+    highlightLabel: 'Planted across 8+ hectares in Alba county',
     image: `${R2}/actiune-impadurire-web1-2.avif`,
-    alt: 'Campanie împădurire Petra Pavaje - 41.000 puieți',
+    alt: 'Petra Pavaje reforestation campaign - 41,000 saplings',
     reversed: true,
   },
 ]
@@ -85,60 +85,60 @@ const COMMUNITY_CARDS: CommunityCard[] = [
   {
     number: '01',
     icon: Home,
-    title: 'Susținerea economiei locale',
-    body: 'Succesul Petra Pavaje este indisolubil legat de prosperitatea comunității în care activăm. Ne mândrim cu o strategie de achiziții care prioritizează în proporție de peste 90% furnizorii români, consolidând astfel economia națională. Prin scurtarea lanțurilor de aprovizionare, reducem impactul logistic asupra mediului și asigurăm o circulație eficientă a capitalului în interiorul comunității.',
-    tag: '90%+ furnizori români',
+    title: 'Supporting the Local Economy',
+    body: "Petra Pavaje's success is inseparable from the prosperity of the community we operate in. We take pride in a procurement strategy that prioritizes Romanian suppliers for over 90% of our purchases, strengthening the national economy. By shortening supply chains, we reduce the logistics impact on the environment and ensure capital circulates efficiently within the community.",
+    tag: '90%+ Romanian suppliers',
     image: `${R2}/economia-locala-web2.avif`,
-    alt: 'Susținerea economiei locale - Petra Pavaje',
+    alt: 'Supporting the local economy - Petra Pavaje',
   },
   {
     number: '02',
     icon: Users,
-    title: 'Respectul față de oameni',
-    body: 'O companie sustenabilă se bazează pe oameni motivați și protejați. Petra Pavaje oferă locuri de muncă stabile, într-un mediu guvernat de cele mai înalte standarde de etică profesională și siguranță. Investim constant în programe de dezvoltare a competențelor și în modernizarea condițiilor de lucru, considerând că bunăstarea angajaților noștri este cel mai bun indicator al succesului nostru.',
-    tag: 'Etică și siguranță',
+    title: 'Respect for People',
+    body: 'A sustainable company is built on motivated, protected people. Petra Pavaje offers stable jobs, in an environment governed by the highest standards of professional ethics and safety. We invest constantly in skills-development programs and in modernizing working conditions, because we believe our employees\' wellbeing is the best indicator of our success.',
+    tag: 'Ethics and safety',
     image: `${R2}/respectul-fata-de-oameni-web2.avif`,
-    alt: 'Respectul față de oameni - Petra Pavaje',
+    alt: 'Respect for people - Petra Pavaje',
   },
   {
     number: '03',
     icon: GraduationCap,
-    title: 'Sprijin pentru educație',
-    body: 'Investiția în educație reprezintă, pentru noi, o investiție în viitorul inovației. Prin parteneriatele strategice cu Universitatea „1 Decembrie 1918" din Alba Iulia și Universitatea Tehnică din Cluj-Napoca, facilităm schimbul de cunoștințe între mediul academic și cel industrial, oferind studenților stagii de practică și mentorat. În paralel, ne implicăm activ în modernizarea școlilor și construirea de spații de joacă sigure pentru copii, completând acest angajament prin susținerea proiectelor sociale dedicate persoanelor aflate în dificultate.',
-    tag: 'Parteneriate universitare',
+    title: 'Supporting Education',
+    body: 'Investing in education is, for us, an investment in the future of innovation. Through strategic partnerships with "1 Decembrie 1918" University in Alba Iulia and the Technical University of Cluj-Napoca, we facilitate the exchange of knowledge between academia and industry, offering students internships and mentorship. In parallel, we are actively involved in modernizing schools and building safe playgrounds for children, and we support social projects dedicated to people in need.',
+    tag: 'University partnerships',
     image: `${R2}/sprijin-pt-educatie-web2.avif`,
-    alt: 'Sprijin pentru educație - Petra Pavaje',
+    alt: 'Supporting education - Petra Pavaje',
     full: true,
   },
   {
     number: '04',
     icon: Trophy,
-    title: 'Susținerea sportului de performanță',
-    body: 'Performanța sub presiune și rigoarea tehnică sunt valori pe care le regăsim atât în business, cât și în sportul de elită. Petra Pavaje susține excelența prin sponsorizarea Campionatului Național de Rally și a echipelor de rugby și fotbal. Susținând sportivii de performanță, promovăm modele de succes și determinare pentru întreaga comunitate.',
-    tag: 'Rally · Rugby · Fotbal',
+    title: 'Supporting Competitive Sport',
+    body: 'Performance under pressure and technical rigor are values we find both in business and in elite sport. Petra Pavaje supports excellence by sponsoring the National Rally Championship and rugby and football teams. By backing top athletes, we promote role models of success and determination for the whole community.',
+    tag: 'Rally · Rugby · Football',
     image: `${R2}/sustinerea-sportului-de-performanta-web2.avif`,
-    alt: 'Susținerea sportului de performanță - Petra Pavaje',
+    alt: 'Supporting competitive sport - Petra Pavaje',
   },
   {
     number: '05',
     icon: PartyPopper,
-    title: 'Organizarea evenimentelor sportive',
-    body: 'Dincolo de performanță, credem în puterea sportului de a uni comunitatea și de a promova un stil de viață echilibrat. Organizăm anual competiții de volei și tenis de câmp și sponsorizăm competiții de ciclism și alergare, care se adresează tuturor categoriilor de vârstă. Aceste inițiative sunt modul nostru de a mulțumi comunității și de a investi în vitalitatea tinerelor generații.',
-    tag: 'Volei · Tenis · Ciclism · Alergare',
+    title: 'Organizing Sports Events',
+    body: 'Beyond performance, we believe in the power of sport to bring a community together and promote a balanced lifestyle. We hold annual volleyball and tennis competitions and sponsor cycling and running events open to every age group. These initiatives are our way of giving back to the community and investing in the vitality of younger generations.',
+    tag: 'Volleyball · Tennis · Cycling · Running',
     image: `${R2}/organizarea-evenimentelor-sportive-web2.avif`,
-    alt: 'Organizarea evenimentelor sportive - Petra Pavaje',
+    alt: 'Organizing sports events - Petra Pavaje',
   },
 ]
 
-export function SustainabilityPage() {
+export function SustainabilityPageEN() {
   const { ref: pillarsRef, isIntersecting: pillarsIn } = useIntersectionObserver({ threshold: 0.05 })
   const { ref: cardsRef, isIntersecting: cardsIn } = useIntersectionObserver({ threshold: 0.05 })
 
   useEffect(() => {
-    const url = `${window.location.origin}/sustenabilitate`
-    const title = `Sustenabilitate - În armonie cu natura | ${SEO_SITE_NAME}`
+    const url = `${window.location.origin}/en/sustenabilitate`
+    const title = `Sustainability - In Harmony with Nature | ${SEO_SITE_NAME}`
     const description =
-      'Investiții concrete în energie verde, mobilitate electrică și campanii de împădurire, plus responsabilitate socială pentru comunitate, educație și sport.'
+      'Concrete investments in green energy, electric mobility and reforestation campaigns, plus social responsibility for community, education and sport.'
 
     document.title = title
     upsertMeta('name', 'description', description)
@@ -158,8 +158,8 @@ export function SustainabilityPage() {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
-        { '@type': 'ListItem', position: 2, name: 'Sustenabilitate', item: url },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${window.location.origin}/en` },
+        { '@type': 'ListItem', position: 2, name: 'Sustainability', item: url },
       ],
     })
 
@@ -172,7 +172,7 @@ export function SustainabilityPage() {
         <div className="absolute inset-0">
           <img
             src={`${R2}/Cover-web1.avif`}
-            alt="Petra Pavaje - Sustenabilitate"
+            alt="Petra Pavaje - Sustainability"
             className="w-full h-full object-cover opacity-40"
             loading="eager"
           />
@@ -181,19 +181,19 @@ export function SustainabilityPage() {
         <div className="container-premium relative">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <nav className="flex items-center gap-2 text-sm text-charcoal-300 mb-6">
-              <Link to="/" className="hover:text-white transition-colors">Acasă</Link>
+              <Link to="/en" className="hover:text-white transition-colors">Home</Link>
               <span>/</span>
-              <span className="text-white">Sustenabilitate</span>
+              <span className="text-white">Sustainability</span>
             </nav>
             <p className="inline-flex items-center gap-2 text-brand-500 text-sm font-medium tracking-[0.2em] uppercase mb-4">
-              Sustenabilitate
+              Sustainability
             </p>
-            <h1 className="heading-h1 mb-6 max-w-2xl">În armonie cu natura<sup className="text-lg align-super">®</sup></h1>
+            <h1 className="heading-h1 mb-6 max-w-2xl">In Harmony with Nature<sup className="text-lg align-super">®</sup></h1>
             <p className="text-body-lg text-charcoal-200 max-w-2xl mb-10">
-              Pentru noi, sustenabilitatea nu este un proiect punctual, ci o evoluție naturală a felului în care ne
-              desfășurăm activitatea. Fie că vorbim despre investițiile în energie verde, modernizarea liniilor de
-              producție sau reducerea consumului de resurse, fiecare decizie urmărește același obiectiv: un impact
-              mai responsabil asupra mediului.
+              For us, sustainability isn't a one-off project, but a natural evolution of the way we run our
+              business. Whether we're talking about investments in green energy, modernizing our production lines,
+              or reducing resource consumption, every decision aims at the same goal: a more responsible impact on
+              the environment.
             </p>
             <div className="flex flex-wrap gap-8 md:gap-12 pt-8 border-t border-white/10">
               {HERO_STATS.map((stat) => (
@@ -213,9 +213,9 @@ export function SustainabilityPage() {
       <section ref={pillarsRef} className="py-16 md:py-24 bg-white">
         <div className="container-premium">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="text-center max-w-2xl mx-auto mb-14">
-            <p className="text-emerald-700 text-sm font-medium tracking-[0.2em] uppercase mb-3">Angajamentul nostru</p>
-            <h2 className="heading-h2 text-charcoal-900 mb-4">Grija față de mediu</h2>
-            <p className="text-body-lg text-charcoal-500">Investiții concrete și măsurabile pentru un viitor mai verde</p>
+            <p className="text-emerald-700 text-sm font-medium tracking-[0.2em] uppercase mb-3">Our Commitment</p>
+            <h2 className="heading-h2 text-charcoal-900 mb-4">Care for the Environment</h2>
+            <p className="text-body-lg text-charcoal-500">Concrete, measurable investments for a greener future</p>
           </motion.div>
 
           <div className="space-y-16 md:space-y-20">
@@ -250,8 +250,8 @@ export function SustainabilityPage() {
 
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="mt-16 md:mt-20 max-w-2xl mx-auto text-center">
             <p className="text-xl md:text-2xl font-medium text-charcoal-800 italic leading-snug">
-              „Fiecare investiție în tehnologie verde și fiecare copac plantat reprezintă o{' '}
-              <strong className="text-emerald-700 not-italic">promisiune concretă</strong> pentru generațiile viitoare."
+              "Every investment in green technology and every tree planted is a{' '}
+              <strong className="text-emerald-700 not-italic">concrete promise</strong> to future generations."
             </p>
           </motion.div>
         </div>
@@ -260,9 +260,9 @@ export function SustainabilityPage() {
       <section ref={cardsRef} className="py-16 md:py-24 bg-charcoal-50">
         <div className="container-premium">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="text-center max-w-2xl mx-auto mb-14">
-            <p className="text-brand-600 text-sm font-medium tracking-[0.2em] uppercase mb-3">Responsabilitate socială</p>
-            <h2 className="heading-h2 text-charcoal-900 mb-4">Grija față de comunitate</h2>
-            <p className="text-body-lg text-charcoal-500">Construim valoare dincolo de produse — pentru oameni, educație și comunitate</p>
+            <p className="text-brand-600 text-sm font-medium tracking-[0.2em] uppercase mb-3">Social Responsibility</p>
+            <h2 className="heading-h2 text-charcoal-900 mb-4">Care for the Community</h2>
+            <p className="text-body-lg text-charcoal-500">Building value beyond products — for people, education and community</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -303,16 +303,16 @@ export function SustainabilityPage() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-semibold uppercase tracking-wider mb-6">
               <TreePine className="w-3.5 h-3.5" />
-              Ziua Mediului
+              World Environment Day
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">„În armonie cu natura"</h3>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">"In Harmony with Nature"</h3>
             <p className="text-emerald-100 leading-relaxed mb-6">
-              Sub motto-ul „În armonie cu natura", aniversarea Petra Pavaje este celebrată anual pe 5 iunie, chiar de
-              Ziua Mediului, confirmând angajamentul nostru față de protejarea resurselor naturale.
+              Under the motto "In harmony with nature", Petra Pavaje's anniversary is celebrated every year on June
+              5 — World Environment Day itself — reaffirming our commitment to protecting natural resources.
             </p>
             <div className="inline-flex items-center gap-2 text-sm font-medium">
               <Calendar className="w-4 h-4" />
-              <strong>5 Iunie</strong> — Ziua Mondială a Mediului
+              <strong>June 5</strong> — World Environment Day
             </div>
           </motion.div>
         </div>

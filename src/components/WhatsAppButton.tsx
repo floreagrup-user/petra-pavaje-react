@@ -1,15 +1,19 @@
+import { useLocation } from 'react-router-dom'
 import { trackEvent } from '@/lib/analytics'
+import { isEnglishPath } from '@/lib/i18n-routes'
 
 const WHATSAPP_NUMBER = '40784223426'
 
 export function WhatsAppButton() {
+  const isEnglish = isEnglishPath(useLocation().pathname)
+
   return (
     <a
       href={`https://wa.me/${WHATSAPP_NUMBER}`}
       target="_blank"
       rel="noopener noreferrer"
       onClick={() => trackEvent('whatsapp_click', { source: 'floating_button' })}
-      aria-label="Scrie-ne pe WhatsApp"
+      aria-label={isEnglish ? 'Message us on WhatsApp' : 'Scrie-ne pe WhatsApp'}
       className="fixed bottom-5 right-5 z-40 flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#25D366]"
     >
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-7 h-7" aria-hidden="true">

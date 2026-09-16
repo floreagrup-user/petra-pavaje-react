@@ -32,7 +32,7 @@ const GROUPS = PATTERN_GROUPS.map((group) => ({
     const n = String(i + 1).padStart(2, '0')
     return {
       url: `${R2}/Modele-de-montaj_${group.key}-${n}.avif`,
-      alt: `Model montaj ${group.label} ${i + 1}`,
+      alt: `Installation pattern ${group.label} ${i + 1}`,
       groupLabel: group.label,
     } satisfies PatternImage
   }),
@@ -40,7 +40,7 @@ const GROUPS = PATTERN_GROUPS.map((group) => ({
 
 const ALL_IMAGES: PatternImage[] = GROUPS.flatMap((g) => g.images)
 
-export function ModeleMontajPage() {
+export function ModeleMontajPageEN() {
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [lightboxIndex, setLightboxIndex] = useState(0)
 
@@ -71,10 +71,10 @@ export function ModeleMontajPage() {
   }, [lightboxOpen, closeLightbox, prevLightbox, nextLightbox])
 
   useEffect(() => {
-    const url = `${window.location.origin}/modele-de-montaj`
-    const title = `Modele de montaj - Inspiră-te pentru proiectul tău | ${SEO_SITE_NAME}`
+    const url = `${window.location.origin}/en/modele-de-montaj`
+    const title = `Installation Patterns - Get Inspired for Your Project | ${SEO_SITE_NAME}`
     const description =
-      'Descoperă cele mai bune modele de montaj Petra Pavaje pentru grădini, curți și alei, ideale pentru spații unice.'
+      'Discover the best Petra Pavaje installation patterns for gardens, yards and pathways, perfect for unique spaces.'
 
     document.title = title
     upsertMeta('name', 'description', description)
@@ -94,8 +94,8 @@ export function ModeleMontajPage() {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
-        { '@type': 'ListItem', position: 2, name: 'Modele de montaj', item: url },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${window.location.origin}/en` },
+        { '@type': 'ListItem', position: 2, name: 'Installation Patterns', item: url },
       ],
     })
 
@@ -108,16 +108,17 @@ export function ModeleMontajPage() {
         <div className="container-premium">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <nav className="flex items-center gap-2 text-sm text-charcoal-400 mb-6">
-              <Link to="/" className="hover:text-white transition-colors">Acasă</Link>
+              <Link to="/en" className="hover:text-white transition-colors">Home</Link>
               <span>/</span>
-              <span className="text-white">Modele de montaj</span>
+              <span className="text-white">Installation Patterns</span>
             </nav>
-            <p className="text-brand-500 text-sm font-medium tracking-[0.2em] uppercase mb-3">Utile</p>
-            <h1 className="heading-h1 mb-2 max-w-3xl">Modele de montaj</h1>
-            <p className="text-xl text-charcoal-300 mb-6">Inspiră-te pentru proiectul tău</p>
+            <p className="text-brand-500 text-sm font-medium tracking-[0.2em] uppercase mb-3">Helpful</p>
+            <h1 className="heading-h1 mb-2 max-w-3xl">Installation Patterns</h1>
+            <p className="text-xl text-charcoal-300 mb-6">Get Inspired for Your Project</p>
             <p className="text-body-lg text-charcoal-400 max-w-2xl">
-              Cauți inspirație? Descoperă modele de montaj pentru pavaje și dale Petra Pavaje! Modele detaliate
-              pentru dimensiuni variate, de la grădină, curte la alee. Creează spații unice, pas cu pas.
+              Looking for inspiration? Discover Petra Pavaje paving and slab installation patterns! Detailed
+              layouts for a variety of sizes, from gardens and yards to pathways. Create unique spaces, step by
+              step.
             </p>
           </motion.div>
         </div>
@@ -132,7 +133,7 @@ export function ModeleMontajPage() {
             transition={{ duration: 0.5 }}
             className="mb-10"
           >
-            <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">Galerie modele</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">Pattern Gallery</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -152,7 +153,7 @@ export function ModeleMontajPage() {
                       type="button"
                       onClick={() => openLightbox(startIndex)}
                       className="block w-full aspect-square overflow-hidden group"
-                      aria-label={`Vezi modelul de montaj ${group.label}`}
+                      aria-label={`View installation pattern ${group.label}`}
                     >
                       <img
                         src={group.images[0].url}
@@ -169,7 +170,7 @@ export function ModeleMontajPage() {
                           type="button"
                           onClick={() => openLightbox(startIndex + i)}
                           className="aspect-square overflow-hidden group"
-                          aria-label={`Vezi imaginea ${i + 1} din modelul de montaj ${group.label}`}
+                          aria-label={`View image ${i + 1} of installation pattern ${group.label}`}
                         >
                           <img
                             src={img.url}
@@ -197,26 +198,26 @@ export function ModeleMontajPage() {
           onClick={closeLightbox}
           role="dialog"
           aria-modal="true"
-          aria-label="Vizualizare model de montaj"
+          aria-label="Installation pattern viewer"
         >
           <button
             onClick={closeLightbox}
             className="absolute top-4 right-4 p-2 text-white/70 hover:text-white transition-colors z-10"
-            aria-label="Închide"
+            aria-label="Close"
           >
             <X className="w-8 h-8" />
           </button>
           <button
             onClick={(e) => { e.stopPropagation(); prevLightbox() }}
             className="absolute left-4 top-1/2 -translate-y-1/2 p-3 text-white/70 hover:text-white transition-colors z-10"
-            aria-label="Imaginea anterioară"
+            aria-label="Previous image"
           >
             <ChevronLeft className="w-8 h-8" />
           </button>
           <button
             onClick={(e) => { e.stopPropagation(); nextLightbox() }}
             className="absolute right-4 top-1/2 -translate-y-1/2 p-3 text-white/70 hover:text-white transition-colors z-10"
-            aria-label="Imaginea următoare"
+            aria-label="Next image"
           >
             <ChevronRight className="w-8 h-8" />
           </button>

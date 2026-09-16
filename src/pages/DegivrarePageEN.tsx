@@ -9,22 +9,22 @@ const R2 = 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev'
 const USE_CASES = [
   {
     icon: CarFront,
-    title: 'Rampe de acces auto și platforme de încărcare',
-    body: 'Sistemele de degivrare complet automatizate previn derapajul autoturismelor și utilajelor pe rampe și platforme de încărcare.',
+    title: 'Vehicle Access Ramps and Loading Docks',
+    body: 'Fully automated de-icing systems prevent cars and equipment from skidding on ramps and loading docks.',
   },
   {
     icon: Footprints,
-    title: 'Trotuare și căi de acces',
-    body: 'Elimină riscul de accidentare provocat de polei și îngheț pe trotuare și pe diferitele căi de acces pietonale.',
+    title: 'Sidewalks and Pathways',
+    body: 'Eliminates the risk of injury caused by ice and frost on sidewalks and various pedestrian pathways.',
   },
 ]
 
-export function DegivrarePage() {
+export function DegivrarePageEN() {
   useEffect(() => {
-    const url = `${window.location.origin}/degivrare`
-    const title = `Degivrare Pavaj Iarna - Soluții Eficiente | ${SEO_SITE_NAME}`
+    const url = `${window.location.origin}/en/degivrare`
+    const title = `Winter Paving De-Icing - Effective Solutions | ${SEO_SITE_NAME}`
     const description =
-      'Termostatul inteligent ajută la degivrarea pavajului iarna, prevenind accidentările pe trotuare și rampa de acces auto.'
+      'A smart thermostat helps de-ice paving in winter, preventing injuries on sidewalks and vehicle access ramps.'
 
     document.title = title
     upsertMeta('name', 'description', description)
@@ -44,8 +44,8 @@ export function DegivrarePage() {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
-        { '@type': 'ListItem', position: 2, name: 'Degivrare', item: url },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${window.location.origin}/en` },
+        { '@type': 'ListItem', position: 2, name: 'De-icing', item: url },
       ],
     })
 
@@ -58,14 +58,14 @@ export function DegivrarePage() {
         <div className="container-premium">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <nav className="flex items-center gap-2 text-sm text-charcoal-400 mb-6">
-              <Link to="/" className="hover:text-white transition-colors">Acasă</Link>
+              <Link to="/en" className="hover:text-white transition-colors">Home</Link>
               <span>/</span>
-              <span className="text-white">Degivrare</span>
+              <span className="text-white">De-icing</span>
             </nav>
-            <p className="text-brand-500 text-sm font-medium tracking-[0.2em] uppercase mb-3">Utile</p>
-            <h1 className="heading-h1 mb-2 max-w-3xl">Degivrarea</h1>
+            <p className="text-brand-500 text-sm font-medium tracking-[0.2em] uppercase mb-3">Helpful</p>
+            <h1 className="heading-h1 mb-2 max-w-3xl">De-Icing</h1>
             <p className="text-xl text-charcoal-300 max-w-2xl">
-              Sisteme automate de topire a zăpezii și gheții
+              Automated systems for melting snow and ice
             </p>
           </motion.div>
         </div>
@@ -84,18 +84,17 @@ export function DegivrarePage() {
               <div className="w-11 h-11 rounded-full bg-brand-50 flex items-center justify-center shrink-0">
                 <ThermometerSnowflake className="w-5 h-5 text-brand-600" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">Cum funcționează?</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">How It Works</h2>
             </div>
             <div className="space-y-4 text-body-lg text-charcoal-600 leading-relaxed">
               <p>
-                Termostatul inteligent detectează, cu ajutorul senzorilor exteriori de temperatură, când aceasta
-                scade sub pragul de îngheț sau când se depune zăpadă. Corelat cu senzorul de umiditate, termostatul
-                inteligent comandă încălzirea cablului suprafeței protejate și ajută la prevenirea înghețului pe
-                suprafața acesteia.
+                The smart thermostat uses outdoor temperature sensors to detect when it drops below freezing or
+                when snow settles on the surface. Combined with the humidity sensor, the smart thermostat triggers
+                heating of the cable in the protected surface, helping prevent ice from forming on it.
               </p>
               <p>
-                La fel de eficient este și în cazul căderilor de zăpadă, când topirea progresivă se face până la
-                eliminarea riscului formării gheții și a zăpezii.
+                It's just as effective during snowfall, progressively melting the snow until the risk of ice and
+                snow buildup is eliminated.
               </p>
             </div>
           </motion.div>
@@ -109,7 +108,7 @@ export function DegivrarePage() {
           >
             <img
               src={`${R2}/degivrare.jpg`}
-              alt="Sistem degivrare"
+              alt="De-icing system"
               className="w-full h-auto"
               width="794"
               height="324"
@@ -128,7 +127,7 @@ export function DegivrarePage() {
               <div className="w-11 h-11 rounded-full bg-brand-50 flex items-center justify-center shrink-0">
                 <Snowflake className="w-5 h-5 text-brand-600" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">Unde se folosește</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">Where It's Used</h2>
             </div>
             <div className="space-y-4">
               {USE_CASES.map((useCase) => {
@@ -155,7 +154,7 @@ export function DegivrarePage() {
           >
             <img
               src={`${R2}/degivrare-10.jpg`}
-              alt="Sistem degivrare automat"
+              alt="Automated de-icing system"
               className="w-full h-auto"
               width="575"
               height="437"

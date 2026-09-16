@@ -43,6 +43,34 @@ export function upsertJsonLd(id: string, data: object | null) {
   document.head.appendChild(script)
 }
 
+const HREFLANG_LANGS = ['ro', 'en', 'x-default'] as const
+
+function upsertHreflang(lang: string, href: string) {
+  const id = `hreflang-${lang}`
+  let el = document.getElementById(id) as HTMLLinkElement | null
+  if (!el) {
+    el = document.createElement('link')
+    el.id = id
+    el.setAttribute('rel', 'alternate')
+    document.head.appendChild(el)
+  }
+  el.setAttribute('hreflang', lang)
+  el.setAttribute('href', href)
+}
+
+// Registers the ro/en alternate pair for a page that exists in both
+// languages, plus x-default pointing at the Romanian (primary) version.
+export function upsertHreflangPair(roPath: string, enPath: string) {
+  const origin = window.location.origin
+  upsertHreflang('ro', `${origin}${roPath}`)
+  upsertHreflang('en', `${origin}${enPath}`)
+  upsertHreflang('x-default', `${origin}${roPath}`)
+}
+
+function clearHreflang() {
+  HREFLANG_LANGS.forEach((lang) => document.getElementById(`hreflang-${lang}`)?.remove())
+}
+
 export function resetSEO() {
   document.title = SEO_DEFAULT_TITLE
   upsertMeta('name', 'description', SEO_DEFAULT_DESCRIPTION)
@@ -50,4 +78,5 @@ export function resetSEO() {
   upsertJsonLd('faq-schema', null)
   upsertJsonLd('breadcrumb-schema', null)
   upsertJsonLd('itemlist-schema', null)
+  clearHreflang()
 }

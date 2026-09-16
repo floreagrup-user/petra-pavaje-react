@@ -36,6 +36,24 @@ const CarieraPage = lazy(() => import('@/pages/CarieraPage').then(m => ({ defaul
 const GarantiePage = lazy(() => import('@/pages/GarantiePage').then(m => ({ default: m.GarantiePage })))
 const DocumenteTehnicePage = lazy(() => import('@/pages/DocumenteTehnicePage').then(m => ({ default: m.DocumenteTehnicePage })))
 
+// English (/en) — scoped translation: static/info pages only, no catalog/blog/docs.
+// See src/lib/i18n-routes.ts for the RO<->EN path map.
+const HomePageEN = lazy(() => import('@/pages/HomePageEN').then(m => ({ default: m.HomePageEN })))
+const AboutPageEN = lazy(() => import('@/pages/AboutPageEN').then(m => ({ default: m.AboutPageEN })))
+const FloreaGrupPageEN = lazy(() => import('@/pages/FloreaGrupPageEN').then(m => ({ default: m.FloreaGrupPageEN })))
+const ContactPageEN = lazy(() => import('@/pages/ContactPageEN').then(m => ({ default: m.ContactPageEN })))
+const SustainabilityPageEN = lazy(() => import('@/pages/SustainabilityPageEN').then(m => ({ default: m.SustainabilityPageEN })))
+const GarantiePageEN = lazy(() => import('@/pages/GarantiePageEN').then(m => ({ default: m.GarantiePageEN })))
+const LaboratorPageEN = lazy(() => import('@/pages/LaboratorPageEN').then(m => ({ default: m.LaboratorPageEN })))
+const CarieraPageEN = lazy(() => import('@/pages/CarieraPageEN').then(m => ({ default: m.CarieraPageEN })))
+const CalculatorPavajPageEN = lazy(() => import('@/pages/CalculatorPavajPageEN').then(m => ({ default: m.CalculatorPavajPageEN })))
+const MontajPageEN = lazy(() => import('@/pages/MontajPageEN').then(m => ({ default: m.MontajPageEN })))
+const ModeleMontajPageEN = lazy(() => import('@/pages/ModeleMontajPageEN').then(m => ({ default: m.ModeleMontajPageEN })))
+const IntretinerePageEN = lazy(() => import('@/pages/IntretinerePageEN').then(m => ({ default: m.IntretinerePageEN })))
+const DegivrarePageEN = lazy(() => import('@/pages/DegivrarePageEN').then(m => ({ default: m.DegivrarePageEN })))
+const FaqPageEN = lazy(() => import('@/pages/FaqPageEN').then(m => ({ default: m.FaqPageEN })))
+const GenericPageEN = lazy(() => import('@/pages/GenericPageEN').then(m => ({ default: m.GenericPageEN })))
+
 const LazyGenericPage = ({ title, contentKey }: { title: string; contentKey: string }) => (
   <Suspense fallback={<div className="pt-32 pb-16 text-center text-charcoal-500">Se încarcă...</div>}>
     <GenericPage title={title} contentKey={contentKey} />
@@ -99,6 +117,38 @@ export const router = createBrowserRouter([
       { path: 'confidentialitate', element: <LazyGenericPage title="Politica de Confidențialitate" contentKey="confidentialitate" /> },
       { path: 'cookie-uri', element: <LazyGenericPage title="Politica Cookie-uri" contentKey="cookie-uri" /> },
       { path: 'termeni', element: <LazyGenericPage title="Termeni și Condiții" contentKey="termeni" /> },
+
+      // English (/en) — scoped translation, see note above the lazy imports.
+      { path: 'en', element: <Suspense><HomePageEN /></Suspense> },
+      { path: 'en/despre-noi', element: <Suspense><AboutPageEN /></Suspense> },
+      { path: 'en/florea-grup', element: <Suspense><FloreaGrupPageEN /></Suspense> },
+      { path: 'en/contact', element: <Suspense><ContactPageEN /></Suspense> },
+      { path: 'en/sustenabilitate', element: <Suspense><SustainabilityPageEN /></Suspense> },
+      { path: 'en/garantie', element: <Suspense><GarantiePageEN /></Suspense> },
+      { path: 'en/laborator', element: <Suspense><LaboratorPageEN /></Suspense> },
+      { path: 'en/cariera', element: <Suspense><CarieraPageEN /></Suspense> },
+      { path: 'en/calculator-pavaj', element: <Suspense><CalculatorPavajPageEN /></Suspense> },
+      { path: 'en/montaj', element: <Suspense><MontajPageEN /></Suspense> },
+      { path: 'en/modele-de-montaj', element: <Suspense><ModeleMontajPageEN /></Suspense> },
+      { path: 'en/intretinere', element: <Suspense><IntretinerePageEN /></Suspense> },
+      { path: 'en/degivrare', element: <Suspense><DegivrarePageEN /></Suspense> },
+      { path: 'en/faq', element: <Suspense><FaqPageEN /></Suspense> },
+      {
+        path: 'en/compania',
+        element: (
+          <Suspense>
+            <GenericPageEN title="The Company" contentKey="company" />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'en/cookie-uri',
+        element: (
+          <Suspense>
+            <GenericPageEN title="Cookie Policy" contentKey="cookie-uri" />
+          </Suspense>
+        ),
+      },
     ],
   },
 ])

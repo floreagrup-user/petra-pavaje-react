@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Phone, Mail, MapPin, Clock, Navigation, Send, CheckCircle } from 'lucide-react'
-import { countyReps, getRepByCounty, factories } from '@/data/site'
+import { getRepByCounty, factories } from '@/data/site'
 import { trackEvent } from '@/lib/analytics'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, upsertHreflangPair, resetSEO } from '@/hooks/seo-utils'
 
@@ -9,7 +9,7 @@ const counties = [
   { label: 'Alba', code: 'AB' }, { label: 'Arad', code: 'AR' }, { label: 'Argeș', code: 'AG' },
   { label: 'Bacău', code: 'BC' }, { label: 'Bihor', code: 'BH' }, { label: 'Bistrița-Năsăud', code: 'BN' },
   { label: 'Botoșani', code: 'BT' }, { label: 'Brașov', code: 'BV' }, { label: 'Brăila', code: 'BR' },
-  { label: 'București', code: 'B' }, { label: 'Buzău', code: 'BZ' }, { label: 'Caraș-Severin', code: 'CS' },
+  { label: 'Bucharest', code: 'B' }, { label: 'Buzău', code: 'BZ' }, { label: 'Caraș-Severin', code: 'CS' },
   { label: 'Călărași', code: 'CL' }, { label: 'Cluj', code: 'CJ' }, { label: 'Constanța', code: 'CT' },
   { label: 'Covasna', code: 'CV' }, { label: 'Dâmbovița', code: 'DB' }, { label: 'Dolj', code: 'DJ' },
   { label: 'Galați', code: 'GL' }, { label: 'Giurgiu', code: 'GR' }, { label: 'Gorj', code: 'GJ' },
@@ -22,7 +22,7 @@ const counties = [
   { label: 'Vaslui', code: 'VS' }, { label: 'Vâlcea', code: 'VL' }, { label: 'Vrancea', code: 'VN' },
 ]
 
-export function ContactPage() {
+export function ContactPageEN() {
   const [selectedCounty, setSelectedCounty] = useState('')
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [submitting, setSubmitting] = useState(false)
@@ -32,10 +32,10 @@ export function ContactPage() {
   const rep = selectedCounty ? getRepByCounty(selectedCounty) : null
 
   useEffect(() => {
-    const url = `${window.location.origin}/contact`
-    const title = `Contact - Solicită Ofertă Personalizată | ${SEO_SITE_NAME}`
+    const url = `${window.location.origin}/en/contact`
+    const title = `Contact - Request a Personalized Quote | ${SEO_SITE_NAME}`
     const description =
-      'Contactează Petra Pavaje pentru o ofertă personalizată. Selectează județul pentru reprezentantul tău de vânzări sau trimite-ne un mesaj direct.'
+      'Contact Petra Pavaje for a personalized quote. Select your county for your local sales representative, or send us a message directly.'
 
     document.title = title
     upsertMeta('name', 'description', description)
@@ -54,7 +54,7 @@ export function ContactPage() {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${window.location.origin}/en` },
         { '@type': 'ListItem', position: 2, name: 'Contact', item: url },
       ],
     })
@@ -107,7 +107,7 @@ export function ContactPage() {
           >
             <h1 className="heading-h1 mb-4">Contact</h1>
             <p className="text-body-lg text-charcoal-400 max-w-2xl">
-              Selectează județul tău pentru a vedea reprezentantul de vânzări din zona ta sau trimite-ne un mesaj direct.
+              Select your county to see your local sales representative, or send us a message directly.
             </p>
           </motion.div>
         </div>
@@ -117,8 +117,8 @@ export function ContactPage() {
         <div className="container-premium">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div>
-              <h2 className="heading-h2 text-charcoal-900 mb-6">Selectează Județul</h2>
-              <p className="text-charcoal-500 mb-6">Alege județul pentru a vedea reprezentantul tău de vânzări.</p>
+              <h2 className="heading-h2 text-charcoal-900 mb-6">Select Your County</h2>
+              <p className="text-charcoal-500 mb-6">Choose your county to see your local sales representative.</p>
 
               <div className="relative mb-8">
                 <select
@@ -126,7 +126,7 @@ export function ContactPage() {
                   onChange={(e) => setSelectedCounty(e.target.value)}
                   className="w-full px-4 py-3 bg-white border border-charcoal-200 rounded-xl text-charcoal-900 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-transparent transition-all appearance-none"
                 >
-                  <option value="">Alege județul...</option>
+                  <option value="">Choose your county…</option>
                   {counties.map((c) => (
                     <option key={c.code} value={c.code}>{c.label}</option>
                   ))}
@@ -144,7 +144,7 @@ export function ContactPage() {
                   animate={{ opacity: 1, y: 0 }}
                   className="p-6 bg-charcoal-50 rounded-xl"
                 >
-                  <h3 className="text-lg font-semibold text-charcoal-900 mb-4">Reprezentantul tău</h3>
+                  <h3 className="text-lg font-semibold text-charcoal-900 mb-4">Your Representative</h3>
                   <div className="space-y-3">
                     <p className="text-charcoal-900 font-medium">{rep.name}</p>
                     <a href={`mailto:${rep.email}`} onClick={() => trackEvent('email_click')} className="flex items-center gap-2 text-charcoal-600 hover:text-brand-600 transition-colors">
@@ -157,7 +157,7 @@ export function ContactPage() {
                     </a>
                     <div className="flex gap-3 pt-2">
                       <a href={`tel:${rep.phone}`} className="btn-primary text-sm px-4 py-2">
-                        Sună acum
+                        Call Now
                       </a>
                       <a
                         href={`https://wa.me/${rep.phone.replace(/\s/g, '')}`}
@@ -171,12 +171,12 @@ export function ContactPage() {
                   </div>
                 </motion.div>
               ) : (
-                <p className="text-charcoal-400 text-sm italic">Selectează județul pentru a vedea reprezentantul de vânzări din zona ta.</p>
+                <p className="text-charcoal-400 text-sm italic">Select your county to see your local sales representative.</p>
               )}
             </div>
 
             <div>
-              <h2 className="heading-h2 text-charcoal-900 mb-6">Trimite-ne un mesaj</h2>
+              <h2 className="heading-h2 text-charcoal-900 mb-6">Send Us a Message</h2>
               {formSubmitted ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
@@ -184,15 +184,15 @@ export function ContactPage() {
                   className="p-8 bg-stone-100 rounded-xl text-center"
                 >
                   <CheckCircle className="w-12 h-12 text-brand-600 mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-charcoal-900 mb-2">Mesaj trimis cu succes!</h3>
-                  <p className="text-charcoal-500">Te vom contacta în cel mai scurt timp.</p>
+                  <h3 className="text-xl font-semibold text-charcoal-900 mb-2">Message sent successfully!</h3>
+                  <p className="text-charcoal-500">We'll get back to you as soon as possible.</p>
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <input
                       type="text"
-                      placeholder="Numele tău *"
+                      placeholder="Your name *"
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -212,7 +212,7 @@ export function ContactPage() {
                   <div>
                     <input
                       type="tel"
-                      placeholder="Telefon"
+                      placeholder="Phone"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full px-4 py-3 bg-white border border-charcoal-200 rounded-xl text-charcoal-900 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-transparent transition-all"
@@ -220,7 +220,7 @@ export function ContactPage() {
                   </div>
                   <div>
                     <textarea
-                      placeholder="Mesaj *"
+                      placeholder="Message *"
                       required
                       rows={4}
                       value={formData.message}
@@ -237,17 +237,17 @@ export function ContactPage() {
                       className="mt-1"
                     />
                     <span className="text-sm text-charcoal-500">
-                      Sunt de acord ca datele mele să fie prelucrate conform Regulamentului (UE) 2016/679.
+                      I agree to have my data processed in accordance with Regulation (EU) 2016/679.
                     </span>
                   </label>
                   {submitError && (
                     <p className="text-sm text-red-600">
-                      A apărut o eroare la trimiterea mesajului. Te rugăm încearcă din nou sau sună-ne direct.
+                      Something went wrong while sending your message. Please try again or call us directly.
                     </p>
                   )}
                   <button type="submit" disabled={submitting} className="btn-primary w-full justify-center group disabled:opacity-60 disabled:cursor-not-allowed">
                     <Send className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
-                    {submitting ? 'Se trimite...' : 'Trimite mesaj'}
+                    {submitting ? 'Sending…' : 'Send Message'}
                   </button>
                 </form>
               )}
@@ -265,9 +265,9 @@ export function ContactPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="heading-h2 text-charcoal-900 mb-4">Fabricile Noastre</h2>
+            <h2 className="heading-h2 text-charcoal-900 mb-4">Our Factories</h2>
             <p className="text-body-lg text-charcoal-500 max-w-2xl mx-auto">
-              4 centre de producție strategic poziționate pentru a fi mereu aproape de tine.
+              4 production centers strategically located to always be close to you.
             </p>
           </motion.div>
 
@@ -308,7 +308,7 @@ export function ContactPage() {
                   className="inline-flex items-center gap-1 mt-4 text-sm text-brand-600 hover:text-brand-700 font-medium transition-colors"
                 >
                   <Navigation className="w-4 h-4" />
-                  Navigare GPS
+                  GPS Directions
                 </a>
               </motion.div>
             ))}

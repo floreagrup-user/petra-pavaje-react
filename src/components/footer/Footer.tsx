@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { MapPin, ArrowRight, Download } from 'lucide-react'
-import { footerLinks, socialLinks } from '@/data/menu'
+import { footerLinks, enFooterLinks, socialLinks } from '@/data/menu'
 import { factories } from '@/data/site'
 import { openCookieSettings } from '@/hooks/useCookieConsent'
+import { isEnglishPath } from '@/lib/i18n-routes'
 
 const SocialIcon = ({ name, className }: { name: string; className?: string }) => {
   const icons: Record<string, React.ReactNode> = {
@@ -26,6 +27,10 @@ const SocialIcon = ({ name, className }: { name: string; className?: string }) =
 }
 
 export function Footer() {
+  const location = useLocation()
+  const isEnglish = isEnglishPath(location.pathname)
+  const links = isEnglish ? enFooterLinks : footerLinks
+
   return (
     <footer className="bg-charcoal-900 text-white">
       <div className="bg-brand-600 relative overflow-hidden">
@@ -33,19 +38,24 @@ export function Footer() {
         <div className="container-premium py-12 md:py-16 relative">
           <div className="text-center">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">
-              Transformă-ți curtea în spațiul visat
+              {isEnglish ? 'Turn your yard into the space you dreamed of' : 'Transformă-ți curtea în spațiul visat'}
             </h2>
             <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-              Contactează reprezentantul din zona ta pentru o ofertă personalizată
+              {isEnglish
+                ? 'Get in touch with our team for a personalized quote'
+                : 'Contactează reprezentantul din zona ta pentru o ofertă personalizată'}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white text-brand-600 font-semibold rounded-md shadow-lg hover:bg-charcoal-50 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5">
-                Solicita Ofertă
+              <Link
+                to={isEnglish ? '/en/contact' : '/contact'}
+                className="inline-flex items-center justify-center px-8 py-4 bg-white text-brand-600 font-semibold rounded-md shadow-lg hover:bg-charcoal-50 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5"
+              >
+                {isEnglish ? 'Request a Quote' : 'Solicita Ofertă'}
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
               <Link to="/catalog" className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-md hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
                 <Download className="w-4 h-4 mr-2" />
-                Descarcă Catalog
+                {isEnglish ? 'Download Catalog' : 'Descarcă Catalog'}
               </Link>
             </div>
           </div>
@@ -66,10 +76,41 @@ export function Footer() {
               />
             </div>
             <p className="text-sm text-white/70 mb-6 leading-relaxed">
-              Producător premium de pavaje, borduri, garduri și elemente de beton. 4 fabrici naționale, peste 800 de produse.
+              {isEnglish
+                ? 'Premium manufacturer of pavers, curbs, fences and concrete elements. 4 factories nationwide, 800+ products.'
+                : 'Producător premium de pavaje, borduri, garduri și elemente de beton. 4 fabrici naționale, peste 800 de produse.'}
             </p>
+            {isEnglish ? (
+              <Link to="/produse" className="text-sm text-white/70 hover:text-white transition-colors">
+                Browse full product catalog (RO) →
+              </Link>
+            ) : (
+              <ul className="space-y-2">
+                {footerLinks.products.map((link) => (
+                  <li key={link.label}>
+                    <Link to={link.href} className="text-sm text-white/70 hover:text-white transition-colors">
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+          <div>
+            <h3 className="text-white font-semibold text-lg mb-4">{isEnglish ? 'Company' : 'Compania'}</h3>
             <ul className="space-y-2">
-              {footerLinks.products.map((link) => (
+              {links.company.map((link) => (
+                <li key={link.label}>
+                  <Link to={link.href} className="text-sm text-white/70 hover:text-white transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <h3 className="text-white font-semibold text-lg mb-4 mt-8">{isEnglish ? 'Resources' : 'Resurse'}</h3>
+            <ul className="space-y-2">
+              {links.resources.map((link) => (
                 <li key={link.label}>
                   <Link to={link.href} className="text-sm text-white/70 hover:text-white transition-colors">
                     {link.label}
@@ -80,30 +121,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Compania</h3>
-            <ul className="space-y-2">
-              {footerLinks.company.map((link) => (
-                <li key={link.label}>
-                  <Link to={link.href} className="text-sm text-white/70 hover:text-white transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <h3 className="text-white font-semibold text-lg mb-4 mt-8">Resurse</h3>
-            <ul className="space-y-2">
-              {footerLinks.resources.map((link) => (
-                <li key={link.label}>
-                  <Link to={link.href} className="text-sm text-white/70 hover:text-white transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Fabricile Noastre</h3>
+            <h3 className="text-white font-semibold text-lg mb-4">{isEnglish ? 'Our Factories' : 'Fabricile Noastre'}</h3>
             <div className="space-y-4">
               {factories.map((factory) => (
                 <div key={factory.id} className="flex items-start gap-3">
@@ -121,9 +139,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Noutăți Petra Pavaje</h3>
+            <h3 className="text-white font-semibold text-lg mb-4">
+              {isEnglish ? 'Petra Pavaje News' : 'Noutăți Petra Pavaje'}
+            </h3>
             <p className="text-sm text-white/70 mb-4">
-              Abonează-te la newsletter pentru noutăți despre produse și oferte speciale.
+              {isEnglish
+                ? 'Subscribe to our newsletter for product news and special offers.'
+                : 'Abonează-te la newsletter pentru noutăți despre produse și oferte speciale.'}
             </p>
             <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
               <input
@@ -132,7 +154,7 @@ export function Footer() {
                 className="flex-1 px-3 py-2 bg-white/10 border border-white/20 rounded-md text-sm text-white placeholder-white/50 focus:outline-none focus:border-white/50 transition-colors"
               />
               <button type="submit" className="px-4 py-2 bg-brand-600 text-white text-sm rounded-md hover:bg-brand-700 transition-colors">
-                Abonare
+                {isEnglish ? 'Subscribe' : 'Abonare'}
               </button>
             </form>
           </div>
@@ -143,7 +165,7 @@ export function Footer() {
         <div className="container-premium py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-sm text-white/70">
-              © {new Date().getFullYear()} Petra Pavaje | Parte a{' '}
+              © {new Date().getFullYear()} Petra Pavaje | {isEnglish ? 'Part of' : 'Parte a'}{' '}
               <a href="https://floreagrup.ro/" target="_blank" rel="noopener noreferrer" className="text-white/80 underline hover:text-white transition-colors">
                 Florea Grup
               </a>
@@ -165,13 +187,13 @@ export function Footer() {
             </div>
 
             <div className="flex items-center gap-4 text-xs text-white/70">
-              {footerLinks.legal.map((link) => (
+              {links.legal.map((link) => (
                 <Link key={link.label} to={link.href} className="hover:text-white transition-colors">
                   {link.label}
                 </Link>
               ))}
               <button onClick={openCookieSettings} className="hover:text-white transition-colors">
-                Setări cookie-uri
+                {isEnglish ? 'Cookie Settings' : 'Setări cookie-uri'}
               </button>
             </div>
           </div>

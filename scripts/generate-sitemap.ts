@@ -8,10 +8,12 @@ import { elementCategories } from '../src/data/elements'
 import { woodstoneCategories } from '../src/data/woodstone'
 import { blogPosts } from '../src/data/blog'
 import { categoryUrl, productUrl } from '../src/lib/product-urls'
+import { TRANSLATED_PATHS } from '../src/lib/i18n-routes'
 
 const SITE_URL = 'https://petrapavaje.ro'
 
-type Entry = { loc: string; changefreq: string; priority: string; lastmod?: string }
+type AltLang = { lang: string; loc: string }
+type Entry = { loc: string; changefreq: string; priority: string; lastmod?: string; altLangs?: AltLang[] }
 
 const entries: Entry[] = []
 const seen = new Set<string>()
@@ -46,6 +48,26 @@ add('/brosuri', 'monthly', '0.6')
 add('/confidentialitate', 'yearly', '0.3')
 add('/cookie-uri', 'yearly', '0.3')
 add('/termeni', 'yearly', '0.3')
+
+// English (/en) — scoped translation, mirrors TRANSLATED_PATHS from src/lib/i18n-routes.ts
+for (const roPath of TRANSLATED_PATHS) {
+  add(roPath === '/' ? '/en' : `/en${roPath}`, 'monthly', roPath === '/' ? '0.9' : '0.6')
+}
+
+// Cross-link every RO/EN page pair with hreflang alternates (+ x-default -> RO)
+for (const roPath of TRANSLATED_PATHS) {
+  const enPath = roPath === '/' ? '/en' : `/en${roPath}`
+  const roEntry = entries.find((e) => e.loc === roPath)
+  const enEntry = entries.find((e) => e.loc === enPath)
+  if (!roEntry || !enEntry) continue
+  const altLangs: AltLang[] = [
+    { lang: 'ro', loc: roPath },
+    { lang: 'en', loc: enPath },
+    { lang: 'x-default', loc: roPath },
+  ]
+  roEntry.altLangs = altLangs
+  enEntry.altLangs = altLangs
+}
 
 // Product categories (pavaje-premium, pavaje-standard, woodstone-lemn-pietrificat, borduri, boltari, jardiniere, palisada, banci, treapta, bloc-de-zid, garduri, elemente-de-canalizare)
 for (const cat of categories) {
@@ -87,10 +109,13 @@ entries.sort((a, b) => a.loc.localeCompare(b.loc))
 
 const xml = [
   '<?xml version="1.0" encoding="UTF-8"?>',
-  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
   ...entries.map((e) => {
     const lastmod = e.lastmod ? `<lastmod>${e.lastmod}</lastmod>` : ''
-    return `  <url><loc>${SITE_URL}${e.loc}</loc>${lastmod}<changefreq>${e.changefreq}</changefreq><priority>${e.priority}</priority></url>`
+    const altLinks = (e.altLangs || [])
+      .map((a) => `<xhtml:link rel="alternate" hreflang="${a.lang}" href="${SITE_URL}${a.loc}"/>`)
+      .join('')
+    return `  <url><loc>${SITE_URL}${e.loc}</loc>${lastmod}<changefreq>${e.changefreq}</changefreq><priority>${e.priority}</priority>${altLinks}</url>`
   }),
   '</urlset>',
   '',

@@ -7,94 +7,94 @@ import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, upsertHreflan
 const R2 = 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev'
 
 const TOOLS_ITEMS = [
-  'Roabă, lopeți, târnăcop, greblă (pentru pregătirea solului și a stratului de bază)',
-  'Placă vibrantă (cu piesă de prelungire din cauciuc)',
-  'Țevi profilate (3-6 cm) și dreptar din aluminiu (pentru netezirea stratului de nisip)',
-  'Ciocan de cauciuc (pentru fixarea pavajelor)',
-  'Polizor sau ghilotină pentru pavaje (pentru tăierea marginilor/bordurilor)',
-  'Mătură (pentru umplerea rosturilor dintre pavaje)',
-  'Nivelă, teodolit (pentru stabilirea cotelor, aliniamentelor)',
+  'Wheelbarrow, shovels, pickaxe, rake (for preparing the soil and base layer)',
+  'Plate compactor (with a rubber extension attachment)',
+  'Profiled pipes (3-6 cm) and an aluminum screed board (for leveling the sand layer)',
+  'Rubber mallet (for setting pavers in place)',
+  'Grinder or paver splitter (for cutting edges/curbs)',
+  'Broom (for filling the joints between pavers)',
+  'Level, theodolite (for establishing grades and alignments)',
 ]
 
 const SUBSTRATE_THICKNESS = [
-  'Minim 15 cm, pentru căi de acces pietonal',
-  'Minim 20 cm, pentru traficul de autoturisme',
-  'Minim 30 cm, în cazul traficului intens și greu (camioane)',
+  'Minimum 15 cm, for pedestrian pathways',
+  'Minimum 20 cm, for car traffic',
+  'Minimum 30 cm, for heavy, intense traffic (trucks)',
 ]
 
 const STEPS = [
   {
     icon: Shovel,
-    title: 'Pregătirea suprafeței',
+    title: 'Preparing the Surface',
     image: `${R2}/montare-1-web.jpg`,
-    alt: 'Pregătire suprafață',
+    alt: 'Surface preparation',
     width: '1094',
     height: '547',
     paragraphs: [
-      'După realizarea măsurătorilor, se face împrejmuirea și decopertarea zonei, prin îndepărtarea stratului de pământ (cca. 10-35 cm). Pentru un drenaj adecvat, suprafața finală trebuie să prezinte o pantă ușoară, plană.',
-      'Se umple suprafața decopertată cu straturi succesive de balast sau piatră concasată, care se compactează cu ajutorul plăcii vibrante.',
+      'After taking measurements, the area is fenced off and the top soil layer is stripped (roughly 10-35 cm). For proper drainage, the finished surface should have a gentle, even slope.',
+      'The stripped area is filled with successive layers of gravel or crushed stone, which are compacted using the plate compactor.',
     ],
-    subheading: 'Grosimea stratului suport',
+    subheading: 'Base Layer Thickness',
     list: SUBSTRATE_THICKNESS,
   },
   {
     icon: Ruler,
-    title: 'Montarea bordurilor',
+    title: 'Installing the Curbs',
     image: `${R2}/montare-2-web.jpg`,
-    alt: 'Compactare suprafață',
+    alt: 'Surface compaction',
     width: '1094',
     height: '729',
     paragraphs: [
-      'Bordurile se montează după compactarea stratului suport prin realizarea săpăturii necesare. Cotele bordurilor vor fi transmise cu ajutorul nivelei, iar aliniamentele cu ajutorul teodolitului.',
-      'Bordurile se montează pe o fundație de beton de aproximativ 10×15 cm pentru borduri mici și 10×20 cm pentru borduri carosabile. Ulterior se împănează pe lateral (minimum o treime din înălțimea bordurii) pentru a prelua forțele transmise de pavaj.',
+      'Curbs are installed after the base layer has been compacted, by digging the necessary trench. Curb elevations are set using a level, and alignments using a theodolite.',
+      'Curbs are set on a concrete foundation of roughly 10×15 cm for small curbs and 10×20 cm for road curbs. They are then backfilled and wedged on the side (at least one-third of the curb\'s height) to withstand the forces transferred by the paving.',
     ],
   },
   {
     icon: Layers,
-    title: 'Nivelarea patului de nisip',
+    title: 'Leveling the Sand Bed',
     image: `${R2}/montare-3-web.jpg`,
-    alt: 'Nivelare nisip',
+    alt: 'Sand leveling',
     width: '1000',
     height: '647',
     paragraphs: [
-      'Pavelele vor fi așezate pe un strat de nisip care va ajuta la poziționarea acestora. În general, este nevoie de un strat de 4-6 cm de nisip cu granulație de 0-4 mm, combinat cu sort cu granulație 8-16 mm.',
-      'Se realizează cel mai ușor folosind țevi profilate paralele ca reper și un dreptar pentru nivelarea uniformă a nisipului prin mișcări stânga-dreapta.',
+      'Pavers are laid on a sand bed that helps position them correctly. Generally, you need a 4-6 cm layer of 0-4 mm grain-size sand, combined with an 8-16 mm grain-size aggregate.',
+      'This is done most easily using parallel profiled pipes as guides and a screed board to level the sand evenly with left-right sweeping motions.',
     ],
   },
   {
     icon: Hammer,
-    title: 'Montarea pavelelor',
+    title: 'Laying the Pavers',
     image: `${R2}/montare-4-web.jpg`,
-    alt: 'Pregătire montaj pavele',
+    alt: 'Preparing to lay pavers',
     width: '1090',
     height: '728',
     paragraphs: [
-      'Montarea pavelelor pe suprafața de nisip nivelat trebuie să înceapă fie dintr-un colț drept, de 90°, fie de la o linie dreaptă, pentru a se evita operațiunile de tăiere.',
-      'Pavelele se așează una lângă alta, urmărindu-se alinierea acestora. La așezare, nu trebuie înclinate, deoarece acest lucru va distruge nivelarea patului de nisip. Pentru ajustarea pavelelor se poate folosi ciocanul de cauciuc.',
-      'Se poate călca imediat pe suprafața montată. Nu uitați să verificați înclinația pavajului: minim 2-2,5% pentru evacuarea apei.',
+      'Laying pavers on the leveled sand surface should start either from a square 90° corner or from a straight line, to avoid extra cutting work.',
+      'Pavers are placed side by side, keeping them aligned. When placing them, do not tilt them, as this will disturb the leveled sand bed. A rubber mallet can be used to adjust the pavers.',
+      'You can walk on the installed surface right away. Don\'t forget to check the slope of the paving: minimum 2-2.5% for proper water drainage.',
     ],
   },
   {
     icon: Sparkles,
-    title: 'Aplicarea nisipului printre rosturi și compactarea',
+    title: 'Jointing Sand and Compaction',
     image: `${R2}/montare-5-web.jpg`,
-    alt: 'Compactare pavaj',
+    alt: 'Paving compaction',
     width: '1000',
     height: '637',
     paragraphs: [
-      'După montarea pavelelor pe întreaga suprafață, se întinde un strat subțire de nisip fin (0,2 mm) uscat cu ajutorul unei mături, pentru a umple toate rosturile.',
-      'Se îndepărtează nisipul în exces și se compactează cu ajutorul plăcii vibrante (cu piesa de prelungire din cauciuc). Se compactează atât longitudinal, cât și transversal, pentru o presare optimă. Se repetă operațiunea de acoperire cu nisip a suprafeței, până când rosturile sunt complet umplute.',
-      'Pentru o rezistență sporită se poate uda și lăsa 2-3 zile până la îndepărtarea excesului de nisip. Acest proces va asigura fixarea finală a pavajelor.',
+      'Once the pavers are laid across the whole surface, a thin layer of fine, dry sand (0.2 mm) is swept over it with a broom to fill all the joints.',
+      'Excess sand is removed, then the surface is compacted with the plate compactor (fitted with the rubber extension attachment). Compact both lengthwise and crosswise for even pressure. Repeat the sanding step until the joints are completely filled.',
+      'For extra strength, the surface can be dampened and left for 2-3 days before removing the excess sand. This process secures the pavers permanently in place.',
     ],
   },
 ]
 
-export function MontajPage() {
+export function MontajPageEN() {
   useEffect(() => {
-    const url = `${window.location.origin}/montaj`
-    const title = `Sfaturi și instrucțiuni de montaj - Pavaj, pavele, dale | ${SEO_SITE_NAME}`
+    const url = `${window.location.origin}/en/montaj`
+    const title = `Installation Tips and Instructions - Pavers, Slabs | ${SEO_SITE_NAME}`
     const description =
-      'Ghid complet de montaj pentru pavajele Petra Pavaje. Găsiți cele mai bune metode de montaj, inclusiv sfaturi pentru pregătirea suprafeței, aliniament și stratul de bază.'
+      'A complete installation guide for Petra Pavaje pavers. Find the best installation methods, including tips for surface prep, alignment and the base layer.'
 
     document.title = title
     upsertMeta('name', 'description', description)
@@ -114,15 +114,15 @@ export function MontajPage() {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
-        { '@type': 'ListItem', position: 2, name: 'Montaj', item: url },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${window.location.origin}/en` },
+        { '@type': 'ListItem', position: 2, name: 'Installation', item: url },
       ],
     })
 
     upsertJsonLd('howto-schema', {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      name: 'Sfaturi și instrucțiuni de montaj pentru pavaje, pavele, dale',
+      name: 'Installation tips and instructions for pavers and slabs',
       description,
       step: STEPS.map((step) => ({
         '@type': 'HowToStep',
@@ -141,16 +141,16 @@ export function MontajPage() {
         <div className="container-premium">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <nav className="flex items-center gap-2 text-sm text-charcoal-400 mb-6">
-              <Link to="/" className="hover:text-white transition-colors">Acasă</Link>
+              <Link to="/en" className="hover:text-white transition-colors">Home</Link>
               <span>/</span>
-              <span className="text-white">Montaj</span>
+              <span className="text-white">Installation</span>
             </nav>
-            <p className="text-brand-500 text-sm font-medium tracking-[0.2em] uppercase mb-3">Utile</p>
-            <h1 className="heading-h1 mb-2 max-w-3xl">Sfaturi și instrucțiuni de montaj</h1>
-            <p className="text-xl text-charcoal-300 mb-6">Pavaj, pavele, dale</p>
+            <p className="text-brand-500 text-sm font-medium tracking-[0.2em] uppercase mb-3">Helpful</p>
+            <h1 className="heading-h1 mb-2 max-w-3xl">Installation Tips and Instructions</h1>
+            <p className="text-xl text-charcoal-300 mb-6">Pavers and Slabs</p>
             <p className="text-body-lg text-charcoal-400 max-w-2xl">
-              Ghid complet de montaj pentru pavajele Petra Pavaje. Urmează pașii corecți pentru o suprafață durabilă
-              și un aspect profesional.
+              A complete installation guide for Petra Pavaje pavers. Follow the right steps for a durable surface
+              and a professional finish.
             </p>
           </motion.div>
         </div>
@@ -169,7 +169,7 @@ export function MontajPage() {
               <div className="w-11 h-11 rounded-full bg-brand-50 flex items-center justify-center shrink-0">
                 <Wrench className="w-5 h-5 text-brand-600" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">Unelte necesare</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900">Tools Needed</h2>
             </div>
             <ul className="space-y-3">
               {TOOLS_ITEMS.map((item) => (
@@ -197,7 +197,7 @@ export function MontajPage() {
                     <Icon className="w-5 h-5 text-brand-600" />
                   </div>
                   <span className="text-xs font-semibold tracking-[0.15em] uppercase text-charcoal-400">
-                    Pasul {index + 1}
+                    Step {index + 1}
                   </span>
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900 mb-4">{step.title}</h2>
@@ -240,12 +240,12 @@ export function MontajPage() {
             transition={{ duration: 0.5 }}
             className="rounded-xl bg-charcoal-50 p-8 md:p-10 text-center"
           >
-            <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900 mb-3">Pavajul este montat</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900 mb-3">Your Paving is Installed</h2>
             <p className="text-charcoal-600 mb-6 max-w-xl mx-auto">
-              Pentru a-i păstra aspectul și durabilitatea în timp, urmează recomandările noastre de întreținere.
+              To keep its look and durability over time, follow our maintenance recommendations.
             </p>
-            <Link to="/intretinere" className="btn-primary inline-flex">
-              Vezi ghidul de întreținere
+            <Link to="/en/intretinere" className="btn-primary inline-flex">
+              See the Maintenance Guide
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </motion.div>

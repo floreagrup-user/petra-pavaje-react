@@ -2,7 +2,7 @@ import { useMemo, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ChevronDown, Search, X, MessageCircleQuestion, TriangleAlert } from 'lucide-react'
-import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
+import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, upsertHreflangPair, resetSEO } from '@/hooks/seo-utils'
 
 type FaqItem = { question: string; answer: string; category: string; warning?: string }
 
@@ -218,6 +218,7 @@ export function FaqPage() {
     document.title = title
     upsertMeta('name', 'description', description)
     upsertCanonical(url)
+    upsertHreflangPair('/faq', '/en/faq')
     upsertMeta('property', 'og:type', 'website')
     upsertMeta('property', 'og:title', title)
     upsertMeta('property', 'og:description', description)
