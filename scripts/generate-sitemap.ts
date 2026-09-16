@@ -84,6 +84,33 @@ for (const product of products) {
 // Quatro hub page
 add('/pavaje-standard/quatro', 'monthly', '0.7')
 
+// English Premium paver catalog -- fully translated (see src/data/products.en.ts),
+// unlike the rest of the product catalog, so it gets its own EN URLs here
+// alongside the TRANSLATED_PATHS loop above.
+const premiumProducts = products.filter((p) => p.category === 'premium')
+add('/en/pavaje-premium', 'weekly', '0.8')
+for (const product of premiumProducts) {
+  add(`/en/pavaje-premium/${product.slug}`, 'monthly', '0.7')
+}
+
+// Cross-link RO/EN Premium pairs with hreflang alternates (+ x-default -> RO)
+function linkAltLangs(roPath: string, enPath: string) {
+  const roEntry = entries.find((e) => e.loc === roPath)
+  const enEntry = entries.find((e) => e.loc === enPath)
+  if (!roEntry || !enEntry) return
+  const altLangs: AltLang[] = [
+    { lang: 'ro', loc: roPath },
+    { lang: 'en', loc: enPath },
+    { lang: 'x-default', loc: roPath },
+  ]
+  roEntry.altLangs = altLangs
+  enEntry.altLangs = altLangs
+}
+linkAltLangs('/pavaje-premium', '/en/pavaje-premium')
+for (const product of premiumProducts) {
+  linkAltLangs(`/pavaje-premium/${product.slug}`, `/en/pavaje-premium/${product.slug}`)
+}
+
 // Element categories: top-level (rigole, boltari, jardiniere, palisada, banci, treapta, bloc-de-zid)
 // and nested under garduri / elemente-de-canalizare
 for (const el of elementCategories) {

@@ -81,9 +81,18 @@ export function Footer() {
                 : 'Producător premium de pavaje, borduri, garduri și elemente de beton. 4 fabrici naționale, peste 800 de produse.'}
             </p>
             {isEnglish ? (
-              <Link to="/produse" className="text-sm text-white/70 hover:text-white transition-colors">
-                Browse full product catalog (RO) →
-              </Link>
+              <ul className="space-y-2">
+                <li>
+                  <Link to="/en/pavaje-premium" className="text-sm text-white/70 hover:text-white transition-colors">
+                    Premium Pavers
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/produse" className="text-sm text-white/70 hover:text-white transition-colors">
+                    Browse full catalog (RO) →
+                  </Link>
+                </li>
+              </ul>
             ) : (
               <ul className="space-y-2">
                 {footerLinks.products.map((link) => (

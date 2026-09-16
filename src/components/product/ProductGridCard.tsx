@@ -17,9 +17,11 @@ interface Props {
   basePath: string
   badgeLabel?: string
   extraBadge?: string
+  lang?: 'ro' | 'en'
 }
 
-export function ProductGridCard({ product, basePath, badgeLabel = 'Premium', extraBadge }: Props) {
+export function ProductGridCard({ product, basePath, badgeLabel = 'Premium', extraBadge, lang = 'ro' }: Props) {
+  const isEnglish = lang === 'en'
   const hasMix = Boolean(product.mixModes && product.mixModes.length > 0)
   const topRightBadge = hasMix ? 'Mix' : extraBadge
   const formatCount = product.dimensionsList?.length || 0
@@ -72,12 +74,16 @@ export function ProductGridCard({ product, basePath, badgeLabel = 'Premium', ext
 
       <div className="flex items-center justify-between">
         <p className="text-xs text-charcoal-500">
-          {thickness && <span>Grosime {thickness}</span>}
+          {thickness && <span>{isEnglish ? `Thickness ${thickness}` : `Grosime ${thickness}`}</span>}
           {thickness && formatCount > 0 && <span> · </span>}
-          {formatCount > 0 && <span>{formatCount} {formatCount === 1 ? 'format' : 'formate'}</span>}
+          {formatCount > 0 && (
+            <span>
+              {formatCount} {isEnglish ? (formatCount === 1 ? 'format' : 'formats') : (formatCount === 1 ? 'format' : 'formate')}
+            </span>
+          )}
         </p>
         <div className="flex items-center text-brand-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-all translate-y-1 group-hover:translate-y-0">
-          Vezi produsul
+          {isEnglish ? 'View product' : 'Vezi produsul'}
           <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
         </div>
       </div>

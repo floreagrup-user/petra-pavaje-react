@@ -1,12 +1,14 @@
 import { useEffect } from 'react'
 import type { ProductFAQ } from '@/data/types'
-import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from './seo-utils'
+import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, upsertHreflangPair, resetSEO } from './seo-utils'
 
 interface CategoryListSEOConfig {
   path: string
   title: string
   description: string
   breadcrumbLabel: string
+  /** RO path this page mirrors, when `path` is itself the /en/... page. Set only from the EN side of a pair -- enables reciprocal hreflang without touching the other 4 callers. */
+  roPath?: string
 }
 
 interface CategoryListItem {
@@ -20,13 +22,15 @@ export function useCategoryListSEO(products: CategoryListItem[], faq: ProductFAQ
   useEffect(() => {
     if (!products.length) return
 
-    const { path, title, description, breadcrumbLabel } = config
+    const { path, title, description, breadcrumbLabel, roPath } = config
+    const isEnglish = Boolean(roPath)
     const url = `${window.location.origin}${path}`
     const image = products[0]?.heroImages?.[0] || products[0]?.image
 
     document.title = title
     upsertMeta('name', 'description', description)
     upsertCanonical(url)
+    if (roPath) upsertHreflangPair(roPath, path)
 
     upsertMeta('property', 'og:type', 'website')
     upsertMeta('property', 'og:title', title)
@@ -71,7 +75,7 @@ export function useCategoryListSEO(products: CategoryListItem[], faq: ProductFAQ
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
+        { '@type': 'ListItem', position: 1, name: isEnglish ? 'Home' : 'Acasă', item: `${window.location.origin}${isEnglish ? '/en' : '/'}` },
         { '@type': 'ListItem', position: 2, name: breadcrumbLabel, item: url },
       ],
     })

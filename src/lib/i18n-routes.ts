@@ -26,10 +26,19 @@ export function isEnglishPath(pathname: string): boolean {
   return pathname === '/en' || pathname.startsWith('/en/')
 }
 
+// The Premium paver catalog (hub + individual products) is fully
+// translated -- see src/data/products.en.ts -- unlike the rest of the
+// product catalog, so it needs its own prefix-match rule alongside the
+// exact-match TRANSLATED_PATHS list above.
+const TRANSLATED_PREFIX = '/pavaje-premium'
+
 // RO path -> EN path for the language switcher. Falls back to the EN
 // homepage when the current RO page has no translation.
 export function toEnglishPath(roPathname: string): string {
   if (roPathname === '/') return '/en'
+  if (roPathname === TRANSLATED_PREFIX || roPathname.startsWith(`${TRANSLATED_PREFIX}/`)) {
+    return `/en${roPathname}`
+  }
   return (TRANSLATED_PATHS as readonly string[]).includes(roPathname) ? `/en${roPathname}` : '/en'
 }
 

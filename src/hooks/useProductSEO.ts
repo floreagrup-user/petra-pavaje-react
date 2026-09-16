@@ -1,28 +1,37 @@
 import { useEffect } from 'react'
 import type { Product } from '@/data/types'
 import { categories } from '@/data/site'
-import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO, truncateDescription } from './seo-utils'
+import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, upsertHreflangPair, resetSEO, truncateDescription } from './seo-utils'
 import { categoryUrl, productUrl } from '@/lib/product-urls'
 
-export function useProductSEO(product: Product | undefined) {
+const CATEGORY_LABEL_EN: Record<string, string> = {
+  premium: 'Premium Pavers',
+}
+
+export function useProductSEO(product: Product | undefined, isEnglish = false) {
   useEffect(() => {
     if (!product) return
 
     const categoryMeta = categories.find((c) => c.id === product.category)
-    const categoryLabel = categoryMeta?.name || product.category
+    const categoryLabel = (isEnglish && CATEGORY_LABEL_EN[product.category]) || categoryMeta?.name || product.category
     const categorySlug = categoryMeta?.slug || product.category
+    const roPath = productUrl(categorySlug, product.slug)
+    const enPath = `/en${roPath}`
     const title = `${product.name} - ${categoryLabel} | ${SEO_SITE_NAME}`
     const description = truncateDescription(
       product.shortDescription && product.description
         ? `${product.shortDescription}. ${product.description}`
         : product.description || ''
     )
-    const url = `${window.location.origin}${productUrl(categorySlug, product.slug)}`
+    const url = `${window.location.origin}${isEnglish ? enPath : roPath}`
     const image = product.heroImages?.[0] || product.image
 
     document.title = title
     upsertMeta('name', 'description', description)
     upsertCanonical(url)
+    if (isEnglish || CATEGORY_LABEL_EN[product.category]) {
+      upsertHreflangPair(roPath, enPath)
+    }
 
     upsertMeta('property', 'og:type', 'product')
     upsertMeta('property', 'og:title', title)
@@ -67,12 +76,12 @@ export function useProductSEO(product: Product | undefined) {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${window.location.origin}/` },
-        { '@type': 'ListItem', position: 2, name: categoryLabel, item: `${window.location.origin}${categoryUrl(categorySlug)}` },
+        { '@type': 'ListItem', position: 1, name: isEnglish ? 'Home' : 'Acasă', item: `${window.location.origin}${isEnglish ? '/en' : '/'}` },
+        { '@type': 'ListItem', position: 2, name: categoryLabel, item: `${window.location.origin}${isEnglish ? '/en' : ''}${categoryUrl(categorySlug)}` },
         { '@type': 'ListItem', position: 3, name: product.name, item: url },
       ],
     })
 
     return resetSEO
-  }, [product])
+  }, [product, isEnglish])
 }

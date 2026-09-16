@@ -13,8 +13,8 @@ const HERO_SLIDES = [
     subtitle: 'In Harmony with Nature',
     description: '800+ Products · 4 Factories Nationwide · 24,000 sqm/day',
     image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/stretto-homepage.webp',
-    cta: 'Browse Products (RO)',
-    ctaLink: '/pavaje-premium',
+    cta: 'Browse Premium Pavers',
+    ctaLink: '/en/pavaje-premium',
   },
   {
     id: 2,

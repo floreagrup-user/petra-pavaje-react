@@ -184,7 +184,14 @@ export const socialLinks = [
 // translated, so "Products"/"Blog" here intentionally link back to the
 // Romanian catalog rather than to a non-existent /en/produse route.
 export const enMenu: MenuItem[] = [
-  { label: 'Products', href: '/produse' },
+  {
+    label: 'Products',
+    href: '/en/pavaje-premium',
+    children: [
+      { label: 'Premium Pavers', href: '/en/pavaje-premium' },
+      { label: 'Full catalog (RO)', href: '/produse' },
+    ],
+  },
   {
     label: 'Company',
     href: '/en/despre-noi',

@@ -149,6 +149,12 @@ export const router = createBrowserRouter([
           </Suspense>
         ),
       },
+      // English Premium paver catalog -- reuses the same generic, data-driven
+      // components as the RO route (they detect /en via useLocation and pull
+      // translated text from src/data/products.en.ts). See localizeProduct()
+      // in src/data/products.ts.
+      { path: 'en/pavaje-premium', element: <Suspense><PremiumCategoryPage /></Suspense> },
+      { path: 'en/pavaje-premium/:product', element: <Suspense><ProductDetailPage /></Suspense> },
     ],
   },
 ])

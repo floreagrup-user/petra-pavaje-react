@@ -14,30 +14,32 @@ interface Props {
   onChange: (next: ProductFilters) => void
   onClear: () => void
   hasActiveFilters: boolean
+  lang?: 'ro' | 'en'
 }
 
-export function CategoryFilterPanel({ facets, filters, onChange, onClear, hasActiveFilters }: Props) {
+export function CategoryFilterPanel({ facets, filters, onChange, onClear, hasActiveFilters, lang = 'ro' }: Props) {
+  const isEnglish = lang === 'en'
   const [showAllColors, setShowAllColors] = useState(false)
   const visibleColors = showAllColors ? facets.colors : facets.colors.slice(0, COLOR_PREVIEW_LIMIT)
 
   return (
     <div className="space-y-8">
       <div className="flex items-center justify-between">
-        <p className="text-sm font-semibold text-charcoal-900 uppercase tracking-wide">Filtre</p>
+        <p className="text-sm font-semibold text-charcoal-900 uppercase tracking-wide">{isEnglish ? 'Filters' : 'Filtre'}</p>
         {hasActiveFilters && (
           <button
             type="button"
             onClick={onClear}
             className="text-xs font-medium text-brand-600 hover:text-brand-700 transition-colors"
           >
-            Șterge toate
+            {isEnglish ? 'Clear all' : 'Șterge toate'}
           </button>
         )}
       </div>
 
       {facets.colors.length > 0 && (
         <fieldset>
-          <legend className="text-sm font-semibold text-charcoal-900 mb-3">Culoare</legend>
+          <legend className="text-sm font-semibold text-charcoal-900 mb-3">{isEnglish ? 'Color' : 'Culoare'}</legend>
           <div className="grid grid-cols-2 gap-2">
             {visibleColors.map((color) => {
               const checked = filters.culoare.includes(color.slug)
@@ -69,7 +71,9 @@ export function CategoryFilterPanel({ facets, filters, onChange, onClear, hasAct
               onClick={() => setShowAllColors((v) => !v)}
               className="mt-3 text-xs font-medium text-brand-600 hover:text-brand-700 transition-colors"
             >
-              {showAllColors ? 'Arată mai puține culori' : `Arată toate culorile (${facets.colors.length})`}
+              {showAllColors
+                ? (isEnglish ? 'Show fewer colors' : 'Arată mai puține culori')
+                : (isEnglish ? `Show all colors (${facets.colors.length})` : `Arată toate culorile (${facets.colors.length})`)}
             </button>
           )}
         </fieldset>
@@ -77,7 +81,7 @@ export function CategoryFilterPanel({ facets, filters, onChange, onClear, hasAct
 
       {facets.thicknesses.length > 0 && (
         <fieldset>
-          <legend className="text-sm font-semibold text-charcoal-900 mb-3">Grosime</legend>
+          <legend className="text-sm font-semibold text-charcoal-900 mb-3">{isEnglish ? 'Thickness' : 'Grosime'}</legend>
           <div className="flex flex-wrap gap-2">
             {facets.thicknesses.map((t) => {
               const checked = filters.grosime.includes(t.slug)
@@ -105,7 +109,7 @@ export function CategoryFilterPanel({ facets, filters, onChange, onClear, hasAct
 
       {facets.usage.length > 0 && (
         <fieldset>
-          <legend className="text-sm font-semibold text-charcoal-900 mb-3">Utilizare</legend>
+          <legend className="text-sm font-semibold text-charcoal-900 mb-3">{isEnglish ? 'Usage' : 'Utilizare'}</legend>
           <div className="space-y-2">
             {facets.usage.map((u) => {
               const checked = filters.utilizare.includes(u.slug)
@@ -135,14 +139,14 @@ export function CategoryFilterPanel({ facets, filters, onChange, onClear, hasAct
               onChange={() => onChange({ ...filters, mix: !filters.mix })}
               className="w-4 h-4 rounded border-charcoal-300 text-brand-600 focus:ring-brand-500"
             />
-            Are variante Mix ({facets.mixCount})
+            {isEnglish ? `Has Mix variants (${facets.mixCount})` : `Are variante Mix (${facets.mixCount})`}
           </label>
         </fieldset>
       )}
 
       {facets.features.length > 0 && (
         <fieldset>
-          <legend className="text-sm font-semibold text-charcoal-900 mb-3">Caracteristici</legend>
+          <legend className="text-sm font-semibold text-charcoal-900 mb-3">{isEnglish ? 'Features' : 'Caracteristici'}</legend>
           <div className="space-y-2">
             {facets.features.map((f) => {
               const checked = filters.caracteristici.includes(f.slug)
@@ -164,7 +168,7 @@ export function CategoryFilterPanel({ facets, filters, onChange, onClear, hasAct
 
       {facets.finishes.length > 0 && (
         <fieldset>
-          <legend className="text-sm font-semibold text-charcoal-900 mb-3">Finisaj</legend>
+          <legend className="text-sm font-semibold text-charcoal-900 mb-3">{isEnglish ? 'Finish' : 'Finisaj'}</legend>
           <div className="space-y-2">
             {facets.finishes.map((f) => {
               const checked = filters.finisaj.includes(f.slug)
@@ -192,12 +196,15 @@ export function ActiveFilterChips({
   filters,
   onChange,
   onClear,
+  lang = 'ro',
 }: {
   facets: ProductFacets
   filters: ProductFilters
   onChange: (next: ProductFilters) => void
   onClear: () => void
+  lang?: 'ro' | 'en'
 }) {
+  const isEnglish = lang === 'en'
   const chips: { key: string; label: string; onRemove: () => void }[] = []
 
   for (const slug of filters.culoare) {
@@ -213,7 +220,7 @@ export function ActiveFilterChips({
     if (u) chips.push({ key: `utilizare-${slug}`, label: u.label, onRemove: () => onChange({ ...filters, utilizare: toggle(filters.utilizare, slug) }) })
   }
   if (filters.mix) {
-    chips.push({ key: 'mix', label: 'Cu variante Mix', onRemove: () => onChange({ ...filters, mix: false }) })
+    chips.push({ key: 'mix', label: isEnglish ? 'With Mix variants' : 'Cu variante Mix', onRemove: () => onChange({ ...filters, mix: false }) })
   }
   for (const slug of filters.caracteristici) {
     const f = facets.features.find((x) => x.slug === slug)
@@ -244,7 +251,7 @@ export function ActiveFilterChips({
         onClick={onClear}
         className="text-sm font-medium text-brand-600 hover:text-brand-700 transition-colors"
       >
-        Șterge toate
+        {isEnglish ? 'Clear all' : 'Șterge toate'}
       </button>
     </div>
   )

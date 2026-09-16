@@ -1,4 +1,5 @@
 import { Product } from './types'
+import { productTranslationsEn, translateColorName, translateUsageTag } from './products.en'
 
 export const products: Product[] = [
   {
@@ -3987,4 +3988,31 @@ export function getProductsByCategory(category: string): Product[] {
 
 export function getFeaturedProducts(): Product[] {
   return products.filter(p => p.featured)
+}
+
+// Overlays the English translation (when one exists) onto a RO product for
+// rendering on /en pages. Structural/regulatory data (images, mixModes,
+// dimensionsList, documents) is intentionally never translated -- only the
+// free-text fields in products.en.ts, plus color/usage labels via the
+// shared dictionaries there. Products with no EN overlay (outside the
+// Premium range) render unchanged, in Romanian, on an /en page.
+export function localizeProduct(product: Product, lang: 'ro' | 'en'): Product {
+  if (lang !== 'en') return product
+  const t = productTranslationsEn[product.id]
+  return {
+    ...product,
+    ...(t
+      ? {
+          shortDescription: t.shortDescription,
+          description: t.description,
+          heroFeatures: t.heroFeatures,
+          specs: t.specs,
+          technicalFeatures: t.technicalFeatures ?? product.technicalFeatures,
+          advantages: t.advantages ?? product.advantages,
+          faq: t.faq ?? product.faq,
+        }
+      : {}),
+    colors: product.colors.map((c) => ({ ...c, name: translateColorName(c.name) })),
+    usage: product.usage.map((u) => translateUsageTag(u)),
+  }
 }
