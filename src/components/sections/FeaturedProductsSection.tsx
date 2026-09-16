@@ -1,15 +1,17 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ArrowRight, Star } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
-import { getFeaturedProducts } from '@/data/products'
+import { getFeaturedProducts, localizeProduct } from '@/data/products'
 import { productImages } from '@/data/images'
 import { categories } from '@/data/site'
 import { categoryUrl, productUrl } from '@/lib/product-urls'
+import { isEnglishPath } from '@/lib/i18n-routes'
 
 export function FeaturedProductsSection() {
+  const isEnglish = isEnglishPath(useLocation().pathname)
   const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
-  const featuredProducts = getFeaturedProducts()
+  const featuredProducts = getFeaturedProducts().map((p) => localizeProduct(p, isEnglish ? 'en' : 'ro'))
 
   return (
     <section ref={ref} className="section-padding bg-white">
@@ -22,63 +24,68 @@ export function FeaturedProductsSection() {
         >
           <div>
             <p className="text-brand-600 text-sm font-medium tracking-[0.2em] uppercase mb-3">
-              Produse Preferate
+              {isEnglish ? 'Customer Favorites' : 'Produse Preferate'}
             </p>
             <h2 className="heading-h1 text-charcoal-900">
-              Alegerea clienților noștri
+              {isEnglish ? "Our customers' top choice" : 'Alegerea clienților noștri'}
             </h2>
           </div>
           <Link
-            to={categoryUrl("pavaje-premium")}
+            to={isEnglish ? `/en${categoryUrl('pavaje-premium')}` : categoryUrl('pavaje-premium')}
             className="mt-4 md:mt-0 inline-flex items-center text-brand-600 font-medium hover:gap-3 gap-2 transition-all group"
           >
-            Vezi toate produsele
+            {isEnglish ? 'View all products' : 'Vezi toate produsele'}
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {featuredProducts.slice(0, 8).map((product, index) => (
-            <motion.div
-              key={product.id}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
-            >
-              <Link
-                to={productUrl(categories.find((c) => c.id === product.category)?.slug || product.category, product.slug)}
-                className="group block"
+          {featuredProducts.slice(0, 8).map((product, index) => {
+            const categorySlug = categories.find((c) => c.id === product.category)?.slug || product.category
+            return (
+              <motion.div
+                key={product.id}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
               >
-                <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-stone-100 mb-4" style={{ aspectRatio: '4/3' }}>
-                  <img
-                    src={productImages[product.slug] || product.image}
-                    alt={product.name}
-                    width="800"
-                    height="600"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                  {product.featured && (
-                    <div className="absolute top-3 left-3 flex items-center gap-1 px-2 py-1 bg-brand-600 text-white text-xs font-medium rounded-md">
-                      <Star className="w-3 h-3" />
-                      Premium
-                    </div>
-                  )}
-                  <div className="absolute inset-0 bg-charcoal-950/0 group-hover:bg-charcoal-950/10 transition-colors duration-500" />
-                </div>
-                <h3 className="text-lg font-semibold text-charcoal-900 group-hover:text-brand-600 transition-colors mb-1">
-                  {product.name}
-                </h3>
-                <p className="text-sm text-charcoal-500 mb-2">
-                  {product.category === 'premium' ? 'Pavaj Premium' : 'Pavaj Standard'}
-                </p>
-                <div className="flex items-center text-brand-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-all translate-y-1 group-hover:translate-y-0">
-                  Vezi detalii
-                  <ArrowRight className="w-4 h-4 ml-1" />
-                </div>
-              </Link>
-            </motion.div>
-          ))}
+                <Link
+                  to={isEnglish ? `/en${productUrl(categorySlug, product.slug)}` : productUrl(categorySlug, product.slug)}
+                  className="group block"
+                >
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-stone-100 mb-4" style={{ aspectRatio: '4/3' }}>
+                    <img
+                      src={productImages[product.slug] || product.image}
+                      alt={product.name}
+                      width="800"
+                      height="600"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                    {product.featured && (
+                      <div className="absolute top-3 left-3 flex items-center gap-1 px-2 py-1 bg-brand-600 text-white text-xs font-medium rounded-md">
+                        <Star className="w-3 h-3" />
+                        Premium
+                      </div>
+                    )}
+                    <div className="absolute inset-0 bg-charcoal-950/0 group-hover:bg-charcoal-950/10 transition-colors duration-500" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-charcoal-900 group-hover:text-brand-600 transition-colors mb-1">
+                    {product.name}
+                  </h3>
+                  <p className="text-sm text-charcoal-500 mb-2">
+                    {isEnglish
+                      ? (product.category === 'premium' ? 'Premium Paver' : 'Standard Paver')
+                      : (product.category === 'premium' ? 'Pavaj Premium' : 'Pavaj Standard')}
+                  </p>
+                  <div className="flex items-center text-brand-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-all translate-y-1 group-hover:translate-y-0">
+                    {isEnglish ? 'View details' : 'Vezi detalii'}
+                    <ArrowRight className="w-4 h-4 ml-1" />
+                  </div>
+                </Link>
+              </motion.div>
+            )
+          })}
         </div>
       </div>
     </section>

@@ -1,7 +1,8 @@
 import { useRef, useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { ArrowRight, Play } from 'lucide-react'
+import { isEnglishPath } from '@/lib/i18n-routes'
 
 const heroSlides = [
   {
@@ -33,23 +34,55 @@ const heroSlides = [
   },
 ]
 
+const heroSlidesEn = [
+  {
+    id: 1,
+    title: 'Premium Paver\nManufacturer',
+    subtitle: 'In Harmony with Nature',
+    description: '800+ Products · 4 National Factories · 24,000 sqm/day',
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/stretto-homepage.webp',
+    cta: 'Browse Premium Pavers',
+    ctaLink: '/en/pavaje-premium',
+  },
+  {
+    id: 2,
+    title: 'STONE\nCOMES\nTO LIFE',
+    subtitle: 'Premium Pavers',
+    description: 'The full range of premium pavers for exceptional outdoor landscaping',
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/relief-homepage.avif',
+    cta: 'See the Catalog (RO)',
+    ctaLink: '/catalog',
+  },
+  {
+    id: 3,
+    title: 'Woodstone\nPetrified Wood',
+    subtitle: 'Premium Technology',
+    description: 'The beauty of wood combined with the durability of premium concrete',
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/gemina-homepage.avif',
+    cta: 'Explore the Collection (RO)',
+    ctaLink: '/woodstone-lemn-pietrificat',
+  },
+]
+
 export function HeroSection() {
+  const isEnglish = isEnglishPath(useLocation().pathname)
+  const slides = isEnglish ? heroSlidesEn : heroSlides
   const [currentSlide, setCurrentSlide] = useState(0)
   const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroSlides.length)
+      setCurrentSlide((prev) => (prev + 1) % slides.length)
     }, 7000)
     return () => clearInterval(interval)
-  }, [])
+  }, [slides.length])
 
-  const slide = heroSlides[currentSlide]
+  const slide = slides[currentSlide]
 
   return (
     <section ref={containerRef} className="relative h-screen min-h-[650px] overflow-hidden">
       <div className="absolute inset-0 will-change-transform" style={{ transform: 'translateZ(0)' }}>
-        {heroSlides.map((s, i) => (
+        {slides.map((s, i) => (
           <div
             key={s.id}
             className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
@@ -112,7 +145,7 @@ export function HeroSection() {
               </Link>
               <Link to="/tur-virtual" className="btn-outline-light group text-base">
                 <Play className="w-4 h-4 mr-2" />
-                Tur Virtual 360°
+                {isEnglish ? '360° Virtual Tour (RO)' : 'Tur Virtual 360°'}
               </Link>
             </motion.div>
           </motion.div>
@@ -122,7 +155,7 @@ export function HeroSection() {
       <div className="absolute bottom-8 left-0 right-0 z-10">
         <div className="container-premium">
           <div className="flex items-center">
-            {heroSlides.map((_, index) => (
+            {slides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}

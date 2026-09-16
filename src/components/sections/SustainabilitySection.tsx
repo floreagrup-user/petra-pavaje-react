@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
+import { useLocation } from 'react-router-dom'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { Sun, Leaf, Zap, Trees } from 'lucide-react'
+import { isEnglishPath } from '@/lib/i18n-routes'
 
 const stats = [
   {
@@ -29,8 +31,37 @@ const stats = [
   },
 ]
 
+const statsEn = [
+  {
+    icon: Sun,
+    value: '469 MW/h',
+    label: 'Solar Capacity / Year',
+    description: 'Our own solar park at the Roman factory',
+  },
+  {
+    icon: Leaf,
+    value: '148 tons',
+    label: 'CO₂ Reduction / Year',
+    description: 'Certified emissions savings',
+  },
+  {
+    icon: Zap,
+    value: '100%',
+    label: 'Partially Electric Fleet',
+    description: 'Charging stations at every factory',
+  },
+  {
+    icon: Trees,
+    value: '4',
+    label: 'Showcase Gardens',
+    description: 'Green spaces landscaped at each factory',
+  },
+]
+
 export function SustainabilitySection() {
+  const isEnglish = isEnglishPath(useLocation().pathname)
   const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
+  const items = isEnglish ? statsEn : stats
 
   return (
     <section ref={ref} className="section-padding bg-stone-100 relative overflow-hidden">
@@ -44,17 +75,23 @@ export function SustainabilitySection() {
             transition={{ duration: 0.6 }}
           >
             <p className="text-brand-600 text-sm font-medium tracking-[0.2em] uppercase mb-3">
-              În Armonie cu Natura
+              {isEnglish ? 'In Harmony with Nature' : 'În Armonie cu Natura'}
             </p>
             <h2 className="heading-h1 text-charcoal-900 mb-6">
-              BETON CARE<br />RESPECTĂ<br />PLANETA
+              {isEnglish ? (
+                <>CONCRETE THAT<br />RESPECTS<br />THE PLANET</>
+              ) : (
+                <>BETON CARE<br />RESPECTĂ<br />PLANETA</>
+              )}
             </h2>
             <p className="text-body-lg text-charcoal-500 mb-8">
-              La fabricile Petra Pavaje, fiecare produs este creat cu responsabilitate față de mediu. Am implementat practici concrete care reduc semnificativ amprenta de carbon.
+              {isEnglish
+                ? "At Petra Pavaje factories, every product is made with environmental responsibility in mind. We've implemented concrete practices that significantly reduce our carbon footprint."
+                : 'La fabricile Petra Pavaje, fiecare produs este creat cu responsabilitate față de mediu. Am implementat practici concrete care reduc semnificativ amprenta de carbon.'}
             </p>
 
             <div className="grid grid-cols-2 gap-6">
-              {stats.map((stat, index) => (
+              {items.map((stat, index) => (
                 <motion.div
                   key={stat.label}
                   initial={{ opacity: 0, y: 20 }}
@@ -80,7 +117,7 @@ export function SustainabilitySection() {
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-premium" style={{ aspectRatio: '4/3' }}>
               <img
                 src="https://petrapavaje.ro/wp-content/uploads/energie-verde-si-emsii-0-web1-1.avif"
-                alt="Sustenabilitate Petra Pavaje"
+                alt={isEnglish ? 'Petra Pavaje sustainability' : 'Sustenabilitate Petra Pavaje'}
                 width="800"
                 height="600"
                 className="w-full h-full object-cover"

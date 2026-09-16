@@ -26,6 +26,13 @@ const SocialIcon = ({ name, className }: { name: string; className?: string }) =
   return <>{icons[name]}</>
 }
 
+const FACTORY_NAME_EN: Record<string, string> = {
+  alba: 'Alba Factory',
+  prahova: 'Prahova Factory',
+  arad: 'Arad Factory',
+  neamt: 'Neamț Factory',
+}
+
 export function Footer() {
   const location = useLocation()
   const isEnglish = isEnglishPath(location.pathname)
@@ -141,7 +148,7 @@ export function Footer() {
                 <div key={factory.id} className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-brand-300 mt-0.5 shrink-0" />
                   <div>
-                    <p className="text-sm font-medium text-white">{factory.name}</p>
+                    <p className="text-sm font-medium text-white">{isEnglish ? FACTORY_NAME_EN[factory.id] || factory.name : factory.name}</p>
                     <p className="text-xs text-white/70">{factory.address}</p>
                     <a href={`tel:${factory.phone}`} className="text-xs text-brand-200 hover:text-white transition-colors">
                       {factory.phone}

@@ -1,8 +1,25 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useLocation } from 'react-router-dom'
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { testimonials } from '@/data/site'
+import { isEnglishPath } from '@/lib/i18n-routes'
+
+const TESTIMONIAL_EN: Record<string, { quote: string; location?: string }> = {
+  florina: {
+    quote:
+      "Just like the inside of our home, I wanted the yard to feel warm and welcoming, in beige, cream and brown tones. I had that beige color palette in mind. The pavers look great and have a pleasant texture to the touch.",
+    location: 'Bucharest',
+  },
+  marius: {
+    quote: 'I recommend them with confidence — an exceptional value for money! A serious company that listens closely to what the customer needs.',
+  },
+  cristian: {
+    quote:
+      'I chose the Grand Urban slabs because they perfectly combine looks with function. Installation was simple, and the final result looks excellent and fits perfectly with the concept for our yard.',
+  },
+}
 
 const testimonialImages: Record<string, string[]> = {
   florina: [
@@ -23,10 +40,14 @@ const testimonialImages: Record<string, string[]> = {
 }
 
 export function TestimonialsSection() {
+  const isEnglish = isEnglishPath(useLocation().pathname)
   const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const testimonial = testimonials[currentIndex]
+  const en = TESTIMONIAL_EN[testimonial.id]
+  const quote = isEnglish && en ? en.quote : testimonial.quote
+  const location = isEnglish && en?.location ? en.location : testimonial.location
   const images = testimonialImages[testimonial.id] || []
 
   const next = () => setCurrentIndex((prev) => (prev + 1) % testimonials.length)
@@ -42,13 +63,13 @@ export function TestimonialsSection() {
           className="text-center mb-12 md:mb-16"
         >
           <p className="text-brand-600 text-sm font-medium tracking-[0.2em] uppercase mb-3">
-            Testimoniale
+            {isEnglish ? 'Testimonials' : 'Testimoniale'}
           </p>
           <h2 className="heading-h1 text-charcoal-900 mb-4">
-            Ce spun clienții noștri
+            {isEnglish ? 'What our customers say' : 'Ce spun clienții noștri'}
           </h2>
           <p className="text-body-lg text-charcoal-500 max-w-2xl mx-auto">
-            Proiecte finalizate cu succes în toată România
+            {isEnglish ? 'Successfully completed projects across Romania' : 'Proiecte finalizate cu succes în toată România'}
           </p>
         </motion.div>
 
@@ -72,7 +93,7 @@ export function TestimonialsSection() {
                 >
                   <img
                     src={img}
-                    alt={`Proiect ${testimonial.name} - imagine ${idx + 1}`}
+                    alt={isEnglish ? `${testimonial.name} project - image ${idx + 1}` : `Proiect ${testimonial.name} - imagine ${idx + 1}`}
                     width="900"
                     height="1200"
                     className="w-full h-full object-cover"
@@ -85,12 +106,12 @@ export function TestimonialsSection() {
             <div className="relative">
               <Quote className="w-12 h-12 text-brand-200 mb-4" />
               <blockquote className="text-xl md:text-2xl text-charcoal-700 leading-relaxed mb-6 italic">
-                &ldquo;{testimonial.quote}&rdquo;
+                &ldquo;{quote}&rdquo;
               </blockquote>
               <div>
                 <p className="text-lg font-semibold text-charcoal-900">{testimonial.name}</p>
-                {testimonial.location && (
-                  <p className="text-sm text-charcoal-500">{testimonial.location}</p>
+                {location && (
+                  <p className="text-sm text-charcoal-500">{location}</p>
                 )}
               </div>
             </div>

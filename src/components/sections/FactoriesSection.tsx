@@ -1,10 +1,20 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useLocation } from 'react-router-dom'
 import { MapPin, Phone, Clock, Navigation } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { factories } from '@/data/site'
+import { isEnglishPath } from '@/lib/i18n-routes'
+
+const FACTORY_NAME_EN: Record<string, string> = {
+  alba: 'Alba Factory',
+  prahova: 'Prahova Factory',
+  arad: 'Arad Factory',
+  neamt: 'Neamț Factory',
+}
 
 export function FactoriesSection() {
+  const isEnglish = isEnglishPath(useLocation().pathname)
   const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
   const [activeFactory, setActiveFactory] = useState(0)
 
@@ -25,13 +35,15 @@ export function FactoriesSection() {
           className="text-center mb-12 md:mb-16"
         >
           <p className="text-brand-600 text-sm font-medium tracking-[0.2em] uppercase mb-3">
-            Rețea Națională
+            {isEnglish ? 'Nationwide Network' : 'Rețea Națională'}
           </p>
           <h2 className="heading-h1 text-charcoal-900 mb-4">
-            Fabricile Noastre
+            {isEnglish ? 'Our Factories' : 'Fabricile Noastre'}
           </h2>
           <p className="text-body-lg text-charcoal-600 max-w-2xl mx-auto">
-            4 centre de producție strategic poziționate pentru a fi mereu aproape de tine
+            {isEnglish
+              ? '4 production centers strategically located to always be close to you'
+              : '4 centre de producție strategic poziționate pentru a fi mereu aproape de tine'}
           </p>
         </motion.div>
 
@@ -61,7 +73,7 @@ export function FactoriesSection() {
                     >
                       {index + 1}
                     </span>
-                    <h3 className="text-lg font-semibold text-charcoal-900">{factory.name}</h3>
+                    <h3 className="text-lg font-semibold text-charcoal-900">{isEnglish ? FACTORY_NAME_EN[factory.id] || factory.name : factory.name}</h3>
                   </div>
                 </div>
                   <div className="space-y-2 pl-11">
@@ -79,7 +91,7 @@ export function FactoriesSection() {
                       </a>
                       <span className="flex items-center gap-2 text-sm text-charcoal-400">
                         <Clock className="w-4 h-4" />
-                        L-V: 08:00-17:00
+                        {isEnglish ? 'Mon-Fri: 08:00-17:00' : 'L-V: 08:00-17:00'}
                       </span>
                     </div>
                   </div>
@@ -104,7 +116,7 @@ export function FactoriesSection() {
               >
                 <img
                   src={factoryImages[factories[activeFactory].id]}
-                  alt={factories[activeFactory].name}
+                  alt={isEnglish ? FACTORY_NAME_EN[factories[activeFactory].id] || factories[activeFactory].name : factories[activeFactory].name}
                   width="800"
                   height="800"
                   className="w-full h-full object-cover"
@@ -121,7 +133,7 @@ export function FactoriesSection() {
                 className="inline-flex items-center gap-2 px-4 py-2 bg-brand-600 text-white rounded-md hover:bg-brand-700 transition-colors"
               >
                 <Navigation className="w-4 h-4" />
-                Navigare GPS
+                {isEnglish ? 'GPS Directions' : 'Navigare GPS'}
               </a>
             </div>
           </motion.div>
