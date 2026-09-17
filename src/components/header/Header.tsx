@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, ChevronDown, Calculator, FileText, Globe } from 'lucide-react'
+import { Menu, X, ChevronDown, Calculator, FileText } from 'lucide-react'
 import { mainMenu, enMenu, type MenuItem } from '@/data/menu'
 import { useScrollPosition } from '@/hooks/use-scroll'
 import { cn } from '@/lib/utils'
@@ -9,6 +9,28 @@ import { isEnglishPath, toEnglishPath, toRomanianPath } from '@/lib/i18n-routes'
 
 function hasNestedChildren(item: MenuItem): boolean {
   return Boolean(item.children?.some((child) => child.children && child.children.length > 0))
+}
+
+function UKFlag({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 60 36" className={className} preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <rect width="60" height="36" fill="#00247d" />
+      <path d="M0,0 L60,36 M60,0 L0,36" stroke="#fff" strokeWidth="6" />
+      <path d="M0,0 L26,16 M60,0 L34,16 M0,36 L26,20 M60,36 L34,20" stroke="#cf142b" strokeWidth="4" />
+      <path d="M30,0 V36 M0,18 H60" stroke="#fff" strokeWidth="10" />
+      <path d="M30,0 V36 M0,18 H60" stroke="#cf142b" strokeWidth="6" />
+    </svg>
+  )
+}
+
+function RoFlag({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 3 2" className={className} preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <rect width="1" height="2" x="0" fill="#002B7F" />
+      <rect width="1" height="2" x="1" fill="#FCD116" />
+      <rect width="1" height="2" x="2" fill="#CE1126" />
+    </svg>
+  )
 }
 
 export function Header() {
@@ -49,9 +71,13 @@ export function Header() {
           <div className="flex items-center gap-3">
             <Link
               to={isEnglish ? toRomanianPath(location.pathname) : toEnglishPath(location.pathname)}
-              className="hover:text-white transition-colors flex items-center gap-1"
+              className="hover:text-white transition-colors flex items-center gap-1.5"
             >
-              <Globe className="w-3 h-3" />
+              {isEnglish ? (
+                <RoFlag className="w-4 h-3 rounded-[2px] shrink-0" />
+              ) : (
+                <UKFlag className="w-4 h-3 rounded-[2px] shrink-0" />
+              )}
               {isEnglish ? 'RO' : 'EN'}
             </Link>
             <span className="text-white/20">|</span>
@@ -252,7 +278,11 @@ export function Header() {
                   className="flex items-center justify-center gap-2 py-2 text-sm font-medium text-charcoal-600"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  <Globe className="w-4 h-4" />
+                  {isEnglish ? (
+                    <RoFlag className="w-5 h-3.5 rounded-[2px] shrink-0" />
+                  ) : (
+                    <UKFlag className="w-5 h-3.5 rounded-[2px] shrink-0" />
+                  )}
                   {isEnglish ? 'Română' : 'English'}
                 </Link>
                 <Link

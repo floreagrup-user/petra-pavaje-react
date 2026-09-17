@@ -179,19 +179,101 @@ export const socialLinks = [
   { name: 'Pinterest', href: 'https://www.pinterest.com/petrapavaje/', icon: 'pinterest' },
 ]
 
-// English navigation — scoped to the pages that actually have an /en
-// translation. The product catalog, blog and technical documents are not
-// translated, so "Products"/"Blog" here intentionally link back to the
-// Romanian catalog rather than to a non-existent /en/produse route.
+// English navigation — mirrors mainMenu's Produse mega-menu structure 1:1.
+// Premium, Standard and Woodstone are fully translated, so their branches
+// link into /en/...; Elements is not translated (see the scoped /en build),
+// so its branch keeps the RO hrefs while still showing translated labels —
+// same "translated label, RO destination" convention used sitewide (e.g.
+// "Blog (RO)" below).
 export const enMenu: MenuItem[] = [
   {
     label: 'Products',
     href: '/en/pavaje-premium',
     children: [
-      { label: 'Premium Pavers', href: '/en/pavaje-premium' },
-      { label: 'Standard Pavers', href: '/en/pavaje-standard' },
-      { label: 'Woodstone - Petrified Wood', href: '/en/woodstone-lemn-pietrificat' },
-      { label: 'Full catalog (RO)', href: '/produse' },
+      {
+        label: 'Premium Pavers',
+        href: '/en/pavaje-premium',
+        children: [
+          { label: 'Roca', href: '/en/pavaje-premium/roca' },
+          { label: 'Antic', href: '/en/pavaje-premium/antic' },
+          { label: 'Primo', href: '/en/pavaje-premium/primo' },
+          { label: 'Grand Urban', href: '/en/pavaje-premium/grand-urban' },
+          { label: 'Gemina', href: '/en/pavaje-premium/gemina' },
+          { label: 'Cubic', href: '/en/pavaje-premium/cubic' },
+          { label: 'Mistic', href: '/en/pavaje-premium/mistic' },
+          { label: 'Mediterana', href: '/en/pavaje-premium/mediterana' },
+          { label: 'Viena', href: '/en/pavaje-premium/viena' },
+          { label: 'Maya', href: '/en/pavaje-premium/maya' },
+          { label: 'Roman', href: '/en/pavaje-premium/roman' },
+          { label: 'Sahara', href: '/en/pavaje-premium/sahara' },
+          { label: 'Alpin', href: '/en/pavaje-premium/alpin' },
+          { label: 'Pastel', href: '/en/pavaje-premium/pastel' },
+          { label: 'Timber', href: '/en/pavaje-premium/timber' },
+          { label: 'Terranova', href: '/en/pavaje-premium/terranova' },
+          { label: 'Dacic', href: '/en/pavaje-premium/dacic' },
+          { label: 'Relief', href: '/en/pavaje-premium/relief' },
+          { label: 'Urbis', href: '/en/pavaje-premium/stretto' },
+        ],
+      },
+      {
+        label: 'Standard Pavers',
+        href: '/en/pavaje-standard',
+        children: [
+          { label: 'Holland', href: '/en/pavaje-standard/holland' },
+          { label: 'Autobloc', href: '/en/pavaje-standard/autobloc' },
+          { label: 'Unda', href: '/en/pavaje-standard/unda' },
+          { label: 'Quatro', href: '/en/pavaje-standard/quatro' },
+          { label: 'Con', href: '/en/pavaje-standard/con' },
+          { label: 'Eco Pavers', href: '/en/pavaje-standard/pavaje-eco' },
+        ],
+      },
+      {
+        label: 'Woodstone',
+        href: '/en/woodstone-lemn-pietrificat',
+        children: [
+          { label: 'Pavers', href: '/en/woodstone-lemn-pietrificat/pavaj' },
+          { label: 'Palisades and Curbs', href: '/en/woodstone-lemn-pietrificat/palisade-si-borduri' },
+          { label: 'Fence Systems', href: '/en/woodstone-lemn-pietrificat/garduri' },
+          { label: 'Benches and Tables', href: '/en/woodstone-lemn-pietrificat/banci-si-mese' },
+          { label: 'Raised Planters', href: '/en/woodstone-lemn-pietrificat/jardiniere-inaltate' },
+          { label: 'Steps', href: '/en/woodstone-lemn-pietrificat/scari' },
+          { label: 'Other Elements', href: '/en/woodstone-lemn-pietrificat/elemente-lemn-pietrificat' },
+        ],
+      },
+      {
+        label: 'Elements (RO)',
+        href: '/elemente',
+        children: [
+          { label: 'Curbs', href: '/borduri' },
+          { label: 'Drainage Channels', href: '/rigole' },
+          { label: 'Concrete Blocks', href: '/boltari' },
+          {
+            label: 'Fences',
+            href: '/garduri',
+            children: [
+              { label: 'Robusto', href: '/garduri/robusto' },
+              { label: 'Modern', href: '/garduri/modern' },
+              { label: 'Baroc', href: '/garduri/baroc' },
+            ],
+          },
+          { label: 'Planters', href: '/jardiniere' },
+          { label: 'Palisade', href: '/palisada' },
+          { label: 'Step', href: '/treapta' },
+          { label: 'Wall Block', href: '/bloc-de-zid' },
+          {
+            label: 'Sewage Elements',
+            href: '/elemente-de-canalizare',
+            children: [
+              { label: 'Concrete Block', href: '/elemente-de-canalizare/bloc-de-beton' },
+              { label: '1000mm Manholes', href: '/elemente-de-canalizare/elemente-pentru-camine-1000-mm' },
+              { label: '800mm Manholes', href: '/elemente-de-canalizare/elemente-pentru-camine-800-mm' },
+              { label: 'Well Pipe', href: '/elemente-de-canalizare/tub-fantana' },
+              { label: 'Pipes and Headwalls', href: '/elemente-de-canalizare/tuburi-si-timpane' },
+              { label: 'Road Infrastructure', href: '/elemente-de-canalizare/infrastructura-rutiera' },
+            ],
+          },
+        ],
+      },
     ],
   },
   {
