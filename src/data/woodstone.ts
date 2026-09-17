@@ -1,4 +1,5 @@
 import type { WoodstoneCategory } from './types'
+import { woodstoneTranslationsEn } from './woodstone.en'
 
 
 export const woodstoneCategories: WoodstoneCategory[] = [
@@ -499,4 +500,44 @@ export const woodstoneCategories: WoodstoneCategory[] = [
 
 export function getWoodstoneCategoryBySlug(slug: string): WoodstoneCategory | undefined {
   return woodstoneCategories.find(c => c.slug === slug)
+}
+
+const BADGE_EN: Record<string, string> = {
+  'NOU 2026': 'NEW 2026',
+}
+
+// Overlays the English translation (when one exists) onto a RO Woodstone
+// category for rendering on /en pages. Structural/regulatory data (image,
+// gallery, variant codes/dimensions/weights/palletizing) is intentionally
+// never translated -- only names, descriptions and the free-text fields in
+// woodstone.en.ts, matching the localizeProduct() pattern in products.ts.
+export function localizeWoodstoneCategory(category: WoodstoneCategory, lang: 'ro' | 'en'): WoodstoneCategory {
+  if (lang !== 'en') return category
+  const t = woodstoneTranslationsEn[category.slug]
+  if (!t) return category
+  return {
+    ...category,
+    name: t.name,
+    title: t.title,
+    shortDescription: t.shortDescription,
+    description: t.description,
+    heroFeatures: t.heroFeatures,
+    technicalFeatures: t.technicalFeatures,
+    advantages: t.advantages,
+    usage: t.usage,
+    faq: t.faq ?? category.faq,
+    variantGroups: category.variantGroups.map((group, gi) => {
+      const tg = t.variantGroups[gi]
+      return {
+        ...group,
+        name: tg?.name ?? group.name,
+        note: tg?.note ?? group.note,
+        variants: group.variants.map((v, vi) => ({
+          ...v,
+          name: tg?.variantNames[vi] ?? v.name,
+          badge: v.badge ? BADGE_EN[v.badge] ?? v.badge : v.badge,
+        })),
+      }
+    }),
+  }
 }

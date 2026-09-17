@@ -190,6 +190,7 @@ export const enMenu: MenuItem[] = [
     children: [
       { label: 'Premium Pavers', href: '/en/pavaje-premium' },
       { label: 'Standard Pavers', href: '/en/pavaje-standard' },
+      { label: 'Woodstone - Petrified Wood', href: '/en/woodstone-lemn-pietrificat' },
       { label: 'Full catalog (RO)', href: '/produse' },
     ],
   },

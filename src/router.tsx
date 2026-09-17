@@ -161,6 +161,10 @@ export const router = createBrowserRouter([
       { path: 'en/pavaje-standard/quatro', element: <Suspense><QuatroPageEN /></Suspense> },
       { path: 'en/pavaje-standard/quatro/:product', element: <Suspense><ProductDetailPage /></Suspense> },
       { path: 'en/pavaje-standard/:product', element: <Suspense><ProductDetailPage /></Suspense> },
+      // English Woodstone -- Petrified Wood range: same locale-aware
+      // components as the RO routes, translated via src/data/woodstone.en.ts.
+      { path: 'en/woodstone-lemn-pietrificat', element: <Suspense><WoodstonePage /></Suspense> },
+      { path: 'en/woodstone-lemn-pietrificat/:category', element: <Suspense><WoodstoneCategoryPage /></Suspense> },
     ],
   },
 ])

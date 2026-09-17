@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { ArrowRight, Download, X, ChevronLeft, ChevronRight, Star, Image as ImageIcon, Sparkles, ChevronDown, MessageCircle, Calculator } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { useCategoryListSEO } from '@/hooks/useCategoryListSEO'
+import { isEnglishPath } from '@/lib/i18n-routes'
 import type { ProductFAQ } from '@/data/types'
 
 
@@ -18,6 +19,16 @@ const categories = [
   { id: 'banci', title: 'Bănci și Mese', description: 'Mobilier de exterior durabil și estetic.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/banca-woodstone_web.avif`, slug: 'banci-si-mese' },
   { id: 'jardiniere', title: 'Jardiniere Înălțate', description: 'Soluții elegante pentru grădinărit.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/jardiniere-woodstone_web.avif`, slug: 'jardiniere-inaltate' },
   { id: 'alte', title: 'Alte Elemente', description: 'Accesorii și elemente decorative complementare.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/alte-elemente-woodstone_web.avif`, slug: 'elemente-lemn-pietrificat' },
+]
+
+const categoriesEn = [
+  { id: 'pavaj', title: 'Pavers', description: 'Slabs and pavers with an authentic wood texture for walkways and terraces.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone_web.avif`, slug: 'pavaj' },
+  { id: 'palisade', title: 'Palisades and Curbs', description: 'Rustic-look edging elements for gardens.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/palisade-woodstone_web.avif`, slug: 'palisade-si-borduri' },
+  { id: 'scari', title: 'Steps', description: 'Sturdy steps with a natural finish for outdoor entrances.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/trepti-woodstone_web.avif`, slug: 'scari' },
+  { id: 'garduri', title: 'Fence Systems', description: 'Elegant fences with the look of natural wood.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/gard-woodstone_web.avif`, slug: 'garduri' },
+  { id: 'banci', title: 'Benches and Tables', description: 'Durable, stylish outdoor furniture.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/banca-woodstone_web.avif`, slug: 'banci-si-mese' },
+  { id: 'jardiniere', title: 'Raised Planters', description: 'Elegant solutions for gardening.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/jardiniere-woodstone_web.avif`, slug: 'jardiniere-inaltate' },
+  { id: 'alte', title: 'Other Elements', description: 'Complementary decorative accessories and elements.', image: `https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/alte-elemente-woodstone_web.avif`, slug: 'elemente-lemn-pietrificat' },
 ]
 
 const features = [
@@ -45,6 +56,34 @@ const features = [
     icon: Star,
     title: 'Rezistență la Îngheț',
     description: 'Toate fisurile sunt deschise spre exterior, permițând apei să se extindă și protejând produsele la îngheț-dezgheț.',
+  },
+]
+
+const featuresEn = [
+  {
+    icon: Sparkles,
+    title: 'Advanced Technology',
+    description: 'With the help of technology, we created a concrete product that faithfully captures the authentic look of weathered wood.',
+  },
+  {
+    icon: ImageIcon,
+    title: 'Distinctive Finishes',
+    description: 'Details like knots, worn edges and corners, fissures and cracks are uniquely reproduced on the surface.',
+  },
+  {
+    icon: Star,
+    title: 'Durability',
+    description: 'All elements are factory-impregnated with a protective coating, ensuring long-term durability superior to wood.',
+  },
+  {
+    icon: Sparkles,
+    title: 'Versatility',
+    description: 'The varied shapes and sizes allow for over 100 combinations, giving every project a unique character.',
+  },
+  {
+    icon: Star,
+    title: 'Frost Resistance',
+    description: 'All cracks are open outward, allowing water to expand and protecting the products through freeze-thaw cycles.',
   },
 ]
 
@@ -113,23 +152,67 @@ const WOODSTONE_FAQ: ProductFAQ[] = [
   },
 ]
 
+const WOODSTONE_FAQ_EN: ProductFAQ[] = [
+  {
+    question: 'What is the Woodstone – Petrified Wood range?',
+    answer:
+      'Woodstone is a range of concrete products created specifically to faithfully capture the authentic look of weathered wood — knots, worn edges, fissures and cracks — combining the visual warmth of wood with the durability of vibro-pressed concrete.',
+  },
+  {
+    question: 'What Woodstone product categories does Petra Pavaje offer?',
+    answer:
+      'The range includes 7 categories: Pavers, Palisades and Curbs, Steps, Fence Systems, Benches and Tables, Raised Planters and Other Elements — covering walkable surfaces as well as outdoor furniture and edging.',
+  },
+  {
+    question: 'Is Woodstone resistant to frost and to the passage of time?',
+    answer:
+      "Yes. All elements are factory-impregnated with a protective coating, and the texture's cracks are open outward, allowing water to expand without affecting the product — freeze-thaw resistance superior to natural wood.",
+  },
+  {
+    question: 'How many landscaping combinations are possible with Woodstone?',
+    answer:
+      'The varied shapes and sizes across the 7 categories allow for over 100 combinations, giving every outdoor project a unique character.',
+  },
+  {
+    question: "What is the difference between Woodstone and Petra Pavaje's classic pavers?",
+    answer:
+      'Woodstone visually reproduces the texture and shades of weathered wood, designed for natural/rustic-look landscaping, while the Premium and Standard ranges offer classic stone or concrete finishes, in a wider color palette.',
+  },
+]
+
 export function WoodstonePage() {
+  const isEnglish = isEnglishPath(useLocation().pathname)
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
   const [openFaq, setOpenFaq] = useState<number | null>(null)
   const { ref: catRef, isIntersecting: catVisible } = useIntersectionObserver({ threshold: 0.1 })
   const { ref: featRef, isIntersecting: featVisible } = useIntersectionObserver({ threshold: 0.1 })
   const { ref: galleryRef, isIntersecting: galleryVisible } = useIntersectionObserver({ threshold: 0.1 })
 
+  const activeCategories = isEnglish ? categoriesEn : categories
+  const activeFeatures = isEnglish ? featuresEn : features
+  const faqItems = isEnglish ? WOODSTONE_FAQ_EN : WOODSTONE_FAQ
+  const basePath = isEnglish ? '/en/woodstone-lemn-pietrificat' : '/woodstone-lemn-pietrificat'
+
   useCategoryListSEO(
-    categories.map((c) => ({ slug: c.slug, name: c.title, image: c.image })),
-    WOODSTONE_FAQ,
-    {
-      path: '/woodstone-lemn-pietrificat',
-      title: 'Woodstone - Lemn Pietrificat | Petra Pavaje',
-      description:
-        'Gama Woodstone Petra Pavaje: 7 categorii de produse din beton cu aspect autentic de lemn învechit — pavaj, palisade, scări, garduri, bănci, jardiniere — peste 100 de combinații de amenajare.',
-      breadcrumbLabel: 'Woodstone - Lemn Pietrificat',
-    }
+    activeCategories.map((c) => ({ slug: c.slug, name: c.title, image: c.image })),
+    faqItems,
+    isEnglish
+      ? {
+          path: '/en/woodstone-lemn-pietrificat',
+          roPath: '/woodstone-lemn-pietrificat',
+          title: 'Woodstone - Petrified Wood | Petra Pavaje',
+          description:
+            'The Petra Pavaje Woodstone range: 7 categories of concrete products with an authentic weathered-wood look — pavers, palisades, steps, fences, benches, planters — over 100 landscaping combinations.',
+          breadcrumbLabel: 'Woodstone - Petrified Wood',
+        }
+      : {
+          path: '/woodstone-lemn-pietrificat',
+          enPath: '/en/woodstone-lemn-pietrificat',
+          title: 'Woodstone - Lemn Pietrificat | Petra Pavaje',
+          description:
+            'Gama Woodstone Petra Pavaje: 7 categorii de produse din beton cu aspect autentic de lemn învechit — pavaj, palisade, scări, garduri, bănci, jardiniere — peste 100 de combinații de amenajare.',
+          breadcrumbLabel: 'Woodstone - Lemn Pietrificat',
+        }
   )
 
   const prevImage = () => {
@@ -157,9 +240,9 @@ export function WoodstonePage() {
       <section className="bg-white border-b border-charcoal-100 py-4">
         <div className="container-premium">
           <nav className="flex items-center gap-2 text-sm text-charcoal-500">
-            <Link to="/" className="hover:text-charcoal-900 transition-colors">PetraPavaje</Link>
+            <Link to={isEnglish ? '/en' : '/'} className="hover:text-charcoal-900 transition-colors">PetraPavaje</Link>
             <span>/</span>
-            <span className="text-charcoal-900 font-medium">WOODSTONE lemn pietrificat</span>
+            <span className="text-charcoal-900 font-medium">{isEnglish ? 'WOODSTONE petrified wood' : 'WOODSTONE lemn pietrificat'}</span>
           </nav>
         </div>
       </section>
@@ -174,28 +257,30 @@ export function WoodstonePage() {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase text-brand-700 bg-brand-50 border border-brand-200 rounded-full mb-4">
-                Colecție Exclusivă
+                {isEnglish ? 'Exclusive Collection' : 'Colecție Exclusivă'}
               </span>
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-charcoal-900 leading-[0.95] mb-4">
                 WOODSTONE{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-500">
-                  Lemn Pietrificat
+                  {isEnglish ? 'Petrified Wood' : 'Lemn Pietrificat'}
                 </span>
               </h1>
               <p className="text-brand-600 text-sm md:text-base font-medium tracking-[0.15em] uppercase mb-4">
-                FRUMUSEȚEA LEMNULUI, DURABILITATEA PIETREI
+                {isEnglish ? 'THE BEAUTY OF WOOD, THE DURABILITY OF STONE' : 'FRUMUSEȚEA LEMNULUI, DURABILITATEA PIETREI'}
               </p>
               <p className="text-lg md:text-xl text-charcoal-600 leading-relaxed mb-8">
-                Noua gamă de produse din beton, creată special pentru a aduce căldura și eleganța lemnului în amenajările exterioare. Produsele inovatoare combină durabilitatea betonului cu aspectul autentic al lemnului, oferind texturi care imită perfect fibra și nuanțele naturale.
+                {isEnglish
+                  ? "The new range of concrete products, created specifically to bring the warmth and elegance of wood into outdoor landscaping. These innovative products combine the durability of concrete with the authentic look of wood, offering textures that perfectly mimic natural grain and shades."
+                  : 'Noua gamă de produse din beton, creată special pentru a aduce căldura și eleganța lemnului în amenajările exterioare. Produsele inovatoare combină durabilitatea betonului cu aspectul autentic al lemnului, oferind texturi care imită perfect fibra și nuanțele naturale.'}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="#categorii" className="btn-primary group text-base">
-                  Vezi Produsele
+                  {isEnglish ? 'View Products' : 'Vezi Produsele'}
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <button className="btn-secondary group text-base">
                   <Download className="w-4 h-4 mr-2" />
-                  Descarcă Broșura
+                  {isEnglish ? 'Download Brochure' : 'Descarcă Broșura'}
                 </button>
               </div>
             </motion.div>
@@ -209,7 +294,7 @@ export function WoodstonePage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ aspectRatio: '800/600' }}>
                 <img
                   src={heroImage}
-                  alt="Woodstone Lemn Pietrificat - Amenajare Exterioară"
+                  alt={isEnglish ? 'Woodstone Petrified Wood - Outdoor Landscaping' : 'Woodstone Lemn Pietrificat - Amenajare Exterioară'}
                   className="w-full h-full object-cover"
                   fetchPriority="high"
                   decoding="async"
@@ -222,7 +307,7 @@ export function WoodstonePage() {
               <div className="absolute -bottom-4 -left-4 w-28 h-28 md:w-36 md:h-36 rounded-xl overflow-hidden shadow-lg border-2 border-white">
                 <img
                   src={heroImage2}
-                  alt="Detaliu Textură Woodstone"
+                  alt={isEnglish ? 'Woodstone Texture Detail' : 'Detaliu Textură Woodstone'}
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"
@@ -232,7 +317,7 @@ export function WoodstonePage() {
                 />
               </div>
               <div className="absolute top-4 right-4 bg-brand-600 text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">
-                100+ Combinații posibile
+                {isEnglish ? '100+ Possible Combinations' : '100+ Combinații posibile'}
               </div>
             </motion.div>
           </div>
@@ -249,16 +334,18 @@ export function WoodstonePage() {
             className="text-center mb-12"
           >
             <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase text-brand-600 bg-brand-50 rounded-full mb-4">
-              Explorează Gama
+              {isEnglish ? 'Explore the Range' : 'Explorează Gama'}
             </span>
-            <h2 className="heading-h2 text-charcoal-900 mb-4">Categorii de Produse</h2>
+            <h2 className="heading-h2 text-charcoal-900 mb-4">{isEnglish ? 'Product Categories' : 'Categorii de Produse'}</h2>
             <p className="text-body-lg text-charcoal-500 max-w-2xl mx-auto">
-              {categories.length} categorii de produse Woodstone, create pentru a transforma orice spațiu exterior într-un loc de poveste.
+              {isEnglish
+                ? `${activeCategories.length} Woodstone product categories, created to turn any outdoor space into a place with a story to tell.`
+                : `${activeCategories.length} categorii de produse Woodstone, create pentru a transforma orice spațiu exterior într-un loc de poveste.`}
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-            {categories.slice(0, 4).map((cat, i) => (
+            {activeCategories.slice(0, 4).map((cat, i) => (
               <motion.div
                 key={cat.id}
                 initial={{ opacity: 0, y: 20 }}
@@ -266,7 +353,7 @@ export function WoodstonePage() {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
               >
                 <Link
-                  to={`/woodstone-lemn-pietrificat/${cat.slug}`}
+                  to={`${basePath}/${cat.slug}`}
                   className="group block relative rounded-2xl overflow-hidden bg-charcoal-100"
                   style={{ aspectRatio: '4/5' }}
                 >
@@ -286,7 +373,7 @@ export function WoodstonePage() {
                     <h3 className="text-xl font-bold text-white mb-2">{cat.title}</h3>
                     <p className="text-sm text-charcoal-300 mb-3 line-clamp-2">{cat.description}</p>
                     <span className="inline-flex items-center text-brand-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
-                      Explorează
+                      {isEnglish ? 'Explore' : 'Explorează'}
                       <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </div>
@@ -296,7 +383,7 @@ export function WoodstonePage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {categories.slice(4).map((cat, i) => (
+            {activeCategories.slice(4).map((cat, i) => (
               <motion.div
                 key={cat.id}
                 initial={{ opacity: 0, y: 20 }}
@@ -304,7 +391,7 @@ export function WoodstonePage() {
                 transition={{ duration: 0.4, delay: (i + 4) * 0.1 }}
               >
                 <Link
-                  to={`/woodstone-lemn-pietrificat/${cat.slug}`}
+                  to={`${basePath}/${cat.slug}`}
                   className="group block relative rounded-2xl overflow-hidden bg-charcoal-100"
                   style={{ aspectRatio: '4/5' }}
                 >
@@ -324,7 +411,7 @@ export function WoodstonePage() {
                     <h3 className="text-xl font-bold text-white mb-2">{cat.title}</h3>
                     <p className="text-sm text-charcoal-300 mb-3 line-clamp-2">{cat.description}</p>
                     <span className="inline-flex items-center text-brand-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
-                      Explorează
+                      {isEnglish ? 'Explore' : 'Explorează'}
                       <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </div>
@@ -346,16 +433,18 @@ export function WoodstonePage() {
           >
             <span className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wider uppercase text-amber-600 bg-amber-50 rounded-full mb-4">
               <Star className="w-3 h-3" />
-              De ce Woodstone?
+              {isEnglish ? 'Why Woodstone?' : 'De ce Woodstone?'}
             </span>
-            <h2 className="heading-h2 text-charcoal-900 mb-4">Caracteristici Unice și Beneficii</h2>
+            <h2 className="heading-h2 text-charcoal-900 mb-4">{isEnglish ? 'Unique Features and Benefits' : 'Caracteristici Unice și Beneficii'}</h2>
             <p className="text-body-lg text-charcoal-500 max-w-3xl mx-auto">
-              Materialele tradiționale au fost reimaginate, combinând durabilitatea betonului cu frumusețea atemporală a lemnului în-vechit. Prin intermediul unor tehnologii inovatoare, am creat produse care nu doar imită aspectul lemnului, ci surprind și detaliile cele mai fine.
+              {isEnglish
+                ? "Traditional materials have been reimagined, combining the durability of concrete with the timeless beauty of weathered wood. Through innovative technology, we've created products that don't just mimic the look of wood, but capture its finest details too."
+                : 'Materialele tradiționale au fost reimaginate, combinând durabilitatea betonului cu frumusețea atemporală a lemnului în-vechit. Prin intermediul unor tehnologii inovatoare, am creat produse care nu doar imită aspectul lemnului, ci surprind și detaliile cele mai fine.'}
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-            {features.map((feature, i) => {
+            {activeFeatures.map((feature, i) => {
               const Icon = feature.icon
               return (
                 <motion.div
@@ -388,11 +477,13 @@ export function WoodstonePage() {
           >
             <span className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wider uppercase text-brand-600 bg-brand-50 rounded-full mb-4">
               <ImageIcon className="w-3 h-3" />
-              Inspirație
+              {isEnglish ? 'Inspiration' : 'Inspirație'}
             </span>
-            <h2 className="heading-h2 text-charcoal-900 mb-4">Galerie de Amenajări</h2>
+            <h2 className="heading-h2 text-charcoal-900 mb-4">{isEnglish ? 'Landscaping Gallery' : 'Galerie de Amenajări'}</h2>
             <p className="text-body-lg text-charcoal-500 max-w-2xl mx-auto">
-              Descoperă proiecte reale realizate cu produsele Woodstone și lasă-te inspirat pentru amenajarea ta.
+              {isEnglish
+                ? 'Discover real projects built with Woodstone products and get inspired for your own landscaping.'
+                : 'Descoperă proiecte reale realizate cu produsele Woodstone și lasă-te inspirat pentru amenajarea ta.'}
             </p>
           </motion.div>
 
@@ -409,7 +500,7 @@ export function WoodstonePage() {
               >
                 <img
                   src={img}
-                  alt={`Amenajare exterioară cu Woodstone (lemn pietrificat din beton) - imagine ${i + 1}`}
+                  alt={isEnglish ? `Outdoor landscaping with Woodstone (concrete petrified wood) - image ${i + 1}` : `Amenajare exterioară cu Woodstone (lemn pietrificat din beton) - imagine ${i + 1}`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                   decoding="async"
@@ -429,25 +520,26 @@ export function WoodstonePage() {
       <section className="py-12 md:py-16 bg-charcoal-50">
         <div className="container-premium">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="heading-h3 text-charcoal-900 mb-3">Nu știi ce produs Woodstone să alegi?</h2>
+            <h2 className="heading-h3 text-charcoal-900 mb-3">{isEnglish ? "Don't know which Woodstone product to choose?" : 'Nu știi ce produs Woodstone să alegi?'}</h2>
             <p className="text-body text-charcoal-600 mb-6">
-              Echipa noastră te poate ajuta să alegi combinația potrivită de pavaj, palisade, scări sau mobilier
-              pentru amenajarea ta, sau poți estima singur cantitatea necesară cu calculatorul de pavaj.
+              {isEnglish
+                ? 'Our team can help you choose the right combination of pavers, palisades, steps or furniture for your project, or you can estimate the quantity you need yourself with the paving calculator.'
+                : 'Echipa noastră te poate ajuta să alegi combinația potrivită de pavaj, palisade, scări sau mobilier pentru amenajarea ta, sau poți estima singur cantitatea necesară cu calculatorul de pavaj.'}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-              <Link to="/contact" className="btn-primary">
+              <Link to={isEnglish ? '/en/contact' : '/contact'} className="btn-primary">
                 <MessageCircle className="w-4 h-4 mr-2" />
-                Cere o ofertă
+                {isEnglish ? 'Request a Quote' : 'Cere o ofertă'}
               </Link>
-              <Link to="/calculator-pavaj" className="btn-secondary">
+              <Link to={`${isEnglish ? '/en' : ''}/calculator-pavaj`} className="btn-secondary">
                 <Calculator className="w-4 h-4 mr-2" />
-                Calculator pavaj
+                {isEnglish ? 'Paving Calculator' : 'Calculator pavaj'}
               </Link>
             </div>
             <p className="text-sm text-charcoal-500 mt-6">
-              Cauți un aspect clasic de piatră sau beton?{' '}
-              <Link to="/pavaje-premium" className="link-premium">
-                Vezi gama Pavaje Premium
+              {isEnglish ? 'Looking for a classic stone or concrete look? ' : 'Cauți un aspect clasic de piatră sau beton? '}
+              <Link to={isEnglish ? '/en/pavaje-premium' : '/pavaje-premium'} className="link-premium">
+                {isEnglish ? 'See our Premium Pavers range' : 'Vezi gama Pavaje Premium'}
                 <ArrowRight className="w-3.5 h-3.5 inline ml-1" />
               </Link>
             </p>
@@ -459,11 +551,11 @@ export function WoodstonePage() {
       <section className="py-12 md:py-16">
         <div className="container-premium">
           <div className="text-center mb-10">
-            <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">Întrebări Frecvente</p>
-            <h2 className="heading-h2 text-charcoal-900">Tot ce trebuie să știi despre Woodstone</h2>
+            <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">{isEnglish ? 'Frequently Asked Questions' : 'Întrebări Frecvente'}</p>
+            <h2 className="heading-h2 text-charcoal-900">{isEnglish ? 'Everything you need to know about Woodstone' : 'Tot ce trebuie să știi despre Woodstone'}</h2>
           </div>
           <div className="max-w-3xl mx-auto space-y-3">
-            {WOODSTONE_FAQ.map((item, idx) => (
+            {faqItems.map((item, idx) => (
               <div key={item.question} className="bg-white rounded-xl border border-charcoal-100 overflow-hidden">
                 <button
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
@@ -518,7 +610,7 @@ export function WoodstonePage() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               src={galleryImages[lightboxIndex]}
-              alt={`Amenajare exterioară cu Woodstone (lemn pietrificat din beton) - imagine ${lightboxIndex + 1}`}
+              alt={isEnglish ? `Outdoor landscaping with Woodstone (concrete petrified wood) - image ${lightboxIndex + 1}` : `Amenajare exterioară cu Woodstone (lemn pietrificat din beton) - imagine ${lightboxIndex + 1}`}
               className="max-w-[90vw] max-h-[90vh] object-contain rounded-lg"
               onClick={(e) => e.stopPropagation()}
             />

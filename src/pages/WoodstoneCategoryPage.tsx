@@ -1,18 +1,21 @@
 import { useState, useCallback } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Phone, ChevronLeft, ChevronRight, Check, ShieldCheck, Award, X, ChevronDown, Calculator } from 'lucide-react'
-import { getWoodstoneCategoryBySlug } from '@/data/woodstone'
+import { getWoodstoneCategoryBySlug, localizeWoodstoneCategory } from '@/data/woodstone'
 import { useWoodstoneSEO } from '@/hooks/useWoodstoneSEO'
+import { isEnglishPath } from '@/lib/i18n-routes'
 
 export function WoodstoneCategoryPage() {
   const { category: categorySlug } = useParams<{ category: string }>()
+  const isEnglish = isEnglishPath(useLocation().pathname)
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [lightboxIndex, setLightboxIndex] = useState(0)
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
-  const category = getWoodstoneCategoryBySlug(categorySlug || '')
-  useWoodstoneSEO(category)
+  const rawCategory = getWoodstoneCategoryBySlug(categorySlug || '')
+  const category = rawCategory ? localizeWoodstoneCategory(rawCategory, isEnglish ? 'en' : 'ro') : rawCategory
+  useWoodstoneSEO(category, isEnglish)
 
   const openLightbox = useCallback((index: number) => {
     setLightboxIndex(index)
@@ -34,9 +37,9 @@ export function WoodstoneCategoryPage() {
   if (!category) {
     return (
       <div className="pt-32 pb-16 text-center">
-        <h1 className="heading-h1 text-charcoal-900 mb-4">Categorie negăsită</h1>
-        <p className="text-charcoal-500 mb-8">Categoria Woodstone pe care o cauți nu există.</p>
-        <Link to="/woodstone-lemn-pietrificat" className="btn-primary">Înapoi la Woodstone</Link>
+        <h1 className="heading-h1 text-charcoal-900 mb-4">{isEnglish ? 'Category Not Found' : 'Categorie negăsită'}</h1>
+        <p className="text-charcoal-500 mb-8">{isEnglish ? "The Woodstone category you're looking for doesn't exist." : 'Categoria Woodstone pe care o cauți nu există.'}</p>
+        <Link to={isEnglish ? '/en/woodstone-lemn-pietrificat' : '/woodstone-lemn-pietrificat'} className="btn-primary">{isEnglish ? 'Back to Woodstone' : 'Înapoi la Woodstone'}</Link>
       </div>
     )
   }
@@ -46,9 +49,9 @@ export function WoodstoneCategoryPage() {
       <section className="bg-charcoal-950 text-white py-6">
         <div className="container-premium">
           <nav className="flex items-center gap-2 text-sm text-charcoal-400">
-            <Link to="/" className="hover:text-white transition-colors">Acasă</Link>
+            <Link to={isEnglish ? '/en' : '/'} className="hover:text-white transition-colors">{isEnglish ? 'Home' : 'Acasă'}</Link>
             <span>/</span>
-            <Link to="/woodstone-lemn-pietrificat" className="hover:text-white transition-colors">Woodstone</Link>
+            <Link to={isEnglish ? '/en/woodstone-lemn-pietrificat' : '/woodstone-lemn-pietrificat'} className="hover:text-white transition-colors">Woodstone</Link>
             <span>/</span>
             <span className="text-white">{category.title}</span>
           </nav>
@@ -89,7 +92,7 @@ export function WoodstoneCategoryPage() {
               transition={{ duration: 0.5 }}
             >
               <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase text-brand-700 bg-brand-50 border border-brand-200 rounded-full mb-4">
-                ★ Lemn Pietrificat
+                {isEnglish ? '★ Petrified Wood' : '★ Lemn Pietrificat'}
               </span>
               <h1 className="heading-h1 text-charcoal-900 mb-3">{category.title}</h1>
               <p className="text-body-lg text-brand-600 font-semibold mb-4">{category.shortDescription}</p>
@@ -110,7 +113,7 @@ export function WoodstoneCategoryPage() {
                 <div className="mb-6">
                   <h3 className="text-sm font-semibold text-charcoal-900 mb-3 flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-brand-600" />
-                    Caracteristici tehnice
+                    {isEnglish ? 'Technical Features' : 'Caracteristici tehnice'}
                   </h3>
                   <ul className="grid sm:grid-cols-2 gap-2">
                     {category.technicalFeatures.map((f) => (
@@ -127,7 +130,7 @@ export function WoodstoneCategoryPage() {
                 <div className="mb-6">
                   <h3 className="text-sm font-semibold text-charcoal-900 mb-3 flex items-center gap-2">
                     <Award className="w-4 h-4 text-brand-600" />
-                    Avantaje
+                    {isEnglish ? 'Advantages' : 'Avantaje'}
                   </h3>
                   <ul className="space-y-2">
                     {category.advantages.map((a) => (
@@ -141,7 +144,7 @@ export function WoodstoneCategoryPage() {
               )}
 
               <div className="mb-8">
-                <h3 className="text-sm font-semibold text-charcoal-900 mb-2">Utilizare recomandată</h3>
+                <h3 className="text-sm font-semibold text-charcoal-900 mb-2">{isEnglish ? 'Recommended Use' : 'Utilizare recomandată'}</h3>
                 <div className="flex flex-wrap gap-2">
                   {category.usage.map((u) => (
                     <span key={u} className="px-3 py-1.5 bg-brand-50 text-brand-700 text-sm rounded-lg">
@@ -152,13 +155,13 @@ export function WoodstoneCategoryPage() {
               </div>
 
               <div className="flex flex-wrap gap-3">
-                <Link to="/contact" className="btn-primary justify-center group inline-flex">
+                <Link to={isEnglish ? '/en/contact' : '/contact'} className="btn-primary justify-center group inline-flex">
                   <Phone className="w-4 h-4 mr-2" />
-                  Solicită Ofertă
+                  {isEnglish ? 'Request a Quote' : 'Solicită Ofertă'}
                 </Link>
-                <Link to={`/calculator-pavaj?product=${category.slug}`} className="btn-secondary justify-center group inline-flex">
+                <Link to={`${isEnglish ? '/en' : ''}/calculator-pavaj?product=${category.slug}`} className="btn-secondary justify-center group inline-flex">
                   <Calculator className="w-4 h-4 mr-2" />
-                  Calculează necesarul
+                  {isEnglish ? 'Calculate Requirement' : 'Calculează necesarul'}
                 </Link>
               </div>
             </motion.div>
@@ -169,8 +172,8 @@ export function WoodstoneCategoryPage() {
       <section className="py-12 md:py-16 bg-white">
         <div className="container-premium">
           <div className="text-center mb-10">
-            <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">Dimensiuni Disponibile</p>
-            <h2 className="heading-h2 text-charcoal-900">Date Tehnice și Caracteristici</h2>
+            <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">{isEnglish ? 'Available Sizes' : 'Dimensiuni Disponibile'}</p>
+            <h2 className="heading-h2 text-charcoal-900">{isEnglish ? 'Technical Data and Specifications' : 'Date Tehnice și Caracteristici'}</h2>
           </div>
 
           <div className="space-y-10 max-w-4xl mx-auto">
@@ -181,7 +184,7 @@ export function WoodstoneCategoryPage() {
                 <div key={group.name}>
                   <div className="flex items-baseline justify-between mb-3 gap-2 flex-wrap">
                     <h3 className="text-lg font-semibold text-charcoal-900">{group.name}</h3>
-                    <span className="text-sm text-charcoal-500">{group.variants.length} variante</span>
+                    <span className="text-sm text-charcoal-500">{group.variants.length} {isEnglish ? 'variants' : 'variante'}</span>
                   </div>
                   {group.note && (
                     <p className="text-sm text-charcoal-500 mb-3">{group.note}</p>
@@ -190,12 +193,12 @@ export function WoodstoneCategoryPage() {
                     <table className="w-full text-sm">
                       <thead>
                         <tr className="border-b border-charcoal-200 bg-charcoal-50">
-                          <th className="text-left py-2.5 px-4 font-medium text-charcoal-500">Denumire</th>
-                          <th className="text-left py-2.5 px-3 font-medium text-charcoal-500">Cod</th>
-                          <th className="text-left py-2.5 px-3 font-medium text-charcoal-500">Dimensiuni (cm)</th>
-                          {hasPiecesPerMp && <th className="text-right py-2.5 px-3 font-medium text-charcoal-500">Buc/m²</th>}
-                          <th className="text-right py-2.5 px-3 font-medium text-charcoal-500">Kg/buc</th>
-                          {hasPalletizing && <th className="text-right py-2.5 px-4 font-medium text-charcoal-500">Paletizare</th>}
+                          <th className="text-left py-2.5 px-4 font-medium text-charcoal-500">{isEnglish ? 'Name' : 'Denumire'}</th>
+                          <th className="text-left py-2.5 px-3 font-medium text-charcoal-500">{isEnglish ? 'Code' : 'Cod'}</th>
+                          <th className="text-left py-2.5 px-3 font-medium text-charcoal-500">{isEnglish ? 'Dimensions (cm)' : 'Dimensiuni (cm)'}</th>
+                          {hasPiecesPerMp && <th className="text-right py-2.5 px-3 font-medium text-charcoal-500">{isEnglish ? 'Pcs/m²' : 'Buc/m²'}</th>}
+                          <th className="text-right py-2.5 px-3 font-medium text-charcoal-500">{isEnglish ? 'Kg/pc' : 'Kg/buc'}</th>
+                          {hasPalletizing && <th className="text-right py-2.5 px-4 font-medium text-charcoal-500">{isEnglish ? 'Palletizing' : 'Paletizare'}</th>}
                         </tr>
                       </thead>
                       <tbody>
@@ -234,10 +237,12 @@ export function WoodstoneCategoryPage() {
         <section id="galerie" className="py-12 md:py-16 bg-charcoal-50">
           <div className="container-premium">
             <div className="text-center mb-10">
-              <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">Galerie Foto</p>
+              <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">{isEnglish ? 'Photo Gallery' : 'Galerie Foto'}</p>
               <h2 className="heading-h2 text-charcoal-900">{category.title} Woodstone</h2>
               <p className="text-charcoal-500 mt-3 max-w-2xl mx-auto">
-                Descoperă realizările noastre cu {category.title.toLowerCase()} Woodstone în diverse tipuri de amenajări.
+                {isEnglish
+                  ? `Discover our projects using Woodstone ${category.title.toLowerCase()} across a variety of landscaping styles.`
+                  : `Descoperă realizările noastre cu ${category.title.toLowerCase()} Woodstone în diverse tipuri de amenajări.`}
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -249,7 +254,7 @@ export function WoodstoneCategoryPage() {
                 >
                   <img
                     src={img}
-                    alt={`${category.title} - ${category.shortDescription} - imagine ${idx + 1}`}
+                    alt={`${category.title} - ${category.shortDescription} - ${isEnglish ? 'image' : 'imagine'} ${idx + 1}`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
                   />
@@ -264,8 +269,8 @@ export function WoodstoneCategoryPage() {
         <section className="py-12 md:py-16 bg-white">
           <div className="container-premium">
             <div className="text-center mb-10">
-              <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">Întrebări Frecvente</p>
-              <h2 className="heading-h2 text-charcoal-900">Tot ce trebuie să știi despre {category.title}</h2>
+              <p className="text-sm font-medium text-brand-600 uppercase tracking-widest mb-2">{isEnglish ? 'Frequently Asked Questions' : 'Întrebări Frecvente'}</p>
+              <h2 className="heading-h2 text-charcoal-900">{isEnglish ? `Everything you need to know about ${category.title}` : `Tot ce trebuie să știi despre ${category.title}`}</h2>
             </div>
             <div className="max-w-3xl mx-auto space-y-3">
               {category.faq.map((item, idx) => (
@@ -315,7 +320,7 @@ export function WoodstoneCategoryPage() {
           </button>
           <img
             src={category.gallery[lightboxIndex]}
-            alt={`${category.title} - ${category.shortDescription} - imagine ${lightboxIndex + 1}`}
+            alt={`${category.title} - ${category.shortDescription} - ${isEnglish ? 'image' : 'imagine'} ${lightboxIndex + 1}`}
             className="max-w-[90vw] max-h-[85vh] object-contain"
             onClick={(e) => e.stopPropagation()}
           />

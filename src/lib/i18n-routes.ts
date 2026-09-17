@@ -27,11 +27,13 @@ export function isEnglishPath(pathname: string): boolean {
 }
 
 // The Premium and Standard paver catalogs (hub + individual products, incl.
-// the nested Quatro hub under Standard) are fully translated -- see
-// src/data/products.en.ts and src/pages/QuatroPageEN.tsx -- unlike the rest
-// of the product catalog, so they need their own prefix-match rule alongside
-// the exact-match TRANSLATED_PATHS list above.
-const TRANSLATED_PREFIXES = ['/pavaje-premium', '/pavaje-standard']
+// the nested Quatro hub under Standard) plus the Woodstone -- Petrified Wood
+// range (hub + 7 categories) are fully translated -- see
+// src/data/products.en.ts, src/pages/QuatroPageEN.tsx and
+// src/data/woodstone.en.ts -- unlike the rest of the product catalog, so
+// they need their own prefix-match rule alongside the exact-match
+// TRANSLATED_PATHS list above.
+const TRANSLATED_PREFIXES = ['/pavaje-premium', '/pavaje-standard', '/woodstone-lemn-pietrificat']
 
 // RO path -> EN path for the language switcher. Falls back to the EN
 // homepage when the current RO page has no translation.

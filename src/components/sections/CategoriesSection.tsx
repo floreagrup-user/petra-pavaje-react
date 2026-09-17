@@ -14,7 +14,7 @@ import { isEnglishPath } from '@/lib/i18n-routes'
 const CATEGORY_EN: Record<string, { name: string; description: string; translated: boolean }> = {
   premium: { name: 'Premium Pavers', description: 'The highest-quality pavers, inspired by nature. A variety of shades and textures creates exceptional outdoor spaces.', translated: true },
   standard: { name: 'Standard Pavers', description: 'Efficient, durable solutions for any project. The best value for money for functional landscaping.', translated: true },
-  woodstone: { name: 'Woodstone - Petrified Wood', description: 'The beauty of wood combined with the durability of concrete. A complete range for natural landscaping.', translated: false },
+  woodstone: { name: 'Woodstone - Petrified Wood', description: 'The beauty of wood combined with the durability of concrete. A complete range for natural landscaping.', translated: true },
   borduri: { name: 'Curbs', description: 'Concrete curbs for delimiting and organizing spaces. Multiple sizes and finishes.', translated: false },
   boltari: { name: 'Concrete Blocks', description: 'Concrete blocks for sturdy construction. Solid and durable.', translated: false },
   garduri: { name: 'Fences', description: 'Precast concrete fences in various styles: Baroc, Modern, Robusto.', translated: false },

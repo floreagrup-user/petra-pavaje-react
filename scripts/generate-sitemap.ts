@@ -149,6 +149,17 @@ for (const wc of woodstoneCategories) {
   add(`/woodstone-lemn-pietrificat/${wc.slug}`, 'monthly', '0.7')
 }
 
+// English Woodstone -- Petrified Wood range: also fully translated (see
+// src/data/woodstone.en.ts), unlike the rest of the product catalog.
+add('/en/woodstone-lemn-pietrificat', 'weekly', '0.8')
+for (const wc of woodstoneCategories) {
+  add(`/en/woodstone-lemn-pietrificat/${wc.slug}`, 'monthly', '0.7')
+}
+linkAltLangs('/woodstone-lemn-pietrificat', '/en/woodstone-lemn-pietrificat')
+for (const wc of woodstoneCategories) {
+  linkAltLangs(`/woodstone-lemn-pietrificat/${wc.slug}`, `/en/woodstone-lemn-pietrificat/${wc.slug}`)
+}
+
 // Blog posts
 for (const post of blogPosts) {
   const lastmod = post.date ? new Date(post.date).toISOString().slice(0, 10) : undefined
