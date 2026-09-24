@@ -39,15 +39,31 @@ function readRoutesFromSitemap() {
   return locs.map((url) => new URL(url).pathname)
 }
 
-function startServer() {
+// Routes are processed in sitemap (alphabetical) order, so "/" always
+// renders first and its own writeFileSync(dist/index.html, ...) below
+// overwrites the pristine Vite shell with the HOMEPAGE's fully-rendered
+// output -- head tags the homepage sets imperatively (hreflang, via
+// upsertHreflangPair) included. Every later route's *initial* HTML then
+// comes from this already-overwritten file, and any route whose own
+// page component never calls the same setter (e.g. BlogDetailPage,
+// which never touches hreflang) keeps the homepage's stale hreflang
+// pair in its captured snapshot, since nothing ever clears it. Freezing
+// one pristine copy of the shell up front, and always serving that (never
+// the live, progressively-overwritten dist/index.html) as the fallback,
+// keeps every route's starting point identical regardless of processing
+// order.
+function startServer(pristineShell) {
   const server = createServer((req, res) => {
     const urlPath = req.url.split('?')[0]
     const filePath = join(DIST, decodeURIComponent(urlPath))
     const hasExt = extname(urlPath) !== ''
-    const target = hasExt && existsSync(filePath) && statSync(filePath).isFile() ? filePath : join(DIST, 'index.html')
-    const ext = extname(target)
-    res.setHeader('Content-Type', MIME[ext] || 'application/octet-stream')
-    res.end(readFileSync(target))
+    if (hasExt && existsSync(filePath) && statSync(filePath).isFile()) {
+      res.setHeader('Content-Type', MIME[extname(filePath)] || 'application/octet-stream')
+      res.end(readFileSync(filePath))
+      return
+    }
+    res.setHeader('Content-Type', MIME['.html'])
+    res.end(pristineShell)
   })
   return new Promise((resolve) => server.listen(PORT, () => resolve(server)))
 }
@@ -56,7 +72,8 @@ async function main() {
   const routes = readRoutesFromSitemap()
   console.log(`Prerendering ${routes.length} routes...`)
 
-  const server = await startServer()
+  const pristineShell = readFileSync(join(DIST, 'index.html'))
+  const server = await startServer(pristineShell)
   const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] })
 
   let ok = 0

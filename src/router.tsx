@@ -36,6 +36,7 @@ const FaqPage = lazy(() => import('@/pages/FaqPage').then(m => ({ default: m.Faq
 const CarieraPage = lazy(() => import('@/pages/CarieraPage').then(m => ({ default: m.CarieraPage })))
 const GarantiePage = lazy(() => import('@/pages/GarantiePage').then(m => ({ default: m.GarantiePage })))
 const DocumenteTehnicePage = lazy(() => import('@/pages/DocumenteTehnicePage').then(m => ({ default: m.DocumenteTehnicePage })))
+const NotFoundPage = lazy(() => import('@/pages/NotFoundPage').then(m => ({ default: m.NotFoundPage })))
 
 // English (/en) — scoped translation: static/info pages only, no catalog/blog/docs.
 // See src/lib/i18n-routes.ts for the RO<->EN path map.
@@ -167,6 +168,13 @@ export const router = createBrowserRouter([
       // components as the RO routes, translated via src/data/woodstone.en.ts.
       { path: 'en/woodstone-lemn-pietrificat', element: <Suspense><WoodstonePage /></Suspense> },
       { path: 'en/woodstone-lemn-pietrificat/:category', element: <Suspense><WoodstoneCategoryPage /></Suspense> },
+
+      // Catch-all: any path that doesn't match a route above (including
+      // /en/* paths this site never translated, like /en/blog or
+      // /en/garduri) renders a real "not found" page with noindex,
+      // instead of silently falling through to whatever the SPA shell's
+      // baked-in homepage content happens to be.
+      { path: '*', element: <Suspense><NotFoundPage /></Suspense> },
     ],
   },
 ])

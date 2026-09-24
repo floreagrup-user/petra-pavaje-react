@@ -98,15 +98,19 @@ export function HeroSection() {
 
       <div className="relative h-full flex items-center">
         <div className="container-premium w-full">
-          {/* Permanent, non-rotating brand identity line -- present in every
-              render/prerender snapshot regardless of which slide is active,
-              so search/AI crawlers always see "who we are" text (SEO/GEO
-              audit finding #6), independent of the rotating slide copy. */}
-          <p className="text-white/50 text-xs sm:text-sm font-medium mb-4 max-w-2xl">
+          {/* The page's one real <h1> -- permanent, non-rotating, present in
+              every render/prerender snapshot regardless of which slide is
+              active, so it always names the brand (SEO/GEO audit findings
+              #6 and #3.5: the page's H1 must be "Petra Pavaje", not
+              whichever slide happens to be active). The big rotating slide
+              text below is visually the largest element on the page but is
+              an <h2>, not the <h1> -- same as before, just correctly
+              labelled: display size and heading rank are independent. */}
+          <h1 className="text-white/50 text-xs sm:text-sm font-medium mb-4 max-w-2xl">
             {isEnglish
               ? 'Petra Pavaje — Premium Paver Manufacturer · In Harmony with Nature · 800+ Products · 4 National Factories · 24,000 sqm/day'
               : 'Petra Pavaje — Producător Premium de Pavaje · În armonie cu natura · 800+ Produse · 4 Fabrici Naționale · 24.000 mp/zi'}
-          </p>
+          </h1>
 
           <motion.div
             key={slide.id}
@@ -125,14 +129,14 @@ export function HeroSection() {
               {slide.subtitle}
             </motion.p>
 
-            <motion.h1
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[0.95] mb-6 whitespace-pre-line"
             >
               {slide.title}
-            </motion.h1>
+            </motion.h2>
 
             <motion.p
               initial={{ opacity: 0 }}

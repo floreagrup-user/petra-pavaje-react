@@ -2,6 +2,10 @@ export const SEO_SITE_NAME = 'Petra Pavaje'
 export const SEO_DEFAULT_TITLE = 'Petra Pavaje - Producător Premium de Pavaje'
 export const SEO_DEFAULT_DESCRIPTION =
   'Pavaje Premium si Standard, Dale, Borduri, Boltari, Jardiniere, Garduri, Elemente de canalizare. Producator national cu 4 fabrici in Romania.'
+// Matches index.html's static <meta name="robots"> default exactly, so
+// resetSEO() never regresses it after a page that overrides robots (e.g.
+// NotFoundPage's "noindex, follow") is left via client-side navigation.
+export const SEO_DEFAULT_ROBOTS = 'index, follow, max-image-preview:large'
 
 // Truncates to Google's practical meta-description limit (~155-160 chars)
 // at the nearest word boundary, so the SERP snippet never ends mid-word.
@@ -74,6 +78,7 @@ function clearHreflang() {
 export function resetSEO() {
   document.title = SEO_DEFAULT_TITLE
   upsertMeta('name', 'description', SEO_DEFAULT_DESCRIPTION)
+  upsertMeta('name', 'robots', SEO_DEFAULT_ROBOTS)
   upsertJsonLd('product-schema', null)
   upsertJsonLd('faq-schema', null)
   upsertJsonLd('breadcrumb-schema', null)
