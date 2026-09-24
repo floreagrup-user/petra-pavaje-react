@@ -7,6 +7,15 @@ import { isEnglishPath } from '@/lib/i18n-routes'
 const heroSlides = [
   {
     id: 1,
+    title: 'Woodstone\nLemn Pietrificat',
+    subtitle: 'Tehnologie Premium',
+    description: 'Frumusețea lemnului combinată cu durabilitatea betonului premium',
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone1-scaled.avif',
+    cta: 'Explorează Colecția',
+    ctaLink: '/woodstone-lemn-pietrificat',
+  },
+  {
+    id: 2,
     title: 'Producător Premium\nde Pavaje',
     subtitle: 'În armonie cu natura',
     description: '800+ Produse · 4 Fabrici Naționale · 24.000 mp/zi',
@@ -15,7 +24,7 @@ const heroSlides = [
     ctaLink: '/pavaje-premium',
   },
   {
-    id: 2,
+    id: 3,
     title: 'PIATRA\nPRINDE\nVIAȚĂ',
     subtitle: 'Pavaje Premium',
     description: 'Gama completă de pavaje premium pentru amenajări outdoor de excepție',
@@ -23,20 +32,20 @@ const heroSlides = [
     cta: 'Vezi Catalogul',
     ctaLink: '/catalog',
   },
-  {
-    id: 3,
-    title: 'Woodstone\nLemn Pietrificat',
-    subtitle: 'Tehnologie Premium',
-    description: 'Frumusețea lemnului combinată cu durabilitatea betonului premium',
-    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone1-scaled.avif',
-    cta: 'Explorează Colecția',
-    ctaLink: '/woodstone-lemn-pietrificat',
-  },
 ]
 
 const heroSlidesEn = [
   {
     id: 1,
+    title: 'Woodstone\nPetrified Wood',
+    subtitle: 'Premium Technology',
+    description: 'The beauty of wood combined with the durability of premium concrete',
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone1-scaled.avif',
+    cta: 'Explore the Collection (RO)',
+    ctaLink: '/woodstone-lemn-pietrificat',
+  },
+  {
+    id: 2,
     title: 'Premium Paver\nManufacturer',
     subtitle: 'In Harmony with Nature',
     description: '800+ Products · 4 National Factories · 24,000 sqm/day',
@@ -45,22 +54,13 @@ const heroSlidesEn = [
     ctaLink: '/en/pavaje-premium',
   },
   {
-    id: 2,
+    id: 3,
     title: 'STONE\nCOMES\nTO LIFE',
     subtitle: 'Premium Pavers',
     description: 'The full range of premium pavers for exceptional outdoor landscaping',
     image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/relief-homepage.avif',
     cta: 'See the Catalog (RO)',
     ctaLink: '/catalog',
-  },
-  {
-    id: 3,
-    title: 'Woodstone\nPetrified Wood',
-    subtitle: 'Premium Technology',
-    description: 'The beauty of wood combined with the durability of premium concrete',
-    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/pavaj-woodstone1-scaled.avif',
-    cta: 'Explore the Collection (RO)',
-    ctaLink: '/woodstone-lemn-pietrificat',
   },
 ]
 
