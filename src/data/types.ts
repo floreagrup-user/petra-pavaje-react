@@ -97,6 +97,9 @@ export interface Factory {
   lat: number
   lng: number
   image: string
+  googleRating?: number
+  googleReviewCount?: number
+  googleReviewUrl?: string
 }
 
 export interface Testimonial {

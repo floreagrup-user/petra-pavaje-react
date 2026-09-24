@@ -110,6 +110,9 @@ export const factories: Factory[] = [
     lat: 46.102122,
     lng: 23.616103,
     image: '/images/factories/fabrica-alba.webp',
+    googleRating: 4.4,
+    googleReviewCount: 80,
+    googleReviewUrl: 'https://share.google/fdq5rNacq5hYxmNO9',
   },
   {
     id: 'prahova',
@@ -121,6 +124,9 @@ export const factories: Factory[] = [
     lat: 44.899713,
     lng: 25.970946,
     image: '/images/factories/fabrica-prahova.webp',
+    googleRating: 3.9,
+    googleReviewCount: 49,
+    googleReviewUrl: 'https://share.google/pUebtjtEhBypUm3bk',
   },
   {
     id: 'arad',
@@ -132,6 +138,9 @@ export const factories: Factory[] = [
     lat: 46.201001,
     lng: 21.441063,
     image: '/images/factories/fabrica-arad.webp',
+    googleRating: 4.8,
+    googleReviewCount: 30,
+    googleReviewUrl: 'https://share.google/yEdmB2fOAWgZ5epJE',
   },
   {
     id: 'neamt',
@@ -143,6 +152,9 @@ export const factories: Factory[] = [
     lat: 46.980449,
     lng: 26.864776,
     image: '/images/factories/fabrica-neamt.webp',
+    googleRating: 4.2,
+    googleReviewCount: 53,
+    googleReviewUrl: 'https://share.google/oHKR3MZUuhUJCQve2',
   },
 ]
 

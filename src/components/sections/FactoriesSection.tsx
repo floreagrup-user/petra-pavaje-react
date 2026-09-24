@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useLocation } from 'react-router-dom'
-import { MapPin, Phone, Clock, Navigation } from 'lucide-react'
+import { MapPin, Phone, Clock, Navigation, Star, Quote } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { factories } from '@/data/site'
+import { FACTORY_REVIEWS } from '@/data/factory-reviews'
 import { isEnglishPath } from '@/lib/i18n-routes'
 
 const FACTORY_NAME_EN: Record<string, string> = {
@@ -94,6 +95,39 @@ export function FactoriesSection() {
                         {isEnglish ? 'Mon-Fri: 08:00-17:00' : 'L-V: 08:00-17:00'}
                       </span>
                     </div>
+                    {factory.googleRating && (
+                      <a
+                        href={factory.googleReviewUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="inline-flex items-center gap-1.5 text-sm text-charcoal-600 hover:text-brand-600 transition-colors"
+                      >
+                        <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
+                        <span className="font-semibold text-charcoal-900">{factory.googleRating.toFixed(1)}</span>
+                        <span className="text-charcoal-400">
+                          ({factory.googleReviewCount} {isEnglish ? 'Google reviews' : 'recenzii Google'})
+                        </span>
+                      </a>
+                    )}
+                    {activeFactory === index &&
+                      (() => {
+                        const review = FACTORY_REVIEWS.find((r) => r.factoryId === factory.id)
+                        if (!review) return null
+                        return (
+                          <div className="mt-2 flex gap-2 rounded-lg bg-white/70 p-3 text-sm text-charcoal-600">
+                            <Quote className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
+                            <div>
+                              <p className="italic leading-relaxed">
+                                &ldquo;{isEnglish ? review.textEn : review.textRo}&rdquo;
+                              </p>
+                              <p className="mt-1.5 text-xs font-medium text-charcoal-400">
+                                {review.author} · {isEnglish ? 'Google review' : 'recenzie Google'}
+                              </p>
+                            </div>
+                          </div>
+                        )
+                      })()}
                   </div>
               </motion.button>
             ))}
