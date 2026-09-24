@@ -23,19 +23,19 @@ const TESTIMONIAL_EN: Record<string, { quote: string; location?: string }> = {
 
 const testimonialImages: Record<string, string[]> = {
   florina: [
-    'https://petrapavaje.ro/wp-content/uploads/testimonial-Florina-Tanase-1.jpg',
-    'https://petrapavaje.ro/wp-content/uploads/testimonial-Florina-Tanase-2.jpg',
-    'https://petrapavaje.ro/wp-content/uploads/testimonial-Florina-Tanase-3.jpg',
+    'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/testimonial-Florina-Tanase-1.jpg',
+    'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/testimonial-Florina-Tanase-2.jpg',
+    'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/testimonial-Florina-Tanase-3.jpg',
   ],
   marius: [
-    'https://petrapavaje.ro/wp-content/uploads/testimonial-Marius-Simbotin-1.jpg',
-    'https://petrapavaje.ro/wp-content/uploads/testimonial-Marius-Simbotin-2.jpg',
-    'https://petrapavaje.ro/wp-content/uploads/testimonial-Marius-Simbotin-3.jpg',
+    'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/testimonial-Marius-Simbotin-1.jpg',
+    'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/testimonial-Marius-Simbotin-2.jpg',
+    'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/testimonial-Marius-Simbotin-3.jpg',
   ],
   cristian: [
-    'https://petrapavaje.ro/wp-content/uploads/testimonial-Cristian-Prack-1.jpg',
-    'https://petrapavaje.ro/wp-content/uploads/testimonial-Cristian-Prack-2.jpg',
-    'https://petrapavaje.ro/wp-content/uploads/testimonial-Cristian-Prack-3.jpg',
+    'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/testimonial-Cristian-Prack-1.jpg',
+    'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/testimonial-Cristian-Prack-2.jpg',
+    'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/testimonial-Cristian-Prack-3.jpg',
   ],
 }
 

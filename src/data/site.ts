@@ -151,21 +151,18 @@ export const testimonials: Testimonial[] = [
     id: 'florina',
     name: 'Florina Tanase',
     quote: 'La fel cum este interiorul casei, am gândit și curtea să fie caldă, primitoare în nunațe de bej, crem și maro. Am avut în minte această cromatică de bej. Pavajele arată foarte bine și au o textură plăcută la atingere.',
-    images: ['/images/testimonials/florina-1.jpg', '/images/testimonials/florina-2.jpg', '/images/testimonials/florina-3.jpg'],
     location: 'București',
   },
   {
     id: 'marius',
     name: 'Marius Simbotin',
     quote: 'Recomand cu încredere, raport calitate-preț excepțional! O firmă serioasă și atentă la cererea clientului!',
-    images: ['/images/testimonials/marius-1.jpg', '/images/testimonials/marius-2.jpg', '/images/testimonials/marius-3.jpg'],
     location: 'Cluj',
   },
   {
     id: 'cristian',
     name: 'Cristian Prack',
     quote: 'Am ales dalele Grand Urban pentru că îmbină perfect estetica cu funcționalitatea. Montajul a fost simplu, iar rezultatul final arată excelent și se încadrează perfect în conceptul curții.',
-    images: ['/images/testimonials/cristian-1.jpg', '/images/testimonials/cristian-2.jpg', '/images/testimonials/cristian-3.jpg'],
     location: 'Timiș',
   },
 ]
