@@ -24,7 +24,7 @@ function formatDate(iso: string) {
 export function BlogPage() {
   const [searchParams, setSearchParams] = useSearchParams()
   const activeCategory = (searchParams.get('category') as BlogCategory | null) || null
-  const [searchQuery, setSearchQuery] = useState('')
+  const [searchQuery, setSearchQuery] = useState(() => searchParams.get('q') || '')
   const [sortOrder, setSortOrder] = useState<'recent' | 'oldest'>('recent')
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
   const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
@@ -125,13 +125,26 @@ export function BlogPage() {
             <input
               type="text"
               value={searchQuery}
-              onChange={(e) => { setSearchQuery(e.target.value); setVisibleCount(PAGE_SIZE) }}
+              onChange={(e) => {
+                const value = e.target.value
+                setSearchQuery(value)
+                setVisibleCount(PAGE_SIZE)
+                const next = new URLSearchParams(searchParams)
+                if (value) next.set('q', value)
+                else next.delete('q')
+                setSearchParams(next, { replace: true })
+              }}
               placeholder="Caută în articole..."
               className="w-full pl-11 pr-10 py-3 rounded-xl border border-charcoal-200 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-charcoal-900"
             />
             {searchQuery && (
               <button
-                onClick={() => setSearchQuery('')}
+                onClick={() => {
+                  setSearchQuery('')
+                  const next = new URLSearchParams(searchParams)
+                  next.delete('q')
+                  setSearchParams(next, { replace: true })
+                }}
                 className="absolute right-3 top-1/2 -translate-y-1/2 text-charcoal-400 hover:text-charcoal-600"
                 aria-label="Șterge căutarea"
               >

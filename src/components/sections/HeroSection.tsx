@@ -98,6 +98,16 @@ export function HeroSection() {
 
       <div className="relative h-full flex items-center">
         <div className="container-premium w-full">
+          {/* Permanent, non-rotating brand identity line -- present in every
+              render/prerender snapshot regardless of which slide is active,
+              so search/AI crawlers always see "who we are" text (SEO/GEO
+              audit finding #6), independent of the rotating slide copy. */}
+          <p className="text-white/50 text-xs sm:text-sm font-medium mb-4 max-w-2xl">
+            {isEnglish
+              ? 'Petra Pavaje — Premium Paver Manufacturer · In Harmony with Nature · 800+ Products · 4 National Factories · 24,000 sqm/day'
+              : 'Petra Pavaje — Producător Premium de Pavaje · În armonie cu natura · 800+ Produse · 4 Fabrici Naționale · 24.000 mp/zi'}
+          </p>
+
           <motion.div
             key={slide.id}
             initial={{ opacity: 0, y: 40 }}

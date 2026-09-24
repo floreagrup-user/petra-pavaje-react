@@ -75,36 +75,165 @@
 
     <title>Petra Pavaje - Producător Premium de Pavaje</title>
 
-    <!-- Schema.org JSON-LD -->
+    <!-- Schema.org JSON-LD -- kept in sync by hand with src/data/site.ts
+         (categories + factories); this file is a static shell so it can't
+         import that data directly. Update both when either changes. -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Petra Pavaje",
-      "description": "Producator premium de pavaje, dale, borduri, boltari, garduri si elemente de canalizare din beton.",
-      "url": "https://petrapavaje.ro/",
-      "telephone": "+40 358 732 246",
-      "email": "contact@petrapavaje.ro",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Str. Pietrar Nr. 20",
-        "addressLocality": "Alba Iulia",
-        "addressRegion": "Jud. Alba",
-        "addressCountry": "RO"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 46.102122,
-        "longitude": 23.616103
-      },
-      "openingHours": "Mo-Fr 08:00-17:00",
-      "image": "https://petrapavaje.ro/wp-content/uploads/petra-pavaje-parte-a-florea-grup-1.png",
-      "sameAs": [
-        "https://www.facebook.com/PetraPavaje",
-        "https://www.instagram.com/petrapavaje/",
-        "https://www.youtube.com/@petrapavaje",
-        "https://www.linkedin.com/company/florea-grup/",
-        "https://www.pinterest.com/petrapavaje/"
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://petrapavaje.ro/#organization",
+          "name": "Petra Pavaje",
+          "alternateName": "Florea Grup",
+          "url": "https://petrapavaje.ro/",
+          "logo": "https://petrapavaje.ro/images/petra-pavaje-logo-sticky.png",
+          "description": "Producator national de pavaje decorative, dale, borduri, boltari, garduri ornamentale si elemente de canalizare din beton vibropresat, parte a Florea Grup.",
+          "foundingDate": "1996",
+          "telephone": "+40 358 732 246",
+          "email": "contact@petrapavaje.ro",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Str. Pietrar Nr. 20",
+            "addressLocality": "Alba Iulia",
+            "addressRegion": "Jud. Alba",
+            "addressCountry": "RO"
+          },
+          "sameAs": [
+            "https://www.facebook.com/PetraPavaje",
+            "https://www.instagram.com/petrapavaje/",
+            "https://www.youtube.com/@petrapavaje",
+            "https://www.linkedin.com/company/florea-grup/",
+            "https://www.pinterest.com/petrapavaje/"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Categorii de produse Petra Pavaje",
+            "itemListElement": [
+              { "@type": "OfferCatalog", "name": "Pavaje Premium", "url": "https://petrapavaje.ro/pavaje-premium" },
+              { "@type": "OfferCatalog", "name": "Pavaje Standard", "url": "https://petrapavaje.ro/pavaje-standard" },
+              { "@type": "OfferCatalog", "name": "Woodstone - Lemn Pietrificat", "url": "https://petrapavaje.ro/woodstone-lemn-pietrificat" },
+              { "@type": "OfferCatalog", "name": "Borduri", "url": "https://petrapavaje.ro/borduri" },
+              { "@type": "OfferCatalog", "name": "Bolțari", "url": "https://petrapavaje.ro/boltari" },
+              { "@type": "OfferCatalog", "name": "Garduri", "url": "https://petrapavaje.ro/garduri" },
+              { "@type": "OfferCatalog", "name": "Rigole", "url": "https://petrapavaje.ro/rigole" },
+              { "@type": "OfferCatalog", "name": "Jardiniere", "url": "https://petrapavaje.ro/jardiniere" },
+              { "@type": "OfferCatalog", "name": "Palisadă", "url": "https://petrapavaje.ro/palisada" },
+              { "@type": "OfferCatalog", "name": "Treaptă", "url": "https://petrapavaje.ro/treapta" },
+              { "@type": "OfferCatalog", "name": "Bloc de zid", "url": "https://petrapavaje.ro/bloc-de-zid" },
+              { "@type": "OfferCatalog", "name": "Elemente de canalizare", "url": "https://petrapavaje.ro/elemente-de-canalizare" }
+            ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://petrapavaje.ro/#website",
+          "url": "https://petrapavaje.ro/",
+          "name": "Petra Pavaje",
+          "publisher": { "@id": "https://petrapavaje.ro/#organization" },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://petrapavaje.ro/blog?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "HomeAndConstructionBusiness",
+          "@id": "https://petrapavaje.ro/#fabrica-alba",
+          "name": "Petra Pavaje - Fabrica Alba Iulia",
+          "parentOrganization": { "@id": "https://petrapavaje.ro/#organization" },
+          "url": "https://petrapavaje.ro/florea-grup",
+          "image": "https://petrapavaje.ro/images/factories/fabrica-alba.webp",
+          "telephone": "+40 358 732 246",
+          "email": "alba@petrapavaje.ro",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Str. Pietrar Nr. 20",
+            "addressLocality": "Alba Iulia",
+            "addressRegion": "Jud. Alba",
+            "addressCountry": "RO"
+          },
+          "geo": { "@type": "GeoCoordinates", "latitude": 46.102122, "longitude": 23.616103 },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        },
+        {
+          "@type": "HomeAndConstructionBusiness",
+          "@id": "https://petrapavaje.ro/#fabrica-prahova",
+          "name": "Petra Pavaje - Fabrica Prahova",
+          "parentOrganization": { "@id": "https://petrapavaje.ro/#organization" },
+          "url": "https://petrapavaje.ro/florea-grup",
+          "image": "https://petrapavaje.ro/images/factories/fabrica-prahova.webp",
+          "telephone": "+40 244 704 342",
+          "email": "prahova@petrapavaje.ro",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Sat. Strejnicu, Com. Tîrgșorul Vechi, DN1 A KM 62+200",
+            "addressRegion": "Jud. Prahova",
+            "addressCountry": "RO"
+          },
+          "geo": { "@type": "GeoCoordinates", "latitude": 44.899713, "longitude": 25.970946 },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        },
+        {
+          "@type": "HomeAndConstructionBusiness",
+          "@id": "https://petrapavaje.ro/#fabrica-arad",
+          "name": "Petra Pavaje - Fabrica Arad",
+          "parentOrganization": { "@id": "https://petrapavaje.ro/#organization" },
+          "url": "https://petrapavaje.ro/florea-grup",
+          "image": "https://petrapavaje.ro/images/factories/fabrica-arad.webp",
+          "telephone": "+40 731 190 939",
+          "email": "arad@petrapavaje.ro",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Sat. Horia, Str. 1 Decembrie, Nr. 28",
+            "addressRegion": "Jud. Arad",
+            "addressCountry": "RO"
+          },
+          "geo": { "@type": "GeoCoordinates", "latitude": 46.201001, "longitude": 21.441063 },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        },
+        {
+          "@type": "HomeAndConstructionBusiness",
+          "@id": "https://petrapavaje.ro/#fabrica-neamt",
+          "name": "Petra Pavaje - Fabrica Neamț",
+          "parentOrganization": { "@id": "https://petrapavaje.ro/#organization" },
+          "url": "https://petrapavaje.ro/florea-grup",
+          "image": "https://petrapavaje.ro/images/factories/fabrica-neamt.webp",
+          "telephone": "+40 785 510 445",
+          "email": "neamt@petrapavaje.ro",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Sat. Simionești, DJ207B",
+            "addressRegion": "Jud. Neamț",
+            "addressCountry": "RO"
+          },
+          "geo": { "@type": "GeoCoordinates", "latitude": 46.980449, "longitude": 26.864776 },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        }
       ]
     }
     </script>

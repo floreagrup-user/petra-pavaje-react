@@ -12,10 +12,10 @@ bănci, elemente de canalizare și accesorii de montaj/întreținere.
 
 ## Produse
 
-- [Pavaje Premium](https://petrapavaje.ro/produse/pavaje-premium): 19 modele decorative (Roca, Antic, Primo, Grand Urban, Gemina, Cubic, Mistic, Mediterana, Viena, Maya, Roman, Sahara, Alpin, Pastel, Timber, Terranova, Dacic, Relief, Urbis)
-- [Pavaje Standard](https://petrapavaje.ro/produse/pavaje-standard): Holland, Autobloc, Unda, Con, Pavaje Eco, și gama modulară Quatro
-- [Woodstone](https://petrapavaje.ro/produse/woodstone): pavaj, palisade, borduri, garduri, bănci și mese, jardiniere înălțate, scări din beton cu aspect de lemn pietrificat
-- [Borduri](https://petrapavaje.ro/produse/borduri), [Bolțari](https://petrapavaje.ro/produse/boltari), [Rigole](https://petrapavaje.ro/produse/rigole), [Garduri](https://petrapavaje.ro/produse/garduri), [Elemente de canalizare](https://petrapavaje.ro/produse/elemente-de-canalizare)
+- [Pavaje Premium](https://petrapavaje.ro/pavaje-premium): 19 modele decorative (Roca, Antic, Primo, Grand Urban, Gemina, Cubic, Mistic, Mediterana, Viena, Maya, Roman, Sahara, Alpin, Pastel, Timber, Terranova, Dacic, Relief, Urbis)
+- [Pavaje Standard](https://petrapavaje.ro/pavaje-standard): Holland, Autobloc, Unda, Con, Pavaje Eco, și gama modulară Quatro
+- [Woodstone](https://petrapavaje.ro/woodstone-lemn-pietrificat): pavaj, palisade, borduri, garduri, bănci și mese, jardiniere înălțate, scări din beton cu aspect de lemn pietrificat
+- [Borduri](https://petrapavaje.ro/borduri), [Bolțari](https://petrapavaje.ro/boltari), [Rigole](https://petrapavaje.ro/rigole), [Garduri](https://petrapavaje.ro/garduri), [Elemente de canalizare](https://petrapavaje.ro/elemente-de-canalizare)
 
 ## Resurse
 
@@ -34,3 +34,7 @@ bănci, elemente de canalizare și accesorii de montaj/întreținere.
 ## Blog
 
 - [Studii de caz, ghiduri și noutăți](https://petrapavaje.ro/blog)
+
+## Referință completă
+
+- [llms-full.txt](https://petrapavaje.ro/llms-full.txt) — specificații complete pentru toate produsele, toate întrebările frecvente cu răspuns, și profilul fiecărei fabrici

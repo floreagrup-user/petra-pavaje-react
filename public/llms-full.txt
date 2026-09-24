@@ -1,0 +1,1060 @@
+# Petra Pavaje — Referință completă de conținut (llms-full.txt)
+
+> Producător național de pavaje decorative, dale, borduri, bolțari, garduri ornamentale și elemente de canalizare din beton vibropresat, parte a Florea Grup. 4 fabrici în România, capacitate 24.000 mp/zi, peste 800 de produse în portofoliu. Înființată în 1996.
+
+Acest fișier conține conținutul integral pentru paginile esențiale: toate produsele cu specificații tehnice, toate întrebările frecvente cu răspuns complet, și profilul fiecărei fabrici. Articolele de blog apar doar ca titlu + rezumat + link (conținutul complet e la URL); varianta scurtă/index e la [llms.txt](https://petrapavaje.ro/llms.txt).
+
+---
+
+## Fabrici
+
+### Fabrica Alba
+- Adresă: Str. Pietrar Nr. 20, Alba Iulia, Jud. Alba
+- Telefon: +40 358 732 246
+- Email: alba@petrapavaje.ro
+- Program: Luni - Vineri: 08:00 - 17:00
+- Coordonate: 46.102122, 23.616103
+
+### Fabrica Prahova
+- Adresă: Sat. Strejnicu, Com. Tîrgșorul Vechi, DN1 A KM 62+200, Jud. Prahova
+- Telefon: +40 244 704 342
+- Email: prahova@petrapavaje.ro
+- Program: Luni - Vineri: 08:00 - 17:00
+- Coordonate: 44.899713, 25.970946
+
+### Fabrica Arad
+- Adresă: Sat. Horia, Str. 1 Decembrie, Nr. 28, Jud. Arad
+- Telefon: +40 731 190 939
+- Email: arad@petrapavaje.ro
+- Program: Luni - Vineri: 08:00 - 17:00
+- Coordonate: 46.201001, 21.441063
+
+### Fabrica Neamț
+- Adresă: Sat. Simionești, DJ207B, Jud. Neamț
+- Telefon: +40 785 510 445
+- Email: neamt@petrapavaje.ro
+- Program: Luni - Vineri: 08:00 - 17:00
+- Coordonate: 46.980449, 26.864776
+
+---
+
+## Produse
+
+### Pavaje Premium
+Pavaje de cea mai inalta calitate, inspirate din natura. Varietatea nuantelor si texturilor creeaza spatii outdoor de exceptie.
+URL categorie: https://petrapavaje.ro/pavaje-premium
+
+#### Roca
+- URL: https://petrapavaje.ro/pavaje-premium/roca
+- Descriere: Iz Antic, Stil Modern
+- Dimensiuni: 7 dimensiuni individuale
+- Greutate: 1.285 - 1.700 Kg/palet
+- Culori: Gri Antic
+- Utilizare: Alei, Terase, Curți, Spații comerciale
+- Specificații: Dimensiuni: 7 individuale + 9 Mix (16 formate); Culori: Gri Antic (monocolor); Grosime: 4-8 cm; Garanție: 5 ani
+- Formate disponibile: 20×10×6 cm (20×10, grosime 6 cm); 40×10×6 cm (40×10, grosime 6 cm); 20×20×6 cm (20×20, grosime 6 cm); 30×20×6 cm (30×20, grosime 6 cm); 40×40×6 cm (40×40, grosime 6 cm); 60×30×6 cm (60×30, grosime 6 cm); 50×50×8 cm (50×50, grosime 8 cm); MIX 4.30 (Mix, grosime 4 cm); MIX 5.28 (Mix, grosime 5 cm); MIX 6.14 (Mix, grosime 6 cm); MIX 6.30 (Mix, grosime 6 cm); MIX 6.30 Ondulat (Mix, grosime 6 cm); MIX 6.6 (Mix, grosime 6 cm); MIX 7.9 (Mix, grosime 7 cm); MIX 8.20 (Mix, grosime 8 cm); MIX 8.30 (Mix, grosime 8 cm)
+
+#### Antic
+- URL: https://petrapavaje.ro/pavaje-premium/antic
+- Descriere: Eleganță și Rezistență
+- Dimensiuni: 3 dimensiuni + Mix 6.72
+- Greutate: 1.263 - 1.600 Kg/palet
+- Culori: Gri Antic, Moka, Roșu Vulcanic, Negru
+- Utilizare: Alei, Terase, Parcuri, Zone Rezidențiale
+- Specificații: Dimensiuni: 3 individuale + Mix 6.72; Culori: 4 culori; Grosime: 6 cm; Garanție: 5 ani
+- Formate disponibile: 10×10×6 cm (10×10, grosime 6 cm); 20×10×6 cm (20×10, grosime 6 cm); 20×20×6 cm (20×20, grosime 6 cm); MIX 6.72 (Mix, grosime 6 cm)
+
+#### Primo
+- URL: https://petrapavaje.ro/pavaje-premium/primo
+- Descriere: Autenticitate și Rafinament
+- Dimensiuni: 2 dimensiuni
+- Greutate: 1.443 - 1.530 Kg/palet
+- Culori: Gri, Roșu, Bej, Negru
+- Utilizare: Alei, Terase, Grădini, Zone Rezidențiale
+- Specificații: Dimensiuni: 2 dimensiuni; Culori: 4 culori; Grosime: 4-6 cm; Garanție: 5 ani
+- Formate disponibile: 20×10×4 cm (20×10, grosime 4 cm); 21×14×6 cm (21×14, grosime 6 cm)
+
+#### Grand Urban
+- URL: https://petrapavaje.ro/pavaje-premium/grand-urban
+- Descriere: Plăci de Mari Dimensiuni
+- Dimensiuni: 3 formate
+- Greutate: 1.045 - 1.362 Kg/palet
+- Culori: Gri Antic, Moka, Gri Bazaltic, Gri Grafit
+- Utilizare: Piețe și Spații Publice, Parcuri, Terase Generoase, Alei Largi
+- Specificații: Dimensiuni: 2 individuale + Mix 4.4; Culori: 4 culori; Grosime: 4-8 cm; Garanție: 5 ani
+- Formate disponibile: 100×50×8 cm (100×50, grosime 8 cm); 80×40×6 cm (80×40, grosime 6 cm); MIX 4.4 (Mix, grosime 4 cm)
+
+#### Gemina
+- URL: https://petrapavaje.ro/pavaje-premium/gemina
+- Descriere: Eleganță Naturală
+- Dimensiuni: 3 dimensiuni + 1 Mix
+- Greutate: 1.215 - 1.430 Kg/palet
+- Culori: Alb, Negru, Caramel, Brun
+- Utilizare: Grădini, Parcuri, Terase, Alei și Spații Publice
+- Specificații: Dimensiuni: 3 dimensiuni + 1 Mix; Culori: 4 culori; Grosime: 6 cm; Garanție: 5 ani
+- Formate disponibile: 12×9×6 cm (12×9, grosime 6 cm); 12×12×6 cm (12×12, grosime 6 cm); 18×12×6 cm (18×12, grosime 6 cm); MIX 6.72 (Mix, grosime 6 cm)
+
+#### Cubic
+- URL: https://petrapavaje.ro/pavaje-premium/cubic
+- Descriere: Eleganță Clasică și Durabilitate
+- Dimensiuni: MIX 7.25
+- Greutate: 1.305 Kg/palet
+- Culori: Gri Antic, Gri Bazaltic, Gri Grafit
+- Utilizare: Grădini, Parcuri, Terase, Alei și Spații Publice
+- Specificații: Dimensiuni: 2 dimensiuni (doar Mix 7.25); Culori: 3 culori; Grosime: 7 cm; Garanție: 5 ani
+- Formate disponibile: MIX 7.25 (26/22×16 - 20buc, 20/16×16 - 5buc) (26/22×16, 20/16×16, grosime 7 cm)
+
+#### Mistic
+- URL: https://petrapavaje.ro/pavaje-premium/mistic
+- Descriere: Inspirat din Inima Transilvaniei
+- Dimensiuni: 4 dimensiuni individuale
+- Greutate: 1.235 - 1.700 Kg/palet
+- Culori: Gri Bazaltic, Gri Grafit, Gri Verzui, Indigo, Acvatic, Gri Gălbui
+- Utilizare: Grădini, Parcuri, Terase, Spații Publice
+- Specificații: Dimensiuni: 4 individuale + 9 Mix; Culori: 6 culori; Grosime: 4-8 cm; Garanție: 5 ani
+- Formate disponibile: 30×20×6 cm (30×20, grosime 6 cm); 40×10×6 cm (40×10, grosime 6 cm); 40×40×6 cm (40×40, grosime 6 cm); 60×30×6 cm (60×30, grosime 6 cm); MIX 4.30 (Mix, grosime 4 cm); MIX 5.28 (Mix, grosime 5 cm); MIX 6.14 (Mix, grosime 6 cm); MIX 6.30 (Mix, grosime 6 cm); MIX 6.30 Ondulat (Mix, grosime 6 cm); MIX 6.6 (Mix, grosime 6 cm); MIX 7.9 (Mix, grosime 7 cm); MIX 8.20 (Mix, grosime 8 cm); MIX 8.30 (Mix, grosime 8 cm)
+
+#### Mediterana
+- URL: https://petrapavaje.ro/pavaje-premium/mediterana
+- Descriere: Atmosferă Toscană în Grădina Ta
+- Dimensiuni: 5 dimensiuni individuale
+- Greutate: 1.235 - 1.700 Kg/palet
+- Culori: Terra, Rossa
+- Utilizare: Grădini, Parcuri, Terase, Spații Publice
+- Specificații: Dimensiuni: 5 individuale + 7 Mix; Culori: 2 culori; Grosime: 4-8 cm; Garanție: 5 ani
+- Formate disponibile: 20×10×6 cm (20×10, grosime 6 cm); 40×10×6 cm (40×10, grosime 6 cm); 20×20×6 cm (20×20, grosime 6 cm); 30×20×6 cm (30×20, grosime 6 cm); 60×30×6 cm (60×30, grosime 6 cm); MIX 4.30 (Mix, grosime 4 cm); MIX 5.28 (Mix, grosime 5 cm); MIX 6.14 (Mix, grosime 6 cm); MIX 6.30 (Mix, grosime 6 cm); MIX 7.9 (Mix, grosime 7 cm); MIX 8.20 (Mix, grosime 8 cm); MIX 8.30 (Mix, grosime 8 cm)
+
+#### Viena
+- URL: https://petrapavaje.ro/pavaje-premium/viena
+- Descriere: Eleganță Aristocratică
+- Dimensiuni: 60×30 cm + 4 Mix
+- Greutate: 1.433 - 1.700 Kg/palet
+- Culori: Negru Violet
+- Utilizare: Grădini, Parcuri, Terase, Spații Publice
+- Specificații: Dimensiuni: 1 individuală + 4 Mix; Culori: 1 culoare; Grosime: 4-8 cm; Garanție: 5 ani
+- Formate disponibile: 60×30×6 cm (60×30, grosime 6 cm); MIX 4.30 (Mix, grosime 4 cm); MIX 6.30 (Mix, grosime 6 cm); MIX 7.9 (Mix, grosime 7 cm); MIX 8.30 (Mix, grosime 8 cm)
+
+#### Maya
+- URL: https://petrapavaje.ro/pavaje-premium/maya
+- Descriere: Calitate și Versatilitate pentru Exterior
+- Dimensiuni: 60×30 cm + 4 Mix
+- Greutate: 1.443 - 1.700 Kg/palet
+- Culori: Brun Antic
+- Utilizare: Curți, Grădini, Terase, Alei
+- Specificații: Dimensiuni: 1 individuală + 4 Mix; Culori: 1 culoare; Grosime: 4-8 cm; Garanție: 5 ani
+- Formate disponibile: 60×30×6 cm (60×30, grosime 6 cm); MIX 4.30 (Mix, grosime 4 cm); MIX 6.30 (Mix, grosime 6 cm); MIX 7.9 (Mix, grosime 7 cm); MIX 8.30 (Mix, grosime 8 cm)
+
+#### Roman
+- URL: https://petrapavaje.ro/pavaje-premium/roman
+- Descriere: Inspirat din România
+- Dimensiuni: 60×30 cm + 1 Mix
+- Greutate: 1.480 - 1.610 Kg/palet
+- Culori: Galben Cărămiziu, Roșu Canion
+- Utilizare: Terase, Alei, Grădini
+- Specificații: Dimensiuni: 1 individuală + 1 Mix; Culori: 2 culori; Grosime: 6-7 cm; Garanție: 5 ani
+- Formate disponibile: 60×30×6 cm (60×30, grosime 6 cm); MIX 7.9 (Mix, grosime 7 cm)
+
+#### Sahara
+- URL: https://petrapavaje.ro/pavaje-premium/sahara
+- Descriere: Eleganță Inspirată de Dunele de Nisip
+- Dimensiuni: 2 dimensiuni + 5 Mix
+- Greutate: 1.389 - 1.700 Kg/palet
+- Culori: Travertin, Moka
+- Utilizare: Curți, Poteci, Terase, Spații Publice
+- Specificații: Dimensiuni: 2 individuale + 5 Mix; Culori: 2 culori; Grosime: 4-8 cm; Garanție: 5 ani
+- Formate disponibile: 30×20×6 cm (30×20, grosime 6 cm); 60×30×6 cm (60×30, grosime 6 cm); MIX 4.30 (Mix, grosime 4 cm); MIX 6.30 (Mix, grosime 6 cm); MIX 6.6 (Mix, grosime 6 cm); MIX 7.9 (Mix, grosime 7 cm); MIX 8.30 (Mix, grosime 8 cm)
+
+#### Alpin
+- URL: https://petrapavaje.ro/pavaje-premium/alpin
+- Descriere: Eleganță Discretă cu Efect 3D
+- Dimensiuni: 2 dimensiuni
+- Greutate: 1.480 - 1.655 Kg/palet
+- Culori: Alb, Moka
+- Utilizare: Rezidențial, Comercial, Terase, Spații Publice
+- Specificații: Dimensiuni: 2 dimensiuni; Culori: 2 culori; Grosime: 6 cm; Garanție: 5 ani
+- Formate disponibile: 30×20×6 cm (30×20, grosime 6 cm); 60×30×6 cm (60×30, grosime 6 cm)
+
+#### Pastel
+- URL: https://petrapavaje.ro/pavaje-premium/pastel
+- Descriere: Cromatică deosebită în două registre
+- Dimensiuni: Doar Mix 4.30 și Mix 6.30
+- Greutate: 1.433 - 1.519 Kg/palet
+- Culori: Autumn, Winter
+- Utilizare: Grădini, Parcuri, Terase, Alei și Spații Publice
+- Specificații: Dimensiuni: Doar Mix 4.30 și Mix 6.30; Culori: 2 culori; Grosime: 4-6 cm; Garanție: 5 ani
+- Formate disponibile: MIX 4.30 (Mix, grosime 4 cm); MIX 6.30 (Mix, grosime 6 cm)
+
+#### Timber
+- URL: https://petrapavaje.ro/pavaje-premium/timber
+- Descriere: Iluzia Lemnului, Rezistența Betonului
+- Dimensiuni: 60×30×6 cm
+- Greutate: 1.249 Kg/palet
+- Culori: Galben Savana, Brun Montan, Maro Acaju, Negru Abanos
+- Utilizare: Grădini, Parcuri, Terase, Zone Piscină
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 4 culori; Grosime: 6 cm; Garanție: 5 ani
+- Formate disponibile: 60×30×6 cm (60×30, grosime 6 cm)
+
+#### Terranova
+- URL: https://petrapavaje.ro/pavaje-premium/terranova
+- Descriere: Renașterea, Forța și Metamorfoza Naturii
+- Dimensiuni: 2 variante Mix
+- Greutate: 1.369 - 1.435 Kg/palet
+- Culori: Roșu Vulcanic, Brun Castaniu
+- Utilizare: Grădini, Alei, Terase, Parcuri
+- Specificații: Dimensiuni: 2 variante Mix; Culori: 2 culori; Grosime: 6-8 cm; Garanție: 5 ani
+- Formate disponibile: MIX 6.14 (Mix, grosime 6 cm); MIX 8.20 (Mix, grosime 8 cm)
+
+#### Dacic
+- URL: https://petrapavaje.ro/pavaje-premium/dacic
+- Descriere: Spirit Dac și Natură Vibrantă
+- Dimensiuni: 2 variante Mix
+- Greutate: 1.369 - 1.435 Kg/palet
+- Culori: Galben Verzui
+- Utilizare: Grădini, Alei, Terase, Parcuri
+- Specificații: Dimensiuni: 2 variante Mix; Culori: 1 culoare; Grosime: 6-8 cm; Garanție: 5 ani
+- Formate disponibile: MIX 6.14 (Mix, grosime 6 cm); MIX 8.20 (Mix, grosime 8 cm)
+
+#### Relief
+- URL: https://petrapavaje.ro/pavaje-premium/relief
+- Descriere: Design Spectaculos și Antiderapant
+- Dimensiuni: 5 dimensiuni + 1 Mix
+- Greutate: 1.132 - 1.675 Kg/palet
+- Culori: Marmorat, Gri Onix, Negru Onix, Gri Calcar, Bej Limonită, Rubin, Verde Smarald
+- Utilizare: Grădini, Alei, Terase, Parcuri
+- Specificații: Dimensiuni: 5 dimensiuni + 1 Mix; Culori: 7 culori; Grosime: 5-6 cm; Garanție: 5 ani
+- Formate disponibile: 20×10×6 cm (20×10, grosime 6 cm); 40×10×6 cm (40×10, grosime 6 cm); 20×20×6 cm (20×20, grosime 6 cm); 30×20×6 cm (30×20, grosime 6 cm); 40×40×5 cm (40×40, grosime 5 cm); MIX 6.30 (Mix, grosime 6 cm)
+
+#### Stretto
+- URL: https://petrapavaje.ro/pavaje-premium/stretto
+- Descriere: Estetică de Parchet pentru Amenajări Moderne
+- Dimensiuni: 24×6×7 cm
+- Greutate: 970 Kg/palet
+- Culori: Sepia, Gri Grafit, Gri Antic
+- Utilizare: Grădini, Alei, Terase, Parcuri
+- Specificații: Dimensiuni: Dimensiune unică; Culori: 3 culori; Grosime: 7 cm; Garanție: 5 ani
+- Formate disponibile: 24×6×7 cm (24×6, grosime 7 cm)
+
+### Pavaje Standard
+Solutii eficiente si durabile pentru orice proiect. Raport optim calitate-pret pentru amenajari functionale.
+URL categorie: https://petrapavaje.ro/pavaje-standard
+
+#### Holland
+- URL: https://petrapavaje.ro/pavaje-standard/holland
+- Descriere: Model clasic, diverse montări
+- Dimensiuni: 20×10×6 cm
+- Greutate: 1.205 - 1.750 Kg/palet
+- Culori: Alb, Caramel, Galben, Gri, Negru, Roșu, Maro
+- Utilizare: Alei, Acces auto, Terase, Trotuare
+- Specificații: Dimensiuni: 10 dimensiuni; Culori: 7 culori; Grosime: 4-8 cm; Garanție: 5 ani
+- Formate disponibile: 20×10×4 (20×10, grosime 4 cm); 20×10×6 (20×10, grosime 6 cm); 20×10×8 (20×10, grosime 8 cm); 25×20×5 (25×20, grosime 5 cm); 30×20×6 (30×20, grosime 6 cm); 60×30×6 (60×30, grosime 6 cm); 40×10×6 (40×10, grosime 6 cm); 21×14×6 (21×14, grosime 6 cm); 21×14×8 (21×14, grosime 8 cm); 30×20×8 SMART (30×20, grosime 8 cm)
+
+#### Autobloc
+- URL: https://petrapavaje.ro/pavaje-standard/autobloc
+- Descriere: Rezistență pentru trafic intens
+- Dimensiuni: 20×16.5×6 cm
+- Greutate: 1.263 - 1.635 Kg/palet
+- Culori: Alb, Gri, Negru, Roșu, Verde
+- Utilizare: Parcări, Drumuri de acces, Stații carburanți, Platforme industriale
+- Specificații: Dimensiuni: 7 dimensiuni; Culori: 5 culori; Grosime: 6-10 cm; Garanție: 5 ani
+- Formate disponibile: 20×16.5×6 (20×16.5, grosime 6 cm); 20×16.5×6 fără cant (20×16.5, grosime 6 cm); 20×16.5×8 (20×16.5, grosime 8 cm); 20×16.5×8 fără cant (20×16.5, grosime 8 cm); 10×16.5×8 jumătate (10×16.5, grosime 8 cm); 20×16.5×10 (20×16.5, grosime 10 cm); 20×16.5×10 fără cant (20×16.5, grosime 10 cm)
+
+#### Unda
+- URL: https://petrapavaje.ro/pavaje-standard/unda
+- Descriere: Design vălurit și montaj ușor
+- Dimensiuni: 22.5×11.2×6 cm
+- Greutate: 1.325 - 1.745 Kg/palet
+- Culori: Alb, Gri, Negru, Roșu
+- Utilizare: Alei, Terase, Curți, Parcuri
+- Specificații: Dimensiuni: 2 dimensiuni; Culori: 4 culori; Grosime: 6-8 cm; Garanție: 5 ani
+- Formate disponibile: 22.5×11.2×6 cm (22.5×11.2, grosime 6 cm); 22.5×11.2×8 cm (22.5×11.2, grosime 8 cm)
+
+#### Quatro 10×10×6
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-10x10x6
+- Descriere: Formă Pătrată, Compoziții Simetrice
+- Dimensiuni: 10×10×6 cm
+- Greutate: 1.263 Kg/palet
+- Culori: Gri, Roșu, Negru, Galben, Maro, Alb
+- Utilizare: Alei, Terase, Trotuare, Curți
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 6 culori; Grosime: 6 cm; Garanție: 5 ani
+- Formate disponibile: 10×10×6 cm (10×10, grosime 6 cm)
+
+#### Quatro 20×20×6
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-20x20x6
+- Descriere: Formatul cel mai căutat, Versatil
+- Dimensiuni: 20×20×6 cm
+- Greutate: 1.675 Kg/palet
+- Culori: Gri, Roșu, Negru, Galben, Maro, Alb
+- Utilizare: Terase, Alei, Curți, Trotuare
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 6 culori; Grosime: 6 cm; Garanție: 5 ani
+- Formate disponibile: 20×20×6 cm (20×20, grosime 6 cm)
+
+#### Quatro 20×20×8
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-20x20x8
+- Descriere: Grosime Sporită, Trafic Auto Ușor
+- Dimensiuni: 20×20×8 cm
+- Greutate: 1.753 Kg/palet
+- Culori: Gri, Roșu, Negru, Alb
+- Utilizare: Acces auto, Terase, Alei, Curți
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 4 culori; Grosime: 8 cm; Garanție: 5 ani
+- Formate disponibile: 20×20×8 cm (20×20, grosime 8 cm)
+
+#### Quatro 30×30×6
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-30x30x6
+- Descriere: Format Generos pentru Spații Largi
+- Dimensiuni: 30×30×6 cm
+- Greutate: 1.465 Kg/palet
+- Culori: Gri, Roșu, Negru, Galben, Maro, Alb
+- Utilizare: Terase, Alei, Curți, Curți interioare
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 6 culori; Grosime: 6 cm; Garanție: 5 ani
+- Formate disponibile: 30×30×6 cm (30×30, grosime 6 cm)
+
+#### Quatro 40×40×5
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-40x40x5
+- Descriere: Format Mare pentru Terase și Alei
+- Dimensiuni: 40×40×5 cm
+- Greutate: 1.132 Kg/palet
+- Culori: Gri, Roșu, Negru, Galben, Maro, Alb
+- Utilizare: Terase, Alei, Curți, Zone pietonale
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 6 culori; Grosime: 5 cm; Garanție: 5 ani
+- Formate disponibile: 40×40×5 cm (40×40, grosime 5 cm)
+
+#### Quatro 40×40×6
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-40x40x6
+- Descriere: Format Mare, Grosime 6 cm
+- Dimensiuni: 40×40×6 cm
+- Greutate: 1.321 Kg/palet
+- Culori: Gri, Roșu, Negru, Galben, Maro, Alb
+- Utilizare: Terase, Alei, Curți, Acces auto ușor
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 6 culori; Grosime: 6 cm; Garanție: 5 ani
+- Formate disponibile: 40×40×6 cm (40×40, grosime 6 cm)
+
+#### Quatro 50×50×8
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-50x50x8
+- Descriere: Format XL pentru Impact Vizual
+- Dimensiuni: 50×50×8 cm
+- Greutate: 1.511 Kg/palet
+- Culori: Gri, Negru
+- Utilizare: Terase, Parcări, Alei ample, Curți
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 2 culori; Grosime: 8 cm; Garanție: 5 ani
+- Formate disponibile: 50×50×8 cm (50×50, grosime 8 cm)
+
+#### Quatro Smart 20×20×8
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-smart-20x20x8
+- Descriere: Rezistență Sporită, Trafic Auto Intens
+- Dimensiuni: 20×20×8 cm
+- Greutate: 1.753 Kg/palet
+- Culori: Gri, Roșu, Negru, Alb
+- Utilizare: Parcări, Platforme, Rampă acces, Drumuri interioare
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 4 culori; Grosime: 8 cm; Garanție: 5 ani
+- Formate disponibile: 20×20×8 cm (20×20, grosime 8 cm)
+
+#### Quatro Smart 20×20×10
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-smart-20x20x10
+- Descriere: Cea Mai Rezistentă Variantă Quatro
+- Dimensiuni: 20×20×10 cm
+- Greutate: 1.690 Kg/palet
+- Culori: Gri, Negru
+- Utilizare: Parcări, Trafic greu, Platforme industriale, Drumuri de acces
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 2 culori; Grosime: 10 cm; Garanție: 5 ani
+- Formate disponibile: 20×20×10 cm (20×20, grosime 10 cm)
+
+#### Quatro Tactil · Puncte 20×20×6
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-tactil-puncte-20x20x6
+- Descriere: Ghidare Tactilă, Accesibilitate
+- Dimensiuni: 20×20×6 cm
+- Greutate: 1.675 Kg/palet
+- Culori: Alb
+- Utilizare: Ghidare orientare, Spații publice, Stații edilitare, Trecere de pietoni
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 1 culoare; Grosime: 6 cm; Garanție: 5 ani
+- Formate disponibile: 20×20×6 cm TACTIL (20×20, grosime 6 cm)
+
+#### Quatro Tactil · Puncte 30×30×6
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-tactil-puncte-30x30x6
+- Descriere: Ghidare Tactilă, Accesibilitate
+- Dimensiuni: 30×30×6 cm
+- Greutate: 1.465 Kg/palet
+- Culori: Alb
+- Utilizare: Ghidare orientare, Spații publice, Stații edilitare, Trecere de pietoni
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 1 culoare; Grosime: 6 cm; Garanție: 5 ani
+- Formate disponibile: 30×30×6 cm TACTIL (30×30, grosime 6 cm)
+
+#### Quatro Tactil · Linii 20×20×6
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-tactil-linii-20x20x6
+- Descriere: Ghidare Tactilă, Accesibilitate
+- Dimensiuni: 20×20×6 cm
+- Greutate: 1.675 Kg/palet
+- Culori: Alb
+- Utilizare: Ghidare orientare, Spații publice, Stații edilitare, Trecere de pietoni
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 1 culoare; Grosime: 6 cm; Garanție: 5 ani
+- Formate disponibile: 20×20×6 cm TACTIL (20×20, grosime 6 cm)
+
+#### Quatro Tactil · Linii 30×30×6
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-tactil-linii-30x30x6
+- Descriere: Ghidare Tactilă, Accesibilitate
+- Dimensiuni: 30×30×6 cm
+- Greutate: 1.465 Kg/palet
+- Culori: Alb
+- Utilizare: Ghidare orientare, Spații publice, Stații edilitare, Trecere de pietoni
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 1 culoare; Grosime: 6 cm; Garanție: 5 ani
+- Formate disponibile: 30×30×6 cm TACTIL (30×30, grosime 6 cm)
+
+#### Quatro · Parcare 20×20×6
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-parcare-20x20x6
+- Descriere: Marcaj Durabil, Aspect Curat
+- Dimensiuni: 20×20×6 cm
+- Greutate: 1.675 Kg/palet
+- Culori: Negru
+- Utilizare: Parcări, Spații publice, Zone de acces, Trecere de pietoni
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 1 culoare; Grosime: 6 cm; Garanție: 5 ani
+- Formate disponibile: 20×20×6 cm PARCARE (20×20, grosime 6 cm)
+
+#### Quatro · Parcare 20×20×8
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-parcare-20x20x8
+- Descriere: Marcaj Durabil, Aspect Curat
+- Dimensiuni: 20×20×8 cm
+- Greutate: 1.753 Kg/palet
+- Culori: Negru
+- Utilizare: Parcări, Spații publice, Zone de acces, Trecere de pietoni
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 1 culoare; Grosime: 8 cm; Garanție: 5 ani
+- Formate disponibile: 20×20×8 cm PARCARE (20×20, grosime 8 cm)
+
+#### Quatro · Parcare Dizabilități 20×20×6
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-parcare-dizabilitati-20x20x6
+- Descriere: Marcaj Durabil, Aspect Curat
+- Dimensiuni: 20×20×6 cm
+- Greutate: 1.675 Kg/palet
+- Culori: Negru
+- Utilizare: Parcări, Spații publice, Zone de acces, Trecere de pietoni
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 1 culoare; Grosime: 6 cm; Garanție: 5 ani
+- Formate disponibile: 20×20×6 cm PARCARE (20×20, grosime 6 cm)
+
+#### Quatro · Parcare Dizabilități 20×20×8
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-parcare-dizabilitati-20x20x8
+- Descriere: Marcaj Durabil, Aspect Curat
+- Dimensiuni: 20×20×8 cm
+- Greutate: 1.753 Kg/palet
+- Culori: Negru
+- Utilizare: Parcări, Spații publice, Zone de acces, Trecere de pietoni
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 1 culoare; Grosime: 8 cm; Garanție: 5 ani
+- Formate disponibile: 20×20×8 cm PARCARE (20×20, grosime 8 cm)
+
+#### Quatro · Acces Biciclete 20×20×6
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-acces-biciclete-20x20x6
+- Descriere: Marcaj Durabil, Aspect Curat
+- Dimensiuni: 20×20×6 cm
+- Greutate: 1.675 Kg/palet
+- Culori: Negru
+- Utilizare: Parcări, Spații publice, Zone de acces, Trecere de pietoni
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 1 culoare; Grosime: 6 cm; Garanție: 5 ani
+- Formate disponibile: 20×20×6 cm ACCES (20×20, grosime 6 cm)
+
+#### Quatro · Acces Biciclete 20×20×8
+- URL: https://petrapavaje.ro/pavaje-standard/quatro/quatro-acces-biciclete-20x20x8
+- Descriere: Marcaj Durabil, Aspect Curat
+- Dimensiuni: 20×20×8 cm
+- Greutate: 1.753 Kg/palet
+- Culori: Negru
+- Utilizare: Parcări, Spații publice, Zone de acces, Trecere de pietoni
+- Specificații: Dimensiuni: 1 dimensiune; Culori: 1 culoare; Grosime: 8 cm; Garanție: 5 ani
+- Formate disponibile: 20×20×8 cm ACCES (20×20, grosime 8 cm)
+
+#### Con
+- URL: https://petrapavaje.ro/pavaje-standard/con
+- Descriere: Pavaj conic pentru modele unice
+- Dimensiuni: 10/5×9.7×6 cm
+- Greutate: 538 Kg/palet
+- Culori: Alb, Gri, Negru, Roșu
+- Utilizare: Alei, Zone pietonale, Curți, Incinte clădiri
+- Specificații: Culori: 4 culori; Grosime: 6 cm; Format: Conic 10/5×9.7; Garanție: 5 ani
+- Formate disponibile: 10/5×9.7×6 cm (10/5×9.7, grosime 6 cm)
+
+#### Pavaje Eco
+- URL: https://petrapavaje.ro/pavaje-standard/pavaje-eco
+- Descriere: Soluție ecologică pentru amenajări
+- Dimensiuni: Grila 40×40×8, 60×40×10 | Quatro Eco 20×20×8
+- Greutate: 1.105 - 1.700 Kg/palet
+- Culori: Gri, Negru
+- Utilizare: Parcări înierbate, Consolidare pantă, Drumuri de acces, Zone verzi
+- Specificații: Dimensiuni: 3 variante; Culori: 2 culori; Grosime: 8-10 cm; Garanție: 5 ani
+- Formate disponibile: Grila 40×40×8 (40×40, grosime 8 cm); Grila 60×40×10 (60×40, grosime 10 cm); Quatro Eco 20×20×8 (20×20, grosime 8 cm)
+
+### Borduri
+Borduri din beton pentru delimitare si organizare spatii. Multiple dimensiuni si finisaje.
+URL categorie: https://petrapavaje.ro/borduri
+
+#### Bordură 50×5×20 dreaptă
+- URL: https://petrapavaje.ro/borduri/bordura-50x5x20-dreapta
+- Descriere: Bordura Standard, Cea Mai Bogată Paletă de Culori
+- Dimensiuni: 50×5×20 cm
+- Greutate: 1.081 Kg/palet
+- Culori: Gri, Roșu, Negru, Galben, Maro, Alb, Gri Antic, Gri Bazaltic, Terra, Rossa, Negru Violet, Moka
+- Utilizare: Alei, Trotuare, Curți, Zone verzi
+- Specificații: Dimensiuni: 50×5×20 cm; Culori: 12 culori; Garanție: 5 ani
+- Formate disponibile: 50×5×20 cm (50×5×20, grosime 5 cm)
+
+#### Bordură 100×5×20 dreaptă
+- URL: https://petrapavaje.ro/borduri/bordura-100x5x20
+- Descriere: Format Lung, Montaj Rapid
+- Dimensiuni: 100×5×20 cm
+- Greutate: 1.093 Kg/palet
+- Culori: Gri, Roșu, Negru, Galben, Maro, Alb
+- Utilizare: Alei, Trotuare, Curți
+- Specificații: Dimensiuni: 100×5×20 cm; Culori: 6 culori; Garanție: 5 ani
+- Formate disponibile: 100×5×20 cm (100×5×20, grosime 5 cm)
+
+#### Bordură 100×5×25 arcade
+- URL: https://petrapavaje.ro/borduri/bordura-100x5x25-arcade
+- Descriere: Design Elegant pentru Amenajări Urbane
+- Dimensiuni: 100×5×25 cm
+- Greutate: 1.345 Kg/palet
+- Culori: Gri, Roșu, Negru
+- Utilizare: Amenajări urbane, Spații publice, Alei
+- Specificații: Dimensiuni: 100×5×25 cm; Culori: 3 culori; Garanție: 5 ani
+- Formate disponibile: 100×5×25 cm (100×5×25, grosime 5 cm)
+
+#### Bordură 100×8×25 dreaptă
+- URL: https://petrapavaje.ro/borduri/bordura-100x8x25-dreapta
+- Descriere: Format Robust, Cea Mai Bogată Paletă de Culori
+- Dimensiuni: 100×8×25 cm
+- Greutate: 1.465 Kg/palet
+- Culori: Gri, Roșu, Negru, Galben, Maro, Alb, Gri Antic, Gri Bazaltic, Terra, Rossa, Negru Violet, Moka
+- Utilizare: Alei, Parcări, Trotuare
+- Specificații: Dimensiuni: 100×8×25 cm; Culori: 12 culori; Garanție: 5 ani
+- Formate disponibile: 100×8×25 cm (100×8×25, grosime 8 cm)
+
+#### Bordură cilindrică 106×9×25 rotunjită
+- URL: https://petrapavaje.ro/borduri/bordura-cilindrica-106x9x25-rotunjita
+- Descriere: Pentru Curbe și Amenajări Peisagistice
+- Dimensiuni: 106×9×25 cm
+- Greutate: 1.240 Kg/palet
+- Culori: Gri, Roșu, Negru, Galben, Maro, Alb
+- Utilizare: Sensuri giratorii, Amenajări peisagistice, Zone curbate
+- Specificații: Dimensiuni: 106×9×25 cm; Culori: 6 culori; Garanție: 5 ani
+- Formate disponibile: 106×9×25 cm (106×9×25, grosime 9 cm)
+
+#### Bordură 40×15×20 dreaptă
+- URL: https://petrapavaje.ro/borduri/bordura-40x15x20-dreapta
+- Descriere: Profil Lat, pentru Delimitări Solide
+- Dimensiuni: 40×15×20 cm
+- Greutate: 1.537 Kg/palet
+- Culori: Gri Antic, Gri Bazaltic, Gri
+- Utilizare: Alei, Zone verzi, Curți
+- Specificații: Dimensiuni: 40×15×20 cm; Culori: 3 culori; Garanție: 5 ani
+- Formate disponibile: 40×15×20 cm (40×15×20, grosime 15 cm)
+
+#### Bordură delimitare gazon 20×12×4
+- URL: https://petrapavaje.ro/borduri/bordura-delimitare-gazon-20x12x4
+- Descriere: Conturare Discretă pentru Spații Verzi
+- Dimensiuni: 20×12×4 cm
+- Greutate: 1.033 Kg/palet
+- Culori: Gri, Negru
+- Utilizare: Grădini, Spații verzi
+- Specificații: Dimensiuni: 20×12×4 cm; Culori: 2 culori; Garanție: 5 ani
+- Formate disponibile: 20×12×4 cm (20×12×4, grosime 4 cm)
+
+#### Bordură 50×10×15 dreaptă
+- URL: https://petrapavaje.ro/borduri/bordura-50x10x15-dreapta
+- Descriere: Profil Intermediar, Multiple Culori
+- Dimensiuni: 50×10×15 cm
+- Greutate: 1.490 Kg/palet
+- Culori: Gri, Roșu, Negru, Galben, Maro, Alb, Gri Antic, Gri Bazaltic, Terra
+- Utilizare: Alei, Curți, Amenajări exterioare
+- Specificații: Dimensiuni: 50×10×15 cm; Culori: 9 culori; Garanție: 5 ani
+- Formate disponibile: 50×10×15 cm (50×10×15, grosime 10 cm)
+
+#### Bordură 50×10×15 teșită
+- URL: https://petrapavaje.ro/borduri/bordura-50x10x15-tesita
+- Descriere: Muchie Teșită, Aspect Elegant
+- Dimensiuni: 50×10×15 cm
+- Greutate: 1.389 Kg/palet
+- Culori: Alb, Galben, Gri, Maro, Negru, Roșu
+- Utilizare: Alei, Curți, Amenajări exterioare
+- Specificații: Dimensiuni: 50×10×15 cm; Culori: 6 culori; Garanție: 5 ani
+- Formate disponibile: 50×10×15 cm (50×10×15, grosime 10 cm)
+
+#### Bordură 50×12×25 teșită
+- URL: https://petrapavaje.ro/borduri/bordura-50x12x25-tesita
+- Descriere: Format Mai Înalt, Muchie Teșită
+- Dimensiuni: 50×12×25 cm
+- Greutate: 1.309 Kg/palet
+- Culori: Gri
+- Utilizare: Alei, Amenajări exterioare
+- Specificații: Dimensiuni: 50×12×25 cm; Culori: 1 culoare; Garanție: 5 ani
+- Formate disponibile: 50×12×25 cm (50×12×25, grosime 12 cm)
+
+#### Bordură 50×15×25 teșită F10
+- URL: https://petrapavaje.ro/borduri/bordura-50x15x25-tesita-f10
+- Descriere: Finisaj F10, Profil Lat
+- Dimensiuni: 50×15×25 cm
+- Greutate: 1.440 Kg/palet
+- Culori: Gri
+- Utilizare: Alei, Amenajări exterioare
+- Specificații: Dimensiuni: 50×15×25 cm; Culori: 1 culoare; Garanție: 5 ani
+- Formate disponibile: 50×15×25 cm (50×15×25, grosime 15 cm)
+
+#### Bordură 50×15×25 teșită F15
+- URL: https://petrapavaje.ro/borduri/bordura-50x15x25-tesita-f15
+- Descriere: Finisaj F15, Profil Lat
+- Dimensiuni: 50×15×25 cm
+- Greutate: 1.436 Kg/palet
+- Culori: Gri
+- Utilizare: Alei, Amenajări exterioare
+- Specificații: Dimensiuni: 50×15×25 cm; Culori: 1 culoare; Garanție: 5 ani
+- Formate disponibile: 50×15×25 cm (50×15×25, grosime 15 cm)
+
+#### Bordură 50×20×25 rotunjită
+- URL: https://petrapavaje.ro/borduri/bordura-50x20x25-rotunjita
+- Descriere: Muchie Rotunjită, Aspect Fin
+- Dimensiuni: 50×20×25 cm
+- Greutate: 1.299 Kg/palet
+- Culori: Gri
+- Utilizare: Alei, Zone curbate, Amenajări exterioare
+- Specificații: Dimensiuni: 50×20×25 cm; Culori: 1 culoare; Garanție: 5 ani
+- Formate disponibile: 50×20×25 cm (50×20×25, grosime 20 cm)
+
+#### Bordură 50×20×25 teșită F10
+- URL: https://petrapavaje.ro/borduri/bordura-50x20x25-tesita-f10
+- Descriere: Finisaj F10, Profil Masiv
+- Dimensiuni: 50×20×25 cm
+- Greutate: 1.255 Kg/palet
+- Culori: Gri
+- Utilizare: Alei, Amenajări exterioare
+- Specificații: Dimensiuni: 50×20×25 cm; Culori: 1 culoare; Garanție: 5 ani
+- Formate disponibile: 50×20×25 cm (50×20×25, grosime 20 cm)
+
+#### Bordură 50×20×25 teșită F15
+- URL: https://petrapavaje.ro/borduri/bordura-50x20x25-tesita-f15
+- Descriere: Finisaj F15, Profil Masiv
+- Dimensiuni: 50×20×25 cm
+- Greutate: 1.297 Kg/palet
+- Culori: Gri
+- Utilizare: Alei, Amenajări exterioare
+- Specificații: Dimensiuni: 50×20×25 cm; Culori: 1 culoare; Garanție: 5 ani
+- Formate disponibile: 50×20×25 cm (50×20×25, grosime 20 cm)
+
+#### Bordură 50×20×30
+- URL: https://petrapavaje.ro/borduri/bordura-50x20x30
+- Descriere: Cel Mai Înalt Format din Gamă
+- Dimensiuni: 50×20×30 cm
+- Greutate: 1.477 Kg/palet
+- Culori: Gri, Negru, Roșu
+- Utilizare: Alei, Parcări, Amenajări exterioare
+- Specificații: Dimensiuni: 50×20×30 cm; Culori: 3 culori; Garanție: 5 ani
+- Formate disponibile: 50×20×30 cm (50×20×30, grosime 20 cm)
+
+#### Bordură rampă 50×25×25
+- URL: https://petrapavaje.ro/borduri/bordura-rampa-50x25x25
+- Descriere: Acces Auto peste Bordură
+- Dimensiuni: 50×25×25 cm
+- Greutate: 1.825 Kg/palet
+- Culori: Gri
+- Utilizare: Acces auto, Parcări, Alei
+- Specificații: Dimensiuni: 50×25×25 cm; Culori: 1 culoare; Garanție: 5 ani
+- Formate disponibile: 50×25×25 cm (50×25×25, grosime 25 cm)
+
+#### Bordură racord 50×25×25 teșită
+- URL: https://petrapavaje.ro/borduri/bordura-racord-50x25x25-tesita
+- Descriere: Element de Racordare pentru Aliniamente
+- Dimensiuni: 50×25×25 cm
+- Greutate: 1.628 Kg/palet
+- Culori: Gri
+- Utilizare: Racordare borduri, Alei, Parcări
+- Specificații: Dimensiuni: 50×25×25 cm; Culori: 1 culoare; Garanție: 5 ani
+- Formate disponibile: 50×25×25 cm (50×25×25, grosime 25 cm)
+
+#### Bordură trecere 25×25×15/12
+- URL: https://petrapavaje.ro/borduri/bordura-trecere-25x25x15-12
+- Descriere: Înălțime Variabilă pentru Treceri Pietonale
+- Dimensiuni: 25×25×15/12 cm
+- Greutate: 1.153 Kg/palet
+- Culori: Gri, Gri Antic, Gri Bazaltic
+- Utilizare: Treceri pietonale, Alei, Accesibilitate
+- Specificații: Dimensiuni: 25×25×15/12 cm; Culori: 3 culori; Garanție: 5 ani
+- Formate disponibile: 25×25×15/12 cm (25×25×15/12, grosime 15 cm)
+
+---
+
+## Woodstone — Lemn Pietrificat
+URL: https://petrapavaje.ro/woodstone-lemn-pietrificat
+
+### Pavaj
+URL: https://petrapavaje.ro/woodstone-lemn-pietrificat/pavaj
+Sistemul de pavaje din portofoliul Lemn Pietrificat include o gamă variată de elemente care reproduc aspectul natural al lemnului. Formele și dimensiunile plăcilor și pavajelor permit numeroase combinații, fiind potrivite pentru amenajarea aleilor, trotuarelor, zonelor de relaxare din jurul caselor și grădinilor, precum și a spațiilor publice. Designul deosebit completează armonios naturalețea spațiului exterior amenajat.
+- Caracteristici: 17 variante (plăci, butuci, scânduri, scândură maxi), Multiple culori și finisaje, Rezistent la îngheț și intemperii
+
+### Palisade și Borduri
+URL: https://petrapavaje.ro/woodstone-lemn-pietrificat/palisade-si-borduri
+Gama de palisade și borduri Woodstone oferă soluții complete pentru delimitarea aleilor, gazonului și zonelor plantate. Palisadele grindă și placă se montează vertical, în diverse înălțimi, pentru garduri joase și ziduri de sprijin decorative, în timp ce bordurile și elementele de delimitare gazon marchează clar limitele aleilor și ale peluzelor. Toate piesele păstrează aspectul autentic al lemnului pietrificat.
+- Caracteristici: 21 variante (18 palisade + delimitare gazon + 2 borduri), Lemn pietrificat masiv, Rezistent la îngheț și intemperii
+
+### Scări
+URL: https://petrapavaje.ro/woodstone-lemn-pietrificat/scari
+Scările din gama Woodstone reprezintă soluția perfectă pentru amenajarea intrărilor, teraselor și grădinilor cu diferențe de nivel. Trepte și plăci-treaptă cu aspect de lemn pietrificat, disponibile în mai multe lungimi și grosimi, oferă o tranziție elegantă și sigură între diferite niveluri ale curții, păstrând aspectul natural al lemnului și rezistența betonului.
+- Caracteristici: 12 variante (6 trepte + 6 plăci-treaptă), Lemn pietrificat masiv, Suprafață antiderapantă
+
+### Garduri
+URL: https://petrapavaje.ro/woodstone-lemn-pietrificat/garduri
+Sistemul de garduri cu design Lemn Pietrificat permite construirea de garduri de diferite înălțimi, cu un aspect natural deosebit de frumos. Plăcile de gard sunt disponibile în zece modele diferite, fiecare cu o combinație originală de nuanțe și accente negre distincte, ceea ce face fiecare gard inconfundabil și extrem de durabil. Întregul sistem este completat și închis cu capace de gard. Fiecare stâlp are, pe lângă înălțimea vizibilă (1,6 / 2 / 2,4 m), o porțiune suplimentară de 78 cm destinată îngropării în fundație, pentru stabilitate — de exemplu stâlpul de „2,4 m" are 318 cm lungime fizică totală.
+- Caracteristici: 13 variante (1 placă + 9 stâlpi + 3 accesorii), 10 modele de placă, nuanțe cu accente negre, Rezistent la îngheț și intemperii
+
+### Bănci și Mese
+URL: https://petrapavaje.ro/woodstone-lemn-pietrificat/banci-si-mese
+Gama de bănci și mese Woodstone este realizată din lemn pietrificat masiv, în două variante constructive: bănci scândură, cu blat așezat pe picioare masive, și bănci grindă, dintr-o singură piesă compactă. Mesele asortate completează amenajarea, păstrând aceeași textură naturală, plină de fibră și noduri, specifică lemnului pietrificat.
+- Caracteristici: 10 variante (3 bănci scândură + 4 bănci grindă + 3 mese), Lemn pietrificat masiv, Rezistent la îngheț și intemperii
+
+### Jardiniere Înălțate
+URL: https://petrapavaje.ro/woodstone-lemn-pietrificat/jardiniere-inaltate
+Jardinierele înălțate din gama Woodstone sunt soluția perfectă pentru amenajarea grădinilor, teraselor și balcoanelor. Cu aspectul natural al lemnului pietrificat și rezistența betonului, aceste jardiniere oferă un spațiu ideal pentru cultivarea florilor, plantelor aromatice și legumelor, aducând un plus de verdeață oricărui spațiu exterior. Seturile de prelungire permit extinderea jardinierelor existente, iar gama Kompakt, nouă în 2026, oferă un format mai compact.
+- Caracteristici: 10 variante (4 jardiniere + 2 seturi prelungire + 4 Kompakt), Lemn pietrificat masiv, Rezistent la îngheț și intemperii
+
+### Alte Elemente
+URL: https://petrapavaje.ro/woodstone-lemn-pietrificat/elemente-lemn-pietrificat
+Gama Alte Elemente Woodstone completează amenajările exterioare cu piese practice și decorative din lemn pietrificat: ghivece robuste pentru plantare, margini de piscină pentru delimitarea elegantă a bazinelor, plăci și rigole pentru scurgerea apei, precum și coșuri de gunoi rezistente la intemperii. Toate păstrează aspectul autentic al lemnului cu durabilitatea betonului.
+- Caracteristici: 9 variante (3 ghivece + 3 margini piscină + 3 diverse), Lemn pietrificat masiv, Rezistent la îngheț și intemperii
+
+---
+
+## Elemente de amenajare
+
+### Rigole
+URL: https://petrapavaje.ro/rigole
+Rigola reprezintă o amenajare specială făcută de-a lungul străzilor, între marginea părții carosabile și bordura trotuarelor, având un rol esențial în gestionarea eficientă a apelor pluviale. Formele și dimensiunile variate le fac ușor adaptabile oricărui tip de pavaj sau suprafață — de la alei pietonale la parcări și zone cu trafic auto greu.
+- Caracteristici: 11 formate, 3 culori, Garanție 5 ani
+- Culori: Gri, Roșu, Negru
+
+### Bolțari
+URL: https://petrapavaje.ro/boltari
+Bolțarii din beton sunt soluția sigură, rapidă și economică de realizare a unei lucrări de zidărie sau fundație, indiferent că este vorba de casă, anexele acesteia sau clădiri industriale. Rezistența deosebită, chiar și în medii umede, îi recomandă inclusiv pentru construcția pivnițelor și a cramelor.
+- Caracteristici: 13 formate, Culoare Gri, Garanție 5 ani
+- Culori: Gri
+
+### Jardiniere
+URL: https://petrapavaje.ro/jardiniere
+Jardinierele sunt o soluție rapidă și elegantă pentru amenajarea spațiilor verzi, ușor de asortat cu pavajele Petra Pavaje. Dimensiunile variate permit crearea unor compoziții unice pentru terase, grădini și spații de agrement.
+- Caracteristici: 2 dimensiuni, 5 culori, Garanție 5 ani
+- Culori: Gri, Roșu, Maro, Maro Deschis, Negru
+
+### Palisadă
+URL: https://petrapavaje.ro/palisada
+Palisadele reprezintă o soluție elegantă și practică în arta amenajărilor peisagistice, esențiale pentru a conferi structură și un contur bine definit spațiilor verzi. Sunt proiectate să reziste condițiilor meteo diverse, incluzând rezistența la îngheț, umiditate și raze UV.
+- Caracteristici: 47×12,5×15 cm, 4 culori, Garanție 5 ani
+- Culori: Alb, Negru, Gri Antic, Gri Bazaltic
+
+### Treaptă
+URL: https://petrapavaje.ro/treapta
+Transformă diferențele de nivel din grădină, terasă sau intrarea casei cu treptele din beton — soluția ideală ce combină estetica cu funcționalitatea. Fabricate pentru a rezista intemperiilor, ciclurilor de îngheț-dezgheț și traficului pietonal, treptele din beton oferă o suprafață stabilă și sigură.
+- Caracteristici: 2 dimensiuni, 5 culori, Garanție 5 ani
+- Culori: Alb, Negru, Gri Antic, Gri Bazaltic, Gri
+
+### Bloc de zid
+URL: https://petrapavaje.ro/bloc-de-zid
+Construiește structuri durabile și bine definite cu blocurile de zid — soluția robustă și versatilă pentru o varietate de proiecte de amenajare. Cu un aspect curat și posibilități multiple de configurare, permit delimitarea, structurarea și personalizarea eficientă a grădinii sau curții.
+- Caracteristici: 50×25×15 cm, 4 culori, Garanție 5 ani
+- Culori: Alb, Negru, Gri Antic, Gri Bazaltic
+
+### Robusto
+URL: https://petrapavaje.ro/garduri/robusto
+Elementele de gard Robusto sunt soluția ideală pentru cei care doresc un gard masiv, cu aspect robust și durabil în timp. Disponibile cu elemente pline, jumătăți și capace de stâlp, gama variată de culori permite adaptarea la orice stil arhitectural. Grosimea de 16 cm asigură o rezistență deosebită la condițiile meteo nefavorabile.
+- Caracteristici: 4 variante, 5 culori, Garanție 5 ani
+- Culori: Maro Deschis, Roșu, Negru, Gri, Gri Antic
+
+### Modern
+URL: https://petrapavaje.ro/garduri/modern
+Elementele de gard Modern sunt produse de tip 3D, modulare, cu toate părțile finisate, care se autoaliniază și se autoblochează datorită îmbinării de tip Nut-Feder. Sistemul inovator de asamblare face montarea rapidă și eficientă, iar designul minimalist se potrivește cu majoritatea stilurilor arhitecturale.
+- Caracteristici: 2 dimensiuni, 3 culori, Sistem Nut-Feder
+- Culori: Negru, Alb, Maro Deschis
+
+### Baroc
+URL: https://petrapavaje.ro/garduri/baroc
+Elementele de gard Baroc îmbină eleganța clasică cu robustețea betonului. Disponibile în variante element, jumătate, stâlp și stâlp dublu — inclusiv formatele extinse "Vintage" — oferă flexibilitate maximă în proiectarea gardului potrivit pentru orice proprietate.
+- Caracteristici: 6 variante, 5 culori, Garanție 5 ani
+- Culori: Negru, Alb, Maro Deschis, Gri Antic, Gri Bazaltic
+
+### Bloc de beton
+URL: https://petrapavaje.ro/elemente-de-canalizare/bloc-de-beton
+Blocurile de beton reprezintă elemente de zidărie esențiale în construcții, fabricate dintr-un amestec de ciment, apă, nisip și pietriș. Disponibile în două dimensiuni mari, sunt ideale pentru construcția pereților, gardurilor, fundațiilor și a altor structuri, inclusiv a căminelor și structurilor de canalizare.
+- Caracteristici: 2 dimensiuni, Culoare Gri, Garanție 5 ani
+- Culori: Gri
+
+### Elemente pentru cămine 1000 mm
+URL: https://petrapavaje.ro/elemente-de-canalizare/elemente-pentru-camine-1000-mm
+Realizate din beton puternic și dens, elementele pentru cămine cu diametrul 1000 mm sunt capabile să reziste la infiltrații și la atacuri din medii corozive. Elementele de bază integrează o fundație și asigură un racord etanș la rețelele de canalizare, fiind disponibile într-o gamă de adâncimi standard.
+- Caracteristici: Ø 1000 mm, Rezistență la coroziune, Garanție 2 ani
+
+### Elemente pentru cămine 800 mm
+URL: https://petrapavaje.ro/elemente-de-canalizare/elemente-pentru-camine-800-mm
+Căminele de vizitare, de racord sau de inspecție sunt proiectate pentru a facilita accesul la rețelele de canalizare prin care sunt transportate apele uzate, meteorice și cele de șiroire, prin curgere la nivel sau sub presiune scăzută. Elementele de bază cu jgheab ajută la direcționarea apelor pluviale spre ieșirea din cămin.
+- Caracteristici: Ø 800 mm, Cu sau fără jgheab, Garanție 2 ani
+
+### Tub fântână
+URL: https://petrapavaje.ro/elemente-de-canalizare/tub-fantana
+Rezervoarele de apă din beton pot fi folosite și ca tuburi pentru fântână, fiind alegerea potrivită pentru lucrări de infrastructură care necesită un rezervor durabil, rezistent la presiunea solului și la infiltrații.
+- Caracteristici: Ø 1000 mm, Beton dens, Garanție 2 ani
+
+### Tuburi și timpane
+URL: https://petrapavaje.ro/elemente-de-canalizare/tuburi-si-timpane
+Tuburile din beton sunt mult mai rezistente decât orice alt tip de conducte — nu pot fi slăbite de căldură, umiditate, mucegai sau dăunători și nici nu vor rugini. Tuburile cu talpă, cep și buză sunt folosite pentru realizarea rețelelor de canalizare care preiau apele uzate, sub presiune redusă sau prin curgere liberă.
+- Caracteristici: 4 diametre, Beton simplu, Garanție 2 ani
+
+### Infrastructură rutieră
+URL: https://petrapavaje.ro/elemente-de-canalizare/infrastructura-rutiera
+Petra Pavaje oferă o gamă complexă de elemente prefabricate din beton pentru infrastructură rutieră: de la rigole carosabile și rigole de acostament, la capace carosabile și necarosabile, proiectate și testate pentru a face față rigorilor traficului auto.
+- Caracteristici: Capace carosabile și necarosabile, Beton armat, Garanție 2 ani
+
+---
+
+## Întrebări frecvente
+URL: https://petrapavaje.ro/faq
+
+### Despre Petra Pavaje
+**Cine este Petra Pavaje și ce oferă?**
+Petra Pavaje este unul dintre cei mai mari producători de pavaje din România, cu peste 20 de ani de experiență în industrie. Oferim o gamă completă de produse pentru amenajări exterioare:
+• Pavaje Premium și Standard pentru alei, curți și terase
+• WoodStone - pavaje cu aspect de lemn pietrificat
+• Borduri și rigole pentru delimitări
+• Bolțari și garduri decorative
+• Jardiniere și bănci pentru grădini
+• Elemente de canalizare
+
+**De ce să aleg produsele Petra Pavaje? Care sunt avantajele?**
+Alegând Petra Pavaje, beneficiezi de:
+• Calitate superioară - produse certificate CE, testate pentru rezistență și durabilitate
+• Producție locală - 4 fabrici în România pentru timpi scurți de livrare
+• Varietate - peste 100 de modele, culori și dimensiuni
+• Garanție - 5 ani pentru toate produsele
+• Consultanță gratuită - echipă de specialiști pentru proiectul tău
+• Raport calitate-preț excelent
+
+**Unde sunt fabricate produsele Petra Pavaje?**
+Toate produsele Petra Pavaje sunt fabricate în România, în cele 4 fabrici proprii:
+• Fabrica Alba - Alba Iulia (Tel: +40 358 732 246)
+• Fabrica Prahova - Strejnicu (Tel: +40 244 704 342)
+• Fabrica Arad - Sat Horia (Tel: +40 731 190 939)
+• Fabrica Neamț - Simionești (Tel: +40 785 510 445)
+Această distribuție ne permite să acoperim eficient întreaga țară cu livrări rapide.
+
+**Petra Pavaje are acoperire națională? În ce județe activați?**
+Da, Petra Pavaje are acoperire națională completă. Livrăm produse în toate cele 41 de județe ale României și în București. Prin rețeaua noastră de 4 fabrici și parteneri logistici, asigurăm livrări rapide în orice zonă a țării.
+
+### Produse
+**Ce tipuri de pavaje oferim și care sunt diferențele principale între ele?**
+Oferim trei game principale de pavaje:
+• Premium - grosime 6-8 cm, finisaj superior, rezistență maximă, garanție 5 ani. Ideal pentru curți, terase, alei auto.
+• Standard - grosime 4-6 cm, raport calitate-preț excelent, garanție 5 ani. Perfect pentru alei pietonale și zone cu trafic redus.
+• WoodStone - aspect natural de lemn pietrificat, rezistență la intemperii, garanție 5 ani. Unic pe piață, combină estetica lemnului cu durabilitatea pietrei.
+
+**Din ce materiale sunt fabricate pavajele și cât de durabile sunt?**
+Pavajele Petra Pavaje sunt fabricate din beton vibropresant de înaltă calitate, compus din:
+• Ciment de înaltă rezistență
+• Agregate naturale selecționate (nisip, pietriș)
+• Pigmenți minerali pentru culori durabile
+• Aditivi pentru impermeabilizare și rezistență la îngheț
+Durabilitatea: produsele noastre rezistă la peste 200 de cicluri îngheț-dezgheț, au rezistență la abraziune clasa 4 și pot suporta sarcini de până la 80 tone/mp (gama Premium).
+
+**Ce dimensiuni și culori sunt disponibile pentru produse?**
+Oferim o gamă variată de dimensiuni și culori pentru toate categoriile de produse. Consultă catalogul nostru complet sau contactează un reprezentant pentru detalii specifice. Culorile principale includ: gri, antracit, roșu, galben, maro, negru, alb și diverse nuanțe mixate.
+
+**Produsele WoodStone sunt din lemn natural sau imită lemnul?**
+WoodStone este fabricat din beton special care imită perfect aspectul lemnului pietrificat. Avantajele față de lemnul natural:
+• Nu putrezește și nu necesită tratamente anuale
+• Rezistent la umiditate, îngheț și UV
+• Nu este atacat de insecte sau ciuperci
+• Durabilitate de peste 20 de ani
+• Mentenanță minimă
+• Aspect natural autentic cu textură și nuanțe realiste
+
+**Oferiți și alte produse în afară de pavaje?**
+Da, Petra Pavaje oferă o gamă completă de produse pentru amenajări exterioare:
+• Borduri și rigole - pentru delimitarea zonelor și scurgerea apelor
+• Bolțari și garduri - pentru împrejmuiri și ziduri decorative
+• Jardiniere și bănci - elemente decorative pentru grădini
+• Elemente de canalizare - capace, tuburi și cămine
+• Trepte și dale - pentru scări exterioare
+
+### Comandă și Livrare
+**Cum pot comanda produse Petra Pavaje?**
+Poți comanda produse Petra Pavaje prin mai multe modalități:
+• Online - completează formularul de pe site pentru o ofertă personalizată
+• Telefonic - contactează fabrica din zona ta
+• La sediu - vizitează unul dintre showroom-urile noastre
+• Prin distribuitori - rețeaua noastră de parteneri autorizați
+Pentru comenzi mari sau proiecte speciale, recomandăm să soliciți o ofertă personalizată.
+
+**Ce metode de plată acceptați?**
+Acceptăm diverse metode de plată pentru flexibilitate maximă:
+• Transfer bancar
+• Plata în numerar la livrare (pentru comenzi sub o anumită valoare)
+• Card bancar
+• Plata în rate (pentru anumite comenzi, prin parteneri financiari)
+Pentru detalii despre termenii de plată și eventuale facilități, contactează reprezentantul din zona ta.
+
+**Livrați produse în toată țara? Care sunt costurile și termenele?**
+Da, livrăm în toată România. Detalii importante:
+• Termene: 3-7 zile lucrătoare în funcție de stoc și locație
+• Costuri: variază în funcție de cantitate, distanță și accesibilitate
+• Transport gratuit: pentru comenzi peste o anumită valoare (solicită detalii)
+• Descărcare: cu macara sau manual, în funcție de locație
+Costul exact al livrării va fi calculat la momentul ofertei, ținând cont de specificul comenzii tale.
+
+**Pot returna paleții cu produse neutilizate?**
+Da. Paleții achiziționați împreună cu produsele și care au rămas complet neutilizați pot fi returnați. Politica se aplică exclusiv paleților originali, cu produsele pe ei, nu paleților goi.
+Atenție: Returul unui palet cu produse neutilizate presupune un cost de retur de 75 lei/palet.
+
+**Pot solicita o ofertă de preț personalizată?**
+Absolut! Oferim consultanță gratuită și oferte personalizate pentru orice proiect. Pentru a primi o ofertă, poți:
+• Completa formularul de contact de pe site
+• Trimite un email cu detaliile proiectului
+• Suna la fabrica din zona ta
+Pentru o ofertă cât mai precisă, pregătește: suprafața de pavat (mp), tipul de produs dorit, adresa de livrare și eventuale cerințe speciale.
+
+### Montaj și Întreținere
+**Petra Pavaje oferă servicii de montaj pentru produsele achiziționate?**
+Petra Pavaje colaborează cu o rețea de montatori profesioniști autorizați în toată țara. La cerere, putem recomanda echipe de montaj verificate și cu experiență în produsele noastre. De asemenea, oferim:
+• Ghiduri detaliate de montaj disponibile pe site
+• Consultanță tehnică gratuită
+• Modele de montaj și inspirație
+• Suport în calculul necesarului de materiale
+
+**Ce unelte sunt necesare pentru montajul pavajelor?**
+Pentru un montaj corect ai nevoie de: roabă, lopeți, târnăcop și greblă pentru pregătirea solului, placă vibrantă (cu piesă de prelungire din cauciuc), țevi profilate și dreptar din aluminiu pentru nivelarea nisipului, ciocan de cauciuc pentru fixarea pavajelor, polizor sau ghilotină pentru tăierea marginilor și bordurilor, mătură pentru umplerea rosturilor, plus nivelă și teodolit pentru cote și aliniamente. Ghidul complet, pas cu pas, este disponibil pe pagina Montaj.
+
+**Ce grosime trebuie să aibă stratul suport sub pavaj?**
+Grosimea stratului de balast sau piatră concasată depinde de tipul de trafic: minim 15 cm pentru căi de acces pietonal, minim 20 cm pentru traficul de autoturisme și minim 30 cm în cazul traficului intens și greu (camioane). Suprafața finală trebuie să aibă o înclinație de minim 2-2,5% pentru evacuarea corectă a apei.
+
+**Există modele vizuale de montaj pentru inspirație?**
+Da, pe pagina Modele de Montaj găsești o galerie cu peste 15 modele de așezare a pavelelor, pentru dimensiuni variate (10x10, 20x10, 20x20, 30x20, 30x30, 40x40, 60x30) și combinații Mix, fiecare cu schema detaliată de montaj și zona repetabilă evidențiată.
+
+**Cum se întrețin corect pavajele pentru a le menține aspectul?**
+Întreținerea corectă asigură durabilitatea și aspectul estetic al pavajelor:
+• Curățare regulată - măturare și spălare cu apă
+• Îndepărtarea petelor - cu detergent neutru, fără acizi
+• Combaterea mușchiului - produse speciale anti-mușchi
+• Refacerea rosturilor - completare cu nisip după necesitate
+• Sigilare opțională - pentru protecție suplimentară
+Consultă Ghidul de Întreținere pentru instrucțiuni detaliate.
+
+**Ce produse recomandați pentru curățarea și protecția pavajului?**
+În pagina Ghid Întreținere recomandăm 6 produse profesionale: Anti-Mucegai (elimină mucegai, igrasie, alge, mușchi), Detergent Alcalin Profesional (pete de ulei, smog, cauciuc), Impregnant cu Efect Umed și Impregnant cu Efect Natural (protecție și impermeabilizare), Anti-Eflorescență (pete albe de ciment) și Anti-Rugină (pete de rugină). Fiecare produs are mod de aplicare și acoperire proprii, detaliate pe pagină.
+
+**Cum se realizează degivrarea pavajelor iarna?**
+Pentru degivrare sigură și eficientă a pavajelor:
+• Recomandăm: nisip, pietriș fin, clorură de calciu în cantități moderate
+• Evitați: sare în cantități mari, care poate deteriora suprafața în timp
+• Îndepărtare zăpadă: lopată de plastic, nu metalică
+• Preventiv: aplicarea de soluții anti-îngheț înainte de ninsoare
+Produsele Petra Pavaje sunt testate pentru rezistență la îngheț-dezgheț, dar întreținerea corectă prelungește durata de viață.
+
+**Ce este un sistem de degivrare automat și cum funcționează?**
+Un sistem automat de degivrare folosește un termostat inteligent care, prin senzori exteriori de temperatură și umiditate, detectează când suprafața riscă să înghețe sau când se depune zăpadă, și comandă automat încălzirea cablului montat sub pavaj. Este folosit frecvent la rampe de acces auto, platforme de încărcare, trotuare și alte căi de acces, pentru a preveni derapajul și accidentele provocate de polei. Detalii pe pagina Degivrare.
+
+### Garanție și Suport
+**Ce fel de garanție oferiți pentru produsele Petra Pavaje?**
+Oferim garanție 5 ani pentru toate produsele noastre:
+• Pavaje Premium - garanție 5 ani
+• WoodStone - garanție 5 ani
+• Pavaje Standard - garanție 5 ani
+• Borduri și rigole - garanție 5 ani
+• Alte produse - garanție 5 ani
+Garanția acoperă defecte de fabricație și include înlocuirea gratuită a produselor defecte, conform condițiilor din certificatul de garanție.
+
+**Cum procedez dacă am o problemă cu un produs achiziționat?**
+În cazul unei probleme cu produsele achiziționate:
+• Pasul 1: Contactează fabrica de unde ai achiziționat produsele
+• Pasul 2: Descrie problema și trimite fotografii relevante
+• Pasul 3: Echipa noastră va analiza situația și va propune o soluție
+• Pasul 4: Implementarea soluției (înlocuire, remediere, compensare)
+Ne angajăm să răspundem în maximum 48 de ore lucrătoare și să găsim cea mai bună soluție pentru tine.
+
+### Contact
+**Cum pot contacta Petra Pavaje pentru întrebări sau consultanță?**
+Ne poți contacta prin multiple canale:
+• Fabrica Alba: +40 358 732 246
+• Fabrica Prahova: +40 244 704 342
+• Fabrica Arad: +40 731 190 939
+• Fabrica Neamț: +40 785 510 445
+Sau completează formularul de contact de pe pagina de Contact. Program: Luni-Vineri 08:00-17:00.
+
+**Aveți showroom-uri unde pot vedea produsele fizic?**
+Da, la fiecare dintre cele 4 fabrici avem showroom-uri unde poți vedea și atinge produsele noastre. Vizitele sunt binevenite în programul de lucru (Luni-Vineri 08:00-17:00). De asemenea, poți face un tur virtual al fabricilor noastre direct de pe site.
+
+**Există un catalog de produse pe care îl pot descărca sau consulta?**
+Desigur! Catalogul complet Petra Pavaje este disponibil în format digital pe site-ul nostru. Poți:
+• Vizualiza online - catalog interactiv cu zoom și navigare facilă
+• Descărca PDF - pentru consultare offline
+• Solicita catalog tipărit - prin completarea unui formular
+Accesează pagina Catalog pentru toate opțiunile disponibile.
+
+---
+
+## Blog (rezumate)
+URL secțiune: https://petrapavaje.ro/blog
+
+- [Amenajarea spațiului exterior cu pavaje la Liceul Teologic Baptist „Alexa Popovici” din Arad](https://petrapavaje.ro/blog/amenajarea-spatiului-exterior-cu-pavaje-la-liceul-teologic-baptist-din-arad) — 2026-08-04, Mihaela Petruța. Află cum s-a realizat amenajarea spațiului exterior cu pavaje la Liceul Teologic Baptist „Alexa Popovici” din Arad.
+- [Amenajări exterioare care transformă o pensiune într-o destinație memorabilă](https://petrapavaje.ro/blog/amenajari-exterioare-care-transforma-o-pensiune-intr-o-destinatie-memorabila) — 2026-08-03, Iulia Hladiuc. Descoperiți cele mai bune idei de amenajări exterioare pentru a transforma spațiul din jurul casei dumneavoastră.
+- [Petra – piatra care prinde viață](https://petrapavaje.ro/blog/petra-piatra-care-prinde-viata) — 2026-07-23, Iulia Hladiuc. Descoperă Petra – piatra care prinde viață și povestea sa fascinantă într-un cadru natural impresionant.
+- [Soluții creative pentru un parcul de distracții Magic Parc din Râșnov](https://petrapavaje.ro/blog/solutii-creative-pentru-un-parcul-de-distractii-magic-parc-din-rasnov) — 2026-06-23, Mihaela Petruța. Descoperă soluții creative pentru un parcul de distracții Magic Parc din Râșnov și transformă-l într-o destinație magică.
+- [I Giardini di Zoe – pașii a zeci de mii de oameni pe cărări de poveste](https://petrapavaje.ro/blog/i-giardini-di-zoe-pasii-a-zeci-de-mii-de-oameni-pe-carari-de-poveste) — 2026-05-26, Mihaela Petruța. Explorați I Giardini di Zoe, un loc ideal pentru relaxare și reconectare cu natura. O experiență de neuitat vă așteaptă.
+- [REGULAMENTUL OFICIAL AL CAMPANIEI „MAREA PASIUNE A MICILOR CONSTRUCTORI”](https://petrapavaje.ro/blog/regulamentul-campaniei-marea-pasiune-a-micilor-constructori) — 2026-05-26, Mihaela Petruța. Descoperă REGULAMENTUL CAMPANIEI „MAREA PASIUNE A MICILOR CONSTRUCTORI” și cum să te implici în această inițiativă.
+- [Soluții delimitare cu pavaj: Cum alegi soluția perfectă pentru o grădină cu design impecabil](https://petrapavaje.ro/blog/solutii-delimitare-pavaj-gradina-design-impecabil) — 2026-05-07, Mihaela Petruța. Descoperiți soluții delimitare cu pavaj pentru a îmbunătăți designul exterior al casei dumneavoastră.
+- [Petra Pavaje  lansează Evo Green](https://petrapavaje.ro/blog/petra-pavaje-lanseaza-evo-green) — 2026-04-22, Iulia Hladiuc. Petra Pavaje lansează Evo Green, prima gamă de pavaje cu emisii aproape zero din România, pentru construcții sustenabile.
+- [Pavaje premium si starea de bine](https://petrapavaje.ro/blog/pavaje-premium-si-starea-de-bine) — 2026-03-24, Iulia Hladiuc. Pavaje premium si starea de bine
+- [Casa 154 – pavajul Grand Urban, punte între tradiție și modernitate](https://petrapavaje.ro/blog/casa-154-grand-urban-traditie-modernitate) — 2026-03-05, Mihaela Petruța. Vrei o amenajare exterioară în armonie cu natura? Vezi cum proiectul Casa 154 folosește pavajul Grand Urban pentru a crea pași înierbați cu un design modern.
+- [Amenajează-ți curtea în culoare anului 2026 cu Petra Pavaje](https://petrapavaje.ro/blog/amenajeaza-curtea-culoarea-anului-2026) — 2026-01-22, Mihaela Petruța. Amenajează-ți curtea în culoare anului 2026 cu Petra Pavaje Amenajarea completă cu produsele Petra Pavaje în culoarea anului 2026
+- [3 idei creative pentru utilizarea pavajului ca decor de sărbători](https://petrapavaje.ro/blog/3-idei-creative-pavaj-decor-sarbatori) — 2025-12-15, Mihaela Petruța. 3 idei creative pentru utilizarea pavajului ca decor de sărbători Amenajarea creativă cu produsele Petra Pavaje
+- [La mulți ani, România! La mulți ani tuturor românilor!](https://petrapavaje.ro/blog/la-multi-ani-romania) — 2025-11-27, Mihaela Petruța. La mulți ani, România! La mulți ani tuturor românilor! - Curte amenajată cu Sahara travertin de la Petra Pavaje
+- [Amenajare în nuanțe calde cu pavajul Sahara travertin – studiu de caz](https://petrapavaje.ro/blog/curte-amenajata-sahara-travertin) — 2025-11-10, Mihaela Petruța. Amenajare în nuanțe calde cu pavajul Sahara travertin - studiu de caz - Curte amenajată cu Sahara travertin de la Petra Pavaje
+- [Planul pentru o curte de vis cu Petra Pavaje](https://petrapavaje.ro/blog/planul-pentru-o-curte-de-vis) — 2025-09-03, Mihaela Petruța. Planul pentru o curte de vis cu Petra Pavaje Amenajarea completă cu produsele Petra Pavaje
+- [Amenajare rezidențială cu pavajul Mediterana Terra](https://petrapavaje.ro/blog/amenajare-rezidentiala-mediterana-terra) — 2025-07-30, Mihaela Petruța. Amenajare rezidențială cu pavajul Mediterana Terra Amenajare rezindețială deosebită cu pavajul Mediterana Terra
+- [Petra Pavaje plantează 42.000 de puieți în județul Alba](https://petrapavaje.ro/blog/actiune-de-impadurire) — 2025-05-15, Mihaela Petruța. Am pus o pădure nouă pe harta României, plantând 42.000 de puieți în județul Alba pentru un viitor sustenabil.
+- [Amenajare cu pavaj Mistic gri bazaltic pentru o curte elegantă](https://petrapavaje.ro/blog/pavajul-mistic-pentru-o-curte-elegenata) — 2025-02-28, Mihaela Petruța. Descoperă pavajul Mistic pentru o curte elegantă - gri bazaltic, nuanța perfectă pentru un plus de stil și funcționalitate
+- [Câștigă o bancă Woodstone de Ziua Îndrăgostiților! 💕](https://petrapavaje.ro/blog/castiga-banca-woodstone-ziua-indragostitilor) — 2025-02-07, Mihaela Petruța. Câștigă o bancă Woodstone de Ziua Îndrăgostiților! 💕
+- [Amenajarea completă cu pavajul Antic antichizat – studiu de caz](https://petrapavaje.ro/blog/amenajare-completa-antic-antichizat) — 2025-01-20, Mihaela Petruța. Amenajarea completă cu pavajul Antic antichizat - studiu de caz Amenajarea completă cu pavajul Antic antichizat
+- [Gama WOODSTONE Lemn Pietrificat](https://petrapavaje.ro/blog/gama-woodstone-lemn-pietrificat) — 2024-08-22, Mihaela Petruța. Descoperă gama Woodstone: dale și pavaje din beton ce imită perfect lemnul. Durabile, versatile și antiderapante pentru un design exterior de excepție.
+- [Montarea pavajelor](https://petrapavaje.ro/blog/sfaturi-pentru-montarea-pavajelor) — 2024-04-08, Mihaela Petruța. Sfaturi pentru montarea corectă a pavajelor. Care sunt pașii în amenajarea unei curți cu prefabricate de beton.
+- [Montarea bordurilor](https://petrapavaje.ro/blog/montarea-bordurilor) — 2024-04-08, Mihaela Petruța. Bordurile nu au doar scop estetic pentru delimitarea vizuală a pavajului, ci au un rol mai important, și anume de susținere.
+- [Transformă-ți curtea folosind culoarea anului: Fuzz Peach](https://petrapavaje.ro/blog/transforma-ti-curtea-folosind-culoarea-anului-fuzz-peach) — 2024-02-29, Mihaela Petruța. Petra Pavaje vă prezintă câteva moduri prin care puteți integra culoarea Peach Fuzz în amenajarea curții mult dorite.
+- [Gardul Modern Petra Pavaje](https://petrapavaje.ro/blog/gardul-modern-petra-pavaje) — 2024-02-27, Mihaela Petruța. Gardul Modern Petra Pavaje Conceput pentru a îmbina eleganța cu funcționalitatea, Gardul Modern este o completare a gamei diversificate de produse Petra Pavaje.
+- [Concurs – Montator cu Petra Pavaje](https://petrapavaje.ro/blog/concurs-montator-cu-petra-pavaje) — 2024-02-12, Mihaela Petruța. Concursul "Montator cu Petra Pavaje" s-a încheiat. Vezi detalii despre ediția din Februarie 2024 și fii pe fază pentru viitoarele competiții dedicate montatorilor!
+- [Cum îngrijim pavajul în sezonul rece?](https://petrapavaje.ro/blog/cum-ingrijim-pavajul-in-sezonul-rece) — 2024-01-29, Mihaela Petruța. Cum îngrijim pavajul în sezonul rece? Îngrijirea adecvată a pavajului este esențială atât în perioada caldă, dar mai ales în perioada rece a anului.
+- [Eflorescența](https://petrapavaje.ro/blog/de-ce-apar-pete-albe-pe-pavaje-si-pe-garduri) — 2023-11-07, Mihaela Petruța. Ai pete albe pe pavaje sau pe gard? Află de ce apare eflorescența și descoperă cele mai eficiente metode de curățare pentru a reda betonului aspectul inițial.
+- [Petra Pavaje ajunge la 800 de produse în portofoliu](https://petrapavaje.ro/blog/petra-pavaje-ajunge-la-800-de-produse) — 2023-09-29, Mihaela Petruța. Portofoliul Petra Pavaje a ajuns la 800 de produse! Descoperă gama completă de pavaje, dale și decorațiuni premium pentru o amenajare exterioară de excepție.
+- [CON – pavajul care inspiră viață curții tale](https://petrapavaje.ro/blog/con-pavajul-care-inspira-viata-curtii-tale) — 2023-09-21, Mihaela Petruța. CON – pavajul care inspiră viață curții tale Descoperă Con, pavajul modern de la Petra Pavaje. Cu un design unic și versatil, este ideal pentru a crea alei, terase și spații personalizate în curtea ta.
+- [Giveaway – Back to School](https://petrapavaje.ro/blog/giveaway-back-to-school) — 2023-08-31, Mihaela Petruța. Giveaway-ul "Back to School" de la Petra Pavaje s-a încheiat. Vezi detalii despre ediția trecută și fii pe fază pentru viitoarele surprize și concursuri!
+- [Ce presupune un stil de viață sustenabil și cum poți face demersuri în acest sens cu produsele Petra Pavaje](https://petrapavaje.ro/blog/ce-presupune-un-stil-de-viata-sustenabil-si-cum-poti-face-demersuri-in-acest-sens) — 2023-07-26, Mihaela Petruța. Ce înseamnă un stil de viață sustenabil? Află cum poți face alegeri eco-friendly, de la sfaturi practice pentru casă și grădină la soluții de amenajare durabile.
+- [Verde la Școala mea – proiect susținut de Petra Pavaje](https://petrapavaje.ro/blog/verde-la-scoala-mea-proiect-sustinut-de-petra-pavaje) — 2023-06-07, Mihaela Petruța. Verde la Școala mea - proiect susținut de Petra Pavaje Descoperă "Verde la școala mea", un proiect de responsabilitate socială Petra Pavaje dedicat educației ecologice a copiilor din comunitatea noastră.
+- [Care este culoarea anului și cum o poți integra în curtea ta](https://petrapavaje.ro/blog/culoarea-anului-in-amenajari-exterioare) — 2023-01-10, Iulia Hladiuc. Care este culoarea anului și cum o poți integra în curtea ta. Citește 5 idei prin care poți să îți creezi o curte în tendințe.
+- [Noul produs Mistic Gri Grafit](https://petrapavaje.ro/blog/noul-produs-mistic-gri-grafit) — 2022-11-22, Iulia Hladiuc. Noul produs Mistic Gri Grafit de la Petra Pavaje este un pavaj modern, în culori reci, armonios combinate.
+- [Cum pregătești pavajele pentru iarnă](https://petrapavaje.ro/blog/intretinere-pavaje-iarna) — 2022-11-17, Iulia Hladiuc. Sfaturi de la Petra Pavaje despre cum sa pregatesti pavajul pentru iarna. Trei pași simpli pe care oricine trebuie să-i urmeze.
+- [Prima ediție a cursului de școlarizare a montatorilor](https://petrapavaje.ro/blog/prima-editie-a-cursului-de-scolarizare-a-montatorilor) — 2022-10-07, Iulia Hladiuc. Împreună cu partenerii noștri, BOMA Prefabricate, am instruit 40 de montatori. Evenimentul s-a desfășurat în perioada 8-9 septembrie la Ploiești
+- [A fost pusă în funcțiune cea de a patra fabrică Petra Pavaje](https://petrapavaje.ro/blog/a-patra-fabrica-petra-pavaje) — 2022-07-20, Iulia Hladiuc. A fost pusă în funcțiune cea de a patra fabrică Petra Pavaje. Fabrica este localizată în Roman, județul Neamț.
+- [Studiu de caz: curte rezidențială cu piscină](https://petrapavaje.ro/blog/idei-de-amenajare-cu-pavajul-roca) — 2022-06-27, Iulia Hladiuc. Idei de amenajare cu pavajul Roca de la Petra Pavaje. Curte de lux cu piscină și gazon. Un proiect deosebit.
+- [Petra Pavaje lansează gama Grand Urban](https://petrapavaje.ro/blog/gama-grand-urban) — 2022-05-10, Iulia Hladiuc. Petra Pavaje lansează Grand Urban. Plăcile din beton de mari dimensiuni au o lungime de 1 m și sunt disponibile în 3 nuanțe.
+- [Florea Grup a început instalarea celor 10.000 mp de panouri fotovoltaice pe fabricile Petra Pavaje](https://petrapavaje.ro/blog/florea-grup-a-inceput-montarea-parcului-fotovoltaic) — 2022-04-18, Iulia Hladiuc. Fabricile Petra Pavaje vor fi acoperite de panouri fotovoltaice, care le vor asigura în proporție de până la 40% autonomia energetică.
+- [Studiu de caz: amenajare cu pavajul Mistic Gri Bazaltic](https://petrapavaje.ro/blog/idei-de-amenajare-cu-pavajul-mistic-gri-bazaltic) — 2022-04-04, Iulia Hladiuc. Pavajul Mistic gri bazaltic de la Petra Pavaje într-o amenajare modernă, la sediul unui ONG. S-au mai folosit borduri și elemente de gard.
+- [Mulțumesc, mamă!](https://petrapavaje.ro/blog/multumesc-mama) — 2022-03-08, Iulia Hladiuc. MAMA! Ea ne-a învățat să spunem primele cuvinte, să facem primele socoteli, să tratăm și joaca drept un lucru serios.
+- [Florea Grup – cea mai remarcabilă expansiune în domeniul materialelor de construcții](https://petrapavaje.ro/blog/florea-grup-cea-mai-remarcabila-expansiune-in-domeniul-materialelor-de-constructii) — 2022-02-26, Iulia Hladiuc. Distincția acordată în cadrul Galei Premiilor Capital – Performerii Anului 2021. Petra Pavaje se înscrie, mottoul său „În armonie cu natura”.
+- [Au început construcțiile celei de a patra fabrici Petra Pavaje](https://petrapavaje.ro/blog/au-inceput-constructiile-celei-de-a-patra-fabrici-petra-pavaje) — 2021-11-25, Iulia Hladiuc. Florea Grup prin a 4-a fabrică Petra Pavaje, își extinde prezența națională printr-o unitate de producție în județul Neamț
+- [De 1 Decembrie alegem produse românești](https://petrapavaje.ro/blog/de-1-decembrie-alegem-produse-romanesti-2) — 2021-11-22, Iulia Hladiuc. De ce este important să alegi produse românești și cum ajută o fabrică românească dezvoltarea unei comunități.
+- [Cu ajutorul vostru, spre succes!](https://petrapavaje.ro/blog/cu-ajutorul-vostru-spre-succes) — 2021-10-21, Iulia Hladiuc. Ajută-ne să fim mai buni! Spune-ne părerea ta despre colaborarea cu Petra Pavaje!
+- [Florea Grup a inaugurat cea de a treia fabrică Petra Pavaje](https://petrapavaje.ro/blog/florea-grup-a-inaugurat-cea-de-a-treia-fabrica-petra-pavaje) — 2021-09-24, Iulia Hladiuc. Florea Grup a inaugurat cea de a treia fabrică Petra Pavaje Compania și-a consolidat poziția la nivel național prin construcția  […]
+- [Cum să îți amenajezi curtea](https://petrapavaje.ro/blog/cum-iti-amenajezi-curtea) — 2021-07-27, Iulia Hladiuc. 5 pași pentru amenajarea unei grădini. Cum stabilești bugetul, stilul, pavajul și elementele pe care le folosești în amenajarea curții.
+- [Soluții de pavare permeabile](https://petrapavaje.ro/blog/solutii-de-pavare-permeabile) — 2021-07-20, Iulia Hladiuc. Soluții de pavare cu pavaje permeabile de la Petra Pavaje. Sunt o soluție ecologică, practică și estetică pentru orice amenajare.
+- [Pavajele din curte te inspiră să călătorești](https://petrapavaje.ro/blog/pavajele-din-curte-te-inspira-sa-calatoresti-destinatia-lunii-cascada-sipote) — 2021-07-20, Iulia Hladiuc. Pavajul Travertin este un produs premium al companiei Petra Pavaje. Dintre beneficiile acestui produs, enumerăm
+- [Florea Grup începe lucrările la cea de a treia fabrică Petra Pavaje](https://petrapavaje.ro/blog/florea-grup-incepe-lucrarile-la-cea-de-a-treia-fabrica-petra-pavaje) — 2021-05-14, Iulia Hladiuc. Compania își consolidează poziția la nivel național prin construcția celei mai moderne fabrici de prefabricate de beton din vestul țării
+- [Pavajele din curte și Sarmizegetuza Regia](https://petrapavaje.ro/blog/pavajele-din-curte-si-sarmizegetuza) — 2021-04-20, Iulia Hladiuc. Pavajele din curte și Sarmizegetuza Regia. Cum poți să transformi curtea într-un colț din Sarmisegetuza cu Petra Pavaje.
+- [Păcăleală de 1 Aprilie: Petra Pavaje anunță lansarea unei linii de bijuterii din beton](https://petrapavaje.ro/blog/petra-pavaje-anunta-lansarea-unei-linii-de-bijuterii-din-beton) — 2021-04-01, Iulia Hladiuc. În aceste vremuri în care suntem asaltați de știri negative, profităm de orice ocazie pentru a pune zâmbetul pe buzele  […]
+- [Florea Grup – 25 de ani](https://petrapavaje.ro/blog/florea-grup-25-de-ani) — 2021-03-31, Iulia Hladiuc. Florea Grup aniversează 25 de ani. O istorie despre viziune, familie și dezvoltare, de la o afacere locală la un lider național în construcții și servicii.
+- [Modele de pavaje pentru curți. Avantajele mixurilor.](https://petrapavaje.ro/blog/modele-de-pavaje-pentru-curti-avantajele-mixurilor) — 2021-03-17, Iulia Hladiuc. Mixurile de pavaje sunt grupări de mai multe dimensiuni de pavaje, livrate împreună. Mixurile de pavaje se mai numesc și pavaje combi sau mix
+- [De ce să ai alături o femeie atunci când îți amenajezi grădina](https://petrapavaje.ro/blog/de-ce-sa-ai-alaturi-o-femeie-atunci-cand-iti-amenajezi-gradina) — 2021-03-05, Iulia Hladiuc. Descoperiți avantajele colaborării cu o femeie în amenajarea grădinii. Aflați cum experiența și viziunea feminină pot transforma spațiul exterior într-un paradis verde.
+- [Cum construiești un gard din prefabricate de beton](https://petrapavaje.ro/blog/cum-construiesti-un-gard) — 2021-01-14, Iulia Hladiuc. Cum construiesti un gard sau un zid din prefabricate de beton. Etapele construcției, materiale necesare și diverse stiluri de a construi un zid.
+- [De început de an](https://petrapavaje.ro/blog/de-inceput-de-an) — 2020-12-23, Iulia Hladiuc. Vă dorim să aveți un an așa cum îl visați! Tot așa cum o construcție are la bază o primă piatră, un an începe cu o primă zi! Petra Pavaje
+- [Aranjament pentru masa de Crăciun cu capac de gard](https://petrapavaje.ro/blog/aranjament-pentru-masa-de-craciun) — 2020-12-17, Iulia Hladiuc. Când vorbim de Sărbători de iarnă, inevitabil gândul ne duce și la masa de Crăciun. Acel moment în care ne strângem toată familia.
+- [Aranjament de Crăciun în Bolțar](https://petrapavaje.ro/blog/aranjament-de-craciun-in-boltar) — 2020-12-15, Iulia Hladiuc. Am ales acest element pentru că betonul aparent este foarte popular în rândul decorațiunilor interioare. Boltarii Petra Pavaje sunt ideali.
+- [Jardinieră de iarnă](https://petrapavaje.ro/blog/jardiniera-de-iarna) — 2020-12-08, Iulia Hladiuc. Foloseste-ti creativitatea, pregateste aranjamente de Craciun, jadrniniere, boltari sau elemente de gard.
+- [Întreținerea pavajului pe timp de iarnă](https://petrapavaje.ro/blog/intretinerea-pavajului-pe-timp-de-iarna) — 2020-12-08, Iulia Hladiuc. Având în vedere că pe timpul iernii temperaturile extreme, gheața persistentă, umezeala recurentă și poleiul pot afecta pavajul, curățarea pavelelor este prima operațiune pe care trebuie să o realizezi
+- [Tendințele sezonului în amenajarea aleilor](https://petrapavaje.ro/blog/tendintele-sezonului-in-amenajarea-aleilor) — 2020-11-10, Iulia Hladiuc. Pentru un plus de originalitate, puteți alege pavaje, borduri și palisade, unde cele mici se combină cu cele medii și mari după design.
+- [Florea Pavaje devine Petra Pavaje](https://petrapavaje.ro/blog/florea-pavaje-devine-petra-pavaje) — 2020-06-25, Iulia Hladiuc. Florea Pavaje devine Petra Pavaje, parte a companiei Florea Grup, anunțând lansarea noii sale identități.
+
+---
+
+_Generat automat din datele reale ale site-ului (2026-09-24). Nu editați manual — rulați `npx tsx scripts/generate-llms-full.ts`._

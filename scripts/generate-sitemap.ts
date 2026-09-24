@@ -2,6 +2,7 @@
 // so it can never drift from what actually exists on the site. Run with:
 //   npx tsx scripts/generate-sitemap.ts
 import { writeFileSync } from 'node:fs'
+import { execFileSync } from 'node:child_process'
 import { categories } from '../src/data/site'
 import { products } from '../src/data/products'
 import { elementCategories } from '../src/data/elements'
@@ -12,6 +13,22 @@ import { categoryUrl, productUrl } from '../src/lib/product-urls'
 import { TRANSLATED_PATHS } from '../src/lib/i18n-routes'
 
 const SITE_URL = 'https://petrapavaje.ro'
+
+// Real last-commit date of each data source, used as `lastmod` for the
+// routes it drives -- never a fabricated/guessed date. Falls back to
+// undefined (omit lastmod) if git isn't available (e.g. a shallow clone).
+function lastCommitDate(path: string): string | undefined {
+  try {
+    const out = execFileSync('git', ['log', '-1', '--format=%cs', '--', path], { encoding: 'utf8' }).trim()
+    return out || undefined
+  } catch {
+    return undefined
+  }
+}
+const PRODUCTS_LASTMOD = lastCommitDate('src/data/products.ts')
+const SITE_LASTMOD = lastCommitDate('src/data/site.ts')
+const ELEMENTS_LASTMOD = lastCommitDate('src/data/elements.ts')
+const WOODSTONE_LASTMOD = lastCommitDate('src/data/woodstone.ts')
 
 type AltLang = { lang: string; loc: string }
 type Entry = { loc: string; changefreq: string; priority: string; lastmod?: string; altLangs?: AltLang[] }
@@ -72,26 +89,26 @@ for (const roPath of TRANSLATED_PATHS) {
 
 // Product categories (pavaje-premium, pavaje-standard, woodstone-lemn-pietrificat, borduri, boltari, jardiniere, palisada, banci, treapta, bloc-de-zid, garduri, elemente-de-canalizare)
 for (const cat of categories) {
-  add(categoryUrl(cat.slug), 'monthly', '0.8')
+  add(categoryUrl(cat.slug), 'monthly', '0.8', SITE_LASTMOD)
 }
 
 // Individual products (pavaje-premium/:product, pavaje-standard/:product, pavaje-standard/quatro/:product, borduri/:product)
 for (const product of products) {
   const categoryMeta = categories.find((c) => c.id === product.category)
   const categorySlug = categoryMeta?.slug || product.category
-  add(productUrl(categorySlug, product.slug), 'monthly', '0.7')
+  add(productUrl(categorySlug, product.slug), 'monthly', '0.7', PRODUCTS_LASTMOD)
 }
 
 // Quatro hub page
-add('/pavaje-standard/quatro', 'monthly', '0.7')
+add('/pavaje-standard/quatro', 'monthly', '0.7', PRODUCTS_LASTMOD)
 
 // English Premium paver catalog -- fully translated (see src/data/products.en.ts),
 // unlike the rest of the product catalog, so it gets its own EN URLs here
 // alongside the TRANSLATED_PATHS loop above.
 const premiumProducts = products.filter((p) => p.category === 'premium')
-add('/en/pavaje-premium', 'weekly', '0.8')
+add('/en/pavaje-premium', 'weekly', '0.8', PRODUCTS_LASTMOD)
 for (const product of premiumProducts) {
-  add(`/en/pavaje-premium/${product.slug}`, 'monthly', '0.7')
+  add(`/en/pavaje-premium/${product.slug}`, 'monthly', '0.7', PRODUCTS_LASTMOD)
 }
 
 // English Standard paver catalog -- also fully translated, including the
@@ -100,13 +117,13 @@ for (const product of premiumProducts) {
 const standardProducts = products.filter((p) => p.category === 'standard')
 const standardQuatroVariants = standardProducts.filter((p) => p.slug.startsWith('quatro-'))
 const standardNonQuatro = standardProducts.filter((p) => !p.slug.startsWith('quatro-'))
-add('/en/pavaje-standard', 'weekly', '0.8')
-add('/en/pavaje-standard/quatro', 'monthly', '0.7')
+add('/en/pavaje-standard', 'weekly', '0.8', PRODUCTS_LASTMOD)
+add('/en/pavaje-standard/quatro', 'monthly', '0.7', PRODUCTS_LASTMOD)
 for (const product of standardNonQuatro) {
-  add(`/en/pavaje-standard/${product.slug}`, 'monthly', '0.7')
+  add(`/en/pavaje-standard/${product.slug}`, 'monthly', '0.7', PRODUCTS_LASTMOD)
 }
 for (const product of standardQuatroVariants) {
-  add(`/en/pavaje-standard/quatro/${product.slug}`, 'monthly', '0.6')
+  add(`/en/pavaje-standard/quatro/${product.slug}`, 'monthly', '0.6', PRODUCTS_LASTMOD)
 }
 
 // Cross-link RO/EN Premium and Standard pairs with hreflang alternates (+ x-default -> RO)
@@ -139,22 +156,22 @@ for (const product of standardQuatroVariants) {
 // and nested under garduri / elemente-de-canalizare
 for (const el of elementCategories) {
   if (el.parent) {
-    add(`${categoryUrl(el.parent.slug)}/${el.slug}`, 'monthly', '0.7')
+    add(`${categoryUrl(el.parent.slug)}/${el.slug}`, 'monthly', '0.7', ELEMENTS_LASTMOD)
   } else {
-    add(categoryUrl(el.slug), 'monthly', '0.8')
+    add(categoryUrl(el.slug), 'monthly', '0.8', ELEMENTS_LASTMOD)
   }
 }
 
 // Woodstone categories
 for (const wc of woodstoneCategories) {
-  add(`/woodstone-lemn-pietrificat/${wc.slug}`, 'monthly', '0.7')
+  add(`/woodstone-lemn-pietrificat/${wc.slug}`, 'monthly', '0.7', WOODSTONE_LASTMOD)
 }
 
 // English Woodstone -- Petrified Wood range: also fully translated (see
 // src/data/woodstone.en.ts), unlike the rest of the product catalog.
-add('/en/woodstone-lemn-pietrificat', 'weekly', '0.8')
+add('/en/woodstone-lemn-pietrificat', 'weekly', '0.8', WOODSTONE_LASTMOD)
 for (const wc of woodstoneCategories) {
-  add(`/en/woodstone-lemn-pietrificat/${wc.slug}`, 'monthly', '0.7')
+  add(`/en/woodstone-lemn-pietrificat/${wc.slug}`, 'monthly', '0.7', WOODSTONE_LASTMOD)
 }
 linkAltLangs('/woodstone-lemn-pietrificat', '/en/woodstone-lemn-pietrificat')
 for (const wc of woodstoneCategories) {
