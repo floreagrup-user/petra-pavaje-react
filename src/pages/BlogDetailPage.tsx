@@ -147,7 +147,9 @@ export function BlogDetailPage() {
       image: post.image ? [post.image] : undefined,
       datePublished: post.date,
       dateModified: post.modifiedDate || post.date,
-      author: { '@type': 'Organization', name: post.author },
+      author: post.authorSlug
+        ? { '@type': 'Person', name: post.author, url: `${window.location.origin}/autor/${post.authorSlug}` }
+        : { '@type': 'Organization', name: post.author },
       publisher: {
         '@type': 'Organization',
         name: SEO_SITE_NAME,
@@ -213,7 +215,13 @@ export function BlogDetailPage() {
               </span>
               <span className="flex items-center gap-1">
                 <User className="w-3.5 h-3.5" />
-                {post.author}
+                {post.authorSlug ? (
+                  <Link to={`/autor/${post.authorSlug}`} className="hover:text-brand-600 transition-colors">
+                    {post.author}
+                  </Link>
+                ) : (
+                  post.author
+                )}
               </span>
             </div>
 

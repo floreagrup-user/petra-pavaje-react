@@ -7,6 +7,7 @@ import { products } from '../src/data/products'
 import { elementCategories } from '../src/data/elements'
 import { woodstoneCategories } from '../src/data/woodstone'
 import { blogPosts } from '../src/data/blog'
+import { authors } from '../src/data/authors'
 import { categoryUrl, productUrl } from '../src/lib/product-urls'
 import { TRANSLATED_PATHS } from '../src/lib/i18n-routes'
 
@@ -164,6 +165,11 @@ for (const wc of woodstoneCategories) {
 for (const post of blogPosts) {
   const lastmod = post.date ? new Date(post.date).toISOString().slice(0, 10) : undefined
   add(`/blog/${post.slug}`, 'monthly', '0.5', lastmod)
+}
+
+// Blog author profiles
+for (const author of authors) {
+  add(`/autor/${author.slug}`, 'monthly', '0.4')
 }
 
 entries.sort((a, b) => a.loc.localeCompare(b.loc))

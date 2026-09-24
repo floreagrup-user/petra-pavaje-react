@@ -9,6 +9,7 @@ const ProductDetailPage = lazy(() => import('@/pages/ProductDetailPage').then(m 
 const ContactPage = lazy(() => import('@/pages/ContactPage').then(m => ({ default: m.ContactPage })))
 const BlogPage = lazy(() => import('@/pages/BlogPage').then(m => ({ default: m.BlogPage })))
 const BlogDetailPage = lazy(() => import('@/pages/BlogDetailPage').then(m => ({ default: m.BlogDetailPage })))
+const AuthorPage = lazy(() => import('@/pages/AuthorPage').then(m => ({ default: m.AuthorPage })))
 const VirtualTourPage = lazy(() => import('@/pages/VirtualTourPage').then(m => ({ default: m.VirtualTourPage })))
 const CalculatorPavajPage = lazy(() => import('@/pages/CalculatorPavajPage').then(m => ({ default: m.CalculatorPavajPage })))
 const GenericPage = lazy(() => import('@/pages/GenericPage').then(m => ({ default: m.GenericPage })))
@@ -98,6 +99,7 @@ export const router = createBrowserRouter([
       { path: 'contact', element: <Suspense><ContactPage /></Suspense> },
       { path: 'blog', element: <Suspense><BlogPage /></Suspense> },
       { path: 'blog/:slug', element: <Suspense><BlogDetailPage /></Suspense> },
+      { path: 'autor/:slug', element: <Suspense><AuthorPage /></Suspense> },
       { path: 'tur-virtual', element: <Suspense><VirtualTourPage /></Suspense> },
       { path: 'calculator-pavaj', element: <Suspense><CalculatorPavajPage /></Suspense> },
       { path: 'despre-noi', element: <Suspense><AboutPage /></Suspense> },

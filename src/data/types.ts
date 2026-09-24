@@ -109,6 +109,18 @@ export interface Testimonial {
 
 export type BlogCategory = 'inspiratie' | 'studii-de-caz' | 'ghiduri' | 'noutati'
 
+export interface Author {
+  slug: string
+  name: string
+  role?: string
+  company?: string
+  expertise?: string
+  bio?: string[]
+  highlight?: string
+  photo?: string
+  linkedin?: string
+}
+
 export interface BlogPost {
   id: string
   title: string
@@ -118,6 +130,7 @@ export interface BlogPost {
   date: string
   modifiedDate?: string
   author: string
+  authorSlug?: string
   categories: BlogCategory[]
   image: string
   readTime: number
