@@ -13,24 +13,9 @@
 # -- see src/router.tsx and src/lib/product-urls.ts. Nothing to redirect
 # there. The rules below are only a safety net for the brief window this
 # session used a /produse/<category>/... structure, in case any of those
-# interim links got bookmarked or shared.
+# interim links got bookmarked or shared. They are splat rules, so they live
+# in the "Dynamic rules" section at the bottom of this file.
 # ---------------------------------------------------------------------------
-
-/produse/pavaje-premium/* /pavaje-premium/:splat 301
-/produse/pavaje-standard/quatro/* /pavaje-standard/quatro/:splat 301
-/produse/pavaje-standard/* /pavaje-standard/:splat 301
-/produse/woodstone/* /woodstone-lemn-pietrificat/:splat 301
-/produse/borduri/* /borduri/:splat 301
-/produse/boltari/* /boltari 301
-/produse/rigole/* /rigole 301
-/produse/jardiniere/* /jardiniere 301
-/produse/palisada/* /palisada 301
-/produse/banci/* /produse 301
-/produse/treapta/* /treapta 301
-/produse/bloc-de-zid/* /bloc-de-zid 301
-/produse/garduri/* /garduri/:splat 301
-/produse/elemente-de-canalizare/* /elemente-de-canalizare/:splat 301
-/produse/elemente/* /elemente 301
 
 # ---------------------------------------------------------------------------
 # WordPress duplicate-slug artifacts: WP appended a "-2"/"-3" suffix to
@@ -52,11 +37,8 @@
 /borduri-2/bordura-50x20x25-tesita-f10-3 /borduri/bordura-50x20x25-tesita-f10 301
 /borduri-2/bordura-50x20x25-tesita-f15-3 /borduri/bordura-50x20x25-tesita-f15 301
 /borduri-2/bordura-rampa-50x25x25-3 /borduri/bordura-rampa-50x25x25 301
-/borduri-2/* /borduri/:splat 301
 /garduri-2 /garduri 301
-/garduri-2/* /garduri/:splat 301
 /jardiniere-2 /jardiniere 301
-/jardiniere-2/* /jardiniere 301
 /pavaje-standard/quatro/quatro-20x20x6-2 /pavaje-standard/quatro/quatro-20x20x6 301
 /pavaje-standard/quatro/quatro-30x30x6-2 /pavaje-standard/quatro/quatro-30x30x6 301
 /pavaje-standard/quatro/quatro-smart-20x20x10-2 /pavaje-standard/quatro/quatro-smart-20x20x10 301
@@ -81,34 +63,13 @@
 # existed -- fixed to point at the real page)
 # ---------------------------------------------------------------------------
 
-/compania/* /despre-noi 301
-/florea-grup-30-de-ani/* /florea-grup 301
-/florea-grup-25-de-ani/* /florea-grup 301
-/sustenabilitate-2/* /sustenabilitate 301
 /montaj-3 /montaj 301
-/montaj-3/* /montaj 301
-/intrebari-frecvente-despre-petra-pavaje/* /faq 301
-/tur-virtual-gradina-expozitionala-alba/* /tur-virtual 301
-/turvirtual/* /tur-virtual 301
-/catalog-petra-pavaje/* /catalog 301
-/documente-3/* /documente 301
-/produse-de-intretinere/* /intretinere 301
 
 # Legal pages
-/declaratie-de-confidentialitate-ue/* /confidentialitate 301
-/politica-cookie-uri-ue/* /cookie-uri 301
-/disclaimer/* /termeni 301
-/imprint/* /termeni 301
 
 # FAQ items & category archives (WP custom post type) -> FAQ page
-/faq-items/* /faq 301
-/faq_category/* /faq 301
 
 # Expired campaign / seasonal pages with no equivalent on the new site
-/concurs/* / 301
-/concurs-regulament/* / 301
-/petra-paste-2026/* / 301
-/utile/* / 301
 
 # ---------------------------------------------------------------------------
 # Blog articles: old WordPress URLs -> new /blog/<slug>
@@ -190,7 +151,7 @@
 
 # Leaf routes (no nested :param children in router.tsx) -- exact match only,
 # no wildcard needed. Kept as plain (non-dynamic) rules to stay well under
-# Cloudflare Pages' ~100 dynamic-redirect budget (already ~80 used above).
+# Cloudflare Pages' 100 dynamic-redirect budget.
 /bloc-de-zid /index.html 200
 /boltari /index.html 200
 /brosuri /index.html 200
@@ -222,20 +183,65 @@
 
 # Routes with real :param children -- need the wildcard.
 /blog /index.html 200
-/blog/* /index.html 200
 /pavaje-premium /index.html 200
-/pavaje-premium/* /index.html 200
 /pavaje-standard /index.html 200
-/pavaje-standard/* /index.html 200
 /borduri /index.html 200
-/borduri/* /index.html 200
 /garduri /index.html 200
-/garduri/* /index.html 200
 /elemente-de-canalizare /index.html 200
-/elemente-de-canalizare/* /index.html 200
 /woodstone-lemn-pietrificat /index.html 200
-/woodstone-lemn-pietrificat/* /index.html 200
 /produse /index.html 200
+
+# ---------------------------------------------------------------------------
+# Dynamic rules (splat). MUST stay below every static rule: once Pages sees a
+# dynamic rule, every rule after it counts toward the 100-dynamic limit and
+# rules past #100 are silently dropped (that broke all old blog redirects).
+# ---------------------------------------------------------------------------
+/produse/pavaje-premium/* /pavaje-premium/:splat 301
+/produse/pavaje-standard/quatro/* /pavaje-standard/quatro/:splat 301
+/produse/pavaje-standard/* /pavaje-standard/:splat 301
+/produse/woodstone/* /woodstone-lemn-pietrificat/:splat 301
+/produse/borduri/* /borduri/:splat 301
+/produse/boltari/* /boltari 301
+/produse/rigole/* /rigole 301
+/produse/jardiniere/* /jardiniere 301
+/produse/palisada/* /palisada 301
+/produse/banci/* /produse 301
+/produse/treapta/* /treapta 301
+/produse/bloc-de-zid/* /bloc-de-zid 301
+/produse/garduri/* /garduri/:splat 301
+/produse/elemente-de-canalizare/* /elemente-de-canalizare/:splat 301
+/produse/elemente/* /elemente 301
+/borduri-2/* /borduri/:splat 301
+/garduri-2/* /garduri/:splat 301
+/jardiniere-2/* /jardiniere 301
+/compania/* /despre-noi 301
+/florea-grup-30-de-ani/* /florea-grup 301
+/florea-grup-25-de-ani/* /florea-grup 301
+/sustenabilitate-2/* /sustenabilitate 301
+/montaj-3/* /montaj 301
+/intrebari-frecvente-despre-petra-pavaje/* /faq 301
+/tur-virtual-gradina-expozitionala-alba/* /tur-virtual 301
+/turvirtual/* /tur-virtual 301
+/catalog-petra-pavaje/* /catalog 301
+/documente-3/* /documente 301
+/produse-de-intretinere/* /intretinere 301
+/declaratie-de-confidentialitate-ue/* /confidentialitate 301
+/politica-cookie-uri-ue/* /cookie-uri 301
+/disclaimer/* /termeni 301
+/imprint/* /termeni 301
+/faq-items/* /faq 301
+/faq_category/* /faq 301
+/concurs/* / 301
+/concurs-regulament/* / 301
+/petra-paste-2026/* / 301
+/utile/* / 301
+/blog/* /index.html 200
+/pavaje-premium/* /index.html 200
+/pavaje-standard/* /index.html 200
+/borduri/* /index.html 200
+/garduri/* /index.html 200
+/elemente-de-canalizare/* /index.html 200
+/woodstone-lemn-pietrificat/* /index.html 200
 /produse/* /index.html 200
 
 # Anything else: genuinely not a route -> real 404, not a soft one.
