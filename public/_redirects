@@ -27,21 +27,37 @@
 # ---------------------------------------------------------------------------
 
 /borduri-2 /borduri 301
+/borduri-2/ /borduri 301
 /borduri-2/bordura-40x15x20-dreapta-2 /borduri/bordura-40x15x20-dreapta 301
+/borduri-2/bordura-40x15x20-dreapta-2/ /borduri/bordura-40x15x20-dreapta 301
 /borduri-2/bordura-50x10x15-dreapta-2 /borduri/bordura-50x10x15-dreapta 301
+/borduri-2/bordura-50x10x15-dreapta-2/ /borduri/bordura-50x10x15-dreapta 301
 /borduri-2/bordura-50x10x15-tesita-2 /borduri/bordura-50x10x15-tesita 301
+/borduri-2/bordura-50x10x15-tesita-2/ /borduri/bordura-50x10x15-tesita 301
 /borduri-2/bordura-50x12x25-tesita-3 /borduri/bordura-50x12x25-tesita 301
+/borduri-2/bordura-50x12x25-tesita-3/ /borduri/bordura-50x12x25-tesita 301
 /borduri-2/bordura-50x15x25-tesita-f10-2 /borduri/bordura-50x15x25-tesita-f10 301
+/borduri-2/bordura-50x15x25-tesita-f10-2/ /borduri/bordura-50x15x25-tesita-f10 301
 /borduri-2/bordura-50x15x25-tesita-f15-2 /borduri/bordura-50x15x25-tesita-f15 301
+/borduri-2/bordura-50x15x25-tesita-f15-2/ /borduri/bordura-50x15x25-tesita-f15 301
 /borduri-2/bordura-50x20x25-rotunjita-3 /borduri/bordura-50x20x25-rotunjita 301
+/borduri-2/bordura-50x20x25-rotunjita-3/ /borduri/bordura-50x20x25-rotunjita 301
 /borduri-2/bordura-50x20x25-tesita-f10-3 /borduri/bordura-50x20x25-tesita-f10 301
+/borduri-2/bordura-50x20x25-tesita-f10-3/ /borduri/bordura-50x20x25-tesita-f10 301
 /borduri-2/bordura-50x20x25-tesita-f15-3 /borduri/bordura-50x20x25-tesita-f15 301
+/borduri-2/bordura-50x20x25-tesita-f15-3/ /borduri/bordura-50x20x25-tesita-f15 301
 /borduri-2/bordura-rampa-50x25x25-3 /borduri/bordura-rampa-50x25x25 301
+/borduri-2/bordura-rampa-50x25x25-3/ /borduri/bordura-rampa-50x25x25 301
 /garduri-2 /garduri 301
+/garduri-2/ /garduri 301
 /jardiniere-2 /jardiniere 301
+/jardiniere-2/ /jardiniere 301
 /pavaje-standard/quatro/quatro-20x20x6-2 /pavaje-standard/quatro/quatro-20x20x6 301
+/pavaje-standard/quatro/quatro-20x20x6-2/ /pavaje-standard/quatro/quatro-20x20x6 301
 /pavaje-standard/quatro/quatro-30x30x6-2 /pavaje-standard/quatro/quatro-30x30x6 301
+/pavaje-standard/quatro/quatro-30x30x6-2/ /pavaje-standard/quatro/quatro-30x30x6 301
 /pavaje-standard/quatro/quatro-smart-20x20x10-2 /pavaje-standard/quatro/quatro-smart-20x20x10 301
+/pavaje-standard/quatro/quatro-smart-20x20x10-2/ /pavaje-standard/quatro/quatro-smart-20x20x10 301
 
 # "Dale" (slabs) was a standalone WP category. It has no dedicated route on
 # the new site -- "dale" is the manufacturer's own term for the large-format
@@ -49,13 +65,16 @@
 # technical declarations), so it redirects to that category rather than
 # soft-404ing.
 /dale /pavaje-premium 301
+/dale/ /pavaje-premium 301
 
 # "Bănci" (concrete benches) was discontinued as a product category.
 /banci /produse 301
+/banci/ /produse 301
 
 # Old placeholder calculator (fake per-m2 prices, no real product data)
 # replaced by the full calculator at /calculator-pavaj.
 /calculator /calculator-pavaj 301
+/calculator/ /calculator-pavaj 301
 
 # ---------------------------------------------------------------------------
 # Company / resource pages that now have their own dedicated route
@@ -64,6 +83,7 @@
 # ---------------------------------------------------------------------------
 
 /montaj-3 /montaj 301
+/montaj-3/ /montaj 301
 
 # Legal pages
 
@@ -75,121 +95,135 @@
 # Blog articles: old WordPress URLs -> new /blog/<slug>
 # ---------------------------------------------------------------------------
 /amenajarea-spatiului-exterior-cu-pavaje-la-liceul-teologic-baptist-din-arad /blog/amenajarea-spatiului-exterior-cu-pavaje-la-liceul-teologic-baptist-din-arad 301
+/amenajarea-spatiului-exterior-cu-pavaje-la-liceul-teologic-baptist-din-arad/ /blog/amenajarea-spatiului-exterior-cu-pavaje-la-liceul-teologic-baptist-din-arad 301
 /amenajari-exterioare-care-transforma-o-pensiune-intr-o-destinatie-memorabila /blog/amenajari-exterioare-care-transforma-o-pensiune-intr-o-destinatie-memorabila 301
+/amenajari-exterioare-care-transforma-o-pensiune-intr-o-destinatie-memorabila/ /blog/amenajari-exterioare-care-transforma-o-pensiune-intr-o-destinatie-memorabila 301
 /petra-piatra-care-prinde-viata /blog/petra-piatra-care-prinde-viata 301
+/petra-piatra-care-prinde-viata/ /blog/petra-piatra-care-prinde-viata 301
 /solutii-creative-pentru-un-parcul-de-distractii-magic-parc-din-rasnov /blog/solutii-creative-pentru-un-parcul-de-distractii-magic-parc-din-rasnov 301
+/solutii-creative-pentru-un-parcul-de-distractii-magic-parc-din-rasnov/ /blog/solutii-creative-pentru-un-parcul-de-distractii-magic-parc-din-rasnov 301
 /i-giardini-di-zoe-pasii-a-zeci-de-mii-de-oameni-pe-carari-de-poveste /blog/i-giardini-di-zoe-pasii-a-zeci-de-mii-de-oameni-pe-carari-de-poveste 301
+/i-giardini-di-zoe-pasii-a-zeci-de-mii-de-oameni-pe-carari-de-poveste/ /blog/i-giardini-di-zoe-pasii-a-zeci-de-mii-de-oameni-pe-carari-de-poveste 301
 /regulamentul-campaniei-marea-pasiune-a-micilor-constructori /blog/regulamentul-campaniei-marea-pasiune-a-micilor-constructori 301
+/regulamentul-campaniei-marea-pasiune-a-micilor-constructori/ /blog/regulamentul-campaniei-marea-pasiune-a-micilor-constructori 301
 /cum-alegi-solutia-perfecta-pentru-o-gradina-cu-design-impecabil /blog/solutii-delimitare-pavaj-gradina-design-impecabil 301
+/cum-alegi-solutia-perfecta-pentru-o-gradina-cu-design-impecabil/ /blog/solutii-delimitare-pavaj-gradina-design-impecabil 301
 /petra-pavaje-lanseaza-evo-green /blog/petra-pavaje-lanseaza-evo-green 301
+/petra-pavaje-lanseaza-evo-green/ /blog/petra-pavaje-lanseaza-evo-green 301
 /pavaje-premium-si-starea-de-bine /blog/pavaje-premium-si-starea-de-bine 301
+/pavaje-premium-si-starea-de-bine/ /blog/pavaje-premium-si-starea-de-bine 301
 /casa-154-pavajul-grand-urban-punte-intre-traditie-si-modernitate /blog/casa-154-grand-urban-traditie-modernitate 301
+/casa-154-pavajul-grand-urban-punte-intre-traditie-si-modernitate/ /blog/casa-154-grand-urban-traditie-modernitate 301
 /amenajeaza-ti-curtea-in-culoarea-anului-2026-cu-petra-pavaje /blog/amenajeaza-curtea-culoarea-anului-2026 301
+/amenajeaza-ti-curtea-in-culoarea-anului-2026-cu-petra-pavaje/ /blog/amenajeaza-curtea-culoarea-anului-2026 301
 /3-idei-creative-pentru-utilizarea-pavajului-ca-decor-de-sarbatori /blog/3-idei-creative-pavaj-decor-sarbatori 301
+/3-idei-creative-pentru-utilizarea-pavajului-ca-decor-de-sarbatori/ /blog/3-idei-creative-pavaj-decor-sarbatori 301
 /la-multi-ani-romania /blog/la-multi-ani-romania 301
+/la-multi-ani-romania/ /blog/la-multi-ani-romania 301
 /curte-in-nuante-calde-sahara-travertin /blog/curte-amenajata-sahara-travertin 301
+/curte-in-nuante-calde-sahara-travertin/ /blog/curte-amenajata-sahara-travertin 301
 /planul-pentru-o-curte-de-vis-cu-petra-pavaje /blog/planul-pentru-o-curte-de-vis 301
+/planul-pentru-o-curte-de-vis-cu-petra-pavaje/ /blog/planul-pentru-o-curte-de-vis 301
 /amenajare-rezidentiala-cu-pavajul-mediterana-terra /blog/amenajare-rezidentiala-mediterana-terra 301
+/amenajare-rezidentiala-cu-pavajul-mediterana-terra/ /blog/amenajare-rezidentiala-mediterana-terra 301
 /actiune-de-impadurire /blog/actiune-de-impadurire 301
+/actiune-de-impadurire/ /blog/actiune-de-impadurire 301
 /pavajul-mistic-pentru-o-curte-elegenata /blog/pavajul-mistic-pentru-o-curte-elegenata 301
+/pavajul-mistic-pentru-o-curte-elegenata/ /blog/pavajul-mistic-pentru-o-curte-elegenata 301
 /castiga-o-banca-woodstone-de-ziua-indragostitilor-%f0%9f%92%95 /blog/castiga-banca-woodstone-ziua-indragostitilor 301
+/castiga-o-banca-woodstone-de-ziua-indragostitilor-%f0%9f%92%95/ /blog/castiga-banca-woodstone-ziua-indragostitilor 301
 /amenajarea-completa-cu-pavajul-antic-antichizat-studiu-de-caz /blog/amenajare-completa-antic-antichizat 301
+/amenajarea-completa-cu-pavajul-antic-antichizat-studiu-de-caz/ /blog/amenajare-completa-antic-antichizat 301
 /gama-woodstone-lemn-pietrificat /blog/gama-woodstone-lemn-pietrificat 301
+/gama-woodstone-lemn-pietrificat/ /blog/gama-woodstone-lemn-pietrificat 301
 /sfaturi-pentru-montarea-pavajelor /blog/sfaturi-pentru-montarea-pavajelor 301
+/sfaturi-pentru-montarea-pavajelor/ /blog/sfaturi-pentru-montarea-pavajelor 301
 /pasi-de-urmat-si-greseli-de-evitat-in-montarea-corespunzatoare-a-bordurilor /blog/montarea-bordurilor 301
+/pasi-de-urmat-si-greseli-de-evitat-in-montarea-corespunzatoare-a-bordurilor/ /blog/montarea-bordurilor 301
 /transforma-ti-curtea-folosind-culoarea-anului-fuzz-peach /blog/transforma-ti-curtea-folosind-culoarea-anului-fuzz-peach 301
+/transforma-ti-curtea-folosind-culoarea-anului-fuzz-peach/ /blog/transforma-ti-curtea-folosind-culoarea-anului-fuzz-peach 301
 /gardul-modern-petra-pavaje /blog/gardul-modern-petra-pavaje 301
+/gardul-modern-petra-pavaje/ /blog/gardul-modern-petra-pavaje 301
 /concurs-montator-cu-petra-pavaje /blog/concurs-montator-cu-petra-pavaje 301
+/concurs-montator-cu-petra-pavaje/ /blog/concurs-montator-cu-petra-pavaje 301
 /cum-ingrijim-pavajul-in-sezonul-rece /blog/cum-ingrijim-pavajul-in-sezonul-rece 301
+/cum-ingrijim-pavajul-in-sezonul-rece/ /blog/cum-ingrijim-pavajul-in-sezonul-rece 301
 /de-ce-apar-pete-albe-pe-pavaje-si-pe-garduri /blog/de-ce-apar-pete-albe-pe-pavaje-si-pe-garduri 301
+/de-ce-apar-pete-albe-pe-pavaje-si-pe-garduri/ /blog/de-ce-apar-pete-albe-pe-pavaje-si-pe-garduri 301
 /petra-pavaje-ajunge-la-800-de-produse-in-portofoliu /blog/petra-pavaje-ajunge-la-800-de-produse 301
+/petra-pavaje-ajunge-la-800-de-produse-in-portofoliu/ /blog/petra-pavaje-ajunge-la-800-de-produse 301
 /con-pavajul-care-a-inspira-viata-curtii-tale /blog/con-pavajul-care-inspira-viata-curtii-tale 301
+/con-pavajul-care-a-inspira-viata-curtii-tale/ /blog/con-pavajul-care-inspira-viata-curtii-tale 301
 /giveaway-back-to-school /blog/giveaway-back-to-school 301
+/giveaway-back-to-school/ /blog/giveaway-back-to-school 301
 /ce-presupune-un-stil-de-viata-sustenabil-si-cum-poti-face-demersuri-in-acest-sens /blog/ce-presupune-un-stil-de-viata-sustenabil-si-cum-poti-face-demersuri-in-acest-sens 301
+/ce-presupune-un-stil-de-viata-sustenabil-si-cum-poti-face-demersuri-in-acest-sens/ /blog/ce-presupune-un-stil-de-viata-sustenabil-si-cum-poti-face-demersuri-in-acest-sens 301
 /verde-la-scoala-mea-proiect-sustinut-de-petra-pavaje /blog/verde-la-scoala-mea-proiect-sustinut-de-petra-pavaje 301
+/verde-la-scoala-mea-proiect-sustinut-de-petra-pavaje/ /blog/verde-la-scoala-mea-proiect-sustinut-de-petra-pavaje 301
 /culoarea-anului-in-amenajari-exterioare /blog/culoarea-anului-in-amenajari-exterioare 301
+/culoarea-anului-in-amenajari-exterioare/ /blog/culoarea-anului-in-amenajari-exterioare 301
 /noul-produs-mistic-gri-grafit /blog/noul-produs-mistic-gri-grafit 301
+/noul-produs-mistic-gri-grafit/ /blog/noul-produs-mistic-gri-grafit 301
 /cum-pregatesti-pavajele-pentru-iarna /blog/intretinere-pavaje-iarna 301
+/cum-pregatesti-pavajele-pentru-iarna/ /blog/intretinere-pavaje-iarna 301
 /prima-editie-a-cursului-de-scolarizare-a-montatorilor /blog/prima-editie-a-cursului-de-scolarizare-a-montatorilor 301
+/prima-editie-a-cursului-de-scolarizare-a-montatorilor/ /blog/prima-editie-a-cursului-de-scolarizare-a-montatorilor 301
 /a-patra-fabrica-petra-pavaje /blog/a-patra-fabrica-petra-pavaje 301
+/a-patra-fabrica-petra-pavaje/ /blog/a-patra-fabrica-petra-pavaje 301
 /idei-de-amenajare-cu-pavajul-roca /blog/idei-de-amenajare-cu-pavajul-roca 301
+/idei-de-amenajare-cu-pavajul-roca/ /blog/idei-de-amenajare-cu-pavajul-roca 301
 /gama-grand-urban /blog/gama-grand-urban 301
+/gama-grand-urban/ /blog/gama-grand-urban 301
 /florea-grup-a-inceput-montarea-parcului-fotovoltaic /blog/florea-grup-a-inceput-montarea-parcului-fotovoltaic 301
+/florea-grup-a-inceput-montarea-parcului-fotovoltaic/ /blog/florea-grup-a-inceput-montarea-parcului-fotovoltaic 301
 /idei-de-amenajare-cu-pavajul-mistic-gri-bazaltic /blog/idei-de-amenajare-cu-pavajul-mistic-gri-bazaltic 301
+/idei-de-amenajare-cu-pavajul-mistic-gri-bazaltic/ /blog/idei-de-amenajare-cu-pavajul-mistic-gri-bazaltic 301
 /multumesc-mama /blog/multumesc-mama 301
+/multumesc-mama/ /blog/multumesc-mama 301
 /florea-grup-cea-mai-remarcabila-expansiune-in-domeniul-materialelor-de-constructii /blog/florea-grup-cea-mai-remarcabila-expansiune-in-domeniul-materialelor-de-constructii 301
+/florea-grup-cea-mai-remarcabila-expansiune-in-domeniul-materialelor-de-constructii/ /blog/florea-grup-cea-mai-remarcabila-expansiune-in-domeniul-materialelor-de-constructii 301
 /au-inceput-constructiile-celei-de-a-patra-fabrici-petra-pavaje /blog/au-inceput-constructiile-celei-de-a-patra-fabrici-petra-pavaje 301
+/au-inceput-constructiile-celei-de-a-patra-fabrici-petra-pavaje/ /blog/au-inceput-constructiile-celei-de-a-patra-fabrici-petra-pavaje 301
 /de-1-decembrie-alegem-produse-romanesti-2 /blog/de-1-decembrie-alegem-produse-romanesti-2 301
+/de-1-decembrie-alegem-produse-romanesti-2/ /blog/de-1-decembrie-alegem-produse-romanesti-2 301
 /cu-ajutorul-vostru-spre-succes /blog/cu-ajutorul-vostru-spre-succes 301
+/cu-ajutorul-vostru-spre-succes/ /blog/cu-ajutorul-vostru-spre-succes 301
 /florea-grup-a-inaugurat-cea-de-a-treia-fabrica-petra-pavaje /blog/florea-grup-a-inaugurat-cea-de-a-treia-fabrica-petra-pavaje 301
+/florea-grup-a-inaugurat-cea-de-a-treia-fabrica-petra-pavaje/ /blog/florea-grup-a-inaugurat-cea-de-a-treia-fabrica-petra-pavaje 301
 /cum-iti-amenajezi-curtea /blog/cum-iti-amenajezi-curtea 301
+/cum-iti-amenajezi-curtea/ /blog/cum-iti-amenajezi-curtea 301
 /solutii-de-pavare-permeabile /blog/solutii-de-pavare-permeabile 301
+/solutii-de-pavare-permeabile/ /blog/solutii-de-pavare-permeabile 301
 /pavajele-din-curte-te-inspira-sa-calatoresti-destinatia-lunii-cascada-sipote /blog/pavajele-din-curte-te-inspira-sa-calatoresti-destinatia-lunii-cascada-sipote 301
+/pavajele-din-curte-te-inspira-sa-calatoresti-destinatia-lunii-cascada-sipote/ /blog/pavajele-din-curte-te-inspira-sa-calatoresti-destinatia-lunii-cascada-sipote 301
 /florea-grup-incepe-lucrarile-la-cea-de-a-treia-fabrica-petra-pavaje /blog/florea-grup-incepe-lucrarile-la-cea-de-a-treia-fabrica-petra-pavaje 301
+/florea-grup-incepe-lucrarile-la-cea-de-a-treia-fabrica-petra-pavaje/ /blog/florea-grup-incepe-lucrarile-la-cea-de-a-treia-fabrica-petra-pavaje 301
 /pavajele-din-curte-si-sarmizegetuza /blog/pavajele-din-curte-si-sarmizegetuza 301
+/pavajele-din-curte-si-sarmizegetuza/ /blog/pavajele-din-curte-si-sarmizegetuza 301
 /petra-pavaje-anunta-lansarea-unei-linii-de-bijuterii-din-beton /blog/petra-pavaje-anunta-lansarea-unei-linii-de-bijuterii-din-beton 301
+/petra-pavaje-anunta-lansarea-unei-linii-de-bijuterii-din-beton/ /blog/petra-pavaje-anunta-lansarea-unei-linii-de-bijuterii-din-beton 301
 /florea-grup-25-de-ani /blog/florea-grup-25-de-ani 301
+/florea-grup-25-de-ani/ /blog/florea-grup-25-de-ani 301
 /modele-de-pavaje-pentru-curti-avantajele-mixurilor /blog/modele-de-pavaje-pentru-curti-avantajele-mixurilor 301
+/modele-de-pavaje-pentru-curti-avantajele-mixurilor/ /blog/modele-de-pavaje-pentru-curti-avantajele-mixurilor 301
 /de-ce-sa-ai-alaturi-o-femeie-atunci-cand-iti-amenajezi-gradina /blog/de-ce-sa-ai-alaturi-o-femeie-atunci-cand-iti-amenajezi-gradina 301
+/de-ce-sa-ai-alaturi-o-femeie-atunci-cand-iti-amenajezi-gradina/ /blog/de-ce-sa-ai-alaturi-o-femeie-atunci-cand-iti-amenajezi-gradina 301
 /cum-construiesti-un-gard /blog/cum-construiesti-un-gard 301
+/cum-construiesti-un-gard/ /blog/cum-construiesti-un-gard 301
 /de-inceput-de-an /blog/de-inceput-de-an 301
+/de-inceput-de-an/ /blog/de-inceput-de-an 301
 /aranjament-pentru-masa-de-craciun /blog/aranjament-pentru-masa-de-craciun 301
+/aranjament-pentru-masa-de-craciun/ /blog/aranjament-pentru-masa-de-craciun 301
 /aranjament-de-craciun-in-boltar /blog/aranjament-de-craciun-in-boltar 301
+/aranjament-de-craciun-in-boltar/ /blog/aranjament-de-craciun-in-boltar 301
 /jardiniera-de-iarna /blog/jardiniera-de-iarna 301
+/jardiniera-de-iarna/ /blog/jardiniera-de-iarna 301
 /intretinerea-pavajului-pe-timp-de-iarna /blog/intretinerea-pavajului-pe-timp-de-iarna 301
+/intretinerea-pavajului-pe-timp-de-iarna/ /blog/intretinerea-pavajului-pe-timp-de-iarna 301
 /tendintele-sezonului-in-amenajarea-aleilor /blog/tendintele-sezonului-in-amenajarea-aleilor 301
+/tendintele-sezonului-in-amenajarea-aleilor/ /blog/tendintele-sezonului-in-amenajarea-aleilor 301
 /florea-pavaje-devine-petra-pavaje /blog/florea-pavaje-devine-petra-pavaje 301
-
-# ---------------------------------------------------------------------------
-# SPA fallback -- explicit allowlist instead of a blanket catch-all.
-# A bare "/* /index.html 200" made every nonexistent URL a soft 404 (real
-# HTTP 200 serving the app shell), per the SEO audit finding. This list is
-# every top-level route segment from src/router.tsx; anything NOT under one
-# of these actually 404s now.
-# ---------------------------------------------------------------------------
-/ /index.html 200
-
-# Leaf routes (no nested :param children in router.tsx) -- exact match only,
-# no wildcard needed. Kept as plain (non-dynamic) rules to stay well under
-# Cloudflare Pages' 100 dynamic-redirect budget.
-/bloc-de-zid /index.html 200
-/boltari /index.html 200
-/brosuri /index.html 200
-/calculator-pavaj /index.html 200
-/cariera /index.html 200
-/catalog /index.html 200
-/compania /index.html 200
-/confidentialitate /index.html 200
-/contact /index.html 200
-/cookie-uri /index.html 200
-/degivrare /index.html 200
-/despre-noi /index.html 200
-/documente /index.html 200
-/elemente /index.html 200
-/faq /index.html 200
-/florea-grup /index.html 200
-/garantie /index.html 200
-/intretinere /index.html 200
-/jardiniere /index.html 200
-/laborator /index.html 200
-/modele-de-montaj /index.html 200
-/montaj /index.html 200
-/palisada /index.html 200
-/rigole /index.html 200
-/sustenabilitate /index.html 200
-/termeni /index.html 200
-/treapta /index.html 200
-/tur-virtual /index.html 200
-
-# Routes with real :param children -- need the wildcard.
-/blog /index.html 200
-/pavaje-premium /index.html 200
-/pavaje-standard /index.html 200
-/borduri /index.html 200
-/garduri /index.html 200
-/elemente-de-canalizare /index.html 200
-/woodstone-lemn-pietrificat /index.html 200
-/produse /index.html 200
+/florea-pavaje-devine-petra-pavaje/ /blog/florea-pavaje-devine-petra-pavaje 301
 
 # ---------------------------------------------------------------------------
 # Dynamic rules (splat). MUST stay below every static rule: once Pages sees a
@@ -235,14 +269,3 @@
 /concurs-regulament/* / 301
 /petra-paste-2026/* / 301
 /utile/* / 301
-/blog/* /index.html 200
-/pavaje-premium/* /index.html 200
-/pavaje-standard/* /index.html 200
-/borduri/* /index.html 200
-/garduri/* /index.html 200
-/elemente-de-canalizare/* /index.html 200
-/woodstone-lemn-pietrificat/* /index.html 200
-/produse/* /index.html 200
-
-# Anything else: genuinely not a route -> real 404, not a soft one.
-/* /index.html 404
