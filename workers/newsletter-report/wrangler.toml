@@ -1,0 +1,13 @@
+name = "petrapavaje-newsletter-report"
+main = "src/index.ts"
+compatibility_date = "2026-05-19"
+
+[triggers]
+# Runs at 06:00 UTC (08:00/09:00 Romania time) on the 1st of every month,
+# reporting the previous calendar month's new subscribers.
+crons = ["0 6 1 * *"]
+
+[[d1_databases]]
+binding = "NEWSLETTER_DB"
+database_name = "petrapavaje-newsletter"
+database_id = "169de40a-cfd8-4167-bd1b-a930cd32b613"
