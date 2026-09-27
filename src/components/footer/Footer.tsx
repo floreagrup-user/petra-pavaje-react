@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { MapPin, ArrowRight, Download } from 'lucide-react'
 import { footerLinks, enFooterLinks, socialLinks } from '@/data/menu'
@@ -37,6 +38,26 @@ export function Footer() {
   const location = useLocation()
   const isEnglish = isEnglishPath(location.pathname)
   const links = isEnglish ? enFooterLinks : footerLinks
+
+  const [newsletterEmail, setNewsletterEmail] = useState('')
+  const [newsletterStatus, setNewsletterStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
+
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setNewsletterStatus('submitting')
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: newsletterEmail, source: 'footer' }),
+      })
+      if (!res.ok) throw new Error('Request failed')
+      setNewsletterStatus('success')
+      setNewsletterEmail('')
+    } catch {
+      setNewsletterStatus('error')
+    }
+  }
 
   return (
     <footer className="bg-charcoal-900 text-white">
@@ -168,16 +189,39 @@ export function Footer() {
                 ? 'Subscribe to our newsletter for product news and special offers.'
                 : 'Abonează-te la newsletter pentru noutăți despre produse și oferte speciale.'}
             </p>
-            <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="email"
-                placeholder="Email"
-                className="flex-1 px-3 py-2 bg-white/10 border border-white/20 rounded-md text-sm text-white placeholder-white/50 focus:outline-none focus:border-white/50 transition-colors"
-              />
-              <button type="submit" className="px-4 py-2 bg-brand-600 text-white text-sm rounded-md hover:bg-brand-700 transition-colors">
-                {isEnglish ? 'Subscribe' : 'Abonare'}
-              </button>
-            </form>
+            {newsletterStatus === 'success' ? (
+              <p className="text-sm text-brand-200">
+                {isEnglish ? 'Subscribed! Thank you.' : 'Te-ai abonat! Mulțumim.'}
+              </p>
+            ) : (
+              <form className="flex gap-2" onSubmit={handleNewsletterSubmit}>
+                <input
+                  type="email"
+                  required
+                  placeholder="Email"
+                  value={newsletterEmail}
+                  onChange={(e) => setNewsletterEmail(e.target.value)}
+                  disabled={newsletterStatus === 'submitting'}
+                  className="flex-1 px-3 py-2 bg-white/10 border border-white/20 rounded-md text-sm text-white placeholder-white/50 focus:outline-none focus:border-white/50 transition-colors disabled:opacity-60"
+                />
+                <button
+                  type="submit"
+                  disabled={newsletterStatus === 'submitting'}
+                  className="px-4 py-2 bg-brand-600 text-white text-sm rounded-md hover:bg-brand-700 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                >
+                  {newsletterStatus === 'submitting'
+                    ? (isEnglish ? 'Sending...' : 'Se trimite...')
+                    : (isEnglish ? 'Subscribe' : 'Abonare')}
+                </button>
+              </form>
+            )}
+            {newsletterStatus === 'error' && (
+              <p className="text-sm text-red-300 mt-2">
+                {isEnglish
+                  ? 'Something went wrong. Please try again.'
+                  : 'A apărut o eroare. Te rugăm încearcă din nou.'}
+              </p>
+            )}
           </div>
         </div>
       </div>
