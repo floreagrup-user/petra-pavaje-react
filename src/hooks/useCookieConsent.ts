@@ -5,7 +5,11 @@ declare global {
     zaraz?: {
       track: (eventName: string, params?: Record<string, unknown>) => void
       consent?: {
-        setAll: (status: Record<string, boolean>) => void
+        // setAll() exists but throws "Invalid value for purpose ...: [object
+        // Object]" on this Zaraz version even with a plain boolean map --
+        // confirmed live in browser console. set() takes the identical
+        // {purposeId: boolean} shape and works, so that's what's used here.
+        set: (status: Record<string, boolean>) => void
       }
     }
   }
@@ -46,7 +50,7 @@ const ZARAZ_PURPOSE_IDS = {
 } as const
 
 function pushConsentToZaraz(consent: CookieConsent) {
-  window.zaraz?.consent?.setAll({
+  window.zaraz?.consent?.set({
     [ZARAZ_PURPOSE_IDS.analytics]: consent.analytics,
     [ZARAZ_PURPOSE_IDS.marketing]: consent.marketing,
   })
