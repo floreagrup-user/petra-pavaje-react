@@ -513,8 +513,8 @@ export const elementCategories: ElementCategoryData[] = [
         name: 'Bloc de beton',
         variants: [
           { name: 'Bloc de beton 120×60×60', code: '2097', dimensions: '120×60×60 cm', piecesPerMl: 0.83, piecesPerPallet: 1050, piecesPerTruck: 23, weightKg: 1050 },
-          { name: 'Bloc de beton 60×60×60', code: '2098', dimensions: '60×60×60 cm', piecesPerMl: 1.66, piecesPerPallet: 500, weightKg: '—' },
-          { name: 'Bloc de beton terminație 180×60×60', code: '2125', dimensions: '180×60×60 cm', piecesPerMl: 0.55, weightKg: 1270 },
+          { name: 'Bloc de beton 60×60×60', code: '2098', dimensions: '60×60×60 cm', piecesPerMl: 1.66, piecesPerTruck: 46, weightKg: 500 },
+          { name: 'Bloc de beton terminație 180×60×60', code: '2125', dimensions: '180×60×60 cm', piecesPerMl: 0.55, piecesPerTruck: 19, weightKg: 1270 },
         ],
       },
     ],
