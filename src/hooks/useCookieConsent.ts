@@ -1,5 +1,16 @@
 import { useCallback, useEffect, useState } from 'react'
 
+declare global {
+  interface Window {
+    zaraz?: {
+      track: (eventName: string, params?: Record<string, unknown>) => void
+      consent?: {
+        setAll: (status: Record<string, boolean>) => void
+      }
+    }
+  }
+}
+
 export interface CookieConsent {
   necessary: true
   analytics: boolean
@@ -24,13 +35,10 @@ function readStoredConsent(): CookieConsent | null {
   }
 }
 
-function pushConsentToGtag(consent: CookieConsent) {
-  const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag
-  gtag?.('consent', 'update', {
-    analytics_storage: consent.analytics ? 'granted' : 'denied',
-    ad_storage: consent.marketing ? 'granted' : 'denied',
-    ad_user_data: consent.marketing ? 'granted' : 'denied',
-    ad_personalization: consent.marketing ? 'granted' : 'denied',
+function pushConsentToZaraz(consent: CookieConsent) {
+  window.zaraz?.consent?.setAll({
+    analytics: consent.analytics,
+    marketing: consent.marketing,
   })
 }
 
@@ -55,8 +63,30 @@ export function useCookieConsent() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify({ ...full, decidedAt: new Date().toISOString() }))
     setConsentState(full)
     setSettingsOpen(false)
-    pushConsentToGtag(full)
+    pushConsentToZaraz(full)
     window.dispatchEvent(new Event(CONSENT_CHANGE_EVENT))
+  }, [])
+
+  // Returning visitors already have a decision in localStorage, but Zaraz's
+  // own consent cookie only gets set by a saveConsent() call above -- sync
+  // the existing decision to Zaraz on mount so tools fire without the
+  // banner needing to reappear. Zaraz has no documented "ready" event, so
+  // this polls briefly for window.zaraz.consent to exist rather than
+  // risking a silent no-op if its loader hasn't run yet on first paint.
+  useEffect(() => {
+    const existing = readStoredConsent()
+    if (!existing) return
+    let attempts = 0
+    const interval = setInterval(() => {
+      attempts += 1
+      if (window.zaraz?.consent) {
+        pushConsentToZaraz(existing)
+        clearInterval(interval)
+      } else if (attempts >= 20) {
+        clearInterval(interval)
+      }
+    }, 200)
+    return () => clearInterval(interval)
   }, [])
 
   const acceptAll = useCallback(() => saveConsent({ analytics: true, marketing: true }), [saveConsent])

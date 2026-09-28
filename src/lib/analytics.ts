@@ -1,6 +1,7 @@
-// Thin wrapper around the GA4 gtag already wired up in index.html (see
-// useCookieConsent.ts for the consent-mode plumbing this respects).
+// Thin wrapper around Zaraz's client-side event tracking (see
+// useCookieConsent.ts for the consent plumbing this respects). Each event
+// name used here needs a matching Trigger configured in the Zaraz dashboard
+// to actually reach GA4 -- see project memory for the full list.
 export function trackEvent(name: string, params?: Record<string, unknown>) {
-  const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag
-  gtag?.('event', name, params)
+  window.zaraz?.track(name, params)
 }

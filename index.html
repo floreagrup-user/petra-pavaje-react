@@ -2,44 +2,12 @@
 <html lang="ro">
   <head>
     <meta charset="UTF-8" />
-    <!-- Google Consent Mode v2 defaults -- grants non-essential storage
-         from first load; the cookie banner can still downgrade it to
-         denied via consent('update', ...) if the visitor opts out. -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { window.dataLayer.push(arguments); }
-      gtag('consent', 'default', {
-        ad_storage: 'granted',
-        ad_user_data: 'granted',
-        ad_personalization: 'granted',
-        analytics_storage: 'granted',
-        wait_for_update: 500,
-      });
-      window.gtag = gtag;
-    </script>
-    <!-- Google Analytics (GA4) + Google Ads -- loaded once the page has
-         painted and gone idle, so it never competes with the LCP resource
-         for bandwidth/main-thread time on first load. gtag('consent',...)
-         above already queued before this runs, so consent state is correct
-         from the first real hit either tag sends. One gtag.js loader
-         serves both properties -- only the first config call needs the
-         script src, the second just registers the extra destination. -->
-    <script>
-      function loadAnalyticsScripts() {
-        var ga = document.createElement('script')
-        ga.async = true
-        ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-KF5RGNJQ5B'
-        document.head.appendChild(ga)
-        gtag('js', new Date())
-        gtag('config', 'G-KF5RGNJQ5B')
-        gtag('config', 'AW-972479851')
-      }
-      if ('requestIdleCallback' in window) {
-        window.addEventListener('load', function () { requestIdleCallback(loadAnalyticsScripts, { timeout: 4000 }) })
-      } else {
-        window.addEventListener('load', function () { setTimeout(loadAnalyticsScripts, 1) })
-      }
-    </script>
+    <!-- GA4 + Google Ads run through Cloudflare Zaraz (edge-proxied, first-party
+         context) instead of a direct gtag.js include -- Zaraz injects its own
+         loader automatically for this zone. Consent is driven by the site's
+         own cookie banner via zaraz.consent.setAll() in useCookieConsent.ts;
+         Zaraz's own consent modal is disabled in the dashboard so it never
+         double-prompts visitors. -->
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Pavaje Premium si Standard, Dale, Borduri, Boltari, Jardiniere, Garduri, Elemente de canalizare. Producator national cu 4 fabrici in Romania." />
@@ -61,10 +29,11 @@
     <meta name="twitter:title" content="Petra Pavaje - Producator Premium de Pavaje" />
     <meta name="twitter:description" content="Pavaje Premium si Standard, Dale, Borduri, Boltari, Jardiniere, Garduri." />
 
-    <!-- DNS & Preconnect (kept to 4: self-origin hints are a no-op, the
-         browser is already connecting here to fetch this document) -->
+    <!-- DNS & Preconnect (self-origin hints are a no-op, the browser is
+         already connecting here to fetch this document; googletagmanager.com
+         preconnect dropped -- GA4/Ads now load through Zaraz on this same
+         origin, not a separate googletagmanager.com connection) -->
     <link rel="preconnect" href="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev" />
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
 
     <!-- Preload LCP image (first hero slide) -->
     <link rel="preload" as="image" href="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/stretto-homepage.webp" fetchpriority="high" />
