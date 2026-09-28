@@ -27,5 +27,6 @@ export const authors: Author[] = [
       'În activitatea sa pentru Petra Pavaje, scrie articole despre pavaje, amenajarea curților și grădinilor și soluții pentru spațiile exterioare, cu preocuparea de a transforma informațiile despre produse în idei utile și ușor de aplicat. Pentru ea, un conținut bun este cel care îl ajută pe cititor să înțeleagă ce soluții are și în ce mod un produs se potrivește proiectului său.',
     ],
     photo: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/autori/mihaela-petruta.jpg',
+    linkedin: 'https://www.linkedin.com/in/mihaela-petruta/',
   },
 ]
