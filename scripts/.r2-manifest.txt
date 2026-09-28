@@ -2280,3 +2280,4 @@ web-prima-pagina-1-Medium.avif
 web-prima-pagina-2-Medium.avif
 woodstoone-Medium.avif
 autori/iulia-hladiuc.jpg
+autori/mihaela-petruta.jpg
