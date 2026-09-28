@@ -35,10 +35,20 @@ function readStoredConsent(): CookieConsent | null {
   }
 }
 
+// Zaraz auto-generates a random purpose ID on creation, unrelated to the
+// name typed in the dashboard -- these are the real IDs behind "Analiza
+// trafic" and "Marketing" in Consent settings for petrapavaje.ro. If a
+// purpose is ever deleted and recreated there, its ID changes and this
+// map must be updated to match, or consent silently stops reaching Zaraz.
+const ZARAZ_PURPOSE_IDS = {
+  analytics: 'FZZz',
+  marketing: 'LkGG',
+} as const
+
 function pushConsentToZaraz(consent: CookieConsent) {
   window.zaraz?.consent?.setAll({
-    analytics: consent.analytics,
-    marketing: consent.marketing,
+    [ZARAZ_PURPOSE_IDS.analytics]: consent.analytics,
+    [ZARAZ_PURPOSE_IDS.marketing]: consent.marketing,
   })
 }
 
