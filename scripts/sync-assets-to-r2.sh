@@ -34,7 +34,7 @@ while IFS= read -r url; do
   localpath="$TMPDIR/$key"
   mkdir -p "$(dirname "$localpath")"
   if curl -sL -A "Mozilla/5.0" -f "$url" -o "$localpath"; then
-    if npx wrangler r2 object put "$BUCKET/$key" --file="$localpath" --remote >/dev/null 2>&1; then
+    if npx wrangler r2 object put "$BUCKET/$key" --file="$localpath" --cache-control "public, max-age=31536000, immutable" --remote >/dev/null 2>&1; then
       echo "$key" >> "$MANIFEST"
       echo "NEW  $key"
       new_count=$((new_count + 1))

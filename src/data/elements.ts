@@ -20,7 +20,7 @@ export const elementCategories: ElementCategoryData[] = [
     shortDescription: 'Sistem Eficient de Drenaj',
     description:
       'Rigola reprezintă o amenajare specială făcută de-a lungul străzilor, între marginea părții carosabile și bordura trotuarelor, având un rol esențial în gestionarea eficientă a apelor pluviale. Formele și dimensiunile variate le fac ușor adaptabile oricărui tip de pavaj sau suprafață — de la alei pietonale la parcări și zone cu trafic auto greu.',
-    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/2020/06/rigola-1200x800-1.jpg',
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/2020/06/rigola-1200x800-1.avif',
     gallery: [],
     heroFeatures: ['11 formate', '3 culori', 'Garanție 5 ani'],
     colors: [COLOR.gri, COLOR.rosu, COLOR.negru],
