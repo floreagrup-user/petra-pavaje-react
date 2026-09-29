@@ -4,6 +4,7 @@ import { Phone, Mail, MapPin, Clock, Navigation, Send, CheckCircle } from 'lucid
 import { getRepByCounty, factories } from '@/data/site'
 import { trackEvent } from '@/lib/analytics'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, upsertHreflangPair, resetSEO } from '@/hooks/seo-utils'
+import { useTurnstile } from '@/hooks/useTurnstile'
 
 const counties = [
   { label: 'Alba', code: 'AB' }, { label: 'Arad', code: 'AR' }, { label: 'Argeș', code: 'AG' },
@@ -28,6 +29,7 @@ export function ContactPageEN() {
   const [submitting, setSubmitting] = useState(false)
   const [submitError, setSubmitError] = useState(false)
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '', gdpr: false })
+  const { containerRef: turnstileRef, getToken: getTurnstileToken } = useTurnstile()
 
   const rep = selectedCounty ? getRepByCounty(selectedCounty) : null
 
@@ -68,6 +70,7 @@ export function ContactPageEN() {
     setSubmitError(false)
 
     try {
+      const turnstileToken = await getTurnstileToken()
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -80,6 +83,7 @@ export function ContactPageEN() {
           type: 'contact',
           repEmail: rep?.email,
           repName: rep?.name,
+          turnstileToken,
         }),
       })
 
@@ -245,6 +249,7 @@ export function ContactPageEN() {
                       Something went wrong while sending your message. Please try again or call us directly.
                     </p>
                   )}
+                  <div ref={turnstileRef} />
                   <button type="submit" disabled={submitting} className="btn-primary w-full justify-center group disabled:opacity-60 disabled:cursor-not-allowed">
                     <Send className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
                     {submitting ? 'Sending…' : 'Send Message'}

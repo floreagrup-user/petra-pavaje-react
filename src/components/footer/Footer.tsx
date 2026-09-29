@@ -4,6 +4,7 @@ import { MapPin, ArrowRight, Download } from 'lucide-react'
 import { footerLinks, enFooterLinks, socialLinks } from '@/data/menu'
 import { factories } from '@/data/site'
 import { openCookieSettings } from '@/hooks/useCookieConsent'
+import { useTurnstile } from '@/hooks/useTurnstile'
 import { isEnglishPath } from '@/lib/i18n-routes'
 
 const SocialIcon = ({ name, className }: { name: string; className?: string }) => {
@@ -41,15 +42,17 @@ export function Footer() {
 
   const [newsletterEmail, setNewsletterEmail] = useState('')
   const [newsletterStatus, setNewsletterStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
+  const { containerRef: turnstileRef, getToken: getTurnstileToken } = useTurnstile()
 
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setNewsletterStatus('submitting')
     try {
+      const turnstileToken = await getTurnstileToken()
       const res = await fetch('/api/newsletter', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: newsletterEmail, source: 'footer' }),
+        body: JSON.stringify({ email: newsletterEmail, source: 'footer', turnstileToken }),
       })
       if (!res.ok) throw new Error('Request failed')
       setNewsletterStatus('success')
@@ -195,6 +198,7 @@ export function Footer() {
               </p>
             ) : (
               <form className="flex gap-2" onSubmit={handleNewsletterSubmit}>
+                <div ref={turnstileRef} />
                 <input
                   type="email"
                   required

@@ -1,3 +1,5 @@
+import { verifyTurnstile } from './_turnstile'
+
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 export async function onRequestPost(context: any) {
@@ -10,6 +12,18 @@ export async function onRequestPost(context: any) {
         JSON.stringify({ error: 'A valid email is required' }),
         { status: 400, headers: { 'Content-Type': 'application/json' } }
       )
+    }
+
+    const { TURNSTILE_SECRET_KEY } = context.env
+    if (TURNSTILE_SECRET_KEY) {
+      const remoteIp = context.request.headers.get('CF-Connecting-IP') || undefined
+      const humanVerified = await verifyTurnstile(body?.turnstileToken, TURNSTILE_SECRET_KEY, remoteIp)
+      if (!humanVerified) {
+        return new Response(
+          JSON.stringify({ error: 'Verification failed' }),
+          { status: 403, headers: { 'Content-Type': 'application/json' } }
+        )
+      }
     }
 
     const db = context.env.NEWSLETTER_DB

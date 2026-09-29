@@ -3,6 +3,8 @@
 // over its REST API with a hand-rolled AWS SigV4 signature (Web Crypto only,
 // no AWS SDK — the SDK's Node dependencies don't run in the Workers runtime).
 
+import { verifyTurnstile } from './_turnstile'
+
 async function hmac(key: ArrayBuffer | Uint8Array, data: string): Promise<ArrayBuffer> {
   const cryptoKey = await crypto.subtle.importKey('raw', key as BufferSource, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign'])
   return crypto.subtle.sign('HMAC', cryptoKey, new TextEncoder().encode(data))
@@ -64,7 +66,7 @@ function escapeHtml(value: string): string {
 export async function onRequestPost(context: any) {
   try {
     const body = await context.request.json()
-    const { name, email, phone, county, message, type, repEmail, repName } = body
+    const { name, email, phone, county, message, type, repEmail, repName, turnstileToken } = body
 
     if (!name || !email) {
       return new Response(
@@ -73,7 +75,18 @@ export async function onRequestPost(context: any) {
       )
     }
 
-    const { AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_SES_REGION } = context.env
+    const { AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_SES_REGION, TURNSTILE_SECRET_KEY } = context.env
+
+    if (TURNSTILE_SECRET_KEY) {
+      const remoteIp = context.request.headers.get('CF-Connecting-IP') || undefined
+      const humanVerified = await verifyTurnstile(turnstileToken, TURNSTILE_SECRET_KEY, remoteIp)
+      if (!humanVerified) {
+        return new Response(
+          JSON.stringify({ error: 'Verification failed' }),
+          { status: 403, headers: { 'Content-Type': 'application/json' } }
+        )
+      }
+    }
 
     if (!AWS_ACCESS_KEY_ID || !AWS_SECRET_ACCESS_KEY) {
       console.error('AWS SES credentials are not configured - contact form message was not emailed')
