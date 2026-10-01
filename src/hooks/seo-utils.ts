@@ -83,5 +83,6 @@ export function resetSEO() {
   upsertJsonLd('faq-schema', null)
   upsertJsonLd('breadcrumb-schema', null)
   upsertJsonLd('itemlist-schema', null)
+  upsertJsonLd('jobs-schema', null)
   clearHreflang()
 }

@@ -7,6 +7,8 @@ import {
 } from 'lucide-react'
 import { factories } from '@/data/site'
 import { trackEvent } from '@/lib/analytics'
+import { JobsSection } from '@/components/careers/JobsSection'
+import { jobPostingSchema } from '@/data/jobs'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, upsertHreflangPair, resetSEO } from '@/hooks/seo-utils'
 
 const STATS = [
@@ -64,8 +66,16 @@ export function CarieraPageEN() {
       ],
     })
 
+    upsertJsonLd('jobs-schema', jobPostingSchema('en'))
+
     return resetSEO
   }, [])
+
+  const handleApply = (jobTitle: string) => {
+    setFormData((prev) => ({ ...prev, position: jobTitle }))
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    document.getElementById('aplica')?.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' })
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -125,7 +135,9 @@ export function CarieraPageEN() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20">
+      <JobsSection locale="en" onApply={handleApply} />
+
+      <section className="py-16 md:py-20 bg-charcoal-50">
         <div className="container-premium">
           <div className="grid sm:grid-cols-3 gap-6">
             {HIGHLIGHTS.map((item) => {
@@ -210,7 +222,7 @@ export function CarieraPageEN() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-charcoal-50">
+      <section id="aplica" className="py-16 md:py-24 bg-charcoal-50 scroll-mt-24">
         <div className="container-premium">
           <div className="grid lg:grid-cols-2 gap-12 items-start max-w-4xl mx-auto">
             <div>
