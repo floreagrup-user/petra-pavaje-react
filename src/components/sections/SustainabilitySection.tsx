@@ -116,7 +116,7 @@ export function SustainabilitySection() {
           >
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-premium" style={{ aspectRatio: '4/3' }}>
               <img
-                src="https://petrapavaje.ro/wp-content/uploads/energie-verde-si-emsii-0-web1-1.avif"
+                src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/energie-verde-si-emsii-0-web1-1.avif"
                 alt={isEnglish ? 'Petra Pavaje sustainability' : 'Sustenabilitate Petra Pavaje'}
                 width="800"
                 height="600"
