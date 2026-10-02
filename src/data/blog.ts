@@ -2,6 +2,211 @@ import type { BlogPost } from '@/data/types'
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '29002',
+    title: `Pavaj gri sau colorat`,
+    slug: 'pavaj-gri-sau-colorat',
+    excerpt: `Pavaj gri sau colorat? Află când un pavaj gri poate fi premium, când merită un pavaj colorat, cum contează formatele și de ce culoarea nu influențează rezistența.`,
+    content: `<p>
+Atunci când amenajezi o curte, o alee, o terasă sau un spațiu urban, una dintre primele întrebări este: merită să alegi pavaj gri sau este mai potrivit un pavaj colorat?
+</p>
+
+<p>
+Desigur, pavajul gri, standard, e mai atractiv ca preț, dar pavajul colorat atrage prin estetică. Răspunsul la ce pavaj să alegi depinde în primul rând de felul în care acesta este integrat în proiect. Un pavaj gri, standard, poate face parte fără probleme dintr-o amenajare premium, dacă este ales și montat într-o compoziție bine gândită.
+</p>
+
+<p>
+La Petra Pavaje considerăm că un proiect reușit nu înseamnă neapărat folosirea celui mai colorat sau mai sofisticat pavaj, ci alegerea produselor potrivite pentru arhitectura spațiului, vegetație și stilul general al amenajării.
+</p>
+
+<h2>Pavajul gri poate fi premium?</h2>
+
+<p>
+Da. Pavajul gri, standard, precum <a href="https://petrapavaje.ro/pavaje-standard/holland">Holland</a> sau <a href="https://petrapavaje.ro/pavaje-standard/quatro">Quatro</a>, poate fi utilizat și în amenajări premium.
+</p>
+
+<p>
+Griul este o culoare neutră, care poate pune în valoare atât arhitectura curții, cât și vegetația existentă sau care urmează să fie plantată. Într-un proiect peisagistic bine conceput, suprafața pavată nu trebuie să fie neapărat elementul care atrage cel mai mult atenția.
+</p>
+
+<p>
+De multe ori, diferența dintre o amenajare obișnuită și una premium este dată de proporțiile dintre pavaj, spațiul verde, mobilierul de grădină, volumetria clădirii și vegetație. Mai mult, poți folosi pavajul pentru a crea volum și ridicări, produse ca <a href="https://petrapavaje.ro/pavaje-premium/primo">Primo</a> sau <a href="https://petrapavaje.ro/bloc-de-zid">Elementele de Zid</a> fiind foarte populare pentru crearea băncuțelor, a zidurilor sau a altor elemente din grădină.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaj-gri-sau-colorat/femeie-asezata-pe-un-zid-din-blocuri-de-zid.avif" alt="Femeie care citește o revistă, așezată pe un zid din blocuri de zid, între doi stâlpi" width="1600" height="1336" loading="lazy" decoding="async">
+<figcaption>Elementele de zid pot crea ziduri, stâlpi și băncuțe în grădină.</figcaption>
+</figure>
+
+<p>
+Un pavaj gri simplu poate căpăta un aspect elegant atunci când este combinat cu zone verzi bine delimitate, arbori, arbuști și plante perene. Astfel, pavajul devine parte dintr-un ansamblu, nu doar o suprafață funcțională.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaj-gri-sau-colorat/pavaj-gri-cu-model-de-impanare-langa-gazon.avif" alt="Pavaj gri cu model de împănare, lângă un gazon delimitat de o bordură" width="1600" height="1066" loading="lazy" decoding="async">
+<figcaption>Un pavaj gri, bine integrat lângă spațiul verde, rămâne elegant.</figcaption>
+</figure>
+
+<h2>Când merită să alegi pavaj colorat?</h2>
+
+<p>
+Pavajul colorat poate fi o alegere potrivită atunci când se dorește un anumit efect vizual. Gama largă de nuanțe din portofoliul Petra Pavaje oferă câte o soluție pentru toate gusturile.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaj-gri-sau-colorat/bunic-si-copii-deseneaza-cu-creta-pe-pavaj-colorat.avif" alt="Bunic și doi copii care desenează cu creta pe un pavaj din pavele în nuanțe de gri, bej și gri-albastru" width="1067" height="1600" loading="lazy" decoding="async" style="max-width:min(100%,420px);margin-inline:auto">
+<figcaption>Un pavaj în nuanțe mixte dă personalitate unei alei.</figcaption>
+</figure>
+
+<p>
+Totuși, în cazul pavajelor premium, diferența nu este dată doar de culoare. Formatele, textura suprafeței și posibilitățile de montaj pot avea un impact mult mai important asupra aspectului final.
+</p>
+
+<p>
+Există pavaje premium cu formate și finisaje care nu sunt disponibile în variantele standard. Acestea oferă peisagiștilor, arhitecților și urbaniștilor mai multe posibilități pentru compunerea suprafețelor.
+</p>
+
+<h2>Formatele speciale pot transforma aspectul unei amenajări</h2>
+
+<p>
+Un exemplu îl reprezintă pavajul <a href="https://petrapavaje.ro/pavaje-premium/stretto">Stretto</a>, cu aspect de parchet și dimensiunea de 24 × 6 × 7 cm, sau <a href="https://petrapavaje.ro/pavaje-premium/roca">Roca</a>, 40 × 10 × 6 cm. Aceste formate înguste sunt cele mai noi produse din portofoliul Petra Pavaje și pot fi montate inclusiv în model herringbone (os de pește), un tip de dispunere tot mai căutat în proiectele realizate de peisagiști, arhitecți și urbaniști.
+</p>
+
+<p>
+În proiectele contemporane sunt căutate și plăcile de dimensiuni mari, care reduc vizual numărul de rosturi și pot crea o imagine mai aerisită. Gama <a href="https://petrapavaje.ro/pavaje-premium/grand-urban">Grand Urban</a> include plăci cu dimensiuni de până la 1 × 0,50 m, precum și formatul 80 × 40 cm.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaj-gri-sau-colorat/piata-cu-fantana-si-placi-mari-de-pavaj-gri.avif" alt="Piață cu fântână și bănci, pavată cu plăci mari de pavaj gri" width="1600" height="1066" loading="lazy" decoding="async">
+<figcaption>Plăcile mari reduc vizual numărul de rosturi și dau o imagine aerisită.</figcaption>
+</figure>
+
+<p>
+Aceste dimensiuni pot fi potrivite în special pentru amenajări în care se urmărește un aspect modern, cu suprafețe ample și linii vizuale clare.
+</p>
+
+<p>
+Pentru arhitecți și peisagiști, formatele mari oferă și posibilitatea de a trata pavajul ca pe un element important al compoziției, nu doar ca pe o soluție tehnică pentru acoperirea unei suprafețe.
+</p>
+
+<h2>Pavajele Color Lock: culoarea este pusă mai bine în valoare pe formate mari</h2>
+
+<p>
+O situație aparte o reprezintă pavajele Color Lock, cu suprafață spălată și culori în degrade.
+</p>
+
+<p>
+În cazul acestora, formatul plăcii are un rol important în percepția rezultatului final.
+</p>
+
+<p>
+Pe plăcile mari, variațiile de nuanță de la nivelul suprafeței sunt mai bine evidențiate. Tocmai de aceea, pentru proiectele în care se dorește ca textura și variația cromatică să fie vizibile, formatele mari pot fi o alegere mai potrivită.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaj-gri-sau-colorat/placi-mari-de-pavaj-bej-detaliu-rosturi.avif" alt="Plăci mari de pavaj bej, cu rosturi largi, pe care sunt lăsate câteva reviste și un rucsac" width="1600" height="1066" loading="lazy" decoding="async">
+<figcaption>Pe plăcile mari, variațiile de nuanță și textura se văd mai bine.</figcaption>
+</figure>
+
+<p>
+Din acest motiv, specialiștii Petra Pavaje recomandă ca pavajele de dimensiuni mici și cu suprafață spălată să fie folosite mai ales pentru diversificarea suprafeței și completarea zonelor mici (trotuare înguste, colțuri etc.), nu neapărat ca pavaj principal pentru întreaga amenajare.
+</p>
+
+<p>
+Iar tocmai din acest motiv, în <a href="https://petrapavaje.ro/pavaje-premium">gama premium</a> Petra Pavaje, regăsiți mixuri de pavaje. Game precum <a href="https://petrapavaje.ro/pavaje-premium/mistic">Mistic</a>, Roca, <a href="https://petrapavaje.ro/pavaje-premium/mediterana">Mediterana</a> și <a href="https://petrapavaje.ro/pavaje-premium/maya">Maya</a> oferă posibilități suplimentare de amenajare prin formate, texturi și combinații diferite prin formatele 7.9, 6.30 (drept sau ondulat), 5.28 sau 6.14. Aceste mixuri de pavaje, disponibile doar pentru gama premium, conțin pe un tact mai multe dimensiuni, astfel încât amenajarea să fie una dinamică.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaj-gri-sau-colorat/alee-curba-din-pavaj-mix-maro-bej-langa-casa.avif" alt="Alee curbă din pavele maro și bej, cu pietriș alb și arbuști, lângă o casă cu garaj" width="1600" height="1066" loading="lazy" decoding="async">
+<figcaption>Mixurile de pavaje combină mai multe dimensiuni în aceeași suprafață.</figcaption>
+</figure>
+
+<p>
+Nu înseamnă însă că un pavaj standard este inferior din punct de vedere estetic.
+</p>
+
+<h2>Cum creezi o amenajare premium în curtea ta, cu orice tip de pavaj</h2>
+
+<h3>Alege pavaj gri dacă:</h3>
+
+<ul>
+<li>vrei o bază neutră pentru o amenajare cu multă vegetație;</li>
+<li>arhitectura casei este deja expresivă și nu vrei să încarci vizual spațiul;</li>
+<li>urmărești un aspect contemporan și discret;</li>
+<li>vrei să poți schimba ulterior mobilierul sau elementele decorative fără ca pavajul să intre în conflict cu acestea;</li>
+<li>intenționezi să folosești vegetația ca principal element decorativ.</li>
+</ul>
+
+<h3>Alege un pavaj premium cu textură sau variații de culoare dacă:</h3>
+
+<ul>
+<li>vrei ca suprafața pavată să aibă un rol vizual important;</li>
+<li>proiectul permite utilizarea unor formate speciale;</li>
+<li>vrei să creezi modele de montaj deosebite (parchet, herring bone etc.);</li>
+<li>urmărești o amenajare în care textura pavajului este parte din concept (pavajul <a href="https://petrapavaje.ro/pavaje-premium/relief">Relief</a> sau <a href="https://petrapavaje.ro/pavaje-premium/alpin">Alpin</a> te pot ajuta să creezi acest efect);</li>
+<li>vrei să folosești plăci mari pentru a evidenția variațiile de culoare și finisaj.</li>
+</ul>
+
+<h2>Culoarea pavajului influențează rezistența?</h2>
+
+<p>
+Nu. Culoarea pavajului nu determină rezistența acestuia.
+</p>
+
+<p>
+Rezistența și conformitatea produselor țin de caracteristicile tehnice și de respectarea cerințelor aplicabile, nu de faptul că pavajul este gri, colorat sau are o anumită nuanță.
+</p>
+
+<p>
+La Petra Pavaje, toate pavajele sunt analizate într-un <a href="https://petrapavaje.ro/laborator">laborator de construcții certificat</a> și respectă normele aplicabile.
+</p>
+
+<p>
+În plus, pentru toate modelele de pavaje Petra Pavaje se oferă <a href="https://petrapavaje.ro/garantie">garanție de 5 ani</a>, indiferent dacă este vorba despre un model standard sau unul din gama premium.
+</p>
+
+<p>
+Prin urmare, alegerea între gri și colorat ar trebui făcută în primul rând în funcție de buget, design, format, textură, modul de montaj și relația dintre suprafața pavată și spațiul verde, nu pornind de la ideea că o anumită culoare ar face pavajul mai rezistent.
+</p>
+
+<h2>Concluzie: pavajul premium înseamnă mai mult decât culoare</h2>
+
+<p>
+Întrebarea „pavaj gri sau colorat?" nu are un singur răspuns.
+</p>
+
+<p>
+Un pavaj gri standard poate fi o alegere premium atunci când este integrat într-un proiect peisagistic bine realizat. Un produs precum Holland, <a href="https://petrapavaje.ro/pavaje-standard/pavaje-eco">Eco</a> sau Quatro poate crea o bază discretă pentru vegetație, arhitectură și mobilier exterior.
+</p>
+
+<p>
+Pe de altă parte, gama premium deschide posibilități suplimentare prin formate exclusive, plăci mari, texturi, variații cromatice și modele de montaj. Stretto, Roca, Relief, Grand Urban, Mistic, Mediterana sau Maya pot deveni elemente importante în proiectele în care pavajul are un rol estetic mai pronunțat.
+</p>
+
+<p>
+În final, nu culoarea face singură o amenajare premium. Rezultatul depinde de modul în care pavajul este combinat cu arhitectura, spațiul verde și vegetația.
+</p>
+
+<p>
+Iar atunci când suprafața pavată și vegetația sunt gândite împreună, inclusiv prin folosirea unor plante perene și native zonei, chiar și un pavaj gri, aparent simplu, poate face parte dintr-o amenajare cu un caracter premium și contemporan.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaj-gri-sau-colorat/pavaj-patrat-cu-iarba-in-rosturi.avif" alt="Pavele pătrate cu iarbă crescută în rosturile dintre ele" width="1600" height="1066" loading="lazy" decoding="async">
+<figcaption>Atunci când pavajul și vegetația sunt gândite împreună, rezultatul are caracter.</figcaption>
+</figure>`,
+    date: '2026-10-02T09:00:00',
+    author: 'Iulia Hladiuc',
+    authorSlug: 'iulia-hladiuc',
+    categories: ['ghiduri'],
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaj-gri-sau-colorat/pavaj-gri-sau-colorat-femeie-langa-casa-cu-pavaj-mix.jpg',
+    readTime: 6,
+    seo: {
+      title: `Pavaj gri sau colorat? Cum alegi pavajul potrivit`,
+      description: `Pavaj gri sau colorat? Află când un pavaj gri poate fi premium, când merită pavajul colorat și de ce culoarea nu influențează rezistența.`,
+      canonical: 'https://petrapavaje.ro/blog/pavaj-gri-sau-colorat',
+    },
+  },
+  {
     id: '29001',
     title: `Pavaje de 6 sau de 8 cm`,
     slug: 'pavaje-de-6-sau-de-8-cm',
