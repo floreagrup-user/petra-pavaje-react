@@ -226,6 +226,55 @@
 /florea-pavaje-devine-petra-pavaje/ /blog/florea-pavaje-devine-petra-pavaje 301
 
 # ---------------------------------------------------------------------------
+# Legacy WordPress paths still linked from old blog posts and external sites.
+# Each static rule has a with- and without-trailing-slash form. The matching
+# catch-alls (/pavaje-clasice/*, /pavaje-premium/quatro/*, /bg/*, /hu/*) sit in
+# the dynamic section below.
+# ---------------------------------------------------------------------------
+/pavaje-clasice/alpin /pavaje-premium/alpin 301
+/pavaje-clasice/alpin/ /pavaje-premium/alpin 301
+/pavaje-clasice/antic /pavaje-premium/antic 301
+/pavaje-clasice/antic/ /pavaje-premium/antic 301
+/pavaje-clasice/mediterana /pavaje-premium/mediterana 301
+/pavaje-clasice/mediterana/ /pavaje-premium/mediterana 301
+/pavaje-clasice/mistic /pavaje-premium/mistic 301
+/pavaje-clasice/mistic/ /pavaje-premium/mistic 301
+/pavaje-clasice/primo /pavaje-premium/primo 301
+/pavaje-clasice/primo/ /pavaje-premium/primo 301
+/pavaje-clasice/roca /pavaje-premium/roca 301
+/pavaje-clasice/roca/ /pavaje-premium/roca 301
+/pavaje-clasice/roman /pavaje-premium/roman 301
+/pavaje-clasice/roman/ /pavaje-premium/roman 301
+/pavaje-clasice/sahara /pavaje-premium/sahara 301
+/pavaje-clasice/sahara/ /pavaje-premium/sahara 301
+/pavaje-clasice/viena /pavaje-premium/viena 301
+/pavaje-clasice/viena/ /pavaje-premium/viena 301
+/pavaje-clasice/holland /pavaje-standard/holland 301
+/pavaje-clasice/holland/ /pavaje-standard/holland 301
+/pavaje-clasice /pavaje-premium 301
+/pavaje-clasice/ /pavaje-premium 301
+/pavaje-premium/quatro /pavaje-standard/quatro 301
+/pavaje-premium/quatro/ /pavaje-standard/quatro 301
+/pavaje-premium/quatro/quatro-10x10x6 /pavaje-standard/quatro/quatro-10x10x6 301
+/pavaje-premium/quatro/quatro-10x10x6/ /pavaje-standard/quatro/quatro-10x10x6 301
+/pavaje-standard/grila /pavaje-standard/pavaje-eco 301
+/pavaje-standard/grila/ /pavaje-standard/pavaje-eco 301
+/pavaje-premium/travertin /pavaje-premium 301
+/pavaje-premium/travertin/ /pavaje-premium 301
+/pavaje-premium/urbis /pavaje-premium 301
+/pavaje-premium/urbis/ /pavaje-premium 301
+/fabrici /contact 301
+/fabrici/ /contact 301
+/concurs /blog 301
+/concurs/ /blog 301
+/borduri-2/bordura-50x5x20 /borduri/bordura-50x5x20-dreapta 301
+/borduri-2/bordura-50x5x20/ /borduri/bordura-50x5x20-dreapta 301
+/bg / 301
+/bg/ / 301
+/hu / 301
+/hu/ / 301
+
+# ---------------------------------------------------------------------------
 # Dynamic rules (splat). MUST stay below every static rule: once Pages sees a
 # dynamic rule, every rule after it counts toward the 100-dynamic limit and
 # rules past #100 are silently dropped (that broke all old blog redirects).
@@ -269,3 +318,7 @@
 /concurs-regulament/* / 301
 /petra-paste-2026/* / 301
 /utile/* / 301
+/pavaje-clasice/* /pavaje-premium 301
+/pavaje-premium/quatro/* /pavaje-standard/quatro/:splat 301
+/bg/* / 301
+/hu/* / 301

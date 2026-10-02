@@ -383,7 +383,7 @@ Alege grosimea în funcție de utilizare, păstrează aceeași grosime atunci c�
  <a id="quatro"></a>
  <h2>4. Pavajul Quatro — punctul de atracție, o tablă de șah uriașă</h2>
  <p>
- Unul dintre cele mai creative elemente ale amenajării este amfiteatrul, care are roluri multiple. Aici se pot ține cursuri în aer liber, se poate juca șah sau, pur și simplu, socializa. Tabla de șah a fost realizată cu ajutorul pavajului <a href="https://petrapavaje.ro/pavaje-premium/quatro/" rel="noopener" target="_blank">Quatro (30x30 cm)</a>, în culorile alb și negru.
+ Unul dintre cele mai creative elemente ale amenajării este amfiteatrul, care are roluri multiple. Aici se pot ține cursuri în aer liber, se poate juca șah sau, pur și simplu, socializa. Tabla de șah a fost realizată cu ajutorul pavajului <a href="https://petrapavaje.ro/pavaje-standard/quatro" rel="noopener" target="_blank">Quatro (30x30 cm)</a>, în culorile alb și negru.
  </p>
  
  <p>5×5 m
@@ -1258,7 +1258,7 @@ Alege grosimea în funcție de utilizare, păstrează aceeași grosime atunci c�
  
  
  
- <a href="/concurs">
+ <a href="/blog">
  ← Toate concursurile Petra Pavaje
  </a>
  <h2>Regulamentul Oficial<br><em>„Marea Pasiune a Micilor Constructori&quot;</em></h2>
@@ -1554,7 +1554,7 @@ Alege grosimea în funcție de utilizare, păstrează aceeași grosime atunci c�
  
  <img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/solutii-delimitare-pavaj-gradina-design-impecabil/Stretto-gri-antic-1.avif" alt="Pavajul Stretto Petra Pavaje" loading="lazy" />
  
- <p><a href="https://petrapavaje.ro/pavaje-premium/urbis/" target="_blank">Pavajul Stretto</a> — Un produs nou, de dimensiuni reduse, extrem de versatil. Poate fi montat atât pe orizontală, cât și pe verticală, fiind ideal pentru a crea margini cu modele inedite.</p>
+ <p><a href="https://petrapavaje.ro/pavaje-premium" target="_blank">Pavajul Stretto</a> — Un produs nou, de dimensiuni reduse, extrem de versatil. Poate fi montat atât pe orizontală, cât și pe verticală, fiind ideal pentru a crea margini cu modele inedite.</p>
  </li>
  <li>
  
@@ -1578,7 +1578,7 @@ Alege grosimea în funcție de utilizare, păstrează aceeași grosime atunci c�
  
  <img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/solutii-delimitare-pavaj-gradina-design-impecabil/Quatro-20x20-alb.avif" alt="Pavajul Quatro Petra Pavaje" loading="lazy" />
  
- <p><a href="https://petrapavaje.ro/pavaje-premium/quatro/quatro-10x10x6/" target="_blank">Pavajul Quatro</a> — Poate fi alternat cu spoturi luminoase, astfel că la lăsarea serii curtea va arăta spectaculos, iar pe timpul zilei poziția spoturilor nu va fi evidentă.</p>
+ <p><a href="https://petrapavaje.ro/pavaje-standard/quatro/quatro-10x10x6" target="_blank">Pavajul Quatro</a> — Poate fi alternat cu spoturi luminoase, astfel că la lăsarea serii curtea va arăta spectaculos, iar pe timpul zilei poziția spoturilor nu va fi evidentă.</p>
  </li>
 </ul>
  <hr>
@@ -2274,7 +2274,7 @@ Alege grosimea în funcție de utilizare, păstrează aceeași grosime atunci c�
  <p>Pentru Cristian, renovarea este <em>„terapie&quot;</em>, iar fiecare alegere, de la articolele de interior, până la liniile moderne ale pavajului <a href="https://petrapavaje.ro/pavaje-premium/grand-urban/" target="_blank">Grand Urban</a>, reflectă dorința lui de a arăta că se poate construi cu responsabilitate, îmbinând respectul pentru trecut cu estetica modernă a prezentului.</p>
  
  <h2 id="modern-traditional">Provocarea de a îmbina modernul cu tradiționalul</h2>
- <p>Când ne-a povestit despre viziunea și proiectul său, ne-am întrebat cum pui un pavaj modern la restaurarea unei case vechi de peste 100 de ani, fără să pară scos din context? Așa că ne-am gândit să îi recomandăm pavaje care se integrează într-o arhitectură rustică, precum pavajul <a href="https://petrapavaje.ro/pavaje-clasice/antic/" target="_blank">Antic</a> sau <a href="https://petrapavaje.ro/pavaje-clasice/primo/" target="_blank">Primo</a>. Însă el ne-a demonstrat că poate să îmbine vechiul cu noul, tradiționalul cu modernul într-un mod care să nu pară din povești diferite.</p>
+ <p>Când ne-a povestit despre viziunea și proiectul său, ne-am întrebat cum pui un pavaj modern la restaurarea unei case vechi de peste 100 de ani, fără să pară scos din context? Așa că ne-am gândit să îi recomandăm pavaje care se integrează într-o arhitectură rustică, precum pavajul <a href="https://petrapavaje.ro/pavaje-premium/antic" target="_blank">Antic</a> sau <a href="https://petrapavaje.ro/pavaje-premium/primo" target="_blank">Primo</a>. Însă el ne-a demonstrat că poate să îmbine vechiul cu noul, tradiționalul cu modernul într-un mod care să nu pară din povești diferite.</p>
  <p>A ales plăci de mari dimensiuni, 80x40x6 cm, pentru că pun în valoare arhitectura spațiului într-un mod discret, fără să epateze, dar și pentru că sunt practice și ușor de montat. Într-o curte cu multă verdeață, vrei suprafețe care să nu concureze, ci să susțină subtil fiecare pas, să direcționeze vizual spre principalele puncte din curte și să lase verdeața să fie în centrul atenției. <a href="https://petrapavaje.ro/pavaje-premium/grand-urban/" target="_blank">Grand Urban</a> este scena potrivită pentru tălpile ude pe timp de vară sau pentru urmele în zăpadă iarna.</p>
  
  
@@ -2327,19 +2327,19 @@ Alege grosimea în funcție de utilizare, păstrează aceeași grosime atunci c�
  </p><h3>Dimensiunea 60 × 30 × 6 cm</h3>
  <p>Disponibil la mai multe pavaje din portofoliu</p>
  
- <p>Dimensiunea 60x30x6 cm, pe care o regăsiți la pavajele <a href="https://petrapavaje.ro/pavaje-clasice/mistic/" target="_blank">Mistic</a>, <a href="https://petrapavaje.ro/pavaje-clasice/roca/" target="_blank">Roca</a>, <a href="https://petrapavaje.ro/pavaje-clasice/mediterana/" target="_blank">Mediterana</a>, <a href="https://petrapavaje.ro/pavaje-clasice/alpin/" target="_blank">Alpin</a>, <a href="https://petrapavaje.ro/pavaje-premium/timber/" target="_blank">Timber</a>, <a href="https://petrapavaje.ro/pavaje-clasice/roman/" target="_blank">Roman</a>, <a href="https://petrapavaje.ro/pavaje-clasice/viena/" target="_blank">Viena</a> și <a href="https://petrapavaje.ro/pavaje-clasice/sahara/" target="_blank">Sahara</a>, dar și la <a href="https://petrapavaje.ro/pavaje-clasice/holland/" target="_blank">Holland</a>.</p>
+ <p>Dimensiunea 60x30x6 cm, pe care o regăsiți la pavajele <a href="https://petrapavaje.ro/pavaje-premium/mistic" target="_blank">Mistic</a>, <a href="https://petrapavaje.ro/pavaje-premium/roca" target="_blank">Roca</a>, <a href="https://petrapavaje.ro/pavaje-premium/mediterana" target="_blank">Mediterana</a>, <a href="https://petrapavaje.ro/pavaje-premium/alpin" target="_blank">Alpin</a>, <a href="https://petrapavaje.ro/pavaje-premium/timber/" target="_blank">Timber</a>, <a href="https://petrapavaje.ro/pavaje-premium/roman" target="_blank">Roman</a>, <a href="https://petrapavaje.ro/pavaje-premium/viena" target="_blank">Viena</a> și <a href="https://petrapavaje.ro/pavaje-premium/sahara" target="_blank">Sahara</a>, dar și la <a href="https://petrapavaje.ro/pavaje-standard/holland" target="_blank">Holland</a>.</p>
  <p>Formatul mediu este soluția versatilă — se potrivește atât curților mai mici, cât și aleilor lungi. Poate fi montat de o singură persoană cu ușurință și oferă un raport excelent între suprafața acoperită și efortul de instalare.</p>
  
  
- <a href="https://petrapavaje.ro/pavaje-clasice/mistic/" target="_blank">Mistic</a>
- <a href="https://petrapavaje.ro/pavaje-clasice/roca/" target="_blank">Roca</a>
- <a href="https://petrapavaje.ro/pavaje-clasice/mediterana/" target="_blank">Mediterana</a>
- <a href="https://petrapavaje.ro/pavaje-clasice/alpin/" target="_blank">Alpin</a>
+ <a href="https://petrapavaje.ro/pavaje-premium/mistic" target="_blank">Mistic</a>
+ <a href="https://petrapavaje.ro/pavaje-premium/roca" target="_blank">Roca</a>
+ <a href="https://petrapavaje.ro/pavaje-premium/mediterana" target="_blank">Mediterana</a>
+ <a href="https://petrapavaje.ro/pavaje-premium/alpin" target="_blank">Alpin</a>
  <a href="https://petrapavaje.ro/pavaje-premium/timber/" target="_blank">Timber</a>
- <a href="https://petrapavaje.ro/pavaje-clasice/roman/" target="_blank">Roman</a>
- <a href="https://petrapavaje.ro/pavaje-clasice/viena/" target="_blank">Viena</a>
- <a href="https://petrapavaje.ro/pavaje-clasice/sahara/" target="_blank">Sahara</a>
- <a href="https://petrapavaje.ro/pavaje-clasice/holland/" target="_blank">Holland</a>
+ <a href="https://petrapavaje.ro/pavaje-premium/roman" target="_blank">Roman</a>
+ <a href="https://petrapavaje.ro/pavaje-premium/viena" target="_blank">Viena</a>
+ <a href="https://petrapavaje.ro/pavaje-premium/sahara" target="_blank">Sahara</a>
+ <a href="https://petrapavaje.ro/pavaje-standard/holland" target="_blank">Holland</a>
  
  
  
@@ -2445,7 +2445,7 @@ Alege grosimea în funcție de utilizare, păstrează aceeași grosime atunci c�
  </a>
  <p>
  Fabrici în
- <a href="https://petrapavaje.ro/fabrici/" target="_blank">Alba, Ploiești, Arad, Neamț</a>
+ <a href="https://petrapavaje.ro/contact" target="_blank">Alba, Ploiești, Arad, Neamț</a>
   ·  Livrare în toată România
  </p>`,
     date: '2026-03-05T13:10:23',
@@ -3727,7 +3727,7 @@ Alege grosimea în funcție de utilizare, păstrează aceeași grosime atunci c�
  <h4>Produse utilizate în acest proiect</h4>
  <ul>
  <li><strong><a href="https://petrapavaje.ro/pavaje-premium/mediterana/">Pavaj Mediterana Terra MIX 6.30</a></strong> — combinație de trei dimensiuni care conferă amenajărilor un aspect dinamic. Grosimea de 6 cm este potrivită pentru traficul auto ușor, deservind atât zona parcării, cât și aleile din jurul casei</li>
- <li><strong><a href="https://petrapavaje.ro/borduri-2/bordura-50x5x20/">Bordură 50×5×20 cm</a>, culoare neagră</strong> — o culoare contrastantă, care face foarte clară delimitarea zonei pavate de zona verde</li>
+ <li><strong><a href="https://petrapavaje.ro/borduri/bordura-50x5x20-dreapta">Bordură 50×5×20 cm</a>, culoare neagră</strong> — o culoare contrastantă, care face foarte clară delimitarea zonei pavate de zona verde</li>
  </ul>
  
  
@@ -7239,7 +7239,7 @@ Echipa Petra Pavaje îți oferă câteva sfaturi utile pentru a-ți pregăti cur
 <h2><strong>Soluții de pavare permeabile de la Petra Pavaje</strong></h2>
 <p>Petra Pavaje oferă mai multe soluții de pavare permeabile.</p>
 <h3>Pavajul Grilă</h3>
-<p>Cel mai cunoscut este pavajul <a href="https://petrapavaje.ro/pavaje-standard/grila/">GRILĂ</a>, din gama <a href="https://petrapavaje.ro/pavaje-standard/">Standard</a>. Structura cu spaţiu deschis permite înierbare, astfel obținându-se un aspect mai plăcut și mai apropiat de natură. În plus, capacitatea mare de preluare a apelor pluviale, chiar și cele torențiale, elimină necesitatea amenajărilor suplimentate pentru dirijare acestora. Pavajul grilă este disponibil în două culori: gri și roșu.</p>
+<p>Cel mai cunoscut este pavajul <a href="https://petrapavaje.ro/pavaje-standard/pavaje-eco">GRILĂ</a>, din gama <a href="https://petrapavaje.ro/pavaje-standard/">Standard</a>. Structura cu spaţiu deschis permite înierbare, astfel obținându-se un aspect mai plăcut și mai apropiat de natură. În plus, capacitatea mare de preluare a apelor pluviale, chiar și cele torențiale, elimină necesitatea amenajărilor suplimentate pentru dirijare acestora. Pavajul grilă este disponibil în două culori: gri și roșu.</p>
 <p>Dimensiuni:</p>
 <ul>
 <li>40 x 40 x 4</li>
@@ -7278,7 +7278,7 @@ Echipa Petra Pavaje îți oferă câteva sfaturi utile pentru a-ți pregăti cur
     excerpt: `Pavajul Travertin este un produs premium al companiei Petra Pavaje. Dintre beneficiile acestui produs, enumerăm`,
     content: `<h2><p>Pavajele din curte te inspiră să călătorești.</p>
 <h2>Destinația lunii: Cascada Șipote</h2>
-<p>Zilele acestea se vorbește foarte mult despre Cascada Bigăr. Iar pentru iubitorii de frumos în natură, Petra Pavaje a descoperit o altă cascadă. Chiar dacă nu e atât de cunoscută, această cădere de apă merită cu siguranță vizitată. Este vorba despre Cascada Șipote, din Sălciua de Jos, Munții Trascău. Acest obiectiv turistic a inspirat pavajul <a href="https://petrapavaje.ro/pavaje-premium/travertin/">Travertin</a>, un produs ideal pentru curtea ta, dar și pentru spații comerciale.</p>
+<p>Zilele acestea se vorbește foarte mult despre Cascada Bigăr. Iar pentru iubitorii de frumos în natură, Petra Pavaje a descoperit o altă cascadă. Chiar dacă nu e atât de cunoscută, această cădere de apă merită cu siguranță vizitată. Este vorba despre Cascada Șipote, din Sălciua de Jos, Munții Trascău. Acest obiectiv turistic a inspirat pavajul <a href="https://petrapavaje.ro/pavaje-premium">Travertin</a>, un produs ideal pentru curtea ta, dar și pentru spații comerciale.</p>
 <p><a href="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavajele-din-curte-te-inspira-sa-calatoresti-destinatia-lunii-cascada-sipote/travertin-cascada-sipote-1.jpg"><img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavajele-din-curte-te-inspira-sa-calatoresti-destinatia-lunii-cascada-sipote/travertin-cascada-sipote-1.jpg" alt="Pavaj Travertin " loading="lazy" /></a></p>
 <h2><p>Pavajul pentru curte Travertin</p>
 <p>Pavajul Travertin este un produs premium al companiei Petra Pavaje. Dintre beneficiile acestui produs, enumerăm:</p>
@@ -7410,7 +7410,7 @@ Echipa Petra Pavaje îți oferă câteva sfaturi utile pentru a-ți pregăti cur
     excerpt: `În aceste vremuri în care suntem asaltați de știri negative, profităm de orice ocazie pentru a pune zâmbetul pe buzele  […]`,
     content: `<p>În aceste vremuri în care suntem asaltați de știri negative, profităm de orice ocazie pentru a pune zâmbetul pe buzele colegilor și partenerilor noștri. Iar 1 Aprilie e o zi care nu putea fi ratată! Așadar am inventat o linie nouă de produse: bijuterii inspirate din pavaje. Știrea lansată de Ziua Păcălelilor o puteți citi mai jos:</p>
 <p><em>Petra Pavaje a fost mereu în atenția publicului pentru produsele și serviciile noi pe care le oferă. De la forme și culori inedite, la forme noi pe piață, compania caută mereu să vină în întâmpinarea clienților cu produse cât mai deosebite.</em></p>
-<p><em>De această dată, proiectul este unul cu totul unic. Este vorba de o linie de bijuterii din beton, care imită produsele companiei. Cerceii <a href="https://petrapavaje.ro/pavaje-standard/grila/">Grilă</a>, pandantivul Rampa, sau inelul <a href="https://petrapavaje.ro/pavaje-premium/antic/">Antic</a> sunt doar câteva dintre produsele acestei colecții. Bijuteriile sunt destinate mai ales doamnelor, dar sunt și unele concepute pentru bărbați, cum ar fi cerceii <a href="https://petrapavaje.ro/garduri/">Robusto</a>.</em></p>
+<p><em>De această dată, proiectul este unul cu totul unic. Este vorba de o linie de bijuterii din beton, care imită produsele companiei. Cerceii <a href="https://petrapavaje.ro/pavaje-standard/pavaje-eco">Grilă</a>, pandantivul Rampa, sau inelul <a href="https://petrapavaje.ro/pavaje-premium/antic/">Antic</a> sunt doar câteva dintre produsele acestei colecții. Bijuteriile sunt destinate mai ales doamnelor, dar sunt și unele concepute pentru bărbați, cum ar fi cerceii <a href="https://petrapavaje.ro/garduri/">Robusto</a>.</em></p>
 <p><img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/petra-pavaje-anunta-lansarea-unei-linii-de-bijuterii-din-beton/petra-beton-pavaje-bijuterii-1-aprilie-1.jpg" alt="" loading="lazy" /></p>
 <p><img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/petra-pavaje-anunta-lansarea-unei-linii-de-bijuterii-din-beton/petra-beton-pavaje-bijuterii-1-aprilie-2.jpg" alt="" loading="lazy" /></p>
 <p><img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/petra-pavaje-anunta-lansarea-unei-linii-de-bijuterii-din-beton/petra-beton-pavaje-bijuterii-1-aprilie-3.jpg" alt="" loading="lazy" /></p>
@@ -7554,7 +7554,7 @@ Echipa Petra Pavaje îți oferă câteva sfaturi utile pentru a-ți pregăti cur
     content: `<p>Atunci când cauți modele de pavaje pentru curți, ești atent la forma lor, la culoarea lor și la preț. Cauți idei de amenajări care să corespundă cât mai bine stilului pe care dorești să îl adopți în curtea ta. Îți dorești o soluție rezistentă, versatilă și ușor de montat. În articolul de mai jos vei găsi mai multe modele de pavaje pentru curți și grădini folosind mixurile de pavaje.</p>
 <h2>Ce sunt mixurile de pavaje?</h2>
 <p>Mixurile de pavaje sunt grupări de mai multe dimensiuni de pavaje, livrate împreună. Mixurile de pavaje se mai numesc și pavaje combi sau dale mix. Practic, un metru pătrat dintr-un pavaj are în componență de la 2 la 4 forme de pavaje, în funcție de mixul ales. Mixurile au avantajul de a oferi o mare varietate de modele de pavaje pentru curți. Este de asemenea o soluție ideală pentru suprafețele generoase, deoarece <strong>vine în întâmpinarea dificultăților de calcul și evită discrepanțele între dimensiuni și forme.</strong></p>
-<p>Pe lângă aspectul dinamic ale acestor modele de pavaje pentru curți, mixurile reprezintă și o <strong>soluție economică,</strong> deoarece nu e nevoie să tăiați plăcile mari pentru a pava suprafețele mici. Mixurile sau pavajul combi sunt disponibile doar pentru<a href="https://petrapavaje.ro/pavaje-premium/"> produsele premium</a>. <a href="https://petrapavaje.ro/pavaje-premium/roca/">Roca</a>, <a href="https://petrapavaje.ro/pavaje-premium/travertin/">Travertin</a>, <a href="https://petrapavaje.ro/pavaje-premium/mistic/">Mistic</a>, <a href="https://petrapavaje.ro/pavaje-premium/mediterana/">Mediterana</a>, <a href="https://petrapavaje.ro/pavaje-premium/maya/">Maya</a>, <a href="https://petrapavaje.ro/pavaje-premium/roman/">Roman</a> și <a href="https://petrapavaje.ro/pavaje-premium/viena/">Viena</a> sunt produsele pentru care aceste mixuri sunt disponibile.</p>
+<p>Pe lângă aspectul dinamic ale acestor modele de pavaje pentru curți, mixurile reprezintă și o <strong>soluție economică,</strong> deoarece nu e nevoie să tăiați plăcile mari pentru a pava suprafețele mici. Mixurile sau pavajul combi sunt disponibile doar pentru<a href="https://petrapavaje.ro/pavaje-premium/"> produsele premium</a>. <a href="https://petrapavaje.ro/pavaje-premium/roca/">Roca</a>, <a href="https://petrapavaje.ro/pavaje-premium">Travertin</a>, <a href="https://petrapavaje.ro/pavaje-premium/mistic/">Mistic</a>, <a href="https://petrapavaje.ro/pavaje-premium/mediterana/">Mediterana</a>, <a href="https://petrapavaje.ro/pavaje-premium/maya/">Maya</a>, <a href="https://petrapavaje.ro/pavaje-premium/roman/">Roman</a> și <a href="https://petrapavaje.ro/pavaje-premium/viena/">Viena</a> sunt produsele pentru care aceste mixuri sunt disponibile.</p>
 <p>Este important de știut că aceste produse <strong>se livrează doar la pachet complet</strong> și <strong>nu este posibilă achiziționarea unei singure dimensiuni</strong>. Dacă doriți achiziționarea pieselor individuale, puteți crea propriul vostru mix, comandând mai mulți paleți din fiecare produs.</p>
 <h2>Ce mixuri sunt disponibile</h2>
 <p>La Petra Pavaje găsiți mai multe modele de mixuri de pavaje, în funcție de amenajarea dorită. Denumirea fiecărui mix e dată de grosime (prima cifra) și de numărul de bucăți per pachet (cifra a doua):</p>
