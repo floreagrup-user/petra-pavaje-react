@@ -123,6 +123,25 @@ async function main() {
     }
   }
 
+  // 404.html: once this file exists, Cloudflare Pages answers a real 404 for
+  // any URL that has no file, instead of the SPA fallback (index.html, 200).
+  // It is built from the pristine shell so it boots the app at whatever URL was
+  // requested and NotFoundPage then renders client-side. A 404 must never be
+  // indexed and has no canonical URL of its own, so both are dropped.
+  const notFoundHtml = pristineShell
+    .toString('utf8')
+    .replace(/<title>[^<]*<\/title>/, '<title>Pagina nu a fost găsită | Petra Pavaje</title>')
+    .replace(/<meta name="robots" content="[^"]*"\s*\/?>/, '<meta name="robots" content="noindex, follow" />')
+    .replace(/\s*<link rel="canonical" href="[^"]*"\s*\/?>/, '')
+    .replace(/\s*<meta property="og:url" content="[^"]*"\s*\/?>/, '')
+  if (!notFoundHtml.includes('noindex, follow') || notFoundHtml.includes('rel="canonical"') || notFoundHtml.includes('og:url')) {
+    console.error('FAILED 404.html: a head substitution did not apply')
+    process.exitCode = 1
+  } else {
+    writeFileSync(join(DIST, '404.html'), notFoundHtml)
+    console.log('Wrote dist/404.html')
+  }
+
   await browser.close()
   server.close()
   console.log(`Prerendered ${ok}/${routes.length} routes.`)
