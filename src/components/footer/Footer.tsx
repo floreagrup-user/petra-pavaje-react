@@ -197,8 +197,8 @@ export function Footer() {
                 {isEnglish ? 'Subscribed! Thank you.' : 'Te-ai abonat! Mulțumim.'}
               </p>
             ) : (
-              <form className="flex gap-2" onSubmit={handleNewsletterSubmit}>
-                <div ref={turnstileRef} />
+              <form className="flex flex-wrap gap-2" onSubmit={handleNewsletterSubmit}>
+                <div ref={turnstileRef} className="w-full min-w-0 empty:hidden" />
                 <input
                   type="email"
                   required
@@ -206,12 +206,12 @@ export function Footer() {
                   value={newsletterEmail}
                   onChange={(e) => setNewsletterEmail(e.target.value)}
                   disabled={newsletterStatus === 'submitting'}
-                  className="flex-1 px-3 py-2 bg-white/10 border border-white/20 rounded-md text-sm text-white placeholder-white/50 focus:outline-none focus:border-white/50 transition-colors disabled:opacity-60"
+                  className="min-w-0 flex-1 px-3 py-2 bg-white/10 border border-white/20 rounded-md text-sm text-white placeholder-white/50 focus:outline-none focus:border-white/50 transition-colors disabled:opacity-60"
                 />
                 <button
                   type="submit"
                   disabled={newsletterStatus === 'submitting'}
-                  className="px-4 py-2 bg-brand-600 text-white text-sm rounded-md hover:bg-brand-700 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                  className="shrink-0 px-4 py-2 bg-brand-600 text-white text-sm rounded-md hover:bg-brand-700 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                 >
                   {newsletterStatus === 'submitting'
                     ? (isEnglish ? 'Sending...' : 'Se trimite...')
@@ -255,7 +255,7 @@ export function Footer() {
               ))}
             </div>
 
-            <div className="flex items-center gap-4 text-xs text-white/70">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-white/70">
               {links.legal.map((link) => (
                 <Link key={link.label} to={link.href} className="hover:text-white transition-colors">
                   {link.label}

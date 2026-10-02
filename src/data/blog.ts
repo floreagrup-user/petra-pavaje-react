@@ -2,6 +2,236 @@ import type { BlogPost } from '@/data/types'
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '29001',
+    title: `Pavaje de 6 sau de 8 cm`,
+    slug: 'pavaje-de-6-sau-de-8-cm',
+    excerpt: `Pavaje de 6 sau de 8 cm? Află ce grosime alegi pentru alei, trotuare și parcări, cum folosești același model în grosimi diferite și de ce stratul suport contează la fel de mult.`,
+    content: `<p>
+Atunci când amenajezi o curte, o alee, un trotuar sau o zonă destinată parcării, una dintre cele mai frecvente întrebări este: aleg pavaje de 6 cm sau de 8 cm?
+</p>
+
+<p>
+Chiar dacă prețul te-ar încuraja să alegi pavajul de 6 cm, răspunsul depinde în primul rând de modul în care va fi utilizată suprafața. Zonele pietonale, precum aleile și trotuarele, pot fi amenajate cu pavaje de 6 cm, în timp ce suprafețele pe care circulă sau staționează autoturismele, mai ales cele de tonaj mare sunt, de regulă, mai potrivite pentru pavaje de 8 cm.
+</p>
+
+<p>
+Un avantaj important este că, la Petra Pavaje, multe modele sunt disponibile atât în varianta de 6 cm, cât și în varianta de 8 cm. Astfel, poți păstra același model și aceeași estetică în întreaga amenajare, alegând grosimea în funcție de destinația fiecărei zone.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaje-de-6-sau-de-8-cm/gradina-cu-alei-pietonale-pavate.avif" alt="Femeie care citește într-un șezlong pe peluză, lângă alei pietonale pavate cu pavele gri și albe" width="1600" height="1066" loading="lazy" decoding="async">
+<figcaption>Pentru alei și zone pietonale, pavajul de 6 cm este, de regulă, suficient.</figcaption>
+</figure>
+
+<h2>Pavaje de 6 cm sau 8 cm: ce grosime alegi?</h2>
+
+<p>
+Într-o amenajare rezidențială, alegerea poate fi foarte simplă:
+</p>
+
+<ul>
+<li><strong>4 cm</strong> – disponibil pentru anumite produse din gama standard, precum <a href="https://petrapavaje.ro/pavaje-standard/holland">Holland</a> de la Petra Pavaje, fiind o opțiune pentru amenajări unde cerințele de încărcare sunt reduse;</li>
+<li><strong>6 cm</strong> – potrivit pentru trotuare, alei pietonale, terase și alte zone cu trafic pietonal;</li>
+<li><strong>8 cm</strong> – recomandat pentru zonele în care circulă sau staționează autoturismele, mai ales cele de tonaj mare (autocamioane, dube, utilaje de construcții etc.);</li>
+<li><strong>10 cm</strong> – recomandat pentru zonele cu trafic intens, cu utilaje de tonaj mare (parcări de fabrici, stații de carburant etc.).</li>
+</ul>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaje-de-6-sau-de-8-cm/trei-pavele-comparatie-grosimi.avif" alt="Trei pavele din beton de grosimi diferite, așezate în rând, pentru comparație" width="564" height="312" loading="lazy" decoding="async">
+<figcaption>Pavele în trei grosimi diferite: grosimea se alege în funcție de destinația suprafeței.</figcaption>
+</figure>
+
+<p>
+Important este să nu alegi grosimea doar după aspect sau după preț. Destinația suprafeței și modul de execuție al lucrării sunt esențiale.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaje-de-6-sau-de-8-cm/copil-examineaza-pavele-cu-lupa.avif" alt="Copil care examinează cu lupa două pavele așezate una peste alta" width="1066" height="1600" loading="lazy" decoding="async" style="max-width:min(100%,420px);margin-inline:auto">
+<figcaption>Merită să privești pavajul cu atenție înainte să alegi grosimea.</figcaption>
+</figure>
+
+<h2>Același model de pavaj în grosimi diferite: unitate în amenajare</h2>
+
+<p>
+Unul dintre avantajele gamei Petra Pavaje este că poți folosi același model de pavaj în mai multe zone ale curții tale, dar să optezi pentru grosimi diferite.
+</p>
+
+<p>
+De exemplu, pentru <a href="https://petrapavaje.ro/pavaje-premium/roca">Roca Gri Antic</a>, unul dintre cele mai populare produse din portofoliul Petra Pavaje, poți opta pentru:
+</p>
+
+<ul>
+<li>Roca Gri Antic 8 cm în zona în care circulă autoturismul;</li>
+<li>Roca Gri Antic 6 cm pentru trotuare, alei pietonale sau alte suprafețe fără trafic auto.</li>
+</ul>
+
+<p>
+În acest fel, amenajarea păstrează același stil vizual, fără să fie necesar să folosești produse diferite în fiecare zonă.
+</p>
+
+<p>
+În plus, Roca este un pavaj mix, cu dimensiuni diverse, ceea ce permite realizarea unor modele interesante de montaj și poate contribui la reducerea pierderilor rezultate din necesitatea de a face multe tăieturi.
+</p>
+
+<p>
+Un alt exemplu este <a href="https://petrapavaje.ro/pavaje-premium/mistic">Mistic</a>, disponibil atât în variante de 6 cm, cât și de 8 cm.
+</p>
+
+<p>
+Pavajul Mistic de la Petra Pavaje se remarcă prin nuanțele de gri, aspectul modern și designul minimalist, fiind unul dintre produsele foarte căutate în gama Petra Pavaje. În 2026, Mistic este cel mai bine vândut produs Petra Pavaje, datorită combinației dintre estetica contemporană și versatilitatea sa în amenajări.
+</p>
+
+<p>
+Și aici poți aplica aceeași regulă: Mistic Mix de 8.30 (grosime de 8 cm) pentru zona auto și Mistic Mix de 6.30 cm (grosime de 6 cm) pentru zonele pietonale.
+</p>
+
+<p>
+Rezultatul este o amenajare coerentă, în care suprafețele au același limbaj vizual, chiar dacă necesită grosimi diferite.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaje-de-6-sau-de-8-cm/pavaj-deschis-cu-banda-gri-inchis-zona-de-acces.avif" alt="Suprafață mare pavată cu pavele deschise la culoare și benzi decorative gri închis, lângă drum" width="1600" height="1200" loading="lazy" decoding="async">
+<figcaption>Pe suprafețele de acces și de parcare, grosimea se alege în funcție de tonajul vehiculelor.</figcaption>
+</figure>
+
+<h2>Grosimi de pavaj diferite și în gama standard</h2>
+
+<p>
+Dacă îți dorești un pavaj clasic și ușor de integrat în diverse tipuri de amenajări, pavajul <a href="https://petrapavaje.ro/pavaje-standard/holland">Holland</a> 20 × 10 cm este o alegere practică. Modelul este disponibil în mai multe grosimi, inclusiv 4 cm, ceea ce îl face potrivit pentru situații în care suprafața nu este destinată traficului auto. Formatul dreptunghiular clasic poate fi utilizat atât în amenajări moderne, cât și în proiecte cu un aspect mai tradițional.
+</p>
+
+<h2>Se pot combina modele diferite de pavaj?</h2>
+
+<p>
+Da. Poți combina, de exemplu, Quatro cu Holland, pavaj pătrat cu pavaj dreptunghiular sau alte formate, pentru a obține modele de montaj personalizate.
+</p>
+
+<p>
+Există însă un principiu important: atunci când combini pavaje în aceeași suprafață, este recomandat să păstrezi aceeași grosime. Astfel, pavajele vor avea aceeași cotă și pot fi montate corect, fără diferențe de nivel între elemente.
+</p>
+
+<p>
+Dacă vrei să folosești două grosimi diferite, soluția potrivită este să le separi în funcție de zonele de utilizare: de exemplu, 8 cm pentru zona auto și 6 sau 4 cm pentru aleile pietonale.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaje-de-6-sau-de-8-cm/pavaj-gri-si-rosu-cu-model-in-spic.avif" alt="Pavaj din pavele gri și roșii, montat într-un model în spic, lângă un rând de pietre decorative" width="1600" height="1066" loading="lazy" decoding="async">
+<figcaption>Pavelele de culori diferite se pot combina, păstrând aceeași grosime.</figcaption>
+</figure>
+
+<h2>Grosimea pavajului nu este totul: contează stratul suport</h2>
+
+<p>
+Alegerea unui pavaj de 8 cm sau chiar de 10 cm (disponibil în portofoliul Petra Pavaje pentru produsele <a href="https://petrapavaje.ro/pavaje-standard/autobloc">Autobloc</a> sau <a href="https://petrapavaje.ro/pavaje-standard/pavaje-eco">Grilă</a>) nu garantează, singură, rezistența unei amenajări.
+</p>
+
+<p>
+Stratul suport și compactarea acestuia sunt esențiale.
+</p>
+
+<p>
+Chiar și un pavaj gros și rezistent poate avea probleme în timp dacă este montat peste un strat suport executat necorespunzător. Tasările, deplasările elementelor sau apariția denivelărilor pot fi cauzate de o fundație insuficient pregătită, de materiale nepotrivite sau de o compactare necorespunzătoare.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaje-de-6-sau-de-8-cm/pavaj-ecologic-cu-iarba-grila.avif" alt="Pavaj ecologic de tip grilă, cu iarbă crescută în golurile dintre elemente" width="1600" height="1066" loading="lazy" decoding="async">
+<figcaption>Pavajele de tip grilă se montează tot pe un strat suport pregătit corect.</figcaption>
+</figure>
+
+<p>
+De aceea, atunci când planifici o lucrare cu pavaje, trebuie să privești amenajarea ca pe un întreg: pavajul, stratul suport, compactarea, drenajul și montajul trebuie să funcționeze împreună.
+</p>
+
+<p>
+Cu alte cuvinte, nu este suficient să alegi „cel mai gros pavaj". Este important ca întreaga structură a suprafeței să fie executată corect.
+</p>
+
+<h2>Nu uita de borduri</h2>
+
+<p>
+Un detaliu care poate face diferența într-o amenajare este alegerea bordurilor.
+</p>
+
+<p>
+Bordurile contribuie la delimitarea suprafețelor pavate și la obținerea unui aspect final ordonat. În plus, pentru o amenajare premium, bordurile colorate pot fi alese astfel încât să se asorteze cu pavajul.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaje-de-6-sau-de-8-cm/copil-masoara-grosimea-bordurii.avif" alt="Copil care măsoară cu ruleta o bordură din beton" width="1600" height="1066" loading="lazy" decoding="async">
+<figcaption>Și la borduri, dimensiunile se aleg cu atenție.</figcaption>
+</figure>
+
+<h3>Bordura 50 × 5 × 20 cm</h3>
+
+<p>
+<a href="https://petrapavaje.ro/borduri/bordura-50x5x20-dreapta">Bordura de 50 × 5 × 20 cm</a> este bordura de bază din gama Petra Pavaje și este disponibilă în mai multe nuanțe, inclusiv:
+</p>
+
+<ul>
+<li>gri antic;</li>
+<li>gri bazaltic;</li>
+<li>moka;</li>
+<li>negru violet;</li>
+<li>gri;</li>
+<li>negru;</li>
+<li>roșu.</li>
+</ul>
+
+<p>
+Nuanțele precum gri antic, gri bazaltic, moka și negru violet pot fi asociate cu pavajele premium pentru o amenajare unitară și contemporană, pe când cele în culori de bază pot completa o amenajare cu produsele din gama standard.
+</p>
+
+<h3>Bordura dreaptă 100 × 8 × 25 cm</h3>
+
+<p>
+Pentru proiectele în care este necesară o bordură dreaptă robustă, formatul <a href="https://petrapavaje.ro/borduri/bordura-100x8x25-dreapta">100 × 8 × 25 cm</a> este cel mai robust format de bordură dreaptă din gama Petra Pavaje.
+</p>
+
+<p>
+Este o soluție potrivită pentru delimitarea clară a suprafețelor și pentru proiectele în care se dorește o structură vizuală bine definită.
+</p>
+
+<h2>6 cm sau 8 cm? Alege în funcție de utilizare</h2>
+
+<p>
+Așadar, dacă te întrebi „pavaje de 6 sau 8 cm?", regula simplă este să pornești de la destinația suprafeței. Pentru trotuare, alei pietonale și alte zone fără trafic auto, pavajul de 4 sau 6 cm poate fi o soluție potrivită. Pentru zonele în care circulă sau staționează autoturisme, mai ales de tonaj mare, varianta de 8 cm este alegerea uzuală.
+</p>
+
+<p>
+Iar dacă vrei o amenajare coerentă, nu trebuie să alegi un singur model sau o singură grosime pentru întreaga proprietate. Poți folosi același model în 6 și 8 cm, adaptând grosimea la funcția fiecărei zone.
+</p>
+
+<p>
+La final, nu uita că rezistența unei suprafețe pavate depinde nu doar de grosimea pavajului, ci și de calitatea stratului suport, compactarea corectă și execuția întregii lucrări.
+</p>
+
+<h2>Descoperă variantele de pavaje Petra Pavaje</h2>
+
+<p>
+De la modele moderne precum Mistic Mix, până la Roca Gri Antic, <a href="https://petrapavaje.ro/pavaje-standard/quatro">Quatro</a>, Holland și Standard, gama Petra Pavaje oferă soluții în diferite formate și grosimi, astfel încât să poți construi o amenajare unitară pentru întreaga proprietate.
+</p>
+
+<p>
+Alege grosimea în funcție de utilizare, păstrează aceeași grosime atunci când combini modele pe aceeași suprafață și acordă aceeași atenție stratului suport ca pavajului pe care îl alegi.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaje-de-6-sau-de-8-cm/copil-vizita-fabrica-petra-pavaje-linie-productie.avif" alt="Copil cu cască galbenă și vestă reflectorizantă lângă un angajat Petra Pavaje, la linia de producție a pavelelor" width="1600" height="1066" loading="lazy" decoding="async">
+<figcaption>Producția de pavele în fabrica Petra Pavaje.</figcaption>
+</figure>`,
+    date: '2026-09-22T09:00:00',
+    author: 'Iulia Hladiuc',
+    authorSlug: 'iulia-hladiuc',
+    categories: ['ghiduri'],
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/pavaje-de-6-sau-de-8-cm/pavaje-de-6-sau-de-8-cm-bicicleta-pe-pavaj.jpg',
+    readTime: 6,
+    seo: {
+      title: `Pavaje de 6 sau de 8 cm: cum alegi grosimea potrivită`,
+      description: `Pavaje de 6 sau de 8 cm? Află ce grosime alegi pentru alei, trotuare sau parcări și de ce stratul suport contează la fel de mult ca pavajul.`,
+      canonical: 'https://petrapavaje.ro/blog/pavaje-de-6-sau-de-8-cm',
+    },
+  },
+  {
     id: '28059',
     title: `Amenajarea spațiului exterior cu pavaje la Liceul Teologic Baptist „Alexa Popovici” din Arad`,
     slug: 'amenajarea-spatiului-exterior-cu-pavaje-la-liceul-teologic-baptist-din-arad',

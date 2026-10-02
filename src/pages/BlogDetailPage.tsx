@@ -256,9 +256,9 @@ export function BlogDetailPage() {
             </div>
 
             {(prevPost || nextPost) && (
-              <div className="mt-8 pt-8 border-t border-charcoal-200 grid sm:grid-cols-2 gap-4">
+              <div className="mt-8 pt-8 border-t border-charcoal-200 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {prevPost ? (
-                  <Link to={`/blog/${prevPost.slug}`} className="group flex items-center gap-3 p-4 rounded-xl border border-charcoal-100 hover:border-brand-200 hover:bg-charcoal-50 transition-colors">
+                  <Link to={`/blog/${prevPost.slug}`} className="group flex min-w-0 items-center gap-3 p-4 rounded-xl border border-charcoal-100 hover:border-brand-200 hover:bg-charcoal-50 transition-colors">
                     <ArrowLeft className="w-4 h-4 text-charcoal-400 group-hover:text-brand-600 shrink-0" />
                     <div className="min-w-0">
                       <p className="text-xs text-charcoal-400 mb-0.5">Articolul anterior</p>
@@ -267,7 +267,7 @@ export function BlogDetailPage() {
                   </Link>
                 ) : <div />}
                 {nextPost && (
-                  <Link to={`/blog/${nextPost.slug}`} className="group flex items-center justify-end gap-3 p-4 rounded-xl border border-charcoal-100 hover:border-brand-200 hover:bg-charcoal-50 transition-colors text-right">
+                  <Link to={`/blog/${nextPost.slug}`} className="group flex min-w-0 items-center justify-end gap-3 p-4 rounded-xl border border-charcoal-100 hover:border-brand-200 hover:bg-charcoal-50 transition-colors text-right">
                     <div className="min-w-0">
                       <p className="text-xs text-charcoal-400 mb-0.5">Articolul următor</p>
                       <p className="text-sm font-medium text-charcoal-900 truncate">{nextPost.title}</p>

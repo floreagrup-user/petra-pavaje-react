@@ -48,8 +48,8 @@ export function FactoriesSection() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
-          <div className="space-y-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="min-w-0 space-y-4">
             {factories.map((factory, index) => (
               <motion.button
                 key={factory.id}
@@ -137,7 +137,7 @@ export function FactoriesSection() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={isIntersecting ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative rounded-2xl overflow-hidden aspect-square lg:aspect-auto min-h-[400px]"
+            className="relative w-full rounded-2xl overflow-hidden aspect-square lg:aspect-auto min-h-[400px]"
           >
             <AnimatePresence mode="wait">
               <motion.div
