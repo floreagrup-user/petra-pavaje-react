@@ -222,6 +222,13 @@ export function StandardCategoryPage() {
               ? "Standard pavers are designed for functional landscaping: thicknesses from 4 to 10 cm — including reinforced variants for heavy vehicle traffic — essential colors and, for the Quatro range, a complete system of standard, reinforced (SMART), tactile and urban marking tiles. Compared to the Premium range, Standard keeps a narrower color palette and focuses on ruggedness and price."
               : 'Pavajele Standard sunt gândite pentru amenajări funcționale: grosimi de la 4 la 10 cm — inclusiv variante întărite pentru trafic auto greu — culori esențiale și, pentru gama Quatro, un sistem complet de dale simple, întărite (SMART), tactile și de marcaj urban. Față de gama Premium, Standard păstrează o paletă de culori mai restrânsă și mizează pe robustețe și preț.'}
           </p>
+          {!isEnglish && (
+            <p className="text-body text-charcoal-600 max-w-3xl mt-3">
+              Amenajezi o curte? Vezi{' '}
+              <Link to="/pavaje-curte" className="link-premium">pavajele potrivite pentru curte</Link>
+              {' '}și ce grosime alegi pentru alei și zona auto.
+            </p>
+          )}
         </div>
       </section>
 

@@ -142,6 +142,7 @@ export const footerLinks = {
   products: [
     { label: 'Pavaje Premium', href: '/pavaje-premium' },
     { label: 'Pavaje Standard', href: '/pavaje-standard' },
+    { label: 'Pavaje pentru curte', href: '/pavaje-curte' },
     { label: 'Woodstone', href: '/woodstone-lemn-pietrificat' },
     { label: 'Garduri', href: '/garduri' },
     { label: 'Borduri', href: '/borduri' },

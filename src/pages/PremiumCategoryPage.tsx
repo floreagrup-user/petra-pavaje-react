@@ -195,6 +195,13 @@ export function PremiumCategoryPage() {
               ? 'Premium pavers are designed for projects where finish matters: varied colors and textures (antiqued, structured or anti-slip surfaces), Color Lock technology to keep the color over time, and frost resistance. They suit terraces, walkways, gardens and public spaces. Compared with the Standard range, Premium offers a much wider palette of colors and finishes; Standard remains the best value-for-money choice for functional landscaping.'
               : 'Pavajele Premium sunt gândite pentru amenajări unde finisajul contează: culori și texturi variate (suprafețe antichizate, structurate sau antiderapante), tehnologie Color Lock pentru păstrarea culorii în timp și rezistență la îngheț. Se potrivesc teraselor, aleilor, grădinilor și spațiilor publice. Față de gama Standard, Premium oferă o paletă mult mai largă de culori și finisaje; Standard rămâne alegerea cu cel mai bun raport calitate-preț pentru amenajări funcționale.'}
           </p>
+          {!isEnglish && (
+            <p className="text-body text-charcoal-600 max-w-3xl mt-3">
+              Amenajezi o curte? Vezi{' '}
+              <Link to="/pavaje-curte" className="link-premium">pavajele potrivite pentru curte</Link>
+              {' '}și ce grosime alegi pentru alei și zona auto.
+            </p>
+          )}
         </div>
       </section>
 
