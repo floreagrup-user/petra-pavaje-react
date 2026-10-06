@@ -114,6 +114,7 @@ export const mainMenu: MenuItem[] = [
     children: [
       { label: 'Catalog', href: '/catalog' },
       { label: 'Calculator pavaj', href: '/calculator-pavaj' },
+      { label: 'Pavaje pentru curte', href: '/pavaje-curte' },
       { label: 'Montaj', href: '/montaj' },
       { label: 'Modele de Montaj', href: '/modele-de-montaj' },
       { label: 'Ghid întreținere', href: '/intretinere' },
