@@ -1,7 +1,7 @@
 export const SEO_SITE_NAME = 'Petra Pavaje'
-export const SEO_DEFAULT_TITLE = 'Petra Pavaje - Producător Premium de Pavaje'
+export const SEO_DEFAULT_TITLE = 'Petra Pavaje - Pavaje, Pavele și Borduri din Beton'
 export const SEO_DEFAULT_DESCRIPTION =
-  'Pavaje Premium si Standard, Dale, Borduri, Boltari, Jardiniere, Garduri, Elemente de canalizare. Producator national cu 4 fabrici in Romania.'
+  'Producător de pavaje, pavele, dale și borduri din beton pentru curte, alei și drumuri. 800+ produse din 4 fabrici în România: Alba, Arad, Prahova, Neamț.'
 // Matches index.html's static <meta name="robots"> default exactly, so
 // resetSEO() never regresses it after a page that overrides robots (e.g.
 // NotFoundPage's "noindex, follow") is left via client-side navigation.

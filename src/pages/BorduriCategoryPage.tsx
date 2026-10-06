@@ -124,7 +124,7 @@ export function BorduriCategoryPage() {
               <span>/</span>
               <span className="text-white">Borduri</span>
             </nav>
-            <h1 className="heading-h1 mb-4">Borduri</h1>
+            <h1 className="heading-h1 mb-4">Borduri din beton</h1>
             <p className="text-body-lg text-charcoal-400 max-w-3xl">
               19 formate de bordură din beton vibropresat pentru încadrarea și delimitarea aleilor, trotuarelor,
               parcărilor și spațiilor verzi — de la modelul standard, la profiluri decorative, rampe și racorduri.

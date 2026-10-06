@@ -109,7 +109,7 @@ export function HeroSection() {
           <h1 className="text-white/50 text-xs sm:text-sm font-medium mb-4 max-w-2xl">
             {isEnglish
               ? 'Petra Pavaje — Premium Paver Manufacturer · In Harmony with Nature · 800+ Products · 4 National Factories · 24,000 sqm/day'
-              : 'Petra Pavaje — Producător Premium de Pavaje · În armonie cu natura · 800+ Produse · 4 Fabrici Naționale · 24.000 mp/zi'}
+              : 'Petra Pavaje — producător de pavaje, pavele și borduri din beton · 800+ produse · 4 fabrici în România · 24.000 mp/zi'}
           </h1>
 
           <motion.div
