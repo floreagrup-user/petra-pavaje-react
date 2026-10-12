@@ -74,7 +74,9 @@ async function main() {
 
   const pristineShell = readFileSync(join(DIST, 'index.html'))
   const server = await startServer(pristineShell)
-  const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] })
+  // 'shell' = chrome-headless-shell, which has no GTK/ATK dependencies; the
+  // Workers Builds image lacks libatk, so full Chrome fails to launch there.
+  const browser = await puppeteer.launch({ headless: 'shell', args: ['--no-sandbox', '--disable-setuid-sandbox'] })
 
   let ok = 0
   for (const route of routes) {
