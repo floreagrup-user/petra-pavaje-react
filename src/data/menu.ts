@@ -101,6 +101,7 @@ export const mainMenu: MenuItem[] = [
     href: '/despre-noi',
     children: [
       { label: 'Despre Noi', href: '/despre-noi' },
+      { label: 'Fabricile noastre', href: '/fabrici' },
       { label: 'Florea Grup – 30 de ani', href: '/florea-grup' },
       { label: 'Sustenabilitate', href: '/sustenabilitate' },
       { label: 'Garanție', href: '/garantie' },
@@ -151,6 +152,7 @@ export const footerLinks = {
   ],
   company: [
     { label: 'Despre Noi', href: '/despre-noi' },
+    { label: 'Fabricile noastre', href: '/fabrici' },
     { label: 'Sustenabilitate', href: '/sustenabilitate' },
     { label: 'Carieră', href: '/cariera' },
     { label: 'Blog', href: '/blog' },

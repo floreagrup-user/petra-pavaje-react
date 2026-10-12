@@ -4,6 +4,11 @@
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
+# Factory photos change rarely; a week keeps repeat visits fast without
+# pinning a replaced photo for a year.
+/images/fabrici/*
+  Cache-Control: public, max-age=604800
+
 # Pages adds these two on every response by default; Workers Assets does not,
 # so they are set explicitly to keep the same headers after the migration.
 /*

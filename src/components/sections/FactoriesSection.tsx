@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useLocation } from 'react-router-dom'
-import { MapPin, Phone, Clock, Navigation, Star, Quote } from 'lucide-react'
+import { Link, useLocation } from 'react-router-dom'
+import { MapPin, Phone, Clock, Navigation, Star, Quote, ArrowRight } from 'lucide-react'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { factories } from '@/data/site'
 import { FACTORY_REVIEWS } from '@/data/factory-reviews'
+import { factoryPagePath } from '@/data/factory-pages'
 import { isEnglishPath } from '@/lib/i18n-routes'
 
 const FACTORY_NAME_EN: Record<string, string> = {
@@ -159,7 +160,16 @@ export function FactoriesSection() {
               </motion.div>
             </AnimatePresence>
 
-            <div className="absolute bottom-0 left-0 right-0 p-6">
+            <div className="absolute bottom-0 left-0 right-0 p-6 flex flex-wrap gap-3">
+              {!isEnglish && (
+                <Link
+                  to={factoryPagePath(factories[activeFactory].id)}
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-white text-charcoal-900 rounded-md hover:bg-charcoal-100 transition-colors"
+                >
+                  Vezi pagina fabricii
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              )}
               <a
                 href={`https://www.google.com/maps/dir/?api=1&destination=${factories[activeFactory].lat},${factories[activeFactory].lng}`}
                 target="_blank"

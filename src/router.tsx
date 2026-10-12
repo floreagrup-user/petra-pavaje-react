@@ -7,6 +7,8 @@ const ProductsHubPage = lazy(() => import('@/pages/ProductsHubPage').then(m => (
 const ProductCategoryPage = lazy(() => import('@/pages/ProductCategoryPage').then(m => ({ default: m.ProductCategoryPage })))
 const ProductDetailPage = lazy(() => import('@/pages/ProductDetailPage').then(m => ({ default: m.ProductDetailPage })))
 const PavajeCurtePage = lazy(() => import('@/pages/PavajeCurtePage').then(m => ({ default: m.PavajeCurtePage })))
+const FactoriesHubPage = lazy(() => import('@/pages/FactoriesHubPage').then(m => ({ default: m.FactoriesHubPage })))
+const FactoryPage = lazy(() => import('@/pages/FactoryPage').then(m => ({ default: m.FactoryPage })))
 const ContactPage = lazy(() => import('@/pages/ContactPage').then(m => ({ default: m.ContactPage })))
 const BlogPage = lazy(() => import('@/pages/BlogPage').then(m => ({ default: m.BlogPage })))
 const BlogDetailPage = lazy(() => import('@/pages/BlogDetailPage').then(m => ({ default: m.BlogDetailPage })))
@@ -84,6 +86,8 @@ export const router = createBrowserRouter([
       { path: 'pavaje-premium/:product', element: <Suspense><ProductDetailPage /></Suspense> },
       { path: 'pavaje-standard', element: <Suspense><StandardCategoryPage /></Suspense> },
       { path: 'pavaje-curte', element: <Suspense><PavajeCurtePage /></Suspense> },
+      { path: 'fabrici', element: <Suspense><FactoriesHubPage /></Suspense> },
+      { path: 'fabrici/:slug', element: <Suspense><FactoryPage /></Suspense> },
       { path: 'pavaje-standard/:product', element: <Suspense><ProductDetailPage /></Suspense> },
       { path: 'borduri', element: <Suspense><BorduriCategoryPage /></Suspense> },
       { path: 'borduri/:product', element: <Suspense><ProductDetailPage /></Suspense> },
