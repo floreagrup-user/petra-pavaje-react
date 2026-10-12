@@ -82,7 +82,16 @@ async function main() {
   for (const route of routes) {
     const page = await browser.newPage()
     try {
-      await page.goto(`http://localhost:${PORT}${route}`, { waitUntil: 'networkidle0', timeout: 30000 })
+      const url = `http://localhost:${PORT}${route}`
+      try {
+        await page.goto(url, { waitUntil: 'networkidle0', timeout: 30000 })
+      } catch (err) {
+        // Image-heavy blog posts load dozens of R2 photos; on a slow CI
+        // network networkidle0 can miss its window. The DOM we save does not
+        // depend on images finishing, so retry once with a looser wait.
+        console.warn(`Retrying ${route}: ${err.message}`)
+        await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 })
+      }
       await page.waitForFunction(() => !document.body.innerText.includes('Se încarcă'), { timeout: 15000 }).catch(() => {})
       await new Promise((r) => setTimeout(r, 300))
       const rawHtml = await page.evaluate(() => '<!doctype html>\n' + document.documentElement.outerHTML)
