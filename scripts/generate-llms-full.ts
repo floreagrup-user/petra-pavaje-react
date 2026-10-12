@@ -8,6 +8,7 @@
 // Run with: npx tsx scripts/generate-llms-full.ts
 import { writeFileSync } from 'node:fs'
 import { categories, factories } from '../src/data/site'
+import { FACTORY_PAGES, factoryPagePath } from '../src/data/factory-pages'
 import { products } from '../src/data/products'
 import { woodstoneCategories } from '../src/data/woodstone'
 import { elementCategories } from '../src/data/elements'
@@ -49,6 +50,11 @@ for (const f of factories) {
   push(`- Email: ${f.email}`)
   push(`- Program: ${f.schedule}`)
   push(`- Coordonate: ${f.lat}, ${f.lng}`)
+  const page = FACTORY_PAGES.find((p) => p.factoryId === f.id)
+  if (page) {
+    push(`- Pagină: ${SITE_URL}${factoryPagePath(page.slug)}`)
+    for (const fact of page.facts) push(`- ${fact.label}: ${fact.value}`)
+  }
   push()
 }
 push('---')

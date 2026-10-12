@@ -9,32 +9,52 @@ Acest fișier conține conținutul integral pentru paginile esențiale: toate pr
 ## Fabrici
 
 ### Fabrica Alba
-- Adresă: Str. Pietrar Nr. 20, Alba Iulia, Jud. Alba
+- Adresă: Strada Pietrar nr. 20, Alba Iulia, jud. Alba
 - Telefon: +40 358 732 246
-- Email: alba@petrapavaje.ro
+- Email: office-ab@floreagrup.ro
 - Program: Luni - Vineri: 08:00 - 17:00
 - Coordonate: 46.102122, 23.616103
+- Pagină: https://petrapavaje.ro/fabrici/alba
+- Capacitate de producție: 6.000 mp/zi
+- Produse: 800+
+- Grădină expozițională: 5.500+ mp
+- Locuri de muncă: 100+
 
 ### Fabrica Prahova
-- Adresă: Sat. Strejnicu, Com. Tîrgșorul Vechi, DN1 A KM 62+200, Jud. Prahova
+- Adresă: Sat Strejnicu, comuna Târgșoru Vechi, DN1A, km 62+200, jud. Prahova
 - Telefon: +40 244 704 342
-- Email: prahova@petrapavaje.ro
+- Email: office-ph@floreagrup.ro
 - Program: Luni - Vineri: 08:00 - 17:00
 - Coordonate: 44.899713, 25.970946
+- Pagină: https://petrapavaje.ro/fabrici/prahova
+- Inaugurată în: 2020
+- Capacitate de producție: 6.000 mp/zi
+- Showroom exterior: 5.500+ mp
+- Locuri de muncă: 60+
 
 ### Fabrica Arad
-- Adresă: Sat. Horia, Str. 1 Decembrie, Nr. 28, Jud. Arad
-- Telefon: +40 731 190 939
-- Email: arad@petrapavaje.ro
+- Adresă: Horia, comuna Vladimirescu, str. 1 Decembrie 1918, nr. 28, jud. Arad
+- Telefon: +40 728 999 943
+- Email: office-ar@floreagrup.ro
 - Program: Luni - Vineri: 08:00 - 17:00
 - Coordonate: 46.201001, 21.441063
+- Pagină: https://petrapavaje.ro/fabrici/arad
+- În funcțiune din: 23 septembrie 2021
+- Capacitate de producție: 6.000 mp/zi
+- Produse: 800+
+- Locuri de muncă: 50+
 
 ### Fabrica Neamț
-- Adresă: Sat. Simionești, DJ207B, Jud. Neamț
-- Telefon: +40 785 510 445
-- Email: neamt@petrapavaje.ro
+- Adresă: Sat Simionești, DJ207B, jud. Neamț
+- Telefon: +40 767 888 882
+- Email: office-nt@floreagrup.ro
 - Program: Luni - Vineri: 08:00 - 17:00
 - Coordonate: 46.980449, 26.864776
+- Pagină: https://petrapavaje.ro/fabrici/neamt
+- În funcțiune din: 20 iulie 2022
+- Capacitate de producție: 6.000 mp/zi
+- Platformă industrială: 80.000 mp
+- Locuri de muncă: 80+
 
 ---
 
@@ -772,8 +792,8 @@ Elementele de gard Baroc îmbină eleganța clasică cu robustețea betonului. D
 
 ### Bloc de beton
 URL: https://petrapavaje.ro/elemente-de-canalizare/bloc-de-beton
-Blocurile de beton reprezintă elemente de zidărie esențiale în construcții, fabricate dintr-un amestec de ciment, apă, nisip și pietriș. Disponibile în două dimensiuni mari, sunt ideale pentru construcția pereților, gardurilor, fundațiilor și a altor structuri, inclusiv a căminelor și structurilor de canalizare.
-- Caracteristici: 2 dimensiuni, Culoare Gri, Garanție 5 ani
+Blocurile de beton reprezintă elemente de zidărie esențiale în construcții, fabricate dintr-un amestec de ciment, apă, nisip și pietriș. Disponibile în trei dimensiuni, inclusiv un bloc de terminație, sunt ideale pentru construcția pereților, gardurilor, fundațiilor și a altor structuri, inclusiv a căminelor și structurilor de canalizare.
+- Caracteristici: 3 dimensiuni, Culoare Gri, Garanție 5 ani
 - Culori: Gri
 
 ### Elemente pentru cămine 1000 mm
@@ -800,6 +820,11 @@ Tuburile din beton sunt mult mai rezistente decât orice alt tip de conducte —
 URL: https://petrapavaje.ro/elemente-de-canalizare/infrastructura-rutiera
 Petra Pavaje oferă o gamă complexă de elemente prefabricate din beton pentru infrastructură rutieră: de la rigole carosabile și rigole de acostament, la capace carosabile și necarosabile, proiectate și testate pentru a face față rigorilor traficului auto.
 - Caracteristici: Capace carosabile și necarosabile, Beton armat, Garanție 2 ani
+
+### Accesorii
+URL: https://petrapavaje.ro/elemente-de-canalizare/accesorii-canalizare
+Gamă de accesorii complementare elementelor de canalizare din beton: piese de racord pentru conducte de diverse diametre, garnituri de etanșare pentru cămine, elemente pentru treaptă de acces și capace/rame individuale D400.
+- Caracteristici: 8 diametre de racord, Garnituri DN 800/1000, Capace D400
 
 ---
 
@@ -829,8 +854,8 @@ Alegând Petra Pavaje, beneficiezi de:
 Toate produsele Petra Pavaje sunt fabricate în România, în cele 4 fabrici proprii:
 • Fabrica Alba - Alba Iulia (Tel: +40 358 732 246)
 • Fabrica Prahova - Strejnicu (Tel: +40 244 704 342)
-• Fabrica Arad - Sat Horia (Tel: +40 731 190 939)
-• Fabrica Neamț - Simionești (Tel: +40 785 510 445)
+• Fabrica Arad - Sat Horia (Tel: +40 728 999 943)
+• Fabrica Neamț - Simionești (Tel: +40 767 888 882)
 Această distribuție ne permite să acoperim eficient întreaga țară cu livrări rapide.
 
 **Petra Pavaje are acoperire națională? În ce județe activați?**
@@ -970,8 +995,8 @@ Ne angajăm să răspundem în maximum 48 de ore lucrătoare și să găsim cea 
 Ne poți contacta prin multiple canale:
 • Fabrica Alba: +40 358 732 246
 • Fabrica Prahova: +40 244 704 342
-• Fabrica Arad: +40 731 190 939
-• Fabrica Neamț: +40 785 510 445
+• Fabrica Arad: +40 728 999 943
+• Fabrica Neamț: +40 767 888 882
 Sau completează formularul de contact de pe pagina de Contact. Program: Luni-Vineri 08:00-17:00.
 
 **Aveți showroom-uri unde pot vedea produsele fizic?**
@@ -1059,4 +1084,4 @@ URL secțiune: https://petrapavaje.ro/blog
 
 ---
 
-_Generat automat din datele reale ale site-ului (2026-09-24). Nu editați manual — rulați `npx tsx scripts/generate-llms-full.ts`._
+_Generat automat din datele reale ale site-ului (2026-10-12). Nu editați manual — rulați `npx tsx scripts/generate-llms-full.ts`._

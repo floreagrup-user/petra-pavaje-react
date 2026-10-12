@@ -17,7 +17,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'Despre Petra Pavaje',
     question: 'Unde sunt fabricate produsele Petra Pavaje?',
     answer:
-      'Toate produsele Petra Pavaje sunt fabricate în România, în cele 4 fabrici proprii:\n• Fabrica Alba - Alba Iulia (Tel: +40 358 732 246)\n• Fabrica Prahova - Strejnicu (Tel: +40 244 704 342)\n• Fabrica Arad - Sat Horia (Tel: +40 731 190 939)\n• Fabrica Neamț - Simionești (Tel: +40 785 510 445)\nAceastă distribuție ne permite să acoperim eficient întreaga țară cu livrări rapide.',
+      'Toate produsele Petra Pavaje sunt fabricate în România, în cele 4 fabrici proprii:\n• Fabrica Alba - Alba Iulia (Tel: +40 358 732 246)\n• Fabrica Prahova - Strejnicu (Tel: +40 244 704 342)\n• Fabrica Arad - Sat Horia (Tel: +40 728 999 943)\n• Fabrica Neamț - Simionești (Tel: +40 767 888 882)\nAceastă distribuție ne permite să acoperim eficient întreaga țară cu livrări rapide.',
   },
   {
     category: 'Despre Petra Pavaje',
@@ -150,7 +150,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'Contact',
     question: 'Cum pot contacta Petra Pavaje pentru întrebări sau consultanță?',
     answer:
-      'Ne poți contacta prin multiple canale:\n• Fabrica Alba: +40 358 732 246\n• Fabrica Prahova: +40 244 704 342\n• Fabrica Arad: +40 731 190 939\n• Fabrica Neamț: +40 785 510 445\nSau completează formularul de contact de pe pagina de Contact. Program: Luni-Vineri 08:00-17:00.',
+      'Ne poți contacta prin multiple canale:\n• Fabrica Alba: +40 358 732 246\n• Fabrica Prahova: +40 244 704 342\n• Fabrica Arad: +40 728 999 943\n• Fabrica Neamț: +40 767 888 882\nSau completează formularul de contact de pe pagina de Contact. Program: Luni-Vineri 08:00-17:00.',
   },
   {
     category: 'Contact',

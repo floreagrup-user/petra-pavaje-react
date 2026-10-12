@@ -17,7 +17,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'About Petra Pavaje',
     question: 'Where are Petra Pavaje products made?',
     answer:
-      'All Petra Pavaje products are made in Romania, at our 4 own factories:\n• Alba Factory - Alba Iulia (Tel: +40 358 732 246)\n• Prahova Factory - Strejnicu (Tel: +40 244 704 342)\n• Arad Factory - Sat Horia (Tel: +40 731 190 939)\n• Neamț Factory - Simionești (Tel: +40 785 510 445)\nThis distribution lets us efficiently cover the whole country with fast deliveries.',
+      'All Petra Pavaje products are made in Romania, at our 4 own factories:\n• Alba Factory - Alba Iulia (Tel: +40 358 732 246)\n• Prahova Factory - Strejnicu (Tel: +40 244 704 342)\n• Arad Factory - Sat Horia (Tel: +40 728 999 943)\n• Neamț Factory - Simionești (Tel: +40 767 888 882)\nThis distribution lets us efficiently cover the whole country with fast deliveries.',
   },
   {
     category: 'About Petra Pavaje',
@@ -150,7 +150,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'Contact',
     question: 'How can I contact Petra Pavaje with questions or for advice?',
     answer:
-      'You can reach us through multiple channels:\n• Alba Factory: +40 358 732 246\n• Prahova Factory: +40 244 704 342\n• Arad Factory: +40 731 190 939\n• Neamț Factory: +40 785 510 445\nOr fill in the contact form on our Contact page. Hours: Monday-Friday 08:00-17:00.',
+      'You can reach us through multiple channels:\n• Alba Factory: +40 358 732 246\n• Prahova Factory: +40 244 704 342\n• Arad Factory: +40 728 999 943\n• Neamț Factory: +40 767 888 882\nOr fill in the contact form on our Contact page. Hours: Monday-Friday 08:00-17:00.',
   },
   {
     category: 'Contact',
