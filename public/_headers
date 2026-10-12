@@ -3,3 +3,9 @@
 # of 4h, per the SEO/perf audit's "efficient cache lifetimes" finding.
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Pages adds these two on every response by default; Workers Assets does not,
+# so they are set explicitly to keep the same headers after the migration.
+/*
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
