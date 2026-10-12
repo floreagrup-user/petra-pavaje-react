@@ -1,0 +1,35 @@
+# Builds the site and deploys it to the Cloudflare Worker "petra-pavaje" on
+# every push to main. Runs here rather than in Workers Builds because the
+# prerender step needs Chrome, and the Workers Builds image lacks Chrome's
+# system libraries (libatk and others).
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build:worker
+
+      - run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 8458cbd7f9721a7e58194ef910aaddf2
