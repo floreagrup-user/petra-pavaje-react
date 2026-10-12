@@ -1,0 +1,40 @@
+// Workers config for petrapavaje.ro (migrated from Cloudflare Pages project
+// "petra-pavaje-react"). Build with `npm run build:worker`, deploy with
+// `npx wrangler deploy`. Values mirror the Pages production config.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "petra-pavaje",
+  "compatibility_date": "2026-05-19",
+
+  // functions/ compiled by `wrangler pages functions build` (see build:worker).
+  // Requests that match no function fall through to env.ASSETS.
+  "main": "./dist/_worker.js/index.js",
+
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // Same behaviour as Pages: /blog serves blog.html, unknown paths get 404.html.
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+
+  "d1_databases": [
+    {
+      "binding": "NEWSLETTER_DB",
+      "database_name": "petrapavaje-newsletter",
+      "database_id": "169de40a-cfd8-4167-bd1b-a930cd32b613"
+    }
+  ],
+
+  // Secrets (set with `npx wrangler secret put <NAME>`, never committed):
+  // AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, TURNSTILE_SECRET_KEY, NEWSLETTER_ADMIN_KEY
+  "vars": {
+    "AWS_SES_REGION": "eu-central-1"
+  },
+
+  "observability": { "enabled": true },
+
+  // Custom domains are attached only at cutover; until then the Worker is
+  // reachable on petra-pavaje.floreagrup.workers.dev for testing.
+  "workers_dev": true
+}
