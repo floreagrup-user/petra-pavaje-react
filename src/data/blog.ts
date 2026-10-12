@@ -1029,7 +1029,7 @@ Alege grosimea în funcție de utilizare, păstrează aceeași grosime atunci c�
  Sat. Horia, Str. 1 Decembrie, Nr. 28, Jud. Arad
  
  
- <a href="tel:+40731190939">+40 731 190 939</a>
+ <a href="tel:+40728999943">+40 728 999 943</a>
  
  
  
@@ -1046,7 +1046,7 @@ Alege grosimea în funcție de utilizare, păstrează aceeași grosime atunci c�
  Sat. Simionești, DJ207B, Jud. Neamț
  
  
- <a href="tel:+40785510445">+40 785 510 445</a>
+ <a href="tel:+40767888882">+40 767 888 882</a>
  
  
  
