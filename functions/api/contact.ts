@@ -75,7 +75,11 @@ export async function onRequestPost(context: any) {
       )
     }
 
-    const { AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_SES_REGION, TURNSTILE_SECRET_KEY } = context.env
+    const { AWS_SES_REGION, TURNSTILE_SECRET_KEY } = context.env
+    // Trimmed because a pasted secret can carry a trailing space or newline,
+    // which breaks the SigV4 Authorization header (SES answers 403).
+    const AWS_ACCESS_KEY_ID = context.env.AWS_ACCESS_KEY_ID?.trim()
+    const AWS_SECRET_ACCESS_KEY = context.env.AWS_SECRET_ACCESS_KEY?.trim()
 
     if (TURNSTILE_SECRET_KEY) {
       const remoteIp = context.request.headers.get('CF-Connecting-IP') || undefined
