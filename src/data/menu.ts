@@ -285,6 +285,7 @@ export const enMenu: MenuItem[] = [
     href: '/en/despre-noi',
     children: [
       { label: 'About Us', href: '/en/despre-noi' },
+      { label: 'Our Factories', href: '/en/fabrici' },
       { label: 'Florea Grup – 30 Years', href: '/en/florea-grup' },
       { label: 'Sustainability', href: '/en/sustenabilitate' },
       { label: 'Warranty', href: '/en/garantie' },
@@ -311,6 +312,7 @@ export const enMenu: MenuItem[] = [
 export const enFooterLinks = {
   company: [
     { label: 'About Us', href: '/en/despre-noi' },
+    { label: 'Our Factories', href: '/en/fabrici' },
     { label: 'Florea Grup – 30 Years', href: '/en/florea-grup' },
     { label: 'Sustainability', href: '/en/sustenabilitate' },
     { label: 'Careers', href: '/en/cariera' },

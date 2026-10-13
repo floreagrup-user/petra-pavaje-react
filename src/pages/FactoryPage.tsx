@@ -1,26 +1,77 @@
 import { useEffect, useMemo } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useLocation, useParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ArrowRight, Clock, Mail, MapPin, MessageCircle, Navigation, Phone, Quote, Star } from 'lucide-react'
 import { factories } from '@/data/site'
 import { FACTORY_REVIEWS } from '@/data/factory-reviews'
 import { blogPosts } from '@/data/blog'
-import { FACTORY_PAGES, FLOREA_GRUP_ABOUT, factoryPagePath, type FactoryImage, type FactoryPageData } from '@/data/factory-pages'
+import {
+  FACTORY_PAGES,
+  FLOREA_GRUP_ABOUT,
+  factoriesHubPath,
+  factoryCity,
+  factoryPagePath,
+  type FactoryImage,
+  type FactoryPageData,
+} from '@/data/factory-pages'
+import { FLOREA_GRUP_ABOUT_EN, getFactoryPages } from '@/data/factory-pages.en'
 import type { Factory } from '@/data/types'
+import { isEnglishPath } from '@/lib/i18n-routes'
 import { NotFoundPage } from '@/pages/NotFoundPage'
-import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, resetSEO } from '@/hooks/seo-utils'
+import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, upsertHreflangPair, resetSEO } from '@/hooks/seo-utils'
+
+const T = {
+  ro: {
+    home: 'Acasă',
+    factories: 'Fabrici',
+    directions: 'Indicații rutiere',
+    productsMadeHere: 'Produse fabricate aici',
+    about: 'Despre Petra Pavaje și Florea Grup',
+    floreaStory: 'Povestea Florea Grup',
+    contactTitle: 'Contact fabrică',
+    openMaps: 'Deschide în Google Maps',
+    googleReviews: 'recenzii Google',
+    googleReview: 'recenzie Google',
+    quote: 'Cere o ofertă',
+    history: 'Din istoria fabricii',
+    others: 'Celelalte fabrici Petra Pavaje',
+    all: 'Toate fabricile Petra Pavaje',
+    schedule: 'Luni - Vineri: 08:00 - 17:00',
+  },
+  en: {
+    home: 'Home',
+    factories: 'Factories',
+    directions: 'Get directions',
+    productsMadeHere: 'Products made here',
+    about: 'About Petra Pavaje and Florea Grup',
+    floreaStory: 'The Florea Grup story',
+    contactTitle: 'Factory contact',
+    openMaps: 'Open in Google Maps',
+    googleReviews: 'Google reviews',
+    googleReview: 'Google review',
+    quote: 'Request a quote',
+    history: 'From the factory\'s history',
+    others: 'Other Petra Pavaje factories',
+    all: 'All Petra Pavaje factories',
+    schedule: 'Monday - Friday: 08:00 - 17:00',
+  },
+}
 
 const directionsUrl = (f: Factory) => `https://www.google.com/maps/dir/?api=1&destination=${f.lat},${f.lng}`
 
-function useFactorySEO(page: FactoryPageData | undefined, factory: Factory | undefined) {
+function useFactorySEO(page: FactoryPageData | undefined, factory: Factory | undefined, isEnglish: boolean) {
   useEffect(() => {
     if (!page || !factory) return
     const origin = window.location.origin
-    const url = `${origin}${factoryPagePath(page.slug)}`
+    const roPath = factoryPagePath(page.slug)
+    const enPath = factoryPagePath(page.slug, true)
+    const url = `${origin}${isEnglish ? enPath : roPath}`
     const image = `${origin}${page.images[0].lg}`
+    const roName = FACTORY_PAGES.find((p) => p.slug === page.slug)?.name ?? page.name
     document.title = page.metaTitle
     upsertMeta('name', 'description', page.metaDescription)
     upsertCanonical(url)
+    upsertHreflangPair(roPath, enPath)
     upsertMeta('property', 'og:type', 'website')
     upsertMeta('property', 'og:title', page.metaTitle)
     upsertMeta('property', 'og:description', page.metaDescription)
@@ -38,7 +89,7 @@ function useFactorySEO(page: FactoryPageData | undefined, factory: Factory | und
       '@context': 'https://schema.org',
       '@type': 'HomeAndConstructionBusiness',
       '@id': `${origin}/#fabrica-${factory.id}`,
-      name: `Petra Pavaje - ${page.name.replace('Fabrica Petra Pavaje', 'Fabrica')}`,
+      name: `Petra Pavaje - ${roName.replace('Fabrica Petra Pavaje', 'Fabrica')}`,
       description: page.metaDescription,
       url,
       image: page.images.map((img) => `${origin}${img.lg}`),
@@ -70,16 +121,21 @@ function useFactorySEO(page: FactoryPageData | undefined, factory: Factory | und
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Acasă', item: `${origin}/` },
-        { '@type': 'ListItem', position: 2, name: 'Fabrici', item: `${origin}/fabrici` },
+        { '@type': 'ListItem', position: 1, name: isEnglish ? 'Home' : 'Acasă', item: `${origin}${isEnglish ? '/en' : '/'}` },
+        { '@type': 'ListItem', position: 2, name: isEnglish ? 'Factories' : 'Fabrici', item: `${origin}${factoriesHubPath(isEnglish)}` },
         { '@type': 'ListItem', position: 3, name: page.name, item: url },
       ],
     })
-    return resetSEO
-  }, [page, factory])
+    return () => {
+      // resetSEO() does not know this page-specific id, so remove it here or
+      // the factory schema would linger on the next page in the SPA.
+      upsertJsonLd('factory-schema', null)
+      resetSEO()
+    }
+  }, [page, factory, isEnglish])
 }
 
-function FactoryPicture({ image, eager = false, className = '' }: { image: FactoryImage; eager?: boolean; className?: string }) {
+function FactoryPicture({ image, eager = false }: { image: FactoryImage; eager?: boolean }) {
   return (
     <img
       src={image.lg}
@@ -90,14 +146,17 @@ function FactoryPicture({ image, eager = false, className = '' }: { image: Facto
       alt={image.alt}
       loading={eager ? 'eager' : 'lazy'}
       fetchPriority={eager ? 'high' : undefined}
-      className={`w-full h-auto rounded-2xl object-cover ${className}`}
+      className="w-full h-auto rounded-2xl object-cover"
     />
   )
 }
 
 export function FactoryPage() {
   const { slug } = useParams<{ slug: string }>()
-  const page = FACTORY_PAGES.find((p) => p.slug === slug)
+  const isEnglish = isEnglishPath(useLocation().pathname)
+  const t = isEnglish ? T.en : T.ro
+  const pages = getFactoryPages(isEnglish)
+  const page = pages.find((p) => p.slug === slug)
   const factory = page ? factories.find((f) => f.id === page.factoryId) : undefined
   const review = page ? FACTORY_REVIEWS.find((r) => r.factoryId === page.factoryId) : undefined
   const articles = useMemo(
@@ -107,12 +166,13 @@ export function FactoryPage() {
         .filter((p): p is NonNullable<typeof p> => Boolean(p)),
     [page]
   )
-  useFactorySEO(page, factory)
+  useFactorySEO(page, factory, isEnglish)
 
   if (!page || !factory) return <NotFoundPage />
 
   const [heroImage, ...moreImages] = page.images
-  const others = FACTORY_PAGES.filter((p) => p.slug !== page.slug)
+  const others = pages.filter((p) => p.slug !== page.slug)
+  const prefix = isEnglish ? '/en' : ''
 
   return (
     <div className="pt-20 md:pt-24">
@@ -120,9 +180,9 @@ export function FactoryPage() {
         <div className="container-premium grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           <motion.div className="min-w-0" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <nav className="flex flex-wrap items-center gap-2 text-sm text-charcoal-400 mb-6" aria-label="Breadcrumb">
-              <Link to="/" className="hover:text-white transition-colors">Acasă</Link>
+              <Link to={isEnglish ? '/en' : '/'} className="hover:text-white transition-colors">{t.home}</Link>
               <span aria-hidden="true">/</span>
-              <Link to="/fabrici" className="hover:text-white transition-colors">Fabrici</Link>
+              <Link to={factoriesHubPath(isEnglish)} className="hover:text-white transition-colors">{t.factories}</Link>
               <span aria-hidden="true">/</span>
               <span className="text-white">{page.place}</span>
             </nav>
@@ -136,7 +196,7 @@ export function FactoryPage() {
               </a>
               <a href={directionsUrl(factory)} target="_blank" rel="noopener noreferrer" className="btn-outline-light">
                 <Navigation className="w-4 h-4 mr-2" />
-                Indicații rutiere
+                {t.directions}
               </a>
             </div>
           </motion.div>
@@ -169,7 +229,7 @@ export function FactoryPage() {
                   ))}
                 </div>
                 {idx === 0 && (
-                  <div className="mt-6 flex flex-wrap gap-2" aria-label="Produse fabricate aici">
+                  <div className="mt-6 flex flex-wrap gap-2" aria-label={t.productsMadeHere}>
                     {page.products.map((product) => (
                       <Link
                         key={product.href}
@@ -193,15 +253,15 @@ export function FactoryPage() {
             ))}
 
             <div className="rounded-2xl bg-charcoal-50 p-6 md:p-8">
-              <h2 className="heading-h3 text-charcoal-900 mb-3">Despre Petra Pavaje și Florea Grup</h2>
-              <p className="text-body text-charcoal-700 leading-relaxed max-w-[65ch]">{FLOREA_GRUP_ABOUT}</p>
-              <Link to="/florea-grup" className="link-premium inline-block mt-4">Povestea Florea Grup</Link>
+              <h2 className="heading-h3 text-charcoal-900 mb-3">{t.about}</h2>
+              <p className="text-body text-charcoal-700 leading-relaxed max-w-[65ch]">{isEnglish ? FLOREA_GRUP_ABOUT_EN : FLOREA_GRUP_ABOUT}</p>
+              <Link to={`${prefix}/florea-grup`} className="link-premium inline-block mt-4">{t.floreaStory}</Link>
             </div>
           </div>
 
           <aside className="min-w-0 lg:sticky lg:top-28 space-y-4">
             <div className="rounded-2xl border border-charcoal-100 bg-white p-6 shadow-sm">
-              <h2 className="text-lg font-semibold text-charcoal-900 mb-4">Contact fabrică</h2>
+              <h2 className="text-lg font-semibold text-charcoal-900 mb-4">{t.contactTitle}</h2>
               <ul className="space-y-3 text-sm text-charcoal-700">
                 <li className="flex gap-3">
                   <MapPin className="w-4 h-4 text-brand-600 mt-0.5 shrink-0" aria-hidden="true" />
@@ -217,7 +277,7 @@ export function FactoryPage() {
                 </li>
                 <li className="flex gap-3">
                   <Clock className="w-4 h-4 text-brand-600 mt-0.5 shrink-0" aria-hidden="true" />
-                  <span>{factory.schedule}</span>
+                  <span>{isEnglish ? t.schedule : factory.schedule}</span>
                 </li>
               </ul>
               <a
@@ -227,7 +287,7 @@ export function FactoryPage() {
                 className="btn-secondary w-full mt-5 justify-center"
               >
                 <Navigation className="w-4 h-4 mr-2" />
-                Deschide în Google Maps
+                {t.openMaps}
               </a>
             </div>
 
@@ -241,23 +301,23 @@ export function FactoryPage() {
                 >
                   <Star className="w-4 h-4 fill-amber-400 text-amber-400" aria-hidden="true" />
                   <span className="font-semibold text-charcoal-900">{factory.googleRating.toFixed(1)}</span>
-                  <span>({factory.googleReviewCount} recenzii Google)</span>
+                  <span>({factory.googleReviewCount} {t.googleReviews})</span>
                 </a>
                 {review && (
                   <blockquote className="mt-3 flex gap-2 text-sm text-charcoal-600">
                     <Quote className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" aria-hidden="true" />
                     <div>
-                      <p className="italic leading-relaxed">&ldquo;{review.textRo}&rdquo;</p>
-                      <footer className="mt-1.5 text-xs font-medium text-charcoal-500">{review.author} · recenzie Google</footer>
+                      <p className="italic leading-relaxed">&ldquo;{isEnglish ? review.textEn : review.textRo}&rdquo;</p>
+                      <footer className="mt-1.5 text-xs font-medium text-charcoal-500">{review.author} · {t.googleReview}</footer>
                     </div>
                   </blockquote>
                 )}
               </div>
             )}
 
-            <Link to="/contact" className="btn-primary w-full justify-center">
+            <Link to={`${prefix}/contact`} className="btn-primary w-full justify-center">
               <MessageCircle className="w-4 h-4 mr-2" />
-              Cere o ofertă
+              {t.quote}
             </Link>
           </aside>
         </div>
@@ -266,7 +326,7 @@ export function FactoryPage() {
       {articles.length > 0 && (
         <section className="py-12 md:py-16 bg-charcoal-50">
           <div className="container-premium">
-            <h2 className="heading-h2 text-charcoal-900 mb-8">Din istoria fabricii</h2>
+            <h2 className="heading-h2 text-charcoal-900 mb-8">{t.history}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {articles.map((post) => (
                 <Link key={post.slug} to={`/blog/${post.slug}`} className="group flex flex-col sm:flex-row bg-white rounded-xl overflow-hidden border border-charcoal-100">
@@ -286,16 +346,18 @@ export function FactoryPage() {
 
       <section className="py-12 md:py-16">
         <div className="container-premium">
-          <h2 className="heading-h3 text-charcoal-900 mb-6">Celelalte fabrici Petra Pavaje</h2>
+          <h2 className="heading-h3 text-charcoal-900 mb-6">{t.others}</h2>
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {others.map((other) => (
               <li key={other.slug}>
                 <Link
-                  to={factoryPagePath(other.slug)}
+                  to={factoryPagePath(other.slug, isEnglish)}
                   className="group flex items-center justify-between gap-3 rounded-xl border border-charcoal-100 p-5 hover:border-brand-600 transition-colors"
                 >
                   <span className="min-w-0">
-                    <span className="block font-semibold text-charcoal-900 group-hover:text-brand-700">{other.name.replace('Fabrica Petra Pavaje ', 'Fabrica ')}</span>
+                    <span className="block font-semibold text-charcoal-900 group-hover:text-brand-700">
+                      {isEnglish ? `${factoryCity(other)} Factory` : `Fabrica ${factoryCity(other)}`}
+                    </span>
                     <span className="block text-sm text-charcoal-500">{other.place}</span>
                   </span>
                   <ArrowRight className="w-4 h-4 text-charcoal-400 group-hover:text-brand-600 shrink-0" aria-hidden="true" />
@@ -303,7 +365,7 @@ export function FactoryPage() {
               </li>
             ))}
           </ul>
-          <Link to="/fabrici" className="link-premium inline-block mt-6">Toate fabricile Petra Pavaje</Link>
+          <Link to={factoriesHubPath(isEnglish)} className="link-premium inline-block mt-6">{t.all}</Link>
         </div>
       </section>
     </div>

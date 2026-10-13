@@ -174,6 +174,8 @@ export const router = createBrowserRouter([
       // components as the RO routes, translated via src/data/woodstone.en.ts.
       { path: 'en/woodstone-lemn-pietrificat', element: <Suspense><WoodstonePage /></Suspense> },
       { path: 'en/woodstone-lemn-pietrificat/:category', element: <Suspense><WoodstoneCategoryPage /></Suspense> },
+      { path: 'en/fabrici', element: <Suspense><FactoriesHubPage /></Suspense> },
+      { path: 'en/fabrici/:slug', element: <Suspense><FactoryPage /></Suspense> },
 
       // Catch-all: any path that doesn't match a route above (including
       // /en/* paths this site never translated, like /en/blog or

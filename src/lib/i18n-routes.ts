@@ -33,7 +33,7 @@ export function isEnglishPath(pathname: string): boolean {
 // src/data/woodstone.en.ts -- unlike the rest of the product catalog, so
 // they need their own prefix-match rule alongside the exact-match
 // TRANSLATED_PATHS list above.
-const TRANSLATED_PREFIXES = ['/pavaje-premium', '/pavaje-standard', '/woodstone-lemn-pietrificat']
+const TRANSLATED_PREFIXES = ['/pavaje-premium', '/pavaje-standard', '/woodstone-lemn-pietrificat', '/fabrici']
 
 // RO path -> EN path for the language switcher. Falls back to the EN
 // homepage when the current RO page has no translation.

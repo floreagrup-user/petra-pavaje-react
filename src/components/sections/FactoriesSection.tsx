@@ -161,15 +161,13 @@ export function FactoriesSection() {
             </AnimatePresence>
 
             <div className="absolute bottom-0 left-0 right-0 p-6 flex flex-wrap gap-3">
-              {!isEnglish && (
-                <Link
-                  to={factoryPagePath(factories[activeFactory].id)}
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-white text-charcoal-900 rounded-md hover:bg-charcoal-100 transition-colors"
-                >
-                  Vezi pagina fabricii
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              )}
+              <Link
+                to={factoryPagePath(factories[activeFactory].id, isEnglish)}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-white text-charcoal-900 rounded-md hover:bg-charcoal-100 transition-colors"
+              >
+                {isEnglish ? 'View factory page' : 'Vezi pagina fabricii'}
+                <ArrowRight className="w-4 h-4" />
+              </Link>
               <a
                 href={`https://www.google.com/maps/dir/?api=1&destination=${factories[activeFactory].lat},${factories[activeFactory].lng}`}
                 target="_blank"

@@ -349,4 +349,9 @@ export const FACTORY_PAGES: FactoryPageData[] = [
   },
 ]
 
-export const factoryPagePath = (slug: string) => `/fabrici/${slug}`
+export const factoryPagePath = (slug: string, isEnglish = false) => `${isEnglish ? '/en' : ''}/fabrici/${slug}`
+export const factoriesHubPath = (isEnglish = false) => (isEnglish ? '/en/fabrici' : '/fabrici')
+
+/** "Alba Iulia" from "Fabrica Petra Pavaje Alba Iulia" / "Petra Pavaje Alba Iulia Factory". */
+export const factoryCity = (page: FactoryPageData) =>
+  page.name.replace('Fabrica Petra Pavaje ', '').replace('Petra Pavaje ', '').replace(/ Factory$/, '')
