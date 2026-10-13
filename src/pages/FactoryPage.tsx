@@ -6,7 +6,6 @@ import { factories } from '@/data/site'
 import { FACTORY_REVIEWS } from '@/data/factory-reviews'
 import { blogPosts } from '@/data/blog'
 import {
-  FACTORY_PAGES,
   FLOREA_GRUP_ABOUT,
   factoriesHubPath,
   factoryCity,
@@ -18,6 +17,7 @@ import { FLOREA_GRUP_ABOUT_EN, getFactoryPages } from '@/data/factory-pages.en'
 import type { Factory } from '@/data/types'
 import { isEnglishPath } from '@/lib/i18n-routes'
 import { NotFoundPage } from '@/pages/NotFoundPage'
+import { buildFactorySchema } from '@/lib/factory-schema'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, upsertHreflangPair, resetSEO } from '@/hooks/seo-utils'
 
 const T = {
@@ -67,7 +67,6 @@ function useFactorySEO(page: FactoryPageData | undefined, factory: Factory | und
     const enPath = factoryPagePath(page.slug, true)
     const url = `${origin}${isEnglish ? enPath : roPath}`
     const image = `${origin}${page.images[0].lg}`
-    const roName = FACTORY_PAGES.find((p) => p.slug === page.slug)?.name ?? page.name
     document.title = page.metaTitle
     upsertMeta('name', 'description', page.metaDescription)
     upsertCanonical(url)
@@ -83,40 +82,8 @@ function useFactorySEO(page: FactoryPageData | undefined, factory: Factory | und
     upsertMeta('name', 'twitter:description', page.metaDescription)
     upsertMeta('name', 'twitter:image', image)
 
-    // Same @id as the factory node in index.html, so search engines merge
-    // the two descriptions into one place instead of seeing duplicates.
-    upsertJsonLd('factory-schema', {
-      '@context': 'https://schema.org',
-      '@type': 'HomeAndConstructionBusiness',
-      '@id': `${origin}/#fabrica-${factory.id}`,
-      name: `Petra Pavaje - ${roName.replace('Fabrica Petra Pavaje', 'Fabrica')}`,
-      description: page.metaDescription,
-      url,
-      image: page.images.map((img) => `${origin}${img.lg}`),
-      telephone: factory.phone,
-      email: factory.email,
-      ...(page.opened ? { foundingDate: page.opened } : {}),
-      parentOrganization: { '@id': `${origin}/#organization` },
-      address: { '@type': 'PostalAddress', ...page.schemaAddress, addressCountry: 'RO' },
-      geo: { '@type': 'GeoCoordinates', latitude: factory.lat, longitude: factory.lng },
-      hasMap: directionsUrl(factory),
-      openingHoursSpecification: {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '08:00',
-        closes: '17:00',
-      },
-      ...(factory.googleRating && factory.googleReviewCount
-        ? {
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: factory.googleRating,
-              reviewCount: factory.googleReviewCount,
-              bestRating: 5,
-            },
-          }
-        : {}),
-    })
+    const schema = buildFactorySchema(factory.id, origin, { url, description: page.metaDescription })
+    upsertJsonLd('factory-schema', schema && { '@context': 'https://schema.org', ...schema })
     upsertJsonLd('breadcrumb-schema', {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link, useLocation } from 'react-router-dom'
 import { MapPin, Phone, Clock, Navigation, Star, Quote, ArrowRight } from 'lucide-react'
@@ -6,6 +6,8 @@ import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { factories } from '@/data/site'
 import { FACTORY_REVIEWS } from '@/data/factory-reviews'
 import { factoryPagePath } from '@/data/factory-pages'
+import { buildFactorySchema } from '@/lib/factory-schema'
+import { upsertJsonLd } from '@/hooks/seo-utils'
 import { isEnglishPath } from '@/lib/i18n-routes'
 
 const FACTORY_NAME_EN: Record<string, string> = {
@@ -19,6 +21,17 @@ export function FactoriesSection() {
   const isEnglish = isEnglishPath(useLocation().pathname)
   const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
   const [activeFactory, setActiveFactory] = useState(0)
+
+  // The homepage is the one page that describes all four factories as
+  // schema.org data; each factory page describes only its own.
+  useEffect(() => {
+    const origin = window.location.origin
+    upsertJsonLd('factories-schema', {
+      '@context': 'https://schema.org',
+      '@graph': factories.map((f) => buildFactorySchema(f.id, origin)).filter(Boolean),
+    })
+    return () => upsertJsonLd('factories-schema', null)
+  }, [])
 
   const factoryImages: Record<string, string> = {
     alba: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/petra-pavaje-fabrica-alba.webp',
