@@ -82,15 +82,16 @@ De exemplu, dacă o împrejmuire a fost realizată pentru delimitarea temporară
 Această flexibilitate face ca blocurile modulare să fie o opțiune de luat în considerare în proiectele în care cerințele se pot schimba în timp.
 </p>
 
-<h2>Blocuri de beton Petra Pavaje, în două dimensiuni</h2>
+<h2>Blocuri de beton Petra Pavaje, în trei dimensiuni</h2>
 
 <p>
-Pentru a răspunde cerințelor diferitelor proiecte, portofoliul Petra Pavaje include două dimensiuni de blocuri de beton:
+Pentru a răspunde cerințelor diferitelor proiecte, portofoliul Petra Pavaje include trei dimensiuni de blocuri de beton:
 </p>
 
 <ul>
 <li><a href="https://petrapavaje.ro/elemente-de-canalizare/bloc-de-beton"><strong>120x60x60 cm</strong></a></li>
 <li><a href="https://petrapavaje.ro/elemente-de-canalizare/bloc-de-beton"><strong>60x60x60 cm</strong></a></li>
+<li><a href="https://petrapavaje.ro/elemente-de-canalizare/bloc-de-beton"><strong>180x60x60 cm</strong></a> (bloc de terminație)</li>
 </ul>
 
 <p>
