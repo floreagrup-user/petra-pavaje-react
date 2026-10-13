@@ -2,6 +2,121 @@ import type { BlogPost } from '@/data/types'
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '29003',
+    title: `Soluții SMART pentru infrastructură modernă: blocurile de beton cu îmbinare tip LEGO`,
+    slug: 'blocuri-de-beton-cu-imbinare-tip-lego',
+    excerpt: `Blocurile de beton cu îmbinare tip LEGO permit structuri modulare care pot fi demontate și reutilizate: delimitări industriale, compartimentarea zonelor de lucru și consolidarea terenurilor în pantă.`,
+    content: `<p>
+În proiectele de infrastructură și amenajare a spațiilor industriale, flexibilitatea și eficiența sunt foarte importante mai ales în etapa de execuție, dar și atunci când e nevoie de soluții rapide. Atunci când configurația unui spațiu se poate schimba, soluțiile care permit demontarea și reutilizarea elementelor din beton devin extrem de utile.
+</p>
+
+<p>
+<a href="https://petrapavaje.ro/elemente-de-canalizare/bloc-de-beton">Blocurile de beton</a> cu sistem de îmbinare tip LEGO reprezintă o astfel de soluție SMART. Datorită formei lor și a modului de îmbinare, acestea pot fi utilizate pentru realizarea unor structuri modulare, adaptate cerințelor diferitelor proiecte.
+</p>
+
+<h2>Ce sunt blocurile de beton cu îmbinare tip LEGO?</h2>
+
+<p>
+Blocurile de beton cu îmbinare tip LEGO sunt elemente prefabricate concepute pentru a se îmbina unele cu altele, printr-un sistem inspirat de piesele de construcție LEGO. Acest principiu permite poziționarea și suprapunerea blocurilor pentru a forma pereți sau structuri de delimitare, în funcție de nevoile concrete din teren.
+</p>
+
+<p>
+Spre deosebire de soluțiile care presupun realizarea unei structuri fixe, blocurile modulare pot oferi mai multă flexibilitate atunci când spațiul trebuie reorganizat. Montajul și demontarea se realizează cu echipamente adecvate manipulării elementelor din beton, iar configurația poate fi modificată în funcție de cerințele proiectului.
+</p>
+
+<h2>Unde pot fi utilizate blocurile de beton?</h2>
+
+<p>
+Versatilitatea acestora le permite să răspundă mai multor nevoi întâlnite în amenajarea spațiilor industriale și în lucrările de infrastructură.
+</p>
+
+<h3>1. Delimitarea și împrejmuirea spațiilor industriale</h3>
+
+<p>
+În zonele industriale, logistice sau de depozitare, delimitarea eficientă a suprafețelor contribuie la organizarea activităților și la utilizarea mai bună a spațiului disponibil.
+</p>
+
+<p>
+Blocurile de beton pot fi folosite pentru realizarea unor pereți de delimitare sau a unor împrejmuiri, configurația acestora fiind stabilită în funcție de suprafața care trebuie separată și de destinația structurii.
+</p>
+
+<h3>2. Organizarea și compartimentarea zonelor de lucru</h3>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/blocuri-de-beton-cu-imbinare-tip-lego/blocuri-de-beton-lego-aliniate.avif" alt="Blocuri de beton cu îmbinare tip LEGO aliniate, cu elementele de îmbinare vizibile pe partea superioară" width="1600" height="1066" loading="lazy" decoding="async">
+</figure>
+
+<p>
+În anumite proiecte, spațiile industriale au nevoie de compartimentări care să poată fi adaptate pe măsură ce se schimbă activitățile desfășurate. Prin dispunerea blocurilor într-o configurație potrivită, pot fi delimitate diferite zone de lucru sau de depozitare.
+</p>
+
+<p>
+Caracterul modular permite modificarea structurii atunci când organizarea spațiului trebuie regândită, fără ca fiecare schimbare să presupună construirea unei delimitări permanente.
+</p>
+
+<h3>3. Consolidarea terenurilor în pantă</h3>
+
+<p>
+Blocurile de beton pot fi utilizate și în realizarea unor structuri de susținere a terenurilor în pantă, atunci când dimensiunile elementelor și configurația acestora sunt adecvate cerințelor lucrării.
+</p>
+
+<p>
+În astfel de situații, soluția trebuie aleasă pe baza unei evaluări tehnice care să țină cont de caracteristicile solului, înălțimea structurii și drenajul apelor, pluviale sau din sol. Nu orice configurație de blocuri este potrivită pentru orice teren.
+</p>
+
+<h2>Reutilizarea, un avantaj important</h2>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/blocuri-de-beton-cu-imbinare-tip-lego/blocuri-de-beton-lego-asezate-alaturat.avif" alt="Blocuri de beton cu îmbinare tip LEGO așezate alăturat într-o curte industrială" width="1600" height="1066" loading="lazy" decoding="async">
+</figure>
+
+<p>
+Unul dintre principalele avantaje ale blocurilor de beton cu îmbinare tip LEGO este posibilitatea reutilizării lor.
+</p>
+
+<p>
+De exemplu, dacă o împrejmuire a fost realizată pentru delimitarea temporară a unei zone industriale, blocurile pot fi demontate și relocate atunci când configurația inițială nu mai este necesară. Acestea pot fi folosite ulterior într-un alt proiect compatibil, reducând nevoia de a achiziționa alte elemente pentru fiecare reorganizare a spațiului. De asemenea, blocurile de beton pot fi utilizate pentru separarea zonelor destinate evenimentelor de zonele destinate traficului pietonal sau auto.
+</p>
+
+<p>
+Această flexibilitate face ca blocurile modulare să fie o opțiune de luat în considerare în proiectele în care cerințele se pot schimba în timp.
+</p>
+
+<h2>Blocuri de beton Petra Pavaje, în două dimensiuni</h2>
+
+<p>
+Pentru a răspunde cerințelor diferitelor proiecte, portofoliul Petra Pavaje include două dimensiuni de blocuri de beton:
+</p>
+
+<ul>
+<li><a href="https://petrapavaje.ro/elemente-de-canalizare/bloc-de-beton"><strong>120x60x60 cm</strong></a></li>
+<li><a href="https://petrapavaje.ro/elemente-de-canalizare/bloc-de-beton"><strong>60x60x60 cm</strong></a></li>
+</ul>
+
+<p>
+Alegerea dimensiunilor și stabilirea modului de dispunere se fac în funcție de destinația structurii și de cerințele tehnice ale lucrării.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/blocuri-de-beton-cu-imbinare-tip-lego/blocuri-de-beton-cu-goluri-amenajare-exterioara.avif" alt="Femeie așezată pe un bloc de beton cu goluri, într-un spațiu exterior cu mai multe blocuri similare" width="1600" height="1066" loading="lazy" decoding="async">
+</figure>
+
+<p>
+Blocurile de beton cu îmbinare tip LEGO reprezintă o soluție practică pentru proiectele care au nevoie de delimitări modulare și de posibilitatea reorganizării spațiului.
+</p>`,
+    date: '2026-10-13T09:00:00',
+    author: 'Mihaela Petruța',
+    authorSlug: 'mihaela-petruta',
+    categories: ['ghiduri'],
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/blocuri-de-beton-cu-imbinare-tip-lego/blocuri-de-beton-cu-imbinare-tip-lego.jpg',
+    readTime: 3,
+    seo: {
+      title: `Blocuri de beton cu îmbinare tip LEGO: soluții modulare`,
+      description: `Blocuri de beton cu îmbinare tip LEGO pentru delimitări industriale, compartimentări și terenuri în pantă, care se demontează și se reutilizează.`,
+      canonical: 'https://petrapavaje.ro/blog/blocuri-de-beton-cu-imbinare-tip-lego',
+    },
+  },
+  {
     id: '29002',
     title: `Pavaj gri sau colorat`,
     slug: 'pavaj-gri-sau-colorat',

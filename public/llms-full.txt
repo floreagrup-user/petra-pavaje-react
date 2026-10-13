@@ -1014,6 +1014,7 @@ Accesează pagina Catalog pentru toate opțiunile disponibile.
 ## Blog (rezumate)
 URL secțiune: https://petrapavaje.ro/blog
 
+- [Soluții SMART pentru infrastructură modernă: blocurile de beton cu îmbinare tip LEGO](https://petrapavaje.ro/blog/blocuri-de-beton-cu-imbinare-tip-lego) — 2026-10-13, Mihaela Petruța. Blocurile de beton cu îmbinare tip LEGO permit structuri modulare care pot fi demontate și reutilizate: delimitări industriale, compartimentarea zonelor de lucru și consolidarea terenurilor în pantă.
 - [Pavaj gri sau colorat](https://petrapavaje.ro/blog/pavaj-gri-sau-colorat) — 2026-10-02, Iulia Hladiuc. Pavaj gri sau colorat? Află când un pavaj gri poate fi premium, când merită un pavaj colorat, cum contează formatele și de ce culoarea nu influențează rezistența.
 - [Pavaje de 6 sau de 8 cm](https://petrapavaje.ro/blog/pavaje-de-6-sau-de-8-cm) — 2026-09-22, Iulia Hladiuc. Pavaje de 6 sau de 8 cm? Află ce grosime alegi pentru alei, trotuare și parcări, cum folosești același model în grosimi diferite și de ce stratul suport contează la fel de mult.
 - [Amenajarea spațiului exterior cu pavaje la Liceul Teologic Baptist „Alexa Popovici” din Arad](https://petrapavaje.ro/blog/amenajarea-spatiului-exterior-cu-pavaje-la-liceul-teologic-baptist-din-arad) — 2026-08-04, Mihaela Petruța. Află cum s-a realizat amenajarea spațiului exterior cu pavaje la Liceul Teologic Baptist „Alexa Popovici” din Arad.
@@ -1084,4 +1085,4 @@ URL secțiune: https://petrapavaje.ro/blog
 
 ---
 
-_Generat automat din datele reale ale site-ului (2026-10-12). Nu editați manual — rulați `npx tsx scripts/generate-llms-full.ts`._
+_Generat automat din datele reale ale site-ului (2026-10-13). Nu editați manual — rulați `npx tsx scripts/generate-llms-full.ts`._
