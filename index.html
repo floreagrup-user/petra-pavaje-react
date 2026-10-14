@@ -8,6 +8,10 @@
          own cookie banner via zaraz.consent.setAll() in useCookieConsent.ts;
          Zaraz's own consent modal is disabled in the dashboard so it never
          double-prompts visitors. -->
+    <!-- Umami (self-hosted, cookieless, so outside the consent banner).
+         data-domains keeps prerender, workers.dev and localhost visits out
+         of the stats. SPA route changes are tracked via the History API. -->
+    <script defer src="https://stats.aldeacosmin.ro/script.js" data-website-id="010708a8-1ae5-453d-af5c-f0079af085f2" data-domains="petrapavaje.ro"></script>
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Producător de pavaje, pavele, dale și borduri din beton pentru curte, alei și drumuri. 800+ produse din 4 fabrici în România: Alba, Arad, Prahova, Neamț." />
