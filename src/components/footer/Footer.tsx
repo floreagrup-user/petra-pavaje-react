@@ -233,11 +233,19 @@ export function Footer() {
       <div className="border-t border-white/20">
         <div className="container-premium py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="text-sm text-white/70">
-              © {new Date().getFullYear()} Petra Pavaje | {isEnglish ? 'Part of' : 'Parte a'}{' '}
-              <a href="https://floreagrup.ro/" target="_blank" rel="noopener noreferrer" className="text-white/80 underline hover:text-white transition-colors">
-                Florea Grup
-              </a>
+            <div className="flex flex-col items-center md:items-start gap-1 text-center md:text-left">
+              <p className="text-sm text-white/70">
+                © {new Date().getFullYear()} Petra Pavaje | {isEnglish ? 'Part of' : 'Parte a'}{' '}
+                <a href="https://floreagrup.ro/" target="_blank" rel="noopener noreferrer" className="text-white/80 underline hover:text-white transition-colors">
+                  Florea Grup
+                </a>
+              </p>
+              <p className="text-xs text-white/70">
+                {isEnglish ? 'Website by' : 'Website realizat de'}{' '}
+                <a href="https://aldeacosmin.ro/" target="_blank" rel="noopener" className="text-white/80 underline hover:text-white transition-colors">
+                  Aldea Cosmin
+                </a>
+              </p>
             </div>
 
             <div className="flex items-center gap-3">
