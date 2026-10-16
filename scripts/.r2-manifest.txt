@@ -2007,7 +2007,6 @@ fisa-tehnica-BOLTAR-ZIDARIE-50x20x23.8.pdf
 fisa-tehnica-BOLTAR-ZIDARIE-50x25x23.8-Petra-Pavaje.pdf
 fisa-tehnica-BORDURA-100X8X25-dreapta-Petra-Pavaje.pdf
 fisa-tehnica-BORDURA-106X9X25-cilindrica-Petra-Pavaje.pdf
-fisa-tehnica-BORDURA-50X10X15-dreapta-Petra-Pavaje.pdf
 fisa-tehnica-BORDURA-50X10X15-tesita-Petra-Pavaje.pdf
 fisa-tehnica-BORDURA-50X12X25-tesita-Petra-Pavaje-1.pdf
 fisa-tehnica-BORDURA-50X15X25-F10-tesita-Petra-Pavaje-1.pdf
