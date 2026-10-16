@@ -1919,7 +1919,7 @@ export const technicalDocuments: TechnicalDocument[] = [
     category: 'borduri',
     declaratieAlba: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1204-BORDURA-50-10-15-gri-dreapta-rev2-AB-Petra-Pavaje.pdf',
     declaratiePrahova: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1204-BORDURA-50-10-15-gri-dreapta-rev0-PH-Petra-Pavaje.pdf',
-    fisaTehnica: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X10X15-dreapta-Petra-Pavaje.pdf',
+    fisaTehnica: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X10X15-dreapta-rev2-Petra-Pavaje.pdf',
   },
   {
     code: '1205',
@@ -1927,7 +1927,7 @@ export const technicalDocuments: TechnicalDocument[] = [
     category: 'borduri',
     declaratieAlba: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1205-BORDURA-50-10-15-rosu-dreapta-rev2-AB-Petra-Pavaje.pdf',
     declaratiePrahova: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1205-BORDURA-50-10-15-rosu-dreapta-rev0-PH-Petra-Pavaje.pdf',
-    fisaTehnica: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X10X15-dreapta-Petra-Pavaje.pdf',
+    fisaTehnica: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X10X15-dreapta-rev2-Petra-Pavaje.pdf',
   },
   {
     code: '1206',
@@ -1935,7 +1935,7 @@ export const technicalDocuments: TechnicalDocument[] = [
     category: 'borduri',
     declaratieAlba: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1206-BORDURA-50-10-15-galben-dreapta-rev2-AB-Petra-Pavaje.pdf',
     declaratiePrahova: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1206-BORDURA-50-10-15-galben-dreapta-rev0-PH-Petra-Pavaje.pdf',
-    fisaTehnica: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X10X15-dreapta-Petra-Pavaje.pdf',
+    fisaTehnica: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X10X15-dreapta-rev2-Petra-Pavaje.pdf',
   },
   {
     code: '1207',
@@ -1943,7 +1943,7 @@ export const technicalDocuments: TechnicalDocument[] = [
     category: 'borduri',
     declaratieAlba: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1207-BORDURA-50-10-15-negru-dreapta-rev2-AB-Petra-Pavaje.pdf',
     declaratiePrahova: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1207-BORDURA-50-10-15-negru-dreapta-rev0-PH-Petra-Pavaje.pdf',
-    fisaTehnica: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X10X15-dreapta-Petra-Pavaje.pdf',
+    fisaTehnica: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X10X15-dreapta-rev2-Petra-Pavaje.pdf',
   },
   {
     code: '1208',
@@ -1951,7 +1951,7 @@ export const technicalDocuments: TechnicalDocument[] = [
     category: 'borduri',
     declaratieAlba: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1208-BORDURA-50-10-15-maro-dreapta-rev2-AB-Petra-Pavaje.pdf',
     declaratiePrahova: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1208-BORDURA-50-10-15-maro-dreapta-rev0-PH-Petra-Pavaje.pdf',
-    fisaTehnica: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X10X15-dreapta-Petra-Pavaje.pdf',
+    fisaTehnica: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X10X15-dreapta-rev2-Petra-Pavaje.pdf',
   },
   {
     code: '1209',
@@ -1959,7 +1959,7 @@ export const technicalDocuments: TechnicalDocument[] = [
     category: 'borduri',
     declaratieAlba: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1209-BORDURA-50-10-15-alb-dreapta-rev2-AB-Petra-Pavaje.pdf',
     declaratiePrahova: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1209-BORDURA-50-10-15-alb-dreapta-rev0-PH-Petra-Pavaje.pdf',
-    fisaTehnica: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X10X15-dreapta-Petra-Pavaje.pdf',
+    fisaTehnica: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X10X15-dreapta-rev2-Petra-Pavaje.pdf',
   },
   {
     code: '1210',

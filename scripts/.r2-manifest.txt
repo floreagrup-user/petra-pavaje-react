@@ -2303,3 +2303,4 @@ blog/blocuri-de-beton-cu-imbinare-tip-lego/blocuri-de-beton-cu-imbinare-tip-lego
 blog/blocuri-de-beton-cu-imbinare-tip-lego/blocuri-de-beton-lego-aliniate.avif
 blog/blocuri-de-beton-cu-imbinare-tip-lego/blocuri-de-beton-lego-asezate-alaturat.avif
 blog/blocuri-de-beton-cu-imbinare-tip-lego/perete-din-blocuri-de-beton-lego-depozit-agregate.avif
+fisa-tehnica-BORDURA-50X10X15-dreapta-rev2-Petra-Pavaje.pdf

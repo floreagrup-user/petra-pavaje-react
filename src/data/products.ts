@@ -3422,7 +3422,7 @@ export const products: Product[] = [
       'Bun raport calitate-preț',
     ],
     documents: [
-      { label: 'Bordură 50×10×15 dreaptă', productCode: '1204', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X10X15-dreapta-Petra-Pavaje.pdf', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1204-BORDURA-50-10-15-gri-dreapta-rev2-AB-Petra-Pavaje.pdf' },
+      { label: 'Bordură 50×10×15 dreaptă', productCode: '1204', datasheetUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fisa-tehnica-BORDURA-50X10X15-dreapta-rev2-Petra-Pavaje.pdf', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1204-BORDURA-50-10-15-gri-dreapta-rev2-AB-Petra-Pavaje.pdf' },
       { label: 'Bordură 50×10×15 dreaptă - Roșu', productCode: '1205', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1205-BORDURA-50-10-15-rosu-dreapta-rev2-AB-Petra-Pavaje.pdf' },
       { label: 'Bordură 50×10×15 dreaptă - Negru', productCode: '1207', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1207-BORDURA-50-10-15-negru-dreapta-rev2-AB-Petra-Pavaje.pdf' },
       { label: 'Bordură 50×10×15 dreaptă - Galben', productCode: '1206', declarationUrl: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/Declarație-de-performanță-1206-BORDURA-50-10-15-galben-dreapta-rev2-AB-Petra-Pavaje.pdf' },

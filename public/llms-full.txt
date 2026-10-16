@@ -1085,4 +1085,4 @@ URL secțiune: https://petrapavaje.ro/blog
 
 ---
 
-_Generat automat din datele reale ale site-ului (2026-10-13). Nu editați manual — rulați `npx tsx scripts/generate-llms-full.ts`._
+_Generat automat din datele reale ale site-ului (2026-10-16). Nu editați manual — rulați `npx tsx scripts/generate-llms-full.ts`._
