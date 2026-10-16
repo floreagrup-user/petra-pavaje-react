@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useSearchParams, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ChevronDown, SlidersHorizontal, X, ArrowRight, MessageCircle, Calculator } from 'lucide-react'
@@ -6,7 +6,9 @@ import { getProductsByCategory, localizeProduct } from '@/data/products'
 import type { ProductFAQ } from '@/data/types'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { useCategoryListSEO } from '@/hooks/useCategoryListSEO'
-import { ProductGridCard } from '@/components/product/ProductGridCard'
+import { ProductSwatchCard } from '@/components/product/ProductSwatchCard'
+import { ProductQuickView } from '@/components/product/ProductQuickView'
+import type { Product } from '@/data/types'
 import { CategoryFilterPanel, ActiveFilterChips } from '@/components/product/CategoryFilterPanel'
 import { isEnglishPath } from '@/lib/i18n-routes'
 import {
@@ -96,6 +98,11 @@ const PREMIUM_FAQ_EN: ProductFAQ[] = [
 
 export function PremiumCategoryPage() {
   const isEnglish = isEnglishPath(useLocation().pathname)
+  const [quickView, setQuickView] = useState<{ product: Product; href: string; trigger: HTMLButtonElement } | null>(null)
+  const closeQuickView = useCallback(() => {
+    quickView?.trigger.focus()
+    setQuickView(null)
+  }, [quickView])
   const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
   const [searchParams, setSearchParams] = useSearchParams()
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
@@ -263,23 +270,42 @@ export function PremiumCategoryPage() {
                   </button>
                 </div>
               ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-                  {filteredProducts.map((product, index) => (
-                    <motion.div
-                      key={product.id}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
-                      transition={{ duration: 0.4, delay: Math.min(index, 8) * 0.05 }}
-                    >
-                      <ProductGridCard product={product} basePath={basePath} lang={isEnglish ? 'en' : 'ro'} />
-                    </motion.div>
-                  ))}
-                </div>
+                <>
+                  <h2 className="heading-h3 text-charcoal-900 mb-6">
+                    {isEnglish ? 'Choose the shade right from the card' : 'Alege nuanța direct din card'}
+                  </h2>
+                  <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+                    {filteredProducts.map((product, index) => (
+                      <motion.div
+                        key={product.id}
+                        layout
+                        className="h-full"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
+                        transition={{ duration: 0.4, delay: Math.min(index, 8) * 0.05 }}
+                      >
+                        <ProductSwatchCard
+                          product={product}
+                          href={`${basePath}/${product.slug}`}
+                          onQuickView={(p, href, trigger) => setQuickView({ product: p, href, trigger })}
+                          lang={isEnglish ? 'en' : 'ro'}
+                        />
+                      </motion.div>
+                    ))}
+                  </motion.div>
+                </>
               )}
             </div>
           </div>
         </div>
       </section>
+
+      <ProductQuickView
+        product={quickView?.product ?? null}
+        href={quickView?.href ?? basePath}
+        onClose={closeQuickView}
+        lang={isEnglish ? 'en' : 'ro'}
+      />
 
       {mobileFiltersOpen && (
         <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-label={isEnglish ? 'Product filters' : 'Filtre produse'}>

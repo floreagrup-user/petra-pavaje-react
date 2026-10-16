@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useSearchParams, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ChevronDown, SlidersHorizontal, X, ArrowRight, MessageCircle, Calculator } from 'lucide-react'
@@ -6,7 +6,10 @@ import { getProductsByCategory, localizeProduct } from '@/data/products'
 import type { ProductFAQ } from '@/data/types'
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { useCategoryListSEO } from '@/hooks/useCategoryListSEO'
-import { ProductGridCard } from '@/components/product/ProductGridCard'
+import { ProductSwatchCard, type SwatchCardVariant } from '@/components/product/ProductSwatchCard'
+import { ProductQuickView } from '@/components/product/ProductQuickView'
+import { productUrl } from '@/lib/product-urls'
+import type { Product } from '@/data/types'
 import { CategoryFilterPanel, ActiveFilterChips } from '@/components/product/CategoryFilterPanel'
 import { isEnglishPath } from '@/lib/i18n-routes'
 import {
@@ -126,6 +129,17 @@ function useStandardProducts(isEnglish: boolean) {
 
 export function StandardCategoryPage() {
   const isEnglish = isEnglishPath(useLocation().pathname)
+  const [quickView, setQuickView] = useState<{ product: Product; href: string; trigger: HTMLButtonElement } | null>(null)
+  const closeQuickView = useCallback(() => {
+    quickView?.trigger.focus()
+    setQuickView(null)
+  }, [quickView])
+  const quatroVariants = useMemo(
+    () => getProductsByCategory('standard')
+      .filter((p) => p.slug.startsWith('quatro-'))
+      .map((p) => localizeProduct(p, isEnglish ? 'en' : 'ro')),
+    [isEnglish]
+  )
   const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
   const [searchParams, setSearchParams] = useSearchParams()
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
@@ -144,7 +158,17 @@ export function StandardCategoryPage() {
 
   const filteredProducts = useMemo(() => {
     const filtered = allProducts.filter((p) => matchesFilters(p, filters))
-    return sortProducts(filtered, sortKey)
+    const sorted = sortProducts(filtered, sortKey)
+    // "Recomandate" floats featured products to the top, which put the
+    // Quatro hub first; keep it as the 4th card in that default order.
+    if (sortKey === 'recomandate') {
+      const i = sorted.findIndex((p) => p.slug === 'quatro')
+      if (i !== -1) {
+        const [quatro] = sorted.splice(i, 1)
+        sorted.splice(Math.min(3, sorted.length), 0, quatro)
+      }
+    }
+    return sorted
   }, [allProducts, filters, sortKey])
 
   useCategoryListSEO(allProducts, faqItems, isEnglish ? {
@@ -290,29 +314,56 @@ export function StandardCategoryPage() {
                   </button>
                 </div>
               ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-                  {filteredProducts.map((product, index) => (
-                    <motion.div
-                      key={product.id}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
-                      transition={{ duration: 0.4, delay: Math.min(index, 8) * 0.05 }}
-                    >
-                      <ProductGridCard
-                        product={product}
-                        basePath={basePath}
-                        badgeLabel="Popular"
-                        extraBadge={product.slug === 'quatro' ? (isEnglish ? '19 Variants' : '19 Variante') : undefined}
-                        lang={isEnglish ? 'en' : 'ro'}
-                      />
-                    </motion.div>
-                  ))}
-                </div>
+                <>
+                  <h2 className="heading-h3 text-charcoal-900 mb-6">
+                    {isEnglish ? 'Choose the shade right from the card' : 'Alege nuanța direct din card'}
+                  </h2>
+                  <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+                    {filteredProducts.map((product, index) => {
+                      // Quatro is a hub of 19 variants: the card offers the
+                      // variants that match the active left-hand filters.
+                      let variants: SwatchCardVariant[] | undefined
+                      if (product.slug === 'quatro') {
+                        const matching = quatroVariants.filter((v) => matchesFilters(v, filters))
+                        variants = (matching.length ? matching : quatroVariants).map((v) => ({
+                          product: v,
+                          href: `${isEnglish ? '/en' : ''}${productUrl('pavaje-standard', v.slug)}`,
+                        }))
+                      }
+                      return (
+                        <motion.div
+                          key={product.id}
+                          layout
+                          className="h-full"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
+                          transition={{ duration: 0.4, delay: Math.min(index, 8) * 0.05 }}
+                        >
+                          <ProductSwatchCard
+                            product={product}
+                            href={`${basePath}/${product.slug}`}
+                            variants={variants}
+                            defaultVariantSlug="quatro-20x20x6"
+                            onQuickView={(p, href, trigger) => setQuickView({ product: p, href, trigger })}
+                            lang={isEnglish ? 'en' : 'ro'}
+                          />
+                        </motion.div>
+                      )
+                    })}
+                  </motion.div>
+                </>
               )}
             </div>
           </div>
         </div>
       </section>
+
+      <ProductQuickView
+        product={quickView?.product ?? null}
+        href={quickView?.href ?? basePath}
+        onClose={closeQuickView}
+        lang={isEnglish ? 'en' : 'ro'}
+      />
 
       {mobileFiltersOpen && (
         <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-label={isEnglish ? 'Product filters' : 'Filtre produse'}>
