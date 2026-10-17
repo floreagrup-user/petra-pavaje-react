@@ -5,7 +5,7 @@ import { MapPin, Phone, Clock, Navigation, Star, Quote, ArrowRight } from 'lucid
 import { useIntersectionObserver } from '@/hooks/use-scroll'
 import { factories } from '@/data/site'
 import { FACTORY_REVIEWS } from '@/data/factory-reviews'
-import { factoryPagePath } from '@/data/factory-pages'
+import { FACTORY_PAGES, factoryPagePath } from '@/data/factory-pages'
 import { buildFactorySchema } from '@/lib/factory-schema'
 import { upsertJsonLd } from '@/hooks/seo-utils'
 import { isEnglishPath } from '@/lib/i18n-routes'
@@ -33,12 +33,8 @@ export function FactoriesSection() {
     return () => upsertJsonLd('factories-schema', null)
   }, [])
 
-  const factoryImages: Record<string, string> = {
-    alba: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/petra-pavaje-fabrica-alba.webp',
-    prahova: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fabrica-ploiesti-petra-pavaje.webp',
-    arad: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/petra-pavaje-fabrica-arad.webp',
-    neamt: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/fabrica-neamt-petra-pavaje.avif',
-  }
+  // Same photos as the /fabrici hub (first image of each factory page).
+  const activeImage = FACTORY_PAGES.find((p) => p.factoryId === factories[activeFactory].id)?.images[0]
 
   return (
     <section ref={ref} className="section-padding bg-white">
@@ -162,13 +158,18 @@ export function FactoriesSection() {
                 transition={{ duration: 0.4 }}
                 className="absolute inset-0"
               >
-                <img
-                  src={factoryImages[factories[activeFactory].id]}
-                  alt={isEnglish ? FACTORY_NAME_EN[factories[activeFactory].id] || factories[activeFactory].name : factories[activeFactory].name}
-                  width="800"
-                  height="800"
-                  className="w-full h-full object-cover"
-                />
+                {activeImage && (
+                  <img
+                    src={activeImage.lg}
+                    srcSet={`${activeImage.sm} 800w, ${activeImage.lg} ${activeImage.width}w`}
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    alt={isEnglish ? FACTORY_NAME_EN[factories[activeFactory].id] || factories[activeFactory].name : activeImage.alt}
+                    width={activeImage.width}
+                    height={activeImage.height}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
               </motion.div>
             </AnimatePresence>
