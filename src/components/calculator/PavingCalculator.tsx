@@ -24,7 +24,8 @@ function makeZone(index: number): ProjectZone {
   return { id: crypto.randomUUID(), label: `Zona ${index}`, shape: 'dreptunghi', inputs: {}, areaM2: 0 }
 }
 
-export function PavingCalculator() {
+/** compact: single column, for the side panel (the page keeps two columns on large screens). */
+export function PavingCalculator({ compact = false }: { compact?: boolean } = {}) {
   const [searchParams] = useSearchParams()
   const categoryParam = searchParams.get('category') as CalculatorCategoryGroup | null
   const initialGroup = categoryParam && AREA_GROUPS.includes(categoryParam) ? categoryParam : undefined
@@ -111,7 +112,7 @@ export function PavingCalculator() {
         </button>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-start">
+      <div className={compact ? 'grid gap-6 items-start' : 'grid lg:grid-cols-2 gap-6 lg:gap-8 items-start'}>
         <div className="space-y-6">
           <section className="rounded-2xl border border-charcoal-200 p-5 md:p-6 bg-white">
             <h2 className="text-sm font-semibold text-charcoal-900 uppercase tracking-wide mb-4">
@@ -206,7 +207,7 @@ export function PavingCalculator() {
           <LinearElementsSection initialProductSlug={searchParams.get('linear') ?? undefined} />
         </div>
 
-        <div className="lg:sticky lg:top-24 space-y-4">
+        <div className={compact ? 'space-y-4' : 'lg:sticky lg:top-24 space-y-4'}>
           {result && selectedProduct && selectedVariant ? (
             <>
               <ResultCard kind="area" result={result} wastePercent={effectiveWaste} title={selectedProduct.name} subtitle={selectedVariant.label} />
