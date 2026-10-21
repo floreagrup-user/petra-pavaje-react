@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Download } from 'lucide-react'
 
-const contentMap: Record<string, { title: string; sections: { heading: string; body: string }[]; cta?: boolean }> = {
+const contentMap: Record<string, { title: string; sections: { heading: string; body: string; devOnly?: boolean }[]; cta?: boolean }> = {
   'company': {
     title: 'Compania',
     sections: [
@@ -93,6 +93,66 @@ const contentMap: Record<string, { title: string; sections: { heading: string; b
     ],
     cta: false,
   },
+  'confidentialitate': {
+    title: 'Politica de Confidențialitate',
+    sections: [
+      {
+        heading: 'Cine prelucrează datele',
+        body: 'Operatorul datelor este FLOREA GRUP S.R.L., cod fiscal RO8273278, înregistrată la Registrul Comerțului sub nr. J01/55/1996, care produce și comercializează pavajele Petra Pavaje. Adresa de corespondență: Str. Pietrari nr. 20, Alba Iulia, România. Email: contact@petrapavaje.ro. Pentru orice întrebare despre datele tale sau pentru exercitarea drepturilor de mai jos, ne poți scrie la această adresă. Prelucrăm datele conform Regulamentului (UE) 2016/679 (GDPR) și Legii nr. 190/2018.',
+      },
+      {
+        heading: 'Formularul de contact și cererile de ofertă',
+        body: '• Ce date: numele, adresa de email, telefonul (opțional), județul ales și mesajul tău.\n• De ce: ca să-ți răspundem la întrebare sau să-ți pregătim oferta cerută. Temeiul este efectuarea demersurilor pe care le ceri înainte de încheierea unui contract (art. 6 alin. 1 lit. b GDPR) și, pentru întrebările generale, interesul nostru legitim de a răspunde celor care ne scriu (art. 6 alin. 1 lit. f GDPR).\n• Cine le primește: mesajul este trimis prin email către Petra Pavaje și către reprezentantul de vânzări al FLOREA GRUP S.R.L. pentru județul ales. Site-ul nu salvează mesajul într-o bază de date; acesta există doar în căsuțele de email ale echipei noastre. Trimiterea se face printr-un furnizor de servicii de email cu servere în Uniunea Europeană.\n• Cât timp: păstrăm corespondența cel mult 3 ani de la ultimul mesaj schimbat. Dacă încheiem un contract, documentele aferente se păstrează pe durata prevăzută de legislația financiar-contabilă.',
+      },
+      {
+        heading: 'Formularul de carieră',
+        body: '• Ce date: numele, adresa de email, telefonul, postul dorit și mesajul tău.\n• De ce: ca să analizăm candidatura și să te contactăm pentru recrutare. Temeiul este efectuarea demersurilor pe care le ceri înainte de încheierea unui contract de muncă (art. 6 alin. 1 lit. b GDPR).\n• Cine le primește: mesajul este trimis prin email doar către departamentul de resurse umane al FLOREA GRUP S.R.L. (cariera@petrapavaje.ro) și nu este salvat în baza de date a site-ului.\n• Cât timp: cel mult 6 luni de la încheierea procesului de recrutare pentru care ai aplicat. Dacă vrei să te luăm în considerare și pentru alte posturi, ne poți spune asta în mesaj, iar candidatura va fi păstrată cel mult 2 ani.',
+      },
+      {
+        heading: 'Newsletterul',
+        body: '• Ce date: adresa de email, data abonării, locul din site de unde te-ai abonat și adresa IP de la momentul abonării (ca dovadă a abonării). Platforma de trimitere înregistrează și dacă deschizi mesajele și dacă accesezi linkurile din ele.\n• De ce: ca să-ți trimitem noutăți despre produse și oferte Petra Pavaje. Temeiul este consimțământul tău (art. 6 alin. 1 lit. a GDPR și Legea nr. 506/2004), dat prin abonare.\n• Cine le primește: newsletterul este trimis prin platforma Mailchimp (Intuit Inc., SUA), care acționează ca persoană împuternicită. Datele pot fi prelucrate în afara Spațiului Economic European, în baza Cadrului UE-SUA privind protecția datelor sau a clauzelor contractuale standard (art. 45 și 46 GDPR). O copie a adresei este păstrată și în baza de date a site-ului, găzduită de un furnizor de servicii cloud, și este accesibilă doar echipei de marketing a FLOREA GRUP S.R.L.\n• Cât timp: până te dezabonezi. Fiecare newsletter conține un link de dezabonare; te poți dezabona și scriindu-ne la contact@petrapavaje.ro. Pagina deschisă de link îți confirmă imediat dezabonarea și nu mai primești newsletterul. Adresa este scoasă din baza de date a site-ului și rămâne în evidența dezabonărilor 30 de zile, apoi o ștergem; păstrăm doar o amprentă criptată și data dezabonării, ca dovadă. Nu transmitem adresa ta altor firme.',
+      },
+      {
+        heading: 'Protecția formularelor',
+        body: 'Formularele de pe site sunt protejate împotriva spamului și a abuzurilor printr-o verificare automată, care analizează pentru câteva momente date tehnice ale browserului și adresa IP. Verificarea nu folosește aceste date pentru publicitate. Temeiul este interesul nostru legitim de a proteja site-ul (art. 6 alin. 1 lit. f GDPR). Pentru cookie-urile site-ului, vezi Politica de cookie-uri.',
+      },
+      {
+        // Hidden on the live site until the visualizer launches.
+        devOnly: true,
+        heading: 'Vizualizatorul de pavaje AI: ce date folosim',
+        body: '• Fotografia pe care o încarci, cu zona de pavat acoperită. Fotografia originală nu părăsește browserul tău.\n• O amprentă criptată (hash SHA-256 cu cheie secretă) a adresei IP, pentru limitele zilnice și pentru protecția împotriva abuzurilor.\n• Dacă îți confirmi emailul: o amprentă criptată a adresei de email și forma ei mascată (de exemplu a***@exemplu.ro). Adresa completă este folosită doar pentru trimiterea codului de confirmare și nu este salvată în baza noastră de date.\n• Dovada acordului tău: data, versiunea textului acceptat și amprenta criptată de mai sus.\n• Un cookie strict necesar (pv_viz), care păstrează confirmarea emailului timp de 30 de zile.',
+      },
+      {
+        // Hidden on the live site until the visualizer launches.
+        devOnly: true,
+        heading: 'Vizualizatorul de pavaje AI: scop și temei legal',
+        body: '• Generarea imaginii din fotografia ta: consimțământul tău (art. 6 alin. 1 lit. a GDPR), dat înainte de prima imagine.\n• Trimiterea codului de confirmare și evidența celor 3 imagini pe zi pentru adresa confirmată: consimțământul tău (art. 6 alin. 1 lit. a GDPR).\n• Limitele pe adresă IP și limita totală de 200 de imagini pe zi: interesul nostru legitim de a preveni abuzurile și costurile excesive (art. 6 alin. 1 lit. f GDPR).\n• Păstrarea dovezii consimțământului: obligația de a putea demonstra consimțământul (art. 7 alin. 1 GDPR).\nNu luăm decizii automate cu efecte juridice asupra ta și nu folosim datele pentru publicitate sau profilare. Serviciul este destinat persoanelor de cel puțin 16 ani.',
+      },
+      {
+        // Hidden on the live site until the visualizer launches.
+        devOnly: true,
+        heading: 'Vizualizatorul de pavaje AI: cui transmitem datele',
+        body: '• Fotografia cu zona acoperită este transmisă unui furnizor extern de servicii de inteligență artificială, care acționează ca persoană împuternicită și o folosește doar pentru a genera imaginea. Furnizorul poate prelucra datele în afara Spațiului Economic European; transferul se face în baza unei decizii de adecvare a Comisiei Europene sau a clauzelor contractuale standard (art. 45 și 46 GDPR).\n• Codul de confirmare este trimis printr-un furnizor de servicii de email cu servere în Uniunea Europeană.\n• Site-ul și baza de date sunt găzduite de un furnizor de servicii cloud, cu garanțiile prevăzute de GDPR.\nNu vindem și nu închiriem datele tale.',
+      },
+      {
+        // Hidden on the live site until the visualizer launches.
+        devOnly: true,
+        heading: 'Vizualizatorul de pavaje AI: cât timp păstrăm datele',
+        body: '• Fotografia: nu o păstrăm. Există doar în memorie, pe durata generării (de obicei 10-30 de secunde).\n• Imaginea generată: rămâne doar în browserul tău; nu o păstrăm.\n• Contoarele zilnice (amprente IP și email): se șterg automat după 2 zile.\n• Codul de confirmare: 15 minute; se șterge imediat ce este folosit.\n• Confirmarea emailului (sesiunea): 30 de zile sau până apeși „Ieși și șterge datele mele".\n• Dovada consimțământului: 3 ani de la acord sau de la retragerea lui, termenul general de prescripție (art. 2517 Cod civil).',
+      },
+      {
+        // Hidden on the live site until the visualizer launches.
+        devOnly: true,
+        heading: 'Vizualizatorul de pavaje AI: imaginea generată',
+        body: 'Imaginea este creată automat cu inteligență artificială și este orientativă: modelul, culoarea și dimensiunile reale ale pavajului pot diferi, iar obiectele din zona marcată sunt redesenate. Imaginea descărcată poartă mențiunea că este generată cu AI, conform Regulamentului (UE) 2024/1689 privind inteligența artificială. Te rugăm să nu încarci fotografii în care se văd persoane, numere de înmatriculare sau documente.',
+      },
+      {
+        heading: 'Drepturile tale',
+        body: 'Ai dreptul de acces, rectificare, ștergere, restricționare a prelucrării și portabilitate a datelor, dreptul de a te opune prelucrării bazate pe interesul legitim și dreptul de a-ți retrage oricând consimțământul, fără a afecta legalitatea prelucrării de până atunci. Pentru celelalte drepturi, scrie-ne la contact@petrapavaje.ro; răspundem în cel mult o lună. Ai și dreptul de a depune o plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP), www.dataprotection.ro.',
+      },
+    ],
+    cta: false,
+  },
   'intretinere': {
     title: 'Ghid de Întreținere',
     sections: [
@@ -139,7 +199,7 @@ export function GenericPage({ title, contentKey }: { title: string; contentKey: 
         <div className="container-premium max-w-4xl">
           {content ? (
             <div className="space-y-12">
-              {content.sections.map((section, index) => (
+              {content.sections.filter((section) => !section.devOnly || import.meta.env.DEV).map((section, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}

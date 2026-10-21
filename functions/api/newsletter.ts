@@ -1,4 +1,5 @@
 import { verifyTurnstile } from './_turnstile'
+import { addToMailchimp, clearUnsubscribe } from './_newsletter'
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -41,6 +42,15 @@ export async function onRequestPost(context: any) {
       .run()
 
     const alreadySubscribed = (result.meta?.changes ?? 0) === 0
+    // A new sign-up is a new consent, so an older unsubscribe no longer applies.
+    if (!alreadySubscribed) await clearUnsubscribe(context.env, email)
+    // Into the Mailchimp audience right away (also for an address already in
+    // D1, in case it never made it there); after the response, so a slow
+    // Mailchimp never delays the visitor. D1 stays the backup copy.
+    const sync = addToMailchimp(context.env, email, body?.source || 'footer', context.request.headers.get('CF-Connecting-IP') || undefined)
+      .catch((error) => console.error('Mailchimp sync error', error))
+    if (typeof context.waitUntil === 'function') context.waitUntil(sync)
+    else await sync
 
     return new Response(
       JSON.stringify({ success: true, alreadySubscribed }),

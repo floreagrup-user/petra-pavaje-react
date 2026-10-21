@@ -226,6 +226,27 @@ export function Footer() {
                   : 'A apărut o eroare. Te rugăm încearcă din nou.'}
               </p>
             )}
+            <p className="text-xs text-white/70 mt-3 leading-relaxed">
+              {isEnglish ? (
+                <>
+                  By subscribing you agree to receive Petra Pavaje news and offers by email. Every newsletter has an unsubscribe link,
+                  and you can leave at any time. See our{' '}
+                  <Link to="/confidentialitate" className="underline underline-offset-2 hover:text-white">
+                    privacy policy
+                  </Link>{' '}
+                  (in Romanian).
+                </>
+              ) : (
+                <>
+                  Prin abonare ești de acord să primești pe email noutăți și oferte Petra Pavaje de la FLOREA GRUP S.R.L. Fiecare newsletter
+                  are un link de dezabonare și te poți retrage oricând. Detalii în{' '}
+                  <Link to="/confidentialitate" className="underline underline-offset-2 hover:text-white">
+                    Politica de confidențialitate
+                  </Link>
+                  .
+                </>
+              )}
+            </p>
           </div>
         </div>
       </div>

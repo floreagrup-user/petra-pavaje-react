@@ -27,6 +27,8 @@ dist-ssr
 .env
 .env.local
 .env.production
+# Local Worker secrets for `wrangler dev` (GEMINI_API_KEY etc.)
+.dev.vars*
 
 # Build
 .cache

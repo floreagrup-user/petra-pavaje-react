@@ -7,6 +7,7 @@ import {
 } from 'lucide-react'
 import { factories } from '@/data/site'
 import { trackEvent } from '@/lib/analytics'
+import { useTurnstile } from '@/hooks/useTurnstile'
 import { JobsSection } from '@/components/careers/JobsSection'
 import { jobPostingSchema } from '@/data/jobs'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, upsertHreflangPair, resetSEO } from '@/hooks/seo-utils'
@@ -35,6 +36,9 @@ const BENEFITS = [
 export function CarieraPageEN() {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', position: '', message: '' })
   const [submitting, setSubmitting] = useState(false)
+  // /api/contact rejects requests without a Turnstile token, so the career
+  // form needs the same invisible check as the contact form.
+  const { containerRef: turnstileRef, getToken: getTurnstileToken } = useTurnstile()
   const [submitted, setSubmitted] = useState(false)
   const [submitError, setSubmitError] = useState(false)
 
@@ -82,6 +86,7 @@ export function CarieraPageEN() {
     setSubmitting(true)
     setSubmitError(false)
     try {
+      const turnstileToken = await getTurnstileToken()
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -91,6 +96,7 @@ export function CarieraPageEN() {
           phone: formData.phone,
           message: `Desired position: ${formData.position || 'Not specified'}\n\n${formData.message}`,
           type: 'career',
+          turnstileToken,
           repEmail: 'cariera@petrapavaje.ro',
           repName: 'HR Department',
         }),
@@ -291,6 +297,14 @@ export function CarieraPageEN() {
                 {submitError && (
                   <p className="text-sm text-red-600">Something went wrong. Please try again or email us directly.</p>
                 )}
+                <p className="text-xs text-charcoal-500">
+                  Your details go only to our HR department and are used for recruitment. See our{' '}
+                  <Link to="/confidentialitate" className="text-brand-700 underline underline-offset-2 hover:text-brand-800">
+                    privacy policy
+                  </Link>{' '}
+                  (in Romanian).
+                </p>
+                <div ref={turnstileRef} />
                 <button type="submit" disabled={submitting} className="btn-primary w-full justify-center group disabled:opacity-60 disabled:cursor-not-allowed">
                   <Send className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
                   {submitting ? 'Sending…' : 'Send Application'}
