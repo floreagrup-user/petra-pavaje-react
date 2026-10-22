@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 import { Layout } from '@/layouts/Layout'
+import { RouteError } from '@/components/RouteError'
 
 const HomePage = lazy(() => import('@/pages/HomePage').then(m => ({ default: m.HomePage })))
 const ProductsHubPage = lazy(() => import('@/pages/ProductsHubPage').then(m => ({ default: m.ProductsHubPage })))
@@ -70,6 +71,7 @@ export const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
+    errorElement: <RouteError />,
     children: [
       { index: true, element: <Suspense><HomePage /></Suspense> },
       { path: 'produse', element: <Suspense><ProductsHubPage /></Suspense> },
