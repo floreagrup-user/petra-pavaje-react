@@ -18,12 +18,14 @@ if (!dir) throw new Error('usage: npx tsx scripts/build-garan-labels.ts <label f
 // slab and a palisade), so its labels are matched inside the folder named
 // after the category slug, and keyed by code because the English pages
 // translate the variant names.
+// Gutters (rigole) have no commercial guarantee of durability, so no GARAN label.
+const SKIP_FOLDERS = new Set(['rigole'])
 const files = new Set<string>()
 const woodstoneFiles = new Map<string, string[]>()
 function walk(d: string) {
   for (const e of fs.readdirSync(d, { withFileTypes: true })) {
     const p = path.join(d, e.name)
-    if (e.isDirectory()) walk(p)
+    if (e.isDirectory()) { if (!SKIP_FOLDERS.has(e.name)) walk(p) }
     else if (e.name.startsWith('garan-') && e.name.endsWith('.webp') && !e.name.startsWith('garan-nested')) {
       if (files.has(e.name)) throw new Error(`duplicate label file name: ${e.name}`)
       files.add(e.name)
@@ -72,7 +74,7 @@ for (const p of products) {
 }
 
 const elementLabels: Record<string, Record<string, string>> = {}
-const WANTED = new Set(['rigole', 'robusto', 'modern', 'baroc'])
+const WANTED = new Set(['robusto', 'modern', 'baroc'])
 for (const c of elementCategories) {
   if (!WANTED.has(c.slug)) continue
   for (const g of c.variantGroups || []) {

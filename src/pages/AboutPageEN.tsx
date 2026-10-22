@@ -336,7 +336,7 @@ export function AboutPageEN() {
                 </p>
                 <p>
                   Market demand keeps growing, and the new factories serve both individual homeowners and real
-                  estate developers and road infrastructure contractors. Pavers, WoodStone, curbs, channels and fences come with a
+                  estate developers and road infrastructure contractors. Pavers, WoodStone, curbs and fences come with a
                   5-year warranty, and all products carry CE and ISO certifications.
                 </p>
               </div>

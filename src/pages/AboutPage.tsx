@@ -340,7 +340,7 @@ export function AboutPage() {
                 <p>
                   Cererea de pe piață este tot mai mare, iar noile fabrici răspund atât cerințelor persoanelor
                   fizice, cât și ale dezvoltatorilor imobiliari și constructorilor de infrastructură rutieră. Pavajele,
-                  Woodstone, bordurile, rigolele și gardurile au garanție 5 ani, iar toate produsele sunt însoțite de
+                  Woodstone, bordurile și gardurile au garanție 5 ani, iar toate produsele sunt însoțite de
                   certificări CE și ISO.
                 </p>
               </div>

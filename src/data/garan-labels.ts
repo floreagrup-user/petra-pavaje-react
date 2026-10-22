@@ -282,19 +282,6 @@ export const GARAN_PRODUCT_LABELS: Record<string, Record<string, string>> = {
 }
 
 export const GARAN_ELEMENT_LABELS: Record<string, Record<string, string>> = {
-  "rigole": {
-    "Rigolă scafă 50×20×8": "garan-1272-rigola-scafa-50x20x8.webp",
-    "Rigolă scafă 40×30×12": "garan-1214-rigola-scafa-40x30x12.webp",
-    "Rigolă pietonală": "garan-1393-rigola-pietonala.webp",
-    "Casiu": "garan-1676-casiu.webp",
-    "Rigolă trapezoidală 33": "garan-1392-rigola-trapezoidala-33.webp",
-    "Rigolă trapezoidală 50": "garan-2099-rigola-trapezoidala-50.webp",
-    "Rigolă acostament": "garan-2096-rigola-acostament.webp",
-    "Rigolă carosabilă": "garan-2092-rigola-carosabila.webp",
-    "Capac rigolă nearmat": "garan-2093-capac-rigola-nearmat.webp",
-    "Capac rigolă simplu armat": "garan-2094-capac-rigola-simplu-armat.webp",
-    "Capac rigolă dublu armat": "garan-2095-capac-rigola-dublu-armat.webp"
-  },
   "robusto": {
     "Element gard": "garan-1387-element-gard.webp",
     "Element gard jumătate": "garan-1388-element-gard-jumatate.webp",

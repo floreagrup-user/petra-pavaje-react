@@ -8,9 +8,9 @@ import { LEGAL_GUARANTEE_URL_EN } from '@/components/LegalGuaranteeNotice'
 export function GarantiePageEN() {
   useEffect(() => {
     const url = `${window.location.origin}/en/garantie`
-    const title = `5-Year Warranty - Pavers, WoodStone, Curbs, Channels and Fences | ${SEO_SITE_NAME}`
+    const title = `5-Year Warranty - Pavers, WoodStone, Curbs and Fences | ${SEO_SITE_NAME}`
     const description =
-      'Our automated production line and rigorous in-house lab testing back a 5-year warranty on Petra Pavaje Premium and Standard pavers, WoodStone, curbs, channels and fences.'
+      'Our automated production line and rigorous in-house lab testing back a 5-year warranty on Petra Pavaje Premium and Standard pavers, WoodStone, curbs and fences.'
 
     document.title = title
     upsertMeta('name', 'description', description)
@@ -50,7 +50,7 @@ export function GarantiePageEN() {
             <p className="text-brand-500 text-sm font-medium tracking-[0.2em] uppercase mb-3">Guaranteed Quality</p>
             <h1 className="heading-h1 mb-4 max-w-3xl">5-Year Warranty</h1>
             <p className="text-body-lg text-charcoal-400 max-w-2xl">
-              Petra Pavaje Premium and Standard pavers, WoodStone, curbs, channels and fences come with a 5-year
+              Petra Pavaje Premium and Standard pavers, WoodStone, curbs and fences come with a 5-year
               commercial warranty, backed by fully automated production and rigorous testing in our own laboratory.
             </p>
           </motion.div>
@@ -90,7 +90,7 @@ export function GarantiePageEN() {
               </div>
               <h2 className="font-semibold text-charcoal-900 mb-1.5">5-Year Warranty</h2>
               <p className="text-sm text-charcoal-600 leading-relaxed">
-                On pavers, WoodStone, curbs, channels and fences — backed by innovative technology across the whole production flow.
+                On pavers, WoodStone, curbs and fences — backed by innovative technology across the whole production flow.
               </p>
             </div>
           </motion.div>
@@ -114,10 +114,10 @@ export function GarantiePageEN() {
             </p>
             <p className="font-semibold text-charcoal-900">
               All of this is what makes it possible to offer a 5-year warranty on Premium and Standard pavers,
-              WoodStone, curbs, channels and fences.
+              WoodStone, curbs and fences.
             </p>
             <p>
-              Concrete blocks, planters, palisades, steps, wall blocks and drainage elements do not carry the 5-year
+              Channels, concrete blocks, planters, palisades, steps, wall blocks and drainage elements do not carry the 5-year
               commercial warranty. For every product, consumers have the legal guarantee of conformity, as provided by
               law.{' '}
               <a

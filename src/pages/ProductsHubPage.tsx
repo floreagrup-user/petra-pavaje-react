@@ -62,7 +62,7 @@ const PRODUCTS_HUB_FAQ: ProductFAQ[] = [
   {
     question: 'Ce produse au garanție de 5 ani?',
     answer:
-      'Pavajele Premium și Standard, Woodstone, bordurile, rigolele și gardurile au garanție comercială de 5 ani. Bolțarii, jardinierele, palisada, treptele, blocul de zid și elementele de canalizare nu au garanție comercială de 5 ani. Pentru toate produsele se aplică garanția legală de conformitate, conform legii.',
+      'Pavajele Premium și Standard, Woodstone, bordurile și gardurile au garanție comercială de 5 ani. Rigolele, bolțarii, jardinierele, palisada, treptele, blocul de zid și elementele de canalizare nu au garanție comercială de 5 ani. Pentru toate produsele se aplică garanția legală de conformitate, conform legii.',
   },
   {
     question: 'Pot vedea fizic culorile și texturile înainte să comand?',

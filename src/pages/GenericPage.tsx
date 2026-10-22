@@ -23,7 +23,7 @@ const contentMap: Record<string, { title: string; sections: { heading: string; b
     sections: [
       {
         heading: '5 Ani de Garanție',
-        body: 'Pavajele Premium și Standard, Woodstone, bordurile, rigolele și gardurile Petra Pavaje beneficiază de o garanție de 5 ani, conform standardelor europene de calitate. Garanția acoperă defectele de fabricație și asigură durabilitatea produselor noastre în timp.',
+        body: 'Pavajele Premium și Standard, Woodstone, bordurile și gardurile Petra Pavaje beneficiază de o garanție de 5 ani, conform standardelor europene de calitate. Garanția acoperă defectele de fabricație și asigură durabilitatea produselor noastre în timp.',
       },
       {
         heading: 'Certificări',
@@ -63,7 +63,7 @@ const contentMap: Record<string, { title: string; sections: { heading: string; b
       },
       {
         heading: 'Care este garanția produselor?',
-        body: 'Pavajele Premium și Standard, Woodstone, bordurile, rigolele și gardurile Petra Pavaje beneficiază de o garanție de 5 ani.',
+        body: 'Pavajele Premium și Standard, Woodstone, bordurile și gardurile Petra Pavaje beneficiază de o garanție de 5 ani.',
       },
     ],
     cta: true,
@@ -163,7 +163,7 @@ const contentMap: Record<string, { title: string; sections: { heading: string; b
       },
       {
         heading: 'Garanția comercială de 5 ani',
-        body: 'Oferim o garanție comercială de 5 ani pentru:\n• Pavaje Premium\n• Pavaje Standard\n• Woodstone\n• Borduri\n• Rigole\n• Garduri\nGaranția acoperă defectele de fabricație, în condițiile din certificatul de garanție care însoțește produsele. Pentru aceste produse, eticheta europeană GARAN este afișată în tabelul cu dimensiuni al fiecărui produs.\nBolțarii, jardinierele, palisada, treptele, blocul de zid și elementele de canalizare nu au garanție comercială de 5 ani.',
+        body: 'Oferim o garanție comercială de 5 ani pentru:\n• Pavaje Premium\n• Pavaje Standard\n• Woodstone\n• Borduri\n• Garduri\nGaranția acoperă defectele de fabricație, în condițiile din certificatul de garanție care însoțește produsele. Pentru aceste produse, eticheta europeană GARAN este afișată în tabelul cu dimensiuni al fiecărui produs.\nRigolele, bolțarii, jardinierele, palisada, treptele, blocul de zid și elementele de canalizare nu au garanție comercială de 5 ani.',
       },
       {
         heading: 'Garanția legală de conformitate',
