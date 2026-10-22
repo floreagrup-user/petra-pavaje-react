@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Settings2, Microscope, Award } from 'lucide-react'
 import { SEO_SITE_NAME, upsertMeta, upsertCanonical, upsertJsonLd, upsertHreflangPair, resetSEO } from '@/hooks/seo-utils'
+import { LEGAL_GUARANTEE_URL_RO } from '@/components/LegalGuaranteeNotice'
 
 export function GarantiePage() {
   useEffect(() => {
     const url = `${window.location.origin}/garantie`
-    const title = `Garanție - 5 Ani pentru Pavele, Dale și Borduri | ${SEO_SITE_NAME}`
+    const title = `Garanție 5 Ani - Pavaje, Woodstone, Borduri, Rigole și Garduri | ${SEO_SITE_NAME}`
     const description =
-      'Linia de producție automatizată și testarea riguroasă în laborator propriu asigură 5 ani de garanție pentru toate produsele Petra Pavaje.'
+      'Linia de producție automatizată și testarea riguroasă în laborator propriu asigură 5 ani de garanție pentru pavajele Premium și Standard, Woodstone, borduri, rigole și garduri Petra Pavaje.'
 
     document.title = title
     upsertMeta('name', 'description', description)
@@ -49,8 +50,9 @@ export function GarantiePage() {
             <p className="text-brand-500 text-sm font-medium tracking-[0.2em] uppercase mb-3">Calitate garantată</p>
             <h1 className="heading-h1 mb-4 max-w-3xl">5 Ani de Garanție</h1>
             <p className="text-body-lg text-charcoal-400 max-w-2xl">
-              Toate produsele Petra Pavaje beneficiază de o garanție de 5 ani, susținută de o producție integral
-              automatizată și testări riguroase în laboratorul propriu.
+              Pavajele Premium și Standard, Woodstone, bordurile, rigolele și gardurile Petra Pavaje beneficiază de o
+              garanție comercială de 5 ani, susținută de o producție integral automatizată și testări riguroase în
+              laboratorul propriu.
             </p>
           </motion.div>
         </div>
@@ -90,7 +92,7 @@ export function GarantiePage() {
               </div>
               <h2 className="font-semibold text-charcoal-900 mb-1.5">5 ani garanție</h2>
               <p className="text-sm text-charcoal-600 leading-relaxed">
-                Pentru pavele, dale și borduri — susținută de tehnologii inovatoare pe tot fluxul de producție.
+                Pentru pavaje, Woodstone, borduri, rigole și garduri — susținută de tehnologii inovatoare pe tot fluxul de producție.
               </p>
             </div>
           </motion.div>
@@ -113,7 +115,21 @@ export function GarantiePage() {
               testate în laboratorul propriu, conform unor grafice personalizate pe fiecare tip de produs în parte.
             </p>
             <p className="font-semibold text-charcoal-900">
-              Toate aceste elemente facilitează acordarea de 5 ani de garanție pentru pavele, dale și borduri.
+              Toate aceste elemente facilitează acordarea de 5 ani de garanție pentru pavajele Premium și Standard,
+              Woodstone, borduri, rigole și garduri.
+            </p>
+            <p>
+              Bolțarii, jardinierele, palisada, treptele, blocul de zid și elementele de canalizare nu au garanție
+              comercială de 5 ani. Pentru toate produsele, consumatorii beneficiază de garanția legală de conformitate,
+              conform legii.{' '}
+              <a
+                href={LEGAL_GUARANTEE_URL_RO}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-700 underline underline-offset-2 hover:text-brand-800"
+              >
+                Drepturile tale de garanție legală (Your Europe)
+              </a>
             </p>
           </motion.div>
 

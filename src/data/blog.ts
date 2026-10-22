@@ -5733,7 +5733,7 @@ Alege grosimea în funcție de utilizare, păstrează aceeași grosime atunci c�
  </ul>
  
  <p>
- <strong>Garanție 5 ani:</strong> Toate produsele Petra Pavaje beneficiază de o garanție de 5 ani, confirmând calitatea și durabilitatea materialelor utilizate.
+ <strong>Garanție 5 ani:</strong> Pavajele, Woodstone, bordurile, rigolele și gardurile Petra Pavaje beneficiază de o garanție de 5 ani, confirmând calitatea și durabilitatea materialelor utilizate.
  </p>
  
  
@@ -6284,7 +6284,7 @@ Alege grosimea în funcție de utilizare, păstrează aceeași grosime atunci c�
  Este important de subliniat că <strong>eflorescența nu este un defect de fabricație</strong>. Este un fenomen natural, temporar și complet inofensiv pentru rezistența structurală a pavajului sau a gardului.
  </p>
  <p>
- Toate produsele <strong>Petra Pavaje</strong> beneficiază de o <strong>garanție de 5 ani</strong>, care acoperă inclusiv aspectele legate de eflorescență. Produsele noastre sunt fabricate prin tehnologia vibropresată, care asigură o densitate ridicată și o porozitate scăzută, reducând intensitatea și durata eflorescenței.
+ Pavajele <strong>Petra Pavaje</strong> beneficiază de o <strong>garanție de 5 ani</strong>, care acoperă inclusiv aspectele legate de eflorescență. Produsele noastre sunt fabricate prin tehnologia vibropresată, care asigură o densitate ridicată și o porozitate scăzută, reducând intensitatea și durata eflorescenței.
  </p>
  
  <p>
@@ -6465,7 +6465,7 @@ Alege grosimea în funcție de utilizare, păstrează aceeași grosime atunci c�
  <li><strong>4 fabrici</strong> cu echipamente de ultimă generație</li>
  <li><strong>24.000 mp/zi</strong> capacitate de producție</li>
  <li><strong>Panouri fotovoltaice</strong> instalate pe toate fabricile — energie verde pentru producție</li>
- <li><strong>5 ani garanție</strong> pentru toate produsele din portofoliu</li>
+ <li><strong>5 ani garanție</strong> pentru pavaje, Woodstone, borduri, rigole și garduri</li>
  </ul>
  
  

@@ -60,9 +60,9 @@ const PRODUCTS_HUB_FAQ: ProductFAQ[] = [
       'Gama Premium are o paletă mult mai largă de culori și finisaje (antichizat, structurat, Color Lock) și este gândită pentru terase și curți rezidențiale de exceptie. Gama Standard mizează pe robustețe, formate potrivite pentru trafic auto greu și un preț mai accesibil.',
   },
   {
-    question: 'Toate produsele au garanție?',
+    question: 'Ce produse au garanție de 5 ani?',
     answer:
-      'Da. Pavelele, dalele și bordurile beneficiază de o garanție de 5 ani, iar elementele de canalizare, bolțarii și rigolele de 2 ani, conform standardelor de calitate certificate ISO ale companiei.',
+      'Pavajele Premium și Standard, Woodstone, bordurile, rigolele și gardurile au garanție comercială de 5 ani. Bolțarii, jardinierele, palisada, treptele, blocul de zid și elementele de canalizare nu au garanție comercială de 5 ani. Pentru toate produsele se aplică garanția legală de conformitate, conform legii.',
   },
   {
     question: 'Pot vedea fizic culorile și texturile înainte să comand?',

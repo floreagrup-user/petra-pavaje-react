@@ -109,13 +109,12 @@ export const elementCategories: ElementCategoryData[] = [
       'Bolțarii din beton sunt soluția sigură, rapidă și economică de realizare a unei lucrări de zidărie sau fundație, indiferent că este vorba de casă, anexele acesteia sau clădiri industriale. Rezistența deosebită, chiar și în medii umede, îi recomandă inclusiv pentru construcția pivnițelor și a cramelor.',
     image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/2020/06/boltari-1200x800-1.jpg',
     gallery: [],
-    heroFeatures: ['13 formate', 'Culoare Gri', 'Garanție 5 ani'],
+    heroFeatures: ['13 formate', 'Culoare Gri'],
     colors: [COLOR.gri],
     technicalFeatures: [
       'Beton vibropresat de înaltă densitate',
       'Rezistență ridicată, inclusiv în medii umede',
       'Sistem Nut-Feder disponibil pentru îmbinare rapidă',
-      'Garanție 5 ani',
     ],
     advantages: [
       'Gamă completă — fundație, Nut-Feder, stâlp și zidărie',
@@ -188,13 +187,12 @@ export const elementCategories: ElementCategoryData[] = [
       'Jardinierele sunt o soluție rapidă și elegantă pentru amenajarea spațiilor verzi, ușor de asortat cu pavajele Petra Pavaje. Dimensiunile variate permit crearea unor compoziții unice pentru terase, grădini și spații de agrement.',
     image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/1.-Jardiniera-40-x-30-x-25cm-rosu-Large.avif',
     gallery: [],
-    heroFeatures: ['2 dimensiuni', '5 culori', 'Garanție 5 ani'],
+    heroFeatures: ['2 dimensiuni', '5 culori'],
     colors: [COLOR.gri, COLOR.rosu, COLOR.maro, COLOR.maroDeschis, COLOR.negru],
     technicalFeatures: [
       'Beton vibropresat de înaltă densitate',
       'Rezistență la îngheț-dezgheț',
       'Formă rotundă și rectangulară',
-      'Garanție 5 ani',
     ],
     advantages: [
       '5 culori disponibile pentru asortare cu orice amenajare',
@@ -237,12 +235,11 @@ export const elementCategories: ElementCategoryData[] = [
       'Palisadele reprezintă o soluție elegantă și practică în arta amenajărilor peisagistice, esențiale pentru a conferi structură și un contur bine definit spațiilor verzi. Sunt proiectate să reziste condițiilor meteo diverse, incluzând rezistența la îngheț, umiditate și raze UV.',
     image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/palisada.avif',
     gallery: [],
-    heroFeatures: ['47×12,5×15 cm', '4 culori', 'Garanție 5 ani'],
+    heroFeatures: ['47×12,5×15 cm', '4 culori'],
     colors: [COLOR.alb, COLOR.negru, COLOR.griAntic, COLOR.griBazaltic],
     technicalFeatures: [
       'Beton vibropresat de înaltă densitate',
       'Rezistență la îngheț, umiditate și raze UV',
-      'Garanție 5 ani',
     ],
     advantages: [
       '4 culori, inclusiv nuanțe antichizate',
@@ -279,13 +276,12 @@ export const elementCategories: ElementCategoryData[] = [
       'Transformă diferențele de nivel din grădină, terasă sau intrarea casei cu treptele din beton — soluția ideală ce combină estetica cu funcționalitatea. Fabricate pentru a rezista intemperiilor, ciclurilor de îngheț-dezgheț și traficului pietonal, treptele din beton oferă o suprafață stabilă și sigură.',
     image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/treapta.avif',
     gallery: [],
-    heroFeatures: ['2 dimensiuni', '5 culori', 'Garanție 5 ani'],
+    heroFeatures: ['2 dimensiuni', '5 culori'],
     colors: [COLOR.alb, COLOR.negru, COLOR.griAntic, COLOR.griBazaltic, COLOR.gri],
     technicalFeatures: [
       'Beton vibropresat de înaltă densitate',
       'Rezistență la îngheț-dezgheț și trafic pietonal',
       'Suprafață stabilă și sigură',
-      'Garanție 5 ani',
     ],
     advantages: [
       'Două formate — compact și lat — pentru orice tip de scară',
@@ -324,12 +320,11 @@ export const elementCategories: ElementCategoryData[] = [
       'Construiește structuri durabile și bine definite cu blocurile de zid — soluția robustă și versatilă pentru o varietate de proiecte de amenajare. Cu un aspect curat și posibilități multiple de configurare, permit delimitarea, structurarea și personalizarea eficientă a grădinii sau curții.',
     image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/1.-Bloc-de-zid-alb-Large.avif',
     gallery: [],
-    heroFeatures: ['50×25×15 cm', '4 culori', 'Garanție 5 ani'],
+    heroFeatures: ['50×25×15 cm', '4 culori'],
     colors: [COLOR.alb, COLOR.negru, COLOR.griAntic, COLOR.griBazaltic],
     technicalFeatures: [
       'Beton vibropresat de înaltă densitate',
       'Rezistență la îngheț-dezgheț',
-      'Garanție 5 ani',
     ],
     advantages: [
       '4 culori disponibile, inclusiv nuanțe antichizate',
@@ -415,12 +410,13 @@ export const elementCategories: ElementCategoryData[] = [
       'Elementele de gard Modern sunt produse de tip 3D, modulare, cu toate părțile finisate, care se autoaliniază și se autoblochează datorită îmbinării de tip Nut-Feder. Sistemul inovator de asamblare face montarea rapidă și eficientă, iar designul minimalist se potrivește cu majoritatea stilurilor arhitecturale.',
     image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/9.-Gard-Modern-negru-si-maro-deschis.avif',
     gallery: [],
-    heroFeatures: ['2 dimensiuni', '3 culori', 'Sistem Nut-Feder'],
+    heroFeatures: ['2 dimensiuni', '3 culori', 'Sistem Nut-Feder', 'Garanție 5 ani'],
     colors: [COLOR.negru, COLOR.alb, COLOR.maroDeschis],
     technicalFeatures: [
       'Sistem Nut-Feder — autoaliniere și autoblocare',
       'Toate fețele finisate (produs 3D)',
       'Beton vibropresat de înaltă densitate',
+      'Garanție 5 ani',
     ],
     advantages: [
       'Montaj rapid și eficient datorită sistemului Nut-Feder',
@@ -499,7 +495,7 @@ export const elementCategories: ElementCategoryData[] = [
       'Blocurile de beton reprezintă elemente de zidărie esențiale în construcții, fabricate dintr-un amestec de ciment, apă, nisip și pietriș. Disponibile în trei dimensiuni, inclusiv un bloc de terminație, sunt ideale pentru construcția pereților, gardurilor, fundațiilor și a altor structuri, inclusiv a căminelor și structurilor de canalizare.',
     image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/bloc-de-beton-120x60x60.webp',
     gallery: [],
-    heroFeatures: ['3 dimensiuni', 'Culoare Gri', 'Garanție 5 ani'],
+    heroFeatures: ['3 dimensiuni', 'Culoare Gri'],
     colors: [COLOR.gri],
     technicalFeatures: ['Rezistență ridicată la compresiune', 'Beton vibropresat de înaltă densitate'],
     advantages: [

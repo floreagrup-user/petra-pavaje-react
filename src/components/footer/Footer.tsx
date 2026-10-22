@@ -6,6 +6,7 @@ import { factories } from '@/data/site'
 import { openCookieSettings } from '@/hooks/useCookieConsent'
 import { useTurnstile } from '@/hooks/useTurnstile'
 import { isEnglishPath } from '@/lib/i18n-routes'
+import { LegalGuaranteeNotice } from '@/components/LegalGuaranteeNotice'
 
 const SocialIcon = ({ name, className }: { name: string; className?: string }) => {
   const icons: Record<string, React.ReactNode> = {
@@ -293,6 +294,7 @@ export function Footer() {
               <button onClick={openCookieSettings} className="hover:text-white transition-colors">
                 {isEnglish ? 'Cookie Settings' : 'Setări cookie-uri'}
               </button>
+              <LegalGuaranteeNotice isEnglish={isEnglish} className="hover:text-white transition-colors" />
             </div>
           </div>
         </div>

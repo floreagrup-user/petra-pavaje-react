@@ -11,7 +11,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'About Petra Pavaje',
     question: 'Why choose Petra Pavaje products? What are the advantages?',
     answer:
-      'Choosing Petra Pavaje gets you:\n• Superior quality - CE-certified products, tested for strength and durability\n• Local production - 4 factories in Romania for short delivery times\n• Variety - over 100 models, colors and sizes\n• Warranty - 5 years on every product\n• Free consultation - a team of specialists for your project\n• Excellent value for money',
+      'Choosing Petra Pavaje gets you:\n• Superior quality - CE-certified products, tested for strength and durability\n• Local production - 4 factories in Romania for short delivery times\n• Variety - over 100 models, colors and sizes\n• Warranty - 5 years on pavers, WoodStone, curbs, channels and fences\n• Free consultation - a team of specialists for your project\n• Excellent value for money',
   },
   {
     category: 'About Petra Pavaje',
@@ -138,7 +138,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'Warranty & Support',
     question: 'What kind of warranty do you offer on Petra Pavaje products?',
     answer:
-      'We offer a 5-year warranty on all our products:\n• Premium Pavers - 5-year warranty\n• WoodStone - 5-year warranty\n• Standard Pavers - 5-year warranty\n• Curbs and channels - 5-year warranty\n• Other products - 5-year warranty\nThe warranty covers manufacturing defects and includes free replacement of defective products, per the terms in the warranty certificate.',
+      'We offer a 5-year commercial warranty on:\n• Premium Pavers\n• Standard Pavers\n• WoodStone\n• Curbs\n• Channels\n• Fences\nThe warranty covers manufacturing defects and includes free replacement of defective products, per the terms in the warranty certificate. Our other products (concrete blocks, planters, palisades, steps, wall blocks and drainage elements) do not carry the 5-year commercial warranty. The legal guarantee of conformity applies to all products, as provided by law.',
   },
   {
     category: 'Warranty & Support',

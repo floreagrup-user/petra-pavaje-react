@@ -11,7 +11,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'Despre Petra Pavaje',
     question: 'De ce să aleg produsele Petra Pavaje? Care sunt avantajele?',
     answer:
-      'Alegând Petra Pavaje, beneficiezi de:\n• Calitate superioară - produse certificate CE, testate pentru rezistență și durabilitate\n• Producție locală - 4 fabrici în România pentru timpi scurți de livrare\n• Varietate - peste 100 de modele, culori și dimensiuni\n• Garanție - 5 ani pentru toate produsele\n• Consultanță gratuită - echipă de specialiști pentru proiectul tău\n• Raport calitate-preț excelent',
+      'Alegând Petra Pavaje, beneficiezi de:\n• Calitate superioară - produse certificate CE, testate pentru rezistență și durabilitate\n• Producție locală - 4 fabrici în România pentru timpi scurți de livrare\n• Varietate - peste 100 de modele, culori și dimensiuni\n• Garanție - 5 ani pentru pavaje, Woodstone, borduri, rigole și garduri\n• Consultanță gratuită - echipă de specialiști pentru proiectul tău\n• Raport calitate-preț excelent',
   },
   {
     category: 'Despre Petra Pavaje',
@@ -138,7 +138,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'Garanție și Suport',
     question: 'Ce fel de garanție oferiți pentru produsele Petra Pavaje?',
     answer:
-      'Oferim garanție 5 ani pentru toate produsele noastre:\n• Pavaje Premium - garanție 5 ani\n• WoodStone - garanție 5 ani\n• Pavaje Standard - garanție 5 ani\n• Borduri și rigole - garanție 5 ani\n• Alte produse - garanție 5 ani\nGaranția acoperă defecte de fabricație și include înlocuirea gratuită a produselor defecte, conform condițiilor din certificatul de garanție.',
+      'Oferim garanție comercială de 5 ani pentru:\n• Pavaje Premium\n• Pavaje Standard\n• Woodstone\n• Borduri\n• Rigole\n• Garduri\nGaranția acoperă defecte de fabricație și include înlocuirea gratuită a produselor defecte, conform condițiilor din certificatul de garanție. Celelalte produse (bolțari, jardiniere, palisadă, trepte, bloc de zid și elemente de canalizare) nu au garanție comercială de 5 ani. Pentru toate produsele se aplică garanția legală de conformitate, conform legii.',
   },
   {
     category: 'Garanție și Suport',

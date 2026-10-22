@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Download } from 'lucide-react'
+import { LEGAL_GUARANTEE_URL_RO, LegalGuaranteeNotice } from '@/components/LegalGuaranteeNotice'
 
-const contentMap: Record<string, { title: string; sections: { heading: string; body: string; devOnly?: boolean }[]; cta?: boolean }> = {
+const contentMap: Record<string, { title: string; sections: { heading: string; body: string; devOnly?: boolean; legalGuaranteeNotice?: boolean }[]; cta?: boolean }> = {
   'company': {
     title: 'Compania',
     sections: [
@@ -22,7 +23,7 @@ const contentMap: Record<string, { title: string; sections: { heading: string; b
     sections: [
       {
         heading: '5 Ani de Garanție',
-        body: 'Toate produsele Petra Pavaje beneficiază de o garanție de 5 ani, conform standardelor europene de calitate. Garanția acoperă defectele de fabricație și asigură durabilitatea produselor noastre în timp.',
+        body: 'Pavajele Premium și Standard, Woodstone, bordurile, rigolele și gardurile Petra Pavaje beneficiază de o garanție de 5 ani, conform standardelor europene de calitate. Garanția acoperă defectele de fabricație și asigură durabilitatea produselor noastre în timp.',
       },
       {
         heading: 'Certificări',
@@ -62,7 +63,7 @@ const contentMap: Record<string, { title: string; sections: { heading: string; b
       },
       {
         heading: 'Care este garanția produselor?',
-        body: 'Toate produsele Petra Pavaje beneficiază de o garanție de 5 ani.',
+        body: 'Pavajele Premium și Standard, Woodstone, bordurile, rigolele și gardurile Petra Pavaje beneficiază de o garanție de 5 ani.',
       },
     ],
     cta: true,
@@ -153,6 +154,25 @@ const contentMap: Record<string, { title: string; sections: { heading: string; b
     ],
     cta: false,
   },
+  'termeni': {
+    title: 'Termeni și Condiții',
+    sections: [
+      {
+        heading: 'Despre acest site',
+        body: 'Site-ul petrapavaje.ro este administrat de FLOREA GRUP S.R.L., cod fiscal RO8273278, înregistrată la Registrul Comerțului sub nr. J01/55/1996, cu adresa de corespondență Str. Pietrari nr. 20, Alba Iulia, România, email contact@petrapavaje.ro. Site-ul prezintă produsele Petra Pavaje și nu vinde online: comenzile se fac pe baza unei oferte, prin reprezentanții noștri de vânzări.',
+      },
+      {
+        heading: 'Garanția comercială de 5 ani',
+        body: 'Oferim o garanție comercială de 5 ani pentru:\n• Pavaje Premium\n• Pavaje Standard\n• Woodstone\n• Borduri\n• Rigole\n• Garduri\nGaranția acoperă defectele de fabricație, în condițiile din certificatul de garanție care însoțește produsele. Pentru aceste produse, eticheta europeană GARAN este afișată în tabelul cu dimensiuni al fiecărui produs.\nBolțarii, jardinierele, palisada, treptele, blocul de zid și elementele de canalizare nu au garanție comercială de 5 ani.',
+      },
+      {
+        heading: 'Garanția legală de conformitate',
+        body: 'Pentru toate produsele, consumatorii beneficiază de garanția legală de conformitate de cel puțin doi ani, conform Ordonanței de urgență a Guvernului nr. 140/2021. Vânzătorul răspunde pentru orice neconformitate existentă la livrare și constatată în această perioadă și trebuie să ofere repararea sau înlocuirea gratuită a produsului, iar în unele cazuri reducerea prețului sau rambursarea integrală. Garanția legală se aplică independent de garanția comercială de 5 ani și nu este limitată de aceasta.\nDacă un produs primit nu este conform, scrie-ne cât mai curând la contact@petrapavaje.ro și trimite o dovadă a achiziției, de exemplu factura.',
+        legalGuaranteeNotice: true,
+      },
+    ],
+    cta: false,
+  },
   'intretinere': {
     title: 'Ghid de Întreținere',
     sections: [
@@ -213,6 +233,22 @@ export function GenericPage({ title, contentKey }: { title: string; contentKey: 
                   <p className="text-body-lg text-charcoal-600 leading-relaxed whitespace-pre-line">
                     {section.body}
                   </p>
+                  {section.legalGuaranteeNotice && (
+                    <div className="mt-4 flex flex-col gap-2 text-body-lg">
+                      <LegalGuaranteeNotice
+                        isEnglish={false}
+                        className="self-start font-medium text-brand-700 underline underline-offset-2 hover:text-brand-800"
+                      />
+                      <a
+                        href={LEGAL_GUARANTEE_URL_RO}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="self-start text-brand-700 underline underline-offset-2 hover:text-brand-800"
+                      >
+                        europa.eu/youreurope/garanții
+                      </a>
+                    </div>
+                  )}
                 </motion.div>
               ))}
             </div>
