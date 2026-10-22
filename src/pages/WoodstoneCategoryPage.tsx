@@ -5,6 +5,7 @@ import { Phone, ChevronLeft, ChevronRight, Check, ShieldCheck, Award, X, Chevron
 import { getWoodstoneCategoryBySlug, localizeWoodstoneCategory } from '@/data/woodstone'
 import { useWoodstoneSEO } from '@/hooks/useWoodstoneSEO'
 import { isEnglishPath } from '@/lib/i18n-routes'
+import { GaranLabelButton, YOUR_EUROPE_GUARANTEE_URL, garanWoodstoneLabelSrc, hasGaranWoodstoneLabels } from '@/components/product/GaranLabel'
 
 export function WoodstoneCategoryPage() {
   const { category: categorySlug } = useParams<{ category: string }>()
@@ -211,6 +212,14 @@ export function WoodstoneCategoryPage() {
                                   {v.badge}
                                 </span>
                               )}
+                              {(() => {
+                                const garanSrc = garanWoodstoneLabelSrc(category.slug, v.code)
+                                return garanSrc ? (
+                                  <div className="mt-1">
+                                    <GaranLabelButton src={garanSrc} title={`Woodstone ${v.name}`} isEnglish={isEnglish} />
+                                  </div>
+                                ) : null
+                              })()}
                             </td>
                             <td className="py-2.5 px-3 text-charcoal-500">{v.code}</td>
                             <td className="py-2.5 px-3 text-charcoal-600">{v.dimensions}</td>
@@ -229,6 +238,21 @@ export function WoodstoneCategoryPage() {
                 </div>
               )
             })}
+            {hasGaranWoodstoneLabels(category.slug) && (
+              <p className="text-xs text-charcoal-600">
+                {isEnglish
+                  ? 'Tap the GARAN label under a product to see its full guarantee label. '
+                  : 'Apasă pe eticheta GARAN de sub fiecare produs ca să vezi eticheta de garanție completă. '}
+                <a
+                  href={YOUR_EUROPE_GUARANTEE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-700 underline underline-offset-2 hover:text-brand-800"
+                >
+                  {isEnglish ? 'Your EU rights on guarantees (Your Europe)' : 'Drepturile tale privind garanția (Your Europe)'}
+                </a>
+              </p>
+            )}
           </div>
         </div>
       </section>

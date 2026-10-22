@@ -8,6 +8,7 @@ import { useProductSEO } from '@/hooks/useProductSEO'
 import { categories } from '@/data/site'
 import { categoryUrl, productUrl } from '@/lib/product-urls'
 import { isEnglishPath } from '@/lib/i18n-routes'
+import { GaranLabelButton, YOUR_EUROPE_GUARANTEE_URL, garanLabelSrc, hasGaranLabels } from '@/components/product/GaranLabel'
 
 const CATEGORY_LABEL_EN: Record<string, string> = {
   premium: 'Premium Pavers',
@@ -144,18 +145,43 @@ export function ProductDetailPage() {
                         </tr>
                       </thead>
                       <tbody>
-                        {product.dimensionsList.map((dim) => (
+                        {product.dimensionsList.map((dim, i) => {
+                          const garanSrc = garanLabelSrc(product.slug, rawProduct?.dimensionsList?.[i]?.label ?? dim.label)
+                          return (
                           <tr key={dim.label} className="border-b border-charcoal-100">
-                            <td className="py-2 pr-4 font-medium text-charcoal-900">{dim.label}</td>
+                            <td className="py-2 pr-4 font-medium text-charcoal-900">
+                              {dim.label}
+                              {garanSrc && (
+                                <div className="mt-1">
+                                  <GaranLabelButton src={garanSrc} title={`${product.name} ${dim.label}`} isEnglish={isEnglish} />
+                                </div>
+                              )}
+                            </td>
                             <td className="text-right py-2 px-2 text-charcoal-600">{dim.piecesPerMp}</td>
                             <td className="text-right py-2 px-2 text-charcoal-600">{dim.piecesPerPallet}</td>
                             <td className="text-right py-2 px-2 text-charcoal-600">{dim.kgPerPallet.toLocaleString()}</td>
                             <td className="text-right py-2 pl-2 text-charcoal-600">{dim.mpPerPallet}</td>
                           </tr>
-                        ))}
+                          )
+                        })}
                       </tbody>
                     </table>
                   </div>
+                  {hasGaranLabels(product.slug) && (
+                    <p className="mt-3 text-xs text-charcoal-600">
+                      {isEnglish
+                        ? 'Tap the GARAN label under a size to see its full guarantee label. '
+                        : 'Apasă pe eticheta GARAN de sub fiecare format ca să vezi eticheta de garanție completă. '}
+                      <a
+                        href={YOUR_EUROPE_GUARANTEE_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-brand-700 underline underline-offset-2 hover:text-brand-800"
+                      >
+                        {isEnglish ? 'Your EU rights on guarantees (Your Europe)' : 'Drepturile tale privind garanția (Your Europe)'}
+                      </a>
+                    </p>
+                  )}
                 </div>
               )}
             </div>

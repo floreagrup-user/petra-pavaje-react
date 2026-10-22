@@ -5,6 +5,7 @@ import { Phone, Check, ShieldCheck, Award, ChevronDown, FileText, Calculator } f
 import { getElementBySlug } from '@/data/elements'
 import { useElementSEO } from '@/hooks/useElementSEO'
 import { categoryUrl } from '@/lib/product-urls'
+import { GaranLabelButton, YOUR_EUROPE_GUARANTEE_URL, garanElementLabelSrc, hasGaranElementLabels } from '@/components/product/GaranLabel'
 
 export function ElementCategoryPage({ slug: slugProp }: { slug?: string } = {}) {
   const { category: parentSlug, element: elementSlug } = useParams<{ category?: string; element?: string }>()
@@ -212,6 +213,18 @@ export function ElementCategoryPage({ slug: slugProp }: { slug?: string } = {}) 
                                     {v.badge}
                                   </span>
                                 )}
+                                {(() => {
+                                  const garanSrc = garanElementLabelSrc(category.slug, v.name)
+                                  return garanSrc ? (
+                                    <div className="mt-1">
+                                      <GaranLabelButton
+                                        src={garanSrc}
+                                        title={category.parent ? `${v.name} ${category.name}` : v.name}
+                                        isEnglish={false}
+                                      />
+                                    </div>
+                                  ) : null
+                                })()}
                               </td>
                               {hasCode && <td className="py-2.5 px-3 text-charcoal-500">{v.code !== '—' ? v.code : '—'}</td>}
                               <td className="py-2.5 px-3 text-charcoal-600">{v.dimensions}</td>
@@ -233,6 +246,19 @@ export function ElementCategoryPage({ slug: slugProp }: { slug?: string } = {}) 
                   </div>
                 )
               })}
+              {hasGaranElementLabels(category.slug) && (
+                <p className="text-xs text-charcoal-600">
+                  Apasă pe eticheta GARAN de sub fiecare produs ca să vezi eticheta de garanție completă.{' '}
+                  <a
+                    href={YOUR_EUROPE_GUARANTEE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand-700 underline underline-offset-2 hover:text-brand-800"
+                  >
+                    Drepturile tale privind garanția (Your Europe)
+                  </a>
+                </p>
+              )}
             </div>
           </div>
         </section>
