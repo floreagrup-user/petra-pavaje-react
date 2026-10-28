@@ -2,6 +2,103 @@ import type { BlogPost } from '@/data/types'
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '29004',
+    title: `Eflorescența elementelor din beton`,
+    slug: 'eflorescenta-elementelor-din-beton',
+    excerpt: `Pe pavaje și pe alte produse din beton pot apărea pete albicioase. Află ce este eflorescența, cum se formează, de ce nu afectează rezistența și cum se îndepărtează.`,
+    content: `<p>
+Uneori, pe suprafețele produselor din beton pot apărea pete albicioase. Acestea sunt rezultatul unui fenomen natural, numit eflorescență. Pentru a înțelege mai bine ce înseamnă acest fenomen, discutăm pe larg în cele ce urmează.
+</p>
+
+<h2>Ce este eflorescența?</h2>
+
+<p>
+Înainte să răspundem la această întrebare, este important să ne amintim din ce se obține betonul, materialul din care sunt fabricate atât pavajele, cât și celelalte produse din portofoliul Petra Pavaje. Principalele componente ale betonului sunt cimentul, apa și agregatele, precum nisipul și pietrișul. În plus, pentru obținerea diferitelor culori, se pot adăuga pigmenți.
+</p>
+
+<p>
+Eflorescența este un fenomen natural care apare atunci când hidroxidul de calciu, rezultat în urma hidratării cimentului, este transportat de apă* prin porii produselor până la suprafața acestora. Apa se evaporă, iar hidroxidul de calciu reacționează cu dioxidul de carbon din atmosferă. În urma reacției chimice numite carbonatare, se formează carbonatul de calciu, unul dintre compușii care pot alcătui depunerile albicioase cunoscute sub denumirea de eflorescență. Menționăm că acest compus, carbonatul de calciu, este unul dintre cele mai comune săruri care pot apărea pe suprafața produselor din beton, însă există și altele. Așadar, este important să identificăm corect sursa petelor albe care pot apărea pe suprafețele produselor din beton.
+</p>
+
+<p>
+*Apa care transportă compușii către suprafață poate proveni din precipitații, condens sau umezeala acumulată în sol.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/eflorescenta-elementelor-din-beton/schema-aparitia-eflorescentei-in-patru-pasi.avif" alt="Schemă în patru pași: pătrunderea umezelii în pavaj, migrarea sărurilor spre suprafață, carbonatarea sărurilor și apariția eflorescenței pe suprafața pavajului" width="1600" height="693" loading="lazy" decoding="async">
+<figcaption>Cum apare eflorescența, în patru pași.</figcaption>
+</figure>
+
+<h2>Tipuri de eflorescență</h2>
+
+<p>
+<strong>Eflorescența primară</strong> poate apărea în primele zile de la fabricarea produselor din beton. În această perioadă, procesele de hidratare ale cimentului continuă, iar umiditatea prezentă în mediu poate favoriza transportul compușilor solubili către suprafață. Chiar dacă produsele sunt fabricate și depozitate în condiții controlate, acestea pot absorbi ulterior umezeala din mediul înconjurător.
+</p>
+
+<p>
+<strong>Eflorescența secundară</strong> poate apărea la mai mult de 2 luni de la fabricare, inclusiv după montaj, atunci când umiditatea din mediu favorizează migrarea compușilor către suprafața elementelor din beton, precum pavajele sau <a href="https://petrapavaje.ro/garduri">elementele de gard</a>.
+</p>
+
+<h2>Este eflorescența un defect?</h2>
+
+<p>
+Eflorescența este un fenomen natural și nu afectează calitatea sau rezistența produselor din beton. Apariția depunerilor albicioase nu indică automat un defect de fabricație.
+</p>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/eflorescenta-elementelor-din-beton/pavaj-dupa-montaj-fara-depuneri-8-iulie-2026.avif" alt="Pavaj în nuanțe de portocaliu și maro, cu o bordură cu model geometric alb și gri, fără depuneri albicioase pe suprafață" width="900" height="600" loading="lazy" decoding="async">
+<figcaption>Fotografie realizată în data de 8 iulie 2026, după montaj.</figcaption>
+</figure>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/eflorescenta-elementelor-din-beton/pavaj-cu-eflorescenta-30-septembrie-2026.avif" alt="Pavaj în nuanțe de maro, acoperit parțial de depuneri albicioase de eflorescență; în partea de sus se vede o pată întunecată" width="900" height="600" loading="lazy" decoding="async">
+<figcaption>Fotografie realizată în data de 30 septembrie 2026.</figcaption>
+</figure>
+
+<figure>
+<img src="https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/eflorescenta-elementelor-din-beton/pavaj-fara-depuneri-vizibile-19-octombrie-2026.avif" alt="Pavaj în nuanțe de maro și portocaliu, lângă o bordură cu model geometric alb și gri, fără depuneri albicioase vizibile" width="900" height="600" loading="lazy" decoding="async">
+<figcaption>Fotografie realizată în data de 19 octombrie 2026.</figcaption>
+</figure>
+
+<h2>Cum îndepărtăm eflorescența?</h2>
+
+<p>
+O întrebare frecventă pe care o primim este: „Când dispare eflorescența?”. În multe cazuri, depunerile se reduc treptat sub acțiunea precipitațiilor și a ciclurilor de umezire și uscare. Durata fenomenului variază în funcție de condițiile de mediu, iar depunerile pot reapărea dacă persistă sursele de umiditate.
+</p>
+
+<p>
+Există substanțe speciale pentru îndepărtarea eflorescenței, însă acestea trebuie utilizate conform instrucțiunilor producătorului și testate în prealabil pe o suprafață mică, puțin vizibilă. Nu sunt recomandate substanțele agresive sau tratamentele improvizate. Curățarea trebuie realizată în condițiile de temperatură și aplicare indicate pentru produsul utilizat.
+</p>
+
+<h2>Eflorescența nu afectează rezistența produselor din beton</h2>
+
+<p>
+Știm că petele albicioase pot provoca nemulțumire proprietarilor de curți și grădini. Este important, însă, să înțelegem că eflorescența este un fenomen natural, care apare pe suprafața pavajelor și a altor elemente din beton, fără să le compromită rezistența.
+</p>
+
+<p>
+Apariția eflorescenței nu indică automat un defect de fabricație. Petra Pavaje oferă 5 ani garanție comercială pentru <a href="https://petrapavaje.ro/pavaje-premium">pavajele Premium</a> și <a href="https://petrapavaje.ro/pavaje-standard">Standard</a>, Woodstone, <a href="https://petrapavaje.ro/borduri">borduri</a> și <a href="https://petrapavaje.ro/garduri">garduri</a>, în condițiile prevăzute în Certificatul de garanție. Detalii găsești pe pagina <a href="https://petrapavaje.ro/garantie">Garanție</a>.
+</p>
+
+<h2>Bibliografie științifică</h2>
+
+<ol>
+<li>„Effect of Carbonation Curing on Efflorescence Formation in Concrete Paver Blocks.” <em>Journal of Materials in Civil Engineering</em>, iunie 2020. <a href="https://doi.org/10.1061/(asce)mt.1943-5533.0003210" target="_blank" rel="noopener noreferrer">https://doi.org/10.1061/(asce)mt.1943-5533.0003210</a></li>
+<li>„Efflorescence of Concrete Products for Interlocking Block Pavements.” În <em>SP-243: 9th Canmet/ACI International Conference on Recent Advances in Concrete Technology</em>, 2007. <a href="https://doi.org/10.14359/18740" target="_blank" rel="noopener noreferrer">https://doi.org/10.14359/18740</a></li>
+<li>Sutan, Norsuzailina Mohamed, și Hamdan Sinin. „Efflorescence Phenomenon on Concrete Structures.” <em>Advanced Materials Research</em>, decembrie 2012. <a href="https://doi.org/10.4028/www.scientific.net/amr.626.747" target="_blank" rel="noopener noreferrer">https://doi.org/10.4028/www.scientific.net/amr.626.747</a></li>
+</ol>`,
+    date: '2026-10-28T10:00:00',
+    author: 'Petra Pavaje',
+    categories: ['ghiduri'],
+    image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/eflorescenta-elementelor-din-beton/eflorescenta-elementelor-din-beton-pavaj-cu-depuneri-albicioase.jpg',
+    readTime: 4,
+    seo: {
+      title: `Eflorescența elementelor din beton: ce este și cum se îndepărtează`,
+      description: `Ce este eflorescența, cum apare pe pavaje și pe alte produse din beton, de ce nu este un defect și cum se îndepărtează depunerile albicioase.`,
+      canonical: 'https://petrapavaje.ro/blog/eflorescenta-elementelor-din-beton',
+    },
+  },
+  {
     id: '29003',
     title: `Soluții SMART pentru infrastructură modernă: blocurile de beton cu îmbinare tip LEGO`,
     slug: 'blocuri-de-beton-cu-imbinare-tip-lego',

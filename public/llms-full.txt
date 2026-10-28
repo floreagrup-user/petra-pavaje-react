@@ -1014,6 +1014,7 @@ Accesează pagina Catalog pentru toate opțiunile disponibile.
 ## Blog (rezumate)
 URL secțiune: https://petrapavaje.ro/blog
 
+- [Eflorescența elementelor din beton](https://petrapavaje.ro/blog/eflorescenta-elementelor-din-beton) — 2026-10-28, Petra Pavaje. Pe pavaje și pe alte produse din beton pot apărea pete albicioase. Află ce este eflorescența, cum se formează, de ce nu afectează rezistența și cum se îndepărtează.
 - [Soluții SMART pentru infrastructură modernă: blocurile de beton cu îmbinare tip LEGO](https://petrapavaje.ro/blog/blocuri-de-beton-cu-imbinare-tip-lego) — 2026-10-13, Mihaela Petruța. Blocurile de beton cu îmbinare tip LEGO permit structuri modulare care pot fi demontate și reutilizate: delimitări industriale, compartimentarea zonelor de lucru și consolidarea terenurilor în pantă.
 - [Pavaj gri sau colorat](https://petrapavaje.ro/blog/pavaj-gri-sau-colorat) — 2026-10-02, Iulia Hladiuc. Pavaj gri sau colorat? Află când un pavaj gri poate fi premium, când merită un pavaj colorat, cum contează formatele și de ce culoarea nu influențează rezistența.
 - [Pavaje de 6 sau de 8 cm](https://petrapavaje.ro/blog/pavaje-de-6-sau-de-8-cm) — 2026-09-22, Iulia Hladiuc. Pavaje de 6 sau de 8 cm? Află ce grosime alegi pentru alei, trotuare și parcări, cum folosești același model în grosimi diferite și de ce stratul suport contează la fel de mult.
