@@ -5,6 +5,7 @@ import { Footer } from '@/components/footer/Footer'
 import { CookieConsentBanner } from '@/components/CookieConsentBanner'
 import { WhatsAppButton } from '@/components/WhatsAppButton'
 import { FloatingCalculator } from '@/components/calculator/FloatingCalculator'
+import { FloatingPetraVision } from '@/components/visualizer/FloatingPetraVision'
 import { isEnglishPath } from '@/lib/i18n-routes'
 
 export function Layout() {
@@ -30,6 +31,7 @@ export function Layout() {
       <Footer />
       <CookieConsentBanner />
       <WhatsAppButton />
+      <FloatingPetraVision />
       <FloatingCalculator />
     </div>
   )
