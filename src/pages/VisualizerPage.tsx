@@ -1,12 +1,28 @@
 import { useEffect } from 'react'
-import { SEO_SITE_NAME, upsertMeta } from '@/hooks/seo-utils'
+import { SEO_SITE_NAME, truncateDescription, upsertCanonical, upsertMeta, resetSEO } from '@/hooks/seo-utils'
+import { PETRA_VISION_PATH } from '@/lib/features'
 import { PavingVisualizer } from '@/components/visualizer/PavingVisualizer'
+
+const TITLE = `Petra VISION: simulator inteligent de pavaje | ${SEO_SITE_NAME}`
+const DESCRIPTION = truncateDescription(
+  'Încarcă o fotografie cu curtea ta, marchează zona și vezi în câteva secunde cum arată cu pavaje Petra Pavaje. Petra VISION, simulator inteligent de pavaje.',
+)
 
 export function VisualizerPage() {
   useEffect(() => {
-    document.title = `Petra VISION: simulator inteligent de pavaje | ${SEO_SITE_NAME}`
-    // Test stage: keep it out of search results until it goes live.
-    upsertMeta('name', 'robots', 'noindex, nofollow')
+    const url = `${window.location.origin}${PETRA_VISION_PATH}`
+    document.title = TITLE
+    upsertMeta('name', 'description', DESCRIPTION)
+    upsertCanonical(url)
+    upsertMeta('property', 'og:type', 'website')
+    upsertMeta('property', 'og:title', TITLE)
+    upsertMeta('property', 'og:description', DESCRIPTION)
+    upsertMeta('property', 'og:url', url)
+    upsertMeta('property', 'og:site_name', SEO_SITE_NAME)
+    upsertMeta('name', 'twitter:card', 'summary_large_image')
+    upsertMeta('name', 'twitter:title', TITLE)
+    upsertMeta('name', 'twitter:description', DESCRIPTION)
+    return resetSEO
   }, [])
 
   return (

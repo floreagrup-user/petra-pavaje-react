@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion'
+import { PETRA_VISION_ENABLED } from '@/lib/features'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Download } from 'lucide-react'
 import { LEGAL_GUARANTEE_URL_RO, LegalGuaranteeNotice } from '@/components/LegalGuaranteeNotice'
 
-const contentMap: Record<string, { title: string; sections: { heading: string; body: string; devOnly?: boolean; legalGuaranteeNotice?: boolean }[]; cta?: boolean }> = {
+const contentMap: Record<string, { title: string; sections: { heading: string; body: string; visionOnly?: boolean; legalGuaranteeNotice?: boolean }[]; cta?: boolean }> = {
   'company': {
     title: 'Compania',
     sections: [
@@ -111,39 +112,39 @@ const contentMap: Record<string, { title: string; sections: { heading: string; b
       },
       {
         heading: 'Newsletterul',
-        body: '• Ce date: adresa de email, data abonării, locul din site de unde te-ai abonat și adresa IP de la momentul abonării (ca dovadă a abonării). Platforma de trimitere înregistrează și dacă deschizi mesajele și dacă accesezi linkurile din ele.\n• De ce: ca să-ți trimitem noutăți despre produse și oferte Petra Pavaje. Temeiul este consimțământul tău (art. 6 alin. 1 lit. a GDPR și Legea nr. 506/2004), dat prin abonare.\n• Cine le primește: newsletterul este trimis prin platforma Mailchimp (Intuit Inc., SUA), care acționează ca persoană împuternicită. Datele pot fi prelucrate în afara Spațiului Economic European, în baza Cadrului UE-SUA privind protecția datelor sau a clauzelor contractuale standard (art. 45 și 46 GDPR). O copie a adresei este păstrată și în baza de date a site-ului, găzduită de un furnizor de servicii cloud, și este accesibilă doar echipei de marketing a FLOREA GRUP S.R.L.\n• Cât timp: până te dezabonezi. Fiecare newsletter conține un link de dezabonare; te poți dezabona și scriindu-ne la contact@petrapavaje.ro. Pagina deschisă de link îți confirmă imediat dezabonarea și nu mai primești newsletterul. Adresa este scoasă din baza de date a site-ului și rămâne în evidența dezabonărilor 30 de zile, apoi o ștergem; păstrăm doar o amprentă criptată și data dezabonării, ca dovadă. Nu transmitem adresa ta altor firme.',
+        body: '• Ce date: adresa de email, data abonării, locul din site de unde te-ai abonat și adresa IP de la momentul abonării (ca dovadă a abonării). Platforma de trimitere înregistrează și dacă deschizi mesajele și dacă accesezi linkurile din ele.\n• De ce: ca să-ți trimitem noutăți despre produse și oferte Petra Pavaje. Temeiul este consimțământul tău (art. 6 alin. 1 lit. a GDPR și Legea nr. 506/2004), dat prin abonare. Te poți abona din subsolul site-ului sau din pagina Petra VISION, printr-o casetă separată și opțională: abonarea nu este o condiție pentru folosirea simulatorului.\n• Cine le primește: newsletterul este trimis prin platforma Mailchimp (Intuit Inc., SUA), care acționează ca persoană împuternicită. Datele pot fi prelucrate în afara Spațiului Economic European, în baza Cadrului UE-SUA privind protecția datelor sau a clauzelor contractuale standard (art. 45 și 46 GDPR). O copie a adresei este păstrată și în baza de date a site-ului, găzduită de un furnizor de servicii cloud, și este accesibilă doar echipei de marketing a FLOREA GRUP S.R.L.\n• Cât timp: până te dezabonezi. Fiecare newsletter conține un link de dezabonare; te poți dezabona și scriindu-ne la contact@petrapavaje.ro. Pagina deschisă de link îți confirmă imediat dezabonarea și nu mai primești newsletterul. Adresa este scoasă din baza de date a site-ului și rămâne în evidența dezabonărilor 30 de zile, apoi o ștergem; păstrăm doar o amprentă criptată și data dezabonării, ca dovadă. Nu transmitem adresa ta altor firme.',
       },
       {
         heading: 'Protecția formularelor',
         body: 'Formularele de pe site sunt protejate împotriva spamului și a abuzurilor printr-o verificare automată, care analizează pentru câteva momente date tehnice ale browserului și adresa IP. Verificarea nu folosește aceste date pentru publicitate. Temeiul este interesul nostru legitim de a proteja site-ul (art. 6 alin. 1 lit. f GDPR). Pentru cookie-urile site-ului, vezi Politica de cookie-uri.',
       },
       {
-        // Hidden on the live site until the visualizer launches.
-        devOnly: true,
+        // Shown together with Petra VISION (see PETRA_VISION_ENABLED).
+        visionOnly: true,
         heading: 'Petra VISION, simulatorul inteligent de pavaje: ce date folosim',
         body: '• Fotografia pe care o încarci, cu zona de pavat acoperită. Fotografia originală nu părăsește browserul tău.\n• O amprentă criptată (hash SHA-256 cu cheie secretă) a adresei IP, pentru limita de 2 imagini pe zi și pentru protecția împotriva abuzurilor. Nu îți cerem cont, nume sau adresă de email ca să folosești vizualizatorul.\n• Dovada acordului tău pentru fotografie și vârstă: data, versiunea textului acceptat și amprenta criptată de mai sus.\n• Doar dacă bifezi caseta opțională de newsletter și te abonezi: adresa de email, tratată conform secțiunii „Newsletterul”, și dovada acordului (data, versiunea textului acceptat și o amprentă criptată a adresei).',
       },
       {
-        // Hidden on the live site until the visualizer launches.
-        devOnly: true,
+        // Shown together with Petra VISION (see PETRA_VISION_ENABLED).
+        visionOnly: true,
         heading: 'Petra VISION, simulatorul inteligent de pavaje: scop și temei legal',
         body: '• Generarea imaginii din fotografia ta: consimțământul tău (art. 6 alin. 1 lit. a GDPR), dat înainte de prima imagine.\n• Limita de 2 imagini pe zi pentru fiecare adresă IP și limita totală de 140 de imagini pe zi: interesul nostru legitim de a preveni abuzurile și costurile excesive (art. 6 alin. 1 lit. f GDPR).\n• Newsletterul, dacă te abonezi din caseta opțională: consimțământul tău separat (art. 6 alin. 1 lit. a GDPR și Legea nr. 506/2004). Abonarea nu este necesară pentru a folosi vizualizatorul, iar dacă nu te abonezi nu primești mai puține imagini. Îți poți retrage acordul oricând, dezabonându-te.\n• Păstrarea dovezii consimțământului: obligația de a putea demonstra consimțământul (art. 7 alin. 1 GDPR).\nNu luăm decizii automate cu efecte juridice asupra ta și nu folosim fotografia sau adresa IP pentru publicitate sau profilare. Serviciul este destinat persoanelor de cel puțin 16 ani.',
       },
       {
-        // Hidden on the live site until the visualizer launches.
-        devOnly: true,
+        // Shown together with Petra VISION (see PETRA_VISION_ENABLED).
+        visionOnly: true,
         heading: 'Petra VISION, simulatorul inteligent de pavaje: cui transmitem datele',
         body: '• Fotografia cu zona acoperită este transmisă unui furnizor extern de servicii de inteligență artificială, care acționează ca persoană împuternicită și o folosește doar pentru a genera imaginea. Furnizorul poate prelucra datele în afara Spațiului Economic European; transferul se face în baza unei decizii de adecvare a Comisiei Europene sau a clauzelor contractuale standard (art. 45 și 46 GDPR).\n• Dacă te abonezi la newsletter, adresa ta este prelucrată de platforma Mailchimp, în condițiile din secțiunea „Newsletterul”.\n• Site-ul și baza de date sunt găzduite de un furnizor de servicii cloud, cu garanțiile prevăzute de GDPR.\nNu vindem și nu închiriem datele tale.',
       },
       {
-        // Hidden on the live site until the visualizer launches.
-        devOnly: true,
+        // Shown together with Petra VISION (see PETRA_VISION_ENABLED).
+        visionOnly: true,
         heading: 'Petra VISION, simulatorul inteligent de pavaje: cât timp păstrăm datele',
         body: '• Fotografia: nu o păstrăm. Există doar în memorie, pe durata generării (de obicei 10-30 de secunde).\n• Imaginea generată: rămâne doar în browserul tău; nu o păstrăm.\n• Contorul zilnic (amprenta adresei IP): se șterge automat după 2 zile.\n• Dovada consimțământului: 3 ani de la acord, termenul general de prescripție (art. 2517 Cod civil).\n• Adresa de email din newsletter, dacă te-ai abonat: până te dezabonezi, conform secțiunii „Newsletterul”.',
       },
       {
-        // Hidden on the live site until the visualizer launches.
-        devOnly: true,
+        // Shown together with Petra VISION (see PETRA_VISION_ENABLED).
+        visionOnly: true,
         heading: 'Petra VISION, simulatorul inteligent de pavaje: imaginea generată',
         body: 'Imaginea este creată automat cu inteligență artificială și este orientativă: modelul, culoarea și dimensiunile reale ale pavajului pot diferi, iar obiectele din zona marcată sunt redesenate. Imaginea descărcată poartă mențiunea că este generată cu AI, conform Regulamentului (UE) 2024/1689 privind inteligența artificială. Te rugăm să nu încarci fotografii în care se văd persoane, numere de înmatriculare sau documente.',
       },
@@ -219,7 +220,7 @@ export function GenericPage({ title, contentKey }: { title: string; contentKey: 
         <div className="container-premium max-w-4xl">
           {content ? (
             <div className="space-y-12">
-              {content.sections.filter((section) => !section.devOnly || import.meta.env.DEV).map((section, index) => (
+              {content.sections.filter((section) => !section.visionOnly || PETRA_VISION_ENABLED).map((section, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}

@@ -113,7 +113,7 @@ export const router = createBrowserRouter([
       { path: 'autor/:slug', element: <Suspense><AuthorPage /></Suspense> },
       { path: 'tur-virtual', element: <Suspense><VirtualTourPage /></Suspense> },
       { path: 'calculator-pavaj', element: <Suspense><CalculatorPavajPage /></Suspense> },
-      // Test stage: the AI paving visualizer exists only on the local dev server.
+      // Petra VISION, the AI paving simulator (see PETRA_VISION_ENABLED).
       ...(PETRA_VISION_ENABLED ? [{ path: PETRA_VISION_PATH.slice(1), element: <Suspense><VisualizerPage /></Suspense> }] : []),
       { path: 'despre-noi', element: <Suspense><AboutPage /></Suspense> },
       { path: 'sustenabilitate', element: <Suspense><SustainabilityPage /></Suspense> },
