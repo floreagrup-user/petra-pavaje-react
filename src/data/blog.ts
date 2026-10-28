@@ -88,7 +88,8 @@ Apariția eflorescenței nu indică automat un defect de fabricație. Petra Pava
 <li>Sutan, Norsuzailina Mohamed, și Hamdan Sinin. „Efflorescence Phenomenon on Concrete Structures.” <em>Advanced Materials Research</em>, decembrie 2012. <a href="https://doi.org/10.4028/www.scientific.net/amr.626.747" target="_blank" rel="noopener noreferrer">https://doi.org/10.4028/www.scientific.net/amr.626.747</a></li>
 </ol>`,
     date: '2026-10-28T10:00:00',
-    author: 'Petra Pavaje',
+    author: 'Mihaela Petruța',
+    authorSlug: 'mihaela-petruta',
     categories: ['ghiduri'],
     image: 'https://pub-5dbaf337ef004f7ca4f5287b3e8b701f.r2.dev/blog/eflorescenta-elementelor-din-beton/eflorescenta-elementelor-din-beton-pavaj-cu-depuneri-albicioase.jpg',
     readTime: 4,
