@@ -10,6 +10,13 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  // Local development only: /api/* is served by `wrangler dev` (functions/),
+  // so the Vite dev server forwards it there. Production builds ignore this.
+  server: {
+    proxy: {
+      '/api': 'http://127.0.0.1:8787',
+    },
+  },
   build: {
     rollupOptions: {
       output: {

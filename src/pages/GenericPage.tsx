@@ -120,31 +120,31 @@ const contentMap: Record<string, { title: string; sections: { heading: string; b
       {
         // Hidden on the live site until the visualizer launches.
         devOnly: true,
-        heading: 'Vizualizatorul de pavaje AI: ce date folosim',
-        body: '• Fotografia pe care o încarci, cu zona de pavat acoperită. Fotografia originală nu părăsește browserul tău.\n• O amprentă criptată (hash SHA-256 cu cheie secretă) a adresei IP, pentru limitele zilnice și pentru protecția împotriva abuzurilor.\n• Dacă îți confirmi emailul: o amprentă criptată a adresei de email și forma ei mascată (de exemplu a***@exemplu.ro). Adresa completă este folosită doar pentru trimiterea codului de confirmare și nu este salvată în baza noastră de date.\n• Dovada acordului tău: data, versiunea textului acceptat și amprenta criptată de mai sus.\n• Un cookie strict necesar (pv_viz), care păstrează confirmarea emailului timp de 30 de zile.',
+        heading: 'Petra VISION, simulatorul inteligent de pavaje: ce date folosim',
+        body: '• Fotografia pe care o încarci, cu zona de pavat acoperită. Fotografia originală nu părăsește browserul tău.\n• O amprentă criptată (hash SHA-256 cu cheie secretă) a adresei IP, pentru limita de 2 imagini pe zi și pentru protecția împotriva abuzurilor. Nu îți cerem cont, nume sau adresă de email ca să folosești vizualizatorul.\n• Dovada acordului tău pentru fotografie și vârstă: data, versiunea textului acceptat și amprenta criptată de mai sus.\n• Doar dacă bifezi caseta opțională de newsletter și te abonezi: adresa de email, tratată conform secțiunii „Newsletterul”, și dovada acordului (data, versiunea textului acceptat și o amprentă criptată a adresei).',
       },
       {
         // Hidden on the live site until the visualizer launches.
         devOnly: true,
-        heading: 'Vizualizatorul de pavaje AI: scop și temei legal',
-        body: '• Generarea imaginii din fotografia ta: consimțământul tău (art. 6 alin. 1 lit. a GDPR), dat înainte de prima imagine.\n• Trimiterea codului de confirmare și evidența celor 3 imagini pe zi pentru adresa confirmată: consimțământul tău (art. 6 alin. 1 lit. a GDPR).\n• Limitele pe adresă IP și limita totală de 200 de imagini pe zi: interesul nostru legitim de a preveni abuzurile și costurile excesive (art. 6 alin. 1 lit. f GDPR).\n• Păstrarea dovezii consimțământului: obligația de a putea demonstra consimțământul (art. 7 alin. 1 GDPR).\nNu luăm decizii automate cu efecte juridice asupra ta și nu folosim datele pentru publicitate sau profilare. Serviciul este destinat persoanelor de cel puțin 16 ani.',
+        heading: 'Petra VISION, simulatorul inteligent de pavaje: scop și temei legal',
+        body: '• Generarea imaginii din fotografia ta: consimțământul tău (art. 6 alin. 1 lit. a GDPR), dat înainte de prima imagine.\n• Limita de 2 imagini pe zi pentru fiecare adresă IP și limita totală de 140 de imagini pe zi: interesul nostru legitim de a preveni abuzurile și costurile excesive (art. 6 alin. 1 lit. f GDPR).\n• Newsletterul, dacă te abonezi din caseta opțională: consimțământul tău separat (art. 6 alin. 1 lit. a GDPR și Legea nr. 506/2004). Abonarea nu este necesară pentru a folosi vizualizatorul, iar dacă nu te abonezi nu primești mai puține imagini. Îți poți retrage acordul oricând, dezabonându-te.\n• Păstrarea dovezii consimțământului: obligația de a putea demonstra consimțământul (art. 7 alin. 1 GDPR).\nNu luăm decizii automate cu efecte juridice asupra ta și nu folosim fotografia sau adresa IP pentru publicitate sau profilare. Serviciul este destinat persoanelor de cel puțin 16 ani.',
       },
       {
         // Hidden on the live site until the visualizer launches.
         devOnly: true,
-        heading: 'Vizualizatorul de pavaje AI: cui transmitem datele',
-        body: '• Fotografia cu zona acoperită este transmisă unui furnizor extern de servicii de inteligență artificială, care acționează ca persoană împuternicită și o folosește doar pentru a genera imaginea. Furnizorul poate prelucra datele în afara Spațiului Economic European; transferul se face în baza unei decizii de adecvare a Comisiei Europene sau a clauzelor contractuale standard (art. 45 și 46 GDPR).\n• Codul de confirmare este trimis printr-un furnizor de servicii de email cu servere în Uniunea Europeană.\n• Site-ul și baza de date sunt găzduite de un furnizor de servicii cloud, cu garanțiile prevăzute de GDPR.\nNu vindem și nu închiriem datele tale.',
+        heading: 'Petra VISION, simulatorul inteligent de pavaje: cui transmitem datele',
+        body: '• Fotografia cu zona acoperită este transmisă unui furnizor extern de servicii de inteligență artificială, care acționează ca persoană împuternicită și o folosește doar pentru a genera imaginea. Furnizorul poate prelucra datele în afara Spațiului Economic European; transferul se face în baza unei decizii de adecvare a Comisiei Europene sau a clauzelor contractuale standard (art. 45 și 46 GDPR).\n• Dacă te abonezi la newsletter, adresa ta este prelucrată de platforma Mailchimp, în condițiile din secțiunea „Newsletterul”.\n• Site-ul și baza de date sunt găzduite de un furnizor de servicii cloud, cu garanțiile prevăzute de GDPR.\nNu vindem și nu închiriem datele tale.',
       },
       {
         // Hidden on the live site until the visualizer launches.
         devOnly: true,
-        heading: 'Vizualizatorul de pavaje AI: cât timp păstrăm datele',
-        body: '• Fotografia: nu o păstrăm. Există doar în memorie, pe durata generării (de obicei 10-30 de secunde).\n• Imaginea generată: rămâne doar în browserul tău; nu o păstrăm.\n• Contoarele zilnice (amprente IP și email): se șterg automat după 2 zile.\n• Codul de confirmare: 15 minute; se șterge imediat ce este folosit.\n• Confirmarea emailului (sesiunea): 30 de zile sau până apeși „Ieși și șterge datele mele".\n• Dovada consimțământului: 3 ani de la acord sau de la retragerea lui, termenul general de prescripție (art. 2517 Cod civil).',
+        heading: 'Petra VISION, simulatorul inteligent de pavaje: cât timp păstrăm datele',
+        body: '• Fotografia: nu o păstrăm. Există doar în memorie, pe durata generării (de obicei 10-30 de secunde).\n• Imaginea generată: rămâne doar în browserul tău; nu o păstrăm.\n• Contorul zilnic (amprenta adresei IP): se șterge automat după 2 zile.\n• Dovada consimțământului: 3 ani de la acord, termenul general de prescripție (art. 2517 Cod civil).\n• Adresa de email din newsletter, dacă te-ai abonat: până te dezabonezi, conform secțiunii „Newsletterul”.',
       },
       {
         // Hidden on the live site until the visualizer launches.
         devOnly: true,
-        heading: 'Vizualizatorul de pavaje AI: imaginea generată',
+        heading: 'Petra VISION, simulatorul inteligent de pavaje: imaginea generată',
         body: 'Imaginea este creată automat cu inteligență artificială și este orientativă: modelul, culoarea și dimensiunile reale ale pavajului pot diferi, iar obiectele din zona marcată sunt redesenate. Imaginea descărcată poartă mențiunea că este generată cu AI, conform Regulamentului (UE) 2024/1689 privind inteligența artificială. Te rugăm să nu încarci fotografii în care se văd persoane, numere de înmatriculare sau documente.',
       },
       {

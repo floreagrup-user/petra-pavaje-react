@@ -6,6 +6,8 @@ import { mainMenu, enMenu, type MenuItem } from '@/data/menu'
 import { useScrollPosition } from '@/hooks/use-scroll'
 import { cn } from '@/lib/utils'
 import { isEnglishPath, toEnglishPath, toRomanianPath } from '@/lib/i18n-routes'
+import { PETRA_VISION_ENABLED } from '@/lib/features'
+import { PetraVisionMenu, PetraVisionMobileLink } from './PetraVisionMenu'
 
 function hasNestedChildren(item: MenuItem): boolean {
   return Boolean(item.children?.some((child) => child.children && child.children.length > 0))
@@ -41,6 +43,8 @@ export function Header() {
   const isScrolled = scrollY > 50
   const isEnglish = isEnglishPath(location.pathname)
   const isHome = location.pathname === '/' || location.pathname === '/en'
+  // The simulator page is Romanian only, so the English header keeps the quote button.
+  const showVision = PETRA_VISION_ENABLED && !isEnglish
   const menu = isEnglish ? enMenu : mainMenu
   const langSwitchHref = isEnglish ? toRomanianPath(location.pathname) : toEnglishPath(location.pathname)
 
@@ -226,17 +230,21 @@ export function Header() {
             </nav>
 
             <div className="flex items-center gap-2">
-              <Link
-                to={isEnglish ? '/en/contact' : '/contact'}
-                className={cn(
-                  'hidden md:inline-flex items-center px-4 py-2 text-sm font-medium rounded-md transition-all duration-300',
-                  isScrolled || !isHome
-                    ? 'bg-brand-600 text-white hover:bg-brand-700'
-                    : 'bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm'
-                )}
-              >
-                {isEnglish ? 'Request a Quote' : 'Solicita Ofertă'}
-              </Link>
+              {showVision ? (
+                <PetraVisionMenu />
+              ) : (
+                <Link
+                  to={isEnglish ? '/en/contact' : '/contact'}
+                  className={cn(
+                    'hidden md:inline-flex items-center px-4 py-2 text-sm font-medium rounded-md transition-all duration-300',
+                    isScrolled || !isHome
+                      ? 'bg-brand-600 text-white hover:bg-brand-700'
+                      : 'bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm'
+                  )}
+                >
+                  {isEnglish ? 'Request a Quote' : 'Solicita Ofertă'}
+                </Link>
+              )}
 
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -285,13 +293,17 @@ export function Header() {
                   )}
                   {isEnglish ? 'Română' : 'English'}
                 </Link>
-                <Link
-                  to={isEnglish ? '/en/contact' : '/contact'}
-                  className="btn-primary w-full justify-center"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {isEnglish ? 'Request a Quote' : 'Solicita Ofertă'}
-                </Link>
+                {showVision ? (
+                  <PetraVisionMobileLink onClick={() => setMobileMenuOpen(false)} />
+                ) : (
+                  <Link
+                    to={isEnglish ? '/en/contact' : '/contact'}
+                    className="btn-primary w-full justify-center"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {isEnglish ? 'Request a Quote' : 'Solicita Ofertă'}
+                  </Link>
+                )}
                 <Link to="/catalog" className="btn-secondary w-full justify-center" onClick={() => setMobileMenuOpen(false)}>
                   {isEnglish ? 'Download Catalog' : 'Descarcă Catalog'}
                 </Link>

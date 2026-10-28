@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 import { Layout } from '@/layouts/Layout'
 import { RouteError } from '@/components/RouteError'
+import { PETRA_VISION_ENABLED, PETRA_VISION_PATH } from '@/lib/features'
 
 const HomePage = lazy(() => import('@/pages/HomePage').then(m => ({ default: m.HomePage })))
 const ProductsHubPage = lazy(() => import('@/pages/ProductsHubPage').then(m => ({ default: m.ProductsHubPage })))
@@ -22,6 +23,7 @@ const WoodstoneCategoryPage = lazy(() => import('@/pages/WoodstoneCategoryPage')
 const QuatroPage = lazy(() => import('@/pages/QuatroPage').then(m => ({ default: m.QuatroPage })))
 const PremiumCategoryPage = lazy(() => import('@/pages/PremiumCategoryPage').then(m => ({ default: m.PremiumCategoryPage })))
 const StandardCategoryPage = lazy(() => import('@/pages/StandardCategoryPage').then(m => ({ default: m.StandardCategoryPage })))
+const VisualizerPage = lazy(() => import('@/pages/VisualizerPage').then(m => ({ default: m.VisualizerPage })))
 const BorduriCategoryPage = lazy(() => import('@/pages/BorduriCategoryPage').then(m => ({ default: m.BorduriCategoryPage })))
 const ElementCategoryPage = lazy(() => import('@/pages/ElementCategoryPage').then(m => ({ default: m.ElementCategoryPage })))
 const ElementHubPage = lazy(() => import('@/pages/ElementHubPage').then(m => ({ default: m.ElementHubPage })))
@@ -111,6 +113,8 @@ export const router = createBrowserRouter([
       { path: 'autor/:slug', element: <Suspense><AuthorPage /></Suspense> },
       { path: 'tur-virtual', element: <Suspense><VirtualTourPage /></Suspense> },
       { path: 'calculator-pavaj', element: <Suspense><CalculatorPavajPage /></Suspense> },
+      // Test stage: the AI paving visualizer exists only on the local dev server.
+      ...(PETRA_VISION_ENABLED ? [{ path: PETRA_VISION_PATH.slice(1), element: <Suspense><VisualizerPage /></Suspense> }] : []),
       { path: 'despre-noi', element: <Suspense><AboutPage /></Suspense> },
       { path: 'sustenabilitate', element: <Suspense><SustainabilityPage /></Suspense> },
       { path: 'compania', element: <LazyGenericPage title="Compania" contentKey="company" /> },
