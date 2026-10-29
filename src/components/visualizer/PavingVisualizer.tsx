@@ -5,6 +5,7 @@ import { products } from '@/data/products'
 import type { Product } from '@/data/types'
 import { productUrl } from '@/lib/product-urls'
 import { useTurnstile } from '@/hooks/useTurnstile'
+import { trackEvent } from '@/lib/analytics'
 import { compositeIntoZone, markZone, prepareReference, preparePhoto, type Point, type PreparedPhoto } from './visualizer-image'
 import { CONSENT_VERSION, DAILY_LIMIT, GLOBAL_DAILY_CAP } from './consent-texts'
 import { FirstImageDialog } from './FirstImageDialog'
@@ -235,6 +236,7 @@ export function PavingVisualizer() {
       const composite = await compositeIntoZone(photo, raw, points)
       setResult(composite)
       setCompare(50)
+      trackEvent('viz_generate', { product_slug: product.slug, color_name: color.name })
       if (typeof data.remaining === 'number') setQuota({ limit: data.limit, remaining: data.remaining })
     } catch {
       setError(GENERIC_ERROR)

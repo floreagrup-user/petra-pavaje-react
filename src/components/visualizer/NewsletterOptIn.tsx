@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { Link } from 'react-router-dom'
 import { CheckCircle2, Loader2, Mail } from 'lucide-react'
+import { trackEvent } from '@/lib/analytics'
 import { CONSENT_TEXTS } from './consent-texts'
 
 interface Props {
@@ -44,6 +45,7 @@ export function NewsletterOptIn({ getToken, hasResult }: Props) {
         return
       }
       setDone(true)
+      trackEvent('viz_newsletter_signup')
     } catch {
       setError(GENERIC)
     } finally {
